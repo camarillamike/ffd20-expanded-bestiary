@@ -116,6 +116,36 @@
     "traits": {
       "size": "tiny",
       "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
         "custom": "Darkvision 60 ft."
       },
       "dr": {
@@ -127,22 +157,14 @@
         "custom": ""
       },
       "cres": "",
-      "di": {
-        "base": [],
-        "custom": "Mind-affecting effects;"
-      },
-      "dv": {
-        "base": [],
-        "custom": "Ice"
-      },
-      "ci": {
-        "base": [],
-        "custom": ""
-      },
-      "languages": {
-        "value": [],
-        "custom": ""
-      },
+      "di": [
+        "Mind-affecting effects"
+      ],
+      "dv": [
+        "Ice"
+      ],
+      "ci": [],
+      "languages": [],
       "stature": "tall"
     },
     "currency": {
@@ -380,7 +402,7 @@
     },
     {
       "_id": "rfeat00000000001",
-      "name": "Familar",
+      "name": "Familiar",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
@@ -399,11 +421,16 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master bonus; apply this to the master, not to the creature."
+          }
+        ],
         "links": {
           "charges": []
         },
-        "tag": "familar",
+        "tag": "familiar",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",

@@ -1,0 +1,35 @@
+{
+  "id": "ffd20-expanded-bestiary",
+  "title": "FF D20 Expanded Bestiary",
+  "description": "Generated FF D20 bestiary actors from finalfantasyd20.com source pages.",
+  "version": "0.1.0",
+  "manifest": "https://raw.githubusercontent.com/camarillamike/ffd20-expanded-bestiary/main/module.json",
+  "download": "https://github.com/camarillamike/ffd20-expanded-bestiary/releases/download/v0.1.0/ffd20-expanded-bestiary-v0.1.0.zip",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "ffd20",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/importer.mjs"
+  ],
+  "packs": [
+    {
+      "name": "ffd20-expanded-bestiary",
+      "label": "FF D20 Expanded Bestiary",
+      "type": "Actor",
+      "system": "ffd20",
+      "path": "packs/ffd20-expanded-bestiary",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "name": "Minor Bat",
+  "type": "npc",
+  "img": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 5,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "init": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "hp": {
+        "value": 3,
+        "max": 3,
+        "temp": 0,
+        "base": 3
+      },
+      "hd": {
+        "total": 1
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 4,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 2,
+          "ability": "wis"
+        }
+      },
+      "speed": {},
+      "sr": {
+        "formula": ""
+      }
+    },
+    "details": {
+      "cr": {
+        "base": 0
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)</p><p>hp 3 (1d10-2)</p><p>Fort +0, Ref +4, Will +2</p><h2>Offense</h2><p>Speed 5 ft., Fly 40 ft. (good)</p><p>Melee Bite +6 (1d3-4)</p><p>Space 1 ft.; Reach 0 ft.</p><p>Special Attacks Blood Drain</p><h2>Statistics</h2><p>Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5</p><p>Base Atk +0; CMB -2; CMD 3</p><p>Feats Weapon Finesse</p><p>Skills Fly +16, Perception +6; Racial Modifiers Perception +4</p>"
+      }
+    },
+    "traits": {
+      "size": "dim",
+      "senses": {
+        "custom": "Blindsense 20 ft., low-light vision"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": {
+        "base": [],
+        "custom": ""
+      },
+      "dv": {
+        "base": [],
+        "custom": ""
+      },
+      "ci": {
+        "base": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      },
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "sa00000000000001",
+      "name": "Blood Drain",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Blood Drain",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "one target"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "shadow"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+              "type": "fort",
+              "description": "DC 11"
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blood-drain",
+        "subType": "misc",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 11,
+                "raw": "Fortitude save (DC 11)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-mismatch",
+                "base": 11,
+                "neededMod": 0,
+                "expectedDc": 9,
+                "observedDc": 11
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d8",
+                "type": "shadow",
+                "raw": "1d8 points of shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "one target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "dex": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "con": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Minor Bat",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/bat-family/minor-bat/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+      "parsed": {
+        "alignment": "N",
+        "creatureType": "Magical Beast",
+        "subtypes": [],
+        "xp": 65,
+        "aura": "",
+        "perception": 6,
+        "offense": {
+          "raw": [
+            "Speed 5 ft., Fly 40 ft. (good)",
+            "Melee Bite +6 (1d3-4)",
+            "Space 1 ft.; Reach 0 ft.",
+            "Special Attacks Blood Drain"
+          ],
+          "speed": "5 ft., Fly 40 ft. (good)",
+          "melee": "Bite +6 (1d3-4)",
+          "ranged": "",
+          "space": "Space 1 ft.; Reach 0 ft.",
+          "specialAttacks": "Blood Drain",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
+            "hp 3 (1d10-2)",
+            "Fort +0, Ref +4, Will +2"
+          ],
+          "ac": "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
+          "hp": "hp 3 (1d10-2)",
+          "hitPoints": 3,
+          "hitDice": 1,
+          "saves": "Fort +0, Ref +4, Will +2",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5",
+          "Base Atk +0; CMB -2; CMD 3",
+          "Feats Weapon Finesse",
+          "Skills Fly +16, Perception +6; Racial Modifiers Perception +4"
+        ],
+        "tactics": [],
+        "ecology": []
+      }
+    }
+  }
+}

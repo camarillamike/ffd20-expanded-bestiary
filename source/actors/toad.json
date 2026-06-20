@@ -1,0 +1,553 @@
+{
+  "name": "Toad",
+  "type": "npc",
+  "img": "https://www.finalfantasyd20.com/wp-content/uploads/toad.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 4,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "init": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "hp": {
+        "value": 2,
+        "max": 2,
+        "temp": 0,
+        "base": 2
+      },
+      "hd": {
+        "total": 1
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 3,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 2,
+          "ability": "wis"
+        }
+      },
+      "speed": {},
+      "sr": {
+        "formula": ""
+      }
+    },
+    "details": {
+      "cr": {
+        "base": 0
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 15, touch 15, flat-footed 14 (+1 dex, +4 size)</p><p>hp 2 (1d8-2)</p><p>Fort +0, Ref +3, Will +2</p><p>Defensive Abilities Poisonous Skin;</p><p>Immune Poison, Frog</p><p>Weakness Ice</p><h2>Offense</h2><p>Speed 5 ft., Swim 10 ft.</p><p>Melee Bite -1 (1d2-5 plus poison)</p><p>Space 1 ft.; Reach 0 ft.</p><h2>Statistics</h2><p>Str 1, Dex 12, Con 6, Int 1, Wis 15, Cha 4</p><p>Base Atk +0; CMB –3; CMD 2 (6 vs. trip)</p><p>Feats Skill Focus (Perception)</p><p>Skills Acrobatics +5 (+9 jump), Perception +5, Stealth +21, Swim +3; Racial Modifiers +4 Acrobatics (+8 jump), +4 Stealth, +8 Swim</p>"
+      }
+    },
+    "traits": {
+      "size": "dim",
+      "senses": {
+        "custom": "Low-light vision, scent"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": {
+        "base": [],
+        "custom": "Poison, Frog"
+      },
+      "dv": {
+        "base": [],
+        "custom": "Ice"
+      },
+      "ci": {
+        "base": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      },
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "sa00000000000001",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1",
+                  "types": [
+                    "con"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+              "type": "fort",
+              "description": "DC 8"
+            },
+            "effectNotes": [
+              "Duration: 6 rounds"
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "misc",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 8,
+                "raw": "Fort DC 8",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived",
+                "base": 11,
+                "neededMod": -3,
+                "candidates": [
+                  "cha"
+                ],
+                "expectedDc": 8
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1",
+                "type": "con",
+                "raw": "1 Con damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "cha": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Poisonous Skin",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poisonous Skin",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1",
+                  "types": [
+                    "wis"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+              "type": "fort",
+              "description": "DC 8"
+            },
+            "effectNotes": [
+              "Duration: 4 rounds"
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poisonous-skin",
+        "subType": "misc",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 8,
+                "raw": "Fort DC 8",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived",
+                "base": 11,
+                "neededMod": -3,
+                "candidates": [
+                  "cha"
+                ],
+                "expectedDc": 8
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1",
+                "type": "wis",
+                "raw": "1 Wisdom damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "cha": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Toad",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "https://www.finalfantasyd20.com/wp-content/uploads/toad.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/toad-family/toad/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/toad.png",
+      "parsed": {
+        "alignment": "N",
+        "creatureType": "Animal [Familiar]",
+        "subtypes": [],
+        "xp": 50,
+        "aura": "",
+        "perception": 5,
+        "offense": {
+          "raw": [
+            "Speed 5 ft., Swim 10 ft.",
+            "Melee Bite -1 (1d2-5 plus poison)",
+            "Space 1 ft.; Reach 0 ft."
+          ],
+          "speed": "5 ft., Swim 10 ft.",
+          "melee": "Bite -1 (1d2-5 plus poison)",
+          "ranged": "",
+          "space": "Space 1 ft.; Reach 0 ft.",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 15, touch 15, flat-footed 14 (+1 dex, +4 size)",
+            "hp 2 (1d8-2)",
+            "Fort +0, Ref +3, Will +2",
+            "Defensive Abilities Poisonous Skin;",
+            "Immune Poison, Frog",
+            "Weakness Ice"
+          ],
+          "ac": "AC 15, touch 15, flat-footed 14 (+1 dex, +4 size)",
+          "hp": "hp 2 (1d8-2)",
+          "hitPoints": 2,
+          "hitDice": 1,
+          "saves": "Fort +0, Ref +3, Will +2",
+          "defensiveAbilities": "Poisonous Skin;",
+          "dr": "",
+          "immunities": "Poison, Frog",
+          "resistances": "",
+          "weaknesses": "Ice",
+          "sr": null
+        },
+        "statistics": [
+          "Str 1, Dex 12, Con 6, Int 1, Wis 15, Cha 4",
+          "Base Atk +0; CMB –3; CMD 2 (6 vs. trip)",
+          "Feats Skill Focus (Perception)",
+          "Skills Acrobatics +5 (+9 jump), Perception +5, Stealth +21, Swim +3; Racial Modifiers +4 Acrobatics (+8 jump), +4 Stealth, +8 Swim"
+        ],
+        "tactics": [],
+        "ecology": []
+      }
+    }
+  }
+}

@@ -46,11 +46,12 @@
         "value": 0,
         "ability": "dex"
       },
+      "naturalAC": 6,
       "hp": {
         "value": 3,
         "max": 3,
         "temp": 0,
-        "base": 3
+        "offset": 0
       },
       "hd": {
         "total": 1
@@ -69,14 +70,34 @@
           "ability": "wis"
         }
       },
-      "speed": {},
+      "speed": {
+        "land": {
+          "base": 5
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
       "sr": {
         "formula": ""
       }
     },
     "details": {
+      "xp": {
+        "value": 65
+      },
       "cr": {
-        "base": 0
+        "base": 0.16666666666666666
       },
       "biography": {
         "value": "<h2>Defense</h2><p>AC 16, touch 10, flat-footed 16 (–2 Dex, +6 natural, +2 size)</p><p>hp 3 [7] (1d8–1)</p><p>Fort +1, Ref +0, Will +1</p><p>Resist Earth 5</p><p>Weakness Ice</p><h2>Offense</h2><p>Speed 5 ft.</p><p>Melee Bite –1 (1d3–4)</p><p>Space 2.5 ft.; Reach 0 ft.</p><h2>Statistics</h2><p>Str 3, Dex 6, Con 8, Int 2, Wis 12, Cha 3</p><p>Base Atk +0; CMB –4; CMD 2 (6 vs. trip)</p><p>Feats Weapon Focus (Bite)</p><p>Skills Acrobatics +2, Perception +4, Survival +4 SQ Shell Retreat</p>"
@@ -128,6 +149,78 @@
     }
   },
   "items": [
+    {
+      "_id": "racialhd0000001",
+      "name": "Animal [Familiar] Racial HD",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "racial-hd",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 1,
+        "hd": 8,
+        "hp": 4,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "low",
+        "skillsPerLevel": 0,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "sourceHitPoints": 3,
+          "sourceHitDice": 1,
+          "sourceBaseAttack": 0
+        }
+      }
+    },
     {
       "_id": "sa00000000000001",
       "name": "Shell Retreat",

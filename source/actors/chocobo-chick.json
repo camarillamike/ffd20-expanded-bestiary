@@ -46,11 +46,12 @@
         "value": 0,
         "ability": "dex"
       },
+      "naturalAC": 0,
       "hp": {
         "value": 7,
         "max": 7,
         "temp": 0,
-        "base": 7
+        "offset": 0
       },
       "hd": {
         "total": 1
@@ -69,14 +70,34 @@
           "ability": "wis"
         }
       },
-      "speed": {},
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
       "sr": {
         "formula": ""
       }
     },
     "details": {
+      "xp": {
+        "value": 100
+      },
       "cr": {
-        "base": 0
+        "base": 0.25
       },
       "biography": {
         "value": "<h2>Defense</h2><p>AC 11, touch 11; flat-footed 11 (+1 size)</p><p>hp 7 [10] (1d8+2)</p><p>Fort +4, Ref +2, Will -1</p><h2>Offense</h2><p>Speed 20 ft.</p><p>Melee Bite +0 (1d3-2)</p><p>Space 5 ft.; Reach 5 ft.</p><h2>Statistics</h2><p>Str 7, Dex 11, Con 14, Int 2, Wis 9, Cha 6</p><p>Base Atk +0; CMB -3; CMD 7</p><p>Feats Weapon Focus (Bite)</p><p>Skills Perception +3</p>"
@@ -127,7 +148,80 @@
       "cp": 0
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "racialhd0000001",
+      "name": "Animal [Familiar] Racial HD",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "racial-hd",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 1,
+        "hd": 8,
+        "hp": 5,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "low",
+        "skillsPerLevel": 0,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "sourceHitPoints": 7,
+          "sourceHitDice": 1,
+          "sourceBaseAttack": 0
+        }
+      }
+    }
+  ],
   "prototypeToken": {
     "name": "Chocobo Chick",
     "actorLink": false,

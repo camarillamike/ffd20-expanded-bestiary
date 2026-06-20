@@ -41,9 +41,37 @@ export async function importActors({ clear = true } = {}) {
   return { created, removed, pack };
 }
 
-Hooks.once("ready", () => {
+async function importActorsIfEmpty() {
+  if (game.system.id !== "ffd20" || !game.user.isGM) return;
+
+  const pack = game.packs.get(PACK_ID);
+  if (!pack) {
+    console.warn(`FF D20 Expanded Bestiary | Compendium pack not found: ${PACK_ID}`);
+    return;
+  }
+
+  const index = await pack.getIndex({ fields: ["name"] });
+  if (index.size > 0) {
+    console.log("FF D20 Expanded Bestiary | Pack already contains actors; skipping automatic import.", {
+      count: index.size,
+      pack: pack.collection,
+    });
+    return;
+  }
+
+  try {
+    await importActors({ clear: false });
+  } catch (error) {
+    console.error("FF D20 Expanded Bestiary | Automatic import failed", error);
+    ui.notifications.error("FF D20 Expanded Bestiary automatic import failed. See console for details.");
+  }
+}
+
+Hooks.once("ready", async () => {
   globalThis.ffd20ExpandedBestiary = {
     importActors,
+    importActorsIfEmpty,
   };
   console.log("FF D20 Expanded Bestiary | Importer ready. Run: await ffd20ExpandedBestiary.importActors()");
+  await importActorsIfEmpty();
 });

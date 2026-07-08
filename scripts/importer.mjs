@@ -1,4 +1,7 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
+const MODULE_VERSION = "0.1.11";
+const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
+const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
   "ffd20-expanded-bestiary_aberrations": "FFD20 Expanded - Aberrations",
   "ffd20-expanded-bestiary_animals": "FFD20 Expanded - Animals",
@@ -27,6 +30,23 @@ const REPLACEABLE_GENERATED_FLAGS = [
   "generatedInventoryItem",
 ];
 const PACKAGE_PREFERENCE = ["ffd20-content", "pf-content-for-ffd20", "ffd20"];
+
+Hooks.once("init", () => {
+  game.settings.register(MODULE_ID, AUTO_IMPORT_SETTING, {
+    name: "Auto-import bestiary updates",
+    hint: "Automatically refresh this module's managed compendium packs when the module source version changes.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true,
+  });
+  game.settings.register(MODULE_ID, IMPORTED_VERSION_SETTING, {
+    scope: "world",
+    config: false,
+    type: String,
+    default: "",
+  });
+});
 
 async function fetchJson(path) {
   const response = await fetch(`modules/${MODULE_ID}/${path}`);
@@ -214,42 +234,67 @@ export async function importActors({ clear = true } = {}) {
 
   ui.notifications.info(`FFD20 Bestiary import complete: ${created.length} actor(s), ${removed} old actor(s) removed.`);
   console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, packs: [...actorsByPack.keys()] });
+  await game.settings.set(MODULE_ID, IMPORTED_VERSION_SETTING, MODULE_VERSION);
   return { created, removed, packs };
 }
 
-async function importActorsIfEmpty() {
+async function managedPackActorCount() {
+  let total = 0;
+  for (const packName of Object.keys(MANAGED_PACKS)) {
+    const pack = getManagedPack(packName);
+    const index = await pack.getIndex({ fields: ["name"] });
+    total += index.size;
+  }
+  return total;
+}
+
+async function importActorsIfNeeded({ emptyOnly = false } = {}) {
   if (game.system.id !== "ffd20" || !game.user.isGM) return;
+  if (!game.settings.get(MODULE_ID, AUTO_IMPORT_SETTING)) {
+    console.log("FF D20 Expanded Bestiary | Automatic import disabled by setting.");
+    return;
+  }
 
   let total = 0;
   try {
-    for (const packName of Object.keys(MANAGED_PACKS)) {
-      const pack = getManagedPack(packName);
-      const index = await pack.getIndex({ fields: ["name"] });
-      total += index.size;
-    }
+    total = await managedPackActorCount();
   } catch (error) {
     console.warn("FF D20 Expanded Bestiary | Compendium pack check failed", error);
     return;
   }
 
-  if (total > 0) {
-    console.log("FF D20 Expanded Bestiary | Managed packs already contain actors; skipping automatic import.", { count: total });
+  const importedVersion = game.settings.get(MODULE_ID, IMPORTED_VERSION_SETTING) ?? "";
+  const shouldImport = total === 0 || (!emptyOnly && importedVersion !== MODULE_VERSION);
+
+  if (!shouldImport) {
+    console.log("FF D20 Expanded Bestiary | Managed packs already match packaged source; skipping automatic import.", {
+      count: total,
+      importedVersion,
+      moduleVersion: MODULE_VERSION,
+    });
     return;
   }
 
   try {
-    await importActors({ clear: false });
+    const reason = total === 0 ? "empty-packs" : `source-version-changed:${importedVersion || "never"}->${MODULE_VERSION}`;
+    console.log("FF D20 Expanded Bestiary | Automatic import starting.", { reason, count: total });
+    await importActors({ clear: total > 0 });
   } catch (error) {
     console.error("FF D20 Expanded Bestiary | Automatic import failed", error);
     ui.notifications.error("FF D20 Expanded Bestiary automatic import failed. See console for details.");
   }
 }
 
+async function importActorsIfEmpty() {
+  return importActorsIfNeeded({ emptyOnly: true });
+}
+
 Hooks.once("ready", async () => {
   globalThis.ffd20ExpandedBestiary = {
     importActors,
     importActorsIfEmpty,
+    importActorsIfNeeded,
   };
   console.log("FF D20 Expanded Bestiary | Importer ready. Run: await ffd20ExpandedBestiary.importActors()");
-  await importActorsIfEmpty();
+  await importActorsIfNeeded();
 });

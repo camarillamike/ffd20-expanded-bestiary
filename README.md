@@ -14,7 +14,9 @@ The installer uses the release zip referenced by `module.json`.
 
 ## Importing Actors
 
-After enabling the module in an FF D20 world, run this in the browser console as a GM:
+After enabling the module in an FF D20 world as a GM, the module automatically refreshes its managed compendium packs when the packaged source version changes.
+
+Manual import is still available from the browser console:
 
 ```js
 await ffd20ExpandedBestiary.importActors()
@@ -28,4 +30,6 @@ FF D20 Expanded Bestiary
 
 ## Current Test Scope
 
-This first package contains the initial 10-entry validation batch generated from finalfantasyd20.com.
+This package contains the current 20-entry validation batch generated from finalfantasyd20.com.
+
+Each actor has a matching curation record under `source/curation/` with the source URL, parsed statblock, generated Foundry items, compendium lookup expectations, and unresolved review notes.

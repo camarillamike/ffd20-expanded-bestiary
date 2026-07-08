@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.12",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Machina Worker",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/machina-warrior/machina-worker/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png",
+    "rawSections": {
+      "HEADER": [
+        "Home > Gamemastering > Bestiary > Constructs > Magitek Family > Machina Warrior > Machina Worker Table of Contents Ancient machina restored by the Al Bhed. Not a war machine, but hits hard with its tool arm. Machina Worker (CR 1)",
+        "XP 400",
+        "N Small Construct (Machina)",
+        "Init +0; Senses Darkvision 60 ft., low-light vision; Perception +4"
+      ],
+      "DEFENSE": [
+        "AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)",
+        "hp 21 [30] (2d10+10)",
+        "Fort +2, Ref +0, Will +0",
+        "Immune construct traits",
+        "Weakness critical hits, lightning"
+      ],
+      "OFFENSE": [
+        "Speed 30 ft.",
+        "Melee Gore +5 (1d4+3)",
+        "Special Attacks Critical Attack"
+      ],
+      "STATISTICS": [
+        "Str 15, Dex 10, Con -, Int 1, Wis 11, Cha 1",
+        "Base Atk +2; CMB +3; CMD 13",
+        "Feats Great Fortitude",
+        "Skills Perception +4"
+      ],
+      "SPECIAL ABILITIES": [
+        "Critical Attack (Ex) Once every 1d4 rounds as a standard action, the machina worker can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+3 x 1.5 for total damage."
+      ]
+    },
+    "parsed": {
+      "cr": "1",
+      "xp": 400,
+      "alignment": "N",
+      "size": "Small",
+      "creatureType": "Construct",
+      "subtypes": [
+        "Machina"
+      ],
+      "initiative": 0,
+      "senses": "Darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)",
+          "hp 21 [30] (2d10+10)",
+          "Fort +2, Ref +0, Will +0",
+          "Immune construct traits",
+          "Weakness critical hits, lightning"
+        ],
+        "ac": "AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)",
+        "hp": "hp 21 [30] (2d10+10)",
+        "hitPoints": 21,
+        "hitDice": 2,
+        "saves": "Fort +2, Ref +0, Will +0",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "construct traits",
+        "resistances": "",
+        "weaknesses": "critical hits, lightning",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 30 ft.",
+          "Melee Gore +5 (1d4+3)",
+          "Special Attacks Critical Attack"
+        ],
+        "speed": "30 ft.",
+        "melee": "Gore +5 (1d4+3)",
+        "ranged": "",
+        "space": "",
+        "specialAttacks": "Critical Attack",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 15, Dex 10, Con -, Int 1, Wis 11, Cha 1",
+        "Base Atk +2; CMB +3; CMD 13",
+        "Feats Great Fortitude",
+        "Skills Perception +4"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Critical Attack",
+          "type": "ex",
+          "description": "Once every 1d4 rounds as a standard action, the machina worker can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+3 x 1.5 for total damage.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": ""
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": false,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "machina-worker.json",
+    "curationFile": "machina-worker.json",
+    "pack": "ffd20-expanded-bestiary_constructs",
+    "packLabel": "FFD20 Expanded - Constructs",
+    "actorType": "npc",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png",
+    "tokenImage": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png",
+    "traits": {
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "Darkvision 60 ft., low-light vision"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "construct traits"
+      ],
+      "dv": [
+        "critical hits",
+        "lightning"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 4
+      }
+    },
+    "defenses": {
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "value": 21,
+        "max": 21,
+        "temp": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 2
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 2,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      }
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Construct"
+      ],
+      "naturalAttacks": [
+        "Gore"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Great Fortitude"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Critical Attack"
+      ],
+      "buffs": [],
+      "miscellaneous": []
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Construct",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Construct"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {
+            "per": true
+          },
+          "level": 2,
+          "hitDie": 10,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Gore",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 5,
+            "damage": "1d4+3",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 3,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Gore",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Great Fortitude",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Critical Attack",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "5",
+                "type": "for-total",
+                "raw": "5 for total damage"
+              }
+            ],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Critical Attack",
+              "actionType": "other",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": null,
+                "units": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [
+                {
+                  "formula": "5",
+                  "types": [
+                    "for-total"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Machina Worker is packaged as an FFD20 NPC actor with 4 generated item(s) across 4 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "1",
+      "size": "Small",
+      "type": "Construct",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "Gore +5 (1d4+3)"
+      ],
+      "specialAbilityNames": [
+        "Critical Attack"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Generated feat, spell, inventory, defensive, special attack, and special quality placeholders are eligible for compendium lookup during import.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

@@ -1,35 +1,35 @@
 {
-  "name": "Minor Bat",
+  "name": "Beady Eye",
   "type": "npc",
-  "img": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+  "img": "https://www.finalfantasyd20.com/wp-content/uploads/Ahriman-ccvii.png",
   "system": {
     "abilities": {
       "str": {
-        "value": 1,
+        "value": 7,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "dex": {
-        "value": 15,
+        "value": 13,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "con": {
-        "value": 6,
+        "value": 12,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "int": {
-        "value": 2,
+        "value": 4,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "wis": {
-        "value": 14,
+        "value": 10,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -43,13 +43,13 @@
     },
     "attributes": {
       "init": {
-        "value": 2,
+        "value": 5,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 3,
-        "max": 3,
+        "value": 5,
+        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -58,11 +58,11 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "value": 1,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "value": 1,
           "ability": "dex"
         },
         "will": {
@@ -72,7 +72,7 @@
       },
       "speed": {
         "land": {
-          "base": 5
+          "base": 10
         },
         "climb": {
           "base": 0
@@ -84,8 +84,8 @@
           "base": 0
         },
         "fly": {
-          "base": 40,
-          "maneuverability": "good"
+          "base": 60,
+          "maneuverability": "perfect"
         }
       },
       "sr": {
@@ -104,26 +104,26 @@
     },
     "details": {
       "xp": {
-        "value": 65
+        "value": 135
       },
       "cr": {
-        "base": 0.16666666666666666
+        "base": 0.3333333333333333
       },
       "biography": {
-        "value": "<h2>Defense</h2><p>AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)</p><p>hp 3 (1d10-2)</p><p>Fort +0, Ref +4, Will +2</p><h2>Offense</h2><p>Speed 5 ft., Fly 40 ft. (good)</p><p>Melee Bite +6 (1d3-4)</p><p>Space 1 ft.; Reach 0 ft.</p><p>Special Attacks Blood Drain</p><h2>Statistics</h2><p>Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5</p><p>Base Atk +0; CMB -2; CMD 3</p><p>Feats Weapon Finesse</p><p>Skills Fly +16, Perception +6; Racial Modifiers Perception +4</p>"
+        "value": "<h2>Defense</h2><p>AC 13, touch 13; flat-footed 12 (+2 size, +1 Dex)</p><p>hp 5 [9] (1d8+1)</p><p>Fort +1, Ref +1, Will +2</p><p>Immune Blind status effects</p><h2>Offense</h2><p>Speed 10 ft., Fly 60 ft. (perfect)</p><p>Melee Bite +0 (1d3-2)</p><p>Space 2-1/2 ft.; Reach 0 ft.</p><p>Special Attacks Hypnotic Gaze (DC 11, 1 round)</p><h2>Statistics</h2><p>Str 7, Dex 13, Con 12, Int 4, Wis 10, Cha 5</p><p>Base Atk +0; CMB -1; CMD 7</p><p>Feats Improved Initiative</p><p>Skills Fly +13, Perception +4</p>"
       }
     },
     "traits": {
-      "size": "dim",
+      "size": "tiny",
       "senses": {
         "dv": {
-          "value": 0
+          "value": 60
         },
         "ts": {
           "value": 0
         },
         "bs": {
-          "value": 20
+          "value": 0
         },
         "bse": {
           "value": 0
@@ -146,7 +146,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsense 20 ft., low-light vision"
+        "custom": "Darkvision 60 ft., low-light vision"
       },
       "dr": {
         "value": [],
@@ -157,7 +157,9 @@
         "custom": ""
       },
       "cres": "",
-      "di": [],
+      "di": [
+        "Blind status effects"
+      ],
       "dv": [],
       "ci": [],
       "languages": [],
@@ -179,7 +181,7 @@
   "items": [
     {
       "_id": "racialhd00000001",
-      "name": "Magical Beast",
+      "name": "Aberration",
       "type": "class",
       "img": "systems/ffd20/icons/skills/yellow_08.jpg",
       "system": {
@@ -192,28 +194,28 @@
         "links": {
           "classAssociations": []
         },
-        "tag": "magical-beast",
+        "tag": "aberration",
         "subType": "racial",
         "classSubType": "racial",
         "parentClass": "",
         "level": 1,
-        "hd": 10,
-        "hp": 5,
+        "hd": 8,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
         "mp": 0,
-        "bab": "high",
-        "skillsPerLevel": 2,
+        "bab": "med",
+        "skillsPerLevel": 4,
         "savingThrows": {
           "fort": {
-            "value": "high"
+            "value": "low"
           },
           "ref": {
-            "value": "high"
+            "value": "low"
           },
           "will": {
-            "value": "low"
+            "value": "high"
           }
         },
         "fc": {
@@ -229,11 +231,12 @@
           }
         },
         "wealth": "",
-        "alignment": "N",
+        "alignment": "NE",
         "classSkills": {
-          "acr": true,
           "clm": true,
+          "crf": true,
           "fly": true,
+          "kdu": true,
           "per": true,
           "ste": true,
           "swm": true
@@ -250,8 +253,8 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedRacialHitDice": true,
-          "profile": "Magical Beast",
-          "sourceHitPoints": 3,
+          "profile": "Aberration",
+          "sourceHitPoints": 5,
           "sourceHitDice": 1
         }
       }
@@ -312,7 +315,7 @@
               }
             },
             "ability": {
-              "attack": "dex",
+              "attack": "str",
               "damage": "str",
               "damageMult": 1,
               "max": null,
@@ -337,7 +340,7 @@
             "notes": {
               "effect": [],
               "footer": [
-                "Source statblock: Bite +6 (1d3-4)"
+                "Source statblock: Bite +0 (1d3-2)"
               ]
             },
             "measureTemplate": {
@@ -385,10 +388,10 @@
             "count": 1,
             "name": "Bite",
             "ranged": false,
-            "attackBonus": 6,
-            "damage": "1d3-4",
+            "attackBonus": 0,
+            "damage": "1d3-2",
             "damageFormula": "1d3",
-            "printedDamageBonus": -4,
+            "printedDamageBonus": -2,
             "natural": true
           }
         }
@@ -396,12 +399,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Weapon Finesse",
+      "name": "Improved Initiative",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -419,7 +422,7 @@
         "links": {
           "charges": []
         },
-        "tag": "weapon-finesse",
+        "tag": "improved-initiative",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -443,23 +446,82 @@
           "lookupTypes": [
             "feat"
           ],
-          "sourceLine": "Feats Weapon Finesse"
+          "sourceLine": "Feats Improved Initiative"
+        }
+      }
+    },
+    {
+      "_id": "rfeat00000000001",
+      "name": "Familiar",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a beady eye familiar gains a +2 bonus to Will saves.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master bonus; apply this to the master, not to the creature."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "familiar",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRawSpecialAbility": true,
+          "lookupTypes": [
+            "feat",
+            "buff",
+            "attack"
+          ]
         }
       }
     },
     {
       "_id": "sa00000000000001",
-      "name": "Blood Drain",
+      "name": "Hypnotic Gaze",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).</p>",
+          "value": "<p>Creatures meeting the gaze of a beady eye must succeed on a DC 11 Will save or stand and stare blankly at the beady eye for 1 round. The save DC is Constitution-based.</p>",
           "instructions": ""
         },
         "actions": [
           {
-            "name": "Blood Drain",
+            "name": "Hypnotic Gaze",
             "actionType": "save",
             "activation": {
               "cost": 1,
@@ -470,32 +532,27 @@
               }
             },
             "range": {
-              "value": 30,
-              "units": "ft"
+              "value": null,
+              "units": ""
             },
             "target": {
-              "value": "one target"
+              "value": ""
             },
             "attackBonus": "",
             "touch": false,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d8",
-                  "types": [
-                    "shadow"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-              "type": "fort",
+              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+              "type": "will",
               "description": "DC 11"
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Duration: 1 round"
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -505,9 +562,10 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": 1,
-          "per": "day",
-          "maxFormula": "1",
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
           "rechargeFormula": ""
         },
         "changes": [],
@@ -515,12 +573,12 @@
         "links": {
           "charges": []
         },
-        "tag": "blood-drain",
+        "tag": "hypnotic-gaze",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
-        "abilityType": "su",
+        "abilityType": "ex",
         "associations": {
           "classes": []
         },
@@ -538,76 +596,70 @@
           "specialAbility": {
             "category": "passive",
             "buff": null,
-            "uses": {
-              "value": 1,
-              "per": "day",
-              "maxFormula": "1",
-              "rechargeFormula": ""
-            },
+            "uses": null,
             "saveDCs": [
               {
-                "save": "fort",
+                "save": "will",
                 "dc": 11,
-                "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-mismatch",
+                "raw": "DC 11 Will save",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "derived",
                 "base": 11,
                 "neededMod": 0,
-                "expectedDc": 9,
-                "observedDc": 11
+                "candidates": [
+                  "wis"
+                ],
+                "expectedDc": 11
               }
             ],
-            "damages": [
-              {
-                "formula": "1d8",
-                "type": "shadow",
-                "raw": "1d8 points of shadow damage"
-              }
-            ],
+            "damages": [],
             "healing": [],
             "attack": null,
-            "requiresSave": true,
-            "saveType": "fort",
-            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "",
             "range": {
-              "value": 30,
-              "units": "ft"
+              "value": null,
+              "units": ""
             },
             "target": {
-              "value": "one target"
+              "value": ""
             },
-            "duration": null,
+            "duration": {
+              "duration": "1",
+              "units": "round"
+            },
             "abilityScores": {
               "str": {
-                "value": 1,
-                "mod": -5,
-                "missing": false,
-                "raw": "1"
-              },
-              "dex": {
-                "value": 15,
-                "mod": 2,
-                "missing": false,
-                "raw": "15"
-              },
-              "con": {
-                "value": 6,
+                "value": 7,
                 "mod": -2,
                 "missing": false,
-                "raw": "6"
+                "raw": "7"
+              },
+              "dex": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
               },
               "int": {
-                "value": 2,
-                "mod": -4,
+                "value": 4,
+                "mod": -3,
                 "missing": false,
-                "raw": "2"
+                "raw": "4"
               },
               "wis": {
-                "value": 14,
-                "mod": 2,
+                "value": 10,
+                "mod": 0,
                 "missing": false,
-                "raw": "14"
+                "raw": "10"
               },
               "cha": {
                 "value": 5,
@@ -616,18 +668,18 @@
                 "raw": "5"
               }
             },
-            "sourceType": "Su"
+            "sourceType": "Ex"
           }
         }
       }
     }
   ],
   "prototypeToken": {
-    "name": "Minor Bat",
+    "name": "Beady Eye",
     "actorLink": false,
     "disposition": -1,
     "texture": {
-      "src": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png"
+      "src": "https://www.finalfantasyd20.com/wp-content/uploads/Ahriman-ccvii.png"
     },
     "sight": {
       "enabled": true
@@ -635,52 +687,53 @@
   },
   "flags": {
     "ffd20-bestiary-builder": {
-      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/bat-family/minor-bat/",
-      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/aberrations/ahriman-family/beady-eye/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Ahriman-ccvii.png",
       "parsed": {
-        "alignment": "N",
-        "creatureType": "Magical Beast",
+        "alignment": "NE",
+        "creatureType": "Aberration [Familiar]",
         "subtypes": [],
-        "xp": 65,
+        "xp": 135,
         "aura": "",
-        "perception": 6,
+        "perception": 4,
         "offense": {
           "raw": [
-            "Speed 5 ft., Fly 40 ft. (good)",
-            "Melee Bite +6 (1d3-4)",
-            "Space 1 ft.; Reach 0 ft.",
-            "Special Attacks Blood Drain"
+            "Speed 10 ft., Fly 60 ft. (perfect)",
+            "Melee Bite +0 (1d3-2)",
+            "Space 2-1/2 ft.; Reach 0 ft.",
+            "Special Attacks Hypnotic Gaze (DC 11, 1 round)"
           ],
-          "speed": "5 ft., Fly 40 ft. (good)",
-          "melee": "Bite +6 (1d3-4)",
+          "speed": "10 ft., Fly 60 ft. (perfect)",
+          "melee": "Bite +0 (1d3-2)",
           "ranged": "",
-          "space": "Space 1 ft.; Reach 0 ft.",
-          "specialAttacks": "Blood Drain",
+          "space": "Space 2-1/2 ft.; Reach 0 ft.",
+          "specialAttacks": "Hypnotic Gaze (DC 11, 1 round)",
           "spellLines": []
         },
         "defense": {
           "raw": [
-            "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-            "hp 3 (1d10-2)",
-            "Fort +0, Ref +4, Will +2"
+            "AC 13, touch 13; flat-footed 12 (+2 size, +1 Dex)",
+            "hp 5 [9] (1d8+1)",
+            "Fort +1, Ref +1, Will +2",
+            "Immune Blind status effects"
           ],
-          "ac": "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-          "hp": "hp 3 (1d10-2)",
-          "hitPoints": 3,
+          "ac": "AC 13, touch 13; flat-footed 12 (+2 size, +1 Dex)",
+          "hp": "hp 5 [9] (1d8+1)",
+          "hitPoints": 5,
           "hitDice": 1,
-          "saves": "Fort +0, Ref +4, Will +2",
+          "saves": "Fort +1, Ref +1, Will +2",
           "defensiveAbilities": "",
           "dr": "",
-          "immunities": "",
+          "immunities": "Blind status effects",
           "resistances": "",
           "weaknesses": "",
           "sr": null
         },
         "statistics": [
-          "Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5",
-          "Base Atk +0; CMB -2; CMD 3",
-          "Feats Weapon Finesse",
-          "Skills Fly +16, Perception +6; Racial Modifiers Perception +4"
+          "Str 7, Dex 13, Con 12, Int 4, Wis 10, Cha 5",
+          "Base Atk +0; CMB -1; CMD 7",
+          "Feats Improved Initiative",
+          "Skills Fly +13, Perception +4"
         ],
         "gear": [],
         "tactics": [],

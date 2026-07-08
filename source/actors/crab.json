@@ -395,7 +395,8 @@
             "attackBonus": 0,
             "damage": "1d2-2 plus grab",
             "damageFormula": "1d2",
-            "printedDamageBonus": -2
+            "printedDamageBonus": -2,
+            "natural": true
           }
         }
       }
@@ -450,7 +451,120 @@
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedRawSpecialAbility": true
+          "generatedRawSpecialAbility": true,
+          "lookupTypes": [
+            "feat",
+            "buff",
+            "attack"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Constrict",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Constrict.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "constrict",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "lookupTypes": [
+            "feat",
+            "attack",
+            "buff"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000002",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "lookupTypes": [
+            "feat",
+            "attack",
+            "buff"
+          ]
         }
       }
     },
@@ -675,8 +789,8 @@
           "speed": "30 ft., Swim 20 ft.",
           "melee": "2 Claws +0 (1d2-2 plus grab)",
           "ranged": "",
-          "space": "Space 2.5 ft.; Reach 0 ft. Special Attack Constrict (1d2-2)",
-          "specialAttacks": "",
+          "space": "Space 2.5 ft.; Reach 0 ft.",
+          "specialAttacks": "Constrict (1d2-2)",
           "spellLines": []
         },
         "defense": {
@@ -705,6 +819,7 @@
           "Base Atk +0; CMB +0 (+4 grapple); CMD 8 (20 vs. trip)",
           "Skills Perception +4, Swim +10; Racial Modifiers +4 Perception SQ water dependency"
         ],
+        "gear": [],
         "tactics": [],
         "ecology": []
       }

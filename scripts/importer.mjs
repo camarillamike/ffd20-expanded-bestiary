@@ -1,10 +1,32 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const PACK_ID = `${MODULE_ID}.ffd20-expanded-bestiary`;
-const COMPENDIUM_LOOKUP_TYPES = new Set(["feat", "buff", "class", "race", "spell"]);
+const MANAGED_PACKS = {
+  "ffd20-expanded-bestiary_aberrations": "FFD20 Expanded - Aberrations",
+  "ffd20-expanded-bestiary_animals": "FFD20 Expanded - Animals",
+  "ffd20-expanded-bestiary_bosses": "FFD20 Expanded - Bosses",
+  "ffd20-expanded-bestiary_constructs": "FFD20 Expanded - Constructs",
+  "ffd20-expanded-bestiary_dragons": "FFD20 Expanded - Dragons",
+  "ffd20-expanded-bestiary_fey": "FFD20 Expanded - Fey",
+  "ffd20-expanded-bestiary_humanoids": "FFD20 Expanded - Humanoids",
+  "ffd20-expanded-bestiary_magical-beasts": "FFD20 Expanded - Magical Beasts",
+  "ffd20-expanded-bestiary_monstrous-humanoids": "FFD20 Expanded - Monstrous Humanoids",
+  "ffd20-expanded-bestiary_npcs": "FFD20 Expanded - NPCs",
+  "ffd20-expanded-bestiary_oozes": "FFD20 Expanded - Oozes",
+  "ffd20-expanded-bestiary_outsiders": "FFD20 Expanded - Outsiders",
+  "ffd20-expanded-bestiary_plants": "FFD20 Expanded - Plants",
+  "ffd20-expanded-bestiary_undead": "FFD20 Expanded - Undead",
+  "ffd20-expanded-bestiary_vermin": "FFD20 Expanded - Vermin"
+};
+const COMPENDIUM_LOOKUP_TYPES = new Set(["feat", "buff", "class", "race", "spell", "weapon", "equipment", "consumable", "loot", "attack"]);
 const REPLACEABLE_GENERATED_FLAGS = [
   "generatedFeat",
   "generatedRawSpecialAbility",
+  "generatedSpecialQuality",
+  "generatedSpecialAttack",
+  "generatedDefensiveAbility",
+  "generatedSpellReference",
+  "generatedInventoryItem",
 ];
+const PACKAGE_PREFERENCE = ["ffd20-content", "pf-content-for-ffd20", "ffd20"];
 
 async function fetchJson(path) {
   const response = await fetch(`modules/${MODULE_ID}/${path}`);
@@ -19,9 +41,25 @@ function normalizeName(value) {
     .trim();
 }
 
+function generatedFlags(item) {
+  return item.flags?.["ffd20-bestiary-builder"] ?? {};
+}
+
 function isReplaceableGeneratedItem(item) {
-  const flags = item.flags?.["ffd20-bestiary-builder"] ?? {};
+  const flags = generatedFlags(item);
   return REPLACEABLE_GENERATED_FLAGS.some((flag) => flags[flag]);
+}
+
+function lookupTypesForItem(item) {
+  const flags = generatedFlags(item);
+  if (Array.isArray(flags.lookupTypes) && flags.lookupTypes.length) return flags.lookupTypes;
+  return item.type ? [item.type] : [];
+}
+
+function packageRank(pack) {
+  const packageName = pack.collection?.split(".")[0] ?? pack.metadata?.packageName ?? "";
+  const index = PACKAGE_PREFERENCE.indexOf(packageName);
+  return index >= 0 ? index : PACKAGE_PREFERENCE.length;
 }
 
 async function buildItemLookup() {
@@ -35,14 +73,50 @@ async function buildItemLookup() {
     for (const entry of index) {
       if (!COMPENDIUM_LOOKUP_TYPES.has(entry.type)) continue;
       const key = normalizeName(entry.name);
-      if (!key || lookup.has(key)) continue;
-      lookup.set(key, {
-        pack,
-        entry,
-      });
+      if (!key) continue;
+      if (!lookup.has(key)) lookup.set(key, []);
+      lookup.get(key).push({ pack, entry });
     }
   }
   return lookup;
+}
+
+function findLookupMatch(item, lookup) {
+  const candidates = lookup.get(normalizeName(item.name)) ?? [];
+  if (!candidates.length) return null;
+  const requestedTypes = lookupTypesForItem(item);
+  return candidates
+    .slice()
+    .sort((a, b) => {
+      const aType = requestedTypes.includes(a.entry.type) ? 0 : 1;
+      const bType = requestedTypes.includes(b.entry.type) ? 0 : 1;
+      if (aType !== bType) return aType - bType;
+      const packageDelta = packageRank(a.pack) - packageRank(b.pack);
+      if (packageDelta !== 0) return packageDelta;
+      return a.pack.collection.localeCompare(b.pack.collection);
+    })[0];
+}
+
+function applyPlaceholderDetails(source, item) {
+  const flags = generatedFlags(item);
+  source._id = item._id;
+  source.flags = foundry.utils.mergeObject(source.flags ?? {}, item.flags ?? {}, { inplace: false });
+  source.flags[MODULE_ID] = {
+    compendiumHydrated: true,
+    generatedFallback: item,
+  };
+
+  if (flags.generatedInventoryItem && source.system && item.system?.quantity) {
+    source.system.quantity = item.system.quantity;
+  }
+  if (flags.generatedSpellReference && source.system) {
+    if (item.system?.spellbook) source.system.spellbook = item.system.spellbook;
+    if (item.system?.atWill) source.system.atWill = true;
+    if (item.system?.preparation?.max) source.system.preparation = item.system.preparation;
+    if (item.system?.uses?.per) source.system.uses = foundry.utils.mergeObject(source.system.uses ?? {}, item.system.uses, { inplace: false });
+  }
+
+  return source;
 }
 
 async function hydrateGeneratedItems(actor, lookup) {
@@ -55,26 +129,19 @@ async function hydrateGeneratedItems(actor, lookup) {
       continue;
     }
 
-    const match = lookup.get(normalizeName(item.name));
+    const match = findLookupMatch(item, lookup);
     if (!match) {
       hydrated.push(item);
-      report.push({ actor: actor.name, item: item.name, status: "generated-fallback" });
+      report.push({ actor: actor.name, item: item.name, type: item.type, status: "generated-fallback" });
       continue;
     }
 
-    const source = (await match.pack.getDocument(match.entry._id)).toObject();
-    source._id = item._id;
-    source.name = item.name;
-    source.flags = foundry.utils.mergeObject(source.flags ?? {}, item.flags ?? {}, { inplace: false });
-    source.flags["ffd20-expanded-bestiary"] = {
-      compendiumHydrated: true,
-      sourcePack: match.pack.collection,
-      sourceId: match.entry._id,
-      generatedFallback: item,
-    };
+    const source = applyPlaceholderDetails((await match.pack.getDocument(match.entry._id)).toObject(), item);
+    source.flags[MODULE_ID].sourcePack = match.pack.collection;
+    source.flags[MODULE_ID].sourceId = match.entry._id;
 
     hydrated.push(source);
-    report.push({ actor: actor.name, item: item.name, status: "compendium", pack: match.pack.collection });
+    report.push({ actor: actor.name, item: item.name, status: "compendium", type: match.entry.type, pack: match.pack.collection });
   }
 
   actor.items = hydrated;
@@ -89,6 +156,16 @@ async function prepareActorsForImport(actors) {
   }
   console.log("FF D20 Expanded Bestiary | Compendium lookup report", report);
   return actors;
+}
+
+function packId(packName) {
+  return `${MODULE_ID}.${packName}`;
+}
+
+function getManagedPack(packName) {
+  const pack = game.packs.get(packId(packName));
+  if (!pack) throw new Error(`Compendium pack not found: ${packId(packName)}`);
+  return pack;
 }
 
 async function unlockPack(pack) {
@@ -108,39 +185,55 @@ export async function importActors({ clear = true } = {}) {
   }
   if (!game.user.isGM) throw new Error("Only a GM can import actors into a compendium.");
 
-  const pack = game.packs.get(PACK_ID);
-  if (!pack) throw new Error(`Compendium pack not found: ${PACK_ID}`);
+  const managedPackNames = Object.keys(MANAGED_PACKS);
+  const packs = new Map(managedPackNames.map((name) => [name, getManagedPack(name)]));
+  for (const pack of packs.values()) await unlockPack(pack);
 
-  await unlockPack(pack);
   const manifest = await fetchJson("source/actors.json");
-  const actors = [];
+  const actorsByPack = new Map();
+  const allActors = [];
   for (const entry of manifest.actors) {
-    actors.push(await fetchJson(`source/actors/${entry.file}`));
+    const actor = await fetchJson(`source/actors/${entry.file}`);
+    const packName = entry.pack && packs.has(entry.pack) ? entry.pack : managedPackNames[0];
+    if (!actorsByPack.has(packName)) actorsByPack.set(packName, []);
+    actorsByPack.get(packName).push(actor);
+    allActors.push(actor);
   }
-  await prepareActorsForImport(actors);
+  await prepareActorsForImport(allActors);
 
-  const removed = clear ? await clearPack(pack) : 0;
-  const created = await Actor.createDocuments(actors, { pack: pack.collection });
+  let removed = 0;
+  if (clear) {
+    for (const pack of packs.values()) removed += await clearPack(pack);
+  }
+
+  const created = [];
+  for (const [packName, actors] of actorsByPack) {
+    const pack = packs.get(packName);
+    created.push(...(await Actor.createDocuments(actors, { pack: pack.collection })));
+  }
+
   ui.notifications.info(`FFD20 Bestiary import complete: ${created.length} actor(s), ${removed} old actor(s) removed.`);
-  console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, pack: pack.collection });
-  return { created, removed, pack };
+  console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, packs: [...actorsByPack.keys()] });
+  return { created, removed, packs };
 }
 
 async function importActorsIfEmpty() {
   if (game.system.id !== "ffd20" || !game.user.isGM) return;
 
-  const pack = game.packs.get(PACK_ID);
-  if (!pack) {
-    console.warn(`FF D20 Expanded Bestiary | Compendium pack not found: ${PACK_ID}`);
+  let total = 0;
+  try {
+    for (const packName of Object.keys(MANAGED_PACKS)) {
+      const pack = getManagedPack(packName);
+      const index = await pack.getIndex({ fields: ["name"] });
+      total += index.size;
+    }
+  } catch (error) {
+    console.warn("FF D20 Expanded Bestiary | Compendium pack check failed", error);
     return;
   }
 
-  const index = await pack.getIndex({ fields: ["name"] });
-  if (index.size > 0) {
-    console.log("FF D20 Expanded Bestiary | Pack already contains actors; skipping automatic import.", {
-      count: index.size,
-      pack: pack.collection,
-    });
+  if (total > 0) {
+    console.log("FF D20 Expanded Bestiary | Managed packs already contain actors; skipping automatic import.", { count: total });
     return;
   }
 

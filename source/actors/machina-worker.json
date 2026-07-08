@@ -1,41 +1,41 @@
 {
-  "name": "Minor Bat",
+  "name": "Machina Worker",
   "type": "npc",
-  "img": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+  "img": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png",
   "system": {
     "abilities": {
       "str": {
-        "value": 1,
-        "damage": 0,
-        "drain": 0,
-        "userPenalty": 0
-      },
-      "dex": {
         "value": 15,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
+      "dex": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
       "con": {
-        "value": 6,
+        "value": 10,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "int": {
-        "value": 2,
+        "value": 1,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "wis": {
-        "value": 14,
+        "value": 11,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "cha": {
-        "value": 5,
+        "value": 1,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -43,36 +43,36 @@
     },
     "attributes": {
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
-      "naturalAC": 0,
+      "naturalAC": 2,
       "hp": {
-        "value": 3,
-        "max": 3,
+        "value": 21,
+        "max": 21,
         "temp": 0,
         "offset": 0
       },
       "hd": {
-        "total": 1
+        "total": 2
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "value": 2,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "value": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "value": 0,
           "ability": "wis"
         }
       },
       "speed": {
         "land": {
-          "base": 5
+          "base": 30
         },
         "climb": {
           "base": 0
@@ -84,8 +84,8 @@
           "base": 0
         },
         "fly": {
-          "base": 40,
-          "maneuverability": "good"
+          "base": 0,
+          "maneuverability": "average"
         }
       },
       "sr": {
@@ -93,37 +93,33 @@
       }
     },
     "skills": {
-      "fly": {
-        "ability": "dex",
-        "rank": 5
-      },
       "per": {
         "ability": "wis",
-        "rank": 1
+        "rank": 4
       }
     },
     "details": {
       "xp": {
-        "value": 65
+        "value": 400
       },
       "cr": {
-        "base": 0.16666666666666666
+        "base": 1
       },
       "biography": {
-        "value": "<h2>Defense</h2><p>AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)</p><p>hp 3 (1d10-2)</p><p>Fort +0, Ref +4, Will +2</p><h2>Offense</h2><p>Speed 5 ft., Fly 40 ft. (good)</p><p>Melee Bite +6 (1d3-4)</p><p>Space 1 ft.; Reach 0 ft.</p><p>Special Attacks Blood Drain</p><h2>Statistics</h2><p>Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5</p><p>Base Atk +0; CMB -2; CMD 3</p><p>Feats Weapon Finesse</p><p>Skills Fly +16, Perception +6; Racial Modifiers Perception +4</p>"
+        "value": "<h2>Defense</h2><p>AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)</p><p>hp 21 [30] (2d10+10)</p><p>Fort +2, Ref +0, Will +0</p><p>Immune construct traits</p><p>Weakness critical hits, lightning</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee Gore +5 (1d4+3)</p><p>Special Attacks Critical Attack</p><h2>Statistics</h2><p>Str 15, Dex 10, Con -, Int 1, Wis 11, Cha 1</p><p>Base Atk +2; CMB +3; CMD 13</p><p>Feats Great Fortitude</p><p>Skills Perception +4</p>"
       }
     },
     "traits": {
-      "size": "dim",
+      "size": "sm",
       "senses": {
         "dv": {
-          "value": 0
+          "value": 60
         },
         "ts": {
           "value": 0
         },
         "bs": {
-          "value": 20
+          "value": 0
         },
         "bse": {
           "value": 0
@@ -146,7 +142,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsense 20 ft., low-light vision"
+        "custom": "Darkvision 60 ft., low-light vision"
       },
       "dr": {
         "value": [],
@@ -157,8 +153,13 @@
         "custom": ""
       },
       "cres": "",
-      "di": [],
-      "dv": [],
+      "di": [
+        "construct traits"
+      ],
+      "dv": [
+        "critical hits",
+        "lightning"
+      ],
       "ci": [],
       "languages": [],
       "stature": "tall"
@@ -179,7 +180,7 @@
   "items": [
     {
       "_id": "racialhd00000001",
-      "name": "Magical Beast",
+      "name": "Construct",
       "type": "class",
       "img": "systems/ffd20/icons/skills/yellow_08.jpg",
       "system": {
@@ -192,25 +193,25 @@
         "links": {
           "classAssociations": []
         },
-        "tag": "magical-beast",
+        "tag": "construct",
         "subType": "racial",
         "classSubType": "racial",
         "parentClass": "",
-        "level": 1,
+        "level": 2,
         "hd": 10,
-        "hp": 5,
+        "hp": 21,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
         "mp": 0,
-        "bab": "high",
+        "bab": "med",
         "skillsPerLevel": 2,
         "savingThrows": {
           "fort": {
-            "value": "high"
+            "value": "low"
           },
           "ref": {
-            "value": "high"
+            "value": "low"
           },
           "will": {
             "value": "low"
@@ -231,12 +232,7 @@
         "wealth": "",
         "alignment": "N",
         "classSkills": {
-          "acr": true,
-          "clm": true,
-          "fly": true,
-          "per": true,
-          "ste": true,
-          "swm": true
+          "per": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -250,15 +246,15 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedRacialHitDice": true,
-          "profile": "Magical Beast",
-          "sourceHitPoints": 3,
-          "sourceHitDice": 1
+          "profile": "Construct",
+          "sourceHitPoints": 21,
+          "sourceHitDice": 2
         }
       }
     },
     {
       "_id": "natatk0000000001",
-      "name": "Bite",
+      "name": "Gore",
       "type": "attack",
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
@@ -268,7 +264,7 @@
         },
         "actions": [
           {
-            "name": "Bite",
+            "name": "Gore",
             "img": "systems/ffd20/icons/skills/red_30.jpg",
             "activation": {
               "cost": 1,
@@ -293,7 +289,7 @@
             "damage": {
               "parts": [
                 {
-                  "formula": "1d3",
+                  "formula": "1d4",
                   "types": [
                     "piercing"
                   ]
@@ -312,7 +308,7 @@
               }
             },
             "ability": {
-              "attack": "dex",
+              "attack": "str",
               "damage": "str",
               "damageMult": 1,
               "max": null,
@@ -332,12 +328,12 @@
                 "damageMult": 0.5
               }
             },
-            "attackName": "Bite",
+            "attackName": "Gore",
             "critConfirmBonus": "",
             "notes": {
               "effect": [],
               "footer": [
-                "Source statblock: Bite +6 (1d3-4)"
+                "Source statblock: Gore +5 (1d4+3)"
               ]
             },
             "measureTemplate": {
@@ -351,7 +347,7 @@
         "links": {
           "charges": []
         },
-        "tag": "bite",
+        "tag": "gore",
         "subType": "natural",
         "baseTypes": [],
         "broken": false,
@@ -383,12 +379,12 @@
         "ffd20-bestiary-builder": {
           "generatedNaturalAttack": {
             "count": 1,
-            "name": "Bite",
+            "name": "Gore",
             "ranged": false,
-            "attackBonus": 6,
-            "damage": "1d3-4",
-            "damageFormula": "1d3",
-            "printedDamageBonus": -4,
+            "attackBonus": 5,
+            "damage": "1d4+3",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 3,
             "natural": true
           }
         }
@@ -396,12 +392,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Weapon Finesse",
+      "name": "Great Fortitude",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -419,7 +415,7 @@
         "links": {
           "charges": []
         },
-        "tag": "weapon-finesse",
+        "tag": "great-fortitude",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -443,24 +439,24 @@
           "lookupTypes": [
             "feat"
           ],
-          "sourceLine": "Feats Weapon Finesse"
+          "sourceLine": "Feats Great Fortitude"
         }
       }
     },
     {
       "_id": "sa00000000000001",
-      "name": "Blood Drain",
+      "name": "Critical Attack",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).</p>",
+          "value": "<p>Once every 1d4 rounds as a standard action, the machina worker can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+3 x 1.5 for total damage.</p>",
           "instructions": ""
         },
         "actions": [
           {
-            "name": "Blood Drain",
-            "actionType": "save",
+            "name": "Critical Attack",
+            "actionType": "other",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -470,11 +466,11 @@
               }
             },
             "range": {
-              "value": 30,
-              "units": "ft"
+              "value": null,
+              "units": ""
             },
             "target": {
-              "value": "one target"
+              "value": ""
             },
             "attackBonus": "",
             "touch": false,
@@ -483,17 +479,17 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d8",
+                  "formula": "5",
                   "types": [
-                    "shadow"
+                    "for-total"
                   ]
                 }
               ]
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-              "type": "fort",
-              "description": "DC 11"
+              "dc": "",
+              "type": "",
+              "description": ""
             },
             "effectNotes": [],
             "measureTemplate": {
@@ -505,9 +501,10 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": 1,
-          "per": "day",
-          "maxFormula": "1",
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
           "rechargeFormula": ""
         },
         "changes": [],
@@ -515,12 +512,12 @@
         "links": {
           "charges": []
         },
-        "tag": "blood-drain",
+        "tag": "critical-attack",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
-        "abilityType": "su",
+        "abilityType": "ex",
         "associations": {
           "classes": []
         },
@@ -536,98 +533,80 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "specialAbility": {
-            "category": "passive",
+            "category": "toggle",
             "buff": null,
-            "uses": {
-              "value": 1,
-              "per": "day",
-              "maxFormula": "1",
-              "rechargeFormula": ""
-            },
-            "saveDCs": [
-              {
-                "save": "fort",
-                "dc": 11,
-                "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-mismatch",
-                "base": 11,
-                "neededMod": 0,
-                "expectedDc": 9,
-                "observedDc": 11
-              }
-            ],
+            "uses": null,
+            "saveDCs": [],
             "damages": [
               {
-                "formula": "1d8",
-                "type": "shadow",
-                "raw": "1d8 points of shadow damage"
+                "formula": "5",
+                "type": "for-total",
+                "raw": "5 for total damage"
               }
             ],
             "healing": [],
             "attack": null,
-            "requiresSave": true,
-            "saveType": "fort",
-            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
             "range": {
-              "value": 30,
-              "units": "ft"
+              "value": null,
+              "units": ""
             },
             "target": {
-              "value": "one target"
+              "value": ""
             },
             "duration": null,
             "abilityScores": {
               "str": {
-                "value": 1,
-                "mod": -5,
-                "missing": false,
-                "raw": "1"
-              },
-              "dex": {
                 "value": 15,
                 "mod": 2,
                 "missing": false,
                 "raw": "15"
               },
-              "con": {
-                "value": 6,
-                "mod": -2,
+              "dex": {
+                "value": 10,
+                "mod": 0,
                 "missing": false,
-                "raw": "6"
+                "raw": "10"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
               },
               "int": {
-                "value": 2,
-                "mod": -4,
+                "value": 1,
+                "mod": -5,
                 "missing": false,
-                "raw": "2"
+                "raw": "1"
               },
               "wis": {
-                "value": 14,
-                "mod": 2,
+                "value": 11,
+                "mod": 0,
                 "missing": false,
-                "raw": "14"
+                "raw": "11"
               },
               "cha": {
-                "value": 5,
-                "mod": -3,
+                "value": 1,
+                "mod": -5,
                 "missing": false,
-                "raw": "5"
+                "raw": "1"
               }
             },
-            "sourceType": "Su"
+            "sourceType": "Ex"
           }
         }
       }
     }
   ],
   "prototypeToken": {
-    "name": "Minor Bat",
+    "name": "Machina Worker",
     "actorLink": false,
     "disposition": -1,
     "texture": {
-      "src": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png"
+      "src": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png"
     },
     "sight": {
       "enabled": true
@@ -635,52 +614,55 @@
   },
   "flags": {
     "ffd20-bestiary-builder": {
-      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/bat-family/minor-bat/",
-      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/machina-warrior/machina-worker/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/mech-worker.png",
       "parsed": {
         "alignment": "N",
-        "creatureType": "Magical Beast",
-        "subtypes": [],
-        "xp": 65,
+        "creatureType": "Construct",
+        "subtypes": [
+          "Machina"
+        ],
+        "xp": 400,
         "aura": "",
-        "perception": 6,
+        "perception": 4,
         "offense": {
           "raw": [
-            "Speed 5 ft., Fly 40 ft. (good)",
-            "Melee Bite +6 (1d3-4)",
-            "Space 1 ft.; Reach 0 ft.",
-            "Special Attacks Blood Drain"
+            "Speed 30 ft.",
+            "Melee Gore +5 (1d4+3)",
+            "Special Attacks Critical Attack"
           ],
-          "speed": "5 ft., Fly 40 ft. (good)",
-          "melee": "Bite +6 (1d3-4)",
+          "speed": "30 ft.",
+          "melee": "Gore +5 (1d4+3)",
           "ranged": "",
-          "space": "Space 1 ft.; Reach 0 ft.",
-          "specialAttacks": "Blood Drain",
+          "space": "",
+          "specialAttacks": "Critical Attack",
           "spellLines": []
         },
         "defense": {
           "raw": [
-            "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-            "hp 3 (1d10-2)",
-            "Fort +0, Ref +4, Will +2"
+            "AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)",
+            "hp 21 [30] (2d10+10)",
+            "Fort +2, Ref +0, Will +0",
+            "Immune construct traits",
+            "Weakness critical hits, lightning"
           ],
-          "ac": "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-          "hp": "hp 3 (1d10-2)",
-          "hitPoints": 3,
-          "hitDice": 1,
-          "saves": "Fort +0, Ref +4, Will +2",
+          "ac": "AC 13, touch 11, flat-footed 13 (+2 natural, +1 size)",
+          "hp": "hp 21 [30] (2d10+10)",
+          "hitPoints": 21,
+          "hitDice": 2,
+          "saves": "Fort +2, Ref +0, Will +0",
           "defensiveAbilities": "",
           "dr": "",
-          "immunities": "",
+          "immunities": "construct traits",
           "resistances": "",
-          "weaknesses": "",
+          "weaknesses": "critical hits, lightning",
           "sr": null
         },
         "statistics": [
-          "Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5",
-          "Base Atk +0; CMB -2; CMD 3",
-          "Feats Weapon Finesse",
-          "Skills Fly +16, Perception +6; Racial Modifiers Perception +4"
+          "Str 15, Dex 10, Con -, Int 1, Wis 11, Cha 1",
+          "Base Atk +2; CMB +3; CMD 13",
+          "Feats Great Fortitude",
+          "Skills Perception +4"
         ],
         "gear": [],
         "tactics": [],

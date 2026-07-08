@@ -1,41 +1,41 @@
 {
-  "name": "Minor Bat",
+  "name": "Bite-Sized Pudding",
   "type": "npc",
-  "img": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+  "img": "https://www.finalfantasyd20.com/wp-content/uploads/bite-sized-pudding.png",
   "system": {
     "abilities": {
       "str": {
-        "value": 1,
+        "value": 10,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "dex": {
-        "value": 15,
+        "value": 10,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "con": {
-        "value": 6,
+        "value": 12,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "int": {
-        "value": 2,
+        "value": 4,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "wis": {
-        "value": 14,
+        "value": 10,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
       },
       "cha": {
-        "value": 5,
+        "value": 12,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -43,13 +43,13 @@
     },
     "attributes": {
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 3,
-        "max": 3,
+        "value": 8,
+        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -58,24 +58,24 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "value": 1,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "value": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "value": 0,
           "ability": "wis"
         }
       },
       "speed": {
         "land": {
-          "base": 5
+          "base": 20
         },
         "climb": {
-          "base": 0
+          "base": 20
         },
         "swim": {
           "base": 0
@@ -84,8 +84,8 @@
           "base": 0
         },
         "fly": {
-          "base": 40,
-          "maneuverability": "good"
+          "base": 0,
+          "maneuverability": "average"
         }
       },
       "sr": {
@@ -93,10 +93,6 @@
       }
     },
     "skills": {
-      "fly": {
-        "ability": "dex",
-        "rank": 5
-      },
       "per": {
         "ability": "wis",
         "rank": 1
@@ -104,17 +100,17 @@
     },
     "details": {
       "xp": {
-        "value": 65
+        "value": 200
       },
       "cr": {
-        "base": 0.16666666666666666
+        "base": 0.5
       },
       "biography": {
-        "value": "<h2>Defense</h2><p>AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)</p><p>hp 3 (1d10-2)</p><p>Fort +0, Ref +4, Will +2</p><h2>Offense</h2><p>Speed 5 ft., Fly 40 ft. (good)</p><p>Melee Bite +6 (1d3-4)</p><p>Space 1 ft.; Reach 0 ft.</p><p>Special Attacks Blood Drain</p><h2>Statistics</h2><p>Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5</p><p>Base Atk +0; CMB -2; CMD 3</p><p>Feats Weapon Finesse</p><p>Skills Fly +16, Perception +6; Racial Modifiers Perception +4</p>"
+        "value": "<h2>Defense</h2><p>AC 12, touch 12; flat-footed 12 (+2 size)</p><p>hp 8 [12] (1d8+4)</p><p>Fort +1, Ref +0, Will +0</p><p>Immune Ooze traits</p><p>Resist Physical 50%</p><h2>Offense</h2><p>Speed 20 ft., Climb 20 ft.</p><p>Melee Bite +2 (1d4)</p><p>Space 2.5 ft.; Reach 0 ft.</p><p>Special Attacks Critical Attack</p><h2>Statistics</h2><p>Str 10, Dex 10, Con 12, Int 4, Wis 10, Cha 12</p><p>Base Atk +0; CMB -2; CMD 8 (cannot be tripped)</p><p>Feats Toughness</p><p>Skills Perception +1 SQ Transparent</p>"
       }
     },
     "traits": {
-      "size": "dim",
+      "size": "tiny",
       "senses": {
         "dv": {
           "value": 0
@@ -123,13 +119,13 @@
           "value": 0
         },
         "bs": {
-          "value": 20
-        },
-        "bse": {
           "value": 0
         },
+        "bse": {
+          "value": 60
+        },
         "ll": {
-          "enabled": true,
+          "enabled": false,
           "multiplier": {
             "dim": 2,
             "bright": 2
@@ -146,7 +142,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsense 20 ft., low-light vision"
+        "custom": "Blindsight 60 ft."
       },
       "dr": {
         "value": [],
@@ -157,7 +153,9 @@
         "custom": ""
       },
       "cres": "",
-      "di": [],
+      "di": [
+        "Ooze traits"
+      ],
       "dv": [],
       "ci": [],
       "languages": [],
@@ -179,7 +177,7 @@
   "items": [
     {
       "_id": "racialhd00000001",
-      "name": "Magical Beast",
+      "name": "Ooze",
       "type": "class",
       "img": "systems/ffd20/icons/skills/yellow_08.jpg",
       "system": {
@@ -192,25 +190,25 @@
         "links": {
           "classAssociations": []
         },
-        "tag": "magical-beast",
+        "tag": "ooze",
         "subType": "racial",
         "classSubType": "racial",
         "parentClass": "",
         "level": 1,
-        "hd": 10,
-        "hp": 5,
+        "hd": 8,
+        "hp": 7,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
         "mp": 0,
-        "bab": "high",
+        "bab": "med",
         "skillsPerLevel": 2,
         "savingThrows": {
           "fort": {
-            "value": "high"
+            "value": "low"
           },
           "ref": {
-            "value": "high"
+            "value": "low"
           },
           "will": {
             "value": "low"
@@ -231,12 +229,7 @@
         "wealth": "",
         "alignment": "N",
         "classSkills": {
-          "acr": true,
-          "clm": true,
-          "fly": true,
-          "per": true,
-          "ste": true,
-          "swm": true
+          "per": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -250,8 +243,8 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedRacialHitDice": true,
-          "profile": "Magical Beast",
-          "sourceHitPoints": 3,
+          "profile": "Ooze",
+          "sourceHitPoints": 8,
           "sourceHitDice": 1
         }
       }
@@ -293,7 +286,7 @@
             "damage": {
               "parts": [
                 {
-                  "formula": "1d3",
+                  "formula": "1d4",
                   "types": [
                     "piercing"
                   ]
@@ -312,7 +305,7 @@
               }
             },
             "ability": {
-              "attack": "dex",
+              "attack": "str",
               "damage": "str",
               "damageMult": 1,
               "max": null,
@@ -337,7 +330,7 @@
             "notes": {
               "effect": [],
               "footer": [
-                "Source statblock: Bite +6 (1d3-4)"
+                "Source statblock: Bite +2 (1d4)"
               ]
             },
             "measureTemplate": {
@@ -385,10 +378,10 @@
             "count": 1,
             "name": "Bite",
             "ranged": false,
-            "attackBonus": 6,
-            "damage": "1d3-4",
-            "damageFormula": "1d3",
-            "printedDamageBonus": -4,
+            "attackBonus": 2,
+            "damage": "1d4",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 0,
             "natural": true
           }
         }
@@ -396,12 +389,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Weapon Finesse",
+      "name": "Toughness",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -419,7 +412,7 @@
         "links": {
           "charges": []
         },
-        "tag": "weapon-finesse",
+        "tag": "toughness",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -443,65 +436,21 @@
           "lookupTypes": [
             "feat"
           ],
-          "sourceLine": "Feats Weapon Finesse"
+          "sourceLine": "Feats Toughness"
         }
       }
     },
     {
       "_id": "sa00000000000001",
-      "name": "Blood Drain",
+      "name": "Critical Attack",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).</p>",
+          "value": "<p>Once per day as a standard action, the bite-sized pudding can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4 plus another 1d4 divided by half. Familiar The master of a bite-sized pudding familiar gains a +2 bonus to Reflex saves.</p>",
           "instructions": ""
         },
-        "actions": [
-          {
-            "name": "Blood Drain",
-            "actionType": "save",
-            "activation": {
-              "cost": 1,
-              "type": "standard",
-              "unchained": {
-                "cost": 1,
-                "type": "action"
-              }
-            },
-            "range": {
-              "value": 30,
-              "units": "ft"
-            },
-            "target": {
-              "value": "one target"
-            },
-            "attackBonus": "",
-            "touch": false,
-            "damage": {
-              "critParts": [],
-              "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d8",
-                  "types": [
-                    "shadow"
-                  ]
-                }
-              ]
-            },
-            "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-              "type": "fort",
-              "description": "DC 11"
-            },
-            "effectNotes": [],
-            "measureTemplate": {
-              "type": "",
-              "size": null
-            }
-          }
-        ],
+        "actions": [],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -515,12 +464,129 @@
         "links": {
           "charges": []
         },
-        "tag": "blood-drain",
+        "tag": "critical-attack",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
-        "abilityType": "su",
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Transparent",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A bite-sized pudding is clear and colorless. A DC 15 Perception check is required to notice it.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "DC 15 Perception check required to notice this creature."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "transparent",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
         "associations": {
           "classes": []
         },
@@ -537,97 +603,147 @@
         "ffd20-bestiary-builder": {
           "specialAbility": {
             "category": "passive",
-            "buff": null,
-            "uses": {
-              "value": 1,
-              "per": "day",
-              "maxFormula": "1",
-              "rechargeFormula": ""
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "DC 15 Perception check required to notice this creature."
+                }
+              ],
+              "automationNotes": []
             },
-            "saveDCs": [
-              {
-                "save": "fort",
-                "dc": 11,
-                "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-mismatch",
-                "base": 11,
-                "neededMod": 0,
-                "expectedDc": 9,
-                "observedDc": 11
-              }
-            ],
-            "damages": [
-              {
-                "formula": "1d8",
-                "type": "shadow",
-                "raw": "1d8 points of shadow damage"
-              }
-            ],
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
             "healing": [],
             "attack": null,
-            "requiresSave": true,
-            "saveType": "fort",
-            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
             "range": {
-              "value": 30,
-              "units": "ft"
+              "value": null,
+              "units": ""
             },
             "target": {
-              "value": "one target"
+              "value": ""
             },
             "duration": null,
             "abilityScores": {
               "str": {
-                "value": 1,
-                "mod": -5,
+                "value": 10,
+                "mod": 0,
                 "missing": false,
-                "raw": "1"
+                "raw": "10"
               },
               "dex": {
-                "value": 15,
-                "mod": 2,
+                "value": 10,
+                "mod": 0,
                 "missing": false,
-                "raw": "15"
+                "raw": "10"
               },
               "con": {
-                "value": 6,
-                "mod": -2,
+                "value": 12,
+                "mod": 1,
                 "missing": false,
-                "raw": "6"
+                "raw": "12"
               },
               "int": {
-                "value": 2,
-                "mod": -4,
-                "missing": false,
-                "raw": "2"
-              },
-              "wis": {
-                "value": 14,
-                "mod": 2,
-                "missing": false,
-                "raw": "14"
-              },
-              "cha": {
-                "value": 5,
+                "value": 4,
                 "mod": -3,
                 "missing": false,
-                "raw": "5"
+                "raw": "4"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
               }
             },
-            "sourceType": "Su"
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000002",
+      "name": "Transparent",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A bite-sized pudding is clear and colorless. A DC 15 Perception check is required to notice it.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "DC 15 Perception check required to notice this creature."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "transparent",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Transparent",
+            "category": "passive",
+            "automationNotes": []
           }
         }
       }
     }
   ],
   "prototypeToken": {
-    "name": "Minor Bat",
+    "name": "Bite-Sized Pudding",
     "actorLink": false,
     "disposition": -1,
     "texture": {
-      "src": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png"
+      "src": "https://www.finalfantasyd20.com/wp-content/uploads/bite-sized-pudding.png"
     },
     "sight": {
       "enabled": true
@@ -635,52 +751,54 @@
   },
   "flags": {
     "ffd20-bestiary-builder": {
-      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/bat-family/minor-bat/",
-      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Bat-CR-one-eight-e1623157861720.png",
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/oozes/flan/bite-sized-pudding/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/bite-sized-pudding.png",
       "parsed": {
         "alignment": "N",
-        "creatureType": "Magical Beast",
+        "creatureType": "Ooze [Familiar]",
         "subtypes": [],
-        "xp": 65,
+        "xp": 200,
         "aura": "",
-        "perception": 6,
+        "perception": 1,
         "offense": {
           "raw": [
-            "Speed 5 ft., Fly 40 ft. (good)",
-            "Melee Bite +6 (1d3-4)",
-            "Space 1 ft.; Reach 0 ft.",
-            "Special Attacks Blood Drain"
+            "Speed 20 ft., Climb 20 ft.",
+            "Melee Bite +2 (1d4)",
+            "Space 2.5 ft.; Reach 0 ft.",
+            "Special Attacks Critical Attack"
           ],
-          "speed": "5 ft., Fly 40 ft. (good)",
-          "melee": "Bite +6 (1d3-4)",
+          "speed": "20 ft., Climb 20 ft.",
+          "melee": "Bite +2 (1d4)",
           "ranged": "",
-          "space": "Space 1 ft.; Reach 0 ft.",
-          "specialAttacks": "Blood Drain",
+          "space": "Space 2.5 ft.; Reach 0 ft.",
+          "specialAttacks": "Critical Attack",
           "spellLines": []
         },
         "defense": {
           "raw": [
-            "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-            "hp 3 (1d10-2)",
-            "Fort +0, Ref +4, Will +2"
+            "AC 12, touch 12; flat-footed 12 (+2 size)",
+            "hp 8 [12] (1d8+4)",
+            "Fort +1, Ref +0, Will +0",
+            "Immune Ooze traits",
+            "Resist Physical 50%"
           ],
-          "ac": "AC 16, touch 16; flat-footed 14 (+2 Dex, +4 size)",
-          "hp": "hp 3 (1d10-2)",
-          "hitPoints": 3,
+          "ac": "AC 12, touch 12; flat-footed 12 (+2 size)",
+          "hp": "hp 8 [12] (1d8+4)",
+          "hitPoints": 8,
           "hitDice": 1,
-          "saves": "Fort +0, Ref +4, Will +2",
+          "saves": "Fort +1, Ref +0, Will +0",
           "defensiveAbilities": "",
           "dr": "",
-          "immunities": "",
-          "resistances": "",
+          "immunities": "Ooze traits",
+          "resistances": "Physical 50%",
           "weaknesses": "",
           "sr": null
         },
         "statistics": [
-          "Str 1, Dex 15, Con 6, Int 2, Wis 14, Cha 5",
-          "Base Atk +0; CMB -2; CMD 3",
-          "Feats Weapon Finesse",
-          "Skills Fly +16, Perception +6; Racial Modifiers Perception +4"
+          "Str 10, Dex 10, Con 12, Int 4, Wis 10, Cha 12",
+          "Base Atk +0; CMB -2; CMD 8 (cannot be tripped)",
+          "Feats Toughness",
+          "Skills Perception +1 SQ Transparent"
         ],
         "gear": [],
         "tactics": [],

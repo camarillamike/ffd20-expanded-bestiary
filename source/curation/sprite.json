@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.12",
+  "moduleVersion": "0.1.13",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sprite",
@@ -471,6 +471,7 @@
             "consumable",
             "loot"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -499,6 +500,7 @@
             "consumable",
             "loot"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -523,6 +525,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -548,6 +551,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -573,6 +577,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -598,6 +603,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -623,6 +629,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -648,6 +655,7 @@
           "expectedTypes": [
             "spell"
           ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
@@ -674,6 +682,9 @@
           "expectedTypes": [
             "feat"
           ],
+          "expectedSubTypes": [
+            "feat"
+          ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {},
@@ -694,15 +705,9 @@
         "generatedFlags": [
           "generatedRawSpecialAbility"
         ],
-        "compendiumLookup": {
-          "expectedTypes": [
-            "feat",
-            "buff",
-            "attack"
-          ],
-          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        "sourceFlagData": {
+          "customFeature": true
         },
-        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
           "changes": [],
@@ -807,7 +812,7 @@
     },
     "rulesDecisions": [
       "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
-      "Generated feat, spell, inventory, defensive, special attack, and special quality placeholders are eligible for compendium lookup during import.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",

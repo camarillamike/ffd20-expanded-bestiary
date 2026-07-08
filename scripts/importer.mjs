@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.12";
+const MODULE_VERSION = "0.1.13";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -22,10 +22,6 @@ const MANAGED_PACKS = {
 const COMPENDIUM_LOOKUP_TYPES = new Set(["feat", "buff", "class", "race", "spell", "weapon", "equipment", "consumable", "loot", "attack"]);
 const REPLACEABLE_GENERATED_FLAGS = [
   "generatedFeat",
-  "generatedRawSpecialAbility",
-  "generatedSpecialQuality",
-  "generatedSpecialAttack",
-  "generatedDefensiveAbility",
   "generatedSpellReference",
   "generatedInventoryItem",
 ];
@@ -76,6 +72,15 @@ function lookupTypesForItem(item) {
   return item.type ? [item.type] : [];
 }
 
+function lookupSubTypesForItem(item) {
+  const flags = generatedFlags(item);
+  return Array.isArray(flags.lookupSubTypes) ? flags.lookupSubTypes : [];
+}
+
+function entrySubType(entry) {
+  return foundry.utils.getProperty(entry, "system.subType") ?? foundry.utils.getProperty(entry, "system.classSubType") ?? "";
+}
+
 function packageRank(pack) {
   const packageName = pack.collection?.split(".")[0] ?? pack.metadata?.packageName ?? "";
   const index = PACKAGE_PREFERENCE.indexOf(packageName);
@@ -89,7 +94,7 @@ async function buildItemLookup() {
     const metadata = pack.metadata ?? {};
     if (metadata.system && metadata.system !== "ffd20") continue;
 
-    const index = await pack.getIndex({ fields: ["name", "type", "system.subType"] });
+    const index = await pack.getIndex({ fields: ["name", "type", "system.subType", "system.classSubType"] });
     for (const entry of index) {
       if (!COMPENDIUM_LOOKUP_TYPES.has(entry.type)) continue;
       const key = normalizeName(entry.name);
@@ -102,15 +107,17 @@ async function buildItemLookup() {
 }
 
 function findLookupMatch(item, lookup) {
-  const candidates = lookup.get(normalizeName(item.name)) ?? [];
-  if (!candidates.length) return null;
   const requestedTypes = lookupTypesForItem(item);
+  const requestedSubTypes = lookupSubTypesForItem(item);
+  const candidates = (lookup.get(normalizeName(item.name)) ?? []).filter(({ entry }) => {
+    if (requestedTypes.length && !requestedTypes.includes(entry.type)) return false;
+    if (requestedSubTypes.length && !requestedSubTypes.includes(entrySubType(entry))) return false;
+    return true;
+  });
+  if (!candidates.length) return null;
   return candidates
     .slice()
     .sort((a, b) => {
-      const aType = requestedTypes.includes(a.entry.type) ? 0 : 1;
-      const bType = requestedTypes.includes(b.entry.type) ? 0 : 1;
-      if (aType !== bType) return aType - bType;
       const packageDelta = packageRank(a.pack) - packageRank(b.pack);
       if (packageDelta !== 0) return packageDelta;
       return a.pack.collection.localeCompare(b.pack.collection);

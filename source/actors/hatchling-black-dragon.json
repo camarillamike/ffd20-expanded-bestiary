@@ -626,6 +626,9 @@
           "lookupTypes": [
             "feat"
           ],
+          "lookupSubTypes": [
+            "feat"
+          ],
           "sourceLine": "Feats Improved Initiative, Lightning Reflexes"
         }
       }
@@ -679,6 +682,9 @@
           "lookupTypes": [
             "feat"
           ],
+          "lookupSubTypes": [
+            "feat"
+          ],
           "sourceLine": "Feats Improved Initiative, Lightning Reflexes"
         }
       }
@@ -690,10 +696,56 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Special attack listed in the source statblock: Breath Weapon.</p>",
+          "value": "<p>Special attack listed in the source statblock: Breath Weapon (30-ft. line, 1d10 shadow damage, Reflex DC 11 half, usable every 1d4 rounds).</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Breath Weapon",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "30-ft. line"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "shadow"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+              "type": "ref",
+              "description": "DC 11"
+            },
+            "effectNotes": [
+              "Area: 30-ft. line"
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -729,11 +781,83 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedSpecialAttack": true,
-          "lookupTypes": [
-            "feat",
-            "attack",
-            "buff"
-          ]
+          "customFeature": true,
+          "sourceText": "Breath Weapon (30-ft. line, 1d10 shadow damage, Reflex DC 11 half, usable every 1d4 rounds)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 11,
+                "raw": "Reflex DC 11",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con",
+                "base": 11,
+                "expectedDc": 11
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d10",
+                "type": "shadow",
+                "raw": "1d10 shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "int": {
+                "value": 9,
+                "mod": -1,
+                "missing": false,
+                "raw": "9"
+              },
+              "wis": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "cha": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              }
+            }
+          }
         }
       }
     },

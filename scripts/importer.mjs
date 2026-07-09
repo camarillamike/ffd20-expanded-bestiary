@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.23";
+const MODULE_VERSION = "0.1.24";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {

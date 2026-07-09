@@ -1,0 +1,1204 @@
+{
+  "name": "Snake",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/snake.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 13,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "init": {
+        "value": 3,
+        "ability": "dex"
+      },
+      "naturalAC": 1,
+      "hp": {
+        "value": 6,
+        "max": 6,
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 1
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 1,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 5,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 1,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 20
+        },
+        "swim": {
+          "base": 20
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "clm": {
+        "ability": "str",
+        "rank": 10
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 1
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 10
+      }
+    },
+    "details": {
+      "xp": {
+        "value": 200
+      },
+      "cr": {
+        "base": 0.5
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 16, touch 15, flat-footed 13 (+3 dex, +1 natural, +2 size)</p><p>hp 6 [10] (1d8+2)</p><p>Fort +1, Ref +5, Will +1</p><p>Resist Water 5</p><p>Weakness Ice</p><h2>Offense</h2><p>Speed 20 ft., climb 20 ft., swim 20 ft.</p><p>Melee Bite +5 (1d4-2 plus poison)</p><p>Space 2.5 ft.; Reach 0 ft.</p><p>Special Attacks Critical Attack</p><h2>Statistics</h2><p>Str 6, Dex 17, Con 8, Int 1, Wis 13, Cha 2</p><p>Base Atk +0; CMB +1; CMD 9 (can't be tripped)</p><p>Feats Toughness*, Weapon Finesse *Bonus Feat</p><p>Skills Acrobatics +13, Climb +11, Perception +9, Stealth +15, Swim +11; Racial Modifiers +4 Perception, +4 Stealth, +8 Acrobatics</p>"
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": "Low-light vision, scent"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "Ice"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Animal",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "8",
+            "target": "skill.acr",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "animal",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 1,
+        "hd": 8,
+        "hp": 7,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "sur": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Animal",
+          "sourceHitPoints": 6,
+          "sourceHitDice": 1,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +5 (1d4-2 plus poison)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 5,
+            "damage": "1d4-2 plus poison",
+            "damageFormula": "1d4",
+            "printedDamageBonus": -2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Toughness*",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness*.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Toughness*, Weapon Finesse *Bonus Feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Weapon Finesse *Bonus Feat",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse *Bonus Feat.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse-bonus-feat",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Toughness*, Weapon Finesse *Bonus Feat"
+        }
+      }
+    },
+    {
+      "_id": "rfeat00000000001",
+      "name": "Familiar",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a snake gains a +3 bonus on</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master bonus; apply this to the master, not to the creature."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "familiar",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRawSpecialAbility": true,
+          "customFeature": true,
+          "sourceType": "na",
+          "sourceText": "The master of a snake gains a +3 bonus on"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: poison.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "poison",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "dex": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "con": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Critical Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage. Familiar The master of a snake gains a +3 bonus on</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Critical Attack",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "floor((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Uses Bite attack.",
+                "Source damage: damage is 1d4-2 x 1.5.",
+                "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
+              ],
+              "footer": [
+                "Source statblock: Bite +5 (1d4-2 plus poison)"
+              ]
+            },
+            "effectNotes": [
+              "Uses Bite attack.",
+              "Source damage: damage is 1d4-2 x 1.5.",
+              "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "critical-attack",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "floor((1d4-2) * 1.5)",
+              "sourceDamageFormula": "1d4-2",
+              "multiplier": "1.5",
+              "raw": "damage is 1d4-2 x 1.5"
+            },
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "dex": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "con": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Bluff checks Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bluff checks Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d2",
+                  "types": [
+                    "con"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Duration: 6 rounds"
+              ],
+              "footer": []
+            },
+            "effectNotes": [
+              "Duration: 6 rounds"
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bluff-checks-poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 9,
+                "raw": "Fort DC 9",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 10,
+                "expectedDc": 9
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d2",
+                "type": "con",
+                "raw": "1d2 Con damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "dex": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "con": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Snake",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/snake.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/viper-family/snake/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/snake.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/snake.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "creatureType": "Animal [Familiar]",
+        "subtypes": [
+          "Reptilian"
+        ],
+        "xp": 200,
+        "aura": "",
+        "perception": 9,
+        "offense": {
+          "raw": [
+            "Speed 20 ft., climb 20 ft., swim 20 ft.",
+            "Melee Bite +5 (1d4-2 plus poison)",
+            "Space 2.5 ft.; Reach 0 ft.",
+            "Special Attacks Critical Attack"
+          ],
+          "speed": "20 ft., climb 20 ft., swim 20 ft.",
+          "melee": "Bite +5 (1d4-2 plus poison)",
+          "ranged": "",
+          "space": "Space 2.5 ft.; Reach 0 ft.",
+          "specialAttacks": "Critical Attack",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 16, touch 15, flat-footed 13 (+3 dex, +1 natural, +2 size)",
+            "hp 6 [10] (1d8+2)",
+            "Fort +1, Ref +5, Will +1",
+            "Resist Water 5",
+            "Weakness Ice"
+          ],
+          "ac": "AC 16, touch 15, flat-footed 13 (+3 dex, +1 natural, +2 size)",
+          "hp": "hp 6 [10] (1d8+2)",
+          "hitPoints": 6,
+          "hitDice": 1,
+          "saves": "Fort +1, Ref +5, Will +1",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "Water 5",
+          "weaknesses": "Ice",
+          "sr": null
+        },
+        "statistics": [
+          "Str 6, Dex 17, Con 8, Int 1, Wis 13, Cha 2",
+          "Base Atk +0; CMB +1; CMD 9 (can't be tripped)",
+          "Feats Toughness*, Weapon Finesse *Bonus Feat",
+          "Skills Acrobatics +13, Climb +11, Perception +9, Stealth +15, Swim +11; Racial Modifiers +4 Perception, +4 Stealth, +8 Acrobatics"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": []
+      }
+    }
+  }
+}

@@ -1,0 +1,2335 @@
+{
+  "name": "Kobold Watch",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/kobold-watch.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "init": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "naturalAC": 1,
+      "hp": {
+        "value": 7,
+        "max": 7,
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 1
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 3,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 2,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 20
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 4
+      },
+      "kdu": {
+        "ability": "int",
+        "rank": 2
+      }
+    },
+    "details": {
+      "xp": {
+        "value": 200
+      },
+      "cr": {
+        "base": 0.5
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 15 (17), touch 12 (14); flat-footed 14 (+2 armor, +2 dex, +1 natural, +2 dodge in caves or rocky terrain)</p><p>hp 7 [10] (1d10+2)</p><p>Fort +3, Ref +2, Will +0, +4 racial bonus on Constitution and Fortitude saves to avoid fatigue and exhaustion;</p><p>Defensive Abilities Bond to the Land, Thick Hide;</p><p>Resist Earth 5;</p><h2>Offense</h2><p>Speed 30 ft., burrow 20 ft.</p><p>Melee Spear +3 (1d8+2/x3)</p><p>Ranged Sling +3 (1d4)</p><p>Space 5 ft.; Reach 5 ft. Special Abilities Magic Hammer, Martial Flexibility (3/day)</p><h2>Statistics</h2><p>Str 12, Dex 14, Con 12, Int 12, Wis 10, Cha 8</p><p>Base Atk +1; CMB +2; CMD 14</p><p>Feats Weapon Focus (Spear)</p><p>Skills Acrobatics +6, Knowledge (dungeoneering) +5, Survival +4 (underground +6); Racial Modifiers +2 disable device, +2 Knowledge (dungeoneering), and +2 Survival (underground)</p><p>Languages Common, Goblin, Terran SQ Cave Dweller, Chosen Weapon +1 (Polearms), Emissary, Master Tinker, Reckless Work Gear Cure potion (1), Spear, sling, 10 bullets, leather armor</p>"
+      }
+    },
+    "traits": {
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "Darkvision 60 ft., low-light vision"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "languages": [
+        "Common",
+        "Goblin",
+        "Terran"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Humanoid",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.kdu",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "humanoid",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 1,
+        "hd": 8,
+        "hp": 6,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "LE",
+        "classSkills": {
+          "clm": true,
+          "crf": true,
+          "han": true,
+          "per": true,
+          "pro": true,
+          "rid": true,
+          "ste": true,
+          "sur": true,
+          "swm": true,
+          "acr": true,
+          "kdu": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Humanoid",
+          "sourceHitPoints": 7,
+          "sourceHitDice": 1,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Spear",
+      "type": "attack",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Spear",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 2,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Spear",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Spear +3 (1d8+2/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "spear",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Spear",
+            "ranged": false,
+            "attackBonus": 3,
+            "damage": "1d8+2/x3",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Sling",
+      "type": "attack",
+      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated from the source statblock ranged attack line.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Sling",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "rwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Sling",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Sling +3 (1d4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sling",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Sling",
+            "ranged": true,
+            "attackBonus": 3,
+            "damage": "1d4",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 0,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "gear000000000001",
+      "name": "Cure potion",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: Cure potion (1).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "cure-potion",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "Cure potion",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "Cure potion (1)"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000002",
+      "name": "Spear",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: Spear.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "spear",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "Spear",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "Spear"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000003",
+      "name": "sling",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: sling.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "sling",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "sling",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "sling"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000004",
+      "name": "bullets",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: 10 bullets.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "bullets",
+        "quantity": 10,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "bullets",
+          "quantity": 10,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "10 bullets"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000005",
+      "name": "leather armor",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: leather armor.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "leather-armor",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "leather armor",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "leather armor"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Weapon Focus (Spear)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Spear).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-spear",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Weapon Focus (Spear)"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "Chosen Weapon +1",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: Chosen Weapon +1.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "chosen-weapon-1",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "customFeature": true,
+          "sourceText": "Chosen Weapon +1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Bond to the Land",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobold gain a +2 dodge bonus to AC when in caves and rocky terrain.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bond-to-the-land",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Cave Dweller",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds have vast knowledge on dungeons and survival and therefore gain a +2 racial bonus on Knowledge (dungeoneering) and Survival checks made underground.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Apply +2 racial bonus to Knowledge (dungeoneering) and Survival checks made underground."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "cave-dweller",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Apply +2 racial bonus to Knowledge (dungeoneering) and Survival checks made underground."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Emissary",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds are decent on making trade offers to the once famous pirates of Lominsa and know exactly how to swindle their way into getting precious metals and ores. Once per day, kobolds can roll twice when making a Bluff or Diplomacy check and take the better roll.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "emissary",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Magic Hammer",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Magic Hammer",
+            "actionType": "rsak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "attackBonus": "",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "mp"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "magic-hammer",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d4",
+                "type": "mp",
+                "raw": "1d4 points of MP damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "rsak",
+              "attackBonus": "",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Master Tinker",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Like goblins, kobolds are excellent at taking things apart, thought not as much as putting them back together and gain a +2 racial bonus on Disable Device skill checks. Kobolds are also treated as proficient with any weapon they have personally “crafted”.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Treated as proficient with any weapon it has personally crafted."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "master-tinker",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "skill.dev",
+                  "type": "racial",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Treated as proficient with any weapon it has personally crafted."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Reckless Work",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds receive a +4 racial bonus on Constitution checks and Fortitude saves to avoid fatigue and exhaustion, as well as any other ill effects from running, forced marches, starvation, thirst, and hot or cold environments.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "savingThrows",
+            "text": "Apply +4 racial bonus on Constitution checks and Fortitude saves against fatigue, exhaustion, forced marches, starvation, thirst, and hot or cold environments."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "reckless-work",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "savingThrows",
+                  "text": "Apply +4 racial bonus on Constitution checks and Fortitude saves against fatigue, exhaustion, forced marches, starvation, thirst, and hot or cold environments."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Thick Hide",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds have thick hair all over them and gain a +1 natural armor bonus to their Armor Class.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "defense",
+            "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "thick-hide",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "defense",
+                  "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000002",
+      "name": "Cave Dweller",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds have vast knowledge on dungeons and survival and therefore gain a +2 racial bonus on Knowledge (dungeoneering) and Survival checks made underground.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Apply +2 racial bonus to Knowledge (dungeoneering) and Survival checks made underground."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "cave-dweller",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Cave Dweller",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000005",
+      "name": "Master Tinker",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Like goblins, kobolds are excellent at taking things apart, thought not as much as putting them back together and gain a +2 racial bonus on Disable Device skill checks. Kobolds are also treated as proficient with any weapon they have personally “crafted”.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.dev",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Treated as proficient with any weapon it has personally crafted."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "master-tinker",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Master Tinker",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000006",
+      "name": "Reckless Work",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds receive a +4 racial bonus on Constitution checks and Fortitude saves to avoid fatigue and exhaustion, as well as any other ill effects from running, forced marches, starvation, thirst, and hot or cold environments.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "savingThrows",
+            "text": "Apply +4 racial bonus on Constitution checks and Fortitude saves against fatigue, exhaustion, forced marches, starvation, thirst, and hot or cold environments."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "reckless-work",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Reckless Work",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000007",
+      "name": "Thick Hide",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobolds have thick hair all over them and gain a +1 natural armor bonus to their Armor Class.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "defense",
+            "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "thick-hide",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Thick Hide",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Kobold Watch",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/kobold-watch.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/humanoids/kobold-family/kobold-watch/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Kobold_Patrolman.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/kobold-watch.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "LE",
+        "creatureType": "Humanoid",
+        "subtypes": [
+          "Kobold"
+        ],
+        "xp": 200,
+        "aura": "",
+        "perception": 0,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., burrow 20 ft.",
+            "Melee Spear +3 (1d8+2/x3)",
+            "Ranged Sling +3 (1d4)",
+            "Space 5 ft.; Reach 5 ft. Special Abilities Magic Hammer, Martial Flexibility (3/day)"
+          ],
+          "speed": "30 ft., burrow 20 ft.",
+          "melee": "Spear +3 (1d8+2/x3)",
+          "ranged": "Sling +3 (1d4)",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 15 (17), touch 12 (14); flat-footed 14 (+2 armor, +2 dex, +1 natural, +2 dodge in caves or rocky terrain)",
+            "hp 7 [10] (1d10+2)",
+            "Fort +3, Ref +2, Will +0, +4 racial bonus on Constitution and Fortitude saves to avoid fatigue and exhaustion;",
+            "Defensive Abilities Bond to the Land, Thick Hide;",
+            "Resist Earth 5;"
+          ],
+          "ac": "AC 15 (17), touch 12 (14); flat-footed 14 (+2 armor, +2 dex, +1 natural, +2 dodge in caves or rocky terrain)",
+          "hp": "hp 7 [10] (1d10+2)",
+          "hitPoints": 7,
+          "hitDice": 1,
+          "saves": "Fort +3, Ref +2, Will +0, +4 racial bonus on Constitution and Fortitude saves to avoid fatigue and exhaustion;",
+          "defensiveAbilities": "Bond to the Land, Thick Hide;",
+          "dr": "",
+          "immunities": "",
+          "resistances": "Earth 5;",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 12, Dex 14, Con 12, Int 12, Wis 10, Cha 8",
+          "Base Atk +1; CMB +2; CMD 14",
+          "Feats Weapon Focus (Spear)",
+          "Skills Acrobatics +6, Knowledge (dungeoneering) +5, Survival +4 (underground +6); Racial Modifiers +2 disable device, +2 Knowledge (dungeoneering), and +2 Survival (underground)",
+          "Languages Common, Goblin, Terran SQ Cave Dweller, Chosen Weapon +1 (Polearms), Emissary, Master Tinker, Reckless Work Gear Cure potion (1), Spear, sling, 10 bullets, leather armor"
+        ],
+        "gear": [
+          {
+            "label": "Gear",
+            "items": "Cure potion (1), Spear, sling, 10 bullets, leather armor"
+          }
+        ],
+        "tactics": [],
+        "ecology": []
+      }
+    }
+  }
+}

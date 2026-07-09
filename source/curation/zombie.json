@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.24",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Zombie",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/undead/zombie-family/zombie/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Zombie.png",
+    "rawSections": {
+      "HEADER": [
+        "Home > Gamemastering > Bestiary > Undead > Zombie Family > Zombie Table of Contents This walking corpse wears only a few soiled rags, its flesh rotting off its bones as it stumbles forward, arms outstretched. Zombie (CR 1/2)",
+        "XP 200",
+        "NE Medium Undead",
+        "Init +0; Senses Darkvision 60 ft.; Perception +0"
+      ],
+      "DEFENSE": [
+        "AC 12, touch 10, flat-footed 12 (+2 natural)",
+        "hp 16 [27] (2d12+3)",
+        "Fort +0, Ref +0, Will +3",
+        "DR 5/slashing;",
+        "Immune Undead Traits",
+        "Weakness Fire and Holy"
+      ],
+      "OFFENSE": [
+        "Speed 30 ft.",
+        "Melee Bite +4 (1d6+4)",
+        "Space 5 ft.; Reach 5 ft.",
+        "Special Attacks Critical Attack, Sickening Breath"
+      ],
+      "TACTICS": [
+        "During Combat The zombie usually picks the closest target unless ordered to pick another."
+      ],
+      "STATISTICS": [
+        "Str 17, Dex 10, Con -, Int -, Wis 10, Cha 10",
+        "Base Atk +1; CMB +4; CMD 14",
+        "Feats Toughness SQ Staggered"
+      ],
+      "SPECIAL ABILITIES": [
+        "Critical Attack (Ex) Once per day as a standard action, the zombie can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d6+4 x 1.5 for total damage.",
+        "Sickening Breath (Su) A zombie can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17).",
+        "Staggered (Ex) Zombies have poor reflexes and can only perform a single move action or standard action each round (it has the staggered condition). A zombie can move up to its speed and attack in the same round as a charge action."
+      ]
+    },
+    "parsed": {
+      "cr": "1/2",
+      "xp": 200,
+      "alignment": "NE",
+      "size": "Medium",
+      "creatureType": "Undead",
+      "subtypes": [],
+      "initiative": 0,
+      "senses": "Darkvision 60 ft.",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 12, touch 10, flat-footed 12 (+2 natural)",
+          "hp 16 [27] (2d12+3)",
+          "Fort +0, Ref +0, Will +3",
+          "DR 5/slashing;",
+          "Immune Undead Traits",
+          "Weakness Fire and Holy"
+        ],
+        "ac": "AC 12, touch 10, flat-footed 12 (+2 natural)",
+        "hp": "hp 16 [27] (2d12+3)",
+        "hitPoints": 16,
+        "hitDice": 2,
+        "saves": "Fort +0, Ref +0, Will +3",
+        "defensiveAbilities": "",
+        "dr": "5/slashing;",
+        "immunities": "Undead Traits",
+        "resistances": "",
+        "weaknesses": "Fire and Holy",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 30 ft.",
+          "Melee Bite +4 (1d6+4)",
+          "Space 5 ft.; Reach 5 ft.",
+          "Special Attacks Critical Attack, Sickening Breath"
+        ],
+        "speed": "30 ft.",
+        "melee": "Bite +4 (1d6+4)",
+        "ranged": "",
+        "space": "Space 5 ft.; Reach 5 ft.",
+        "specialAttacks": "Critical Attack, Sickening Breath",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 17, Dex 10, Con -, Int -, Wis 10, Cha 10",
+        "Base Atk +1; CMB +4; CMD 14",
+        "Feats Toughness SQ Staggered"
+      ],
+      "tactics": [
+        "During Combat The zombie usually picks the closest target unless ordered to pick another."
+      ],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Critical Attack",
+          "type": "ex",
+          "description": "Once per day as a standard action, the zombie can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d6+4 x 1.5 for total damage.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Sickening Breath",
+          "type": "su",
+          "description": "A zombie can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17).",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Staggered",
+          "type": "ex",
+          "description": "Zombies have poor reflexes and can only perform a single move action or standard action each round (it has the staggered condition). A zombie can move up to its speed and attack in the same round as a charge action.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": ""
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": true,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": false,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": true,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "zombie.json",
+    "curationFile": "zombie.json",
+    "pack": "ffd20-expanded-bestiary_undead",
+    "packLabel": "FFD20 Expanded - Undead",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/zombie.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/zombie.png",
+    "traits": {
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "Darkvision 60 ft."
+      },
+      "dr": {
+        "value": [],
+        "custom": "5/slashing;"
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "Undead Traits"
+      ],
+      "dv": [
+        "Fire and Holy"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {},
+    "defenses": {
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "value": 16,
+        "max": 16,
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 2
+      },
+      "savingThrows": {
+        "fort": {
+          "value": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "value": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "value": 3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      }
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Undead"
+      ],
+      "naturalAttacks": [
+        "Bite"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Toughness SQ Staggered"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Critical Attack",
+        "Sickening Breath",
+        "Staggered"
+      ],
+      "buffs": [
+        "Staggered"
+      ],
+      "miscellaneous": []
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Undead",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Undead"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {
+            "blf": true,
+            "clm": true,
+            "dis": true,
+            "fly": true,
+            "int": true,
+            "kar": true,
+            "khi": true,
+            "kre": true,
+            "per": true,
+            "sen": true,
+            "spl": true,
+            "ste": true
+          },
+          "level": 2,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Bite",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 4,
+            "damage": "1d6+4",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Bite",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Toughness SQ Staggered",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Critical Attack",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "floor((1d6+4) * 1.5)",
+              "sourceDamageFormula": "1d6+4",
+              "multiplier": "1.5",
+              "raw": "damage is 1d6+4 x 1.5"
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Critical Attack",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "floor((1d6 + floor(@abilities.str.mod * 1.5)) * 1.5)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "effectNotes": [
+                "Uses Bite attack.",
+                "Source damage: damage is 1d6+4 x 1.5.",
+                "Dynamic damage: source +4 derived as floor(@abilities.str.mod * 1.5)."
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Sickening Breath",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Su",
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 11,
+                "raw": "Fortitude save (DC 11)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 11,
+                "expectedDc": 11
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17)."
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Sickening Breath",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": null,
+                "units": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates a -2 penalty to Attack rolls and skill checks for 1d4 rounds"
+              },
+              "effectNotes": [
+                "Duration: 1d4 rounds"
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000003",
+        "name": "Staggered",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Always staggered: can only take one move action or one standard action each round."
+                },
+                {
+                  "target": "misc",
+                  "text": "May still move up to speed and attack in the same round as a charge action."
+                }
+              ],
+              "automationNotes": []
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Always staggered: can only take one move action or one standard action each round."
+            },
+            {
+              "target": "misc",
+              "text": "May still move up to speed and attack in the same round as a charge action."
+            }
+          ],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000003",
+        "name": "Staggered",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Staggered",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Always staggered: can only take one move action or one standard action each round."
+            },
+            {
+              "target": "misc",
+              "text": "May still move up to speed and attack in the same round as a charge action."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Zombie is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "1/2",
+      "size": "Medium",
+      "type": "Undead",
+      "alignment": "NE",
+      "primarySourceAttacks": [
+        "Bite +4 (1d6+4)"
+      ],
+      "specialAbilityNames": [
+        "Critical Attack",
+        "Sickening Breath",
+        "Staggered"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

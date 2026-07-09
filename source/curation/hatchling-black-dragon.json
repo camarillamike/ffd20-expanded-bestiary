@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.21",
+  "moduleVersion": "0.1.22",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hatchling Black Dragon",
@@ -556,7 +556,7 @@
                 "raw": "Reflex DC 11",
                 "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "ability": "con",
-                "confidence": "default-monster-con-floor",
+                "confidence": "default-na-con-floor",
                 "base": 11,
                 "expectedDc": 11
               }
@@ -679,13 +679,8 @@
                 "raw": "Will save (DC 13)",
                 "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "ability": "cha",
-                "confidence": "derived-preferred-floor",
+                "confidence": "default-su-cha-floor",
                 "base": 11,
-                "neededMod": 2,
-                "candidates": [
-                  "cha:floor",
-                  "cha:minimum-one"
-                ],
                 "expectedDc": 13
               }
             ],

@@ -822,7 +822,7 @@
               ]
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
               "type": "fort",
               "description": "Negates the spell they were casting gets interrupted (only affects spells up to 2nd level)"
             },
@@ -880,9 +880,9 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "No printed DC; generated from default monster DC.",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-unprinted-floor",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-unprinted-su-wis-floor",
                 "base": 10,
                 "expectedDc": 11
               }

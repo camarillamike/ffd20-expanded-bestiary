@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.21",
+  "moduleVersion": "0.1.22",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Crab",
@@ -475,9 +475,12 @@
             "saveDCs": [],
             "damages": [
               {
-                "formula": "1d2-2",
+                "formula": "1d2 + @abilities.str.mod",
                 "type": "bludgeoning",
-                "raw": "1d2-2 bludgeoning damage"
+                "raw": "1d2-2 bludgeoning damage",
+                "sourceFormula": "1d2-2",
+                "damageAbility": "str",
+                "damageAbilityReason": "single-matching-ability-mod"
               }
             ],
             "healing": []
@@ -499,7 +502,7 @@
               },
               "damage": [
                 {
-                  "formula": "1d2-2",
+                  "formula": "1d2 + @abilities.str.mod",
                   "types": [
                     "bludgeoning"
                   ]

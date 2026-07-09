@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.21",
+  "moduleVersion": "0.1.22",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Tonberry",
@@ -541,9 +541,9 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "Fortitude save DC 11",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-monster-con-floor",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
                 "base": 10,
                 "expectedDc": 11
               }
@@ -588,7 +588,7 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "description": "Half damage"
               }
             }
@@ -619,7 +619,7 @@
                 "raw": "Fortitude save (DC 11)",
                 "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "ability": "con",
-                "confidence": "default-monster-con-floor",
+                "confidence": "default-ex-con-floor",
                 "base": 10,
                 "expectedDc": 11
               }

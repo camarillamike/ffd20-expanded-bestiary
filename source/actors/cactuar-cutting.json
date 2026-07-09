@@ -550,7 +550,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d4+1",
+                  "formula": "1d4 + @abilities.con.mod",
                   "types": [
                     "piercing"
                   ]
@@ -622,21 +622,19 @@
                 "raw": "Reflex save DC 9",
                 "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "ability": "cha",
-                "confidence": "derived-preferred-floor",
+                "confidence": "default-su-cha-floor",
                 "base": 10,
-                "neededMod": -1,
-                "candidates": [
-                  "cha:floor",
-                  "wis:minimum-one"
-                ],
                 "expectedDc": 9
               }
             ],
             "damages": [
               {
-                "formula": "1d4+1",
+                "formula": "1d4 + @abilities.con.mod",
                 "type": "piercing",
-                "raw": "1d4+1 points of piercing damage"
+                "raw": "1d4+1 points of piercing damage",
+                "sourceFormula": "1d4+1",
+                "damageAbility": "con",
+                "damageAbilityReason": "single-matching-ability-mod"
               }
             ],
             "healing": [],

@@ -2341,7 +2341,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d6+2",
+                  "formula": "1d6 + @abilities.int.mod",
                   "types": [
                     "water"
                   ]
@@ -2349,7 +2349,7 @@
               ]
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
               "type": "fort",
               "description": "Negates drenched for 1d4 rounds"
             },
@@ -2417,18 +2417,21 @@
                 "save": "fort",
                 "dc": 12,
                 "raw": "Fortitude save (DC 12)",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-monster-con-floor",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
+                "ability": "int",
+                "confidence": "default-su-int-floor",
                 "base": 10,
                 "expectedDc": 12
               }
             ],
             "damages": [
               {
-                "formula": "1d6+2",
+                "formula": "1d6 + @abilities.int.mod",
                 "type": "water",
-                "raw": "1d6+2 water damage"
+                "raw": "1d6+2 water damage",
+                "sourceFormula": "1d6+2",
+                "damageAbility": "int",
+                "damageAbilityReason": "matches-save-dc-ability"
               }
             ],
             "healing": [],

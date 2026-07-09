@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.21",
+  "moduleVersion": "0.1.22",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Skeleton",
@@ -606,9 +606,9 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
-                "ability": "cha",
-                "confidence": "default-undead-cha-minimum-one",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-minimum-one",
                 "base": 11,
                 "expectedDc": 11
               }
@@ -654,7 +654,7 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
                 "description": "Negates 1d3+1 MP drain"
               },
               "effectNotes": [

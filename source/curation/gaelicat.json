@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.24",
+  "moduleVersion": "0.1.25",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Gaelicat",
@@ -91,9 +91,9 @@
         {
           "name": "Cat Scratch",
           "type": "ex",
-          "description": "Once per day as a standard action, a gaelicat can claw twice (+4 to hit per claw) in an arc hitting all enemies within a 10-ft.-cone doing 1d3 per claw if they hit. Familiar The master of a gaelicat familiar gains a +2 bonus on Reflex saves.",
+          "description": "Once per day as a standard action, a gaelicat can claw twice (+4 to hit per claw) in an arc hitting all enemies within a 10-ft.-cone doing 1d3 per claw if they hit.",
           "notes": {
-            "familiar": ""
+            "familiar": "The master of a gaelicat familiar gains a +2 bonus on Reflex saves."
           }
         }
       ],
@@ -259,8 +259,8 @@
       "inventory": [],
       "spells": [],
       "feats": [
-        "Toughness*",
-        "Weapon Finesse *Bonus feat"
+        "Toughness",
+        "Weapon Finesse"
       ],
       "specialQualities": [],
       "specialAttacks": [],
@@ -429,7 +429,7 @@
       },
       {
         "id": "feat000000000001",
-        "name": "Toughness*",
+        "name": "Toughness",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -456,7 +456,7 @@
       },
       {
         "id": "feat000000000002",
-        "name": "Weapon Finesse *Bonus feat",
+        "name": "Weapon Finesse",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -531,7 +531,41 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Cat Scratch",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": 10,
+                "units": "ft",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "10-ft. cone"
+              },
+              "damage": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "claw 2",
+                  "formula": "0"
+                }
+              ],
+              "effectNotes": [
+                "Area: 10-ft. cone",
+                "Roll two claw attacks at the listed bonus; each hit deals the listed damage."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [],
           "classSkills": {}

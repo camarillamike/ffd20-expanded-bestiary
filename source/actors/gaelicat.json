@@ -552,12 +552,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Toughness*",
+      "name": "Toughness",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Toughness*.</p>",
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -608,12 +608,12 @@
     },
     {
       "_id": "feat000000000002",
-      "name": "Weapon Finesse *Bonus feat",
+      "name": "Weapon Finesse",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Weapon Finesse *Bonus feat.</p>",
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -631,7 +631,7 @@
         "links": {
           "charges": []
         },
-        "tag": "weapon-finesse-bonus-feat",
+        "tag": "weapon-finesse",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -726,10 +726,101 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Once per day as a standard action, a gaelicat can claw twice (+4 to hit per claw) in an arc hitting all enemies within a 10-ft.-cone doing 1d3 per claw if they hit. Familiar The master of a gaelicat familiar gains a +2 bonus on Reflex saves.</p>",
+          "value": "<p>Once per day as a standard action, a gaelicat can claw twice (+4 to hit per claw) in an arc hitting all enemies within a 10-ft.-cone doing 1d3 per claw if they hit.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Cat Scratch",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "10-ft. cone"
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Area: 10-ft. cone",
+                "Roll two claw attacks at the listed bonus; each hit deals the listed damage."
+              ],
+              "footer": [
+                "Source statblock: Claw +4 (1d3-2)"
+              ]
+            },
+            "effectNotes": [
+              "Area: 10-ft. cone",
+              "Roll two claw attacks at the listed bonus; each hit deals the listed damage."
+            ],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 10
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {

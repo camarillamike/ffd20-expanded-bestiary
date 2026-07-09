@@ -48,8 +48,8 @@
       },
       "naturalAC": 1,
       "hp": {
-        "value": 0,
-        "max": 0,
+        "value": 5,
+        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -61,7 +61,7 @@
         "offset": 0
       },
       "hd": {
-        "total": 0
+        "total": 1
       },
       "savingThrows": {
         "fort": {
@@ -562,7 +562,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 1,
+        "hp": 3,
         "classCastingStat": "wis",
         "classBaseMPTypes": "pacman",
         "classBaseMPauto": "no",
@@ -629,7 +629,7 @@
         "ffd20-bestiary-builder": {
           "generatedRacialHitDice": true,
           "profile": "Humanoid",
-          "sourceHitPoints": null,
+          "sourceHitPoints": 5,
           "sourceHitDice": 1,
           "spellcasting": {
             "kind": "semi",
@@ -639,7 +639,7 @@
             "classBaseMPType": "pacman",
             "baseMp": 1,
             "finalMp": 2,
-            "printedMp": null,
+            "printedMp": 4,
             "chartBaseMp": 1,
             "maxSpellLevel": 1,
             "mpSource": "monster-chart-plus-ability-bonus",
@@ -2571,7 +2571,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "spell",
+            "text": "Spellcasting proficiency/quality from the source statblock; use the actor's configured spellbook and listed spells."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -2596,6 +2601,13 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
           "customFeature": true,
           "sourceText": "Spell Proficiency"
         }
@@ -2608,7 +2620,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Special quality listed in the source statblock: White Magery.</p>",
+          "value": "<p>Special quality listed in the source statblock: White Magery (Increased Healing +1).</p>",
           "instructions": ""
         },
         "actions": [],
@@ -2622,7 +2634,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "spell",
+            "text": "Apply the source statblock's listed White Magery healing benefit to matching white magic spells."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -2647,8 +2664,15 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
           "customFeature": true,
-          "sourceText": "White Magery"
+          "sourceText": "White Magery (Increased Healing +1)"
         }
       }
     },
@@ -2673,7 +2697,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "defense",
+            "text": "Defensive ability listed by the source statblock. Use the hydrated compendium item if available; otherwise resolve from source rules during play."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -2698,6 +2727,13 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
           "customFeature": true,
           "sourceText": "Feathers of Gale"
         }
@@ -3363,9 +3399,9 @@
             "Resist Water 5"
           ],
           "ac": "AC 11, touch 10, flat-footed 11 (+1 natural) HP 5 [8] (1d6+2) MP 4",
-          "hp": "",
-          "hitPoints": null,
-          "hitDice": null,
+          "hp": "AC 11, touch 10, flat-footed 11 (+1 natural) HP 5 [8] (1d6+2) MP 4",
+          "hitPoints": 5,
+          "hitDice": 1,
           "saves": "Fort +2, Reflex +0, Will +4",
           "defensiveAbilities": "Feathers of Gale;",
           "dr": "",

@@ -409,12 +409,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Toughness*",
+      "name": "Toughness",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Toughness*.</p>",
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -465,12 +465,12 @@
     },
     {
       "_id": "feat000000000002",
-      "name": "Weapon Finesse *Bonus Feat",
+      "name": "Weapon Finesse",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Weapon Finesse *Bonus Feat.</p>",
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -488,7 +488,7 @@
         "links": {
           "charges": []
         },
-        "tag": "weapon-finesse-bonus-feat",
+        "tag": "weapon-finesse",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -914,7 +914,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a mu familiar gains a +3 bonus on sleight of hand checks.</p>",
+          "value": "<p>The master of a mu</p>",
           "instructions": ""
         },
         "actions": [],
@@ -928,7 +928,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master benefit: The master of a mu"
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -954,7 +959,17 @@
         "ffd20-bestiary-builder": {
           "specialAbility": {
             "category": "passive",
-            "buff": null,
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Familiar master benefit: The master of a mu"
+                }
+              ],
+              "automationNotes": []
+            },
             "uses": null,
             "saveDCs": [],
             "damages": [],
@@ -1019,6 +1034,70 @@
               }
             },
             "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000003",
+      "name": "Familiar",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a mu</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master benefit: The master of a mu"
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "familiar",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Familiar",
+            "category": "passive",
+            "automationNotes": []
           }
         }
       }

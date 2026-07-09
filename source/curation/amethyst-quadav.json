@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.24",
+  "moduleVersion": "0.1.25",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amethyst Quadav",
@@ -58,9 +58,9 @@
           "Resist Water 5"
         ],
         "ac": "AC 11, touch 10, flat-footed 11 (+1 natural) HP 5 [8] (1d6+2) MP 4",
-        "hp": "",
-        "hitPoints": null,
-        "hitDice": null,
+        "hp": "AC 11, touch 10, flat-footed 11 (+1 natural) HP 5 [8] (1d6+2) MP 4",
+        "hitPoints": 5,
+        "hitDice": 1,
         "saves": "Fort +2, Reflex +0, Will +4",
         "defensiveAbilities": "Feathers of Gale;",
         "dr": "",
@@ -223,8 +223,8 @@
       },
       "naturalAC": 1,
       "hp": {
-        "value": 0,
-        "max": 0,
+        "value": 5,
+        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -236,7 +236,7 @@
         "offset": 0
       },
       "hd": {
-        "total": 0
+        "total": 1
       },
       "savingThrows": {
         "fort": {
@@ -1392,13 +1392,28 @@
         "generatedFlags": [
           "generatedSpecialQuality"
         ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
         "sourceFlagData": {
           "customFeature": true
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "spell",
+              "text": "Spellcasting proficiency/quality from the source statblock; use the actor's configured spellbook and listed spells."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -1412,13 +1427,28 @@
         "generatedFlags": [
           "generatedSpecialQuality"
         ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
         "sourceFlagData": {
           "customFeature": true
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "spell",
+              "text": "Apply the source statblock's listed White Magery healing benefit to matching white magic spells."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -1432,13 +1462,28 @@
         "generatedFlags": [
           "generatedDefensiveAbility"
         ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
         "sourceFlagData": {
           "customFeature": true
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "defense",
+              "text": "Defensive ability listed by the source statblock. Use the hydrated compendium item if available; otherwise resolve from source rules during play."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []

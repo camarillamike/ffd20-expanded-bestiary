@@ -395,12 +395,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Toughness* *Bonus Feat SQ camouflage",
+      "name": "Toughness",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Toughness* *Bonus Feat SQ camouflage.</p>",
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -418,7 +418,7 @@
         "links": {
           "charges": []
         },
-        "tag": "toughness-bonus-feat-sq-camouflage",
+        "tag": "toughness",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -527,7 +527,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -556,7 +561,17 @@
           "sourceText": "Constrict (1d3)",
           "specialAbility": {
             "category": "passive",
-            "buff": null,
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+                }
+              ],
+              "automationNotes": []
+            },
             "uses": null,
             "saveDCs": [],
             "damages": [],
@@ -645,7 +660,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -759,7 +779,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant. Familiar The master of an ivy familiar gains a +3 bonus on stealth checks.</p>",
+          "value": "<p>Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -803,7 +823,7 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "specialAbility": {
-            "category": "toggle",
+            "category": "passive",
             "buff": {
               "active": true,
               "changes": [],
@@ -890,7 +910,7 @@
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant. Familiar The master of an ivy familiar gains a +3 bonus on stealth checks.</p>",
+          "value": "<p>Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -925,7 +945,7 @@
           "children": []
         },
         "tag": "camouflage",
-        "subType": "temp",
+        "subType": "perm",
         "active": true,
         "level": 0,
         "duration": {
@@ -941,7 +961,7 @@
         "ffd20-bestiary-builder": {
           "generatedBuff": {
             "sourceAbility": "Camouflage",
-            "category": "toggle",
+            "category": "passive",
             "automationNotes": []
           }
         }

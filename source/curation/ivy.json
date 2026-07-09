@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.24",
+  "moduleVersion": "0.1.25",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Ivy",
@@ -94,9 +94,9 @@
         {
           "name": "Camouflage",
           "type": "ex",
-          "description": "Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant. Familiar The master of an ivy familiar gains a +3 bonus on stealth checks.",
+          "description": "Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant.",
           "notes": {
-            "familiar": ""
+            "familiar": "The master of an ivy familiar gains a +3 bonus on stealth checks."
           }
         }
       ],
@@ -252,7 +252,7 @@
       "inventory": [],
       "spells": [],
       "feats": [
-        "Toughness* *Bonus Feat SQ camouflage"
+        "Toughness"
       ],
       "specialQualities": [],
       "specialAttacks": [
@@ -363,7 +363,7 @@
       },
       {
         "id": "feat000000000001",
-        "name": "Toughness* *Bonus Feat SQ camouflage",
+        "name": "Toughness",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -429,13 +429,29 @@
             "category": "passive",
             "saveDCs": [],
             "damages": [],
-            "healing": []
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+                }
+              ],
+              "automationNotes": []
+            }
           }
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -473,7 +489,12 @@
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply grab on the listed natural attack hit."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -489,7 +510,7 @@
         ],
         "sourceFlagData": {
           "specialAbility": {
-            "category": "toggle",
+            "category": "passive",
             "sourceType": "Ex",
             "saveDCs": [],
             "damages": [],
@@ -524,7 +545,7 @@
         "id": "bf00000000000001",
         "name": "Camouflage",
         "type": "buff",
-        "subType": "temp",
+        "subType": "perm",
         "category": "buffs",
         "generatedFlags": [
           "generatedBuff"
@@ -532,7 +553,7 @@
         "sourceFlagData": {
           "buff": {
             "sourceAbility": "Camouflage",
-            "category": "toggle",
+            "category": "passive",
             "automationNotes": []
           }
         },

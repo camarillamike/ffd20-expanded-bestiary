@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.24",
+  "moduleVersion": "0.1.25",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -348,6 +348,7 @@
         "Thick Hide"
       ],
       "buffs": [
+        "Bond to the Land",
         "Cave Dweller",
         "Master Tinker",
         "Reckless Work",
@@ -725,13 +726,28 @@
         "generatedFlags": [
           "generatedSpecialQuality"
         ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
         "sourceFlagData": {
           "customFeature": true
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply the listed chosen weapon bonus to attacks with the source weapon group if it is not already included in the statblock."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -747,17 +763,41 @@
         ],
         "sourceFlagData": {
           "specialAbility": {
-            "category": "passive",
+            "category": "toggle",
             "sourceType": "Ex",
             "saveDCs": [],
             "damages": [],
-            "healing": []
+            "healing": [],
+            "buff": {
+              "active": false,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "ac",
+                  "type": "dodge",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Only applies in caves and rocky terrain."
+                }
+              ],
+              "automationNotes": []
+            }
           }
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Only applies in caves and rocky terrain."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -1032,6 +1072,42 @@
         "reviewNotes": []
       },
       {
+        "id": "bf00000000000001",
+        "name": "Bond to the Land",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Bond to the Land",
+            "category": "toggle",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "ac",
+              "formula": "2",
+              "type": "dodge",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Only applies in caves and rocky terrain."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "bf00000000000002",
         "name": "Cave Dweller",
         "type": "buff",
@@ -1157,7 +1233,7 @@
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 21 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 22 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

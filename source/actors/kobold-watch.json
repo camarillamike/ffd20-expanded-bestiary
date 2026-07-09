@@ -999,7 +999,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Special quality listed in the source statblock: Chosen Weapon +1.</p>",
+          "value": "<p>Special quality listed in the source statblock: Chosen Weapon +1 (Polearms).</p>",
           "instructions": ""
         },
         "actions": [],
@@ -1013,7 +1013,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply the listed chosen weapon bonus to attacks with the source weapon group if it is not already included in the statblock."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -1038,8 +1043,15 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
           "customFeature": true,
-          "sourceText": "Chosen Weapon +1"
+          "sourceText": "Chosen Weapon +1 (Polearms)"
         }
       }
     },
@@ -1064,7 +1076,12 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Only applies in caves and rocky terrain."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -1089,8 +1106,26 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "specialAbility": {
-            "category": "passive",
-            "buff": null,
+            "category": "toggle",
+            "buff": {
+              "active": false,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "ac",
+                  "type": "dodge",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Only applies in caves and rocky terrain."
+                }
+              ],
+              "automationNotes": []
+            },
             "uses": null,
             "saveDCs": [],
             "damages": [],
@@ -1985,6 +2020,78 @@
               }
             },
             "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000001",
+      "name": "Bond to the Land",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobold gain a +2 dodge bonus to AC when in caves and rocky terrain.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Only applies in caves and rocky terrain."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "bond-to-the-land",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Bond to the Land",
+            "category": "toggle",
+            "automationNotes": []
           }
         }
       }

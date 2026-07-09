@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.24",
+  "moduleVersion": "0.1.25",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Mu",
@@ -107,9 +107,9 @@
         {
           "name": "Familiar",
           "type": "ex",
-          "description": "The master of a mu familiar gains a +3 bonus on sleight of hand checks.",
+          "description": "The master of a mu",
           "notes": {
-            "familiar": ""
+            "familiar": "gains a +3 bonus on sleight of hand checks."
           }
         }
       ],
@@ -274,8 +274,8 @@
       "inventory": [],
       "spells": [],
       "feats": [
-        "Toughness*",
-        "Weapon Finesse *Bonus Feat"
+        "Toughness",
+        "Weapon Finesse"
       ],
       "specialQualities": [],
       "specialAttacks": [],
@@ -286,7 +286,9 @@
         "Critical Attack",
         "Familiar"
       ],
-      "buffs": [],
+      "buffs": [
+        "Familiar"
+      ],
       "miscellaneous": []
     },
     "items": [
@@ -386,7 +388,7 @@
       },
       {
         "id": "feat000000000001",
-        "name": "Toughness*",
+        "name": "Toughness",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -413,7 +415,7 @@
       },
       {
         "id": "feat000000000002",
-        "name": "Weapon Finesse *Bonus Feat",
+        "name": "Weapon Finesse",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -581,21 +583,66 @@
             "sourceType": "Ex",
             "saveDCs": [],
             "damages": [],
-            "healing": []
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Familiar master benefit: The master of a mu"
+                }
+              ],
+              "automationNotes": []
+            }
           }
         },
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Familiar master benefit: The master of a mu"
+            }
+          ],
           "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000003",
+        "name": "Familiar",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Familiar",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Familiar master benefit: The master of a mu"
+            }
+          ],
+          "level": 0
         },
         "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Mu is packaged as an FFD20 NPC actor with 7 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Mu is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
@@ -616,6 +663,7 @@
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],
     "unresolved": [],

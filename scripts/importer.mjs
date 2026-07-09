@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.24";
+const MODULE_VERSION = "0.1.25";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -22,6 +22,8 @@ const MANAGED_PACKS = {
 const COMPENDIUM_LOOKUP_TYPES = new Set(["feat", "buff", "class", "race", "spell", "weapon", "equipment", "consumable", "loot", "attack"]);
 const REPLACEABLE_GENERATED_FLAGS = [
   "generatedFeat",
+  "generatedSpecialQuality",
+  "generatedDefensiveAbility",
   "generatedSpellReference",
   "generatedInventoryItem",
 ];

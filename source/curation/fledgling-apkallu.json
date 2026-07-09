@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Fledgling Apkallu",
@@ -216,6 +216,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -269,9 +276,7 @@
         "Skill Focus (Perception)"
       ],
       "specialQualities": [],
-      "specialAttacks": [
-        "Flying Sardines"
-      ],
+      "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
         "Familiar"
@@ -436,33 +441,6 @@
         "reviewNotes": []
       },
       {
-        "id": "spatk00000000001",
-        "name": "Flying Sardines",
-        "type": "feat",
-        "subType": "racial",
-        "category": "specialAttacks",
-        "generatedFlags": [
-          "generatedSpecialAttack",
-          "specialAbility"
-        ],
-        "sourceFlagData": {
-          "customFeature": true,
-          "specialAbility": {
-            "category": "passive",
-            "saveDCs": [],
-            "damages": [],
-            "healing": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
         "id": "sa00000000000001",
         "name": "Hold Breath",
         "type": "feat",
@@ -559,7 +537,18 @@
           "specialAbility": {
             "category": "toggle",
             "sourceType": "Su",
-            "saveDCs": [],
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 11,
+                "raw": "No printed DC; generated from default monster DC.",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-unprinted-floor",
+                "base": 10,
+                "expectedDc": 11
+              }
+            ],
             "damages": [
               {
                 "formula": "1",
@@ -576,7 +565,7 @@
             {
               "name": "Flying Sardine",
               "actionType": "save",
-              "activation": "standard",
+              "activation": "immediate",
               "touch": false,
               "range": {
                 "value": 10,
@@ -595,8 +584,8 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "",
-                "description": ""
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "description": "DC 11"
               }
             }
           ],
@@ -667,7 +656,7 @@
     ]
   },
   "curation": {
-    "summary": "Fledgling Apkallu is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Fledgling Apkallu is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",

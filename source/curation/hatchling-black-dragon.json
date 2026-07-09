@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hatchling Black Dragon",
@@ -193,7 +193,9 @@
         "Holy"
       ],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Draconic"
+      ],
       "stature": "tall"
     },
     "skills": {
@@ -228,6 +230,13 @@
         "value": 25,
         "max": 25,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -545,9 +554,9 @@
                 "save": "ref",
                 "dc": 11,
                 "raw": "Reflex DC 11",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "ability": "con",
-                "confidence": "default-monster-con",
+                "confidence": "default-monster-con-floor",
                 "base": 11,
                 "expectedDc": 11
               }
@@ -559,7 +568,14 @@
                 "raw": "1d10 shadow damage"
               }
             ],
-            "healing": []
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            }
           }
         },
         "mechanics": {
@@ -586,7 +602,7 @@
               ],
               "save": {
                 "type": "ref",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "DC 11"
               },
               "effectNotes": [
@@ -660,13 +676,14 @@
                 "save": "will",
                 "dc": 13,
                 "raw": "Will save (DC 13)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "ability": "cha",
-                "confidence": "derived",
+                "confidence": "derived-preferred-floor",
                 "base": 11,
                 "neededMod": 2,
                 "candidates": [
-                  "cha"
+                  "cha:floor",
+                  "cha:minimum-one"
                 ],
                 "expectedDc": 13
               }
@@ -700,7 +717,7 @@
               "damage": [],
               "save": {
                 "type": "will",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "description": "DC 13"
               },
               "effectNotes": [

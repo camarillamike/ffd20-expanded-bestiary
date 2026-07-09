@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -509,116 +516,6 @@
       }
     },
     {
-      "_id": "spatk00000000001",
-      "name": "Flying Sardines",
-      "type": "feat",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Special attack listed in the source statblock: Flying Sardines.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "contextNotes": [],
-        "links": {
-          "charges": []
-        },
-        "tag": "flying-sardines",
-        "subType": "racial",
-        "traitType": "",
-        "traitCategory": "",
-        "racePoints": null,
-        "abilityType": "na",
-        "associations": {
-          "classes": []
-        },
-        "showInQuickbar": false,
-        "crOffset": "",
-        "inherited": false,
-        "acquired": false,
-        "simple": false,
-        "summons": false,
-        "disabled": false,
-        "classSkills": {}
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedSpecialAttack": true,
-          "customFeature": true,
-          "sourceText": "Flying Sardines",
-          "specialAbility": {
-            "category": "passive",
-            "buff": null,
-            "uses": null,
-            "saveDCs": [],
-            "damages": [],
-            "healing": [],
-            "attack": null,
-            "criticalAttack": null,
-            "requiresSave": false,
-            "saveType": null,
-            "blueMage": "",
-            "range": {
-              "value": null,
-              "units": ""
-            },
-            "target": {
-              "value": ""
-            },
-            "duration": null,
-            "abilityScores": {
-              "str": {
-                "value": 9,
-                "mod": -1,
-                "missing": false,
-                "raw": "9"
-              },
-              "dex": {
-                "value": 12,
-                "mod": 1,
-                "missing": false,
-                "raw": "12"
-              },
-              "con": {
-                "value": 13,
-                "mod": 1,
-                "missing": false,
-                "raw": "13"
-              },
-              "int": {
-                "value": 2,
-                "mod": -4,
-                "missing": false,
-                "raw": "2"
-              },
-              "wis": {
-                "value": 12,
-                "mod": 1,
-                "missing": false,
-                "raw": "12"
-              },
-              "cha": {
-                "value": 7,
-                "mod": -2,
-                "missing": false,
-                "raw": "7"
-              }
-            }
-          }
-        }
-      }
-    },
-    {
       "_id": "sa00000000000001",
       "name": "Hold Breath",
       "type": "feat",
@@ -686,6 +583,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -809,6 +714,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -880,7 +793,7 @@
             "actionType": "save",
             "activation": {
               "cost": 1,
-              "type": "standard",
+              "type": "immediate",
               "unchained": {
                 "cost": 1,
                 "type": "action"
@@ -908,9 +821,9 @@
               ]
             },
             "save": {
-              "dc": "",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "DC 11"
             },
             "effectNotes": [],
             "measureTemplate": {
@@ -957,7 +870,18 @@
             "category": "toggle",
             "buff": null,
             "uses": null,
-            "saveDCs": [],
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 11,
+                "raw": "No printed DC; generated from default monster DC.",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-unprinted-floor",
+                "base": 10,
+                "expectedDc": 11
+              }
+            ],
             "damages": [
               {
                 "formula": "1",
@@ -967,6 +891,14 @@
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": true,
             "saveType": "fort",

@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 3
       },
@@ -178,7 +185,9 @@
         "Holy"
       ],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Draconic"
+      ],
       "stature": "tall"
     },
     "currency": {
@@ -733,7 +742,7 @@
               ]
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "ref",
               "description": "DC 11"
             },
@@ -749,11 +758,11 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": null,
+          "value": 1,
           "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
+          "maxFormula": "1",
+          "rechargeFormula": "1d4",
+          "rechargePeriod": "rounds"
         },
         "changes": [],
         "contextNotes": [],
@@ -786,15 +795,21 @@
           "specialAbility": {
             "category": "passive",
             "buff": null,
-            "uses": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
             "saveDCs": [
               {
                 "save": "ref",
                 "dc": 11,
                 "raw": "Reflex DC 11",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "ability": "con",
-                "confidence": "default-monster-con",
+                "confidence": "default-monster-con-floor",
                 "base": 11,
                 "expectedDc": 11
               }
@@ -808,6 +823,14 @@
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -930,6 +953,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -1022,7 +1053,7 @@
               "parts": []
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
               "type": "will",
               "description": "DC 13"
             },
@@ -1084,13 +1115,14 @@
                 "save": "will",
                 "dc": 13,
                 "raw": "Will save (DC 13)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "ability": "cha",
-                "confidence": "derived",
+                "confidence": "derived-preferred-floor",
                 "base": 11,
                 "neededMod": 2,
                 "candidates": [
-                  "cha"
+                  "cha:floor",
+                  "cha:minimum-one"
                 ],
                 "expectedDc": 13
               }
@@ -1098,6 +1130,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": "will",

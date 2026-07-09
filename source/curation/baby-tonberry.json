@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Tonberry",
@@ -33,9 +33,9 @@
         "Languages Tonberry; telepathy 30 ft. Gear Tiny butcher knife, lantern"
       ],
       "SPECIAL ABILITIES": [
-        "Baby’s",
-        "Grudge (Su) 1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage). Chef’s",
-        "Knife (Ex) Once per round, a baby tonberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 11) or takes the shaken status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby tonberry, who has finesse training with it. Familiar The master of a baby tonberry familiar gains a +4 bonus on Initiative checks."
+        "Baby's Grudge (Su) 1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage).",
+        "Chef's Knife (Ex) Once per round, a baby tonberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 11) or takes the shaken status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby tonberry, who has finesse training with it.",
+        "Familiar The master of a baby tonberry familiar gains a +4 bonus on Initiative checks."
       ]
     },
     "parsed": {
@@ -100,17 +100,17 @@
       ],
       "specialAbilities": [
         {
-          "name": "Grudge",
+          "name": "Baby's Grudge",
           "type": "su",
-          "description": "1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage). Chef’s",
+          "description": "1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage).",
           "notes": {
             "familiar": ""
           }
         },
         {
-          "name": "Knife",
+          "name": "Chef's Knife",
           "type": "ex",
-          "description": "Once per round, a baby tonberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 11) or takes the shaken status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby tonberry, who has finesse training with it. Familiar The master of a baby tonberry familiar gains a +4 bonus on Initiative checks.",
+          "description": "Once per round, a baby tonberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 11) or takes the shaken status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby tonberry, who has finesse training with it.",
           "notes": {
             "familiar": ""
           }
@@ -194,7 +194,10 @@
       ],
       "dv": [],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Tonberry",
+        "telepathy 30 ft."
+      ],
       "stature": "tall"
     },
     "skills": {
@@ -221,6 +224,13 @@
         "value": 6,
         "max": 6,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -279,17 +289,14 @@
         "Weapon Finesse"
       ],
       "specialQualities": [],
-      "specialAttacks": [
-        "Chef's Knife",
-        "Baby's Grudge"
-      ],
+      "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
         "Familiar"
       ],
       "specialAbilities": [
-        "Grudge",
-        "Knife"
+        "Baby's Grudge",
+        "Chef's Knife"
       ],
       "buffs": [],
       "miscellaneous": []
@@ -383,7 +390,7 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "untyped"
+                    "slashing"
                   ]
                 }
               ]
@@ -517,62 +524,8 @@
         "reviewNotes": []
       },
       {
-        "id": "spatk00000000001",
-        "name": "Chef's Knife",
-        "type": "feat",
-        "subType": "racial",
-        "category": "specialAttacks",
-        "generatedFlags": [
-          "generatedSpecialAttack",
-          "specialAbility"
-        ],
-        "sourceFlagData": {
-          "customFeature": true,
-          "specialAbility": {
-            "category": "passive",
-            "saveDCs": [],
-            "damages": [],
-            "healing": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "spatk00000000002",
-        "name": "Baby's Grudge",
-        "type": "feat",
-        "subType": "racial",
-        "category": "specialAttacks",
-        "generatedFlags": [
-          "generatedSpecialAttack",
-          "specialAbility"
-        ],
-        "sourceFlagData": {
-          "customFeature": true,
-          "specialAbility": {
-            "category": "passive",
-            "saveDCs": [],
-            "damages": [],
-            "healing": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
         "id": "sa00000000000001",
-        "name": "Grudge",
+        "name": "Baby's Grudge",
         "type": "feat",
         "subType": "racial",
         "category": "specialAbilities",
@@ -583,17 +536,23 @@
           "specialAbility": {
             "category": "passive",
             "sourceType": "Su",
-            "saveDCs": [],
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 11,
+                "raw": "Fortitude save DC 11",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con-floor",
+                "base": 10,
+                "expectedDc": 11
+              }
+            ],
             "damages": [
               {
                 "formula": "1d4",
                 "type": "shadow",
                 "raw": "1d4 points of shadow damage"
-              },
-              {
-                "formula": "11",
-                "type": "for-half",
-                "raw": "11 for half damage"
               }
             ],
             "healing": [],
@@ -608,8 +567,8 @@
         "mechanics": {
           "actions": [
             {
-              "name": "Grudge",
-              "actionType": "other",
+              "name": "Baby's Grudge",
+              "actionType": "save",
               "activation": "standard",
               "touch": false,
               "range": {
@@ -625,18 +584,12 @@
                   "types": [
                     "shadow"
                   ]
-                },
-                {
-                  "formula": "11",
-                  "types": [
-                    "for-half"
-                  ]
                 }
               ],
               "save": {
                 "type": "fort",
-                "dc": "",
-                "description": ""
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "description": "DC 11"
               }
             }
           ],
@@ -648,7 +601,7 @@
       },
       {
         "id": "sa00000000000002",
-        "name": "Knife",
+        "name": "Chef's Knife",
         "type": "feat",
         "subType": "racial",
         "category": "specialAbilities",
@@ -664,14 +617,10 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
-                "ability": "wis",
-                "confidence": "derived",
-                "base": 11,
-                "neededMod": 0,
-                "candidates": [
-                  "wis"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con-floor",
+                "base": 10,
                 "expectedDc": 11
               }
             ],
@@ -682,7 +631,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "Knife",
+              "name": "Chef's Knife",
               "actionType": "save",
               "activation": "standard",
               "touch": false,
@@ -696,7 +645,7 @@
               "damage": [],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "DC 11"
               },
               "effectNotes": [
@@ -713,7 +662,7 @@
     ]
   },
   "curation": {
-    "summary": "Baby Tonberry is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Baby Tonberry is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Tiny",
@@ -723,8 +672,8 @@
         "Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)"
       ],
       "specialAbilityNames": [
-        "Grudge",
-        "Knife",
+        "Baby's Grudge",
+        "Chef's Knife",
         "Familiar"
       ]
     },

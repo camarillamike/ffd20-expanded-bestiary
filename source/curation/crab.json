@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Crab",
@@ -32,7 +32,9 @@
         "Skills Perception +4, Swim +10; Racial Modifiers +4 Perception SQ water dependency"
       ],
       "SPECIAL ABILITIES": [
-        "Familar The master of a king crab familiar gains a +2 bonus on CMB checks to start and maintain a grapple.",
+        "Familiar The master of a king crab familiar gains a +2 bonus on CMB checks to start and maintain a grapple.",
+        "Grab (Ex) A crab's claw attack has grab.",
+        "Constrict (Ex) A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe.",
         "Water Dependency (Ex) Crabs can survive out of the water for 1 hour per point of Constitution. Beyond this limit, a crab runs the risk of suffocation, as if it were drowning."
       ]
     },
@@ -89,6 +91,22 @@
       "ecology": [],
       "gear": [],
       "specialAbilities": [
+        {
+          "name": "Grab",
+          "type": "ex",
+          "description": "A crab's claw attack has grab.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Constrict",
+          "type": "ex",
+          "description": "A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe.",
+          "notes": {
+            "familiar": ""
+          }
+        },
         {
           "name": "Water Dependency",
           "type": "ex",
@@ -202,6 +220,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -253,18 +278,18 @@
       "spells": [],
       "feats": [],
       "specialQualities": [],
-      "specialAttacks": [
-        "Constrict",
-        "grab"
-      ],
+      "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
         "Familiar"
       ],
       "specialAbilities": [
+        "Grab",
+        "Constrict",
         "Water Dependency"
       ],
       "buffs": [
+        "Grab",
         "Water Dependency"
       ],
       "miscellaneous": []
@@ -393,26 +418,95 @@
         "reviewNotes": []
       },
       {
-        "id": "spatk00000000001",
+        "id": "sa00000000000001",
+        "name": "Grab",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply grab on the listed natural attack hit."
+            }
+          ],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
         "name": "Constrict",
         "type": "feat",
         "subType": "racial",
-        "category": "specialAttacks",
+        "category": "specialAbilities",
         "generatedFlags": [
-          "generatedSpecialAttack",
           "specialAbility"
         ],
         "sourceFlagData": {
-          "customFeature": true,
           "specialAbility": {
             "category": "passive",
+            "sourceType": "Ex",
             "saveDCs": [],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d2-2",
+                "type": "bludgeoning",
+                "raw": "1d2-2 bludgeoning damage"
+              }
+            ],
             "healing": []
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Constrict",
+              "actionType": "other",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": null,
+                "units": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [
+                {
+                  "formula": "1d2-2",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [],
           "classSkills": {}
@@ -420,34 +514,7 @@
         "reviewNotes": []
       },
       {
-        "id": "spatk00000000002",
-        "name": "grab",
-        "type": "feat",
-        "subType": "racial",
-        "category": "specialAttacks",
-        "generatedFlags": [
-          "generatedSpecialAttack",
-          "specialAbility"
-        ],
-        "sourceFlagData": {
-          "customFeature": true,
-          "specialAbility": {
-            "category": "passive",
-            "saveDCs": [],
-            "damages": [],
-            "healing": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "sa00000000000001",
+        "id": "sa00000000000003",
         "name": "Water Dependency",
         "type": "feat",
         "subType": "racial",
@@ -490,6 +557,35 @@
       },
       {
         "id": "bf00000000000001",
+        "name": "Grab",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Grab",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply grab on the listed natural attack hit."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000003",
         "name": "Water Dependency",
         "type": "buff",
         "subType": "perm",
@@ -520,7 +616,7 @@
     ]
   },
   "curation": {
-    "summary": "Crab is packaged as an FFD20 NPC actor with 7 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Crab is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",
@@ -530,6 +626,8 @@
         "2 Claws +0 (1d2-2 plus grab)"
       ],
       "specialAbilityNames": [
+        "Grab",
+        "Constrict",
         "Water Dependency",
         "Familiar"
       ]

@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -178,7 +185,11 @@
         "Lightning"
       ],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Aquan",
+        "Common",
+        "Sahagin"
+      ],
       "stature": "tall"
     },
     "currency": {
@@ -317,7 +328,7 @@
                 {
                   "formula": "1d8",
                   "types": [
-                    "untyped"
+                    "piercing"
                   ]
                 }
               ],
@@ -871,7 +882,7 @@
                 {
                   "formula": "1d10",
                   "types": [
-                    "untyped"
+                    "piercing"
                   ]
                 }
               ],
@@ -1409,57 +1420,6 @@
       }
     },
     {
-      "_id": "defab00000000001",
-      "name": "Bond of the Depths",
-      "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Defensive ability listed in the source statblock: Bond of the Depths.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "contextNotes": [],
-        "links": {
-          "charges": []
-        },
-        "tag": "bond-of-the-depths",
-        "subType": "racial",
-        "traitType": "",
-        "traitCategory": "",
-        "racePoints": null,
-        "abilityType": "na",
-        "associations": {
-          "classes": []
-        },
-        "showInQuickbar": false,
-        "crOffset": "",
-        "inherited": false,
-        "acquired": false,
-        "simple": false,
-        "summons": false,
-        "disabled": false,
-        "classSkills": {}
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedDefensiveAbility": true,
-          "customFeature": true,
-          "sourceText": "Bond of the Depths"
-        }
-      }
-    },
-    {
       "_id": "sa00000000000001",
       "name": "Amphibious",
       "type": "feat",
@@ -1527,6 +1487,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -1676,6 +1644,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -1738,7 +1714,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Sahagin gains a +2 dodge bonus to AC when in shallow and deep water terrain. Leviathan’s</p>",
+          "value": "<p>Sahagin gains a +2 dodge bonus to AC when in shallow and deep water terrain.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -1807,6 +1783,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -1864,7 +1848,7 @@
     },
     {
       "_id": "sa00000000000004",
-      "name": "Fury",
+      "name": "Leviathan's Fury",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
@@ -1874,7 +1858,7 @@
         },
         "actions": [
           {
-            "name": "Fury",
+            "name": "Leviathan's Fury",
             "actionType": "other",
             "activation": {
               "cost": 1,
@@ -1910,7 +1894,9 @@
               "type": "",
               "description": ""
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Duration: 2 turns"
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1926,11 +1912,16 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Adds the listed water damage to the next weapon or unarmed hit, then discharges."
+          }
+        ],
         "links": {
           "charges": []
         },
-        "tag": "fury",
+        "tag": "leviathan-s-fury",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
@@ -1951,8 +1942,18 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "specialAbility": {
-            "category": "passive",
-            "buff": null,
+            "category": "toggle",
+            "buff": {
+              "active": false,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Adds the listed water damage to the next weapon or unarmed hit, then discharges."
+                }
+              ],
+              "automationNotes": []
+            },
             "uses": {
               "value": 1,
               "per": "day",
@@ -1969,6 +1970,14 @@
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -1980,7 +1989,10 @@
             "target": {
               "value": ""
             },
-            "duration": null,
+            "duration": {
+              "duration": "2",
+              "units": "turns"
+            },
             "abilityScores": {
               "str": {
                 "value": 14,
@@ -2092,6 +2104,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -2215,6 +2235,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -2310,17 +2338,11 @@
                   "types": [
                     "water"
                   ]
-                },
-                {
-                  "formula": "2",
-                  "types": [
-                    "water"
-                  ]
                 }
               ]
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
               "description": "DC 12"
             },
@@ -2381,15 +2403,10 @@
                 "save": "fort",
                 "dc": 12,
                 "raw": "Fortitude save (DC 12)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
-                "ability": "dex",
-                "confidence": "derived-preferred",
-                "base": 11,
-                "neededMod": 1,
-                "candidates": [
-                  "dex",
-                  "wis"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con-floor",
+                "base": 10,
                 "expectedDc": 12
               }
             ],
@@ -2398,11 +2415,6 @@
                 "formula": "1d6+2",
                 "type": "water",
                 "raw": "1d6+2 water damage"
-              },
-              {
-                "formula": "2",
-                "type": "water",
-                "raw": "2 water damage"
               }
             ],
             "healing": [],
@@ -2410,6 +2422,14 @@
               "actionType": "rsak",
               "attackBonus": "+2",
               "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
             },
             "criticalAttack": null,
             "requiresSave": true,
@@ -2626,7 +2646,7 @@
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>Sahagin gains a +2 dodge bonus to AC when in shallow and deep water terrain. Leviathan’s</p>",
+          "value": "<p>Sahagin gains a +2 dodge bonus to AC when in shallow and deep water terrain.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -2685,6 +2705,70 @@
         "ffd20-bestiary-builder": {
           "generatedBuff": {
             "sourceAbility": "Bond to the Depths",
+            "category": "toggle",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000004",
+      "name": "Leviathan's Fury",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, Sahagin shares the power of Leviathan gaining Enwater for 2 turns or until discharged on his weapon or fist. This effect deals an extra 2 points of water damage. The weapon loses this property if its wielder drops it or otherwise loses contact with it.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Adds the listed water damage to the next weapon or unarmed hit, then discharges."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "leviathan-s-fury",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Leviathan's Fury",
             "category": "toggle",
             "automationNotes": []
           }
@@ -2872,7 +2956,7 @@
           "hitPoints": 6,
           "hitDice": 1,
           "saves": "Fort +4, Ref +3, Will +3",
-          "defensiveAbilities": "Bond of the Depths, Mist Child;",
+          "defensiveAbilities": "Bond to the Depths, Mist Child;",
           "dr": "",
           "immunities": "",
           "resistances": "water 5",

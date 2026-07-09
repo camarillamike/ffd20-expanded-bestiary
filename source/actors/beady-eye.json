@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -547,7 +554,7 @@
               "parts": []
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "will",
               "description": "DC 11"
             },
@@ -603,20 +610,24 @@
                 "save": "will",
                 "dc": 11,
                 "raw": "DC 11 Will save",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
-                "ability": "wis",
-                "confidence": "derived",
-                "base": 11,
-                "neededMod": 0,
-                "candidates": [
-                  "wis"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "explicit-floor",
+                "base": 10,
                 "expectedDc": 11
               }
             ],
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": "will",

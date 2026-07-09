@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sprite",
@@ -186,7 +186,10 @@
         "Shadow"
       ],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Common",
+        "Sylvan"
+      ],
       "stature": "tall"
     },
     "skills": {
@@ -221,6 +224,13 @@
         "value": 7,
         "max": 7,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 2,
+        "max": 2,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -273,7 +283,8 @@
       ],
       "inventory": [
         "Shortsword",
-        "Shortbow"
+        "Shortbow",
+        "arrows"
       ],
       "spells": [
         "Dancing Lights",
@@ -392,7 +403,7 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "untyped"
+                    "slashing"
                   ]
                 }
               ]
@@ -444,7 +455,7 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "untyped"
+                    "piercing"
                   ]
                 }
               ]
@@ -513,6 +524,41 @@
           "inventory": {
             "name": "Shortbow",
             "quantity": 1,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "Shortbow (10 arrows)"
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "gear000000000003",
+        "name": "arrows",
+        "type": "loot",
+        "subType": "misc",
+        "category": "inventory",
+        "generatedFlags": [
+          "generatedInventoryItem"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "inventory": {
+            "name": "arrows",
+            "quantity": 10,
             "broken": false,
             "sourceLabel": "Gear",
             "sourceText": "Shortbow (10 arrows)"
@@ -807,7 +853,7 @@
     ]
   },
   "curation": {
-    "summary": "Sprite is packaged as an FFD20 NPC actor with 15 generated item(s) across 8 populated mechanics categories.",
+    "summary": "Sprite is packaged as an FFD20 NPC actor with 16 generated item(s) across 8 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Diminutive",

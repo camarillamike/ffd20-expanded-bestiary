@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -519,7 +526,7 @@
         "actions": [
           {
             "name": "Ten Needles",
-            "actionType": "other",
+            "actionType": "save",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -546,25 +553,13 @@
                   "types": [
                     "piercing"
                   ]
-                },
-                {
-                  "formula": "1",
-                  "types": [
-                    "piercing"
-                  ]
-                },
-                {
-                  "formula": "9",
-                  "types": [
-                    "for-half"
-                  ]
                 }
               ]
             },
             "save": {
-              "dc": "",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
               "type": "ref",
-              "description": ""
+              "description": "DC 9"
             },
             "effectNotes": [],
             "measureTemplate": {
@@ -615,26 +610,40 @@
               "maxFormula": "1",
               "rechargeFormula": ""
             },
-            "saveDCs": [],
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 9,
+                "raw": "Reflex save DC 9",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 10,
+                "neededMod": -1,
+                "candidates": [
+                  "cha:floor",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 9
+              }
+            ],
             "damages": [
               {
                 "formula": "1d4+1",
                 "type": "piercing",
                 "raw": "1d4+1 points of piercing damage"
-              },
-              {
-                "formula": "1",
-                "type": "piercing",
-                "raw": "1 points of piercing damage"
-              },
-              {
-                "formula": "9",
-                "type": "for-half",
-                "raw": "9 for half damage"
               }
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": "ref",
@@ -793,6 +802,14 @@
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,

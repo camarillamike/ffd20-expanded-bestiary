@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 2,
+        "max": 2,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 2
       },
@@ -174,7 +181,10 @@
         "Shadow"
       ],
       "ci": [],
-      "languages": [],
+      "languages": [
+        "Common",
+        "Sylvan"
+      ],
       "stature": "tall"
     },
     "currency": {
@@ -318,7 +328,7 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "untyped"
+                    "slashing"
                   ]
                 }
               ],
@@ -453,7 +463,7 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "untyped"
+                    "piercing"
                   ]
                 }
               ],
@@ -697,6 +707,83 @@
           ],
           "name": "Shortbow",
           "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "Shortbow (10 arrows)"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000003",
+      "name": "arrows",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: Shortbow (10 arrows).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "arrows",
+        "quantity": 10,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "arrows",
+          "quantity": 10,
           "broken": false,
           "sourceLabel": "Gear",
           "sourceText": "Shortbow (10 arrows)"
@@ -1376,6 +1463,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,

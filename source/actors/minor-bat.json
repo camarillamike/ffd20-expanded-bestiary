@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -494,7 +501,7 @@
               ]
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+              "dc": "11",
               "type": "fort",
               "description": "DC 11"
             },
@@ -552,13 +559,11 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-mismatch",
-                "base": 11,
-                "neededMod": 0,
-                "expectedDc": 9,
-                "observedDc": 11
+                "formula": "11",
+                "ability": "",
+                "confidence": "curated-static",
+                "base": null,
+                "expectedDc": 11
               }
             ],
             "damages": [
@@ -570,6 +575,14 @@
             ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": true,
             "saveType": "fort",

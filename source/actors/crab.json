@@ -53,6 +53,13 @@
         "temp": 0,
         "offset": 0
       },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
       "hd": {
         "total": 1
       },
@@ -459,16 +466,191 @@
       }
     },
     {
-      "_id": "spatk00000000001",
-      "name": "Constrict",
+      "_id": "sa00000000000001",
+      "name": "Grab",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Special attack listed in the source statblock: Constrict (1d2-2).</p>",
+          "value": "<p>A crab's claw attack has grab.</p>",
           "instructions": ""
         },
         "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "dex": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Constrict",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Constrict",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d2-2",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -488,7 +670,7 @@
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
-        "abilityType": "na",
+        "abilityType": "ex",
         "associations": {
           "classes": []
         },
@@ -503,17 +685,28 @@
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedSpecialAttack": true,
-          "customFeature": true,
-          "sourceText": "Constrict (1d2-2)",
           "specialAbility": {
             "category": "passive",
             "buff": null,
             "uses": null,
             "saveDCs": [],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d2-2",
+                "type": "bludgeoning",
+                "raw": "1d2-2 bludgeoning damage"
+              }
+            ],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -563,123 +756,14 @@
                 "missing": false,
                 "raw": "2"
               }
-            }
+            },
+            "sourceType": "Ex"
           }
         }
       }
     },
     {
-      "_id": "spatk00000000002",
-      "name": "grab",
-      "type": "feat",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Special attack listed in the source attack line: grab.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "contextNotes": [],
-        "links": {
-          "charges": []
-        },
-        "tag": "grab",
-        "subType": "racial",
-        "traitType": "",
-        "traitCategory": "",
-        "racePoints": null,
-        "abilityType": "na",
-        "associations": {
-          "classes": []
-        },
-        "showInQuickbar": false,
-        "crOffset": "",
-        "inherited": false,
-        "acquired": false,
-        "simple": false,
-        "summons": false,
-        "disabled": false,
-        "classSkills": {}
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedSpecialAttack": true,
-          "customFeature": true,
-          "sourceText": "grab",
-          "specialAbility": {
-            "category": "passive",
-            "buff": null,
-            "uses": null,
-            "saveDCs": [],
-            "damages": [],
-            "healing": [],
-            "attack": null,
-            "criticalAttack": null,
-            "requiresSave": false,
-            "saveType": null,
-            "blueMage": "",
-            "range": {
-              "value": null,
-              "units": ""
-            },
-            "target": {
-              "value": ""
-            },
-            "duration": null,
-            "abilityScores": {
-              "str": {
-                "value": 7,
-                "mod": -2,
-                "missing": false,
-                "raw": "7"
-              },
-              "dex": {
-                "value": 15,
-                "mod": 2,
-                "missing": false,
-                "raw": "15"
-              },
-              "con": {
-                "value": 12,
-                "mod": 1,
-                "missing": false,
-                "raw": "12"
-              },
-              "int": {
-                "value": null,
-                "mod": null,
-                "missing": true,
-                "raw": "—"
-              },
-              "wis": {
-                "value": 10,
-                "mod": 0,
-                "missing": false,
-                "raw": "10"
-              },
-              "cha": {
-                "value": 2,
-                "mod": -4,
-                "missing": false,
-                "raw": "2"
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "_id": "sa00000000000001",
+      "_id": "sa00000000000003",
       "name": "Water Dependency",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
@@ -746,6 +830,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
             "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
@@ -806,6 +898,70 @@
     },
     {
       "_id": "bf00000000000001",
+      "name": "Grab",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A crab's claw attack has grab.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "grab",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Grab",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000003",
       "name": "Water Dependency",
       "type": "buff",
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",

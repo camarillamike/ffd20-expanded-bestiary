@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Toad",
@@ -216,6 +216,13 @@
         "value": 2,
         "max": 2,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -461,14 +468,10 @@
                 "save": "fort",
                 "dc": 8,
                 "raw": "Fort DC 8",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
-                "ability": "cha",
-                "confidence": "derived",
-                "base": 11,
-                "neededMod": -3,
-                "candidates": [
-                  "cha"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con-floor",
+                "base": 10,
                 "expectedDc": 8
               }
             ],
@@ -506,7 +509,7 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "DC 8"
               },
               "effectNotes": [
@@ -538,14 +541,10 @@
                 "save": "fort",
                 "dc": 8,
                 "raw": "Fort DC 8",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
-                "ability": "cha",
-                "confidence": "derived",
-                "base": 11,
-                "neededMod": -3,
-                "candidates": [
-                  "cha"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-monster-con-floor",
+                "base": 10,
                 "expectedDc": 8
               }
             ],
@@ -583,7 +582,7 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "DC 8"
               },
               "effectNotes": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
+  "moduleVersion": "0.1.16",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Beady Eye",
@@ -198,6 +198,13 @@
         "value": 5,
         "max": 5,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -429,14 +436,10 @@
                 "save": "will",
                 "dc": 11,
                 "raw": "DC 11 Will save",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
-                "ability": "wis",
-                "confidence": "derived",
-                "base": 11,
-                "neededMod": 0,
-                "candidates": [
-                  "wis"
-                ],
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "explicit-floor",
+                "base": 10,
                 "expectedDc": 11
               }
             ],
@@ -461,7 +464,7 @@
               "damage": [],
               "save": {
                 "type": "will",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "DC 11"
               },
               "effectNotes": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.15",
-  "status": "needs-ai-review",
+  "moduleVersion": "0.1.16",
+  "status": "ready-for-foundry-test",
   "source": {
     "name": "Minor Bat",
     "url": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/bat-family/minor-bat/",
@@ -92,7 +92,9 @@
           "description": "Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
           "notes": {
             "familiar": ""
-          }
+          },
+          "staticSaveDCs": true,
+          "curationNote": "Printed DC 11 does not derive cleanly from listed HD and ability scores; keep as static source DC."
         }
       ],
       "description": ""
@@ -193,6 +195,13 @@
         "value": 3,
         "max": 3,
         "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
         "offset": 0
       },
       "hd": {
@@ -396,13 +405,11 @@
                 "save": "fort",
                 "dc": 11,
                 "raw": "Fortitude save (DC 11)",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-mismatch",
-                "base": 11,
-                "neededMod": 0,
-                "expectedDc": 9,
-                "observedDc": 11
+                "formula": "11",
+                "ability": "",
+                "confidence": "curated-static",
+                "base": null,
+                "expectedDc": 11
               }
             ],
             "damages": [
@@ -446,7 +453,7 @@
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "dc": "11",
                 "description": "DC 11"
               }
             }
@@ -455,9 +462,7 @@
           "contextNotes": [],
           "classSkills": {}
         },
-        "reviewNotes": [
-          "Printed save DC 11 differs from generated 9 using default CON monster DC."
-        ]
+        "reviewNotes": []
       }
     ]
   },
@@ -483,17 +488,10 @@
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],
-    "unresolved": [
-      {
-        "item": "Blood Drain",
-        "category": "specialAbilities",
-        "note": "Printed save DC 11 differs from generated 9 using default CON monster DC."
-      }
-    ],
+    "unresolved": [],
     "nextReviewSteps": [
-      "Review unresolved notes against the source page.",
-      "Hydrate the actor in Foundry and verify any generated placeholders that did not match compendium items.",
-      "Promote this creature only after attacks, feats, defenses, spells, gear, and special abilities match the source intent."
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
     ]
   }
 }

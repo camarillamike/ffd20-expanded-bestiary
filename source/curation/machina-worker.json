@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.13",
+  "moduleVersion": "0.1.14",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Machina Worker",
@@ -392,37 +392,53 @@
             "category": "toggle",
             "sourceType": "Ex",
             "saveDCs": [],
-            "damages": [
-              {
-                "formula": "5",
-                "type": "for-total",
-                "raw": "5 for total damage"
-              }
-            ],
-            "healing": []
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "criticalAttack": {
+              "attackName": "gore",
+              "damageFormula": "floor((1d6+3) * 1.5)",
+              "sourceDamageFormula": "1d6+3",
+              "multiplier": "1.5",
+              "raw": "damage is 1d6+3 x 1.5"
+            }
           }
         },
         "mechanics": {
           "actions": [
             {
               "name": "Critical Attack",
-              "actionType": "other",
+              "actionType": "mwak",
               "activation": "standard",
-              "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
               },
               "target": {
-                "value": ""
+                "value": "one target"
               },
               "damage": [
                 {
-                  "formula": "5",
+                  "formula": "floor((1d6 + floor(@abilities.str.mod * 1.5)) * 1.5)",
                   "types": [
-                    "for-total"
+                    "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Uses Gore attack.",
+                "Source damage: damage is 1d6+3 x 1.5.",
+                "Dynamic damage: source +3 derived as floor(@abilities.str.mod * 1.5).",
+                "Recharge: 1d4 rounds."
               ]
             }
           ],

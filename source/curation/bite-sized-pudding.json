@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.13",
+  "moduleVersion": "0.1.14",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bite-Sized Pudding",
@@ -435,11 +435,48 @@
               "per": "day",
               "maxFormula": "1",
               "rechargeFormula": ""
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "1d4 + floor(1d4 / 2)",
+              "sourceDamageFormula": "1d4",
+              "extraDamageFormula": "1d4",
+              "multiplier": "plus-half-extra-die",
+              "raw": "damage is 1d4 plus another 1d4 divided by half"
             }
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Critical Attack",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d4 + floor(@abilities.str.mod * 1) + floor(1d4 / 2)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "effectNotes": [
+                "Uses Bite attack.",
+                "Source damage: damage is 1d4 plus another 1d4 divided by half.",
+                "Dynamic damage: source +0 derived as floor(@abilities.str.mod * 1)."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [],
           "classSkills": {}

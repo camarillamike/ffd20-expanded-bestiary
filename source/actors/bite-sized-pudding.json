@@ -510,7 +510,91 @@
           "value": "<p>Once per day as a standard action, the bite-sized pudding can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4 plus another 1d4 divided by half. Familiar The master of a bite-sized pudding familiar gains a +2 bonus to Reflex saves.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Critical Attack",
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d4 + floor(@abilities.str.mod * 1) + floor(1d4 / 2)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +2 (1d4)"
+              ]
+            },
+            "effectNotes": [
+              "Uses Bite attack.",
+              "Source damage: damage is 1d4 plus another 1d4 divided by half.",
+              "Dynamic damage: source +0 derived as floor(@abilities.str.mod * 1)."
+            ],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -557,6 +641,14 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "1d4 + floor(1d4 / 2)",
+              "sourceDamageFormula": "1d4",
+              "extraDamageFormula": "1d4",
+              "multiplier": "plus-half-extra-die",
+              "raw": "damage is 1d4 plus another 1d4 divided by half"
+            },
             "requiresSave": false,
             "saveType": null,
             "blueMage": "",
@@ -679,6 +771,7 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
             "blueMage": "",

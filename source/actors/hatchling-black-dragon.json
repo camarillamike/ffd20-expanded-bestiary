@@ -808,6 +808,7 @@
             ],
             "healing": [],
             "attack": null,
+            "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
             "blueMage": "",
@@ -929,6 +930,7 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "criticalAttack": null,
             "requiresSave": false,
             "saveType": null,
             "blueMage": "",
@@ -1036,11 +1038,11 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": null,
+          "value": 1,
           "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
+          "maxFormula": "1",
+          "rechargeFormula": "1d4",
+          "rechargePeriod": "rounds"
         },
         "changes": [],
         "contextNotes": [],
@@ -1070,7 +1072,13 @@
           "specialAbility": {
             "category": "toggle",
             "buff": null,
-            "uses": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
             "saveDCs": [
               {
                 "save": "will",
@@ -1090,6 +1098,7 @@
             "damages": [],
             "healing": [],
             "attack": null,
+            "criticalAttack": null,
             "requiresSave": false,
             "saveType": "will",
             "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",

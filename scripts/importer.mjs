@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.18";
+const MODULE_VERSION = "0.1.19";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -141,6 +141,7 @@ function applyPlaceholderDetails(source, item) {
   }
   if (flags.generatedSpellReference && source.system) {
     if (item.system?.spellbook) source.system.spellbook = item.system.spellbook;
+    if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
     if (item.system?.atWill) source.system.atWill = true;
     if (item.system?.preparation?.max) source.system.preparation = item.system.preparation;
     if (item.system?.uses?.per) source.system.uses = foundry.utils.mergeObject(source.system.uses ?? {}, item.system.uses, { inplace: false });

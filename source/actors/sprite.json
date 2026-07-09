@@ -103,6 +103,7 @@
           "primary": {
             "name": "Fey",
             "inUse": true,
+            "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
             "casterType": "high",
@@ -117,7 +118,7 @@
             "autoSpellLevelCalculation": false,
             "autoSpellLevels": false,
             "psychic": false,
-            "arcaneSpellFailure": true,
+            "arcaneSpellFailure": false,
             "hasCantrips": true,
             "spellPreparationMode": "spontaneous",
             "baseDCFormula": "10 + @sl + @ablMod",
@@ -172,6 +173,7 @@
           "secondary": {
             "name": "",
             "inUse": false,
+            "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
             "casterType": "high",
@@ -241,6 +243,7 @@
           "tertiary": {
             "name": "",
             "inUse": false,
+            "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
             "casterType": "high",
@@ -310,6 +313,7 @@
           "quaternary": {
             "name": "",
             "inUse": false,
+            "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
             "casterType": "high",
@@ -379,6 +383,7 @@
           "spelllike": {
             "name": "",
             "inUse": false,
+            "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
             "casterType": "high",
@@ -393,7 +398,7 @@
             "autoSpellLevelCalculation": true,
             "autoSpellLevels": true,
             "psychic": false,
-            "arcaneSpellFailure": true,
+            "arcaneSpellFailure": false,
             "hasCantrips": true,
             "spellPreparationMode": "spontaneous",
             "baseDCFormula": "10 + @sl + @ablMod",
@@ -572,10 +577,19 @@
         "level": 2,
         "hd": 6,
         "hp": 7,
-        "classCastingStat": "noncaster",
-        "classBaseMPTypes": "noncaster",
-        "classBaseMPauto": "yes",
-        "mp": 0,
+        "classCastingStat": "wis",
+        "classBaseMPTypes": "fullCaster",
+        "classBaseMPauto": "no",
+        "mp": 2,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "high",
+          "spells": "",
+          "ability": "wis",
+          "cantrips": true,
+          "offset": 0,
+          "domain": 1
+        },
         "bab": "low",
         "skillsPerLevel": 6,
         "savingThrows": {
@@ -634,7 +648,22 @@
           "generatedRacialHitDice": true,
           "profile": "Fey",
           "sourceHitPoints": 7,
-          "sourceHitDice": 2
+          "sourceHitDice": 2,
+          "spellcasting": {
+            "kind": "full",
+            "ability": "wis",
+            "preparationMode": "spontaneous",
+            "casterType": "high",
+            "classBaseMPType": "fullCaster",
+            "baseMp": 2,
+            "finalMp": 2,
+            "printedMp": 2,
+            "chartBaseMp": 2,
+            "maxSpellLevel": 1,
+            "mpSource": "monster-chart-plus-ability-bonus",
+            "foundryBonusLevels": 1,
+            "desiredBonusLevels": 1
+          }
         }
       }
     },

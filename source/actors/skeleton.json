@@ -744,6 +744,7 @@
           ],
           "name": "Leather Armor",
           "quantity": 1,
+          "broken": false,
           "sourceLabel": "Gear",
           "sourceText": "Leather Armor"
         }
@@ -751,7 +752,7 @@
     },
     {
       "_id": "gear000000000002",
-      "name": "broken scimitar",
+      "name": "scimitar",
       "type": "loot",
       "img": "icons/svg/item-bag.svg",
       "system": {
@@ -774,7 +775,7 @@
         "links": {
           "children": []
         },
-        "tag": "broken-scimitar",
+        "tag": "scimitar",
         "quantity": 1,
         "weight": {
           "value": 0
@@ -798,7 +799,7 @@
           "school": ""
         },
         "hp": {},
-        "broken": false,
+        "broken": true,
         "hardness": 0,
         "flags": {
           "boolean": {},
@@ -818,8 +819,9 @@
             "consumable",
             "loot"
           ],
-          "name": "broken scimitar",
+          "name": "scimitar",
           "quantity": 1,
+          "broken": true,
           "sourceLabel": "Gear",
           "sourceText": "broken scimitar"
         }
@@ -827,12 +829,12 @@
     },
     {
       "_id": "feat000000000001",
-      "name": "Improved Initiative Gear Leather Armor",
+      "name": "Improved Initiative",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated feat from the source statblock: Improved Initiative Gear Leather Armor.</p>",
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -850,63 +852,7 @@
         "links": {
           "charges": []
         },
-        "tag": "improved-initiative-gear-leather-armor",
-        "subType": "feat",
-        "traitType": "",
-        "traitCategory": "",
-        "racePoints": null,
-        "abilityType": "na",
-        "associations": {
-          "classes": []
-        },
-        "showInQuickbar": false,
-        "crOffset": "",
-        "inherited": false,
-        "acquired": false,
-        "simple": false,
-        "summons": false,
-        "disabled": false,
-        "classSkills": {}
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedFeat": true,
-          "lookupTypes": [
-            "feat"
-          ],
-          "lookupSubTypes": [
-            "feat"
-          ],
-          "sourceLine": "Feats Improved Initiative Gear Leather Armor, broken scimitar"
-        }
-      }
-    },
-    {
-      "_id": "feat000000000002",
-      "name": "broken scimitar",
-      "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Generated feat from the source statblock: broken scimitar.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "contextNotes": [],
-        "links": {
-          "charges": []
-        },
-        "tag": "broken-scimitar",
+        "tag": "improved-initiative",
         "subType": "feat",
         "traitType": "",
         "traitCategory": "",
@@ -971,14 +917,23 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": []
+              "parts": [
+                {
+                  "formula": "1d3+1",
+                  "types": [
+                    "mp"
+                  ]
+                }
+              ]
             },
             "save": {
               "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
               "type": "fort",
               "description": "DC 11"
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Heals the creature for the same amount in HP."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -988,10 +943,9 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
           "rechargeFormula": ""
         },
         "changes": [],
@@ -1022,7 +976,12 @@
           "specialAbility": {
             "category": "passive",
             "buff": null,
-            "uses": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
             "saveDCs": [
               {
                 "save": "fort",
@@ -1035,7 +994,13 @@
                 "expectedDc": 11
               }
             ],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d3+1",
+                "type": "mp",
+                "raw": "drained for 1d3+1 MP"
+              }
+            ],
             "healing": [],
             "attack": null,
             "criticalAttack": null,

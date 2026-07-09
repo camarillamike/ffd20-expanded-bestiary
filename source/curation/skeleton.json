@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.14",
+  "moduleVersion": "0.1.15",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Skeleton",
@@ -256,12 +256,11 @@
       ],
       "inventory": [
         "Leather Armor",
-        "broken scimitar"
+        "scimitar"
       ],
       "spells": [],
       "feats": [
-        "Improved Initiative Gear Leather Armor",
-        "broken scimitar"
+        "Improved Initiative"
       ],
       "specialQualities": [],
       "specialAttacks": [],
@@ -505,7 +504,13 @@
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
-          "inventory": true
+          "inventory": {
+            "name": "Leather Armor",
+            "quantity": 1,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "Leather Armor"
+          }
         },
         "mechanics": {
           "actions": [],
@@ -516,7 +521,7 @@
       },
       {
         "id": "gear000000000002",
-        "name": "broken scimitar",
+        "name": "scimitar",
         "type": "loot",
         "subType": "misc",
         "category": "inventory",
@@ -534,7 +539,13 @@
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {
-          "inventory": true
+          "inventory": {
+            "name": "scimitar",
+            "quantity": 1,
+            "broken": true,
+            "sourceLabel": "Gear",
+            "sourceText": "broken scimitar"
+          }
         },
         "mechanics": {
           "actions": [],
@@ -545,34 +556,7 @@
       },
       {
         "id": "feat000000000001",
-        "name": "Improved Initiative Gear Leather Armor",
-        "type": "feat",
-        "subType": "feat",
-        "category": "feats",
-        "generatedFlags": [
-          "generatedFeat"
-        ],
-        "compendiumLookup": {
-          "expectedTypes": [
-            "feat"
-          ],
-          "expectedSubTypes": [
-            "feat"
-          ],
-          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
-        },
-        "sourceFlagData": {},
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "feat000000000002",
-        "name": "broken scimitar",
+        "name": "Improved Initiative",
         "type": "feat",
         "subType": "feat",
         "category": "feats",
@@ -622,8 +606,20 @@
                 "expectedDc": 11
               }
             ],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d3+1",
+                "type": "mp",
+                "raw": "drained for 1d3+1 MP"
+              }
+            ],
             "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
             "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17)."
           }
         },
@@ -641,12 +637,22 @@
               "target": {
                 "value": "single target"
               },
-              "damage": [],
+              "damage": [
+                {
+                  "formula": "1d3+1",
+                  "types": [
+                    "mp"
+                  ]
+                }
+              ],
               "save": {
                 "type": "fort",
                 "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.cha.mod",
                 "description": "DC 11"
-              }
+              },
+              "effectNotes": [
+                "Heals the creature for the same amount in HP."
+              ]
             }
           ],
           "changes": [],
@@ -658,7 +664,7 @@
     ]
   },
   "curation": {
-    "summary": "Skeleton is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Skeleton is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Medium",

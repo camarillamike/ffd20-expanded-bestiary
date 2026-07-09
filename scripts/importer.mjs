@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.14";
+const MODULE_VERSION = "0.1.15";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -135,6 +135,9 @@ function applyPlaceholderDetails(source, item) {
 
   if (flags.generatedInventoryItem && source.system && item.system?.quantity) {
     source.system.quantity = item.system.quantity;
+  }
+  if (flags.generatedInventoryItem && flags.broken && source.system) {
+    source.system.broken = true;
   }
   if (flags.generatedSpellReference && source.system) {
     if (item.system?.spellbook) source.system.spellbook = item.system.spellbook;

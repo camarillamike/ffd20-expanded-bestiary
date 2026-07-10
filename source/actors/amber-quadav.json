@@ -54,8 +54,8 @@
         "offset": 0
       },
       "mp": {
-        "value": 2,
-        "max": 2,
+        "value": 4,
+        "max": 4,
         "temp": 0,
         "recover": 0,
         "offset": 0
@@ -101,20 +101,20 @@
       "spells": {
         "spellbooks": {
           "primary": {
-            "name": "Humanoid",
+            "name": "Black Mage",
             "inUse": true,
             "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
-            "casterType": "med",
-            "class": "humanoid",
+            "casterType": "high",
+            "class": "black-mage",
             "cl": {
               "formula": ""
             },
             "concentrationFormula": "",
             "concentrationNotes": "",
             "clNotes": "",
-            "ability": "wis",
+            "ability": "int",
             "autoSpellLevelCalculation": false,
             "autoSpellLevels": false,
             "psychic": false,
@@ -456,11 +456,11 @@
     "skills": {
       "apr": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       },
       "spl": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       }
     },
     "details": {
@@ -544,13 +544,13 @@
   },
   "items": [
     {
-      "_id": "racialhd00000001",
-      "name": "Humanoid",
-      "type": "class",
-      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "_id": "race000000000001",
+      "name": "Quadav",
+      "type": "race",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "value": "<p>Generated race placeholder from the source statblock: XP 400 Quadav Black Mage 1.</p>",
           "instructions": ""
         },
         "changes": [],
@@ -558,37 +558,89 @@
         "links": {
           "classAssociations": []
         },
-        "tag": "humanoid",
-        "subType": "racial",
-        "classSubType": "racial",
+        "size": "med",
+        "speeds": {
+          "land": null,
+          "fly": null,
+          "flyManeuverability": "",
+          "swim": null,
+          "climb": null,
+          "burrow": null
+        },
+        "creatureTypes": [
+          "Humanoid"
+        ],
+        "creatureSubtypes": [
+          "Quadav",
+          "Reptilian"
+        ],
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRace": true,
+          "lookupTypes": [
+            "race"
+          ],
+          "sourceLine": "XP 400 Quadav Black Mage 1",
+          "sourceRace": "Quadav",
+          "sourceFamily": "Quadav Family"
+        }
+      }
+    },
+    {
+      "_id": "classlevel000001",
+      "name": "Black Mage",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated class level from the source statblock: XP 400 Quadav Black Mage 1.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "black-mage",
+        "subType": "base",
+        "classSubType": "base",
         "parentClass": "",
         "level": 1,
-        "hd": 8,
+        "hd": 6,
         "hp": 3,
-        "classCastingStat": "wis",
-        "classBaseMPTypes": "pacman",
+        "classCastingStat": "int",
+        "classBaseMPTypes": "fullCaster",
         "classBaseMPauto": "no",
-        "mp": 1,
+        "mp": 4,
         "casting": {
           "type": "spontaneous",
-          "progression": "med",
+          "progression": "high",
           "spells": "",
-          "ability": "wis",
+          "ability": "int",
           "cantrips": true,
           "offset": 0,
           "domain": 1
         },
-        "bab": "med",
+        "bab": "low",
         "skillsPerLevel": 2,
         "savingThrows": {
           "fort": {
             "value": "low"
           },
           "ref": {
-            "value": "high"
+            "value": "low"
           },
           "will": {
-            "value": "low"
+            "value": "high"
           }
         },
         "fc": {
@@ -606,16 +658,12 @@
         "wealth": "",
         "alignment": "N",
         "classSkills": {
-          "clm": true,
-          "crf": true,
-          "han": true,
-          "per": true,
-          "pro": true,
-          "rid": true,
-          "ste": true,
-          "sur": true,
-          "swm": true,
           "apr": true,
+          "crf": true,
+          "kar": true,
+          "kpl": true,
+          "lin": true,
+          "pro": true,
           "spl": true
         },
         "armorProf": [],
@@ -629,24 +677,26 @@
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedRacialHitDice": true,
-          "profile": "Humanoid",
+          "generatedClassLevel": true,
+          "lookupTypes": [
+            "class"
+          ],
+          "sourceLine": "XP 400 Quadav Black Mage 1",
+          "sourceRace": "Quadav",
+          "sourceClass": "Black Mage",
+          "sourceLevel": 1,
           "sourceHitPoints": 5,
           "sourceHitDice": 1,
           "spellcasting": {
-            "kind": "semi",
-            "ability": "wis",
+            "kind": "class",
+            "ability": "int",
             "preparationMode": "spontaneous",
-            "casterType": "med",
-            "classBaseMPType": "pacman",
-            "baseMp": 1,
-            "finalMp": 2,
+            "casterType": "high",
+            "classBaseMPType": "fullCaster",
+            "baseMp": 4,
+            "finalMp": 4,
             "printedMp": 4,
-            "chartBaseMp": 1,
-            "maxSpellLevel": 1,
-            "mpSource": "monster-chart-plus-ability-bonus",
-            "foundryBonusLevels": 1,
-            "desiredBonusLevels": 1
+            "mpSource": "class-statblock-printed"
           }
         }
       }
@@ -2079,7 +2129,7 @@
           "charges": []
         },
         "tag": "black-magery",
-        "subType": "racial",
+        "subType": "classFeat",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
@@ -2103,8 +2153,7 @@
             "feat"
           ],
           "lookupSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "customFeature": true,
           "sourceText": "Black Magery (Increase Damage +1)"
@@ -2142,7 +2191,7 @@
           "charges": []
         },
         "tag": "spell-proficiency",
-        "subType": "racial",
+        "subType": "classFeat",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
@@ -2166,8 +2215,7 @@
             "feat"
           ],
           "lookupSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "customFeature": true,
           "sourceText": "Spell Proficiency"
@@ -2859,7 +2907,15 @@
           }
         ],
         "tactics": [],
-        "ecology": []
+        "ecology": [],
+        "family": "Quadav Family",
+        "classLine": "XP 400 Quadav Black Mage 1",
+        "classLevels": {
+          "raceName": "Quadav",
+          "className": "Black Mage",
+          "level": 1,
+          "sourceLine": "XP 400 Quadav Black Mage 1"
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.25";
+const MODULE_VERSION = "0.1.26";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -21,6 +21,8 @@ const MANAGED_PACKS = {
 };
 const COMPENDIUM_LOOKUP_TYPES = new Set(["feat", "buff", "class", "race", "spell", "weapon", "equipment", "consumable", "loot", "attack"]);
 const REPLACEABLE_GENERATED_FLAGS = [
+  "generatedRace",
+  "generatedClassLevel",
   "generatedFeat",
   "generatedSpecialQuality",
   "generatedDefensiveAbility",
@@ -141,6 +143,19 @@ function applyPlaceholderDetails(source, item) {
   if (flags.generatedInventoryItem && flags.broken && source.system) {
     source.system.broken = true;
   }
+  if (flags.generatedClassLevel && source.system) {
+    if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
+    if (Number.isFinite(item.system?.hp)) source.system.hp = item.system.hp;
+    if (item.system?.classCastingStat) source.system.classCastingStat = item.system.classCastingStat;
+    if (item.system?.classBaseMPTypes) source.system.classBaseMPTypes = item.system.classBaseMPTypes;
+    if (item.system?.classBaseMPauto) source.system.classBaseMPauto = item.system.classBaseMPauto;
+    if (Number.isFinite(item.system?.mp)) source.system.mp = item.system.mp;
+    if (item.system?.casting) source.system.casting = foundry.utils.mergeObject(source.system.casting ?? {}, item.system.casting, { inplace: false });
+  }
+  if (flags.generatedRace && source.system) {
+    if (item.system?.creatureTypes?.length) source.system.creatureTypes = item.system.creatureTypes;
+    if (item.system?.creatureSubtypes?.length) source.system.creatureSubtypes = item.system.creatureSubtypes;
+  }
   if (flags.generatedSpellReference && source.system) {
     if (item.system?.spellbook) source.system.spellbook = item.system.spellbook;
     if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
@@ -201,6 +216,19 @@ function getManagedPack(packName) {
   return pack;
 }
 
+function packFolders(pack) {
+  const folders = pack.folders;
+  if (!folders) return [];
+  if (Array.isArray(folders)) return folders;
+  if (Array.isArray(folders.contents)) return folders.contents;
+  if (typeof folders.values === "function") return Array.from(folders.values());
+  return [];
+}
+
+function actorFamily(actor) {
+  return String(foundry.utils.getProperty(actor, `flags.${MODULE_ID}.parsed.family`) ?? "").trim();
+}
+
 async function unlockPack(pack) {
   if (pack.locked) await pack.configure({ locked: false });
 }
@@ -210,6 +238,48 @@ async function clearPack(pack) {
   const ids = index.map((entry) => entry._id);
   if (ids.length) await Actor.deleteDocuments(ids, { pack: pack.collection });
   return ids.length;
+}
+
+async function clearPackFolders(pack) {
+  const ids = packFolders(pack).map((folder) => folder.id ?? folder._id).filter(Boolean);
+  if (ids.length) await Folder.deleteDocuments(ids, { pack: pack.collection });
+  return ids.length;
+}
+
+async function assignFamilyFolders(pack, actors) {
+  const familyNames = [...new Set(actors.map(actorFamily).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  if (!familyNames.length) return [];
+
+  const existing = new Map(
+    packFolders(pack)
+      .filter((folder) => folder.type === "Actor")
+      .map((folder) => [folder.name, folder])
+  );
+  const missing = familyNames.filter((familyName) => !existing.has(familyName));
+  const created = missing.length
+    ? await Folder.createDocuments(
+        missing.map((familyName) => ({
+          name: familyName,
+          type: "Actor",
+          color: "#777777",
+          flags: {
+            [MODULE_ID]: {
+              generatedFamilyFolder: true,
+            },
+          },
+        })),
+        { pack: pack.collection }
+      )
+    : [];
+
+  for (const folder of created) existing.set(folder.name, folder);
+  for (const actor of actors) {
+    const familyName = actorFamily(actor);
+    if (!familyName) continue;
+    const folder = existing.get(familyName);
+    if (folder) actor.folder = folder.id ?? folder._id;
+  }
+  return familyNames;
 }
 
 export async function importActors({ clear = true } = {}) {
@@ -236,17 +306,22 @@ export async function importActors({ clear = true } = {}) {
 
   let removed = 0;
   if (clear) {
-    for (const pack of packs.values()) removed += await clearPack(pack);
+    for (const pack of packs.values()) {
+      removed += await clearPack(pack);
+      await clearPackFolders(pack);
+    }
   }
 
   const created = [];
+  const familyFolders = {};
   for (const [packName, actors] of actorsByPack) {
     const pack = packs.get(packName);
+    familyFolders[packName] = await assignFamilyFolders(pack, actors);
     created.push(...(await Actor.createDocuments(actors, { pack: pack.collection })));
   }
 
   ui.notifications.info(`FFD20 Bestiary import complete: ${created.length} actor(s), ${removed} old actor(s) removed.`);
-  console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, packs: [...actorsByPack.keys()] });
+  console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, packs: [...actorsByPack.keys()], familyFolders });
   await game.settings.set(MODULE_ID, IMPORTED_VERSION_SETTING, MODULE_VERSION);
   return { created, removed, packs };
 }

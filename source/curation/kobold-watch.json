@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.25",
+  "moduleVersion": "0.1.26",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -247,7 +247,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "kdu": {
         "ability": "int",
@@ -313,9 +313,7 @@
       }
     },
     "coverage": {
-      "racialHitDice": [
-        "Humanoid"
-      ],
+      "racialHitDice": [],
       "naturalAttacks": [],
       "weaponAttacks": [
         "Spear",
@@ -354,21 +352,52 @@
         "Reckless Work",
         "Thick Hide"
       ],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Kobold",
+        "Warrior"
+      ]
     },
     "items": [
       {
-        "id": "racialhd00000001",
-        "name": "Humanoid",
-        "type": "class",
-        "subType": "racial",
-        "category": "racialHitDice",
+        "id": "race000000000001",
+        "name": "Kobold",
+        "type": "race",
+        "category": "race",
         "generatedFlags": [
-          "generatedRacialHitDice"
+          "generatedRace"
         ],
-        "sourceFlagData": {
-          "racialProfile": "Humanoid"
+        "compendiumLookup": {
+          "expectedTypes": [
+            "race"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "classlevel000001",
+        "name": "Warrior",
+        "type": "class",
+        "subType": "base",
+        "category": "class",
+        "generatedFlags": [
+          "generatedClassLevel"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "class"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
           "changes": [
@@ -381,27 +410,26 @@
           ],
           "contextNotes": [],
           "classSkills": {
+            "acr": true,
             "clm": true,
             "crf": true,
             "han": true,
-            "per": true,
+            "int": true,
             "pro": true,
             "rid": true,
-            "ste": true,
             "sur": true,
             "swm": true,
-            "acr": true,
             "kdu": true
           },
           "level": 1,
-          "hitDie": 8,
-          "baseAttack": "med",
+          "hitDie": 10,
+          "baseAttack": "high",
           "savingThrows": {
             "fort": {
-              "value": "low"
+              "value": "high"
             },
             "ref": {
-              "value": "high"
+              "value": "low"
             },
             "will": {
               "value": "low"
@@ -721,7 +749,7 @@
         "id": "sqfeat0000000001",
         "name": "Chosen Weapon +1",
         "type": "feat",
-        "subType": "racial",
+        "subType": "classFeat",
         "category": "specialQualities",
         "generatedFlags": [
           "generatedSpecialQuality"
@@ -731,8 +759,7 @@
             "feat"
           ],
           "expectedSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
@@ -1233,7 +1260,7 @@
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 22 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 23 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

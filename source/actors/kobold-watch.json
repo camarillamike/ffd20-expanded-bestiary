@@ -102,7 +102,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "kdu": {
         "ability": "int",
@@ -189,13 +189,64 @@
   },
   "items": [
     {
-      "_id": "racialhd00000001",
-      "name": "Humanoid",
+      "_id": "race000000000001",
+      "name": "Kobold",
+      "type": "race",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated race placeholder from the source statblock: XP 200 Kobold Warrior 1.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "size": "med",
+        "speeds": {
+          "land": null,
+          "fly": null,
+          "flyManeuverability": "",
+          "swim": null,
+          "climb": null,
+          "burrow": null
+        },
+        "creatureTypes": [
+          "Humanoid"
+        ],
+        "creatureSubtypes": [
+          "Kobold"
+        ],
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRace": true,
+          "lookupTypes": [
+            "race"
+          ],
+          "sourceLine": "XP 200 Kobold Warrior 1",
+          "sourceRace": "Kobold",
+          "sourceFamily": "Kobold Family"
+        }
+      }
+    },
+    {
+      "_id": "classlevel000001",
+      "name": "Warrior",
       "type": "class",
       "img": "systems/ffd20/icons/skills/yellow_08.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "value": "<p>Generated class level from the source statblock: XP 200 Kobold Warrior 1.</p>",
           "instructions": ""
         },
         "changes": [
@@ -211,25 +262,25 @@
         "links": {
           "classAssociations": []
         },
-        "tag": "humanoid",
-        "subType": "racial",
-        "classSubType": "racial",
+        "tag": "warrior",
+        "subType": "base",
+        "classSubType": "base",
         "parentClass": "",
         "level": 1,
-        "hd": 8,
+        "hd": 10,
         "hp": 6,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
         "mp": 0,
-        "bab": "med",
+        "bab": "high",
         "skillsPerLevel": 2,
         "savingThrows": {
           "fort": {
-            "value": "low"
+            "value": "high"
           },
           "ref": {
-            "value": "high"
+            "value": "low"
           },
           "will": {
             "value": "low"
@@ -250,16 +301,15 @@
         "wealth": "",
         "alignment": "LE",
         "classSkills": {
+          "acr": true,
           "clm": true,
           "crf": true,
           "han": true,
-          "per": true,
+          "int": true,
           "pro": true,
           "rid": true,
-          "ste": true,
           "sur": true,
           "swm": true,
-          "acr": true,
           "kdu": true
         },
         "armorProf": [],
@@ -273,8 +323,14 @@
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedRacialHitDice": true,
-          "profile": "Humanoid",
+          "generatedClassLevel": true,
+          "lookupTypes": [
+            "class"
+          ],
+          "sourceLine": "XP 200 Kobold Warrior 1",
+          "sourceRace": "Kobold",
+          "sourceClass": "Warrior",
+          "sourceLevel": 1,
           "sourceHitPoints": 7,
           "sourceHitDice": 1,
           "spellcasting": null
@@ -1023,7 +1079,7 @@
           "charges": []
         },
         "tag": "chosen-weapon-1",
-        "subType": "racial",
+        "subType": "classFeat",
         "traitType": "",
         "traitCategory": "",
         "racePoints": null,
@@ -1047,8 +1103,7 @@
             "feat"
           ],
           "lookupSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "customFeature": true,
           "sourceText": "Chosen Weapon +1 (Polearms)"
@@ -2435,7 +2490,15 @@
           }
         ],
         "tactics": [],
-        "ecology": []
+        "ecology": [],
+        "family": "Kobold Family",
+        "classLine": "XP 200 Kobold Warrior 1",
+        "classLevels": {
+          "raceName": "Kobold",
+          "className": "Warrior",
+          "level": 1,
+          "sourceLine": "XP 200 Kobold Warrior 1"
+        }
       }
     }
   }

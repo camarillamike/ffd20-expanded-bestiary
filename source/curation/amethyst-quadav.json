@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.25",
+  "moduleVersion": "0.1.26",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amethyst Quadav",
@@ -209,11 +209,11 @@
     "skills": {
       "hea": {
         "ability": "wis",
-        "rank": 4
+        "rank": 1
       },
       "spl": {
         "ability": "int",
-        "rank": 5
+        "rank": 2
       }
     },
     "defenses": {
@@ -229,8 +229,8 @@
         "offset": 0
       },
       "mp": {
-        "value": 2,
-        "max": 2,
+        "value": 4,
+        "max": 4,
         "temp": 0,
         "recover": 0,
         "offset": 0
@@ -276,13 +276,13 @@
       "spells": {
         "spellbooks": {
           "primary": {
-            "name": "Humanoid",
+            "name": "White Mage",
             "inUse": true,
             "kind": "",
             "castPerDayAllOffsetFormula": "",
             "preparedAllOffsetFormula": "",
-            "casterType": "med",
-            "class": "humanoid",
+            "casterType": "high",
+            "class": "white-mage",
             "cl": {
               "formula": ""
             },
@@ -629,9 +629,7 @@
       }
     },
     "coverage": {
-      "racialHitDice": [
-        "Humanoid"
-      ],
+      "racialHitDice": [],
       "naturalAttacks": [],
       "weaponAttacks": [
         "Mace",
@@ -682,50 +680,76 @@
         "Hold Breath",
         "Steel Shelled"
       ],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Quadav",
+        "White Mage"
+      ]
     },
     "items": [
       {
-        "id": "racialhd00000001",
-        "name": "Humanoid",
-        "type": "class",
-        "subType": "racial",
-        "category": "racialHitDice",
+        "id": "race000000000001",
+        "name": "Quadav",
+        "type": "race",
+        "category": "race",
         "generatedFlags": [
-          "generatedRacialHitDice"
+          "generatedRace"
         ],
-        "sourceFlagData": {
-          "racialProfile": "Humanoid"
+        "compendiumLookup": {
+          "expectedTypes": [
+            "race"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "classlevel000001",
+        "name": "White Mage",
+        "type": "class",
+        "subType": "base",
+        "category": "class",
+        "generatedFlags": [
+          "generatedClassLevel"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "class"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
           "changes": [],
           "contextNotes": [],
           "classSkills": {
-            "clm": true,
-            "crf": true,
-            "han": true,
-            "per": true,
-            "pro": true,
-            "rid": true,
-            "ste": true,
-            "sur": true,
-            "swm": true,
+            "dip": true,
             "hea": true,
+            "kre": true,
+            "pro": true,
+            "sen": true,
             "spl": true
           },
           "level": 1,
-          "hitDie": 8,
-          "baseAttack": "med",
+          "hitDie": 6,
+          "baseAttack": "low",
           "savingThrows": {
             "fort": {
               "value": "low"
             },
             "ref": {
-              "value": "high"
+              "value": "low"
             },
             "will": {
-              "value": "low"
+              "value": "high"
             }
           }
         },
@@ -1387,7 +1411,7 @@
         "id": "sqfeat0000000001",
         "name": "Spell Proficiency",
         "type": "feat",
-        "subType": "racial",
+        "subType": "classFeat",
         "category": "specialQualities",
         "generatedFlags": [
           "generatedSpecialQuality"
@@ -1397,8 +1421,7 @@
             "feat"
           ],
           "expectedSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
@@ -1422,7 +1445,7 @@
         "id": "sqfeat0000000002",
         "name": "White Magery",
         "type": "feat",
-        "subType": "racial",
+        "subType": "classFeat",
         "category": "specialQualities",
         "generatedFlags": [
           "generatedSpecialQuality"
@@ -1432,8 +1455,7 @@
             "feat"
           ],
           "expectedSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
@@ -1457,7 +1479,7 @@
         "id": "defab00000000001",
         "name": "Feathers of Gale",
         "type": "feat",
-        "subType": "racial",
+        "subType": "classFeat",
         "category": "defensiveAbilities",
         "generatedFlags": [
           "generatedDefensiveAbility"
@@ -1467,8 +1489,7 @@
             "feat"
           ],
           "expectedSubTypes": [
-            "racial",
-            "misc"
+            "classFeat"
           ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
@@ -1728,7 +1749,7 @@
     ]
   },
   "curation": {
-    "summary": "Amethyst Quadav is packaged as an FFD20 NPC actor with 32 generated item(s) across 9 populated mechanics categories.",
+    "summary": "Amethyst Quadav is packaged as an FFD20 NPC actor with 33 generated item(s) across 9 populated mechanics categories.",
     "creatureRole": {
       "cr": "1",
       "size": "Medium",

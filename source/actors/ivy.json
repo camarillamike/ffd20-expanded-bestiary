@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -156,8 +154,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -215,7 +212,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 7,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
@@ -271,6 +268,82 @@
       }
     },
     {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -1 (+3 grapple); CMD 11 (cannot be tripped)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -1 (+3 grapple); CMD 11 (cannot be tripped)",
+            "bab": 0,
+            "cmb": -1,
+            "cmd": 11
+          }
+        }
+      }
+    },
+    {
       "_id": "natatk0000000001",
       "name": "Slam",
       "type": "attack",
@@ -303,7 +376,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "",
+            "attackBonus": "1",
             "damage": {
               "parts": [
                 {
@@ -349,7 +422,9 @@
             "attackName": "Slam",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve grab."
+              ],
               "footer": [
                 "Source statblock: Slam +1 (1d3 plus grab)"
               ]
@@ -357,13 +432,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve grab."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "spatk00000000002",
+              "level": 1
+            }
+          ]
         },
         "tag": "slam",
         "subType": "natural",
@@ -534,7 +618,30 @@
           "value": "<p>Special attack listed in the source statblock: Constrict (1d3).</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Constrict",
+            "actionType": "other",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "target": {
+              "value": "grappled creature"
+            },
+            "effectNotes": [
+              "Use after a successful grapple check."
+            ]
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -922,13 +1029,13 @@
       }
     },
     {
-      "_id": "bf00000000000001",
-      "name": "Camouflage",
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
       "type": "buff",
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>Since an ivy looks like a normal plant when at rest, a DC 20 Perception check is required to notice it before it attacks for the first time. Anyone with ranks in Survival or Knowledge (nature) can use either of those skills instead of Perception to notice the plant.</p>",
+          "value": "<p>The master of an ivy familiar gains a +3 bonus on stealth checks. Drag this buff to the familiar's master.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -941,7 +1048,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -956,160 +1071,25 @@
         "contextNotes": [
           {
             "target": "misc",
-            "text": "DC 20 Perception check required to notice this creature."
+            "text": "This buff belongs on the familiar's master, not the familiar."
           }
         ],
         "links": {
           "children": []
         },
-        "tag": "camouflage",
-        "subType": "perm",
-        "active": true,
+        "tag": "the-master-of-an-ivy-familiar-gains-a-3",
+        "subType": "temp",
+        "active": false,
         "level": 0,
         "duration": {
           "value": null,
           "units": "",
           "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Camouflage",
-            "category": "passive",
-            "automationNotes": []
-          }
         }
-      }
-    },
-    {
-      "_id": "bf00000000000002",
-      "name": "Constrict",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Special attack listed in the source statblock: Constrict (1d3).</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "attack",
-            "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "constrict",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Constrict",
-            "category": "passive",
-            "automationNotes": []
-          }
-        }
-      }
-    },
-    {
-      "_id": "bf00000000000003",
-      "name": "grab",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Special attack listed in the source attack line: grab.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "attack",
-            "text": "Apply grab on the listed natural attack hit."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "grab",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "grab",
-            "category": "passive",
-            "automationNotes": []
-          }
+          "curatedBuff": true
         }
       }
     }
@@ -1133,6 +1113,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 2,
+        "size": "Medium",
+        "cr": "1/2",
         "creatureType": "Plant",
         "subtypes": [],
         "xp": 200,

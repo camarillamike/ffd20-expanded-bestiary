@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 2,
-        "max": 2,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -101,6 +99,10 @@
       }
     },
     "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
       "per": {
         "ability": "wis",
         "rank": 0
@@ -207,6 +209,13 @@
         "changes": [
           {
             "formula": "4",
+            "target": "skill.acr",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
             "target": "skill.ste",
             "type": "racial",
             "operator": "add",
@@ -220,7 +229,12 @@
             "priority": 0
           }
         ],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "skill.acr",
+            "text": "jump: source total +9 (+4 conditional adjustment)."
+          }
+        ],
         "links": {
           "classAssociations": []
         },
@@ -287,6 +301,75 @@
           "sourceHitPoints": 2,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB –3; CMD 2 (6 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "9",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB –3; CMD 2 (6 vs. trip)",
+            "bab": 0,
+            "cmb": 0,
+            "cmd": 2
+          }
         }
       }
     },
@@ -369,7 +452,9 @@
             "attackName": "Bite",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve Poison."
+              ],
               "footer": [
                 "Source statblock: Bite -1 (1d2-5 plus poison)"
               ]
@@ -377,13 +462,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve Poison."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "sa00000000000001",
+              "level": 1
+            }
+          ]
         },
         "tag": "bite",
         "subType": "natural",
@@ -919,6 +1013,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a toad familiar gains 3 hit points. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "mhp",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-toad-familiar-gains-3-hi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -940,6 +1099,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 1,
+        "size": "Diminutive",
+        "cr": "1/8",
         "creatureType": "Animal [Familiar]",
         "subtypes": [],
         "xp": 50,

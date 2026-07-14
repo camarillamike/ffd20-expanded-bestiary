@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 5,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -210,7 +208,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 7,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
@@ -267,6 +265,82 @@
           "sourceHitPoints": 7,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -2; CMD 11</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -2; CMD 11",
+            "bab": 0,
+            "cmb": -2,
+            "cmd": 11
+          }
         }
       }
     },
@@ -593,7 +667,7 @@
         "actions": [
           {
             "name": "Burrow Attack",
-            "actionType": "other",
+            "actionType": "mwak",
             "activation": {
               "cost": 1,
               "type": "swift",
@@ -603,11 +677,14 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
             },
             "target": {
-              "value": ""
+              "value": "one target"
             },
             "attackBonus": "",
             "touch": false,
@@ -615,6 +692,12 @@
               "critParts": [],
               "nonCritParts": [],
               "parts": [
+                {
+                  "formula": "1d4 + @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                },
                 {
                   "formula": "1d4",
                   "types": [
@@ -626,17 +709,49 @@
             "save": {
               "dc": "",
               "type": "",
-              "description": ""
+              "description": "",
+              "harmless": false
             },
             "notes": {
               "effect": [],
-              "footer": []
+              "footer": [
+                "Source statblock: Bite +5 (1d4-2)"
+              ]
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Use when emerging from the ground; includes the Bite and bonus earth damage."
+            ],
             "measureTemplate": {
               "type": "",
-              "size": null
-            }
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": ""
           }
         ],
         "attackNotes": [],
@@ -967,6 +1082,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a mu familiar gains a +3 bonus on Sleight of Hand checks. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.slt",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-mu-familiar-gains-a-3-b",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -988,6 +1168,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 3,
+        "size": "Tiny",
+        "cr": "1/2",
         "creatureType": "Animal [Familiar]",
         "subtypes": [],
         "xp": 200,

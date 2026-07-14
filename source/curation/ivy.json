@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Ivy",
@@ -172,8 +172,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -200,13 +199,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -222,15 +219,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -281,12 +278,11 @@
       "specialAbilities": [
         "Camouflage"
       ],
-      "buffs": [
-        "Camouflage",
-        "Constrict",
-        "grab"
-      ],
-      "miscellaneous": []
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -327,6 +323,37 @@
         "reviewNotes": []
       },
       {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "natatk0000000001",
         "name": "Slam",
         "type": "attack",
@@ -356,6 +383,7 @@
               "name": "Slam",
               "actionType": "mwak",
               "activation": "standard",
+              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -373,6 +401,9 @@
                     "bludgeoning"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve grab."
               ]
             }
           ],
@@ -464,7 +495,26 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Constrict",
+              "actionType": "other",
+              "target": {
+                "value": "grappled creature"
+              },
+              "damage": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "effectNotes": [
+                "Use after a successful grapple check."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [
             {
@@ -562,86 +612,27 @@
         "reviewNotes": []
       },
       {
-        "id": "bf00000000000001",
-        "name": "Camouflage",
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
         "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Camouflage",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.ste",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
               "target": "misc",
-              "text": "DC 20 Perception check required to notice this creature."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000002",
-        "name": "Constrict",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Constrict",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "attack",
-              "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000003",
-        "name": "grab",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "grab",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "attack",
-              "text": "Apply grab on the listed natural attack hit."
+              "text": "This buff belongs on the familiar's master, not the familiar."
             }
           ],
           "level": 0
@@ -651,7 +642,7 @@
     ]
   },
   "curation": {
-    "summary": "Ivy is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Ivy is packaged as an FFD20 NPC actor with 9 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",
@@ -670,8 +661,7 @@
       "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
-      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
-      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items."
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines."
     ],
     "unresolved": [],
     "nextReviewSteps": [

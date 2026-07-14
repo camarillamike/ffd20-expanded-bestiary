@@ -49,8 +49,6 @@
       },
       "naturalAC": 0,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 4,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": -1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -295,7 +293,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "1",
+            "attackBonus": "",
             "damage": {
               "parts": [
                 {
@@ -515,6 +513,740 @@
           "sourceText": "The master of a baby chocobo familiar gains a bonus on it's color: Chocobo Color Familiar Bonus Black +3 Fly checks Blue +3 Swim checks Brown +3 Acrobat checks Gold +2 Reflex saves Green +3 Heal checks Pink +3 Appraise checks Purple +2 Fort saves Rainbow +1 Fort, Reflex, & Will saves Red +3 Climb checks Silver +1 natural armor White +2 Will saves Yellow +4 Initiative checks"
         }
       }
+    },
+    {
+      "_id": "fmchocobo0000001",
+      "name": "Familiar Master - Black Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Black chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "black-chocobo-familiar-master-bonus-dra",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000002",
+      "name": "Familiar Master - Blue Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Blue chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "blue-chocobo-familiar-master-bonus-drag",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000003",
+      "name": "Familiar Master - Brown Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Brown chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "brown-chocobo-familiar-master-bonus-dra",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000004",
+      "name": "Familiar Master - Gold Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Gold chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "ref",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "gold-chocobo-familiar-master-bonus-drag",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000005",
+      "name": "Familiar Master - Green Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Green chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.hea",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "green-chocobo-familiar-master-bonus-dra",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000006",
+      "name": "Familiar Master - Pink Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Pink chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.apr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "pink-chocobo-familiar-master-bonus-drag",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000007",
+      "name": "Familiar Master - Purple Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Purple chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "fort",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "purple-chocobo-familiar-master-bonus-dr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000008",
+      "name": "Familiar Master - Red Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Red chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "red-chocobo-familiar-master-bonus-drag",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000009",
+      "name": "Familiar Master - Silver Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Silver chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "nac",
+            "type": "natural",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "silver-chocobo-familiar-master-bonus-dr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000010",
+      "name": "Familiar Master - White Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>White chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "will",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "white-chocobo-familiar-master-bonus-dra",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocobo0000011",
+      "name": "Familiar Master - Yellow Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Yellow chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "init",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "yellow-chocobo-familiar-master-bonus-dr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "fmchocoborainbow",
+      "name": "Familiar Master - Rainbow Chocobo",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Rainbow chocobo familiar master bonus. Drag this buff to the master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "fort",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "ref",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "will",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "rainbow-chocobo-familiar-master-bonus-d",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -536,6 +1268,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 0,
+        "size": "Small",
+        "cr": "1/4",
         "creatureType": "Animal [Familiar]",
         "subtypes": [
           "Avian"

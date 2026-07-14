@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
-      "naturalAC": 1,
+      "naturalAC": 0,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 4,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -295,7 +293,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "-1",
+            "attackBonus": "",
             "damage": {
               "parts": [
                 {
@@ -341,7 +339,9 @@
             "attackName": "Bite",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve Poison."
+              ],
               "footer": [
                 "Source statblock: Bite +1 (1d3+1 plus poison)"
               ]
@@ -349,13 +349,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve Poison."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "sa00000000000001",
+              "level": 1
+            }
+          ]
         },
         "tag": "bite",
         "subType": "natural",
@@ -670,11 +679,11 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": 30,
+              "units": "ft"
             },
             "target": {
-              "value": "single target"
+              "value": "one target"
             },
             "attackBonus": "",
             "touch": false,
@@ -702,6 +711,7 @@
               "footer": []
             },
             "effectNotes": [
+              "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn.",
               "Recharge [[1d4+1]] rounds."
             ],
             "measureTemplate": {
@@ -851,6 +861,9 @@
       "packagedImageSource": "generated-local",
       "parsed": {
         "alignment": "NE",
+        "initiative": 2,
+        "size": "Medium",
+        "cr": "1/2",
         "creatureType": "Aberration",
         "subtypes": [],
         "xp": 200,

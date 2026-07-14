@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 7,
+          "base": 4,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -104,6 +102,10 @@
       "per": {
         "ability": "wis",
         "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 1
       }
     },
     "details": {
@@ -209,7 +211,12 @@
             "priority": 0
           }
         ],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "skill.ste",
+            "text": "in forests: source total +28 (+16 conditional adjustment)."
+          }
+        ],
         "links": {
           "classAssociations": []
         },
@@ -219,7 +226,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 7,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
@@ -271,6 +278,82 @@
           "sourceHitPoints": 7,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB +3 (+7 grapple); CMD 12 (cannot be tripped)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "6",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB +3 (+7 grapple); CMD 12 (cannot be tripped)",
+            "bab": 0,
+            "cmb": 3,
+            "cmd": 12
+          }
         }
       }
     },
@@ -353,7 +436,9 @@
             "attackName": "Bite",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve Poison."
+              ],
               "footer": [
                 "Source statblock: Bite +5 (1d2-1 plus poison)"
               ]
@@ -361,13 +446,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve Poison."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "sa00000000000002",
+              "level": 1
+            }
+          ]
         },
         "tag": "bite",
         "subType": "natural",
@@ -764,7 +858,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": "Negates nauseated for 1d4 rounds and then sickened for 1d4 minutes by the horrific stench"
+              "description": "Failure: nauseated 1d4 rounds, then sickened 1d4 minutes. Success: sickened 1d4 rounds."
             },
             "notes": {
               "effect": [
@@ -773,7 +867,7 @@
               "footer": []
             },
             "effectNotes": [
-              "Duration: 1d4 rounds"
+              "Affected creatures cannot use scent until the musk effect ends."
             ],
             "measureTemplate": {
               "type": "",
@@ -942,7 +1036,14 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": []
+              "parts": [
+                {
+                  "formula": "1",
+                  "types": [
+                    "str"
+                  ]
+                }
+              ]
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -956,7 +1057,7 @@
               "footer": []
             },
             "effectNotes": [
-              "Duration: 6 rounds"
+              "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save."
             ],
             "measureTemplate": {
               "type": "",
@@ -1267,6 +1368,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a morbol seedling gains a +2 bonus on Fortitude saves. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "fort",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-morbol-seedling-gains-a",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -1288,6 +1454,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 3,
+        "size": "Tiny",
+        "cr": "1/2",
         "creatureType": "Plant [Familiar]",
         "subtypes": [],
         "xp": 200,

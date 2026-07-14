@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Toad",
@@ -193,6 +193,10 @@
       "stature": "tall"
     },
     "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
       "per": {
         "ability": "wis",
         "rank": 0
@@ -209,13 +213,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 2,
-        "max": 2,
         "temp": 0,
         "offset": 0
       },
@@ -231,15 +233,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -289,7 +291,10 @@
         "Poisonous Skin"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -308,6 +313,12 @@
           "actions": [],
           "changes": [
             {
+              "target": "skill.acr",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            },
+            {
               "target": "skill.ste",
               "formula": "4",
               "type": "racial",
@@ -320,7 +331,12 @@
               "operator": "add"
             }
           ],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "skill.acr",
+              "text": "jump: source total +9 (+4 conditional adjustment)."
+            }
+          ],
           "classSkills": {
             "acr": true,
             "clm": true,
@@ -344,6 +360,31 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "9",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -394,6 +435,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve Poison."
               ]
             }
           ],
@@ -599,11 +643,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "mhp",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Toad is packaged as an FFD20 NPC actor with 6 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Toad is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/8",
       "size": "Diminutive",

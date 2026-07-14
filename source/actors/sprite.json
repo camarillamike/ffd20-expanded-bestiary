@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 6,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 3,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -531,8 +529,7 @@
           {
             "amount": 10,
             "types": [
-              "light",
-              ""
+              "light"
             ],
             "operator": true
           }
@@ -1264,7 +1261,8 @@
           "spellbook": "primary",
           "atWill": true,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Dancing Lights"
         }
       }
     },
@@ -1348,7 +1346,8 @@
           "spellbook": "primary",
           "atWill": true,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Daze"
         }
       }
     },
@@ -1432,7 +1431,8 @@
           "spellbook": "primary",
           "atWill": true,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Holy Orb"
         }
       }
     },
@@ -1516,7 +1516,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Color Spray"
         }
       }
     },
@@ -1600,7 +1601,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Cure"
         }
       }
     },
@@ -1684,7 +1686,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "Light"
         }
       }
     },
@@ -1967,7 +1970,7 @@
         "contextNotes": [
           {
             "target": "misc",
-            "text": "Sheds torch-equivalent light; can dim or extinguish it as a swift action."
+            "text": "Prototype token starts with torch-equivalent light. Dim or extinguish it from token Light controls as a swift action."
           }
         ],
         "links": {
@@ -1995,6 +1998,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a sprite familiar gains a +1 bonus to the saving throw DCs of all spells they cast of the light school. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "dc.school.light",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-sprite-familiar-gains-a",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -2006,6 +2074,12 @@
     },
     "sight": {
       "enabled": true
+    },
+    "light": {
+      "bright": 20,
+      "dim": 40,
+      "angle": 360,
+      "alpha": 0.25
     }
   },
   "flags": {
@@ -2016,6 +2090,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "CN",
+        "initiative": 3,
+        "size": "Diminutive",
+        "cr": "1/3",
         "creatureType": "Fey",
         "subtypes": [],
         "xp": 135,

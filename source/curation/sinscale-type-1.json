@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sinscale Type 1",
@@ -194,13 +194,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
-      "naturalAC": 1,
+      "naturalAC": 0,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -216,15 +214,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 4,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -347,7 +345,6 @@
               "name": "Bite",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "-1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -365,6 +362,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve Poison."
               ]
             }
           ],
@@ -516,11 +516,11 @@
               "activation": "swift",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 30,
+                "units": "ft"
               },
               "target": {
-                "value": "single target"
+                "value": "one target"
               },
               "damage": [
                 {
@@ -531,6 +531,7 @@
                 }
               ],
               "effectNotes": [
+                "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn.",
                 "Recharge [[1d4+1]] rounds."
               ]
             }

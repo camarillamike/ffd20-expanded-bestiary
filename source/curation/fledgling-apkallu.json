@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Fledgling Apkallu",
@@ -207,13 +207,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -229,15 +227,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -288,10 +286,12 @@
         "Flying Sardine"
       ],
       "buffs": [
-        "Hold Breath",
         "Toboggan"
       ],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -333,6 +333,31 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -590,7 +615,10 @@
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
                 "description": "Negates the spell they were casting gets interrupted (only affects spells up to 2nd level)"
-              }
+              },
+              "effectNotes": [
+                "The source prints no save DC; use the generated monster DC formula. On failure, interrupt a spell of 2nd level or lower."
+              ]
             }
           ],
           "changes": [],
@@ -600,39 +628,10 @@
         "reviewNotes": []
       },
       {
-        "id": "bf00000000000001",
-        "name": "Hold Breath",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Hold Breath",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Can hold breath as described in the ability text."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
         "id": "bf00000000000002",
         "name": "Toboggan",
         "type": "buff",
-        "subType": "perm",
+        "subType": "temp",
         "category": "buffs",
         "generatedFlags": [
           "generatedBuff"
@@ -646,11 +645,46 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "landSpeed",
+              "formula": "30 - @attributes.speed.land.base",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
               "target": "misc",
-              "text": "Movement option; see ability text for slope/ice/snow usage."
+              "text": "Enable only on snow- or ice-covered terrain; sets effective land speed to 30 ft."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.swm",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
             }
           ],
           "level": 0
@@ -660,7 +694,7 @@
     ]
   },
   "curation": {
-    "summary": "Fledgling Apkallu is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Fledgling Apkallu is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Leaf Bunny",
@@ -178,6 +178,10 @@
       "stature": "tall"
     },
     "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
       "ste": {
         "ability": "dex",
         "rank": 2
@@ -186,13 +190,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 3,
-        "max": 3,
         "temp": 0,
         "offset": 0
       },
@@ -208,15 +210,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 5,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -263,7 +265,9 @@
         "Carrot"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments"
+      ]
     },
     "items": [
       {
@@ -281,7 +285,12 @@
         "mechanics": {
           "actions": [],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "skill.acr",
+              "text": "Jumping: source total +11 (+8 conditional adjustment)."
+            }
+          ],
           "classSkills": {
             "acr": true,
             "clm": true,
@@ -305,6 +314,31 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "7",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -456,7 +490,7 @@
     ]
   },
   "curation": {
-    "summary": "Leaf Bunny is packaged as an FFD20 NPC actor with 4 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Leaf Bunny is packaged as an FFD20 NPC actor with 5 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",

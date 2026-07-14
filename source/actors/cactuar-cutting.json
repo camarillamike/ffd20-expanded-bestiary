@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 5,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 5,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": -2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -265,6 +263,82 @@
           "sourceHitPoints": 5,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB +3; CMD 10</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "9",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB +3; CMD 10",
+            "bab": 0,
+            "cmb": 3,
+            "cmd": 10
+          }
         }
       }
     },
@@ -726,11 +800,11 @@
             "name": "Thorns",
             "actionType": "other",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -738,7 +812,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "attacking or grappling creature"
             },
             "attackBonus": "",
             "touch": false,
@@ -763,7 +837,9 @@
               "effect": [],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Reactive damage against non-reach melee or natural attackers; also triggers each round while grappling."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -880,6 +956,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a cactuar cutting gains a +1 natural armor bonus to AC. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "nac",
+            "type": "natural",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-cactuar-cutting-gains-a",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -901,6 +1042,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 5,
+        "size": "Tiny",
+        "cr": "1/3",
         "creatureType": "Plant [Familiar]",
         "subtypes": [],
         "xp": 135,

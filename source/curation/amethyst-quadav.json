@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amethyst Quadav",
@@ -197,8 +197,7 @@
           {
             "amount": 5,
             "types": [
-              "water",
-              ""
+              "water"
             ],
             "operator": true
           }
@@ -233,8 +232,6 @@
       },
       "naturalAC": 1,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -250,15 +247,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 4,
+          "base": -1,
           "ability": "wis"
         }
       },
@@ -686,12 +683,7 @@
         "Steel Shelled"
       ],
       "buffs": [
-        "Full Withdrawal",
-        "Hold Breath",
-        "Steel Shelled",
-        "Spell Proficiency",
-        "White Magery",
-        "Feathers of Gale"
+        "Full Withdrawal"
       ],
       "miscellaneous": [
         "Quadav",
@@ -735,7 +727,9 @@
           "expectedTypes": [
             "class"
           ],
-          "expectedSubTypes": [],
+          "expectedSubTypes": [
+            "base"
+          ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {},
@@ -1691,161 +1685,12 @@
           "changes": [],
           "contextNotes": [
             {
-              "target": "misc",
-              "text": "Full-round action to withdraw into shell; must remain withdrawn for at least 1 complete round."
+              "target": "defense",
+              "text": "DR 5/bludgeoning and 20% concealment while withdrawn."
             },
             {
-              "target": "defense",
-              "text": "While withdrawn: DR 5/bludgeoning, 20% concealment, prone, drops held/unattached items, cannot attack, use items, or cast spells."
-            },
-            {
-              "target": "misc",
-              "text": "Full-round action to leave the shell; leaving does not provoke attacks of opportunity."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000002",
-        "name": "Hold Breath",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Hold Breath",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Can hold breath as described in the ability text."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000003",
-        "name": "Steel Shelled",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Steel Shelled",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "defense",
-              "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000004",
-        "name": "Spell Proficiency",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Spell Proficiency",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "spell",
-              "text": "Spellcasting proficiency/quality from the source statblock; use the actor's configured spellbook and listed spells."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000005",
-        "name": "White Magery",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "White Magery",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "spell",
-              "text": "Apply the source statblock's listed White Magery healing benefit to matching white magic spells."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000006",
-        "name": "Feathers of Gale",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Feathers of Gale",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "defense",
-              "text": "Defensive ability listed by the source statblock. Use the hydrated compendium item if available; otherwise resolve from source rules during play."
+              "target": "attack",
+              "text": "Prone; cannot attack, use items, or cast spells. Full-round action to enter or leave."
             }
           ],
           "level": 0
@@ -1855,7 +1700,7 @@
     ]
   },
   "curation": {
-    "summary": "Amethyst Quadav is packaged as an FFD20 NPC actor with 36 generated item(s) across 9 populated mechanics categories.",
+    "summary": "Amethyst Quadav is packaged as an FFD20 NPC actor with 31 generated item(s) across 9 populated mechanics categories.",
     "creatureRole": {
       "cr": "1",
       "size": "Medium",

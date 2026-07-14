@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hedgehog Pie",
@@ -190,8 +190,7 @@
           {
             "amount": 10,
             "types": [
-              "fire",
-              ""
+              "fire"
             ],
             "operator": true
           }
@@ -201,7 +200,8 @@
       "cres": "",
       "di": [],
       "dv": [
-        "Ice and Lightning"
+        "ice",
+        "lightning"
       ],
       "ci": [
         "disease",
@@ -217,6 +217,10 @@
       "clm": {
         "ability": "str",
         "rank": 4
+      },
+      "kar": {
+        "ability": "int",
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -238,13 +242,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -260,15 +262,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": -2,
           "ability": "wis"
         }
       },
@@ -678,7 +680,9 @@
       "buffs": [
         "Spiny Defense"
       ],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -955,9 +959,8 @@
           "actions": [
             {
               "name": "Pumpkin Head",
-              "actionType": "other",
+              "actionType": "rsak",
               "activation": "standard",
-              "attackBonus": "+3",
               "touch": true,
               "range": {
                 "value": 15,
@@ -968,11 +971,14 @@
               },
               "damage": [
                 {
-                  "formula": "1",
+                  "formula": "(min(10, floor(max(0, @attributes.hp.max - @attributes.hp.value) / 5)))d4 + 1",
                   "types": [
                     "nonelemental"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Deals 1 base damage plus 1d4 per 5 HP currently missing, capped at 10d4."
               ]
             }
           ],
@@ -1024,7 +1030,27 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Spiny Defense",
+              "actionType": "other",
+              "activation": "special",
+              "target": {
+                "value": "creature attempting to grapple"
+              },
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "effectNotes": [
+                "Reactive damage when a creature attempts to grapple while Spiny Defense is active."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [
             {
@@ -1079,11 +1105,39 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "will",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Hedgehog Pie is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Hedgehog Pie is packaged as an FFD20 NPC actor with 11 generated item(s) across 8 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Small",

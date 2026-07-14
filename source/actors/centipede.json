@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -169,8 +167,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -238,7 +235,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 7,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
@@ -292,6 +289,67 @@
           "sourceHitPoints": 8,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -1; CMD 11 (can't be tripped)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -1; CMD 11 (can't be tripped)",
+            "bab": 0,
+            "cmb": -1,
+            "cmd": 11
+          }
         }
       }
     },
@@ -374,7 +432,9 @@
             "attackName": "Bite",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve Poison."
+              ],
               "footer": [
                 "Source statblock: Bite +2 (1d6-1 plus poison)"
               ]
@@ -382,13 +442,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve Poison."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "sa00000000000002",
+              "level": 1
+            }
+          ]
         },
         "tag": "bite",
         "subType": "natural",
@@ -971,6 +1040,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 2,
+        "size": "Medium",
+        "cr": "1/2",
         "creatureType": "Vermin",
         "subtypes": [],
         "xp": 200,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Zombie",
@@ -198,7 +198,8 @@
         "nonlethal"
       ],
       "dv": [
-        "Fire and Holy"
+        "fire",
+        "light"
       ],
       "ci": [
         "mindAffecting",
@@ -229,8 +230,6 @@
       },
       "naturalAC": 2,
       "hp": {
-        "value": 16,
-        "max": 16,
         "temp": 0,
         "offset": 0
       },
@@ -246,15 +245,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "cha"
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 3,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -639,11 +638,11 @@
           "contextNotes": [
             {
               "target": "misc",
-              "text": "Always staggered: can only take one move action or one standard action each round."
+              "text": "Always staggered: one move action or one standard action each round."
             },
             {
-              "target": "misc",
-              "text": "May still move up to speed and attack in the same round as a charge action."
+              "target": "attack",
+              "text": "May still charge, moving up to speed and attacking in the same round."
             }
           ],
           "level": 0

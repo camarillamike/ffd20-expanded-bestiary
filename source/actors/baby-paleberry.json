@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 4,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 4,
-        "max": 4,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 6,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": -2,
           "ability": "wis"
         }
       },
@@ -158,7 +156,7 @@
         "sc": {
           "value": 0
         },
-        "custom": ""
+        "custom": "Telepathy 30 ft."
       },
       "dr": {
         "value": [],
@@ -177,8 +175,7 @@
         "Negative status effects"
       ],
       "languages": [
-        "Tonberry",
-        "telepathy 30 ft."
+        "Tonberry"
       ],
       "stature": "tall"
     },
@@ -279,6 +276,82 @@
           "sourceHitPoints": 4,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +1; CMB +3; CMD 13</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +1; CMB +3; CMD 13",
+            "bab": 1,
+            "cmb": 3,
+            "cmd": 13
+          }
         }
       }
     },
@@ -885,7 +958,7 @@
         "actions": [
           {
             "name": "Knife",
-            "actionType": "save",
+            "actionType": "mwak",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -895,37 +968,69 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
             },
             "target": {
-              "value": ""
+              "value": "one target"
             },
             "attackBonus": "",
             "touch": false,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": []
+              "parts": [
+                {
+                  "formula": "1d2",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ]
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": "Negates sickened for 1 round"
+              "description": "Negates sickened for 1 round",
+              "harmless": false
             },
             "notes": {
-              "effect": [
-                "Duration: 1 round"
-              ],
-              "footer": []
+              "effect": [],
+              "footer": [
+                "Source statblock: Chef's Knife +7 (1d2-4, 18-20/x2)"
+              ]
             },
             "effectNotes": [
-              "Duration: 1 round"
+              "On a failed save, the target is sickened for 1 round.",
+              "Creatures immune to critical hits ignore the sickened rider but still take weapon damage."
             ],
             "measureTemplate": {
               "type": "",
-              "size": null
-            }
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 18,
+              "critMult": 2
+            },
+            "attackName": "Chef's Knife",
+            "critConfirmBonus": ""
           }
         ],
         "attackNotes": [],
@@ -1046,6 +1151,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.spl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-baby-paleberry-gains-a",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -1067,6 +1237,9 @@
       "packagedImageSource": "generated-local",
       "parsed": {
         "alignment": "LG",
+        "initiative": 4,
+        "size": "Tiny",
+        "cr": "1/3",
         "creatureType": "Outsider [Familiar]",
         "subtypes": [
           "Native"

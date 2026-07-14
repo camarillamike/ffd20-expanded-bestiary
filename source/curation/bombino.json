@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bombino",
@@ -190,9 +190,7 @@
         "precision",
         "Element of its type"
       ],
-      "dv": [
-        "Opposite element of its type"
-      ],
+      "dv": [],
       "ci": [
         "bleed",
         "paralyze",
@@ -228,13 +226,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 6,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -250,15 +246,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": -2,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -669,11 +665,13 @@
         "Float",
         "Self-Destruct"
       ],
-      "buffs": [
-        "Float",
-        "Self-Destruct"
-      ],
-      "miscellaneous": []
+      "buffs": [],
+      "miscellaneous": [
+        "Weaknesses",
+        "Self-Destruct Growth 1",
+        "Self-Destruct Growth 2",
+        "Self-Destruct Growth 3"
+      ]
     },
     "items": [
       {
@@ -1040,6 +1038,26 @@
         "reviewNotes": []
       },
       {
+        "id": "weakness00000001",
+        "name": "Weaknesses",
+        "type": "feat",
+        "subType": "racial",
+        "category": "feat",
+        "generatedFlags": [
+          "generatedWeaknesses"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "sa00000000000001",
         "name": "Float",
         "type": "feat",
@@ -1158,7 +1176,8 @@
                 {
                   "formula": "1d6",
                   "types": [
-                    "elemental-and-physical"
+                    "nonelemental",
+                    "bludgeoning"
                   ]
                 }
               ],
@@ -1168,7 +1187,8 @@
                 "description": "Half damage"
               },
               "effectNotes": [
-                "Area: 15-ft. radius"
+                "Split the rolled total evenly between the creature's current elemental type and physical damage; assign the odd point as the GM chooses.",
+                "The creature is destroyed after resolving this action."
               ]
             }
           ],
@@ -1188,50 +1208,13 @@
         "reviewNotes": []
       },
       {
-        "id": "bf00000000000001",
-        "name": "Float",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Float",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Continuously has Float and hovers 5 feet above the ground unless unconscious or dead; cannot be dispelled."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000002",
-        "name": "Self-Destruct",
+        "id": "selfgrow00000001",
+        "name": "Self-Destruct Growth 1",
         "type": "buff",
         "subType": "temp",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Self-Destruct",
-            "category": "toggle",
-            "automationNotes": []
-          }
-        },
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
           "changes": [
@@ -1244,12 +1227,64 @@
           ],
           "contextNotes": [
             {
-              "target": "misc",
-              "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
-            },
+              "target": "attack",
+              "text": "Advance to the next stage after another physical hit."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "selfgrow00000002",
+        "name": "Self-Destruct Growth 2",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "str",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
             {
               "target": "attack",
-              "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+              "text": "Advance to the next stage after another physical hit."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "selfgrow00000003",
+        "name": "Self-Destruct Growth 3",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "str",
+              "formula": "6",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Third hit triggers Self-Destruct."
             }
           ],
           "level": 0
@@ -1259,7 +1294,7 @@
     ]
   },
   "curation": {
-    "summary": "Bombino is packaged as an FFD20 NPC actor with 16 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Bombino is packaged as an FFD20 NPC actor with 18 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Small",
@@ -1279,7 +1314,6 @@
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
-      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",
       "Spell and spell-like ability lines create spell placeholders that should hydrate from installed FFD20/PF spell compendiums.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],

@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -263,6 +261,75 @@
           "sourceHitPoints": 6,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -2; CMD 8</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -2; CMD 8",
+            "bab": 0,
+            "cmb": -2,
+            "cmd": 8
+          }
         }
       }
     },
@@ -831,10 +898,14 @@
               "description": "Negates the spell they were casting gets interrupted (only affects spells up to 2nd level)"
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "The source prints no save DC; use the generated monster DC formula. On failure, interrupt a spell of 2nd level or lower."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "The source prints no save DC; use the generated monster DC formula. On failure, interrupt a spell of 2nd level or lower."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -964,70 +1035,6 @@
       }
     },
     {
-      "_id": "bf00000000000001",
-      "name": "Hold Breath",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>A fledgling apkallu increases the number of rounds it can hold its breath by 2.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "misc",
-            "text": "Can hold breath as described in the ability text."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "hold-breath",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Hold Breath",
-            "category": "passive",
-            "automationNotes": []
-          }
-        }
-      }
-    },
-    {
       "_id": "bf00000000000002",
       "name": "Toboggan",
       "type": "buff",
@@ -1047,7 +1054,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "30 - @attributes.speed.land.base",
+            "target": "landSpeed",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -1062,15 +1077,15 @@
         "contextNotes": [
           {
             "target": "misc",
-            "text": "Movement option; see ability text for slope/ice/snow usage."
+            "text": "Enable only on snow- or ice-covered terrain; sets effective land speed to 30 ft."
           }
         ],
         "links": {
           "children": []
         },
         "tag": "toboggan",
-        "subType": "perm",
-        "active": true,
+        "subType": "temp",
+        "active": false,
         "level": 0,
         "duration": {
           "value": null,
@@ -1088,6 +1103,71 @@
             "category": "passive",
             "automationNotes": []
           }
+        }
+      }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a fledgling apkallu gains a +3 bonus on Swim checks. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-fledgling-apkallu-gains",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
         }
       }
     }
@@ -1111,6 +1191,9 @@
       "packagedImageSource": "",
       "parsed": {
         "alignment": "N",
+        "initiative": 1,
+        "size": "Tiny",
+        "cr": "1/4",
         "creatureType": "Animal [Familiar]",
         "subtypes": [
           "Avian"

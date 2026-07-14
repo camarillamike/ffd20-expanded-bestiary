@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Saberpup",
@@ -172,8 +172,7 @@
           {
             "amount": 5,
             "types": [
-              "fire",
-              ""
+              "fire"
             ],
             "operator": true
           }
@@ -206,13 +205,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 6,
+        "value": 5,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -228,15 +225,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 2,
           "ability": "wis"
         }
       },
@@ -286,10 +283,11 @@
       "specialAbilities": [
         "Powerful Charge"
       ],
-      "buffs": [
-        "Powerful Charge"
-      ],
-      "miscellaneous": []
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -314,7 +312,12 @@
               "operator": "add"
             }
           ],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "skill.sur",
+              "text": "when tracking by scent: +4 racial bonus."
+            }
+          ],
           "classSkills": {
             "acr": true,
             "clm": true,
@@ -338,6 +341,37 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -568,7 +602,35 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Powerful Charge",
+              "actionType": "mwak",
+              "activation": "standard",
+              "attackBonus": "2",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2 * (1d4 + @abilities.str.mod)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "effectNotes": [
+                "Only while charging; doubles the Gore damage, including its Strength bonus."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [
             {
@@ -581,28 +643,27 @@
         "reviewNotes": []
       },
       {
-        "id": "bf00000000000001",
-        "name": "Powerful Charge",
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
         "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Powerful Charge",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.sur",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
-              "target": "attack",
-              "text": "On a charge, double the listed gore damage."
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
             }
           ],
           "level": 0
@@ -612,7 +673,7 @@
     ]
   },
   "curation": {
-    "summary": "Saberpup is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Saberpup is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
@@ -632,7 +693,6 @@
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
-      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],
     "unresolved": [],

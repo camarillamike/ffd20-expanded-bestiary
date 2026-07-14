@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Chocobo Chick",
@@ -178,8 +178,6 @@
       },
       "naturalAC": 0,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -195,15 +193,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 4,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": -1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -250,7 +248,20 @@
       ],
       "specialAbilities": [],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Familiar Master - Black Chocobo",
+        "Familiar Master - Blue Chocobo",
+        "Familiar Master - Brown Chocobo",
+        "Familiar Master - Gold Chocobo",
+        "Familiar Master - Green Chocobo",
+        "Familiar Master - Pink Chocobo",
+        "Familiar Master - Purple Chocobo",
+        "Familiar Master - Red Chocobo",
+        "Familiar Master - Silver Chocobo",
+        "Familiar Master - White Chocobo",
+        "Familiar Master - Yellow Chocobo",
+        "Familiar Master - Rainbow Chocobo"
+      ]
     },
     "items": [
       {
@@ -325,7 +336,6 @@
               "name": "Bite",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -402,11 +412,299 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000001",
+        "name": "Familiar Master - Black Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.fly",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000002",
+        "name": "Familiar Master - Blue Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.swm",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000003",
+        "name": "Familiar Master - Brown Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.acr",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000004",
+        "name": "Familiar Master - Gold Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "ref",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000005",
+        "name": "Familiar Master - Green Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.hea",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000006",
+        "name": "Familiar Master - Pink Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.apr",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000007",
+        "name": "Familiar Master - Purple Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "fort",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000008",
+        "name": "Familiar Master - Red Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.clm",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000009",
+        "name": "Familiar Master - Silver Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "nac",
+              "formula": "1",
+              "type": "natural",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000010",
+        "name": "Familiar Master - White Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "will",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocobo0000011",
+        "name": "Familiar Master - Yellow Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "init",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "fmchocoborainbow",
+        "name": "Familiar Master - Rainbow Chocobo",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "fort",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "ref",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "will",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Chocobo Chick is packaged as an FFD20 NPC actor with 4 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Chocobo Chick is packaged as an FFD20 NPC actor with 16 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Small",

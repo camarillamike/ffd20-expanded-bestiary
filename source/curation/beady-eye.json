@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Beady Eye",
@@ -191,13 +191,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 5,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -213,15 +211,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 1,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -270,7 +268,10 @@
         "Hypnotic Gaze"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -312,6 +313,31 @@
               "value": "high"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -482,11 +508,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "will",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Beady Eye is packaged as an FFD20 NPC actor with 5 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Beady Eye is packaged as an FFD20 NPC actor with 7 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Tiny",

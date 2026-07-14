@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Morbol Seedling",
@@ -209,18 +209,20 @@
       "per": {
         "ability": "wis",
         "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 1
       }
     },
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -236,15 +238,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 7,
+          "base": 4,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -297,7 +299,10 @@
         "Sickening Breath"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -322,7 +327,12 @@
               "operator": "add"
             }
           ],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "skill.ste",
+              "text": "in forests: source total +28 (+16 conditional adjustment)."
+            }
+          ],
           "classSkills": {
             "per": true,
             "ste": true
@@ -341,6 +351,37 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "6",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -391,6 +432,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve Poison."
               ]
             }
           ],
@@ -587,10 +631,10 @@
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": "Negates nauseated for 1d4 rounds and then sickened for 1d4 minutes by the horrific stench"
+                "description": "Failure: nauseated 1d4 rounds, then sickened 1d4 minutes. Success: sickened 1d4 rounds."
               },
               "effectNotes": [
-                "Duration: 1d4 rounds"
+                "Affected creatures cannot use scent until the musk effect ends."
               ]
             }
           ],
@@ -643,14 +687,21 @@
               "target": {
                 "value": ""
               },
-              "damage": [],
+              "damage": [
+                {
+                  "formula": "1",
+                  "types": [
+                    "str"
+                  ]
+                }
+              ],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "Negates poison"
               },
               "effectNotes": [
-                "Duration: 6 rounds"
+                "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save."
               ]
             }
           ],
@@ -729,11 +780,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "fort",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Morbol Seedling is packaged as an FFD20 NPC actor with 9 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Morbol Seedling is packaged as an FFD20 NPC actor with 11 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Gaelicat",
@@ -169,8 +169,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -187,7 +186,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 1
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -201,13 +200,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -223,15 +220,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -282,7 +279,10 @@
         "Cat Scratch"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -299,7 +299,20 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.clm",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            },
+            {
+              "target": "skill.fly",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "acr": true,
@@ -324,6 +337,37 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "-2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -587,11 +631,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "ref",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Gaelicat is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Gaelicat is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",

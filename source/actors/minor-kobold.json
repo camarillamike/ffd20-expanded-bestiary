@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 10,
-        "max": 10,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 2,
           "ability": "con"
         },
         "ref": {
-          "value": 1,
+          "base": -2,
           "ability": "dex"
         },
         "will": {
-          "value": -1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -101,6 +99,9 @@
       }
     },
     "skills": {
+      "crf": {
+        "rank": 1
+      },
       "per": {
         "ability": "wis",
         "rank": 1
@@ -166,9 +167,7 @@
       },
       "cres": "",
       "di": [],
-      "dv": [
-        "Light sensitivity"
-      ],
+      "dv": [],
       "ci": [],
       "languages": [
         "Draconic"
@@ -202,7 +201,21 @@
         "changes": [
           {
             "formula": "2",
+            "target": "skill.crf",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
             "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.pro",
             "type": "racial",
             "operator": "add",
             "priority": 0
@@ -277,6 +290,75 @@
           "sourceHitPoints": 10,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +1; CMB -1; CMD 10</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +1; CMB -1; CMD 10",
+            "bab": 1,
+            "cmb": -1,
+            "cmd": 10
+          }
         }
       }
     },
@@ -921,6 +1003,57 @@
       }
     },
     {
+      "_id": "weakness00000001",
+      "name": "Weaknesses",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_02.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Light sensitivity</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weaknesses",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedWeaknesses": true,
+          "customFeature": true,
+          "sourceText": "Light sensitivity"
+        }
+      }
+    },
+    {
       "_id": "sa00000000000001",
       "name": "Magic Hammer",
       "type": "feat",
@@ -1118,6 +1251,9 @@
       "packagedImageSource": "generated-local",
       "parsed": {
         "alignment": "LE",
+        "initiative": 1,
+        "size": "Small",
+        "cr": "1/3",
         "creatureType": "Humanoid",
         "subtypes": [
           "Reptilian"

@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": -2,
           "ability": "wis"
         }
       },
@@ -459,6 +457,10 @@
         "ability": "str",
         "rank": 4
       },
+      "kar": {
+        "ability": "int",
+        "rank": 1
+      },
       "per": {
         "ability": "wis",
         "rank": 1
@@ -531,8 +533,7 @@
           {
             "amount": 10,
             "types": [
-              "fire",
-              ""
+              "fire"
             ],
             "operator": true
           }
@@ -542,7 +543,8 @@
       "cres": "",
       "di": [],
       "dv": [
-        "Ice and Lightning"
+        "ice",
+        "lightning"
       ],
       "ci": [
         "disease",
@@ -589,7 +591,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 10,
-        "hp": 8,
+        "hp": 5,
         "classCastingStat": "int",
         "classBaseMPTypes": "pacman",
         "classBaseMPauto": "no",
@@ -903,7 +905,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "detonate"
         }
       }
     },
@@ -987,7 +990,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "fire"
         }
       }
     },
@@ -1173,7 +1177,7 @@
         "actions": [
           {
             "name": "Pumpkin Head",
-            "actionType": "other",
+            "actionType": "rsak",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -1189,14 +1193,14 @@
             "target": {
               "value": "one target"
             },
-            "attackBonus": "+3",
+            "attackBonus": "",
             "touch": true,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1",
+                  "formula": "(min(10, floor(max(0, @attributes.hp.max - @attributes.hp.value) / 5)))d4 + 1",
                   "types": [
                     "nonelemental"
                   ]
@@ -1212,10 +1216,20 @@
               "effect": [],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Deals 1 base damage plus 1d4 per 5 HP currently missing, capped at 10d4."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
             }
           }
         ],
@@ -1348,7 +1362,38 @@
           "value": "<p>As a move action, a hedgehog pie can roll itself up into a spiny ball. While rolled up, it gains a +1 enhancement bonus to its existing natural armor, and any creature attempting to grapple the hedgehog pie takes 1d6 damage on making a grapple check. While rolled up, a hedgehog pie cannot take an action other than leaving this state or casting a spell. The hedgehog pie can leave this state as a move action.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Spiny Defense",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "target": {
+              "value": "creature attempting to grapple"
+            },
+            "effectNotes": [
+              "Reactive damage when a creature attempts to grapple while Spiny Defense is active."
+            ]
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -1560,6 +1605,71 @@
           }
         }
       }
+    },
+    {
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a hedgehog pie familiar gains a +2 bonus on Will saves. Drag this buff to the familiar's master.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "will",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "This buff belongs on the familiar's master, not the familiar."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "the-master-of-a-hedgehog-pie-familiar-ga",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
     }
   ],
   "prototypeToken": {
@@ -1581,6 +1691,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "NE",
+        "initiative": 1,
+        "size": "Small",
+        "cr": "1/2",
         "creatureType": "Outsider",
         "subtypes": [
           "Daemon",

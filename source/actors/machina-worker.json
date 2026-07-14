@@ -49,8 +49,6 @@
       },
       "naturalAC": 2,
       "hp": {
-        "value": 21,
-        "max": 21,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": ""
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -165,7 +163,6 @@
         "nonlethal"
       ],
       "dv": [
-        "critical hits",
         "lightning"
       ],
       "ci": [
@@ -278,6 +275,75 @@
           "sourceHitPoints": 21,
           "sourceHitDice": 2,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +2; CMB +3; CMD 13</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +2; CMB +3; CMD 13",
+            "bab": 2,
+            "cmb": 3,
+            "cmd": 13
+          }
         }
       }
     },
@@ -475,6 +541,57 @@
             "feat"
           ],
           "sourceLine": "Feats Great Fortitude"
+        }
+      }
+    },
+    {
+      "_id": "weakness00000001",
+      "name": "Weaknesses",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_02.jpg",
+      "system": {
+        "description": {
+          "value": "<p>critical hits</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weaknesses",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedWeaknesses": true,
+          "customFeature": true,
+          "sourceText": "critical hits"
         }
       }
     },
@@ -716,6 +833,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 0,
+        "size": "Small",
+        "cr": "1",
         "creatureType": "Construct",
         "subtypes": [
           "Machina"

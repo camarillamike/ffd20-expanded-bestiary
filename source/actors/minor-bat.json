@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 3,
-        "max": 3,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -107,7 +105,7 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 1
+        "rank": 0
       }
     },
     "details": {
@@ -195,7 +193,15 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -262,6 +268,82 @@
           "sourceHitPoints": 3,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -2; CMD 3</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "7",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -2; CMD 3",
+            "bab": 0,
+            "cmb": -2,
+            "cmd": 3
+          }
         }
       }
     },
@@ -514,7 +596,9 @@
               "effect": [],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Apply the dark damage to the target and the healing roll to the Minor Bat; both use the same rolled amount."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -667,6 +751,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 2,
+        "size": "Diminutive",
+        "cr": "1/6",
         "creatureType": "Magical Beast",
         "subtypes": [],
         "xp": 65,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Cactuar Cutting",
@@ -205,13 +205,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 5,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -227,15 +225,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 5,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": -2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -285,7 +283,10 @@
         "Thorns"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -322,6 +323,37 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "9",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -541,14 +573,14 @@
             {
               "name": "Thorns",
               "actionType": "other",
-              "activation": "standard",
+              "activation": "special",
               "touch": false,
               "range": {
                 "value": null,
                 "units": ""
               },
               "target": {
-                "value": ""
+                "value": "attacking or grappling creature"
               },
               "damage": [
                 {
@@ -557,6 +589,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Reactive damage against non-reach melee or natural attackers; also triggers each round while grappling."
               ]
             }
           ],
@@ -565,11 +600,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "nac",
+              "formula": "1",
+              "type": "natural",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Cactuar Cutting is packaged as an FFD20 NPC actor with 6 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Cactuar Cutting is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Tiny",

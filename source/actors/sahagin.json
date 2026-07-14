@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 1,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 4,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 3,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -181,8 +179,7 @@
           {
             "amount": 5,
             "types": [
-              "water",
-              ""
+              "water"
             ],
             "operator": true
           }
@@ -2358,7 +2355,7 @@
             "target": {
               "value": "single target"
             },
-            "attackBonus": "+2",
+            "attackBonus": "",
             "touch": true,
             "damage": {
               "critParts": [],
@@ -2391,6 +2388,14 @@
             "measureTemplate": {
               "type": "",
               "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
             }
           }
         ],
@@ -2527,70 +2532,6 @@
               }
             },
             "sourceType": "Su"
-          }
-        }
-      }
-    },
-    {
-      "_id": "bf00000000000001",
-      "name": "Amphibious",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Sahagins have been blessed by their god, allowing them to breathe both in and out of the water making it ideal to fish and gather materials off of the sea floor for trading purposes.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "misc",
-            "text": "Can breathe both air and water."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "amphibious",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Amphibious",
-            "category": "passive",
-            "automationNotes": []
           }
         }
       }
@@ -2773,7 +2714,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "wdamage",
+            "type": "water",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -2787,8 +2736,8 @@
         },
         "contextNotes": [
           {
-            "target": "misc",
-            "text": "Adds the listed water damage to the next weapon or unarmed hit, then discharges."
+            "target": "attack",
+            "text": "Discharge after the next weapon or unarmed hit, or after 2 turns."
           }
         ],
         "links": {
@@ -2812,70 +2761,6 @@
           "generatedBuff": {
             "sourceAbility": "Leviathan's Fury",
             "category": "toggle",
-            "automationNotes": []
-          }
-        }
-      }
-    },
-    {
-      "_id": "bf00000000000005",
-      "name": "Martial Weapon Proficiency Trident",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>Sahagins have been trained at birth to use tridents in hand to hand combat. They have been known to track and board trading ships throughout the generations and some have formed pirate crews to attack said ships.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "attack",
-            "text": "Treat the creature as proficient with Trident."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "martial-weapon-proficiency-trident",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Martial Weapon Proficiency Trident",
-            "category": "passive",
             "automationNotes": []
           }
         }
@@ -2915,8 +2800,8 @@
         },
         "contextNotes": [
           {
-            "target": "misc",
-            "text": "When the creature has concealment or total concealment, increase the miss chance against it by 5%."
+            "target": "defense",
+            "text": "Enable only while concealed; increases concealment miss chance by 5 percentage points."
           }
         ],
         "links": {
@@ -2965,6 +2850,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "LE",
+        "initiative": 1,
+        "size": "Medium",
+        "cr": "1/2",
         "creatureType": "Monstrous Humanoid",
         "subtypes": [
           "Aquatic"

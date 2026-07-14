@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Turtle",
@@ -171,8 +171,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -205,13 +204,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 0,
+        "value": 2,
         "ability": "dex"
       },
       "naturalAC": 6,
       "hp": {
-        "value": 3,
-        "max": 3,
         "temp": 0,
         "offset": 0
       },
@@ -227,15 +224,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -286,7 +283,10 @@
       "buffs": [
         "Shell Retreat"
       ],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -332,6 +332,31 @@
         "reviewNotes": []
       },
       {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "6",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "natatk0000000001",
         "name": "Bite",
         "type": "attack",
@@ -361,7 +386,6 @@
               "name": "Bite",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -537,11 +561,39 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "nac",
+              "formula": "1",
+              "type": "natural",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Turtle is packaged as an FFD20 NPC actor with 6 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Turtle is packaged as an FFD20 NPC actor with 8 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/6",
       "size": "Tiny",

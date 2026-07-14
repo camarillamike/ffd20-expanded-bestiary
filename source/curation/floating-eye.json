@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Floating Eye",
@@ -208,13 +208,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 6,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 9,
-        "max": 9,
         "temp": 0,
         "offset": 0
       },
@@ -230,15 +228,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -559,9 +557,8 @@
           "actions": [
             {
               "name": "Umbral Gaze",
-              "actionType": "other",
+              "actionType": "rsak",
               "activation": "standard",
-              "attackBonus": "+3",
               "touch": true,
               "range": {
                 "value": 30,

@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": -2,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 4,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -467,6 +465,14 @@
         "ability": "dex",
         "rank": 11
       },
+      "kar": {
+        "ability": "int",
+        "rank": 2
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 2
+      },
       "per": {
         "ability": "wis",
         "rank": 3
@@ -583,7 +589,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 10,
-        "hp": 8,
+        "hp": 5,
         "classCastingStat": "wis",
         "classBaseMPTypes": "pacman",
         "classBaseMPauto": "no",
@@ -896,7 +902,9 @@
             "attackName": "Sting",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit: resolve Poison."
+              ],
               "footer": [
                 "Source statblock: Sting +4 (1d4-2 plus poison)"
               ]
@@ -904,13 +912,22 @@
             "measureTemplate": {
               "type": "",
               "size": ""
-            }
+            },
+            "effectNotes": [
+              "On hit: resolve Poison."
+            ]
           }
         ],
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": []
+          "charges": [],
+          "children": [
+            {
+              "id": "sa00000000000001",
+              "level": 1
+            }
+          ]
         },
         "tag": "sting",
         "subType": "natural",
@@ -1038,7 +1055,8 @@
           "spellbook": "primary",
           "atWill": false,
           "perDay": 0,
-          "preparationCount": null
+          "preparationCount": null,
+          "lookupName": "fire"
         }
       }
     },
@@ -1561,6 +1579,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "LE",
+        "initiative": 2,
+        "size": "Small",
+        "cr": "1/2",
         "creatureType": "Outsider",
         "subtypes": [
           "Devil",

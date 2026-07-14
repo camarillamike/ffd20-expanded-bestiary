@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Centipede",
@@ -180,8 +180,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -216,13 +215,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -238,15 +235,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -295,7 +292,9 @@
         "Poison"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments"
+      ]
     },
     "items": [
       {
@@ -351,6 +350,24 @@
         "reviewNotes": []
       },
       {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "natatk0000000001",
         "name": "Bite",
         "type": "attack",
@@ -397,6 +414,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve Poison."
               ]
             }
           ],
@@ -604,7 +624,7 @@
     ]
   },
   "curation": {
-    "summary": "Centipede is packaged as an FFD20 NPC actor with 6 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Centipede is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

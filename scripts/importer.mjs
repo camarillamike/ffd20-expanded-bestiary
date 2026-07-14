@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.28";
+const MODULE_VERSION = "0.1.29";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -111,9 +111,10 @@ async function buildItemLookup() {
 }
 
 function findLookupMatch(item, lookup) {
+  const flags = generatedFlags(item);
   const requestedTypes = lookupTypesForItem(item);
   const requestedSubTypes = lookupSubTypesForItem(item);
-  const candidates = (lookup.get(normalizeName(item.name)) ?? []).filter(({ entry }) => {
+  const candidates = (lookup.get(normalizeName(flags.lookupName ?? item.name)) ?? []).filter(({ entry }) => {
     if (requestedTypes.length && !requestedTypes.includes(entry.type)) return false;
     if (requestedSubTypes.length && !requestedSubTypes.includes(entrySubType(entry))) return false;
     return true;
@@ -151,6 +152,8 @@ function applyPlaceholderDetails(source, item) {
     if (item.system?.classBaseMPauto) source.system.classBaseMPauto = item.system.classBaseMPauto;
     if (Number.isFinite(item.system?.mp)) source.system.mp = item.system.mp;
     if (item.system?.casting) source.system.casting = foundry.utils.mergeObject(source.system.casting ?? {}, item.system.casting, { inplace: false });
+    source.system.changes = [...(source.system.changes ?? []), ...(item.system?.changes ?? [])];
+    source.system.contextNotes = [...(source.system.contextNotes ?? []), ...(item.system?.contextNotes ?? [])];
   }
   if (flags.generatedRace && source.system) {
     if (item.system?.creatureTypes?.length) source.system.creatureTypes = item.system.creatureTypes;
@@ -203,7 +206,7 @@ async function prepareActorsForImport(actors) {
     report.push(...(await hydrateGeneratedItems(actor, lookup)));
   }
   console.log("FF D20 Expanded Bestiary | Compendium lookup report", report);
-  return actors;
+  return report;
 }
 
 function packId(packName) {
@@ -302,7 +305,16 @@ export async function importActors({ clear = true } = {}) {
     actorsByPack.get(packName).push(actor);
     allActors.push(actor);
   }
-  await prepareActorsForImport(allActors);
+  const hydrationReport = await prepareActorsForImport(allActors);
+  const fallbacks = hydrationReport.filter((entry) => entry.status === "generated-fallback");
+  if (fallbacks.length) {
+    const names = [...new Set(fallbacks.map((entry) => entry.item))];
+    ui.notifications.warn(
+      "FFD20 Bestiary: " + fallbacks.length + " item lookup(s) used generated fallbacks. Check the console report. Missing: "
+        + names.slice(0, 8).join(", ") + (names.length > 8 ? ", ..." : ""),
+      { permanent: true }
+    );
+  }
 
   let removed = 0;
   if (clear) {

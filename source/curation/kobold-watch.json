@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -234,8 +234,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -261,18 +260,20 @@
       "kdu": {
         "ability": "int",
         "rank": 2
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 1
       }
     },
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -288,15 +289,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -356,12 +357,7 @@
         "Thick Hide"
       ],
       "buffs": [
-        "Bond to the Land",
-        "Cave Dweller",
-        "Master Tinker",
-        "Reckless Work",
-        "Thick Hide",
-        "Chosen Weapon +1"
+        "Bond to the Land"
       ],
       "miscellaneous": [
         "Kobold",
@@ -405,7 +401,9 @@
           "expectedTypes": [
             "class"
           ],
-          "expectedSubTypes": [],
+          "expectedSubTypes": [
+            "base"
+          ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {},
@@ -413,13 +411,24 @@
           "actions": [],
           "changes": [
             {
+              "target": "skill.dev",
+              "formula": "2",
+              "type": "racial",
+              "operator": "add"
+            },
+            {
               "target": "skill.kdu",
               "formula": "2",
               "type": "racial",
               "operator": "add"
             }
           ],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "skill.sur",
+              "text": "underground: source total +6 (+2 conditional adjustment)."
+            }
+          ],
           "classSkills": {
             "acr": true,
             "clm": true,
@@ -478,7 +487,6 @@
               "name": "Spear",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -1149,163 +1157,11 @@
           "level": 0
         },
         "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000002",
-        "name": "Cave Dweller",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Cave Dweller",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Apply +2 racial bonus to Knowledge (dungeoneering) and Survival checks made underground."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000005",
-        "name": "Master Tinker",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Master Tinker",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [
-            {
-              "target": "skill.dev",
-              "formula": "2",
-              "type": "racial",
-              "operator": "add"
-            }
-          ],
-          "contextNotes": [
-            {
-              "target": "attack",
-              "text": "Treated as proficient with any weapon it has personally crafted."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000006",
-        "name": "Reckless Work",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Reckless Work",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "savingThrows",
-              "text": "Apply +4 racial bonus on Constitution checks and Fortitude saves against fatigue, exhaustion, forced marches, starvation, thirst, and hot or cold environments."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000007",
-        "name": "Thick Hide",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Thick Hide",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "defense",
-              "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000008",
-        "name": "Chosen Weapon +1",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Chosen Weapon +1",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "attack",
-              "text": "Apply the listed chosen weapon bonus to attacks with the source weapon group if it is not already included in the statblock."
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 24 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 19 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

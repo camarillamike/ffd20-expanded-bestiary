@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bee",
@@ -191,8 +191,7 @@
           {
             "amount": 5,
             "types": [
-              "earth",
-              ""
+              "earth"
             ],
             "operator": true
           }
@@ -220,13 +219,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 19,
-        "max": 19,
         "temp": 0,
         "offset": 0
       },
@@ -242,15 +239,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 4,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 3,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -300,7 +297,9 @@
         "Poison"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments"
+      ]
     },
     "items": [
       {
@@ -339,6 +338,24 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -389,6 +406,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "On hit: resolve Poison."
               ]
             }
           ],
@@ -479,15 +499,18 @@
           "actions": [
             {
               "name": "Impaled",
-              "actionType": "other",
+              "actionType": "mwak",
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
               },
               "target": {
-                "value": ""
+                "value": "one target"
               },
               "damage": [
                 {
@@ -496,6 +519,9 @@
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Charge attack; resolve Poison on a hit."
               ]
             }
           ],
@@ -540,15 +566,15 @@
           "actions": [
             {
               "name": "Needles",
-              "actionType": "other",
+              "actionType": "rwak",
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 30,
+                "units": "ft"
               },
               "target": {
-                "value": ""
+                "value": "one target"
               },
               "damage": [
                 {
@@ -559,6 +585,7 @@
                 }
               ],
               "effectNotes": [
+                "Resolve Poison on a hit.",
                 "Recharge [[1d4]] rounds."
               ]
             }
@@ -645,7 +672,7 @@
     ]
   },
   "curation": {
-    "summary": "Bee is packaged as an FFD20 NPC actor with 7 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Bee is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1",
       "size": "Medium",

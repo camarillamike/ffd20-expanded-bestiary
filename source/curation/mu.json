@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Mu",
@@ -200,13 +200,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 3,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 7,
-        "max": 7,
         "temp": 0,
         "offset": 0
       },
@@ -222,15 +220,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 5,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -281,7 +279,10 @@
         "Critical Attack"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -323,6 +324,37 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -494,23 +526,35 @@
           "actions": [
             {
               "name": "Burrow Attack",
-              "actionType": "other",
+              "actionType": "mwak",
               "activation": "swift",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
               },
               "target": {
-                "value": ""
+                "value": "one target"
               },
               "damage": [
+                {
+                  "formula": "1d4 + @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                },
                 {
                   "formula": "1d4",
                   "types": [
                     "earth"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Use when emerging from the ground; includes the Bite and bonus earth damage."
               ]
             }
           ],
@@ -587,11 +631,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.slt",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Mu is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Mu is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",

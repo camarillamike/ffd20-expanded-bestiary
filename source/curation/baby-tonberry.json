@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Tonberry",
@@ -177,7 +177,7 @@
         "sc": {
           "value": 0
         },
-        "custom": ""
+        "custom": "Telepathy 30 ft."
       },
       "dr": {
         "value": [],
@@ -196,8 +196,7 @@
         "Negative status effects"
       ],
       "languages": [
-        "Tonberry",
-        "telepathy 30 ft."
+        "Tonberry"
       ],
       "stature": "tall"
     },
@@ -218,13 +217,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 4,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 2,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -240,15 +237,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 6,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": -2,
           "ability": "wis"
         }
       },
@@ -301,7 +298,10 @@
         "Chef's Knife"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -348,6 +348,37 @@
               "value": "high"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "8",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -637,24 +668,35 @@
           "actions": [
             {
               "name": "Chef's Knife",
-              "actionType": "save",
+              "actionType": "mwak",
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
               },
               "target": {
-                "value": ""
+                "value": "one target"
               },
-              "damage": [],
+              "damage": [
+                {
+                  "formula": "1d2",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "Negates shaken for 1 round"
               },
               "effectNotes": [
-                "Duration: 1 round"
+                "On a failed save, the target is shaken for 1 round.",
+                "Creatures immune to critical hits ignore the shaken rider but still take weapon damage."
               ]
             }
           ],
@@ -663,11 +705,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "init",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Baby Tonberry is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Baby Tonberry is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Tiny",

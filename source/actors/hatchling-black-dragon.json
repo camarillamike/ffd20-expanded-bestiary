@@ -44,13 +44,11 @@
     "attributes": {
       "hpAbility": "con",
       "init": {
-        "value": 7,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 25,
-        "max": 25,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 8,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -305,6 +303,75 @@
           "sourceHitPoints": 25,
           "sourceHitDice": 3,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +3; CMB +4; CMD 14 (18 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +3; CMB +4; CMD 14 (18 vs. trip)",
+            "bab": 3,
+            "cmb": 4,
+            "cmd": 14
+          }
         }
       }
     },
@@ -1215,70 +1282,6 @@
           }
         }
       }
-    },
-    {
-      "_id": "bf00000000000001",
-      "name": "See in Darkness",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>A black dragon can see perfectly in darkness of any kind, including that created by the blacklight spell.</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "misc",
-            "text": "Can see perfectly in darkness, including magical darkness."
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "see-in-darkness",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "See in Darkness",
-            "category": "passive",
-            "automationNotes": []
-          }
-        }
-      }
     }
   ],
   "prototypeToken": {
@@ -1300,6 +1303,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N/NE",
+        "initiative": 7,
+        "size": "Tiny",
+        "cr": "2",
         "creatureType": "Dragon",
         "subtypes": [
           "Shadow"

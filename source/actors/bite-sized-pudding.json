@@ -49,8 +49,6 @@
       },
       "naturalAC": 0,
       "hp": {
-        "value": 8,
-        "max": 8,
         "temp": 0,
         "offset": 0
       },
@@ -66,15 +64,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 1,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -214,7 +212,7 @@
         "parentClass": "",
         "level": 1,
         "hd": 8,
-        "hp": 7,
+        "hp": 4,
         "classCastingStat": "noncaster",
         "classBaseMPTypes": "noncaster",
         "classBaseMPauto": "yes",
@@ -263,6 +261,67 @@
           "sourceHitPoints": 8,
           "sourceHitDice": 1,
           "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB -2; CMD 8 (cannot be tripped)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB -2; CMD 8 (cannot be tripped)",
+            "bab": 0,
+            "cmb": -2,
+            "cmd": 8
+          }
         }
       }
     },
@@ -867,13 +926,13 @@
       }
     },
     {
-      "_id": "bf00000000000002",
-      "name": "Transparent",
+      "_id": "famaster00000001",
+      "name": "Familiar Master Bonus",
       "type": "buff",
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>A bite-sized pudding is clear and colorless. A DC 15 Perception check is required to notice it.</p>",
+          "value": "<p>The master of a bite-sized pudding familiar gains a +2 bonus to Reflex saves. Drag this buff to the familiar's master.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -886,7 +945,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "ref",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -901,32 +968,25 @@
         "contextNotes": [
           {
             "target": "misc",
-            "text": "DC 15 Perception check required to notice this creature."
+            "text": "This buff belongs on the familiar's master, not the familiar."
           }
         ],
         "links": {
           "children": []
         },
-        "tag": "transparent",
-        "subType": "perm",
-        "active": true,
+        "tag": "the-master-of-a-bite-sized-pudding-famil",
+        "subType": "temp",
+        "active": false,
         "level": 0,
         "duration": {
           "value": null,
           "units": "",
           "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
+        }
       },
       "flags": {
         "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Transparent",
-            "category": "passive",
-            "automationNotes": []
-          }
+          "curatedBuff": true
         }
       }
     }
@@ -950,6 +1010,9 @@
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "N",
+        "initiative": 0,
+        "size": "Tiny",
+        "cr": "1/2",
         "creatureType": "Ooze [Familiar]",
         "subtypes": [],
         "xp": 200,

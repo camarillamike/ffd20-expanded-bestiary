@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Machina Worker",
@@ -175,7 +175,6 @@
         "nonlethal"
       ],
       "dv": [
-        "critical hits",
         "lightning"
       ],
       "ci": [
@@ -218,8 +217,6 @@
       },
       "naturalAC": 2,
       "hp": {
-        "value": 21,
-        "max": 21,
         "temp": 0,
         "offset": 0
       },
@@ -235,15 +232,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 2,
+          "base": 0,
           "ability": ""
         },
         "ref": {
-          "value": 0,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 0,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -290,7 +287,10 @@
         "Critical Attack"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Weaknesses"
+      ]
     },
     "items": [
       {
@@ -324,6 +324,31 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "bab",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -410,6 +435,26 @@
         "reviewNotes": []
       },
       {
+        "id": "weakness00000001",
+        "name": "Weaknesses",
+        "type": "feat",
+        "subType": "racial",
+        "category": "feat",
+        "generatedFlags": [
+          "generatedWeaknesses"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "sa00000000000001",
         "name": "Critical Attack",
         "type": "feat",
@@ -482,7 +527,7 @@
     ]
   },
   "curation": {
-    "summary": "Machina Worker is packaged as an FFD20 NPC actor with 4 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Machina Worker is packaged as an FFD20 NPC actor with 6 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1",
       "size": "Small",

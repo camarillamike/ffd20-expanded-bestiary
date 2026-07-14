@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sharkling",
@@ -172,8 +172,7 @@
           {
             "amount": 5,
             "types": [
-              "water",
-              ""
+              "water"
             ],
             "operator": true
           }
@@ -202,13 +201,11 @@
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 4,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 1,
       "hp": {
-        "value": 6,
-        "max": 6,
         "temp": 0,
         "offset": 0
       },
@@ -224,15 +221,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 3,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 2,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 1,
+          "base": 1,
           "ability": "wis"
         }
       },
@@ -280,10 +277,13 @@
       "specialAbilities": [
         "Reteethe"
       ],
-      "buffs": [
-        "Reteethe"
-      ],
-      "miscellaneous": []
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus",
+        "Reteethe 1 Stack",
+        "Reteethe 2 Stacks"
+      ]
     },
     "items": [
       {
@@ -325,6 +325,24 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -486,21 +504,41 @@
         "reviewNotes": []
       },
       {
-        "id": "bf00000000000001",
-        "name": "Reteethe",
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
         "type": "buff",
         "subType": "temp",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Reteethe",
-            "category": "toggle",
-            "automationNotes": []
-          }
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.int",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
         },
+        "reviewNotes": []
+      },
+      {
+        "id": "reteethe00000001",
+        "name": "Reteethe 1 Stack",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
         "mechanics": {
           "actions": [],
           "changes": [
@@ -513,8 +551,36 @@
           ],
           "contextNotes": [
             {
-              "target": "misc",
-              "text": "Enable after confirming a critical hit; lasts 4 rounds and stacks to a maximum +4 temporary Strength."
+              "target": "attack",
+              "text": "Enable after a confirmed critical hit; lasts 4 rounds."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "reteethe00000002",
+        "name": "Reteethe 2 Stacks",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "str",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Enable after a confirmed critical hit; lasts 4 rounds."
             }
           ],
           "level": 0
@@ -524,7 +590,7 @@
     ]
   },
   "curation": {
-    "summary": "Sharkling is packaged as an FFD20 NPC actor with 6 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Sharkling is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Small",
@@ -544,7 +610,6 @@
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
-      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],
     "unresolved": [],

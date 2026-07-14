@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.28",
+  "moduleVersion": "0.1.29",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bat",
@@ -191,19 +191,17 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 1
+        "rank": 0
       }
     },
     "defenses": {
       "hpAbility": "con",
       "init": {
-        "value": 2,
+        "value": 0,
         "ability": "dex"
       },
       "naturalAC": 0,
       "hp": {
-        "value": 5,
-        "max": 5,
         "temp": 0,
         "offset": 0
       },
@@ -219,15 +217,15 @@
       },
       "savingThrows": {
         "fort": {
-          "value": 0,
+          "base": 0,
           "ability": "con"
         },
         "ref": {
-          "value": 4,
+          "base": 0,
           "ability": "dex"
         },
         "will": {
-          "value": 2,
+          "base": 0,
           "ability": "wis"
         }
       },
@@ -278,7 +276,10 @@
         "Screech"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Familiar Master Bonus"
+      ]
     },
     "items": [
       {
@@ -295,7 +296,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "acr": true,
@@ -320,6 +328,31 @@
               "value": "low"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -568,11 +601,11 @@
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 20,
+                "units": "ft"
               },
               "target": {
-                "value": "all creatures"
+                "value": "20-ft. radius"
               },
               "damage": [],
               "save": {
@@ -581,7 +614,7 @@
                 "description": "Negates staggered for 1d2 rounds"
               },
               "effectNotes": [
-                "Duration: 1d2 rounds"
+                "20-ft. radius; sonic, mind-affecting effect."
               ]
             }
           ],
@@ -590,11 +623,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.fly",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Bat is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Bat is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",

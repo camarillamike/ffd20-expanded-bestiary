@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amber Quadav",
@@ -186,14 +186,23 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
@@ -219,6 +228,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -672,7 +682,9 @@
       "buffs": [
         "Full Withdrawal",
         "Hold Breath",
-        "Steel Shelled"
+        "Steel Shelled",
+        "Black Magery",
+        "Spell Proficiency"
       ],
       "miscellaneous": [
         "Quadav",
@@ -768,6 +780,9 @@
             "damage": "1d6+1",
             "damageFormula": "1d6",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -820,6 +835,9 @@
             "damage": "1d6+2 water dmg",
             "damageFormula": "1d6",
             "printedDamageBonus": 2,
+            "damageType": "water",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -843,7 +861,7 @@
                 {
                   "formula": "1d6",
                   "types": [
-                    "bludgeoning"
+                    "water"
                   ]
                 }
               ]
@@ -1550,11 +1568,69 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000004",
+        "name": "Black Magery",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Black Magery",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "spell",
+              "text": "Apply the source statblock's listed Black Magery damage benefit to matching black magic spells."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000005",
+        "name": "Spell Proficiency",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Spell Proficiency",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "spell",
+              "text": "Spellcasting proficiency/quality from the source statblock; use the actor's configured spellbook and listed spells."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Amber Quadav is packaged as an FFD20 NPC actor with 26 generated item(s) across 8 populated mechanics categories.",
+    "summary": "Amber Quadav is packaged as an FFD20 NPC actor with 28 generated item(s) across 8 populated mechanics categories.",
     "creatureRole": {
       "cr": "1",
       "size": "Medium",

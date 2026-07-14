@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -130,10 +131,10 @@
           "value": 0
         },
         "bs": {
-          "value": 20
+          "value": 0
         },
         "bse": {
-          "value": 0
+          "value": 20
         },
         "ll": {
           "enabled": true,
@@ -153,7 +154,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsense 20 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -271,7 +272,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -301,7 +302,7 @@
             "damage": {
               "parts": [
                 {
-                  "formula": "1d3",
+                  "formula": "1d3-4",
                   "types": [
                     "piercing"
                   ]
@@ -321,8 +322,8 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "str",
-              "damageMult": 1,
+              "damage": "",
+              "damageMult": null,
               "max": null,
               "critRange": 20,
               "critMult": 2
@@ -397,6 +398,9 @@
             "damage": "1d3-4",
             "damageFormula": "1d3",
             "printedDamageBonus": -4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -496,7 +500,7 @@
                 {
                   "formula": "1d8",
                   "types": [
-                    "shadow"
+                    "dark"
                   ]
                 }
               ]
@@ -574,7 +578,7 @@
             "damages": [
               {
                 "formula": "1d8",
-                "type": "shadow",
+                "type": "dark",
                 "raw": "1d8 points of shadow damage"
               }
             ],

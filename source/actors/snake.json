@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -102,11 +103,11 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 0
+        "rank": 2
       },
       "clm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       },
       "per": {
         "ability": "wis",
@@ -118,7 +119,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       }
     },
     "details": {
@@ -165,20 +166,29 @@
         "sc": {
           "value": 30
         },
-        "custom": "Low-light vision, scent"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
       "ci": [],
       "languages": [],
@@ -308,7 +318,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -434,6 +444,9 @@
             "damage": "1d4-2 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -558,7 +571,7 @@
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a snake gains a +3 bonus on</p>",
+          "value": "<p>The master of a snake gains a +3 bonus on Bluff checks.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -604,7 +617,7 @@
           "generatedRawSpecialAbility": true,
           "customFeature": true,
           "sourceType": "na",
-          "sourceText": "The master of a snake gains a +3 bonus on"
+          "sourceText": "The master of a snake gains a +3 bonus on Bluff checks."
         }
       }
     },
@@ -824,7 +837,7 @@
     },
     {
       "_id": "sa00000000000002",
-      "name": "Bluff checks Poison",
+      "name": "Poison",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/yellow_36.jpg",
       "system": {
@@ -834,7 +847,7 @@
         },
         "actions": [
           {
-            "name": "Bluff checks Poison",
+            "name": "Poison",
             "actionType": "save",
             "activation": {
               "cost": 1,
@@ -868,7 +881,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -899,7 +912,7 @@
         "links": {
           "charges": []
         },
-        "tag": "bluff-checks-poison",
+        "tag": "poison",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
@@ -1048,7 +1061,7 @@
           "melee": "Bite +5 (1d4-2 plus poison)",
           "ranged": "",
           "space": "Space 2.5 ft.; Reach 0 ft.",
-          "specialAttacks": "Critical Attack",
+          "specialAttacks": "Critical Attack, Poison",
           "spellLines": []
         },
         "defense": {

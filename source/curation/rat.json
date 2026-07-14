@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Rat",
@@ -170,7 +170,7 @@
         "sc": {
           "value": 30
         },
-        "custom": "low-light vision, scent"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -183,7 +183,7 @@
       "cres": "",
       "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
       "ci": [],
       "languages": [],
@@ -191,8 +191,8 @@
     },
     "skills": {
       "clm": {
-        "ability": "str",
-        "rank": 11
+        "ability": "dex",
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -203,11 +203,12 @@
         "rank": 1
       },
       "swm": {
-        "ability": "str",
-        "rank": 11
+        "ability": "dex",
+        "rank": 0
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -352,6 +353,9 @@
             "damage": "1d3-4 plus disease",
             "damageFormula": "1d3",
             "printedDamageBonus": -4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -545,13 +549,7 @@
                 "raw": "1d2 Con damage"
               }
             ],
-            "healing": [],
-            "uses": {
-              "value": 1,
-              "per": "day",
-              "maxFormula": "1",
-              "rechargeFormula": ""
-            }
+            "healing": []
           }
         },
         "mechanics": {
@@ -585,7 +583,7 @@
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": ""
+                "description": "Negates disease"
               }
             }
           ],

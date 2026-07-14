@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Gremlin",
@@ -175,7 +175,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -187,11 +187,12 @@
       },
       "cres": "",
       "di": [
-        "Fire",
-        "Poison"
+        "fire"
       ],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "poison"
+      ],
       "languages": [
         "Common",
         "Infernal"
@@ -209,11 +210,11 @@
       },
       "fly": {
         "ability": "dex",
-        "rank": 15
+        "rank": 11
       },
       "per": {
         "ability": "wis",
-        "rank": 0
+        "rank": 3
       },
       "spl": {
         "ability": "int",
@@ -225,6 +226,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -695,10 +697,7 @@
             "per": true,
             "sen": true,
             "ste": true,
-            "sur": true,
-            "acr": true,
-            "fly": true,
-            "spl": true
+            "sur": true
           },
           "level": 1,
           "hitDie": 10,
@@ -735,6 +734,9 @@
             "damage": "1d4-2",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -793,6 +795,9 @@
             "damage": "1d4-2 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -925,16 +930,12 @@
                 "save": "fort",
                 "dc": 12,
                 "raw": "Fort DC 12",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
-                "ability": "dex",
-                "confidence": "derived-preferred-floor",
-                "base": 10,
-                "neededMod": 2,
-                "candidates": [
-                  "dex:floor",
-                  "wis:floor"
-                ],
-                "expectedDc": 12
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "ability": "con",
+                "confidence": "explicit-con-racial-bonus",
+                "base": 12,
+                "expectedDc": 12,
+                "racialBonus": 2
               }
             ],
             "damages": [],
@@ -958,8 +959,8 @@
               "damage": [],
               "save": {
                 "type": "fort",
-                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
-                "description": ""
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 6 rounds"

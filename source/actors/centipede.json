@@ -23,7 +23,7 @@
         "userPenalty": 0
       },
       "int": {
-        "value": 10,
+        "value": null,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "clm": {
         "ability": "str",
-        "rank": 5
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -157,24 +158,33 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "mind-affecting effects"
-      ],
+      "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -292,7 +302,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -418,6 +428,9 @@
             "damage": "1d6-1 plus poison",
             "damageFormula": "1d6",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -787,15 +800,15 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ]
             },
             "save": {
-              "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -855,21 +868,18 @@
                 "save": "fort",
                 "dc": 13,
                 "raw": "Fort DC 13",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
-                "ability": "dex",
-                "confidence": "derived-minimum-one",
-                "base": 11,
-                "neededMod": 2,
-                "candidates": [
-                  "dex:minimum-one"
-                ],
-                "expectedDc": 13
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "ability": "con",
+                "confidence": "explicit-con-racial-bonus",
+                "base": 12,
+                "expectedDc": 13,
+                "racialBonus": 2
               }
             ],
             "damages": [
               {
                 "formula": "1d2",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d2 non-elemental damage"
               }
             ],

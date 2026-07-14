@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -126,10 +127,10 @@
           "value": 0
         },
         "bs": {
-          "value": 0
+          "value": 60
         },
         "bse": {
-          "value": 60
+          "value": 0
         },
         "ll": {
           "enabled": false,
@@ -149,7 +150,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsight 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -157,14 +158,24 @@
       },
       "eres": {
         "value": [],
-        "custom": ""
+        "custom": "Physical 50%"
       },
       "cres": "",
       "di": [
-        "Ooze traits"
+        "precision"
       ],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun",
+        "critical hits",
+        "flanking",
+        "gaze attacks and visual effects"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -235,9 +246,7 @@
         },
         "wealth": "",
         "alignment": "N",
-        "classSkills": {
-          "per": true
-        },
+        "classSkills": {},
         "armorProf": [],
         "weaponProf": [],
         "languages": [],
@@ -264,7 +273,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -390,6 +399,9 @@
             "damage": "1d4",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }

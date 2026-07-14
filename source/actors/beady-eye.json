@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 5,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -153,7 +154,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -164,11 +165,11 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Blind status effects"
-      ],
+      "di": [],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "blind"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -274,7 +275,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -400,6 +401,9 @@
             "damage": "1d3-2",
             "damageFormula": "1d3",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }

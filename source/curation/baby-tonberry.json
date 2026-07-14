@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Tonberry",
@@ -177,7 +177,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -189,11 +189,12 @@
       },
       "cres": "",
       "di": [
-        "Shadow",
-        "Negative status effects"
+        "dark"
       ],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "Negative status effects"
+      ],
       "languages": [
         "Tonberry",
         "telepathy 30 ft."
@@ -215,6 +216,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 4,
         "ability": "dex"
@@ -367,6 +369,9 @@
             "damage": "1d2-4, 18-20/x2",
             "damageFormula": "1d2",
             "printedDamageBonus": -4,
+            "damageType": "",
+            "critRange": 18,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -551,7 +556,7 @@
             "damages": [
               {
                 "formula": "1d4",
-                "type": "shadow",
+                "type": "dark",
                 "raw": "1d4 points of shadow damage"
               }
             ],
@@ -582,7 +587,7 @@
                 {
                   "formula": "1d4",
                   "types": [
-                    "shadow"
+                    "dark"
                   ]
                 }
               ],

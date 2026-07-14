@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -153,14 +154,23 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
@@ -309,8 +319,7 @@
           "pro": true,
           "rid": true,
           "sur": true,
-          "swm": true,
-          "kdu": true
+          "swm": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -344,7 +353,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -398,7 +407,7 @@
               "damageMult": 2,
               "max": null,
               "critRange": 20,
-              "critMult": 2
+              "critMult": 3
             },
             "save": {
               "dc": "",
@@ -467,6 +476,9 @@
             "damage": "1d8+2/x3",
             "damageFormula": "1d8",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
             "natural": false
           }
         }
@@ -479,7 +491,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock ranged attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -529,8 +541,8 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "",
-              "damageMult": null,
+              "damage": "str",
+              "damageMult": 0.5,
               "max": null,
               "critRange": 20,
               "critMult": 2
@@ -602,6 +614,9 @@
             "damage": "1d4",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -2409,6 +2424,70 @@
         "ffd20-bestiary-builder": {
           "generatedBuff": {
             "sourceAbility": "Thick Hide",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000008",
+      "name": "Chosen Weapon +1",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: Chosen Weapon +1 (Polearms).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply the listed chosen weapon bonus to attacks with the source weapon group if it is not already included in the statblock."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "chosen-weapon-1",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Chosen Weapon +1",
             "category": "passive",
             "automationNotes": []
           }

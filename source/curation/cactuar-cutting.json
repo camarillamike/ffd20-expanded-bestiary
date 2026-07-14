@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Cactuar Cutting",
@@ -168,7 +168,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -179,11 +179,16 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Plant traits"
-      ],
+      "di": [],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -198,6 +203,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 5,
         "ability": "dex"
@@ -300,8 +306,7 @@
           "contextNotes": [],
           "classSkills": {
             "per": true,
-            "ste": true,
-            "esc": true
+            "ste": true
           },
           "level": 1,
           "hitDie": 8,
@@ -338,6 +343,9 @@
             "damage": "1d2-4",
             "damageFormula": "1d2",
             "printedDamageBonus": -4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -456,6 +464,7 @@
                 "raw": "1d4+1 points of piercing damage",
                 "sourceFormula": "1d4+1",
                 "damageAbility": "con",
+                "damageAbilityMultiplier": 1,
                 "damageAbilityReason": "single-matching-ability-mod"
               }
             ],

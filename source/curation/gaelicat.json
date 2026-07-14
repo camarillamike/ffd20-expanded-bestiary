@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Gaelicat",
@@ -158,14 +158,23 @@
         "sc": {
           "value": 30
         },
-        "custom": "Low-light vision, scent"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
@@ -178,7 +187,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -190,6 +199,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -335,6 +345,9 @@
             "damage": "1d3-2",
             "damageFormula": "1d3",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -393,6 +406,9 @@
             "damage": "1d4-2",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },

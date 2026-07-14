@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -106,11 +107,11 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 0
+        "rank": 3
       },
       "sur": {
         "ability": "wis",
-        "rank": 0
+        "rank": 3
       }
     },
     "details": {
@@ -164,13 +165,22 @@
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
       "ci": [],
       "languages": [],
@@ -278,7 +288,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -404,6 +414,9 @@
             "damage": "1d3-4",
             "damageFormula": "1d3",
             "printedDamageBonus": -4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }

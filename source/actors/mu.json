@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 0
+        "rank": 2
       },
       "per": {
         "ability": "wis",
@@ -157,7 +158,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -276,7 +277,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -402,6 +403,9 @@
             "damage": "1d4-2",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -516,6 +520,63 @@
             "feat"
           ],
           "sourceLine": "Feats Toughness*, Weapon Finesse *Bonus Feat"
+        }
+      }
+    },
+    {
+      "_id": "rfeat00000000001",
+      "name": "Familiar",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The master of a mu familiar gains a +3 bonus on Sleight of Hand checks.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Familiar master bonus; apply this to the master, not to the creature."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "familiar",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRawSpecialAbility": true,
+          "customFeature": true,
+          "sourceType": "na",
+          "sourceText": "The master of a mu familiar gains a +3 bonus on Sleight of Hand checks."
         }
       }
     },
@@ -903,201 +964,6 @@
               }
             },
             "sourceType": "Ex"
-          }
-        }
-      }
-    },
-    {
-      "_id": "sa00000000000003",
-      "name": "Familiar",
-      "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
-      "system": {
-        "description": {
-          "value": "<p>The master of a mu</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "contextNotes": [
-          {
-            "target": "misc",
-            "text": "Familiar master benefit: The master of a mu"
-          }
-        ],
-        "links": {
-          "charges": []
-        },
-        "tag": "familiar",
-        "subType": "racial",
-        "traitType": "",
-        "traitCategory": "",
-        "racePoints": null,
-        "abilityType": "ex",
-        "associations": {
-          "classes": []
-        },
-        "showInQuickbar": false,
-        "crOffset": "",
-        "inherited": false,
-        "acquired": false,
-        "simple": false,
-        "summons": false,
-        "disabled": false,
-        "classSkills": {}
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "specialAbility": {
-            "category": "passive",
-            "buff": {
-              "active": true,
-              "changes": [],
-              "contextNotes": [
-                {
-                  "target": "misc",
-                  "text": "Familiar master benefit: The master of a mu"
-                }
-              ],
-              "automationNotes": []
-            },
-            "uses": null,
-            "saveDCs": [],
-            "damages": [],
-            "healing": [],
-            "attack": null,
-            "activation": {
-              "cost": 1,
-              "type": "standard",
-              "unchained": {
-                "cost": 1,
-                "type": "action"
-              }
-            },
-            "criticalAttack": null,
-            "requiresSave": false,
-            "saveType": null,
-            "blueMage": "",
-            "range": {
-              "value": null,
-              "units": ""
-            },
-            "target": {
-              "value": ""
-            },
-            "duration": null,
-            "abilityScores": {
-              "str": {
-                "value": 6,
-                "mod": -2,
-                "missing": false,
-                "raw": "6"
-              },
-              "dex": {
-                "value": 16,
-                "mod": 3,
-                "missing": false,
-                "raw": "16"
-              },
-              "con": {
-                "value": 10,
-                "mod": 0,
-                "missing": false,
-                "raw": "10"
-              },
-              "int": {
-                "value": 2,
-                "mod": -4,
-                "missing": false,
-                "raw": "2"
-              },
-              "wis": {
-                "value": 12,
-                "mod": 1,
-                "missing": false,
-                "raw": "12"
-              },
-              "cha": {
-                "value": 6,
-                "mod": -2,
-                "missing": false,
-                "raw": "6"
-              }
-            },
-            "sourceType": "Ex"
-          }
-        }
-      }
-    },
-    {
-      "_id": "bf00000000000003",
-      "name": "Familiar",
-      "type": "buff",
-      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
-      "system": {
-        "description": {
-          "value": "<p>The master of a mu</p>",
-          "instructions": ""
-        },
-        "actions": [],
-        "attackNotes": [],
-        "effectNotes": [],
-        "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
-        },
-        "changes": [],
-        "changeFlags": {
-          "immuneToMorale": false,
-          "loseDexToAC": false,
-          "noMediumEncumbrance": false,
-          "noHeavyEncumbrance": false,
-          "mediumArmorFullSpeed": false,
-          "heavyArmorFullSpeed": false,
-          "lowLightVision": false,
-          "seeInvisibility": false,
-          "seeInDarkness": false
-        },
-        "contextNotes": [
-          {
-            "target": "misc",
-            "text": "Familiar master benefit: The master of a mu"
-          }
-        ],
-        "links": {
-          "children": []
-        },
-        "tag": "familiar",
-        "subType": "perm",
-        "active": true,
-        "level": 0,
-        "duration": {
-          "value": null,
-          "units": "",
-          "end": ""
-        },
-        "conditions": [],
-        "hideFromToken": false,
-        "scriptCalls": []
-      },
-      "flags": {
-        "ffd20-bestiary-builder": {
-          "generatedBuff": {
-            "sourceAbility": "Familiar",
-            "category": "passive",
-            "automationNotes": []
           }
         }
       }

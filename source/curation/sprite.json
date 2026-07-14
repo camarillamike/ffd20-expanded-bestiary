@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sprite",
@@ -170,20 +170,29 @@
         "sc": {
           "value": 0
         },
-        "custom": "Detect evil, detect good, low-light vision"
+        "custom": "Detect evil; detect good"
       },
       "dr": {
         "value": [],
         "custom": "5/cold iron;"
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "light",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Shadow"
+        "dark"
       ],
       "ci": [],
       "languages": [
@@ -199,7 +208,7 @@
       },
       "fly": {
         "ability": "dex",
-        "rank": 9
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -215,6 +224,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -734,6 +744,9 @@
             "damage": "1d2-3/19-20",
             "damageFormula": "1d2",
             "printedDamageBonus": -3,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -786,6 +799,9 @@
             "damage": "1d2-3/x3",
             "damageFormula": "1d2",
             "printedDamageBonus": -3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
             "natural": false
           }
         },

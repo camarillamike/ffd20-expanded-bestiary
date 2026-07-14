@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bee",
@@ -180,35 +180,45 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Mind-affecting effects",
-        "Poison"
-      ],
+      "di": [],
       "dv": [
-        "Wind"
+        "wind"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "poison"
+      ],
       "languages": [],
       "stature": "tall"
     },
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 4
+        "rank": 0
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -313,8 +323,7 @@
             "clm": true,
             "per": true,
             "ste": true,
-            "swm": true,
-            "fly": true
+            "swm": true
           },
           "level": 3,
           "hitDie": 8,
@@ -351,6 +360,9 @@
             "damage": "1d4 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -585,7 +597,7 @@
             "damages": [
               {
                 "formula": "1d3",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d3 non-elemental damage"
               }
             ],
@@ -610,14 +622,14 @@
                 {
                   "formula": "1d3",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": ""
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 4 rounds"

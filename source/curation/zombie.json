@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Zombie",
@@ -183,7 +183,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -195,17 +195,34 @@
       },
       "cres": "",
       "di": [
-        "Undead Traits"
+        "nonlethal"
       ],
       "dv": [
         "Fire and Holy"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "bleed",
+        "deathEffects",
+        "disease",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "physical ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "raising and resurrection"
+      ],
       "languages": [],
       "stature": "tall"
     },
     "skills": {},
     "defenses": {
+      "hpAbility": "cha",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -230,7 +247,7 @@
       "savingThrows": {
         "fort": {
           "value": 0,
-          "ability": "con"
+          "ability": "cha"
         },
         "ref": {
           "value": 0,
@@ -356,6 +373,9 @@
             "damage": "1d6+4",
             "damageFormula": "1d6",
             "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -523,11 +543,11 @@
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 15,
+                "units": "ft"
               },
               "target": {
-                "value": ""
+                "value": "15-ft. cone"
               },
               "damage": [],
               "save": {
@@ -536,6 +556,7 @@
                 "description": "Negates a -2 penalty to Attack rolls and skill checks for 1d4 rounds"
               },
               "effectNotes": [
+                "Area: 15-ft. cone",
                 "Duration: 1d4 rounds"
               ]
             }

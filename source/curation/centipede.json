@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Centipede",
@@ -169,31 +169,40 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "mind-affecting effects"
-      ],
+      "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting"
+      ],
       "languages": [],
       "stature": "tall"
     },
     "skills": {
       "clm": {
         "ability": "str",
-        "rank": 5
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -205,6 +214,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -358,6 +368,9 @@
             "damage": "1d6-1 plus poison",
             "damageFormula": "1d6",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -532,21 +545,18 @@
                 "save": "fort",
                 "dc": 13,
                 "raw": "Fort DC 13",
-                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
-                "ability": "dex",
-                "confidence": "derived-minimum-one",
-                "base": 11,
-                "neededMod": 2,
-                "candidates": [
-                  "dex:minimum-one"
-                ],
-                "expectedDc": 13
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "ability": "con",
+                "confidence": "explicit-con-racial-bonus",
+                "base": 12,
+                "expectedDc": 13,
+                "racialBonus": 2
               }
             ],
             "damages": [
               {
                 "formula": "1d2",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d2 non-elemental damage"
               }
             ],
@@ -571,14 +581,14 @@
                 {
                   "formula": "1d2",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ],
               "save": {
                 "type": "fort",
-                "dc": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.dex.mod",
-                "description": ""
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 6 rounds"

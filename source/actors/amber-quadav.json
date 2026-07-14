@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -507,14 +508,23 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
@@ -708,7 +718,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -831,6 +841,9 @@
             "damage": "1d6+1",
             "damageFormula": "1d6",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -843,7 +856,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock ranged attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -875,7 +888,7 @@
                 {
                   "formula": "1d6",
                   "types": [
-                    "bludgeoning"
+                    "water"
                   ]
                 }
               ],
@@ -893,8 +906,8 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "",
-              "damageMult": null,
+              "damage": "int",
+              "damageMult": 1,
               "max": null,
               "critRange": 20,
               "critMult": 2
@@ -966,6 +979,9 @@
             "damage": "1d6+2 water dmg",
             "damageFormula": "1d6",
             "printedDamageBonus": 2,
+            "damageType": "water",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -2825,6 +2841,134 @@
         "ffd20-bestiary-builder": {
           "generatedBuff": {
             "sourceAbility": "Steel Shelled",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000004",
+      "name": "Black Magery",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: Black Magery (Increase Damage +1).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "spell",
+            "text": "Apply the source statblock's listed Black Magery damage benefit to matching black magic spells."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "black-magery",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Black Magery",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000005",
+      "name": "Spell Proficiency",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: Spell Proficiency.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "spell",
+            "text": "Spellcasting proficiency/quality from the source statblock; use the actor's configured spellbook and listed spells."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "spell-proficiency",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Spell Proficiency",
             "category": "passive",
             "automationNotes": []
           }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sahagin",
@@ -225,20 +225,29 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Lightning"
+        "lightning"
       ],
       "ci": [],
       "languages": [
@@ -271,10 +280,11 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 1,
         "ability": "dex"
@@ -405,8 +415,7 @@
             "rid": true,
             "ste": true,
             "sur": true,
-            "swm": true,
-            "han": true
+            "swm": true
           },
           "level": 1,
           "hitDie": 10,
@@ -443,6 +452,9 @@
             "damage": "1d8+2",
             "damageFormula": "1d8",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -495,6 +507,9 @@
             "damage": "1d4+1",
             "damageFormula": "1d4",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -548,6 +563,9 @@
             "damage": "1d4+2",
             "damageFormula": "1d4",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -606,6 +624,9 @@
             "damage": "1d4+2",
             "damageFormula": "1d4",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -658,6 +679,9 @@
             "damage": "1d10/19-20",
             "damageFormula": "1d10",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -1251,6 +1275,7 @@
                 "raw": "1d6+2 water damage",
                 "sourceFormula": "1d6+2",
                 "damageAbility": "int",
+                "damageAbilityMultiplier": 1,
                 "damageAbilityReason": "matches-save-dc-ability"
               }
             ],

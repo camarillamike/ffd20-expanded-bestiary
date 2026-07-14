@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -149,7 +150,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -160,13 +161,18 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Plant traits"
-      ],
+      "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -275,7 +281,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -401,6 +407,9 @@
             "damage": "1d2-1 plus poison",
             "damageFormula": "1d2",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -413,7 +422,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -539,6 +548,9 @@
             "damage": "grab",
             "damageFormula": "grab",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -772,10 +784,9 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": null,
-          "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
+          "value": 2,
+          "per": "day",
+          "maxFormula": "2",
           "rechargeFormula": ""
         },
         "changes": [],
@@ -806,7 +817,12 @@
           "specialAbility": {
             "category": "toggle",
             "buff": null,
-            "uses": null,
+            "uses": {
+              "value": 2,
+              "per": "day",
+              "maxFormula": "2",
+              "rechargeFormula": ""
+            },
             "saveDCs": [
               {
                 "save": "fort",
@@ -931,7 +947,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -1090,11 +1106,11 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": 15,
+              "units": "ft"
             },
             "target": {
-              "value": ""
+              "value": "15-ft. cone"
             },
             "attackBonus": "",
             "touch": false,
@@ -1110,12 +1126,14 @@
             },
             "notes": {
               "effect": [
+                "Area: 15-ft. cone",
                 "Duration: 1d4 rounds",
                 "Recharge [[1d3]] rounds."
               ],
               "footer": []
             },
             "effectNotes": [
+              "Area: 15-ft. cone",
               "Duration: 1d4 rounds",
               "Recharge [[1d3]] rounds."
             ],

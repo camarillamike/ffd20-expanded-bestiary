@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bite-Sized Pudding",
@@ -146,10 +146,10 @@
           "value": 0
         },
         "bs": {
-          "value": 0
+          "value": 60
         },
         "bse": {
-          "value": 60
+          "value": 0
         },
         "ll": {
           "enabled": false,
@@ -169,7 +169,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsight 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -177,14 +177,24 @@
       },
       "eres": {
         "value": [],
-        "custom": ""
+        "custom": "Physical 50%"
       },
       "cres": "",
       "di": [
-        "Ooze traits"
+        "precision"
       ],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun",
+        "critical hits",
+        "flanking",
+        "gaze attacks and visual effects"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -195,6 +205,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -297,9 +308,7 @@
           "actions": [],
           "changes": [],
           "contextNotes": [],
-          "classSkills": {
-            "per": true
-          },
+          "classSkills": {},
           "level": 1,
           "hitDie": 8,
           "baseAttack": "med",
@@ -335,6 +344,9 @@
             "damage": "1d4",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },

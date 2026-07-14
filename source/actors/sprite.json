@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -460,7 +461,7 @@
       },
       "fly": {
         "ability": "dex",
-        "rank": 9
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -519,20 +520,29 @@
         "sc": {
           "value": 0
         },
-        "custom": "Detect evil, detect good, low-light vision"
+        "custom": "Detect evil; detect good"
       },
       "dr": {
         "value": [],
         "custom": "5/cold iron;"
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "light",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Shadow"
+        "dark"
       ],
       "ci": [],
       "languages": [
@@ -674,7 +684,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -727,7 +737,7 @@
               "damage": "str",
               "damageMult": 1,
               "max": null,
-              "critRange": 20,
+              "critRange": 19,
               "critMult": 2
             },
             "save": {
@@ -797,6 +807,9 @@
             "damage": "1d2-3/19-20",
             "damageFormula": "1d2",
             "printedDamageBonus": -3,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -809,7 +822,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock ranged attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -859,11 +872,11 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "",
-              "damageMult": null,
+              "damage": "str",
+              "damageMult": 1,
               "max": null,
               "critRange": 20,
-              "critMult": 2
+              "critMult": 3
             },
             "save": {
               "dc": "",
@@ -932,6 +945,9 @@
             "damage": "1d2-3/x3",
             "damageFormula": "1d2",
             "printedDamageBonus": -3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
             "natural": false
           }
         }

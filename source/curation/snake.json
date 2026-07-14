@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Snake",
@@ -33,8 +33,9 @@
         "Skills Acrobatics +13, Climb +11, Perception +9, Stealth +15, Swim +11; Racial Modifiers +4 Perception, +4 Stealth, +8 Acrobatics"
       ],
       "SPECIAL ABILITIES": [
-        "Critical Attack (Ex) Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage. Familiar The master of a snake gains a +3 bonus on",
-        "Bluff checks Poison (Ex) Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save."
+        "Critical Attack (Ex) Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
+        "Familiar The master of a snake gains a +3 bonus on Bluff checks.",
+        "Poison (Ex) Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save."
       ]
     },
     "parsed": {
@@ -80,7 +81,7 @@
         "melee": "Bite +5 (1d4-2 plus poison)",
         "ranged": "",
         "space": "Space 2.5 ft.; Reach 0 ft.",
-        "specialAttacks": "Critical Attack",
+        "specialAttacks": "Critical Attack, Poison",
         "spellLines": []
       },
       "statistics": [
@@ -98,11 +99,11 @@
           "type": "ex",
           "description": "Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
           "notes": {
-            "familiar": "The master of a snake gains a +3 bonus on"
+            "familiar": ""
           }
         },
         {
-          "name": "Bluff checks Poison",
+          "name": "Poison",
           "type": "ex",
           "description": "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
           "notes": {
@@ -171,20 +172,29 @@
         "sc": {
           "value": 30
         },
-        "custom": "Low-light vision, scent"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
       "ci": [],
       "languages": [],
@@ -193,11 +203,11 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 0
+        "rank": 2
       },
       "clm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       },
       "per": {
         "ability": "wis",
@@ -209,10 +219,11 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -292,7 +303,7 @@
       ],
       "specialAbilities": [
         "Critical Attack",
-        "Bluff checks Poison"
+        "Poison"
       ],
       "buffs": [],
       "miscellaneous": []
@@ -377,6 +388,9 @@
             "damage": "1d4-2 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -560,7 +574,7 @@
       },
       {
         "id": "sa00000000000002",
-        "name": "Bluff checks Poison",
+        "name": "Poison",
         "type": "feat",
         "subType": "racial",
         "category": "specialAbilities",
@@ -596,7 +610,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "Bluff checks Poison",
+              "name": "Poison",
               "actionType": "save",
               "activation": "standard",
               "touch": false,
@@ -618,7 +632,7 @@
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": ""
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 6 rounds"
@@ -645,7 +659,7 @@
       ],
       "specialAbilityNames": [
         "Critical Attack",
-        "Bluff checks Poison",
+        "Poison",
         "Familiar"
       ]
     },

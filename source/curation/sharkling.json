@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sharkling",
@@ -138,10 +138,10 @@
           "value": 0
         },
         "bs": {
-          "value": 30
+          "value": 0
         },
         "bse": {
-          "value": 0
+          "value": 30
         },
         "ll": {
           "enabled": false,
@@ -161,20 +161,29 @@
         "sc": {
           "value": 30
         },
-        "custom": "blindsense 30 ft., keen scent"
+        "custom": "keen scent"
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Lightning"
+        "lightning"
       ],
       "ci": [],
       "languages": [],
@@ -187,10 +196,11 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 1
+        "rank": 0
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 4,
         "ability": "dex"
@@ -336,6 +346,9 @@
             "damage": "1d4-1/19-20",
             "damageFormula": "1d4",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": true
           }
         },

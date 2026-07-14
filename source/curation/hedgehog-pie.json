@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hedgehog Pie",
@@ -179,25 +179,34 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "fire",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "disease",
-        "poison"
-      ],
+      "di": [],
       "dv": [
         "Ice and Lightning"
       ],
-      "ci": [],
+      "ci": [
+        "disease",
+        "poison"
+      ],
       "languages": [
         "Abyssal",
         "Infernal"
@@ -207,7 +216,7 @@
     "skills": {
       "clm": {
         "ability": "str",
-        "rank": 6
+        "rank": 4
       },
       "per": {
         "ability": "wis",
@@ -223,10 +232,11 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 6
+        "rank": 4
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 1,
         "ability": "dex"
@@ -699,10 +709,7 @@
             "per": true,
             "sen": true,
             "ste": true,
-            "sur": true,
-            "clm": true,
-            "spl": true,
-            "swm": true
+            "sur": true
           },
           "level": 1,
           "hitDie": 10,
@@ -739,6 +746,9 @@
             "damage": "1d4-1",
             "damageFormula": "1d4",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -927,7 +937,7 @@
             "damages": [
               {
                 "formula": "1",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1 point of non-elemental damage"
               }
             ],
@@ -960,7 +970,7 @@
                 {
                   "formula": "1",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ]

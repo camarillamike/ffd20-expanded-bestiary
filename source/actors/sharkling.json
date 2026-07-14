@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 4,
         "ability": "dex"
@@ -106,7 +107,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 1
+        "rank": 0
       }
     },
     "details": {
@@ -130,10 +131,10 @@
           "value": 0
         },
         "bs": {
-          "value": 30
+          "value": 0
         },
         "bse": {
-          "value": 0
+          "value": 30
         },
         "ll": {
           "enabled": false,
@@ -153,20 +154,29 @@
         "sc": {
           "value": 30
         },
-        "custom": "blindsense 30 ft., keen scent"
+        "custom": "keen scent"
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Lightning"
+        "lightning"
       ],
       "ci": [],
       "languages": [],
@@ -274,7 +284,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -327,7 +337,7 @@
               "damage": "str",
               "damageMult": 1,
               "max": null,
-              "critRange": 20,
+              "critRange": 19,
               "critMult": 2
             },
             "save": {
@@ -400,6 +410,9 @@
             "damage": "1d4-1/19-20",
             "damageFormula": "1d4",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": true
           }
         }

@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 6,
         "ability": "dex"
@@ -511,7 +512,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -519,17 +520,28 @@
       },
       "eres": {
         "value": [],
-        "custom": ""
+        "custom": "Forward element of its type by 50%"
       },
       "cres": "",
       "di": [
-        "Element of its type",
-        "outsider traits except light fortification"
+        "precision",
+        "Element of its type"
       ],
       "dv": [
         "Opposite element of its type"
       ],
-      "ci": [],
+      "ci": [
+        "bleed",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "critical hits",
+        "flanking",
+        "outsider traits except light fortification"
+      ],
       "languages": [
         "Infernal",
         "Abyssal"
@@ -624,8 +636,7 @@
           "per": true,
           "sen": true,
           "ste": true,
-          "sur": true,
-          "fly": true
+          "sur": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -667,7 +678,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -793,6 +804,9 @@
             "damage": "1d6",
             "damageFormula": "1d6",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -1764,18 +1778,25 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": 15,
+              "units": "ft"
             },
             "target": {
-              "value": ""
+              "value": "15-ft. radius"
             },
             "attackBonus": "",
             "touch": false,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": []
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "elemental-and-physical"
+                  ]
+                }
+              ]
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
@@ -1783,10 +1804,14 @@
               "description": "Half damage"
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "Area: 15-ft. radius"
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Area: 15-ft. radius"
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1803,7 +1828,16 @@
           "rechargeFormula": ""
         },
         "changes": [],
-        "contextNotes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+          },
+          {
+            "target": "attack",
+            "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+          }
+        ],
         "links": {
           "charges": []
         },
@@ -1829,7 +1863,29 @@
         "ffd20-bestiary-builder": {
           "specialAbility": {
             "category": "toggle",
-            "buff": null,
+            "buff": {
+              "active": false,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "str",
+                  "type": "untyped",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+                },
+                {
+                  "target": "attack",
+                  "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+                }
+              ],
+              "automationNotes": []
+            },
             "uses": null,
             "saveDCs": [
               {
@@ -1843,7 +1899,13 @@
                 "expectedDc": 11
               }
             ],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "elemental-and-physical",
+                "raw": "1d6 points of elemental and physical (half and half) damage"
+              }
+            ],
             "healing": [],
             "attack": null,
             "activation": {
@@ -1968,6 +2030,82 @@
           "generatedBuff": {
             "sourceAbility": "Float",
             "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000002",
+      "name": "Self-Destruct",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After each successful physical attack made against the bombino, the bombino increases in size by 1-ft. in diameter (the bombino increases Strength by 2 per physical attack, size increase lasts for 1d6+4 rounds); after the 3rd successful physical attack or reaches 0 HP due to a physical attack, the bomb explodes as an immediate action when reaching its closest target within range, destroying itself and dealing 1d6 points of elemental and physical (half and half) damage to everything within a 15-ft.-radius (Reflex save DC 11 for half damage). Blue mages may learn this ability as a 1st level spell (Knowledge: Planes DC 17).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "str",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+          },
+          {
+            "target": "attack",
+            "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "self-destruct",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Self-Destruct",
+            "category": "toggle",
             "automationNotes": []
           }
         }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Floating Eye",
@@ -169,7 +169,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -180,11 +180,11 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Blind status effects"
-      ],
+      "di": [],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "blind"
+      ],
       "languages": [
         "Infernal",
         "Abyssal"
@@ -194,7 +194,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 0
       },
       "int": {
         "ability": "cha",
@@ -206,6 +206,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 6,
         "ability": "dex"
@@ -312,8 +313,7 @@
             "kdu": true,
             "per": true,
             "ste": true,
-            "swm": true,
-            "int": true
+            "swm": true
           },
           "level": 1,
           "hitDie": 8,
@@ -350,6 +350,9 @@
             "damage": "1d4-1",
             "damageFormula": "1d4",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -538,6 +541,7 @@
                 "raw": "1d6+2 points of lightning damage",
                 "sourceFormula": "1d6+2",
                 "damageAbility": "con",
+                "damageAbilityMultiplier": 1,
                 "damageAbilityReason": "matches-save-dc-ability"
               }
             ],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Beady Eye",
@@ -159,7 +159,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -170,18 +170,18 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Blind status effects"
-      ],
+      "di": [],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "blind"
+      ],
       "languages": [],
       "stature": "tall"
     },
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -189,6 +189,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 5,
         "ability": "dex"
@@ -332,6 +333,9 @@
             "damage": "1d3-2",
             "damageFormula": "1d3",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },

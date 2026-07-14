@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Mu",
@@ -33,7 +33,7 @@
       "SPECIAL ABILITIES": [
         "Burrow Attack (Ex) Once per day as a swift action, the mu can come out of the ground and surprise their opponent. If they succeed at hitting with their bite attack, the damage is 1d4-2 plus 1d4 points of earth damage.",
         "Critical Attack (Ex) Once per day as a standard action, the mu can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
-        "Familiar (Ex) The master of a mu familiar gains a +3 bonus on sleight of hand checks."
+        "Familiar The master of a mu familiar gains a +3 bonus on Sleight of Hand checks."
       ]
     },
     "parsed": {
@@ -103,14 +103,6 @@
           "notes": {
             "familiar": ""
           }
-        },
-        {
-          "name": "Familiar",
-          "type": "ex",
-          "description": "The master of a mu",
-          "notes": {
-            "familiar": "gains a +3 bonus on sleight of hand checks."
-          }
         }
       ],
       "description": ""
@@ -174,7 +166,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -194,7 +186,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 0
+        "rank": 2
       },
       "per": {
         "ability": "wis",
@@ -206,6 +198,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -280,15 +273,14 @@
       "specialQualities": [],
       "specialAttacks": [],
       "defensiveAbilities": [],
-      "rawSpecialAbilities": [],
+      "rawSpecialAbilities": [
+        "Familiar"
+      ],
       "specialAbilities": [
         "Burrow Attack",
-        "Critical Attack",
-        "Familiar"
+        "Critical Attack"
       ],
-      "buffs": [
-        "Familiar"
-      ],
+      "buffs": [],
       "miscellaneous": []
     },
     "items": [
@@ -352,6 +344,9 @@
             "damage": "1d4-2",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -436,6 +431,31 @@
           "actions": [],
           "changes": [],
           "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "rfeat00000000001",
+        "name": "Familiar",
+        "type": "feat",
+        "subType": "racial",
+        "category": "rawSpecialAbilities",
+        "generatedFlags": [
+          "generatedRawSpecialAbility"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Familiar master bonus; apply this to the master, not to the creature."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -567,82 +587,11 @@
           "classSkills": {}
         },
         "reviewNotes": []
-      },
-      {
-        "id": "sa00000000000003",
-        "name": "Familiar",
-        "type": "feat",
-        "subType": "racial",
-        "category": "specialAbilities",
-        "generatedFlags": [
-          "specialAbility"
-        ],
-        "sourceFlagData": {
-          "specialAbility": {
-            "category": "passive",
-            "sourceType": "Ex",
-            "saveDCs": [],
-            "damages": [],
-            "healing": [],
-            "buff": {
-              "active": true,
-              "changes": [],
-              "contextNotes": [
-                {
-                  "target": "misc",
-                  "text": "Familiar master benefit: The master of a mu"
-                }
-              ],
-              "automationNotes": []
-            }
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Familiar master benefit: The master of a mu"
-            }
-          ],
-          "classSkills": {}
-        },
-        "reviewNotes": []
-      },
-      {
-        "id": "bf00000000000003",
-        "name": "Familiar",
-        "type": "buff",
-        "subType": "perm",
-        "category": "buffs",
-        "generatedFlags": [
-          "generatedBuff"
-        ],
-        "sourceFlagData": {
-          "buff": {
-            "sourceAbility": "Familiar",
-            "category": "passive",
-            "automationNotes": []
-          }
-        },
-        "mechanics": {
-          "actions": [],
-          "changes": [],
-          "contextNotes": [
-            {
-              "target": "misc",
-              "text": "Familiar master benefit: The master of a mu"
-            }
-          ],
-          "level": 0
-        },
-        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Mu is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Mu is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
@@ -663,7 +612,6 @@
       "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
       "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
       "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
-      "Passive or toggleable special abilities that can be represented as buffs also create Foundry buff items.",
       "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
     ],
     "unresolved": [],

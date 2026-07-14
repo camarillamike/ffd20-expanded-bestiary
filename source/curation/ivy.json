@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Ivy",
@@ -138,10 +138,10 @@
           "value": 0
         },
         "bs": {
-          "value": 0
+          "value": 30
         },
         "bse": {
-          "value": 30
+          "value": 0
         },
         "ll": {
           "enabled": true,
@@ -161,29 +161,44 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsight 30 ft., Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Plant traits"
-      ],
+      "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
       "languages": [],
       "stature": "tall"
     },
     "skills": {},
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -267,7 +282,9 @@
         "Camouflage"
       ],
       "buffs": [
-        "Camouflage"
+        "Camouflage",
+        "Constrict",
+        "grab"
       ],
       "miscellaneous": []
     },
@@ -327,6 +344,9 @@
             "damage": "1d3 plus grab",
             "damageFormula": "1d3",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -569,11 +589,69 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000002",
+        "name": "Constrict",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Constrict",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000003",
+        "name": "grab",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "grab",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply grab on the listed natural attack hit."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Ivy is packaged as an FFD20 NPC actor with 8 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Ivy is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

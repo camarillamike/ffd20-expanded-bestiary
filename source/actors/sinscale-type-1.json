@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "swm": {
         "ability": "str",
-        "rank": 0
+        "rank": 3
       }
     },
     "details": {
@@ -149,7 +150,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -268,7 +269,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -394,6 +395,9 @@
             "damage": "1d3+1 plus poison",
             "damageFormula": "1d3",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -493,7 +497,7 @@
                 {
                   "formula": "1d4",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ]
@@ -501,7 +505,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -571,7 +575,7 @@
             "damages": [
               {
                 "formula": "1d4",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d4 non-elemental damage"
               }
             ],
@@ -679,7 +683,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d4 + @abilities.str.mod",
+                  "formula": "1d4 + floor(@abilities.dex.mod * 0.5)",
                   "types": [
                     "piercing"
                   ]
@@ -692,10 +696,14 @@
               "description": ""
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "Recharge [[1d4+1]] rounds."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Recharge [[1d4+1]] rounds."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -705,11 +713,11 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": null,
+          "value": 1,
           "per": "",
-          "autoDeductChargesCost": "",
-          "maxFormula": "",
-          "rechargeFormula": ""
+          "maxFormula": "1",
+          "rechargeFormula": "1d4+1",
+          "rechargePeriod": "rounds"
         },
         "changes": [],
         "contextNotes": [],
@@ -739,16 +747,23 @@
           "specialAbility": {
             "category": "toggle",
             "buff": null,
-            "uses": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
             "saveDCs": [],
             "damages": [
               {
-                "formula": "1d4 + @abilities.str.mod",
+                "formula": "1d4 + floor(@abilities.dex.mod * 0.5)",
                 "type": "piercing",
                 "raw": "1d4+1 piercing damage",
                 "sourceFormula": "1d4+1",
-                "damageAbility": "str",
-                "damageAbilityReason": "single-matching-ability-mod"
+                "damageAbility": "dex",
+                "damageAbilityMultiplier": 0.5,
+                "damageAbilityReason": "ffd20-ability-type-default"
               }
             ],
             "healing": [],

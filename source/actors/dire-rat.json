@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -101,8 +102,8 @@
     },
     "skills": {
       "clm": {
-        "ability": "str",
-        "rank": 8
+        "ability": "dex",
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -113,8 +114,8 @@
         "rank": 1
       },
       "swm": {
-        "ability": "str",
-        "rank": 8
+        "ability": "dex",
+        "rank": 0
       }
     },
     "details": {
@@ -161,7 +162,7 @@
         "sc": {
           "value": 30
         },
-        "custom": "Low-light vision, scent"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -174,7 +175,7 @@
       "cres": "",
       "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
       "ci": [],
       "languages": [],
@@ -282,7 +283,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -408,6 +409,9 @@
             "damage": "1d4 plus disease",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -739,7 +743,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "Negates disease"
             },
             "notes": {
               "effect": [],
@@ -755,9 +759,10 @@
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
-          "value": 1,
-          "per": "day",
-          "maxFormula": "1",
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
           "rechargeFormula": ""
         },
         "changes": [],
@@ -788,12 +793,7 @@
           "specialAbility": {
             "category": "passive",
             "buff": null,
-            "uses": {
-              "value": 1,
-              "per": "day",
-              "maxFormula": "1",
-              "rechargeFormula": ""
-            },
+            "uses": null,
             "saveDCs": [
               {
                 "save": "fort",

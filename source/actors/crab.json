@@ -23,7 +23,7 @@
         "userPenalty": 0
       },
       "int": {
-        "value": 10,
+        "value": null,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -106,7 +107,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 9
+        "rank": 1
       }
     },
     "details": {
@@ -153,24 +154,33 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Mind-affecting effects"
-      ],
+      "di": [],
       "dv": [
-        "Ice"
+        "ice"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -273,7 +283,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -404,6 +414,9 @@
             "damage": "1d2-2 plus grab",
             "damageFormula": "1d2",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -717,7 +730,8 @@
                 "raw": "1d2-2 bludgeoning damage",
                 "sourceFormula": "1d2-2",
                 "damageAbility": "str",
-                "damageAbilityReason": "single-matching-ability-mod"
+                "damageAbilityMultiplier": 1,
+                "damageAbilityReason": "matching-ability-mod"
               }
             ],
             "healing": [],

@@ -23,7 +23,7 @@
         "userPenalty": 0
       },
       "int": {
-        "value": 10,
+        "value": null,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -121,10 +122,10 @@
           "value": 0
         },
         "bs": {
-          "value": 0
+          "value": 30
         },
         "bse": {
-          "value": 30
+          "value": 0
         },
         "ll": {
           "enabled": true,
@@ -144,24 +145,38 @@
         "sc": {
           "value": 0
         },
-        "custom": "Blindsight 30 ft., Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Plant traits"
-      ],
+      "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -262,7 +277,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -388,6 +403,9 @@
             "damage": "1d3 plus grab",
             "damageFormula": "1d3",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -961,6 +979,134 @@
         "ffd20-bestiary-builder": {
           "generatedBuff": {
             "sourceAbility": "Camouflage",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000002",
+      "name": "Constrict",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Constrict (1d3).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply constrict damage after a successful grapple check; use the damage listed in the source Special Attacks line."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "constrict",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Constrict",
+            "category": "passive",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000003",
+      "name": "grab",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "grab",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "grab",
             "category": "passive",
             "automationNotes": []
           }

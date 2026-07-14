@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -464,11 +465,11 @@
       },
       "fly": {
         "ability": "dex",
-        "rank": 15
+        "rank": 11
       },
       "per": {
         "ability": "wis",
-        "rank": 0
+        "rank": 3
       },
       "spl": {
         "ability": "int",
@@ -523,7 +524,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -535,11 +536,12 @@
       },
       "cres": "",
       "di": [
-        "Fire",
-        "Poison"
+        "fire"
       ],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "poison"
+      ],
       "languages": [
         "Common",
         "Infernal"
@@ -634,10 +636,7 @@
           "per": true,
           "sen": true,
           "ste": true,
-          "sur": true,
-          "acr": true,
-          "fly": true,
-          "spl": true
+          "sur": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -679,7 +678,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -810,6 +809,9 @@
             "damage": "1d4-2",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -822,7 +824,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -948,6 +950,9 @@
             "damage": "1d4-2 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": -2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -1186,9 +1191,9 @@
               "parts": []
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -1248,16 +1253,12 @@
                 "save": "fort",
                 "dc": 12,
                 "raw": "Fort DC 12",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
-                "ability": "dex",
-                "confidence": "derived-preferred-floor",
-                "base": 10,
-                "neededMod": 2,
-                "candidates": [
-                  "dex:floor",
-                  "wis:floor"
-                ],
-                "expectedDc": 12
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
+                "ability": "con",
+                "confidence": "explicit-con-racial-bonus",
+                "base": 12,
+                "expectedDc": 12,
+                "racialBonus": 2
               }
             ],
             "damages": [],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sinscale Type 1",
@@ -168,7 +168,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -188,10 +188,11 @@
     "skills": {
       "swm": {
         "ability": "str",
-        "rank": 0
+        "rank": 3
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -334,6 +335,9 @@
             "damage": "1d3+1 plus poison",
             "damageFormula": "1d3",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -424,7 +428,7 @@
             "damages": [
               {
                 "formula": "1d4",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d4 non-elemental damage"
               }
             ],
@@ -449,14 +453,14 @@
                 {
                   "formula": "1d4",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": ""
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 4 rounds"
@@ -485,15 +489,23 @@
             "saveDCs": [],
             "damages": [
               {
-                "formula": "1d4 + @abilities.str.mod",
+                "formula": "1d4 + floor(@abilities.dex.mod * 0.5)",
                 "type": "piercing",
                 "raw": "1d4+1 piercing damage",
                 "sourceFormula": "1d4+1",
-                "damageAbility": "str",
-                "damageAbilityReason": "single-matching-ability-mod"
+                "damageAbility": "dex",
+                "damageAbilityMultiplier": 0.5,
+                "damageAbilityReason": "ffd20-ability-type-default"
               }
             ],
-            "healing": []
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            }
           }
         },
         "mechanics": {
@@ -512,11 +524,14 @@
               },
               "damage": [
                 {
-                  "formula": "1d4 + @abilities.str.mod",
+                  "formula": "1d4 + floor(@abilities.dex.mod * 0.5)",
                   "types": [
                     "piercing"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Recharge [[1d4+1]] rounds."
               ]
             }
           ],

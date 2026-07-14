@@ -23,7 +23,7 @@
         "userPenalty": 0
       },
       "int": {
-        "value": 10,
+        "value": null,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 4
+        "rank": 0
       }
     },
     "details": {
@@ -149,25 +150,34 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft."
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Mind-affecting effects",
-        "Poison"
-      ],
+      "di": [],
       "dv": [
-        "Wind"
+        "wind"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "poison"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -242,8 +252,7 @@
           "clm": true,
           "per": true,
           "ste": true,
-          "swm": true,
-          "fly": true
+          "swm": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -271,7 +280,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -397,6 +406,9 @@
             "damage": "1d4 plus poison",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -902,7 +914,7 @@
                 {
                   "formula": "1d3",
                   "types": [
-                    "non-elemental"
+                    "nonelemental"
                   ]
                 }
               ]
@@ -910,7 +922,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "fort",
-              "description": ""
+              "description": "Negates poison"
             },
             "notes": {
               "effect": [
@@ -980,7 +992,7 @@
             "damages": [
               {
                 "formula": "1d3",
-                "type": "non-elemental",
+                "type": "nonelemental",
                 "raw": "1d3 non-elemental damage"
               }
             ],

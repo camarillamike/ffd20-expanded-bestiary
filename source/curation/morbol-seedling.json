@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Morbol Seedling",
@@ -179,7 +179,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -190,13 +190,18 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Plant traits"
-      ],
+      "di": [],
       "dv": [
-        "Fire"
+        "fire"
       ],
-      "ci": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -207,6 +212,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 3,
         "ability": "dex"
@@ -356,6 +362,9 @@
             "damage": "1d2-1 plus poison",
             "damageFormula": "1d2",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -408,6 +417,9 @@
             "damage": "grab",
             "damageFormula": "grab",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -548,7 +560,13 @@
               }
             ],
             "damages": [],
-            "healing": []
+            "healing": [],
+            "uses": {
+              "value": 2,
+              "per": "day",
+              "maxFormula": "2",
+              "rechargeFormula": ""
+            }
           }
         },
         "mechanics": {
@@ -629,7 +647,7 @@
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "description": ""
+                "description": "Negates poison"
               },
               "effectNotes": [
                 "Duration: 6 rounds"
@@ -687,11 +705,11 @@
               "activation": "standard",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 15,
+                "units": "ft"
               },
               "target": {
-                "value": ""
+                "value": "15-ft. cone"
               },
               "damage": [],
               "save": {
@@ -700,6 +718,7 @@
                 "description": "Negates a -2 penalty to Attack rolls and skill checks for 1d4 rounds"
               },
               "effectNotes": [
+                "Area: 15-ft. cone",
                 "Duration: 1d4 rounds",
                 "Recharge [[1d3]] rounds."
               ]

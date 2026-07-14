@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -223,14 +223,23 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
@@ -255,6 +264,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 2,
         "ability": "dex"
@@ -350,7 +360,8 @@
         "Cave Dweller",
         "Master Tinker",
         "Reckless Work",
-        "Thick Hide"
+        "Thick Hide",
+        "Chosen Weapon +1"
       ],
       "miscellaneous": [
         "Kobold",
@@ -418,8 +429,7 @@
             "pro": true,
             "rid": true,
             "sur": true,
-            "swm": true,
-            "kdu": true
+            "swm": true
           },
           "level": 1,
           "hitDie": 10,
@@ -456,6 +466,9 @@
             "damage": "1d8+2/x3",
             "damageFormula": "1d8",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
             "natural": false
           }
         },
@@ -509,6 +522,9 @@
             "damage": "1d4",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         },
@@ -1256,11 +1272,40 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000008",
+        "name": "Chosen Weapon +1",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Chosen Weapon +1",
+            "category": "passive",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply the listed chosen weapon bonus to attacks with the source weapon group if it is not already included in the statblock."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 23 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 24 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

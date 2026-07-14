@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.26",
+  "moduleVersion": "0.1.27",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bombino",
@@ -175,7 +175,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -183,17 +183,28 @@
       },
       "eres": {
         "value": [],
-        "custom": ""
+        "custom": "Forward element of its type by 50%"
       },
       "cres": "",
       "di": [
-        "Element of its type",
-        "outsider traits except light fortification"
+        "precision",
+        "Element of its type"
       ],
       "dv": [
         "Opposite element of its type"
       ],
-      "ci": [],
+      "ci": [
+        "bleed",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "critical hits",
+        "flanking",
+        "outsider traits except light fortification"
+      ],
       "languages": [
         "Infernal",
         "Abyssal"
@@ -215,6 +226,7 @@
       }
     },
     "defenses": {
+      "hpAbility": "con",
       "init": {
         "value": 6,
         "ability": "dex"
@@ -658,7 +670,8 @@
         "Self-Destruct"
       ],
       "buffs": [
-        "Float"
+        "Float",
+        "Self-Destruct"
       ],
       "miscellaneous": []
     },
@@ -691,8 +704,7 @@
             "per": true,
             "sen": true,
             "ste": true,
-            "sur": true,
-            "fly": true
+            "sur": true
           },
           "level": 1,
           "hitDie": 10,
@@ -729,6 +741,9 @@
             "damage": "1d6",
             "damageFormula": "1d6",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         },
@@ -1091,9 +1106,38 @@
                 "expectedDc": 11
               }
             ],
-            "damages": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "elemental-and-physical",
+                "raw": "1d6 points of elemental and physical (half and half) damage"
+              }
+            ],
             "healing": [],
-            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Planes DC 17)."
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Planes DC 17).",
+            "buff": {
+              "active": false,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "str",
+                  "type": "untyped",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+                },
+                {
+                  "target": "attack",
+                  "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+                }
+              ],
+              "automationNotes": []
+            }
           }
         },
         "mechanics": {
@@ -1104,22 +1148,41 @@
               "activation": "immediate",
               "touch": false,
               "range": {
-                "value": null,
-                "units": ""
+                "value": 15,
+                "units": "ft"
               },
               "target": {
-                "value": ""
+                "value": "15-ft. radius"
               },
-              "damage": [],
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "elemental-and-physical"
+                  ]
+                }
+              ],
               "save": {
                 "type": "ref",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "description": "Half damage"
-              }
+              },
+              "effectNotes": [
+                "Area: 15-ft. radius"
+              ]
             }
           ],
           "changes": [],
-          "contextNotes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+            },
+            {
+              "target": "attack",
+              "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+            }
+          ],
           "classSkills": {}
         },
         "reviewNotes": []
@@ -1152,11 +1215,51 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "bf00000000000002",
+        "name": "Self-Destruct",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buffs",
+        "generatedFlags": [
+          "generatedBuff"
+        ],
+        "sourceFlagData": {
+          "buff": {
+            "sourceAbility": "Self-Destruct",
+            "category": "toggle",
+            "automationNotes": []
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "str",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Apply once after each successful physical hit against this creature; stacks up to three hits before detonation."
+            },
+            {
+              "target": "attack",
+              "text": "Size increase lasts for the listed duration. Detonation destroys the creature and uses the Self-Destruct action."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Bombino is packaged as an FFD20 NPC actor with 15 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Bombino is packaged as an FFD20 NPC actor with 16 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Small",

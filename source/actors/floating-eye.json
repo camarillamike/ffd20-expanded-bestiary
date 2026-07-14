@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 6,
         "ability": "dex"
@@ -102,7 +103,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 5
+        "rank": 0
       },
       "int": {
         "ability": "cha",
@@ -157,7 +158,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -168,11 +169,11 @@
         "custom": ""
       },
       "cres": "",
-      "di": [
-        "Blind status effects"
-      ],
+      "di": [],
       "dv": [],
-      "ci": [],
+      "ci": [
+        "blind"
+      ],
       "languages": [
         "Infernal",
         "Abyssal"
@@ -253,8 +254,7 @@
           "kdu": true,
           "per": true,
           "ste": true,
-          "swm": true,
-          "int": true
+          "swm": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -282,7 +282,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -408,6 +408,9 @@
             "damage": "1d4-1",
             "damageFormula": "1d4",
             "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -865,6 +868,7 @@
                 "raw": "1d6+2 points of lightning damage",
                 "sourceFormula": "1d6+2",
                 "damageAbility": "con",
+                "damageAbilityMultiplier": 1,
                 "damageAbilityReason": "matches-save-dc-ability"
               }
             ],

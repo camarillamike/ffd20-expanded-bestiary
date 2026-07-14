@@ -17,7 +17,7 @@
         "userPenalty": 0
       },
       "con": {
-        "value": 10,
+        "value": null,
         "damage": 0,
         "drain": 0,
         "userPenalty": 0
@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "",
       "init": {
         "value": 0,
         "ability": "dex"
@@ -66,7 +67,7 @@
       "savingThrows": {
         "fort": {
           "value": 2,
-          "ability": "con"
+          "ability": ""
         },
         "ref": {
           "value": 0,
@@ -149,7 +150,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -161,13 +162,35 @@
       },
       "cres": "",
       "di": [
-        "construct traits"
+        "nonlethal"
       ],
       "dv": [
         "critical hits",
         "lightning"
       ],
-      "ci": [],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
       "languages": [],
       "stature": "tall"
     },
@@ -238,9 +261,7 @@
         },
         "wealth": "",
         "alignment": "N",
-        "classSkills": {
-          "per": true
-        },
+        "classSkills": {},
         "armorProf": [],
         "weaponProf": [],
         "languages": [],
@@ -267,7 +288,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -393,6 +414,9 @@
             "damage": "1d4+3",
             "damageFormula": "1d4",
             "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }

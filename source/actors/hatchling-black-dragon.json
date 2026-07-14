@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 7,
         "ability": "dex"
@@ -114,7 +115,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 0
+        "rank": 2
       },
       "sur": {
         "ability": "wis",
@@ -165,7 +166,7 @@
         "sc": {
           "value": 0
         },
-        "custom": "Dragon senses, see in darkness"
+        "custom": "Dragon senses"
       },
       "dr": {
         "value": [],
@@ -177,14 +178,15 @@
       },
       "cres": "",
       "di": [
-        "Shadow",
-        "Paralysis",
-        "Sleep"
+        "dark"
       ],
       "dv": [
-        "Holy"
+        "light"
       ],
-      "ci": [],
+      "ci": [
+        "paralyze",
+        "sleep"
+      ],
       "languages": [
         "Draconic"
       ],
@@ -313,7 +315,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -439,6 +441,9 @@
             "damage": "1d4",
             "damageFormula": "1d4",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -451,7 +456,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -582,6 +587,9 @@
             "damage": "1d3",
             "damageFormula": "1d3",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -737,7 +745,7 @@
                 {
                   "formula": "1d10",
                   "types": [
-                    "shadow"
+                    "dark"
                   ]
                 }
               ]
@@ -745,7 +753,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
               "type": "ref",
-              "description": ""
+              "description": "Half damage"
             },
             "notes": {
               "effect": [
@@ -826,7 +834,7 @@
             "damages": [
               {
                 "formula": "1d10",
-                "type": "shadow",
+                "type": "dark",
                 "raw": "1d10 shadow damage"
               }
             ],
@@ -1064,7 +1072,7 @@
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
               "type": "will",
-              "description": ""
+              "description": "Success: shaken for 1 round"
             },
             "notes": {
               "effect": [

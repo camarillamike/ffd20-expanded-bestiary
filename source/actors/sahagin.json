@@ -42,6 +42,7 @@
       }
     },
     "attributes": {
+      "hpAbility": "con",
       "init": {
         "value": 1,
         "ability": "dex"
@@ -122,7 +123,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 10
+        "rank": 2
       }
     },
     "details": {
@@ -169,20 +170,29 @@
         "sc": {
           "value": 0
         },
-        "custom": "Darkvision 60 ft., low-light vision"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "eres": {
-        "value": [],
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water",
+              ""
+            ],
+            "operator": true
+          }
+        ],
         "custom": ""
       },
       "cres": "",
       "di": [],
       "dv": [
-        "Lightning"
+        "lightning"
       ],
       "ci": [],
       "languages": [
@@ -268,8 +278,7 @@
           "rid": true,
           "ste": true,
           "sur": true,
-          "swm": true,
-          "han": true
+          "swm": true
         },
         "armorProf": [],
         "weaponProf": [],
@@ -297,7 +306,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -420,6 +429,9 @@
             "damage": "1d8+2",
             "damageFormula": "1d8",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -432,7 +444,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -558,6 +570,9 @@
             "damage": "1d4+1",
             "damageFormula": "1d4",
             "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -570,7 +585,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -701,6 +716,9 @@
             "damage": "1d4+2",
             "damageFormula": "1d4",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -713,7 +731,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock melee attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -839,6 +857,9 @@
             "damage": "1d4+2",
             "damageFormula": "1d4",
             "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
             "natural": true
           }
         }
@@ -851,7 +872,7 @@
       "img": "systems/ffd20/icons/skills/red_30.jpg",
       "system": {
         "description": {
-          "value": "<p>Generated from the source statblock ranged attack line.</p>",
+          "value": "",
           "instructions": ""
         },
         "actions": [
@@ -901,10 +922,10 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "",
-              "damageMult": null,
+              "damage": "str",
+              "damageMult": 0,
               "max": null,
-              "critRange": 20,
+              "critRange": 19,
               "critMult": 2
             },
             "save": {
@@ -974,6 +995,9 @@
             "damage": "1d10/19-20",
             "damageFormula": "1d10",
             "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
             "natural": false
           }
         }
@@ -2431,6 +2455,7 @@
                 "raw": "1d6+2 water damage",
                 "sourceFormula": "1d6+2",
                 "damageAbility": "int",
+                "damageAbilityMultiplier": 1,
                 "damageAbilityReason": "matches-save-dc-ability"
               }
             ],

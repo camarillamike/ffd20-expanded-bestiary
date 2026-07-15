@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.29";
+const MODULE_VERSION = "0.1.30";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -30,6 +30,15 @@ const REPLACEABLE_GENERATED_FLAGS = [
   "generatedInventoryItem",
 ];
 const PACKAGE_PREFERENCE = ["ffd20-content", "pf-content-for-ffd20", "ffd20"];
+const LOOKUP_ALIASES = {
+  "water power staff": ["power staff"],
+  "tiny butcher knife": ["fillet knife"],
+  "lantern": ["hooded lantern"],
+  "cure potion": ["potion of cure", "cure potion"],
+  "bullets": ["sling bullet"],
+  "bolts": ["crossbow bolt"],
+  "arrows": ["arrow"],
+};
 
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, AUTO_IMPORT_SETTING, {
@@ -110,11 +119,32 @@ async function buildItemLookup() {
   return lookup;
 }
 
-function findLookupMatch(item, lookup) {
+function genericMaceName(actor) {
+  const attack = (actor.items ?? []).find((candidate) =>
+    candidate.type === "attack" && normalizeName(candidate.name) === "mace"
+  );
+  const damage = normalizeName(generatedFlags(attack).generatedNaturalAttack?.damageFormula);
+  const size = foundry.utils.getProperty(actor, "system.traits.size") ?? "med";
+  const heavyDamageBySize = { fine: "1d2", dim: "1d3", tiny: "1d4", sm: "1d6", med: "1d8", lg: "2d6", huge: "3d6", grg: "4d6", col: "6d6" };
+  return damage === heavyDamageBySize[size] ? "heavy mace" : "light mace";
+}
+
+function lookupNamesForItem(item, actor) {
   const flags = generatedFlags(item);
+  const requested = normalizeName(flags.lookupName ?? item.name);
+  const names = [requested, ...(LOOKUP_ALIASES[requested] ?? [])];
+  if (requested === "mace") names.push(genericMaceName(actor));
+  const parameterizedFeat = requested.match(/^(weapon focus|skill focus)\s*\(.+\)$/);
+  if (parameterizedFeat) names.push(parameterizedFeat[1]);
+  return [...new Set(names.map(normalizeName).filter(Boolean))];
+}
+
+function findLookupMatch(item, lookup, actor) {
   const requestedTypes = lookupTypesForItem(item);
   const requestedSubTypes = lookupSubTypesForItem(item);
-  const candidates = (lookup.get(normalizeName(flags.lookupName ?? item.name)) ?? []).filter(({ entry }) => {
+  const candidates = lookupNamesForItem(item, actor).flatMap((name, aliasRank) =>
+    (lookup.get(name) ?? []).map((candidate) => ({ ...candidate, aliasRank }))
+  ).filter(({ entry }) => {
     if (requestedTypes.length && !requestedTypes.includes(entry.type)) return false;
     if (requestedSubTypes.length && !requestedSubTypes.includes(entrySubType(entry))) return false;
     return true;
@@ -123,6 +153,8 @@ function findLookupMatch(item, lookup) {
   return candidates
     .slice()
     .sort((a, b) => {
+      const aliasDelta = a.aliasRank - b.aliasRank;
+      if (aliasDelta !== 0) return aliasDelta;
       const packageDelta = packageRank(a.pack) - packageRank(b.pack);
       if (packageDelta !== 0) return packageDelta;
       return a.pack.collection.localeCompare(b.pack.collection);
@@ -143,6 +175,29 @@ function applyPlaceholderDetails(source, item) {
   }
   if (flags.generatedInventoryItem && flags.broken && source.system) {
     source.system.broken = true;
+  }
+  if (flags.generatedInventoryItem && source.system) {
+    const requested = normalizeName(flags.lookupName ?? flags.name ?? item.name);
+    if (requested === "water power staff") {
+      source.name = "Water Power Staff";
+      source.system.tag = "water-power-staff";
+      for (const action of source.system.actions ?? []) {
+        for (const part of action.damage?.parts ?? []) part.types = ["water"];
+      }
+    } else if (requested === "tiny butcher knife") {
+      source.name = "Tiny Butcher Knife";
+      source.system.size = "tiny";
+      for (const action of source.system.actions ?? []) {
+        action.ability = foundry.utils.mergeObject(action.ability ?? {}, { attack: "dex", damage: "str", damageMult: 1, critRange: 18, critMult: 2 }, { inplace: false });
+        for (const part of action.damage?.parts ?? []) part.types = ["slashing"];
+      }
+    } else if (requested === "lantern") {
+      source.name = "Lantern";
+    }
+  }
+  if (flags.generatedFeat && /^(weapon focus|skill focus)\s*\(.+\)$/i.test(item.name)) {
+    source.name = item.name;
+    if (source.system) source.system.tag = normalizeName(item.name).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
   if (flags.generatedClassLevel && source.system) {
     if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
@@ -180,10 +235,12 @@ async function hydrateGeneratedItems(actor, lookup) {
       continue;
     }
 
-    const match = findLookupMatch(item, lookup);
+    const match = findLookupMatch(item, lookup, actor);
     if (!match) {
       hydrated.push(item);
-      report.push({ actor: actor.name, item: item.name, type: item.type, status: "generated-fallback" });
+      const flags = generatedFlags(item);
+      const customGenerated = flags.generatedRace || flags.generatedSpecialQuality || flags.generatedDefensiveAbility;
+      report.push({ actor: actor.name, item: item.name, type: item.type, status: customGenerated ? "custom-generated" : "generated-fallback" });
       continue;
     }
 

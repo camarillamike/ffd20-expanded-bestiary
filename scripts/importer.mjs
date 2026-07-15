@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.31";
+const MODULE_VERSION = "0.1.32";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -161,6 +161,33 @@ function findLookupMatch(item, lookup, actor) {
     })[0];
 }
 
+function selectedFeatureOption(item) {
+  const flags = generatedFlags(item);
+  const sourceText = String(flags.sourceText ?? "").trim();
+  if (!sourceText || !sourceText.toLowerCase().startsWith(item.name.toLowerCase())) return "";
+  const remainder = sourceText.slice(item.name.length).trim();
+  const option = remainder.match(/^\(([^)]+)\)/)?.[1]?.trim() ?? "";
+  return /^(?:ex|su|sp)$/i.test(option) ? "" : option;
+}
+
+function preserveFeatureSelection(source, item, selection) {
+  if (!selection || !source.system) return;
+  source.name = `${item.name} (${selection})`;
+  source.flags[MODULE_ID].selectedOption = selection;
+  source.flags[MODULE_ID].baseFeatureName = item.name;
+  source.system.contextNotes ??= [];
+  const target = /magery|magic|spell/i.test(item.name) ? "spell" : /weapon/i.test(item.name) ? "attack" : "misc";
+  const note = `Selected option: ${selection}.`;
+  if (!source.system.contextNotes.some((entry) => entry.target === target && entry.text === note)) {
+    source.system.contextNotes.push({ target, text: note });
+  }
+  for (const contextNote of item.system?.contextNotes ?? []) {
+    if (!source.system.contextNotes.some((entry) => entry.target === contextNote.target && entry.text === contextNote.text)) {
+      source.system.contextNotes.push(contextNote);
+    }
+  }
+}
+
 function applyPlaceholderDetails(source, item) {
   const flags = generatedFlags(item);
   source._id = item._id;
@@ -170,6 +197,7 @@ function applyPlaceholderDetails(source, item) {
     compendiumHydrated: true,
     generatedFallback: item,
   };
+  preserveFeatureSelection(source, item, selectedFeatureOption(item));
 
   if (flags.generatedInventoryItem && source.system && item.system?.quantity) {
     source.system.quantity = item.system.quantity;

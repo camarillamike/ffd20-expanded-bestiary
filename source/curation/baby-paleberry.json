@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Paleberry",
@@ -203,7 +203,7 @@
     "skills": {
       "per": {
         "ability": "wis",
-        "rank": 2
+        "rank": 1
       },
       "sen": {
         "ability": "wis",
@@ -269,7 +269,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -294,7 +296,7 @@
         "Familiar"
       ],
       "specialAbilities": [
-        "Grudge",
+        "Baby's Grudge",
         "Knife"
       ],
       "buffs": [],
@@ -318,7 +320,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "blf": true,
@@ -561,7 +570,7 @@
       },
       {
         "id": "sa00000000000001",
-        "name": "Grudge",
+        "name": "Baby's Grudge",
         "type": "feat",
         "subType": "racial",
         "category": "specialAbilities",
@@ -603,7 +612,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "Grudge",
+              "name": "Baby's Grudge",
               "actionType": "save",
               "activation": "standard",
               "touch": false,
@@ -626,7 +635,10 @@
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
                 "description": "Half damage"
-              }
+              },
+              "effectNotes": [
+                "1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage). Chef’s"
+              ]
             }
           ],
           "changes": [],

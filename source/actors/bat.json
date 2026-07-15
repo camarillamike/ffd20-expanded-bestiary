@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 2
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -200,6 +202,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
           }
         ],
         "contextNotes": [],
@@ -731,6 +741,7 @@
             "critConfirmBonus": "",
             "notes": {
               "effect": [
+                "Once per day as a standard action, the bat can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4-2 x 1.5.",
                 "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
@@ -740,6 +751,7 @@
               ]
             },
             "effectNotes": [
+              "Once per day as a standard action, the bat can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
               "Uses Bite attack.",
               "Source damage: damage is 1d4-2 x 1.5.",
               "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
@@ -908,7 +920,9 @@
             },
             "notes": {
               "effect": [
-                "Duration: 1d2 rounds"
+                "Once per day as a standard action, a bat can produce an ear-splitting screech that stuns non-bats in a 20-foot-radius burst. All creatures within the area must make a DC 12 Fortitude save or be staggered for 1d2 rounds. Other bats are immune to this effect. This is a sonic mind-affecting effect. The save DC is Wisdom-based.",
+                "Duration: 1d2 rounds",
+                "20-ft. radius; sonic, mind-affecting effect."
               ],
               "footer": []
             },

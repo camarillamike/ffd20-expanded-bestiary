@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sinscale Type 1",
@@ -41,7 +41,7 @@
       "cr": "1/2",
       "xp": 200,
       "alignment": "NE",
-      "size": "Medium",
+      "size": "Small",
       "creatureType": "Aberration",
       "subtypes": [],
       "initiative": 2,
@@ -136,7 +136,7 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/sinscale-type-1.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/sinscale-type-1.png",
     "traits": {
-      "size": "med",
+      "size": "sm",
       "senses": {
         "dv": {
           "value": 0
@@ -188,7 +188,7 @@
     "skills": {
       "swm": {
         "ability": "str",
-        "rank": 3
+        "rank": 1
       }
     },
     "defenses": {
@@ -246,7 +246,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -270,7 +272,9 @@
         "Wing Flicker"
       ],
       "buffs": [],
-      "miscellaneous": []
+      "miscellaneous": [
+        "Source Statblock Adjustments"
+      ]
     },
     "items": [
       {
@@ -287,7 +291,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.swm",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "clm": true,
@@ -312,6 +323,37 @@
               "value": "high"
             }
           }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "cmd",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
         },
         "reviewNotes": []
       },
@@ -345,6 +387,7 @@
               "name": "Bite",
               "actionType": "mwak",
               "activation": "standard",
+              "attackBonus": "-1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -463,6 +506,7 @@
                 "description": "Negates poison"
               },
               "effectNotes": [
+                "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
                 "Duration: 4 rounds"
               ]
             }
@@ -545,10 +589,10 @@
     ]
   },
   "curation": {
-    "summary": "Sinscale Type 1 is packaged as an FFD20 NPC actor with 5 generated item(s) across 4 populated mechanics categories.",
+    "summary": "Sinscale Type 1 is packaged as an FFD20 NPC actor with 6 generated item(s) across 5 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
-      "size": "Medium",
+      "size": "Small",
       "type": "Aberration",
       "alignment": "NE",
       "primarySourceAttacks": [

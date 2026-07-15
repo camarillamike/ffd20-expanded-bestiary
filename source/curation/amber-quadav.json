@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amber Quadav",
@@ -227,11 +227,19 @@
       },
       "kge": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       },
       "spl": {
         "ability": "int",
         "rank": 1
+      },
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "clm": {
+        "ability": "str",
+        "rank": 0
       }
     },
     "defenses": {
@@ -290,6 +298,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -749,6 +759,12 @@
               "target": "skill.clm",
               "formula": "1",
               "type": "racial",
+              "operator": "add"
+            },
+            {
+              "target": "skill.kge",
+              "formula": "3",
+              "type": "untyped",
               "operator": "add"
             }
           ],
@@ -1547,18 +1563,11 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [
-            {
-              "target": "sdamage",
-              "formula": "1",
-              "type": "untyped",
-              "operator": "add"
-            }
-          ],
+          "changes": [],
           "contextNotes": [
             {
               "target": "spell",
-              "text": "Apply the source statblock's listed Black Magery damage benefit to matching black magic spells."
+              "text": "Black Magery (Increased Damage): once per casting, add one extra damage die of the spell's normal die size to one damage roll or missile."
             }
           ],
           "level": 0

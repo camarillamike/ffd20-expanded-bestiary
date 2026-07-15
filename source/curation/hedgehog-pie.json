@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hedgehog Pie",
@@ -216,7 +216,7 @@
     "skills": {
       "clm": {
         "ability": "str",
-        "rank": 4
+        "rank": 1
       },
       "kar": {
         "ability": "int",
@@ -228,7 +228,7 @@
       },
       "spl": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       },
       "ste": {
         "ability": "dex",
@@ -236,7 +236,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 4
+        "rank": 1
       }
     },
     "defenses": {
@@ -251,8 +251,8 @@
         "offset": 0
       },
       "mp": {
-        "value": 1,
-        "max": 1,
+        "value": 2,
+        "max": 2,
         "temp": 0,
         "recover": 0,
         "offset": 0
@@ -295,6 +295,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -699,7 +701,26 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.clm",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.spl",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.swm",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "blf": true,

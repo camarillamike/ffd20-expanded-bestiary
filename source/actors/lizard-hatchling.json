@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "clm": {
@@ -105,7 +107,7 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 1
+        "rank": 0
       },
       "ste": {
         "ability": "dex",
@@ -213,6 +215,22 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
           }
         ],
         "contextNotes": [],

@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "fly": {
@@ -105,7 +107,7 @@
       },
       "int": {
         "ability": "cha",
-        "rank": 4
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -202,7 +204,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.int",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published int total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -606,6 +617,7 @@
             "critConfirmBonus": "",
             "notes": {
               "effect": [
+                "Once per day as a standard action, the floating eye can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-1 x 1.5 for total damage.",
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4-1 x 1.5.",
                 "Dynamic damage: source -1 derived as floor(@abilities.str.mod * 1)."
@@ -615,6 +627,7 @@
               ]
             },
             "effectNotes": [
+              "Once per day as a standard action, the floating eye can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-1 x 1.5 for total damage.",
               "Uses Bite attack.",
               "Source damage: damage is 1d4-1 x 1.5.",
               "Dynamic damage: source -1 derived as floor(@abilities.str.mod * 1)."
@@ -790,12 +803,14 @@
             },
             "notes": {
               "effect": [
+                "1/day, A floating eye can unleash a blast of electricity against a single target within 30 feet. The floating eye must make a range touch attack (+3), if it hits, the attack deals 1d6+2 points of lightning damage and must make a Fortitude save (DC 12) or be inflicted with the Blind status for 1d4 rounds. The save DC is Constitution-based. Blue mages may learn this ability as a 1st level spell (Knowledge: Dungeoneering DC 17).",
                 "Status: Blind",
                 "Duration: 1d4 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "1/day, A floating eye can unleash a blast of electricity against a single target within 30 feet. The floating eye must make a range touch attack (+3), if it hits, the attack deals 1d6+2 points of lightning damage and must make a Fortitude save (DC 12) or be inflicted with the Blind status for 1d4 rounds. The save DC is Constitution-based. Blue mages may learn this ability as a 1st level spell (Knowledge: Dungeoneering DC 17).",
               "Status: Blind",
               "Duration: 1d4 rounds"
             ],

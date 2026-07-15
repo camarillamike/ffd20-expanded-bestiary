@@ -78,7 +78,7 @@
       },
       "speed": {
         "land": {
-          "base": 30
+          "base": 0
         },
         "climb": {
           "base": 0
@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": "Source grapple total: +2."
     },
     "skills": {
       "per": {
@@ -203,7 +205,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "-4",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -793,6 +804,86 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "grappleaction001",
+      "name": "Grapple",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve the sharkling's listed grapple combat maneuver.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grapple",
+            "actionType": "mcman",
+            "attackBonus": "",
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "effectNotes": [
+              "Source grapple combat maneuver total: +2."
+            ],
+            "notes": {
+              "effect": [
+                "Source grapple combat maneuver total: +2."
+              ],
+              "footer": []
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "grapple",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Grapple",
+          "configuredUses": null
         }
       }
     },

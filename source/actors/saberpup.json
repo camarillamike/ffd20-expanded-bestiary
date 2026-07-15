@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 3
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -109,7 +111,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 3
+        "rank": 1
       }
     },
     "details": {
@@ -214,6 +216,30 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "-1",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          },
+          {
+            "formula": "-2",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "-1",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
           }
         ],
         "contextNotes": [
@@ -902,7 +928,9 @@
             "attackName": "Gore",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "Only while charging; doubles the Gore damage, including its Strength bonus."
+              ],
               "footer": [
                 "Source statblock: Gore +3 (1d4-1)"
               ]

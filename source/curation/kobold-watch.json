@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -259,11 +259,15 @@
       },
       "kdu": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "sur": {
         "ability": "wis",
         "rank": 1
+      },
+      "dev": {
+        "ability": "dex",
+        "rank": 0
       }
     },
     "defenses": {
@@ -321,7 +325,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain.",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [],
@@ -342,7 +348,8 @@
         "Weapon Focus (Spear)"
       ],
       "specialQualities": [
-        "Chosen Weapon +1"
+        "Chosen Weapon +1",
+        "Martial Flexibility"
       ],
       "specialAttacks": [],
       "defensiveAbilities": [],
@@ -421,6 +428,12 @@
               "formula": "2",
               "type": "racial",
               "operator": "add"
+            },
+            {
+              "target": "skill.kdu",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
             }
           ],
           "contextNotes": [
@@ -487,6 +500,7 @@
               "name": "Spear",
               "actionType": "mwak",
               "activation": "standard",
+              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -979,6 +993,9 @@
                     "mp"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
               ]
             }
           ],
@@ -1157,11 +1174,38 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "martialflex00001",
+        "name": "Martial Flexibility",
+        "type": "feat",
+        "subType": "classFeat",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "classFeat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 19 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 20 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

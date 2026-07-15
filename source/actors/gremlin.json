@@ -97,6 +97,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -455,31 +457,31 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "blf": {
         "ability": "cha",
-        "rank": 3
+        "rank": 1
       },
       "fly": {
         "ability": "dex",
-        "rank": 11
+        "rank": 1
       },
       "kar": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "kpl": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "per": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       },
       "spl": {
         "ability": "int",
-        "rank": 5
+        "rank": 1
       },
       "ste": {
         "ability": "dex",
@@ -578,7 +580,64 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          },
+          {
+            "formula": "2",
+            "target": "skill.blf",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published blf total adjustment"
+          },
+          {
+            "formula": "10",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.kar",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kar total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.kpl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kpl total adjustment"
+          },
+          {
+            "formula": "-1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "4",
+            "target": "skill.spl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published spl total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -921,13 +980,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000001",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "sting",
         "subType": "natural",
@@ -1215,11 +1268,13 @@
             },
             "notes": {
               "effect": [
+                "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
                 "Duration: 6 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
               "Duration: 6 rounds"
             ],
             "measureTemplate": {

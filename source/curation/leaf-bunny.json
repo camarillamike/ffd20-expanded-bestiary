@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Leaf Bunny",
@@ -184,7 +184,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 2
+        "rank": 0
       }
     },
     "defenses": {
@@ -242,7 +242,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -284,7 +286,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.ste",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
               "target": "skill.acr",
@@ -477,6 +486,7 @@
                 }
               ],
               "effectNotes": [
+                "Once every 1d4 turns and as a standard action, the leaf bunny pulls a carrot out and chews on it healing herself for 1d4+1 point of damage.",
                 "Recharge [[1d4]] turns."
               ]
             }

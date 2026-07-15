@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
@@ -105,11 +107,11 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       },
       "sur": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       }
     },
     "details": {
@@ -207,7 +209,24 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "-1",
+            "target": "skill.sur",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sur total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -380,7 +399,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "",
+            "attackBonus": "1",
             "damage": {
               "parts": [
                 {

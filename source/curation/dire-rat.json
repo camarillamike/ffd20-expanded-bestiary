@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Dire Rat",
@@ -257,7 +257,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -488,6 +490,7 @@
                 }
               ],
               "effectNotes": [
+                "Once every 1d4 rounds as a standard action, the dire rat can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4 x 1.5 for total damage.",
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4 x 1.5.",
                 "Dynamic damage: source +0 derived as floor(@abilities.str.mod * 1).",
@@ -573,7 +576,10 @@
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "Negates disease"
-              }
+              },
+              "effectNotes": [
+                "Filth fever: Bite—injury; save Fort DC 11; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based."
+              ]
             }
           ],
           "changes": [],

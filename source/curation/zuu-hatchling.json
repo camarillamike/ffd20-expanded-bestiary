@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Zuu Hatchling",
@@ -171,7 +171,7 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 5
+        "rank": 1
       }
     },
     "defenses": {
@@ -229,7 +229,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -272,7 +274,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "acr": true,

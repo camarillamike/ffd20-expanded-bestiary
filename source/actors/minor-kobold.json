@@ -96,19 +96,28 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "crf": {
-        "rank": 1
+        "ability": "int",
+        "rank": 1,
+        "name": "trapmaking"
       },
       "per": {
         "ability": "wis",
-        "rank": 1
+        "rank": 0
       },
       "ste": {
         "ability": "dex",
         "rank": 0
+      },
+      "pro": {
+        "ability": "wis",
+        "rank": 0,
+        "name": "miner"
       }
     },
     "details": {
@@ -219,6 +228,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
           }
         ],
         "contextNotes": [],
@@ -1102,10 +1119,14 @@
               "description": ""
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null

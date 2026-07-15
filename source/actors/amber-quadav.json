@@ -97,6 +97,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -463,11 +465,19 @@
       },
       "kge": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       },
       "spl": {
         "ability": "int",
         "rank": 1
+      },
+      "acr": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "clm": {
+        "ability": "str",
+        "rank": 0
       }
     },
     "details": {
@@ -634,6 +644,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "3",
+            "target": "skill.kge",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kge total adjustment"
           }
         ],
         "contextNotes": [
@@ -2773,15 +2791,7 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [
-          {
-            "formula": "1",
-            "target": "sdamage",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          }
-        ],
+        "changes": [],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -2796,7 +2806,7 @@
         "contextNotes": [
           {
             "target": "spell",
-            "text": "Apply the source statblock's listed Black Magery damage benefit to matching black magic spells."
+            "text": "Black Magery (Increased Damage): once per casting, add one extra damage die of the spell's normal die size to one damage roll or missile."
           }
         ],
         "links": {

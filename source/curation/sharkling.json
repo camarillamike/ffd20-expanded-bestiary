@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sharkling",
@@ -235,7 +235,7 @@
       },
       "speed": {
         "land": {
-          "base": 30
+          "base": 0
         },
         "climb": {
           "base": 0
@@ -253,7 +253,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": "Source grapple total: +2."
     },
     "coverage": {
       "racialHitDice": [
@@ -268,7 +270,9 @@
       "feats": [
         "Improved Initiative"
       ],
-      "specialQualities": [],
+      "specialQualities": [
+        "Grapple"
+      ],
       "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
@@ -300,7 +304,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.swm",
+              "formula": "-4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "acr": true,
@@ -532,6 +543,42 @@
         "reviewNotes": []
       },
       {
+        "id": "grappleaction001",
+        "name": "Grapple",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Grapple",
+              "actionType": "mcman",
+              "damage": [],
+              "effectNotes": [
+                "Source grapple combat maneuver total: +2."
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "reteethe00000001",
         "name": "Reteethe 1 Stack",
         "type": "buff",
@@ -590,7 +637,7 @@
     ]
   },
   "curation": {
-    "summary": "Sharkling is packaged as an FFD20 NPC actor with 9 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Sharkling is packaged as an FFD20 NPC actor with 10 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Small",

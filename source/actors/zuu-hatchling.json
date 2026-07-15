@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "fly": {
@@ -105,7 +107,7 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 5
+        "rank": 1
       }
     },
     "details": {
@@ -193,7 +195,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []

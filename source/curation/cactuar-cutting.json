@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Cactuar Cutting",
@@ -257,7 +257,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -535,7 +537,10 @@
                 "type": "ref",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
                 "description": "Half damage"
-              }
+              },
+              "effectNotes": [
+                "1/day, a cactuar cutting conjures up a spray of needles and fires at a target within 30 feet. The target takes 1d4+1 points of piercing damage (Reflex save DC 9 for half damage)"
+              ]
             }
           ],
           "changes": [],

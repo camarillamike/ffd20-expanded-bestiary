@@ -96,16 +96,18 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": "Cannot be tripped."
     },
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 2
+        "rank": 0
       },
       "clm": {
         "ability": "str",
-        "rank": 2
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -117,7 +119,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 2
+        "rank": 1
       }
     },
     "details": {
@@ -236,6 +238,30 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
           }
         ],
         "contextNotes": [],
@@ -475,13 +501,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000002",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "bite",
         "subType": "natural",
@@ -778,6 +798,7 @@
             "critConfirmBonus": "",
             "notes": {
               "effect": [
+                "Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4-2 x 1.5.",
                 "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
@@ -787,6 +808,7 @@
               ]
             },
             "effectNotes": [
+              "Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
               "Uses Bite attack.",
               "Source damage: damage is 1d4-2 x 1.5.",
               "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
@@ -962,11 +984,13 @@
             },
             "notes": {
               "effect": [
+                "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
                 "Duration: 6 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
               "Duration: 6 rounds"
             ],
             "measureTemplate": {

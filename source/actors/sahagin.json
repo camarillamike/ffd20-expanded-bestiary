@@ -96,32 +96,34 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "+2 dodge bonus to AC in shallow or deep water terrain.",
+      "cmdNotes": ""
     },
     "skills": {
       "han": {
         "ability": "cha",
-        "rank": 2
+        "rank": 1
       },
       "per": {
         "ability": "wis",
-        "rank": 2
+        "rank": 1
       },
       "rid": {
         "ability": "dex",
-        "rank": 2
+        "rank": 1
       },
       "ste": {
         "ability": "dex",
-        "rank": 2
+        "rank": 1
       },
       "sur": {
         "ability": "wis",
-        "rank": 2
+        "rank": 1
       },
       "swm": {
         "ability": "str",
-        "rank": 2
+        "rank": 1
       }
     },
     "details": {
@@ -223,7 +225,56 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.han",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published han total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.rid",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published rid total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.sur",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sur total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -1918,11 +1969,13 @@
             },
             "notes": {
               "effect": [
+                "1/day, Sahagin shares the power of Leviathan gaining Enwater for 2 turns or until discharged on his weapon or fist. This effect deals an extra 2 points of water damage. The weapon loses this property if its wielder drops it or otherwise loses contact with it.",
                 "Duration: 2 turns"
               ],
               "footer": []
             },
             "effectNotes": [
+              "1/day, Sahagin shares the power of Leviathan gaining Enwater for 2 turns or until discharged on his weapon or fist. This effect deals an extra 2 points of water damage. The weapon loses this property if its wielder drops it or otherwise loses contact with it.",
               "Duration: 2 turns"
             ],
             "measureTemplate": {
@@ -2376,12 +2429,14 @@
             },
             "notes": {
               "effect": [
+                "1/day, a sahagin can shoot water out of its mouth towards a single target with an water projectile within 30 ft. The sahagin must make a ranged touch attack (+2), if it hits, the attack deals 1d6+2 water damage and must make a Fortitude save (DC 12) or be inflicted with the Drenched status effect for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).",
                 "Status: Drenched",
                 "Duration: 1d4 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "1/day, a sahagin can shoot water out of its mouth towards a single target with an water projectile within 30 ft. The sahagin must make a ranged touch attack (+2), if it hits, the attack deals 1d6+2 water damage and must make a Fortitude save (DC 12) or be inflicted with the Drenched status effect for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).",
               "Status: Drenched",
               "Duration: 1d4 rounds"
             ],

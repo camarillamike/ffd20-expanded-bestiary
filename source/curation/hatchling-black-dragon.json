@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Hatchling Black Dragon",
@@ -144,7 +144,7 @@
       "size": "tiny",
       "senses": {
         "dv": {
-          "value": 0
+          "value": 120
         },
         "ts": {
           "value": 0
@@ -153,12 +153,12 @@
           "value": 0
         },
         "bse": {
-          "value": 0
+          "value": 60
         },
         "ll": {
-          "enabled": false,
+          "enabled": true,
           "multiplier": {
-            "dim": 2,
+            "dim": 4,
             "bright": 2
           }
         },
@@ -206,7 +206,7 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 4
+        "rank": 3
       },
       "spl": {
         "ability": "int",
@@ -214,7 +214,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 2
+        "rank": 0
       },
       "sur": {
         "ability": "wis",
@@ -276,7 +276,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -328,6 +330,18 @@
               "target": "skill.ste",
               "formula": "8",
               "type": "racial",
+              "operator": "add"
+            },
+            {
+              "target": "skill.per",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.ste",
+              "formula": "2",
+              "type": "untyped",
               "operator": "add"
             }
           ],
@@ -637,6 +651,7 @@
                 "description": "Half damage"
               },
               "effectNotes": [
+                "Special attack listed in the source statblock: Breath Weapon (30-ft. line, 1d10 shadow damage, Reflex DC 11 half, usable every 1d4 rounds).",
                 "Area: 30-ft. line",
                 "Recharge [[1d4]] rounds."
               ]
@@ -748,6 +763,7 @@
                 "description": "Success: shaken for 1 round"
               },
               "effectNotes": [
+                "Once every 1d4 rounds as a standard action, a black dragon reaches out with terror towards an opponent within 35 feet. The affected creature becomes frightened for 1d4 rounds. A frightened creature flees from the source of its fear as best it can. If unable to flee, it may fight. A frightened creature takes a –2 penalty on all attack rolls, saving throws, skill checks, and ability checks. A frightened creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape. If the subject succeeds on a Will save (DC 13), it is shaken for 1 round. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
                 "Duration: 1d4 rounds",
                 "Recharge [[1d4]] rounds."
               ]

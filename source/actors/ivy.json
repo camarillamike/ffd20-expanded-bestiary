@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {},
     "details": {
@@ -111,7 +113,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "senses": {
         "dv": {
           "value": 0
@@ -287,22 +289,7 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [
-          {
-            "formula": "-1",
-            "target": "cmb",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          },
-          {
-            "formula": "-1",
-            "target": "cmd",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          }
-        ],
+        "changes": [],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -376,7 +363,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "1",
+            "attackBonus": "",
             "damage": {
               "parts": [
                 {
@@ -441,13 +428,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.spatk00000000002",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "slam",
         "subType": "natural",
@@ -639,7 +620,13 @@
             },
             "effectNotes": [
               "Use after a successful grapple check."
-            ]
+            ],
+            "notes": {
+              "effect": [
+                "Use after a successful grapple check."
+              ],
+              "footer": []
+            }
           }
         ],
         "attackNotes": [],
@@ -774,7 +761,32 @@
           "value": "<p>Special attack listed in the source attack line: grab.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "target": {
+              "value": "creature hit by Slam"
+            },
+            "effectNotes": [
+              "Make a free grapple combat maneuver check after a successful Slam attack."
+            ],
+            "notes": {
+              "effect": [
+                "Make a free grapple combat maneuver check after a successful Slam attack."
+              ],
+              "footer": []
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -1114,7 +1126,7 @@
       "parsed": {
         "alignment": "N",
         "initiative": 2,
-        "size": "Medium",
+        "size": "Small",
         "cr": "1/2",
         "creatureType": "Plant",
         "subtypes": [],

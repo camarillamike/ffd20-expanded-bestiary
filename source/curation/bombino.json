@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bombino",
@@ -200,8 +200,7 @@
         "fatigue",
         "exhausted",
         "critical hits",
-        "flanking",
-        "outsider traits except light fortification"
+        "flanking"
       ],
       "languages": [
         "Infernal",
@@ -235,8 +234,8 @@
         "offset": 0
       },
       "mp": {
-        "value": 1,
-        "max": 1,
+        "value": 2,
+        "max": 2,
         "temp": 0,
         "recover": 0,
         "offset": 0
@@ -260,7 +259,7 @@
       },
       "speed": {
         "land": {
-          "base": 30
+          "base": 0
         },
         "climb": {
           "base": 0
@@ -279,6 +278,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -657,7 +658,9 @@
       "feats": [
         "Improved Initiative"
       ],
-      "specialQualities": [],
+      "specialQualities": [
+        "Light Fortification"
+      ],
       "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [],
@@ -1290,11 +1293,38 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "lightfortify0001",
+        "name": "Light Fortification",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Bombino is packaged as an FFD20 NPC actor with 18 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Bombino is packaged as an FFD20 NPC actor with 19 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Small",

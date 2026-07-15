@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Crab",
@@ -271,7 +271,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -493,7 +495,19 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Grab",
+              "actionType": "mcman",
+              "target": {
+                "value": "creature hit by Claw"
+              },
+              "damage": [],
+              "effectNotes": [
+                "Make a free grapple combat maneuver check after a successful Claw attack."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [
             {
@@ -565,6 +579,9 @@
                     "bludgeoning"
                   ]
                 }
+              ],
+              "effectNotes": [
+                "A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe."
               ]
             }
           ],

@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "per": {
         "ability": "wis",
-        "rank": 2
+        "rank": 1
       },
       "sen": {
         "ability": "wis",
@@ -203,7 +205,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -809,10 +820,14 @@
               "description": "Half damage"
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage)."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "1/day, as long as the baby tonberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of shadow damage (Fortitude save DC 11 for half damage)."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -998,7 +1013,10 @@
               "harmless": false
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "On a failed save, the target is shaken for 1 round.",
+                "Creatures immune to critical hits ignore the shaken rider but still take weapon damage."
+              ],
               "footer": [
                 "Source statblock: Chef's Knife +7 (1d2-4, 18-20/x2)"
               ]

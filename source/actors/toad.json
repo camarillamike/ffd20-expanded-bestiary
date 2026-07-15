@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
@@ -227,6 +229,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "-8",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
           }
         ],
         "contextNotes": [
@@ -471,13 +481,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000001",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "bite",
         "subType": "natural",
@@ -688,11 +692,13 @@
             },
             "notes": {
               "effect": [
+                "Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.",
                 "Duration: 6 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.",
               "Duration: 6 rounds"
             ],
             "measureTemplate": {
@@ -876,11 +882,13 @@
             },
             "notes": {
               "effect": [
+                "A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.",
                 "Duration: 4 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.",
               "Duration: 4 rounds"
             ],
             "measureTemplate": {

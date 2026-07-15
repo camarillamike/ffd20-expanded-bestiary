@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain.",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
@@ -105,11 +107,15 @@
       },
       "kdu": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "sur": {
         "ability": "wis",
         "rank": 1
+      },
+      "dev": {
+        "ability": "dex",
+        "rank": 0
       }
     },
     "details": {
@@ -274,6 +280,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "skill.kdu",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kdu total adjustment"
           }
         ],
         "contextNotes": [
@@ -395,7 +409,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "",
+            "attackBonus": "1",
             "damage": {
               "parts": [
                 {
@@ -1580,10 +1594,14 @@
               "description": ""
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -2186,6 +2204,69 @@
             "sourceAbility": "Bond to the Land",
             "category": "toggle",
             "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "martialflex00001",
+      "name": "Martial Flexibility",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Warrior class feature; usable 3/day for this creature.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "3",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "martial-flexibility",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "classFeat"
+          ],
+          "lookupName": "Martial Flexibility",
+          "configuredUses": {
+            "value": 3,
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "maxFormula": "3",
+            "rechargeFormula": ""
           }
         }
       }

@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.30";
+const MODULE_VERSION = "0.1.31";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -166,6 +166,7 @@ function applyPlaceholderDetails(source, item) {
   source._id = item._id;
   source.flags = foundry.utils.mergeObject(source.flags ?? {}, item.flags ?? {}, { inplace: false });
   source.flags[MODULE_ID] = {
+    ...(source.flags[MODULE_ID] ?? {}),
     compendiumHydrated: true,
     generatedFallback: item,
   };
@@ -197,7 +198,17 @@ function applyPlaceholderDetails(source, item) {
   }
   if (flags.generatedFeat && /^(weapon focus|skill focus)\s*\(.+\)$/i.test(item.name)) {
     source.name = item.name;
-    if (source.system) source.system.tag = normalizeName(item.name).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    if (source.system) {
+      source.system.tag = normalizeName(item.name).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      const selection = item.name.match(/\(([^)]+)\)/)?.[1];
+      if (selection) {
+        source.system.contextNotes ??= [];
+        source.system.contextNotes.push({ target: "attack", text: `Selected option: ${selection}.` });
+      }
+    }
+  }
+  if (flags.configuredUses && source.system) {
+    source.system.uses = foundry.utils.mergeObject(source.system.uses ?? {}, flags.configuredUses, { inplace: false });
   }
   if (flags.generatedClassLevel && source.system) {
     if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
@@ -253,6 +264,17 @@ async function hydrateGeneratedItems(actor, lookup) {
   }
 
   actor.items = hydrated;
+  const classItem = hydrated.find((item) => generatedFlags(item).generatedClassLevel && item.type === "class");
+  if (classItem?.system?.tag) {
+    for (const book of Object.values(actor.system?.attributes?.spells?.spellbooks ?? {})) {
+      if (!book?.inUse || book.class === "_hd") continue;
+      book.class = classItem.system.tag;
+      book.name = classItem.name;
+      if (classItem.system.classCastingStat && classItem.system.classCastingStat !== "noncaster") {
+        book.ability = classItem.system.classCastingStat;
+      }
+    }
+  }
   return report;
 }
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Cherry Bomb",
@@ -195,8 +195,7 @@
         "fatigue",
         "exhausted",
         "critical hits",
-        "flanking",
-        "outsider traits"
+        "flanking"
       ],
       "languages": [],
       "stature": "tall"
@@ -204,7 +203,7 @@
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -248,7 +247,7 @@
       },
       "speed": {
         "land": {
-          "base": 30
+          "base": 0
         },
         "climb": {
           "base": 0
@@ -266,7 +265,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -281,7 +282,9 @@
       "feats": [
         "Dodge"
       ],
-      "specialQualities": [],
+      "specialQualities": [
+        "Light Fortification"
+      ],
       "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
@@ -316,7 +319,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.fly",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "blf": true,
@@ -767,11 +777,38 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "lightfortify0001",
+        "name": "Light Fortification",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Cherry Bomb is packaged as an FFD20 NPC actor with 12 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Cherry Bomb is packaged as an FFD20 NPC actor with 13 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/3",
       "size": "Tiny",

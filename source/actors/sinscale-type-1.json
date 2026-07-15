@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "swm": {
         "ability": "str",
-        "rank": 3
+        "rank": 1
       }
     },
     "details": {
@@ -116,7 +118,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "senses": {
         "dv": {
           "value": 0
@@ -189,7 +191,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -261,6 +272,82 @@
       }
     },
     {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +0; CMB +1; CMD 13</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +0; CMB +1; CMD 13",
+            "bab": 0,
+            "cmb": 1,
+            "cmd": 13
+          }
+        }
+      }
+    },
+    {
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
@@ -293,7 +380,7 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "",
+            "attackBonus": "-1",
             "damage": {
               "parts": [
                 {
@@ -358,13 +445,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000001",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "bite",
         "subType": "natural",
@@ -518,11 +599,13 @@
             },
             "notes": {
               "effect": [
+                "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
                 "Duration: 4 rounds"
               ],
               "footer": []
             },
             "effectNotes": [
+              "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
               "Duration: 4 rounds"
             ],
             "measureTemplate": {
@@ -706,7 +789,9 @@
             },
             "notes": {
               "effect": [
-                "Recharge [[1d4+1]] rounds."
+                "Once every 1d4+1 rounds, the sinscale's wings will flicker for one round. The following turn as a swift action, the sinscale shoot out spines doing 1d4+1 piercing damage within a 30 foot range at a single target.",
+                "Recharge [[1d4+1]] rounds.",
+                "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn."
               ],
               "footer": []
             },
@@ -862,7 +947,7 @@
       "parsed": {
         "alignment": "NE",
         "initiative": 2,
-        "size": "Medium",
+        "size": "Small",
         "cr": "1/2",
         "creatureType": "Aberration",
         "subtypes": [],

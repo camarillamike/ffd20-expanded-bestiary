@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "per": {
@@ -105,7 +107,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 1
+        "rank": 0
       }
     },
     "details": {
@@ -209,6 +211,14 @@
             "type": "racial",
             "operator": "add",
             "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
           }
         ],
         "contextNotes": [
@@ -455,13 +465,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000002",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "bite",
         "subType": "natural",
@@ -862,7 +866,9 @@
             },
             "notes": {
               "effect": [
-                "Duration: 1d4 rounds"
+                "Up to twice per day, a morbol seedling can spray a stream of noxious musk at a single target within 10 feet as a standard action. With a successful ranged touch attack, the creature struck by this spray must make a DC 10 Fortitude save or be nauseated for 1d4 rounds and then sickened for 1d4 minutes by the horrific stench. A successful save reduces the effect to only 1d4 rounds of being sickened. A creature cannot use the scent ability as long as it is affected by this musk. The save DC is Constitution-based.",
+                "Duration: 1d4 rounds",
+                "Affected creatures cannot use scent until the musk effect ends."
               ],
               "footer": []
             },
@@ -1052,7 +1058,9 @@
             },
             "notes": {
               "effect": [
-                "Duration: 6 rounds"
+                "Bite—injury; save Fort DC 10; frequency 1/round for 6 rounds; effect 1 Str; cure 1 save.",
+                "Duration: 6 rounds",
+                "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save."
               ],
               "footer": []
             },
@@ -1227,6 +1235,7 @@
             },
             "notes": {
               "effect": [
+                "Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
                 "Area: 15-ft. cone",
                 "Duration: 1d4 rounds",
                 "Recharge [[1d3]] rounds."
@@ -1234,6 +1243,7 @@
               "footer": []
             },
             "effectNotes": [
+              "Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
               "Area: 15-ft. cone",
               "Duration: 1d4 rounds",
               "Recharge [[1d3]] rounds."

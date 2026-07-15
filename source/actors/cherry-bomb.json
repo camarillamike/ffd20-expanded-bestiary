@@ -78,7 +78,7 @@
       },
       "speed": {
         "land": {
-          "base": 30
+          "base": 0
         },
         "climb": {
           "base": 0
@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "fly": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -177,8 +179,7 @@
         "fatigue",
         "exhausted",
         "critical hits",
-        "flanking",
-        "outsider traits"
+        "flanking"
       ],
       "languages": [],
       "stature": "tall"
@@ -207,7 +208,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -846,7 +856,10 @@
             },
             "notes": {
               "effect": [
-                "Area: 15-ft. radius"
+                "After each successful physical attack made against the cherry bomb, the cherry bomb increases in size by 1-ft. in diameter (the cherry bomb increases Strength by 2 per physical attack, size increase lasts for 1d6+4 rounds); after the 3rd successful physical attack or reaches 0 HP due to a physical attack, the bomb explodes as an immediate action when reaching its closest target within range, destroying itself and dealing 1d6 points of elemental type and physical (half and half) damage to everything within a 15-ft.-radius (Reflex save DC 11 for half damage).",
+                "Area: 15-ft. radius",
+                "Split the rolled total evenly between the creature's current elemental type and physical damage; assign the odd point as the GM chooses.",
+                "The creature is destroyed after resolving this action."
               ],
               "footer": []
             },
@@ -1270,6 +1283,63 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "lightfortify0001",
+      "name": "Light Fortification",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>When struck by a critical hit or sneak attack, there is a 25% chance the extra damage is negated and damage is rolled normally.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "light-fortification",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Light Fortification",
+          "configuredUses": null
         }
       }
     }

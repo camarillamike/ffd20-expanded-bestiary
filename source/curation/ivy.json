@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Ivy",
@@ -42,7 +42,7 @@
       "cr": "1/2",
       "xp": 200,
       "alignment": "N",
-      "size": "Medium",
+      "size": "Small",
       "creatureType": "Plant",
       "subtypes": [],
       "initiative": 2,
@@ -129,7 +129,7 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/ivy.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/ivy.png",
     "traits": {
-      "size": "med",
+      "size": "sm",
       "senses": {
         "dv": {
           "value": 0
@@ -251,7 +251,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -334,20 +336,7 @@
         "sourceFlagData": {},
         "mechanics": {
           "actions": [],
-          "changes": [
-            {
-              "target": "cmb",
-              "formula": "-1",
-              "type": "untyped",
-              "operator": "add"
-            },
-            {
-              "target": "cmd",
-              "formula": "-1",
-              "type": "untyped",
-              "operator": "add"
-            }
-          ],
+          "changes": [],
           "contextNotes": [],
           "level": 0
         },
@@ -383,7 +372,6 @@
               "name": "Slam",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -557,7 +545,19 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Grab",
+              "actionType": "mcman",
+              "target": {
+                "value": "creature hit by Slam"
+              },
+              "damage": [],
+              "effectNotes": [
+                "Make a free grapple combat maneuver check after a successful Slam attack."
+              ]
+            }
+          ],
           "changes": [],
           "contextNotes": [
             {
@@ -645,7 +645,7 @@
     "summary": "Ivy is packaged as an FFD20 NPC actor with 9 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
-      "size": "Medium",
+      "size": "Small",
       "type": "Plant",
       "alignment": "N",
       "primarySourceAttacks": [

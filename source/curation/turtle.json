@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Turtle",
@@ -194,11 +194,11 @@
       },
       "per": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       },
       "sur": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       }
     },
     "defenses": {
@@ -256,7 +256,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -303,7 +305,20 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.sur",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "acr": true,
@@ -386,6 +401,7 @@
               "name": "Bite",
               "actionType": "mwak",
               "activation": "standard",
+              "attackBonus": "1",
               "range": {
                 "value": "reach",
                 "units": "natural",

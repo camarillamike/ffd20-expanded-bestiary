@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "per": {
@@ -455,13 +457,7 @@
         "attackNotes": [],
         "effectNotes": [],
         "links": {
-          "charges": [],
-          "children": [
-            {
-              "uuid": "Item.sa00000000000001",
-              "level": 1
-            }
-          ]
+          "charges": []
         },
         "tag": "claw",
         "subType": "natural",
@@ -576,7 +572,32 @@
           "value": "<p>A crab's claw attack has grab.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "target": {
+              "value": "creature hit by Claw"
+            },
+            "effectNotes": [
+              "Make a free grapple combat maneuver check after a successful Claw attack."
+            ],
+            "notes": {
+              "effect": [
+                "Make a free grapple combat maneuver check after a successful Claw attack."
+              ],
+              "footer": []
+            }
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -746,10 +767,14 @@
               "description": ""
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe."
+              ],
               "footer": []
             },
-            "effectNotes": [],
+            "effectNotes": [
+              "A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe."
+            ],
             "measureTemplate": {
               "type": "",
               "size": null

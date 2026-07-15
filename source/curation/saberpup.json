@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Saberpup",
@@ -191,7 +191,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 3
+        "rank": 1
       },
       "per": {
         "ability": "wis",
@@ -199,7 +199,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 3
+        "rank": 1
       }
     },
     "defenses": {
@@ -257,7 +257,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "coverage": {
       "racialHitDice": [
@@ -309,6 +311,24 @@
               "target": "skill.per",
               "formula": "4",
               "type": "racial",
+              "operator": "add"
+            },
+            {
+              "target": "skill.acr",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.per",
+              "formula": "-2",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.ste",
+              "formula": "-1",
+              "type": "untyped",
               "operator": "add"
             }
           ],

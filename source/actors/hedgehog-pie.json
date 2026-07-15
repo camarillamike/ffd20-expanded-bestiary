@@ -53,8 +53,8 @@
         "offset": 0
       },
       "mp": {
-        "value": 1,
-        "max": 1,
+        "value": 2,
+        "max": 2,
         "temp": 0,
         "recover": 0,
         "offset": 0
@@ -97,6 +97,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -455,7 +457,7 @@
     "skills": {
       "clm": {
         "ability": "str",
-        "rank": 4
+        "rank": 1
       },
       "kar": {
         "ability": "int",
@@ -467,7 +469,7 @@
       },
       "spl": {
         "ability": "int",
-        "rank": 4
+        "rank": 1
       },
       "ste": {
         "ability": "dex",
@@ -475,7 +477,7 @@
       },
       "swm": {
         "ability": "str",
-        "rank": 4
+        "rank": 1
       }
     },
     "details": {
@@ -580,7 +582,32 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.spl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published spl total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.swm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published swm total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -668,7 +695,7 @@
             "casterType": "med",
             "classBaseMPType": "pacman",
             "baseMp": 1,
-            "finalMp": 1,
+            "finalMp": 2,
             "printedMp": 2,
             "chartBaseMp": 1,
             "maxSpellLevel": 1,
@@ -1213,7 +1240,10 @@
               "description": ""
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "1/day, a hedgehog pie can drop a pumpkin from the sky upon its foe within 15 feet from himself. The falling pumpkin must succeed at a range touch attack (+3) and deals extra damage based on the number of hit points the hedgehog pie has lost from max. Pumpkin head deals 1 point of non-elemental damage to a target. This damage is increase by 1d4 for every 5 hit points missing to a maximum of 10d4. Blue mages may learn this ability as a 1st level spell (Knowledge: Planes DC 17).",
+                "Deals 1 base damage plus 1d4 per 5 HP currently missing, capped at 10d4."
+              ],
               "footer": []
             },
             "effectNotes": [
@@ -1391,7 +1421,13 @@
             },
             "effectNotes": [
               "Reactive damage when a creature attempts to grapple while Spiny Defense is active."
-            ]
+            ],
+            "notes": {
+              "effect": [
+                "Reactive damage when a creature attempts to grapple while Spiny Defense is active."
+              ],
+              "footer": []
+            }
           }
         ],
         "attackNotes": [],

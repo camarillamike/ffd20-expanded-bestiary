@@ -96,7 +96,9 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
@@ -105,7 +107,7 @@
       },
       "ste": {
         "ability": "dex",
-        "rank": 2
+        "rank": 0
       }
     },
     "details": {
@@ -195,7 +197,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          }
+        ],
         "contextNotes": [
           {
             "target": "skill.acr",
@@ -587,11 +598,13 @@
             },
             "notes": {
               "effect": [
+                "Once every 1d4 turns and as a standard action, the leaf bunny pulls a carrot out and chews on it healing herself for 1d4+1 point of damage.",
                 "Recharge [[1d4]] turns."
               ],
               "footer": []
             },
             "effectNotes": [
+              "Once every 1d4 turns and as a standard action, the leaf bunny pulls a carrot out and chews on it healing herself for 1d4+1 point of damage.",
               "Recharge [[1d4]] turns."
             ],
             "measureTemplate": {

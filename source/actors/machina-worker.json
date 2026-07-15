@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "per": {
         "ability": "wis",
-        "rank": 4
+        "rank": 2
       }
     },
     "details": {
@@ -215,7 +217,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -675,6 +686,7 @@
             "critConfirmBonus": "",
             "notes": {
               "effect": [
+                "Once every 1d4 rounds as a standard action, the machina worker can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+3 x 1.5 for total damage.",
                 "Uses Gore attack.",
                 "Source damage: damage is 1d6+3 x 1.5.",
                 "Dynamic damage: source +3 derived as floor(@abilities.str.mod * 1.5).",
@@ -685,6 +697,7 @@
               ]
             },
             "effectNotes": [
+              "Once every 1d4 rounds as a standard action, the machina worker can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+3 x 1.5 for total damage.",
               "Uses Gore attack.",
               "Source damage: damage is 1d6+3 x 1.5.",
               "Dynamic damage: source +3 derived as floor(@abilities.str.mod * 1.5).",

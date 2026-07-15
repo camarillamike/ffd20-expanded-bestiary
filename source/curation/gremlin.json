@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Gremlin",
@@ -202,31 +202,31 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 4
+        "rank": 1
       },
       "blf": {
         "ability": "cha",
-        "rank": 3
+        "rank": 1
       },
       "fly": {
         "ability": "dex",
-        "rank": 11
+        "rank": 1
       },
       "kar": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "kpl": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       },
       "per": {
         "ability": "wis",
-        "rank": 3
+        "rank": 1
       },
       "spl": {
         "ability": "int",
-        "rank": 5
+        "rank": 1
       },
       "ste": {
         "ability": "dex",
@@ -289,6 +289,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -689,7 +691,50 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.acr",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.blf",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.fly",
+              "formula": "10",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.kar",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.kpl",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.per",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.spl",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "blf": true,
@@ -972,6 +1017,7 @@
                 "description": "Negates poison"
               },
               "effectNotes": [
+                "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
                 "Duration: 6 rounds"
               ]
             }

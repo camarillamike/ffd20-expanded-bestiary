@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.30",
+  "moduleVersion": "0.1.31",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Amethyst Quadav",
@@ -221,7 +221,7 @@
       },
       "spl": {
         "ability": "int",
-        "rank": 2
+        "rank": 1
       }
     },
     "defenses": {
@@ -230,7 +230,7 @@
         "value": 0,
         "ability": "dex"
       },
-      "naturalAC": 1,
+      "naturalAC": 0,
       "hp": {
         "temp": 0,
         "offset": 0
@@ -280,6 +280,8 @@
       "sr": {
         "formula": ""
       },
+      "acNotes": "",
+      "cmdNotes": "",
       "spells": {
         "spellbooks": {
           "primary": {
@@ -735,7 +737,14 @@
         "sourceFlagData": {},
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.spl",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [],
           "classSkills": {
             "dip": true,
@@ -1492,7 +1501,7 @@
         "id": "defab00000000001",
         "name": "Feathers of Gale",
         "type": "feat",
-        "subType": "classFeat",
+        "subType": "racial",
         "category": "defensiveAbilities",
         "generatedFlags": [
           "generatedDefensiveAbility"
@@ -1502,7 +1511,8 @@
             "feat"
           ],
           "expectedSubTypes": [
-            "classFeat"
+            "racial",
+            "misc"
           ],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
@@ -1511,7 +1521,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "nac",
+              "formula": "1",
+              "type": "natural",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
               "target": "defense",

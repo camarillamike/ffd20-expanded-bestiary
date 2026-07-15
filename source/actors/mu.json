@@ -96,12 +96,14 @@
       },
       "sr": {
         "formula": ""
-      }
+      },
+      "acNotes": "",
+      "cmdNotes": ""
     },
     "skills": {
       "acr": {
         "ability": "dex",
-        "rank": 2
+        "rank": 0
       },
       "per": {
         "ability": "wis",
@@ -197,7 +199,16 @@
           "value": "<p>Generated racial hit dice from the source statblock.</p>",
           "instructions": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "classAssociations": []
@@ -713,7 +724,9 @@
               "harmless": false
             },
             "notes": {
-              "effect": [],
+              "effect": [
+                "Use when emerging from the ground; includes the Bite and bonus earth damage."
+              ],
               "footer": [
                 "Source statblock: Bite +5 (1d4-2)"
               ]
@@ -949,6 +962,7 @@
             "critConfirmBonus": "",
             "notes": {
               "effect": [
+                "Once per day as a standard action, the mu can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4-2 x 1.5.",
                 "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
@@ -958,6 +972,7 @@
               ]
             },
             "effectNotes": [
+              "Once per day as a standard action, the mu can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
               "Uses Bite attack.",
               "Source damage: damage is 1d4-2 x 1.5.",
               "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."

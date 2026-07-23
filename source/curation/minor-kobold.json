@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.33",
+  "moduleVersion": "0.1.34",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Minor Kobold",
@@ -188,9 +188,16 @@
     },
     "skills": {
       "crf": {
-        "ability": "int",
-        "rank": 1,
-        "name": "trapmaking"
+        "subSkills": {
+          "trapmaking": {
+            "ability": "int",
+            "rank": 1,
+            "name": "Trapmaking",
+            "rt": false,
+            "acp": false,
+            "background": false
+          }
+        }
       },
       "per": {
         "ability": "wis",
@@ -201,9 +208,16 @@
         "rank": 0
       },
       "pro": {
-        "ability": "wis",
-        "rank": 0,
-        "name": "miner"
+        "subSkills": {
+          "miner": {
+            "ability": "wis",
+            "rank": 0,
+            "name": "Miner",
+            "rt": false,
+            "acp": false,
+            "background": false
+          }
+        }
       }
     },
     "defenses": {
@@ -314,7 +328,7 @@
           "actions": [],
           "changes": [
             {
-              "target": "skill.crf",
+              "target": "skill.crf.trapmaking",
               "formula": "2",
               "type": "racial",
               "operator": "add"
@@ -326,13 +340,19 @@
               "operator": "add"
             },
             {
-              "target": "skill.pro",
+              "target": "skill.pro.miner",
               "formula": "2",
               "type": "racial",
               "operator": "add"
             },
             {
               "target": "skill.per",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.pro.miner",
               "formula": "1",
               "type": "untyped",
               "operator": "add"

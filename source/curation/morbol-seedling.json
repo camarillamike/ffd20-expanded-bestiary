@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.33",
+  "moduleVersion": "0.1.34",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Morbol Seedling",
@@ -289,7 +289,9 @@
         "Toughness",
         "Weapon Finesse"
       ],
-      "specialQualities": [],
+      "specialQualities": [
+        "Grab"
+      ],
       "specialAttacks": [],
       "defensiveAbilities": [],
       "rawSpecialAbilities": [
@@ -467,7 +469,7 @@
             "ranged": false,
             "attackBonus": 0,
             "damage": "grab",
-            "damageFormula": "grab",
+            "damageFormula": "",
             "printedDamageBonus": 0,
             "damageType": "",
             "critRange": 20,
@@ -492,13 +494,9 @@
               "target": {
                 "value": "one target"
               },
-              "damage": [
-                {
-                  "formula": "grab",
-                  "types": [
-                    "bludgeoning"
-                  ]
-                }
+              "damage": [],
+              "effectNotes": [
+                "On hit, attempt the Grab combat maneuver as a free action."
               ]
             }
           ],
@@ -817,11 +815,59 @@
           "level": 0
         },
         "reviewNotes": []
+      },
+      {
+        "id": "morbolgrab000001",
+        "name": "Grab",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Grab",
+              "actionType": "mcman",
+              "activation": "free",
+              "attackBonus": "4",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "creature hit by Tentacle"
+              },
+              "damage": [],
+              "effectNotes": [
+                "Source grapple combat maneuver total: +7."
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Morbol Seedling is packaged as an FFD20 NPC actor with 11 generated item(s) across 6 populated mechanics categories.",
+    "summary": "Morbol Seedling is packaged as an FFD20 NPC actor with 12 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",

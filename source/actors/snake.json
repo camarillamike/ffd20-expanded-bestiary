@@ -407,7 +407,7 @@
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
       "system": {
         "description": {
           "value": "",
@@ -416,7 +416,7 @@
         "actions": [
           {
             "name": "Bite",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -554,7 +554,7 @@
       "_id": "feat000000000001",
       "name": "Toughness",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Toughness.</p>",
@@ -610,7 +610,7 @@
       "_id": "feat000000000002",
       "name": "Weapon Finesse",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
@@ -666,7 +666,7 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>The master of a snake gains a +3 bonus on Bluff checks.</p>",
@@ -723,7 +723,7 @@
       "_id": "sa00000000000001",
       "name": "Critical Attack",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.</p>",
@@ -732,7 +732,7 @@
         "actions": [
           {
             "name": "Critical Attack",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -758,7 +758,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "floor((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "formula": "round((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
                   "types": [
                     "piercing"
                   ]
@@ -940,7 +940,7 @@
       "_id": "sa00000000000002",
       "name": "Poison",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
       "system": {
         "description": {
           "value": "<p>Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.</p>",
@@ -999,6 +999,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
             "_id": "act0000000008001"
           }
         ],

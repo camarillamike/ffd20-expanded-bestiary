@@ -1,7 +1,7 @@
 {
   "name": "Floating Eye",
   "type": "npc",
-  "img": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.gif",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.png",
   "system": {
     "abilities": {
       "str": {
@@ -288,7 +288,7 @@
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
       "system": {
         "description": {
           "value": "",
@@ -297,7 +297,7 @@
         "actions": [
           {
             "name": "Bite",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -430,7 +430,7 @@
       "_id": "feat000000000001",
       "name": "Improved Initiative",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
@@ -486,7 +486,7 @@
       "_id": "feat000000000002",
       "name": "Toughness",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Toughness.</p>",
@@ -542,7 +542,7 @@
       "_id": "sa00000000000001",
       "name": "Critical Attack",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day as a standard action, the floating eye can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-1 x 1.5 for total damage.</p>",
@@ -551,7 +551,7 @@
         "actions": [
           {
             "name": "Critical Attack",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -577,7 +577,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "floor((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "formula": "round((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
                   "types": [
                     "piercing"
                   ]
@@ -759,7 +759,7 @@
       "_id": "sa00000000000002",
       "name": "Umbral Gaze",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
       "system": {
         "description": {
           "value": "<p>1/day, A floating eye can unleash a blast of electricity against a single target within 30 feet. The floating eye must make a range touch attack (+3), if it hits, the attack deals 1d6+2 points of lightning damage and must make a Fortitude save (DC 12) or be inflicted with the Blind status for 1d4 rounds. The save DC is Constitution-based. Blue mages may learn this ability as a 1st level spell (Knowledge: Dungeoneering DC 17).</p>",
@@ -828,6 +828,7 @@
               "critRange": 20,
               "critMult": 2
             },
+            "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
             "_id": "act0000000006001"
           }
         ],
@@ -974,7 +975,7 @@
     "actorLink": false,
     "disposition": -1,
     "texture": {
-      "src": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.gif"
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.png"
     },
     "sight": {
       "enabled": true
@@ -984,7 +985,7 @@
     "ffd20-bestiary-builder": {
       "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/aberrations/ahriman-family/floating-eye/",
       "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/FloatingEyeball.gif",
-      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.gif",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/floating-eye.png",
       "packagedImageSource": "source-cache",
       "parsed": {
         "alignment": "NE",

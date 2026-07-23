@@ -356,7 +356,7 @@
       "_id": "natatk0000000001",
       "name": "Claw x2",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
       "system": {
         "description": {
           "value": "",
@@ -365,7 +365,7 @@
         "actions": [
           {
             "name": "Claw",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -510,7 +510,7 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>The master of a king crab familiar gains a +2 bonus on CMB checks to start and maintain a grapple.</p>",
@@ -567,7 +567,7 @@
       "_id": "sa00000000000001",
       "name": "Grab",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
       "system": {
         "description": {
           "value": "<p>A crab's claw attack has grab.</p>",
@@ -597,6 +597,26 @@
               ],
               "footer": []
             },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/conditions/grappled.png",
             "_id": "act0000000005001"
           }
         ],
@@ -724,7 +744,7 @@
       "_id": "sa00000000000002",
       "name": "Constrict",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
       "system": {
         "description": {
           "value": "<p>A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe.</p>",
@@ -781,6 +801,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/conditions/grappled.png",
             "_id": "act0000000006001"
           }
         ],
@@ -918,7 +939,7 @@
       "_id": "sa00000000000003",
       "name": "Water Dependency",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Crabs can survive out of the water for 1 hour per point of Constitution. Beyond this limit, a crab runs the risk of suffocation, as if it were drowning.</p>",

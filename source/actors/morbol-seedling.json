@@ -371,7 +371,7 @@
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
       "system": {
         "description": {
           "value": "",
@@ -380,7 +380,7 @@
         "actions": [
           {
             "name": "Bite",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -518,7 +518,7 @@
       "_id": "natatk0000000002",
       "name": "Tentacle",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
       "system": {
         "description": {
           "value": "",
@@ -527,7 +527,7 @@
         "actions": [
           {
             "name": "Tentacle",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -549,14 +549,7 @@
             "actionType": "mwak",
             "attackBonus": "-5",
             "damage": {
-              "parts": [
-                {
-                  "formula": "grab",
-                  "types": [
-                    "bludgeoning"
-                  ]
-                }
-              ],
+              "parts": [],
               "critParts": [],
               "nonCritParts": []
             },
@@ -593,7 +586,9 @@
             "attackName": "Tentacle",
             "critConfirmBonus": "",
             "notes": {
-              "effect": [],
+              "effect": [
+                "On hit, attempt the Grab combat maneuver as a free action."
+              ],
               "footer": [
                 "Source statblock: Tentacle +0 (grab)"
               ]
@@ -602,6 +597,9 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [
+              "On hit, attempt the Grab combat maneuver as a free action."
+            ],
             "_id": "act0000000004001"
           }
         ],
@@ -646,7 +644,7 @@
             "ranged": false,
             "attackBonus": 0,
             "damage": "grab",
-            "damageFormula": "grab",
+            "damageFormula": "",
             "printedDamageBonus": 0,
             "damageType": "",
             "critRange": 20,
@@ -660,7 +658,7 @@
       "_id": "feat000000000001",
       "name": "Toughness",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Toughness.</p>",
@@ -716,7 +714,7 @@
       "_id": "feat000000000002",
       "name": "Weapon Finesse",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
@@ -772,7 +770,7 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>The master of a morbol seedling gains a +2 bonus on Fortitude saves.</p>",
@@ -829,7 +827,7 @@
       "_id": "sa00000000000001",
       "name": "Musk",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Up to twice per day, a morbol seedling can spray a stream of noxious musk at a single target within 10 feet as a standard action. With a successful ranged touch attack, the creature struck by this spray must make a DC 10 Fortitude save or be nauseated for 1d4 rounds and then sickened for 1d4 minutes by the horrific stench. A successful save reduces the effect to only 1d4 rounds of being sickened. A creature cannot use the scent ability as long as it is affected by this musk. The save DC is Constitution-based.</p>",
@@ -881,6 +879,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000008001"
           }
         ],
@@ -1015,7 +1014,7 @@
       "_id": "sa00000000000002",
       "name": "Poison",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
       "system": {
         "description": {
           "value": "<p>Bite—injury; save Fort DC 10; frequency 1/round for 6 rounds; effect 1 Str; cure 1 save.</p>",
@@ -1074,6 +1073,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
             "_id": "act0000000009001"
           }
         ],
@@ -1200,7 +1200,7 @@
       "_id": "sa00000000000003",
       "name": "Sickening Breath",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).</p>",
@@ -1256,6 +1256,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000010001"
           }
         ],
@@ -1446,6 +1447,110 @@
       "flags": {
         "ffd20-bestiary-builder": {
           "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "morbolgrab000001",
+      "name": "Grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After a successful tentacle attack, the morbol seedling may attempt this grapple combat maneuver as a free action.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "attackBonus": "4",
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "activation": {
+              "cost": 0,
+              "type": "free",
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "target": {
+              "value": "creature hit by Tentacle"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "effectNotes": [
+              "Source grapple combat maneuver total: +7."
+            ],
+            "notes": {
+              "effect": [
+                "Source grapple combat maneuver total: +7."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000012001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Grab",
+          "configuredUses": null
         }
       }
     }

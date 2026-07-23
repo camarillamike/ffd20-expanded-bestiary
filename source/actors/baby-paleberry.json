@@ -370,7 +370,7 @@
       "_id": "natatk0000000001",
       "name": "Chef's Knife",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/weapons/knife-deer-horn.png",
       "system": {
         "description": {
           "value": "",
@@ -379,7 +379,7 @@
         "actions": [
           {
             "name": "Chef's Knife",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/weapons/knife-deer-horn.png",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -663,7 +663,7 @@
       "_id": "feat000000000001",
       "name": "Weapon Finesse",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
@@ -719,10 +719,10 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items</p>",
+          "value": "<p>The master of a baby paleberry familiar gains a +4 bonus on Bluff checks.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -768,7 +768,7 @@
           "generatedRawSpecialAbility": true,
           "customFeature": true,
           "sourceType": "na",
-          "sourceText": "The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items"
+          "sourceText": "The master of a baby paleberry familiar gains a +4 bonus on Bluff checks."
         }
       }
     },
@@ -776,10 +776,10 @@
       "_id": "sa00000000000001",
       "name": "Baby's Grudge",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
-          "value": "<p>1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage). Chef’s</p>",
+          "value": "<p>1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage).</p>",
           "instructions": ""
         },
         "actions": [
@@ -816,23 +816,24 @@
               ]
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "dc": "12",
               "type": "fort",
               "description": "Half damage"
             },
             "notes": {
               "effect": [
-                "1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage). Chef’s"
+                "1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage)."
               ],
               "footer": []
             },
             "effectNotes": [
-              "1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage). Chef’s"
+              "1/day, as long as the baby paleberry is not making a knife attack, it may use its Baby's Grudge ability on a single target within 30 ft. The target takes 1d4 points of holy damage (Fortitude save DC 12 for half damage)."
             ],
             "measureTemplate": {
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000008001"
           }
         ],
@@ -849,7 +850,7 @@
         "links": {
           "charges": []
         },
-        "tag": "babys-grudge",
+        "tag": "baby-s-grudge",
         "subType": "racial",
         "traitType": "",
         "traitCategory": "",
@@ -883,10 +884,10 @@
                 "save": "fort",
                 "dc": 12,
                 "raw": "Fortitude save DC 12",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
-                "ability": "wis",
-                "confidence": "default-su-wis-floor",
-                "base": 10,
+                "formula": "12",
+                "ability": "",
+                "confidence": "curated-static",
+                "base": null,
                 "expectedDc": 12
               }
             ],
@@ -966,10 +967,10 @@
       "_id": "sa00000000000002",
       "name": "Knife",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/weapons/knife-deer-horn.png",
       "system": {
         "description": {
-          "value": "<p>Once per round, a baby paleberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 9) or takes the sickened status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby paleberry, who has finesse training with it.</p>",
+          "value": "<p>Once per round, a baby paleberry may make a melee attack with its knife. If a creature is struck by it, it must make a Fortitude save (DC 12) or take the sickened status effect for 1 round. Those who are immune to critical hits are immune to this and take the knife damage only. The knife is only deadly in the hands of a baby paleberry, who has finesse training with it.</p>",
           "instructions": ""
         },
         "actions": [
@@ -1009,7 +1010,7 @@
               ]
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "dc": "12",
               "type": "fort",
               "description": "Negates sickened for 1 round",
               "harmless": false
@@ -1031,7 +1032,7 @@
               "type": "",
               "size": ""
             },
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/weapons/knife-deer-horn.png",
             "extraAttacks": {
               "type": "",
               "manual": [],
@@ -1095,13 +1096,13 @@
             "saveDCs": [
               {
                 "save": "fort",
-                "dc": 9,
-                "raw": "Fortitude save (DC 9)",
-                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
-                "ability": "con",
-                "confidence": "default-ex-con-floor",
-                "base": 10,
-                "expectedDc": 9
+                "dc": 12,
+                "raw": "Fortitude save (DC 12)",
+                "formula": "12",
+                "ability": "",
+                "confidence": "curated-static",
+                "base": null,
+                "expectedDc": 12
               }
             ],
             "damages": [],
@@ -1180,7 +1181,7 @@
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items Drag this buff to the familiar's master.</p>",
+          "value": "<p>The master of a baby paleberry familiar gains a +4 bonus on Bluff checks. Drag this buff to the familiar's master.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -1195,8 +1196,8 @@
         },
         "changes": [
           {
-            "formula": "3",
-            "target": "skill.spl",
+            "formula": "4",
+            "target": "skill.blf",
             "type": "untyped",
             "operator": "add",
             "priority": 0
@@ -1222,7 +1223,7 @@
         "links": {
           "children": []
         },
-        "tag": "the-master-of-a-baby-paleberry-gains-a",
+        "tag": "the-master-of-a-baby-paleberry-familiar",
         "subType": "temp",
         "active": false,
         "level": 0,
@@ -1279,7 +1280,7 @@
           "melee": "Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
           "ranged": "",
           "space": "Space 2-1/2 ft.; Reach 0 ft.",
-          "specialAttacks": "Chef's Knife, Baby's Grudge",
+          "specialAttacks": "Knife, Baby's Grudge",
           "spellLines": []
         },
         "defense": {

@@ -102,9 +102,16 @@
     },
     "skills": {
       "crf": {
-        "ability": "int",
-        "rank": 1,
-        "name": "trapmaking"
+        "subSkills": {
+          "trapmaking": {
+            "ability": "int",
+            "rank": 1,
+            "name": "Trapmaking",
+            "rt": false,
+            "acp": false,
+            "background": false
+          }
+        }
       },
       "per": {
         "ability": "wis",
@@ -115,9 +122,16 @@
         "rank": 0
       },
       "pro": {
-        "ability": "wis",
-        "rank": 0,
-        "name": "miner"
+        "subSkills": {
+          "miner": {
+            "ability": "wis",
+            "rank": 0,
+            "name": "Miner",
+            "rt": false,
+            "acp": false,
+            "background": false
+          }
+        }
       }
     },
     "details": {
@@ -210,7 +224,7 @@
         "changes": [
           {
             "formula": "2",
-            "target": "skill.crf",
+            "target": "skill.crf.trapmaking",
             "type": "racial",
             "operator": "add",
             "priority": 0
@@ -224,7 +238,7 @@
           },
           {
             "formula": "2",
-            "target": "skill.pro",
+            "target": "skill.pro.miner",
             "type": "racial",
             "operator": "add",
             "priority": 0
@@ -236,6 +250,14 @@
             "operator": "add",
             "priority": 0,
             "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.pro.miner",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published Profession (Miner) total adjustment"
           }
         ],
         "contextNotes": [],
@@ -383,7 +405,7 @@
       "_id": "natatk0000000001",
       "name": "Spear",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
       "system": {
         "description": {
           "value": "",
@@ -392,7 +414,7 @@
         "actions": [
           {
             "name": "Spear",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -522,7 +544,7 @@
       "_id": "natatk0000000002",
       "name": "Sling",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
       "system": {
         "description": {
           "value": "",
@@ -531,7 +553,7 @@
         "actions": [
           {
             "name": "Sling",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -969,7 +991,7 @@
       "_id": "feat000000000001",
       "name": "Skill Focus (Perception)",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Skill Focus (Perception).</p>",
@@ -1076,7 +1098,7 @@
       "_id": "sa00000000000001",
       "name": "Magic Hammer",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).</p>",
@@ -1133,6 +1155,7 @@
               "type": "",
               "size": null
             },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000011001"
           }
         ],

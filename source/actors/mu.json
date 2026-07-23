@@ -359,7 +359,7 @@
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
       "system": {
         "description": {
           "value": "",
@@ -368,7 +368,7 @@
         "actions": [
           {
             "name": "Bite",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -501,7 +501,7 @@
       "_id": "feat000000000001",
       "name": "Toughness",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Toughness.</p>",
@@ -557,7 +557,7 @@
       "_id": "feat000000000002",
       "name": "Weapon Finesse",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
@@ -613,7 +613,7 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>The master of a mu familiar gains a +3 bonus on Sleight of Hand checks.</p>",
@@ -670,7 +670,7 @@
       "_id": "sa00000000000001",
       "name": "Burrow Attack",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/element-earth.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day as a swift action, the mu can come out of the ground and surprise their opponent. If they succeed at hitting with their bite attack, the damage is 1d4-2 plus 1d4 points of earth damage.</p>",
@@ -705,7 +705,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d4 + @abilities.str.mod",
+                  "formula": "1d4",
                   "types": [
                     "piercing"
                   ]
@@ -739,7 +739,7 @@
               "type": "",
               "size": ""
             },
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "extraAttacks": {
               "type": "",
               "manual": [],
@@ -888,7 +888,7 @@
       "_id": "sa00000000000002",
       "name": "Critical Attack",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day as a standard action, the mu can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.</p>",
@@ -897,7 +897,7 @@
         "actions": [
           {
             "name": "Critical Attack",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -923,7 +923,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "floor((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "formula": "round((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
                   "types": [
                     "piercing"
                   ]

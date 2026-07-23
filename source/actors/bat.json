@@ -355,7 +355,7 @@
       "_id": "natatk0000000001",
       "name": "Bite",
       "type": "attack",
-      "img": "systems/ffd20/icons/skills/red_30.jpg",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
       "system": {
         "description": {
           "value": "",
@@ -364,7 +364,7 @@
         "actions": [
           {
             "name": "Bite",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -497,7 +497,7 @@
       "_id": "feat000000000001",
       "name": "Toughness",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Toughness.</p>",
@@ -553,7 +553,7 @@
       "_id": "feat000000000002",
       "name": "Weapon Finesse",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
@@ -609,7 +609,7 @@
       "_id": "rfeat00000000001",
       "name": "Familiar",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
           "value": "<p>The master of a bat familiar gains a +3 bonus on Fly checks.</p>",
@@ -666,7 +666,7 @@
       "_id": "sa00000000000001",
       "name": "Critical Attack",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
       "system": {
         "description": {
           "value": "<p>Once per day as a standard action, the bat can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.</p>",
@@ -675,7 +675,7 @@
         "actions": [
           {
             "name": "Critical Attack",
-            "img": "systems/ffd20/icons/skills/red_30.jpg",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
             "activation": {
               "cost": 1,
               "type": "standard",
@@ -701,7 +701,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "floor((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "formula": "round((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
                   "types": [
                     "piercing"
                   ]
@@ -883,7 +883,7 @@
       "_id": "sa00000000000002",
       "name": "Screech",
       "type": "feat",
-      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "img": "systems/ffd20/icons/conditions/screaming.png",
       "system": {
         "description": {
           "value": "<p>Once per day as a standard action, a bat can produce an ear-splitting screech that stuns non-bats in a 20-foot-radius burst. All creatures within the area must make a DC 12 Fortitude save or be staggered for 1d2 rounds. Other bats are immune to this effect. This is a sonic mind-affecting effect. The save DC is Wisdom-based.</p>",
@@ -935,6 +935,7 @@
               "type": "circle",
               "size": 20
             },
+            "img": "systems/ffd20/icons/conditions/screaming.png",
             "_id": "act0000000008001"
           }
         ],

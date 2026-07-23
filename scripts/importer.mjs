@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.33";
+const MODULE_VERSION = "0.1.34";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -245,6 +245,7 @@ function applyPlaceholderDetails(source, item) {
     if (item.system?.classBaseMPTypes) source.system.classBaseMPTypes = item.system.classBaseMPTypes;
     if (item.system?.classBaseMPauto) source.system.classBaseMPauto = item.system.classBaseMPauto;
     if (Number.isFinite(item.system?.mp)) source.system.mp = item.system.mp;
+    if (item.system?.classSkills) source.system.classSkills = foundry.utils.deepClone(item.system.classSkills);
     if (item.system?.casting) source.system.casting = foundry.utils.mergeObject(source.system.casting ?? {}, item.system.casting, { inplace: false });
     source.system.changes = [...(source.system.changes ?? []), ...(item.system?.changes ?? [])];
     source.system.contextNotes = [...(source.system.contextNotes ?? []), ...(item.system?.contextNotes ?? [])];

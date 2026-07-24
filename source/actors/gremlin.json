@@ -829,6 +829,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000002001"
           }
         ],
@@ -973,9 +974,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Poison."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -1242,11 +1241,11 @@
             "name": "Poison",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -1254,14 +1253,21 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Sting"
             },
             "attackBonus": "",
             "touch": false,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": []
+              "parts": [
+                {
+                  "formula": "1d2",
+                  "types": [
+                    "dex"
+                  ]
+                }
+              ]
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
@@ -1271,14 +1277,12 @@
             "notes": {
               "effect": [
                 "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
-                "Duration: 6 rounds"
+                "Duration: 6 rounds",
+                "Resolve after a successful Sting attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
-              "Duration: 6 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

@@ -800,6 +800,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -939,6 +940,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000004001"
           }
         ],
@@ -2849,7 +2851,55 @@
           "value": "<p>As a full round action, quadav may retract their body into their shell. This allows them to gain DR/5 Bludgeoning. It also allows for 20% concealment. When they use this ability, they immediately fall prone, drop anything they were holding, and any item that isn’t directly attached to their skin. While they are in this form, they cannot make attacks, use items, or cast spells. They must remain in this form for at least one complete round. To come out of their shell, they must spend another full round action (this does not provoke AoO).</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Full Withdrawal",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "full"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Enable the Full Withdrawal buff, fall prone, and drop held or unattached items. A full-round action is required to emerge."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000028001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {

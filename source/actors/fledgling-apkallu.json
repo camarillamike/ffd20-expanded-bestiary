@@ -423,6 +423,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -731,7 +732,55 @@
           "value": "<p>On snow- or ice-covered terrain, a fledgling apkallu can move at a rate of 30 feet by sliding on its belly rather than walking.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Toboggan",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "move",
+              "unchained": {
+                "cost": 1,
+                "type": "move"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Enable the Toboggan buff on snow- or ice-covered terrain to use a 30-foot land speed."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000007001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -907,10 +956,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "As an immediate action, a fledgling apkallu can spew a fish on a target within 10 feet. That targets take 1 point of bludgeoning damage and must make a Fortitude save or the spell they were casting gets interrupted (only affects spells up to 2nd level). Blue mages may learn this ability as a cantrip spell (Knowledge: Nature DC 15).",
-              "The source prints no save DC; use the generated monster DC formula. On failure, interrupt a spell of 2nd level or lower."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

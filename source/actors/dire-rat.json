@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "16 vs. trip."
     },
     "skills": {
       "clm": {
@@ -427,9 +427,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Disease."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -630,13 +628,7 @@
                 "Source statblock: Bite +1 (1d4 plus disease)"
               ]
             },
-            "effectNotes": [
-              "Once every 1d4 rounds as a standard action, the dire rat can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4 x 1.5 for total damage.",
-              "Uses Bite attack.",
-              "Source damage: damage is 1d4 x 1.5.",
-              "Dynamic damage: source +0 derived as floor(@abilities.str.mod * 1).",
-              "Recharge [[1d4]] rounds."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": ""
@@ -776,11 +768,11 @@
             "name": "Disease",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -788,7 +780,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Bite"
             },
             "attackBonus": "",
             "touch": false,
@@ -817,13 +809,12 @@
             },
             "notes": {
               "effect": [
-                "Filth fever: Bite—injury; save Fort DC 11; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based."
+                "Filth fever: Bite—injury; save Fort DC 11; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based.",
+                "Resolve after a successful Bite attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Filth fever: Bite—injury; save Fort DC 11; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

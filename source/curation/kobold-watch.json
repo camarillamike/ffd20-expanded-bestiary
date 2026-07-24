@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.34",
+  "moduleVersion": "0.1.35",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -368,7 +368,8 @@
       ],
       "miscellaneous": [
         "Kobold",
-        "Warrior"
+        "Warrior",
+        "Underground Survival"
       ]
     },
     "items": [
@@ -934,7 +935,24 @@
           }
         },
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Emissary",
+              "actionType": "other",
+              "activation": "special",
+              "range": {
+                "value": "personal",
+                "units": "personal",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "self"
+              },
+              "damage": []
+            }
+          ],
           "changes": [],
           "contextNotes": [],
           "classSkills": {}
@@ -978,6 +996,7 @@
               "name": "Magic Hammer",
               "actionType": "rsak",
               "activation": "standard",
+              "attackBonus": "1",
               "touch": true,
               "range": {
                 "value": 30,
@@ -993,9 +1012,6 @@
                     "mp"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
               ]
             }
           ],
@@ -1044,7 +1060,14 @@
         },
         "mechanics": {
           "actions": [],
-          "changes": [],
+          "changes": [
+            {
+              "target": "skill.dev",
+              "formula": "2",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
           "contextNotes": [
             {
               "target": "attack",
@@ -1201,11 +1224,39 @@
           "classSkills": {}
         },
         "reviewNotes": []
+      },
+      {
+        "id": "undergroundsurv1",
+        "name": "Underground Survival",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.sur",
+              "formula": "2",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Enable only for Survival checks made underground."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
       }
     ]
   },
   "curation": {
-    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 20 generated item(s) across 7 populated mechanics categories.",
+    "summary": "Kobold Watch is packaged as an FFD20 NPC actor with 21 generated item(s) across 7 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/2",
       "size": "Medium",

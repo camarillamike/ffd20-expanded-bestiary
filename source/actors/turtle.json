@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "6 vs. trip."
     },
     "skills": {
       "acr": {
@@ -454,6 +454,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -631,7 +632,55 @@
           "value": "<p>As a move action, a turtle can completely withdraw into its shell, leaving him almost completely impervious to attack. When withdrawn he cannot move or attack as long as he remains in this state, a turtle gains a +2 bonus to his Armor Class and a +1 bonus on Reflex saves.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Shell Retreat",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "move",
+              "unchained": {
+                "cost": 1,
+                "type": "move"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Enable the Shell Retreat buff. The turtle cannot move or attack until it leaves this state."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000006001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {

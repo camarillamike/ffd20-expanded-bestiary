@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "16 vs. trip."
     },
     "skills": {
       "acr": {
@@ -112,6 +112,14 @@
       "ste": {
         "ability": "dex",
         "rank": 1
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 0,
+        "rt": false,
+        "acp": false,
+        "background": false,
+        "subSkills": {}
       }
     },
     "details": {
@@ -486,6 +494,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -628,6 +637,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000004001"
           }
         ],
@@ -941,9 +951,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "Only while charging; doubles the Gore damage, including its Strength bonus."
-            ],
+            "effectNotes": [],
             "_id": "act0000000008001"
           }
         ],
@@ -1117,6 +1125,71 @@
           "children": []
         },
         "tag": "the-master-of-a-saberpup-familiar-gains",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "scenttracking001",
+      "name": "Scent Tracking",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Racial modifier: +4 Survival when tracking by scent.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.sur",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable only when using scent to track."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "racial-modifier-4-survival-when-tracki",
         "subType": "temp",
         "active": false,
         "level": 0,

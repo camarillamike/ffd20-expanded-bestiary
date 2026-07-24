@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.34",
+  "moduleVersion": "0.1.35",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Snake",
@@ -278,7 +278,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": "Cannot be tripped."
+      "cmdNotes": "Can't be tripped."
     },
     "coverage": {
       "racialHitDice": [
@@ -462,9 +462,6 @@
                     "piercing"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "On hit: resolve Poison."
               ]
             }
           ],
@@ -606,12 +603,6 @@
                     "piercing"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
-                "Uses Bite attack.",
-                "Source damage: damage is 1d4-2 x 1.5.",
-                "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
               ]
             }
           ],
@@ -661,14 +652,14 @@
             {
               "name": "Poison",
               "actionType": "save",
-              "activation": "standard",
+              "activation": "special",
               "touch": false,
               "range": {
                 "value": null,
                 "units": ""
               },
               "target": {
-                "value": ""
+                "value": "creature hit by Bite"
               },
               "damage": [
                 {
@@ -682,11 +673,7 @@
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "Negates poison"
-              },
-              "effectNotes": [
-                "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
-                "Duration: 6 rounds"
-              ]
+              }
             }
           ],
           "changes": [],

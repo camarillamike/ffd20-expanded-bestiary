@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.34",
+  "moduleVersion": "0.1.35",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Ivy",
@@ -253,7 +253,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "Cannot be tripped."
     },
     "coverage": {
       "racialHitDice": [
@@ -389,9 +389,6 @@
                     "bludgeoning"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "On hit: resolve grab."
               ]
             }
           ],
@@ -487,7 +484,7 @@
             {
               "name": "Constrict",
               "actionType": "other",
-              "activation": "standard",
+              "activation": "special",
               "range": {
                 "value": "",
                 "units": "",
@@ -505,9 +502,6 @@
                     "bludgeoning"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "Use after a successful grapple check."
               ]
             }
           ],
@@ -557,7 +551,8 @@
             {
               "name": "Grab",
               "actionType": "mcman",
-              "activation": "standard",
+              "activation": "free",
+              "attackBonus": "4",
               "range": {
                 "value": "",
                 "units": "",
@@ -568,10 +563,7 @@
               "target": {
                 "value": "creature hit by Slam"
               },
-              "damage": [],
-              "effectNotes": [
-                "Make a free grapple combat maneuver check after a successful Slam attack."
-              ]
+              "damage": []
             }
           ],
           "changes": [],

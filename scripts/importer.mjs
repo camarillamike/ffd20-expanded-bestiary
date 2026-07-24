@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.34";
+const MODULE_VERSION = "0.1.35";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -292,8 +292,26 @@ async function hydrateGeneratedItems(actor, lookup) {
     report.push({ actor: actor.name, item: item.name, status: "compendium", type: match.entry.type, pack: match.pack.collection });
   }
 
-  actor.items = hydrated;
-  const classItem = hydrated.find((item) => generatedFlags(item).generatedClassLevel && item.type === "class");
+  const hydratedWeaponNames = new Set(
+    hydrated
+      .filter((item) => item.type === "weapon" && generatedFlags(item).generatedInventoryItem)
+      .map((item) => normalizeName(generatedFlags(item).name ?? item.name).replace(/^broken\s+/, ""))
+  );
+  actor.items = hydrated.filter((item) => {
+    const attack = generatedFlags(item).generatedNaturalAttack;
+    if (item.type !== "attack" || !attack || attack.natural) return true;
+    const attackName = normalizeName(attack.name ?? item.name).replace(/^broken\s+/, "");
+    if (hydratedWeaponNames.has(attackName)) return false;
+    if (["baby-paleberry", "baby-tonberry"].includes(normalizeName(actor.name).replace(/\s+/g, "-"))
+      && attackName === "chef's knife"
+      && hydratedWeaponNames.has("tiny butcher knife")) return false;
+    return true;
+  });
+  const deduplicated = actor.items.length !== hydrated.length;
+  if (deduplicated) {
+    report.push({ actor: actor.name, status: "deduplicated", type: "weapon-attacks" });
+  }
+  const classItem = actor.items.find((item) => generatedFlags(item).generatedClassLevel && item.type === "class");
   if (classItem?.system?.tag) {
     for (const book of Object.values(actor.system?.attributes?.spells?.spellbooks ?? {})) {
       if (!book?.inUse || book.class === "_hd") continue;

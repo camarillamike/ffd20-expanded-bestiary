@@ -371,6 +371,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000002001"
           }
         ],
@@ -570,12 +571,7 @@
                 "Source statblock: Bite +4 (1d6+4)"
               ]
             },
-            "effectNotes": [
-              "Once per day as a standard action, the zombie can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d6+4 x 1.5 for total damage.",
-              "Uses Bite attack.",
-              "Source damage: damage is 1d6+4 x 1.5.",
-              "Dynamic damage: source +4 derived as floor(@abilities.str.mod * 1.5)."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": ""
@@ -735,7 +731,7 @@
               "parts": []
             },
             "save": {
-              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
               "type": "fort",
               "description": "Negates a -2 penalty to Attack rolls and skill checks for 1d4 rounds"
             },
@@ -743,15 +739,12 @@
               "effect": [
                 "A zombie can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17).",
                 "Area: 15-ft. cone",
-                "Duration: 1d4 rounds"
+                "Duration: 1d4 rounds",
+                "On a failed save, drag Sickening Breath Penalty to each affected creature."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "A zombie can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17).",
-              "Area: 15-ft. cone",
-              "Duration: 1d4 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1083,6 +1076,78 @@
             "category": "passive",
             "automationNotes": []
           }
+        }
+      }
+    },
+    {
+      "_id": "sickbreathzombie",
+      "name": "Sickening Breath Penalty",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Failed Sickening Breath save: -2 on attack rolls and skill checks for 1d4 rounds. Drag this buff to each affected creature.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-2",
+            "target": "attack",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "skills",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Duration: [[1d4]] rounds."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "failed-sickening-breath-save-2-on-atta",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
         }
       }
     }

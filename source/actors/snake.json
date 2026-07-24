@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": "Cannot be tripped."
+      "cmdNotes": "Can't be tripped."
     },
     "skills": {
       "acr": {
@@ -493,9 +493,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Poison."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -808,12 +806,7 @@
                 "Source statblock: Bite +5 (1d4-2 plus poison)"
               ]
             },
-            "effectNotes": [
-              "Once per day as a standard action, the snake can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4-2 x 1.5 for total damage.",
-              "Uses Bite attack.",
-              "Source damage: damage is 1d4-2 x 1.5.",
-              "Dynamic damage: source -2 derived as floor(@abilities.str.mod * 1)."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": ""
@@ -951,11 +944,11 @@
             "name": "Poison",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -963,7 +956,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Bite"
             },
             "attackBonus": "",
             "touch": false,
@@ -987,14 +980,12 @@
             "notes": {
               "effect": [
                 "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
-                "Duration: 6 rounds"
+                "Duration: 6 rounds",
+                "Resolve after a successful Bite attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
-              "Duration: 6 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

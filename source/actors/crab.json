@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "20 vs. trip."
     },
     "skills": {
       "per": {
@@ -448,10 +448,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Grab.",
-              "After establishing the grapple, resolve Constrict on successful grapple checks."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -577,6 +574,7 @@
           {
             "name": "Grab",
             "actionType": "mcman",
+            "attackBonus": "4",
             "ability": {
               "attack": "str",
               "damage": "",
@@ -585,25 +583,23 @@
               "critRange": 20,
               "critMult": 2
             },
+            "activation": {
+              "cost": 0,
+              "type": "free",
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
             "target": {
               "value": "creature hit by Claw"
             },
-            "effectNotes": [
-              "Make a free grapple combat maneuver check after a successful Claw attack."
-            ],
+            "effectNotes": [],
             "notes": {
               "effect": [
                 "Make a free grapple combat maneuver check after a successful Claw attack."
               ],
               "footer": []
-            },
-            "activation": {
-              "cost": 1,
-              "type": "standard",
-              "unchained": {
-                "cost": 1,
-                "type": "action"
-              }
             },
             "range": {
               "value": "",
@@ -755,11 +751,11 @@
             "name": "Constrict",
             "actionType": "other",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -767,7 +763,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "grappled creature"
             },
             "attackBonus": "",
             "touch": false,
@@ -794,9 +790,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "A crab deals 1d2-2 bludgeoning damage when it constricts a grappled foe."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

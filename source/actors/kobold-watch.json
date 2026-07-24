@@ -457,6 +457,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -596,6 +597,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000004001"
           }
         ],
@@ -1437,7 +1439,55 @@
           "value": "<p>Kobolds are decent on making trade offers to the once famous pirates of Lominsa and know exactly how to swindle their way into getting precious metals and ores. Once per day, kobolds can roll twice when making a Bluff or Diplomacy check and take the better roll.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Emissary",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Roll the chosen Bluff or Diplomacy check twice and use the better result."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000014001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -1576,7 +1626,7 @@
             "target": {
               "value": "single target"
             },
-            "attackBonus": "",
+            "attackBonus": "1",
             "touch": true,
             "damage": {
               "critParts": [],
@@ -1601,9 +1651,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Once per day, a kobold can summon a magical hammer and launches (+4 ranged touch attack) it at a single target within 30 feet for 1d4 points of MP damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17)."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1759,7 +1807,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.dev",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
         "contextNotes": [
           {
             "target": "attack",
@@ -2272,6 +2328,71 @@
             "maxFormula": "3",
             "rechargeFormula": ""
           }
+        }
+      }
+    },
+    {
+      "_id": "undergroundsurv1",
+      "name": "Underground Survival",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kobold racial modifier: +2 Survival underground.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.sur",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable only for Survival checks made underground."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "kobold-racial-modifier-2-survival-unde",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
         }
       }
     }

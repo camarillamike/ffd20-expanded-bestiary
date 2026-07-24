@@ -437,9 +437,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Poison."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -565,11 +563,11 @@
             "name": "Poison",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -577,7 +575,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Bite"
             },
             "attackBonus": "",
             "touch": false,
@@ -601,14 +599,12 @@
             "notes": {
               "effect": [
                 "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
-                "Duration: 4 rounds"
+                "Duration: 4 rounds",
+                "Resolve after a successful Bite attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
-              "Duration: 4 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -798,10 +794,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn.",
-              "Recharge [[1d4+1]] rounds."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

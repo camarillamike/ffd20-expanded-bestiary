@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.34",
+  "moduleVersion": "0.1.35",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sinscale Type 1",
@@ -405,9 +405,6 @@
                     "piercing"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "On hit: resolve Poison."
               ]
             }
           ],
@@ -483,14 +480,14 @@
             {
               "name": "Poison",
               "actionType": "save",
-              "activation": "standard",
+              "activation": "special",
               "touch": false,
               "range": {
                 "value": null,
                 "units": ""
               },
               "target": {
-                "value": ""
+                "value": "creature hit by Bite"
               },
               "damage": [
                 {
@@ -504,11 +501,7 @@
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
                 "description": "Negates poison"
-              },
-              "effectNotes": [
-                "Bite – injury; save Fort DC 10; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
-                "Duration: 4 rounds"
-              ]
+              }
             }
           ],
           "changes": [],
@@ -573,10 +566,6 @@
                     "piercing"
                   ]
                 }
-              ],
-              "effectNotes": [
-                "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn.",
-                "Recharge [[1d4+1]] rounds."
               ]
             }
           ],

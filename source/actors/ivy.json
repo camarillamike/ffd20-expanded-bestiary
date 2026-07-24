@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "Cannot be tripped."
     },
     "skills": {},
     "details": {
@@ -420,9 +420,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve grab."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -604,6 +602,14 @@
           {
             "name": "Constrict",
             "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
             "damage": {
               "parts": [
                 {
@@ -619,22 +625,12 @@
             "target": {
               "value": "grappled creature"
             },
-            "effectNotes": [
-              "Use after a successful grapple check."
-            ],
+            "effectNotes": [],
             "notes": {
               "effect": [
                 "Use after a successful grapple check."
               ],
               "footer": []
-            },
-            "activation": {
-              "cost": 1,
-              "type": "standard",
-              "unchained": {
-                "cost": 1,
-                "type": "action"
-              }
             },
             "range": {
               "value": "",
@@ -787,6 +783,7 @@
           {
             "name": "Grab",
             "actionType": "mcman",
+            "attackBonus": "4",
             "ability": {
               "attack": "str",
               "damage": "",
@@ -795,25 +792,23 @@
               "critRange": 20,
               "critMult": 2
             },
+            "activation": {
+              "cost": 0,
+              "type": "free",
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
             "target": {
               "value": "creature hit by Slam"
             },
-            "effectNotes": [
-              "Make a free grapple combat maneuver check after a successful Slam attack."
-            ],
+            "effectNotes": [],
             "notes": {
               "effect": [
                 "Make a free grapple combat maneuver check after a successful Slam attack."
               ],
               "footer": []
-            },
-            "activation": {
-              "cost": 1,
-              "type": "standard",
-              "unchained": {
-                "cost": 1,
-                "type": "action"
-              }
             },
             "range": {
               "value": "",

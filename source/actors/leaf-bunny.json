@@ -439,6 +439,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -576,7 +577,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "self"
             },
             "attackBonus": "",
             "touch": false,
@@ -585,7 +586,7 @@
               "nonCritParts": [],
               "parts": [
                 {
-                  "formula": "1d4+1",
+                  "formula": "1d4 + @abilities.wis.mod",
                   "types": [
                     "healing"
                   ]
@@ -604,10 +605,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Once every 1d4 turns and as a standard action, the leaf bunny pulls a carrot out and chews on it healing herself for 1d4+1 point of damage.",
-              "Recharge [[1d4]] turns."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -729,6 +727,71 @@
             },
             "sourceType": "Su"
           }
+        }
+      }
+    },
+    {
+      "_id": "jumpingbonus0001",
+      "name": "Jumping Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Leaf bunny racial modifier: +8 Acrobatics when jumping.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.acr",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable only for Acrobatics checks made to jump."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "leaf-bunny-racial-modifier-8-acrobatic",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
         }
       }
     }

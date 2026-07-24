@@ -428,6 +428,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000002001"
           }
         ],
@@ -574,6 +575,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -721,6 +723,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000004001"
           }
         ],
@@ -863,6 +866,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000005001"
           }
         ],
@@ -998,6 +1002,7 @@
               "type": "",
               "size": ""
             },
+            "effectNotes": [],
             "_id": "act0000000006001"
           }
         ],
@@ -1638,7 +1643,55 @@
           "value": "<p>1/day, a sahagin that takes damage in combat can fly into a frenzy in the following round. It gains +2 Constitution and +2 Strength, but takes a -2 penalty to its AC. The frenzy lasts as long as the battle or 1 minute, whichever is shorter.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Blood Frenzy",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "After taking damage, enable the Blood Frenzy buff; it lasts for the battle or 1 minute."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000014001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "uses": {
@@ -1947,25 +2000,21 @@
               }
             },
             "range": {
-              "value": null,
-              "units": ""
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
             },
             "target": {
-              "value": ""
+              "value": "self"
             },
             "attackBonus": "",
             "touch": false,
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "2",
-                  "types": [
-                    "water"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "",
@@ -1975,14 +2024,12 @@
             "notes": {
               "effect": [
                 "1/day, Sahagin shares the power of Leviathan gaining Enwater for 2 turns or until discharged on his weapon or fist. This effect deals an extra 2 points of water damage. The weapon loses this property if its wielder drops it or otherwise loses contact with it.",
-                "Duration: 2 turns"
+                "Duration: 2 turns",
+                "Enable the Leviathan's Fury buff; discharge it after the next weapon or unarmed hit, or after 2 turns."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "1/day, Sahagin shares the power of Leviathan gaining Enwater for 2 turns or until discharged on his weapon or fist. This effect deals an extra 2 points of water damage. The weapon loses this property if its wielder drops it or otherwise loses contact with it.",
-              "Duration: 2 turns"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -2442,11 +2489,7 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "1/day, a sahagin can shoot water out of its mouth towards a single target with an water projectile within 30 ft. The sahagin must make a ranged touch attack (+2), if it hits, the attack deals 1d6+2 water damage and must make a Fortitude save (DC 12) or be inflicted with the Drenched status effect for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Local DC 17).",
-              "Status: Drenched",
-              "Duration: 1d4 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null

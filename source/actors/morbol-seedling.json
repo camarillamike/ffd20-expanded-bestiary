@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "Cannot be tripped."
     },
     "skills": {
       "per": {
@@ -457,9 +457,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Poison."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -597,9 +595,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit, attempt the Grab combat maneuver as a free action."
-            ],
+            "effectNotes": [],
             "_id": "act0000000004001"
           }
         ],
@@ -872,12 +868,18 @@
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Affected creatures cannot use scent until the musk effect ends."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
             },
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000008001"
@@ -1025,11 +1027,11 @@
             "name": "Poison",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -1037,7 +1039,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Bite"
             },
             "attackBonus": "",
             "touch": false,
@@ -1062,13 +1064,12 @@
               "effect": [
                 "Bite—injury; save Fort DC 10; frequency 1/round for 6 rounds; effect 1 Str; cure 1 save.",
                 "Duration: 6 rounds",
-                "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save."
+                "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save.",
+                "Resolve after a successful Bite attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1242,16 +1243,12 @@
                 "Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
                 "Area: 15-ft. cone",
                 "Duration: 1d4 rounds",
-                "Recharge [[1d3]] rounds."
+                "Recharge [[1d3]] rounds.",
+                "On a failed save, drag Sickening Breath Penalty to each affected creature."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
-              "Area: 15-ft. cone",
-              "Duration: 1d4 rounds",
-              "Recharge [[1d3]] rounds."
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1491,9 +1488,7 @@
               "minValue": "",
               "minUnits": ""
             },
-            "effectNotes": [
-              "Source grapple combat maneuver total: +7."
-            ],
+            "effectNotes": [],
             "notes": {
               "effect": [
                 "Source grapple combat maneuver total: +7."
@@ -1551,6 +1546,143 @@
           ],
           "lookupName": "Grab",
           "configuredUses": null
+        }
+      }
+    },
+    {
+      "_id": "sickbreathmorbol",
+      "name": "Sickening Breath Penalty",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Failed Sickening Breath save: -2 on attack rolls and skill checks for 1d4 rounds. Drag this buff to each affected creature.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-2",
+            "target": "attack",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "skills",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Duration: [[1d4]] rounds."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "failed-sickening-breath-save-2-on-atta",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "foreststealth001",
+      "name": "Forest Stealth",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Morbol seedling racial modifier: +16 Stealth in forests.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "16",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable only while the morbol seedling is in forest terrain."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "morbol-seedling-racial-modifier-16-ste",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
         }
       }
     }

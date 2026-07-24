@@ -98,7 +98,7 @@
         "formula": ""
       },
       "acNotes": "",
-      "cmdNotes": ""
+      "cmdNotes": "6 vs. trip."
     },
     "skills": {
       "acr": {
@@ -473,9 +473,7 @@
               "type": "",
               "size": ""
             },
-            "effectNotes": [
-              "On hit: resolve Poison."
-            ],
+            "effectNotes": [],
             "_id": "act0000000003001"
           }
         ],
@@ -658,11 +656,11 @@
             "name": "Poison",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -670,7 +668,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature hit by Bite"
             },
             "attackBonus": "",
             "touch": false,
@@ -694,14 +692,12 @@
             "notes": {
               "effect": [
                 "Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.",
-                "Duration: 6 rounds"
+                "Duration: 6 rounds",
+                "Resolve after a successful Bite attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.",
-              "Duration: 6 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -850,11 +846,11 @@
             "name": "Poisonous Skin",
             "actionType": "save",
             "activation": {
-              "cost": 1,
-              "type": "standard",
+              "cost": 0,
+              "type": "special",
               "unchained": {
-                "cost": 1,
-                "type": "action"
+                "cost": 0,
+                "type": "special"
               }
             },
             "range": {
@@ -862,7 +858,7 @@
               "units": ""
             },
             "target": {
-              "value": ""
+              "value": "creature striking the toad with an unarmed strike or natural weapon"
             },
             "attackBonus": "",
             "touch": false,
@@ -886,14 +882,12 @@
             "notes": {
               "effect": [
                 "A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.",
-                "Duration: 4 rounds"
+                "Duration: 4 rounds",
+                "Reactive contact poison; resolve immediately after the triggering attack."
               ],
               "footer": []
             },
-            "effectNotes": [
-              "A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.",
-              "Duration: 4 rounds"
-            ],
+            "effectNotes": [],
             "measureTemplate": {
               "type": "",
               "size": null
@@ -1077,6 +1071,71 @@
           "children": []
         },
         "tag": "the-master-of-a-toad-familiar-gains-3-hi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "jumpingbonus0001",
+      "name": "Jumping Bonus",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Toad racial modifier: +4 additional Acrobatics when jumping.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.acr",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable only for Acrobatics checks made to jump."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "toad-racial-modifier-4-additional-acro",
         "subType": "temp",
         "active": false,
         "level": 0,

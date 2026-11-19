@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sprite",
@@ -138,6 +138,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/sprite.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/sprite.png",
     "traits": {
+      "creatureTypes": [
+        "fey"
+      ],
+      "creatureSubtypes": [],
       "size": "dim",
       "senses": {
         "dv": {
@@ -173,8 +177,16 @@
         "custom": "Detect evil; detect good"
       },
       "dr": {
-        "value": [],
-        "custom": "5/cold iron;"
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "coldIron"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
       },
       "eres": {
         "value": [

@@ -113,6 +113,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [],
       "size": "med",
       "senses": {
         "dv": {
@@ -148,8 +152,16 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
-        "custom": "5/bludgeoning;"
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "bludgeoning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
       },
       "eres": {
         "value": [],
@@ -613,7 +625,7 @@
               "nonCritParts": []
             },
             "extraAttacks": {
-              "type": "",
+              "type": "custom",
               "manual": [
                 {
                   "formula": "0",
@@ -962,7 +974,7 @@
                 {
                   "formula": "1d3+1",
                   "types": [
-                    "mp"
+                    "manapoint"
                   ]
                 }
               ]
@@ -975,7 +987,8 @@
             "notes": {
               "effect": [
                 "Once a day, a skeleton can siphon magic points off a single target within 30 ft. The target must make a Fortitude save (DC 11) or be drained for 1d3+1 MP which heals the skeleton for the same amount in HP. This does not work on creature's with no MP. Blue mages may learn this ability as a 1st level spell (Knowledge: Religion DC 17).",
-                "Heals the creature for the same amount in HP."
+                "Heals the creature for the same amount in HP.",
+                "Heal the skeleton for the actual MP drained; use the same roll. No healing on a successful save or against a target with no MP."
               ],
               "footer": []
             },
@@ -984,6 +997,7 @@
               "type": "",
               "size": null
             },
+            "manadamage": true,
             "img": "systems/ffd20/icons/conditions/energydrained.png",
             "_id": "act0000000008001"
           }

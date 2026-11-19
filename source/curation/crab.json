@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Crab",
@@ -43,8 +43,10 @@
       "xp": 100,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Vermin (Aquatic) [Familiar]",
-      "subtypes": [],
+      "creatureType": "Vermin",
+      "subtypes": [
+        "Aquatic"
+      ],
       "initiative": 2,
       "senses": "Darkvision 60 ft.",
       "aura": "",
@@ -145,6 +147,12 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/crab.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/crab.png",
     "traits": {
+      "creatureTypes": [
+        "vermin"
+      ],
+      "creatureSubtypes": [
+        "aquatic"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -647,18 +655,11 @@
         "sourceFlagData": {},
         "mechanics": {
           "actions": [],
-          "changes": [
-            {
-              "target": "cmb",
-              "formula": "2",
-              "type": "untyped",
-              "operator": "add"
-            }
-          ],
+          "changes": [],
           "contextNotes": [
             {
-              "target": "misc",
-              "text": "This buff belongs on the familiar's master, not the familiar."
+              "target": "cmb",
+              "text": "The master of a king crab familiar gains a +2 bonus on CMB checks to start and maintain a grapple."
             }
           ],
           "level": 0
@@ -672,7 +673,7 @@
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",
-      "type": "Vermin (Aquatic) [Familiar]",
+      "type": "Vermin",
       "alignment": "N",
       "primarySourceAttacks": [
         "2 Claws +0 (1d2-2 plus grab)"

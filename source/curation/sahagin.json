@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Sahagin",
@@ -193,6 +193,12 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/sahagin.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/sahagin.png",
     "traits": {
+      "creatureTypes": [
+        "monstrousHumanoid"
+      ],
+      "creatureSubtypes": [
+        "aquatic"
+      ],
       "size": "med",
       "senses": {
         "dv": {
@@ -346,9 +352,9 @@
         "Monstrous Humanoid"
       ],
       "naturalAttacks": [
-        "bite",
+        "Bite (with Trident)",
         "Claw x2",
-        "bite"
+        "Bite (with Claws)"
       ],
       "weaponAttacks": [
         "Trident",
@@ -525,7 +531,7 @@
       },
       {
         "id": "natatk0000000002",
-        "name": "bite",
+        "name": "Bite (with Trident)",
         "type": "attack",
         "subType": "natural",
         "category": "naturalAttacks",
@@ -550,7 +556,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "bite",
+              "name": "Bite (with Trident)",
               "actionType": "mwak",
               "activation": "standard",
               "attackBonus": "-5",
@@ -642,7 +648,7 @@
       },
       {
         "id": "natatk0000000004",
-        "name": "bite",
+        "name": "Bite (with Claws)",
         "type": "attack",
         "subType": "natural",
         "category": "naturalAttacks",
@@ -667,7 +673,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "bite",
+              "name": "Bite (with Claws)",
               "actionType": "mwak",
               "activation": "standard",
               "range": {

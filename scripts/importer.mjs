@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.35";
+const MODULE_VERSION = "0.1.36";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -197,7 +197,7 @@ function applyPlaceholderDetails(source, item) {
     compendiumHydrated: true,
     generatedFallback: item,
   };
-  preserveFeatureSelection(source, item, selectedFeatureOption(item));
+  if (item.type === "feat") preserveFeatureSelection(source, item, selectedFeatureOption(item));
 
   if (flags.generatedInventoryItem && source.system && item.system?.quantity) {
     source.system.quantity = item.system.quantity;
@@ -284,7 +284,43 @@ async function hydrateGeneratedItems(actor, lookup) {
       continue;
     }
 
-    const source = applyPlaceholderDetails((await match.pack.getDocument(match.entry._id)).toObject(), item);
+    const document = await match.pack.getDocument(match.entry._id);
+    const source = applyPlaceholderDetails(document.toObject(), item);
+    if (generatedFlags(item).generatedClassLevel) {
+      source.system.tag ||= document.system.tag || ffd20.utils.createTag(document.name);
+    }
+    if (generatedFlags(item).generatedInventoryItem && ["weapon", "equipment"].includes(source.type)) {
+      const label = normalizeName(generatedFlags(item).name ?? item.name);
+      const explicitSize = Object.entries({ fine: "fine", diminutive: "dim", tiny: "tiny", small: "sm", medium: "med",
+        large: "lg", huge: "huge", gargantuan: "grg", colossal: "col" }).find(([size]) => label.startsWith(size + " "));
+      source.system.size = explicitSize?.[1] ?? actor.system.traits.size;
+      if (source.type === "weapon") {
+        const attack = actor.items.find(i => i.type === "attack" && !generatedFlags(i).generatedNaturalAttack?.natural
+          && normalizeName(i.name).replace(/^broken\s+/, "") === label.replace(/^broken\s+/, ""));
+        const routine = attack?.system.actions?.[0];
+        const weaponAction = routine && source.system.actions?.find(a => a.actionType === routine.actionType);
+        if (weaponAction && !source.system.broken) {
+          weaponAction.ability ??= {};
+          weaponAction.ability.attack = routine.ability.attack;
+          if (routine.attackBonus && !weaponAction.attackBonus) weaponAction.attackBonus = routine.attackBonus;
+          // Some stock bows already include the Strength penalty in their damage dice.
+          if (routine.ability.damage && !weaponAction.damage?.parts?.some(p => p.formula?.includes("@abilities."))) {
+            weaponAction.ability.damage = routine.ability.damage;
+            weaponAction.ability.damageMult = routine.ability.damageMult;
+          }
+          if (label === "water power staff") {
+            weaponAction.ability.damage = "";
+            weaponAction.touch = true;
+            const extra = actor.name === "Amber Quadav" ? " + 1" : "";
+            weaponAction.damage.parts = [{ formula: "1d6 + min(@spells.primary.abilityMod, @spells.primary.cl.total)" + extra, types: ["water"] }];
+            if (extra) {
+              weaponAction.notes ??= {};
+              weaponAction.notes.footer = [...(weaponAction.notes.footer ?? []), "Includes the additional 1 damage printed for Amber Quadav."];
+            }
+          }
+        }
+      }
+    }
     source.flags[MODULE_ID].sourcePack = match.pack.collection;
     source.flags[MODULE_ID].sourceId = match.entry._id;
 
@@ -294,7 +330,8 @@ async function hydrateGeneratedItems(actor, lookup) {
 
   const hydratedWeaponNames = new Set(
     hydrated
-      .filter((item) => item.type === "weapon" && generatedFlags(item).generatedInventoryItem)
+      .filter((item) => item.type === "weapon" && generatedFlags(item).generatedInventoryItem
+        && item.system.actions?.some(action => action.damage?.parts?.length))
       .map((item) => normalizeName(generatedFlags(item).name ?? item.name).replace(/^broken\s+/, ""))
   );
   actor.items = hydrated.filter((item) => {
@@ -314,7 +351,8 @@ async function hydrateGeneratedItems(actor, lookup) {
   const classItem = actor.items.find((item) => generatedFlags(item).generatedClassLevel && item.type === "class");
   if (classItem?.system?.tag) {
     for (const book of Object.values(actor.system?.attributes?.spells?.spellbooks ?? {})) {
-      if (!book?.inUse || book.class === "_hd") continue;
+      const previousTag = classItem.flags?.[MODULE_ID]?.generatedFallback?.system?.tag ?? classItem.system.tag;
+      if (!book?.inUse || book.class !== previousTag) continue;
       book.class = classItem.system.tag;
       book.name = classItem.name;
       if (classItem.system.classCastingStat && classItem.system.classCastingStat !== "noncaster") {
@@ -355,7 +393,7 @@ function packFolders(pack) {
 }
 
 function actorFamily(actor) {
-  return String(foundry.utils.getProperty(actor, `flags.${MODULE_ID}.parsed.family`) ?? "").trim();
+  return String(generatedFlags(actor).parsed?.family ?? "").trim();
 }
 
 async function unlockPack(pack) {

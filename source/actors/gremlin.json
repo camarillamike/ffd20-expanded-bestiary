@@ -500,6 +500,13 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "devil",
+        "extraplanar"
+      ],
       "size": "sm",
       "senses": {
         "dv": {
@@ -783,7 +790,7 @@
               "nonCritParts": []
             },
             "extraAttacks": {
-              "type": "",
+              "type": "custom",
               "manual": [
                 {
                   "formula": "0",
@@ -1260,14 +1267,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "dex"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + 2",
@@ -1278,7 +1278,8 @@
               "effect": [
                 "Sting—injury; save Fort DC 12; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save. The save DC is Constitution-based, and includes a +2 racial bonus.",
                 "Duration: 6 rounds",
-                "Resolve after a successful Sting attack."
+                "Resolve after a successful Sting attack.",
+                "On a failed save, record [[1d2]] Dexterity damage on the target's ability score, not its HP."
               ],
               "footer": []
             },

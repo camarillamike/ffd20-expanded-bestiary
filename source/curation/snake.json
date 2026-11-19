@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Snake",
@@ -43,7 +43,7 @@
       "xp": 200,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Animal [Familiar]",
+      "creatureType": "Animal",
       "subtypes": [
         "Reptilian"
       ],
@@ -140,6 +140,12 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/snake.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/snake.png",
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [
+        "reptilian"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -661,14 +667,7 @@
               "target": {
                 "value": "creature hit by Bite"
               },
-              "damage": [
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -717,7 +716,7 @@
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
-      "type": "Animal [Familiar]",
+      "type": "Animal",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite +5 (1d4-2 plus poison)"

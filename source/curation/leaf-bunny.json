@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Leaf Bunny",
@@ -40,7 +40,7 @@
       "xp": 100,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Animal [Familiar]",
+      "creatureType": "Animal",
       "subtypes": [],
       "initiative": 3,
       "senses": "Low-light vision",
@@ -126,6 +126,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/leaf-bunny.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/leaf-bunny.png",
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -262,13 +266,16 @@
       "specialQualities": [],
       "specialAttacks": [],
       "defensiveAbilities": [],
-      "rawSpecialAbilities": [],
+      "rawSpecialAbilities": [
+        "Familiar"
+      ],
       "specialAbilities": [
         "Carrot"
       ],
       "buffs": [],
       "miscellaneous": [
         "Source Statblock Adjustments",
+        "Familiar Master Bonus",
         "Jumping Bonus"
       ]
     },
@@ -435,6 +442,31 @@
         "reviewNotes": []
       },
       {
+        "id": "rfeat00000000001",
+        "name": "Familiar",
+        "type": "feat",
+        "subType": "racial",
+        "category": "rawSpecialAbilities",
+        "generatedFlags": [
+          "generatedRawSpecialAbility"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Familiar master bonus; apply this to the master, not to the creature."
+            }
+          ],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "sa00000000000001",
         "name": "Carrot",
         "type": "feat",
@@ -495,6 +527,34 @@
         "reviewNotes": []
       },
       {
+        "id": "famaster00000001",
+        "name": "Familiar Master Bonus",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.acr",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "This buff belongs on the familiar's master, not the familiar."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
         "id": "jumpingbonus0001",
         "name": "Jumping Bonus",
         "type": "buff",
@@ -525,17 +585,18 @@
     ]
   },
   "curation": {
-    "summary": "Leaf Bunny is packaged as an FFD20 NPC actor with 6 generated item(s) across 5 populated mechanics categories.",
+    "summary": "Leaf Bunny is packaged as an FFD20 NPC actor with 8 generated item(s) across 6 populated mechanics categories.",
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",
-      "type": "Animal [Familiar]",
+      "type": "Animal",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite -2 (1d3-4)"
       ],
       "specialAbilityNames": [
-        "Carrot"
+        "Carrot",
+        "Familiar"
       ]
     },
     "rulesDecisions": [

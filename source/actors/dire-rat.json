@@ -130,6 +130,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "sm",
       "senses": {
         "dv": {
@@ -622,7 +626,7 @@
                 "Uses Bite attack.",
                 "Source damage: damage is 1d4 x 1.5.",
                 "Dynamic damage: source +0 derived as floor(@abilities.str.mod * 1).",
-                "Recharge [[1d4]] rounds."
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": [
                 "Source statblock: Bite +1 (1d4 plus disease)"
@@ -640,10 +644,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -749,7 +754,8 @@
               }
             },
             "sourceType": "Ex"
-          }
+          },
+          "roundRecharge": "1d4"
         }
       }
     },
@@ -787,20 +793,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d3",
-                  "types": [
-                    "dex"
-                  ]
-                },
-                {
-                  "formula": "1d3",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -810,7 +803,9 @@
             "notes": {
               "effect": [
                 "Filth fever: Bite—injury; save Fort DC 11; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based.",
-                "Resolve after a successful Bite attack."
+                "Resolve after a successful Bite attack.",
+                "On a failed save, record [[1d3]] Dexterity damage on the target's ability score, not its HP.",
+                "On a failed save, record [[1d3]] Constitution damage on the target's ability score, not its HP."
               ],
               "footer": []
             },

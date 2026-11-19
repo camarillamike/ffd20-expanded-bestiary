@@ -118,6 +118,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "vermin"
+      ],
+      "creatureSubtypes": [],
       "size": "med",
       "senses": {
         "dv": {
@@ -847,8 +851,8 @@
             "notes": {
               "effect": [
                 "Once every 1d4 rounds as a standard action, a bee can shoot out needles from its stinger. If the range attack succeeds (+4), the needles reach up to 30 feet and do 1d4 piercing damage plus their poison.",
-                "Recharge [[1d4]] rounds.",
-                "Resolve Poison on a hit."
+                "Resolve Poison on a hit.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": []
             },
@@ -873,10 +877,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -982,7 +987,8 @@
               }
             },
             "sourceType": "Ex"
-          }
+          },
+          "roundRecharge": "1d4"
         }
       }
     },

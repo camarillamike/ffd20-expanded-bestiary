@@ -130,6 +130,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "dim",
       "senses": {
         "dv": {
@@ -675,14 +679,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -693,7 +690,8 @@
               "effect": [
                 "Injury; save Fort DC 8; frequency 1/round for 6 rounds; effect 1 Con damage; cure 1 save.",
                 "Duration: 6 rounds",
-                "Resolve after a successful Bite attack."
+                "Resolve after a successful Bite attack.",
+                "On a failed save, record [[1]] Constitution damage on the target's ability score, not its HP."
               ],
               "footer": []
             },
@@ -865,14 +863,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "wis"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -883,7 +874,8 @@
               "effect": [
                 "A creature that strikes a toad with an unarmed strike or natural weapon exposes itself to the toad's poisonous skin. Skin – contact; save Fort DC 8; frequency 1/round for 4 rounds; effect 1 Wisdom damage; cure 1 save.",
                 "Duration: 4 rounds",
-                "Reactive contact poison; resolve immediately after the triggering attack."
+                "Reactive contact poison; resolve immediately after the triggering attack.",
+                "On a failed save, record [[1]] Wisdom damage on the target's ability score, not its HP."
               ],
               "footer": []
             },
@@ -1174,7 +1166,7 @@
         "initiative": 1,
         "size": "Diminutive",
         "cr": "1/8",
-        "creatureType": "Animal [Familiar]",
+        "creatureType": "Animal",
         "subtypes": [],
         "xp": 50,
         "aura": "",

@@ -122,6 +122,12 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "vermin"
+      ],
+      "creatureSubtypes": [
+        "aquatic"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -399,7 +405,7 @@
               "nonCritParts": []
             },
             "extraAttacks": {
-              "type": "",
+              "type": "custom",
               "manual": [
                 {
                   "formula": "0",
@@ -1083,15 +1089,7 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [
-          {
-            "formula": "2",
-            "target": "cmb",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          }
-        ],
+        "changes": [],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -1105,8 +1103,8 @@
         },
         "contextNotes": [
           {
-            "target": "misc",
-            "text": "This buff belongs on the familiar's master, not the familiar."
+            "target": "cmb",
+            "text": "The master of a king crab familiar gains a +2 bonus on CMB checks to start and maintain a grapple."
           }
         ],
         "links": {
@@ -1151,8 +1149,10 @@
         "initiative": 2,
         "size": "Tiny",
         "cr": "1/4",
-        "creatureType": "Vermin (Aquatic) [Familiar]",
-        "subtypes": [],
+        "creatureType": "Vermin",
+        "subtypes": [
+          "Aquatic"
+        ],
         "xp": 100,
         "aura": "",
         "perception": 4,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Dire Rat",
@@ -133,6 +133,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/dire-rat.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/dire-rat.png",
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "sm",
       "senses": {
         "dv": {
@@ -548,20 +552,7 @@
               "target": {
                 "value": "creature hit by Bite"
               },
-              "damage": [
-                {
-                  "formula": "1d3",
-                  "types": [
-                    "dex"
-                  ]
-                },
-                {
-                  "formula": "1d3",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",

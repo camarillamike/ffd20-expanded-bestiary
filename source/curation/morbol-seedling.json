@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Morbol Seedling",
@@ -44,7 +44,7 @@
       "xp": 200,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Plant [Familiar]",
+      "creatureType": "Plant",
       "subtypes": [],
       "initiative": 3,
       "senses": "Low-light vision",
@@ -147,6 +147,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/morbol-seedling.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/morbol-seedling.png",
     "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -686,14 +690,7 @@
               "target": {
                 "value": "creature hit by Bite"
               },
-              "damage": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "str"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -914,7 +911,7 @@
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
-      "type": "Plant [Familiar]",
+      "type": "Plant",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite +5 (1d2-1 plus poison), Tentacles +0 (grab)"

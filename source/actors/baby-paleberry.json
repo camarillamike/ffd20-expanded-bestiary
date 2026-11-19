@@ -126,6 +126,12 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "native"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -723,7 +729,7 @@
       "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a baby paleberry familiar gains a +4 bonus on Bluff checks.</p>",
+          "value": "<p>The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -769,7 +775,7 @@
           "generatedRawSpecialAbility": true,
           "customFeature": true,
           "sourceType": "na",
-          "sourceText": "The master of a baby paleberry familiar gains a +4 bonus on Bluff checks."
+          "sourceText": "The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items."
         }
       }
     },
@@ -1177,7 +1183,7 @@
       "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
       "system": {
         "description": {
-          "value": "<p>The master of a baby paleberry familiar gains a +4 bonus on Bluff checks. Drag this buff to the familiar's master.</p>",
+          "value": "<p>The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items. Drag this buff to the familiar's master.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -1190,15 +1196,7 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [
-          {
-            "formula": "4",
-            "target": "skill.blf",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          }
-        ],
+        "changes": [],
         "changeFlags": {
           "immuneToMorale": false,
           "loseDexToAC": false,
@@ -1212,14 +1210,14 @@
         },
         "contextNotes": [
           {
-            "target": "misc",
-            "text": "This buff belongs on the familiar's master, not the familiar."
+            "target": "skill.spl",
+            "text": "The master of a baby paleberry gains a +3 bonus on Spellcraft checks to identify magic items."
           }
         ],
         "links": {
           "children": []
         },
-        "tag": "the-master-of-a-baby-paleberry-familiar",
+        "tag": "the-master-of-a-baby-paleberry-gains-a",
         "subType": "temp",
         "active": false,
         "level": 0,
@@ -1258,7 +1256,7 @@
         "initiative": 4,
         "size": "Tiny",
         "cr": "1/3",
-        "creatureType": "Outsider [Familiar]",
+        "creatureType": "Outsider",
         "subtypes": [
           "Native"
         ],

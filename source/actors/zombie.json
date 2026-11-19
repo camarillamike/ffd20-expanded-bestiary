@@ -113,6 +113,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [],
       "size": "med",
       "senses": {
         "dv": {
@@ -148,8 +152,16 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
-        "custom": "5/slashing;"
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "slashing"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
       },
       "eres": {
         "value": [],
@@ -746,8 +758,8 @@
             },
             "effectNotes": [],
             "measureTemplate": {
-              "type": "",
-              "size": null
+              "type": "cone",
+              "size": "15"
             },
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000005001"

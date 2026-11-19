@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Skeleton",
@@ -138,6 +138,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/skeleton.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/skeleton.png",
     "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [],
       "size": "med",
       "senses": {
         "dv": {
@@ -173,8 +177,16 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
-        "custom": "5/bludgeoning;"
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "bludgeoning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
       },
       "eres": {
         "value": [],
@@ -675,7 +687,7 @@
                 {
                   "formula": "1d3+1",
                   "types": [
-                    "mp"
+                    "manapoint"
                   ]
                 }
               ],

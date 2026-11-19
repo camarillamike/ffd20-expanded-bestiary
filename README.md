@@ -30,6 +30,10 @@ FF D20 Expanded Bestiary
 
 ## Current Test Scope
 
-This package contains the current 20-entry validation batch generated from finalfantasyd20.com.
+This package contains the first 45 reviewed actors from finalfantasyd20.com. Updates refresh the managed compendium packs, not previously imported world actors or placed tokens.
+
+Familiar master buffs start inactive. Transfer the buff to the master and enable it there; conditional benefits appear as roll notes. Ability damage from poisons and diseases rolls in the effect notes for entry on the target's ability score, not its HP. For Marrow Drain, heal the skeleton by the actual MP lost by the target.
+
+Round-based recharge abilities spend one charge. In a running encounter with an active GM, the module restores it at the due turn using the roll printed on the card. Outside that encounter, restore it after the printed number of rounds.
 
 Each actor has a matching curation record under `source/curation/` with the source URL, parsed statblock, generated Foundry items, compendium lookup expectations, and unresolved review notes.

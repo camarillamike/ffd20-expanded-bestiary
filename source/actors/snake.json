@@ -134,6 +134,12 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [
+        "reptilian"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -963,14 +969,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -981,7 +980,8 @@
               "effect": [
                 "Bite – injury; save Fort DC 9; frequency 1/round for 6 rounds; effect 1d2 Con damage; cure 1 save.",
                 "Duration: 6 rounds",
-                "Resolve after a successful Bite attack."
+                "Resolve after a successful Bite attack.",
+                "On a failed save, record [[1d2]] Constitution damage on the target's ability score, not its HP."
               ],
               "footer": []
             },
@@ -1207,7 +1207,7 @@
         "initiative": 3,
         "size": "Tiny",
         "cr": "1/2",
-        "creatureType": "Animal [Familiar]",
+        "creatureType": "Animal",
         "subtypes": [
           "Reptilian"
         ],

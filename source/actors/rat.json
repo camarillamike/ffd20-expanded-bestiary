@@ -130,6 +130,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -849,20 +853,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "dex"
-                  ]
-                },
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -872,7 +863,9 @@
             "notes": {
               "effect": [
                 "Filth fever: Bite—injury; save Fort DC 10; onset 1d3 days; frequency 1/day; effect 1d2 Dex damage and 1d2 Con damage; cure 2 consecutive saves. The save DC is Constitution-based.",
-                "Resolve after a successful Bite attack."
+                "Resolve after a successful Bite attack.",
+                "On a failed save, record [[1d2]] Dexterity damage on the target's ability score, not its HP.",
+                "On a failed save, record [[1d2]] Constitution damage on the target's ability score, not its HP."
               ],
               "footer": []
             },
@@ -1100,7 +1093,7 @@
         "initiative": 2,
         "size": "Tiny",
         "cr": "1/4",
-        "creatureType": "Animal [Familiar]",
+        "creatureType": "Animal",
         "subtypes": [],
         "xp": 100,
         "aura": "",

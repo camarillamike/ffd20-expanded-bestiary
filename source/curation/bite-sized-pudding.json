@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Bite-Sized Pudding",
@@ -42,7 +42,7 @@
       "xp": 200,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Ooze [Familiar]",
+      "creatureType": "Ooze",
       "subtypes": [],
       "initiative": 0,
       "senses": "Blindsight 60 ft.",
@@ -137,6 +137,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/bite-sized-pudding.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/bite-sized-pudding.png",
     "traits": {
+      "creatureTypes": [
+        "ooze"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -260,7 +264,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "",
+      "acNotes": "Halve the physical portion of incoming damage; do not halve elemental damage. This percentage resistance is not flat DR.",
       "cmdNotes": "Cannot be tripped."
     },
     "coverage": {
@@ -593,7 +597,7 @@
     "creatureRole": {
       "cr": "1/2",
       "size": "Tiny",
-      "type": "Ooze [Familiar]",
+      "type": "Ooze",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite +2 (1d4)"

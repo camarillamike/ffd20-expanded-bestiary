@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Rat",
@@ -44,7 +44,7 @@
       "xp": 100,
       "alignment": "N",
       "size": "Tiny",
-      "creatureType": "Animal [Familiar]",
+      "creatureType": "Animal",
       "subtypes": [],
       "initiative": 2,
       "senses": "low-light vision, scent",
@@ -138,6 +138,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/rat.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/rat.png",
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -589,20 +593,7 @@
               "target": {
                 "value": "creature hit by Bite"
               },
-              "damage": [
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "dex"
-                  ]
-                },
-                {
-                  "formula": "1d2",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -651,7 +642,7 @@
     "creatureRole": {
       "cr": "1/4",
       "size": "Tiny",
-      "type": "Animal [Familiar]",
+      "type": "Animal",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite +4 (1d3-4 plus disease)"

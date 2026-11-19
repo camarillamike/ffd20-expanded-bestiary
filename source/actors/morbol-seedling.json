@@ -122,6 +122,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -1046,14 +1050,7 @@
             "damage": {
               "critParts": [],
               "nonCritParts": [],
-              "parts": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "str"
-                  ]
-                }
-              ]
+              "parts": []
             },
             "save": {
               "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -1065,7 +1062,8 @@
                 "Bite—injury; save Fort DC 10; frequency 1/round for 6 rounds; effect 1 Str; cure 1 save.",
                 "Duration: 6 rounds",
                 "Injury; frequency 1/round for 6 rounds; 1 Strength damage; cure 1 save.",
-                "Resolve after a successful Bite attack."
+                "Resolve after a successful Bite attack.",
+                "On a failed save, record [[1]] Strength damage on the target's ability score, not its HP."
               ],
               "footer": []
             },
@@ -1243,15 +1241,15 @@
                 "Once every 1d3 rounds, a morbol seedling can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 11) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. This is wisdom based save. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
                 "Area: 15-ft. cone",
                 "Duration: 1d4 rounds",
-                "Recharge [[1d3]] rounds.",
-                "On a failed save, drag Sickening Breath Penalty to each affected creature."
+                "On a failed save, drag Sickening Breath Penalty to each affected creature.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": []
             },
             "effectNotes": [],
             "measureTemplate": {
-              "type": "",
-              "size": null
+              "type": "cone",
+              "size": "15"
             },
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000010001"
@@ -1261,10 +1259,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d3",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -1378,7 +1377,8 @@
               }
             },
             "sourceType": "Su"
-          }
+          },
+          "roundRecharge": "1d3"
         }
       }
     },
@@ -1709,7 +1709,7 @@
         "initiative": 3,
         "size": "Tiny",
         "cr": "1/2",
-        "creatureType": "Plant [Familiar]",
+        "creatureType": "Plant",
         "subtypes": [],
         "xp": 200,
         "aura": "",

@@ -118,6 +118,12 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
       "size": "sm",
       "senses": {
         "dv": {
@@ -692,7 +698,7 @@
                 "Uses Gore attack.",
                 "Source damage: damage is 1d6+3 x 1.5.",
                 "Dynamic damage: source +3 derived as floor(@abilities.str.mod * 1.5).",
-                "Recharge [[1d4]] rounds."
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": [
                 "Source statblock: Gore +5 (1d4+3)"
@@ -710,10 +716,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -819,7 +826,8 @@
               }
             },
             "sourceType": "Ex"
-          }
+          },
+          "roundRecharge": "1d4"
         }
       }
     }

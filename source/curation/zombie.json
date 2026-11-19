@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Zombie",
@@ -151,6 +151,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/zombie.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/zombie.png",
     "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [],
       "size": "med",
       "senses": {
         "dv": {
@@ -186,8 +190,16 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
-        "custom": "5/slashing;"
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "slashing"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
       },
       "eres": {
         "value": [],

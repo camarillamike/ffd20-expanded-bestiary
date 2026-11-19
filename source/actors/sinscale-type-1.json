@@ -118,6 +118,10 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "aberration"
+      ],
+      "creatureSubtypes": [],
       "size": "sm",
       "senses": {
         "dv": {
@@ -789,8 +793,8 @@
             "notes": {
               "effect": [
                 "Once every 1d4+1 rounds, the sinscale's wings will flicker for one round. The following turn as a swift action, the sinscale shoot out spines doing 1d4+1 piercing damage within a 30 foot range at a single target.",
-                "Recharge [[1d4+1]] rounds.",
-                "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn."
+                "Telegraph: wings flicker for one round; fire the spines as a swift action on the following turn.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": []
             },
@@ -807,10 +811,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4+1",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -920,7 +925,8 @@
               }
             },
             "sourceType": "Ex"
-          }
+          },
+          "roundRecharge": "1d4+1"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.35",
+  "moduleVersion": "0.1.36",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Toad",
@@ -43,7 +43,7 @@
       "xp": 50,
       "alignment": "N",
       "size": "Diminutive",
-      "creatureType": "Animal [Familiar]",
+      "creatureType": "Animal",
       "subtypes": [],
       "initiative": 1,
       "senses": "Low-light vision, scent",
@@ -138,6 +138,10 @@
     "image": "modules/ffd20-expanded-bestiary/assets/creatures/toad.png",
     "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/toad.png",
     "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
       "size": "dim",
       "senses": {
         "dv": {
@@ -553,14 +557,7 @@
               "target": {
                 "value": "creature hit by Bite"
               },
-              "damage": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "con"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -623,14 +620,7 @@
               "target": {
                 "value": "creature striking the toad with an unarmed strike or natural weapon"
               },
-              "damage": [
-                {
-                  "formula": "1",
-                  "types": [
-                    "wis"
-                  ]
-                }
-              ],
+              "damage": [],
               "save": {
                 "type": "fort",
                 "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
@@ -707,7 +697,7 @@
     "creatureRole": {
       "cr": "1/8",
       "size": "Diminutive",
-      "type": "Animal [Familiar]",
+      "type": "Animal",
       "alignment": "N",
       "primarySourceAttacks": [
         "Bite -1 (1d2-5 plus poison)"

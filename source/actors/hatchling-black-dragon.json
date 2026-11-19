@@ -134,6 +134,12 @@
       }
     },
     "traits": {
+      "creatureTypes": [
+        "dragon"
+      ],
+      "creatureSubtypes": [
+        "shadow"
+      ],
       "size": "tiny",
       "senses": {
         "dv": {
@@ -583,7 +589,7 @@
               "nonCritParts": []
             },
             "extraAttacks": {
-              "type": "",
+              "type": "custom",
               "manual": [
                 {
                   "formula": "0",
@@ -848,14 +854,14 @@
               "effect": [
                 "Special attack listed in the source statblock: Breath Weapon (30-ft. line, 1d10 shadow damage, Reflex DC 11 half, usable every 1d4 rounds).",
                 "Area: 30-ft. line",
-                "Recharge [[1d4]] rounds."
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": []
             },
             "effectNotes": [],
             "measureTemplate": {
-              "type": "",
-              "size": null
+              "type": "ray",
+              "size": "30"
             },
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
             "_id": "act0000000007001"
@@ -865,10 +871,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -987,7 +994,8 @@
                 "raw": "14"
               }
             }
-          }
+          },
+          "roundRecharge": "1d4"
         }
       }
     },
@@ -1167,7 +1175,7 @@
               "effect": [
                 "Once every 1d4 rounds as a standard action, a black dragon reaches out with terror towards an opponent within 35 feet. The affected creature becomes frightened for 1d4 rounds. A frightened creature flees from the source of its fear as best it can. If unable to flee, it may fight. A frightened creature takes a –2 penalty on all attack rolls, saving throws, skill checks, and ability checks. A frightened creature can use special abilities, including spells, to flee; indeed, the creature must use such means if they are the only way to escape. If the subject succeeds on a Will save (DC 13), it is shaken for 1 round. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
                 "Duration: 1d4 rounds",
-                "Recharge [[1d4]] rounds."
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
               ],
               "footer": []
             },
@@ -1184,10 +1192,11 @@
         "effectNotes": [],
         "uses": {
           "value": 1,
-          "per": "",
+          "per": "charges",
           "maxFormula": "1",
-          "rechargeFormula": "1d4",
-          "rechargePeriod": "rounds"
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
         },
         "changes": [],
         "contextNotes": [],
@@ -1301,7 +1310,8 @@
               }
             },
             "sourceType": "Su"
-          }
+          },
+          "roundRecharge": "1d4"
         }
       }
     }

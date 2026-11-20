@@ -1,6 +1,10 @@
 # FF D20 Expanded Bestiary: prebuilt compendiums
 
+**0.1.42:** Create Bomb Form uses matching portraits and prototype tokens for all nine elements of Bombino and Cherry Bomb. Fire keeps the original art. Existing world actors and placed tokens keep their art. Black Magery (Increased Damage) adds the published extra die to eligible spells. For custom creatures, see [Round recharge on an owned item](docs/round-recharge.md).
+
 The Bestiary folder contains 15 Actor packs, ready when enabled. No GM import, console command, or server filesystem access is needed. The FFd20 system and FFd20 Content module are used for rules and referenced media. The source versions used for this build are recorded in source/upstream.json. Their original notices are included under notices/. The scene, players' actors, existing world copies, and original spell packs are not migrated.
+
+[Compare all 18 form portraits at token size](docs/bomb-forms.png). [Artwork notes and prompts](docs/bomb-art.md).
 
 ## Before upgrading from 0.1.40
 

@@ -7,6 +7,7 @@ export const BOMB_FORMS = {
 };
 const moduleId = "ffd20-expanded-bestiary";
 const builderId = "ffd20-bestiary-builder";
+export const TIER_TWO_NAMES = {Fire:"Balloon",Ice:"Cryonade",Wind:"Zephyr",Earth:"Fissure",Lightning:"Galvanade",Water:"Whirlpool",Holy:"Gleam",Dark:"Umbra",Arcane:"Esoteric"};
 
 // Called on packaged source data, before item lookup, never on a player's edited actor.
 export function configureBombForm(actor, form) {
@@ -28,8 +29,12 @@ export function configureBombForm(actor, form) {
   feature.flags[moduleId] = {...feature.flags[moduleId], splitBombDamage:element};
   const blast = feature.system.actions[0];
   const tierOne=actor.flags[moduleId].bombSource==="bomb-t1";
-  blast.damage.parts = [{formula:tierOne?"4d6":"1d6", types:[element,"bludgeoning"]}];
-  if(tierOne){
+  const tierTwo=actor.flags[moduleId].bombSource==="bomb-t2";
+  blast.damage.parts = [{formula:tierTwo?"6d6":tierOne?"4d6":"1d6", types:[element,"bludgeoning"]}];
+  if(tierTwo){
+    actor.system.details.cr.base=form==="Arcane"?5:4;
+    actor.system.details.xp.value=form==="Arcane"?1600:1200;
+  }else if(tierOne){
     actor.system.details.cr.base=form==="Arcane"?4:3;
     actor.system.details.xp.value=form==="Arcane"?1200:800;
   }

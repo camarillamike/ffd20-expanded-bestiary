@@ -1,0 +1,4171 @@
+{
+  "name": "Centaur Ranger",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/centaur-ranger.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 2,
+        "max": 2,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 50
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "26 vs. trip.",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Ranger (Druid spells)",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "low",
+            "class": "_hd",
+            "cl": {
+              "formula": "-3"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "wis",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      },
+      "quadruped": true
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "kna": {
+        "ability": "int",
+        "rank": 4
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 4
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 0
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 4
+      }
+    },
+    "details": {
+      "alignment": "cn",
+      "xp": {
+        "value": 1200
+      },
+      "cr": {
+        "base": 4
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 17, touch 12, flat-footed 14 (+3 armor, +3 Dex, +2 natural, -1 size)</p><p>hp 38 [52] (4d10+12)</p><p>mp 2</p><p>Fort +6, Ref +7, Will +4</p><p>Defensive Abilities Natural Armor; Resist earth 5</p><h2>Offense</h2><p>Speed 50 ft., Relentless Stride</p><p>Melee greataxe +7 (1d12+6/x3), 2 hooves +2 (1d6+2)</p><p>Ranged composite longbow +7 (1d8+4/x3)</p><p>Space 10 ft.; Reach 5 ft.</p><p>Special Attacks Predation (+1 attack/+1d6 damage)</p><p>Special Abilities Improved Quarry (move action or while charging), Quarry</p><p>Spells Known (Druid CL 1st; concentration +4)</p><p>1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor</p><h2>Statistics</h2><p>Str 19, Dex 16, Con 14, Int 10, Wis 16, Cha 8</p><p>Base Atk +4; CMB +9; CMD 22 (26 vs. trip)</p><p>Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)</p><p>*Bonus Feat</p><p>Skills Acrobatics +9, Knowledge (Nature) +7, Perception +12, Sense Motive +5, Survival +10 (+12 track)</p><p>Languages Centaur, Common</p><p>SQ Alertness, Beastmaster Tricks (Tangling Attack), Fast, Favored Enemy (Hume +2), Natural Mount, Ranger Combat Training (Precise Shot), Ranger's Bond (wolf), Track, Undersized Weapons</p><p>Gear cure potion (2), greataxe, composite longbow [+4 Str], 20 arrows, hide shirt</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "monstrousHumanoid"
+      ],
+      "creatureSubtypes": [
+        "centaur"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "languages": [
+        "Centaur",
+        "Common"
+      ],
+      "stature": "long"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "race000000000001",
+      "name": "Centaur",
+      "type": "race",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Large quadruped with a Medium torso. Wields Medium weapons; racial speed and natural armor are included.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Ranger: light or medium nonmetal armor only; no shields."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "size": "lg",
+        "speeds": {
+          "land": null,
+          "fly": null,
+          "flyManeuverability": "",
+          "swim": null,
+          "climb": null,
+          "burrow": null
+        },
+        "creatureTypes": [
+          "monstrousHumanoid"
+        ],
+        "creatureSubtypes": [
+          "centaur"
+        ],
+        "armorProf": [
+          "lgt",
+          "med"
+        ],
+        "weaponProf": [
+          "simple",
+          "martial",
+          "whip",
+          "scorpionWhip"
+        ],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "quadruped": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRace": true,
+          "lookupTypes": [
+            "race"
+          ],
+          "sourceLine": "Centaur Ranger 4",
+          "sourceRace": "Centaur",
+          "sourceFamily": "Centaur Family",
+          "authoredLocally": true,
+          "semantic044": "centaur/race"
+        }
+      }
+    },
+    {
+      "_id": "classlevel000001",
+      "name": "Ranger",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated class level from the source statblock: Centaur Ranger 4.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed equipped Acrobatics includes hide shirt ACP"
+          },
+          {
+            "formula": "2",
+            "target": "bonusFeats",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.sur",
+            "text": "Enable Tracking to include its bonus."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "ranger",
+        "subType": "base",
+        "classSubType": "base",
+        "parentClass": "",
+        "level": 4,
+        "hd": 10,
+        "hp": 30,
+        "classCastingStat": "wis",
+        "classBaseMPTypes": "halfCaster",
+        "classBaseMPauto": "no",
+        "mp": 1,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "low",
+          "spells": "",
+          "ability": "wis",
+          "cantrips": false,
+          "offset": 0,
+          "domain": 1
+        },
+        "bab": "high",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "CN",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "crf": true,
+          "han": true,
+          "hea": true,
+          "int": true,
+          "kna": true,
+          "per": true,
+          "pro": true,
+          "rid": true,
+          "ste": true,
+          "sur": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedClassLevel": true,
+          "lookupTypes": [
+            "class"
+          ],
+          "lookupSubTypes": [
+            "base"
+          ],
+          "lookupName": "Beastmaster",
+          "lookupPack": "ffd20-content.ffd20-class-pack-core_beastmaster",
+          "sheetName": "Ranger",
+          "reviewedClassProgression": true,
+          "sourceLine": "Centaur Ranger 4",
+          "sourceRace": "Centaur",
+          "sourceClass": "Ranger",
+          "sourceLevel": 4,
+          "sourceHitPoints": 38,
+          "sourceHitDice": 4,
+          "spellcasting": {
+            "kind": "class",
+            "ability": "wis",
+            "preparationMode": "spontaneous",
+            "casterType": "low",
+            "classBaseMPType": "halfCaster",
+            "baseMp": 1,
+            "finalMp": 2,
+            "printedMp": 2,
+            "mpSource": "class-statblock-printed"
+          }
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +4; CMB +9; CMD 22 (26 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +4; CMB +9; CMD 22 (26 vs. trip)",
+            "bab": 4,
+            "cmb": 9,
+            "cmd": 22
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "greataxe",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "greataxe",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d12",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "greataxe",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: greataxe +7 (1d12+6/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "ca6342ee0a264cce",
+                "name": "Predation: quarry",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "596c000554103dc6",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "insight",
+                    "formula": "1",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "9b7975f2b7bdd88d",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "nonCrit",
+                    "type": "untyped",
+                    "formula": "1d6",
+                    "damageType": [
+                      "precision"
+                    ]
+                  }
+                ]
+              },
+              {
+                "_id": "e0cf53a9b374130b",
+                "name": "Favored Enemy: Hume",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "015494c9fc135a73",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "80e5da99fd7b69ce",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "greataxe",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "greataxe",
+            "ranged": false,
+            "attackBonus": 7,
+            "damage": "1d12+6/x3",
+            "damageFormula": "1d12",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Hoof x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hoof",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Hoof 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Hoof",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Hoof +2 (1d6+2)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "63295107c73fac8e",
+                "name": "Predation: quarry",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "358dff38109f6c7d",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "insight",
+                    "formula": "1",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "e654cfd3b1cdb1f9",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "nonCrit",
+                    "type": "untyped",
+                    "formula": "1d6",
+                    "damageType": [
+                      "precision"
+                    ]
+                  }
+                ]
+              },
+              {
+                "_id": "0baba2fc80f8d58c",
+                "name": "Favored Enemy: Hume",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "de9396f1cd1f5679",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "13e07760fac5271a",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hoof",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Hoof",
+            "ranged": false,
+            "attackBonus": 2,
+            "damage": "1d6+2",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000003",
+      "name": "composite longbow",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "composite longbow",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 110,
+              "units": "ft",
+              "maxIncrements": 10
+            },
+            "actionType": "rwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": 4,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "composite longbow",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: composite longbow +7 (1d8+4/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "8b43a349a582cb2e",
+                "name": "Predation: quarry",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "e6e6599d108ba136",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "insight",
+                    "formula": "1",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "7177caff532688c7",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "nonCrit",
+                    "type": "untyped",
+                    "formula": "1d6",
+                    "damageType": [
+                      "precision"
+                    ]
+                  }
+                ]
+              },
+              {
+                "_id": "580b2a4d48de6740",
+                "name": "Favored Enemy: Hume",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "5ea86c49f4801218",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "860c42344c3a3715",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "composite-longbow",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "composite longbow",
+            "ranged": true,
+            "attackBonus": 7,
+            "damage": "1d8+4/x3",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "gear000000000001",
+      "name": "cure potion",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: cure potion (2).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "cure-potion",
+        "quantity": 2,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "cure potion",
+          "quantity": 2,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "cure potion (2)"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000002",
+      "name": "greataxe",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: greataxe.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "greataxe",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "greataxe",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "greataxe",
+          "reviewedGear": true,
+          "gearAction": {
+            "name": "greataxe",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d12",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "greataxe",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: greataxe +7 (1d12+6/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "ca6342ee0a264cce",
+                "name": "Predation: quarry",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "596c000554103dc6",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "insight",
+                    "formula": "1",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "9b7975f2b7bdd88d",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "nonCrit",
+                    "type": "untyped",
+                    "formula": "1d6",
+                    "damageType": [
+                      "precision"
+                    ]
+                  }
+                ]
+              },
+              {
+                "_id": "e0cf53a9b374130b",
+                "name": "Favored Enemy: Hume",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "015494c9fc135a73",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "80e5da99fd7b69ce",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  }
+                ]
+              }
+            ]
+          },
+          "wieldedSize": "med"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000003",
+      "name": "composite longbow",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: composite longbow.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "composite-longbow",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "composite longbow",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "composite longbow",
+          "reviewedGear": true,
+          "gearAction": {
+            "name": "composite longbow",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 110,
+              "units": "ft",
+              "maxIncrements": 10
+            },
+            "actionType": "rwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": 4,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "composite longbow",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: composite longbow +7 (1d8+4/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "8b43a349a582cb2e",
+                "name": "Predation: quarry",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "e6e6599d108ba136",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "insight",
+                    "formula": "1",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "7177caff532688c7",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "nonCrit",
+                    "type": "untyped",
+                    "formula": "1d6",
+                    "damageType": [
+                      "precision"
+                    ]
+                  }
+                ]
+              },
+              {
+                "_id": "580b2a4d48de6740",
+                "name": "Favored Enemy: Hume",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "5ea86c49f4801218",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  },
+                  {
+                    "_id": "860c42344c3a3715",
+                    "target": "damage",
+                    "subTarget": "allDamage",
+                    "critical": "normal",
+                    "type": "untyped",
+                    "formula": "2",
+                    "damageType": []
+                  }
+                ]
+              }
+            ]
+          },
+          "wieldedSize": "med",
+          "lookupName": "Composite Longbow",
+          "displayName": "Composite Longbow (+4)"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000004",
+      "name": "arrows",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: 20 arrows.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "arrows",
+        "quantity": 20,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "arrows",
+          "quantity": 20,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "20 arrows"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000005",
+      "name": "hide shirt",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: hide shirt.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "hide-shirt",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "hide shirt",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "hide shirt"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "Cheetah's Sprint",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Cheetah's Sprint.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "cheetah-s-sprint",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Cheetah's Sprint",
+          "sourceLine": "1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Cheetah's Sprint"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "Leaf",
+      "type": "spell",
+      "img": "icons/magic/nature/leaf-drip-light-green.webp",
+      "system": {
+        "description": {
+          "value": "<p>Choose the season at the target location; on a seasonless plane use No Season. <a href=\"https://finalfantasyd20.com/magic/spells/l/leaf/\">Leaf (FFd20 spell)</a>.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "f88eb3c6d47a2dd8",
+            "name": "Spring",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "range": {
+              "units": "close"
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + min(5, @cl) + @abilities.wis.mod",
+                  "types": [
+                    "wind"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "66be04834b130b84",
+            "name": "Summer",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "range": {
+              "units": "close"
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + min(5, @cl) + @abilities.wis.mod",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "5112a11d8d34e8d5",
+            "name": "Autumn",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "range": {
+              "units": "close"
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + min(5, @cl) + @abilities.wis.mod",
+                  "types": [
+                    "earth"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "2c00562cdfff45d1",
+            "name": "Winter",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "range": {
+              "units": "close"
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + min(5, @cl) + @abilities.wis.mod",
+                  "types": [
+                    "ice"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "99047120355c3a24",
+            "name": "No Season",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "range": {
+              "units": "close"
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "leaf",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Leaf",
+          "sourceLine": "1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Leaf",
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/seasonal-leaf",
+          "sourceUrl": "https://finalfantasyd20.com/magic/spells/l/leaf/"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "Wind Armor",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Wind Armor.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "wind-armor",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Wind Armor",
+          "sourceLine": "1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Wind Armor"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Alertness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Alertness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "alertness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Boon Companion",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Boon Companion.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "boon-companion",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Precise Shot",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Precise Shot.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "precise-shot",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Weapon Focus (Longbow)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Longbow).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-longbow",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000002",
+      "name": "Beastmaster Tricks",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Tangling Attack: once per round, designate one attack.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tangling Attack",
+            "actionType": "other",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "notes": {
+              "effect": [
+                "Once per round. On a hit with the designated attack, the target is entangled for one round."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000019001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "beastmaster-tricks",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Beastmaster Tricks (Tangling Attack)",
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Beastmaster Tricks",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000003",
+      "name": "Favored Enemy",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Humes only: +2 weapon attacks and damage, Bluff, Knowledge, Perception, Sense Motive and Survival.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "favored-enemy",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Favored Enemy (Hume +2)",
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Favored Enemy"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000004",
+      "name": "Ranger Combat Training",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Precise Shot bonus feat; already owned.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ranger-combat-training",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Ranger Combat Training (Precise Shot)",
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Ranger Combat Training"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000005",
+      "name": "Ranger's Bond",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The ranger is bonded to Centaur Ranger's Wolf; its own sheet carries Link and Shared Spells.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ranger-s-bond",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Ranger's Bond (wolf)",
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Ranger's Bond"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000006",
+      "name": "Track",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: Track.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "track",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "customFeature": true,
+          "sourceText": "Track",
+          "authoredLocally": false,
+          "lookupName": "Track",
+          "lookupPack": "ffd20.class-abilities",
+          "sheetName": "Track"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Predation",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Against the current quarry only. Use the optional predicate on an attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "predation",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Predation (+1 attack/+1d6 damage)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Predation"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Fast",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Centaurs gain a 10-foot racial bonus to their speed.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "fast",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "semantic044": "centaur/Fast"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Natural Armor",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Centaurs have tough skin, granting them a +2 natural armor bonus.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "natural-armor",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "semantic044": "centaur/Natural Armor"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Natural Mount",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A centaur counts as having the Mounted Combat feat only for the purpose of meeting feat prerequisites, and substitutes the Acrobatic skill for any Ride skill prerequisites when acquiring feats that have Mounted Combat as a prerequisite. Because of his equine form, a centaur can wield a lance one-handed as if mounted and deals double damage with a lance while charging. A centaur can never gain the benefit of the Mounted Combat feat (or other similar feats or effects, such as Trick Riding) if ridden by another creature.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "natural-mount",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "semantic044": "centaur/Natural Mount"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Undersized Weapons",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Although a centaur is Large, its upper torso is the same size as that of a Medium humanoid. As a result, they wield weapons as if they were one size category smaller than their actual size (Medium for most centaurs).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "undersized-weapons",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "semantic044": "centaur/Undersized Weapons"
+        }
+      }
+    },
+    {
+      "_id": "30967637183b2b9d",
+      "name": "Relentless Stride",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>On a successful Climb check move at full speed without the usual penalty; at half speed may keep using a shield.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "relentless-stride",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Relentless Stride",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Relentless Stride"
+        }
+      }
+    },
+    {
+      "_id": "a3ac084fdcf0a65a",
+      "name": "Quarry",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Designate one observed foe until replaced. Track it at normal speed; read the trail to identify the creature and signs of its condition.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Quarry",
+            "actionType": "other",
+            "activation": {
+              "type": "move",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "notes": {
+              "effect": [
+                "Designate one quarry, also possible as part of a charge."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000030001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "quarry",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Quarry",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic044": "centaur-ranger/Quarry",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "fd5b4dd28bd362a3",
+      "name": "Favored Enemy: Hume Checks",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only on checks concerning a Hume.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.blf",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.sen",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.sur",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kar",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kdu",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.ken",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kge",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.khi",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.klo",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kna",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kno",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kpl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kre",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.kte",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-on-checks-concerning-a-hume",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic044": "centaur-ranger/Favored Enemy: Hume Checks"
+        }
+      }
+    },
+    {
+      "_id": "c284eea8c42ae1f1",
+      "name": "Tracking",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use only on Survival checks to follow tracks; +10 normally, +12 tracking.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.sur",
+            "type": "circumstance",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "use-only-on-survival-checks-to-follow-tr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic044": "centaur-ranger/Tracking"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Centaur Ranger",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/centaur-ranger.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/monstrous-humanoids/centaur-family/centaur-ranger/",
+      "sourceImage": "",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/centaur-ranger.webp",
+      "packagedImageSource": "generated-local",
+      "parsed": {
+        "alignment": "CN",
+        "initiative": 3,
+        "size": "Large",
+        "cr": "4",
+        "creatureType": "Monstrous Humanoid",
+        "subtypes": [
+          "Centaur"
+        ],
+        "xp": 1200,
+        "aura": "",
+        "perception": 12,
+        "offense": {
+          "raw": [
+            "Speed 50 ft., Relentless Stride",
+            "Melee greataxe +7 (1d12+6/x3), 2 hooves +2 (1d6+2)",
+            "Ranged composite longbow +7 (1d8+4/x3)",
+            "Space 10 ft.; Reach 5 ft.",
+            "Special Attacks Predation (+1 attack/+1d6 damage)",
+            "Special Abilities Improved Quarry (move action or while charging), Quarry",
+            "Spells Known (Druid CL 1st; concentration +4)",
+            "1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor"
+          ],
+          "speed": "50 ft., Relentless Stride",
+          "melee": "greataxe +7 (1d12+6/x3), 2 hooves +2 (1d6+2)",
+          "ranged": "composite longbow +7 (1d8+4/x3)",
+          "space": "Space 10 ft.; Reach 5 ft.",
+          "specialAttacks": "Predation (+1 attack/+1d6 damage)",
+          "spellLines": [
+            "Spells Known (Druid CL 1st; concentration +4)",
+            "1st (DC 14) - Cheetah's Sprint, Leaf, Wind Armor"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 17, touch 12, flat-footed 14 (+3 armor, +3 Dex, +2 natural, -1 size)",
+            "hp 38 [52] (4d10+12)",
+            "mp 2",
+            "Fort +6, Ref +7, Will +4",
+            "Defensive Abilities Natural Armor; Resist earth 5"
+          ],
+          "ac": "AC 17, touch 12, flat-footed 14 (+3 armor, +3 Dex, +2 natural, -1 size)",
+          "hp": "hp 38 [52] (4d10+12) mp 2",
+          "hitPoints": 38,
+          "hitDice": 4,
+          "saves": "Fort +6, Ref +7, Will +4",
+          "defensiveAbilities": "Natural Armor;",
+          "dr": "",
+          "immunities": "",
+          "resistances": "earth 5",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 19, Dex 16, Con 14, Int 10, Wis 16, Cha 8",
+          "Base Atk +4; CMB +9; CMD 22 (26 vs. trip)",
+          "Feats Alertness*, Boon Companion, Precise Shot*, Weapon Focus (Longbow)",
+          "*Bonus Feat",
+          "Skills Acrobatics +9, Knowledge (Nature) +7, Perception +12, Sense Motive +5, Survival +10 (+12 track)",
+          "Languages Centaur, Common",
+          "SQ Alertness, Beastmaster Tricks (Tangling Attack), Fast, Favored Enemy (Hume +2), Natural Mount, Ranger Combat Training (Precise Shot), Ranger's Bond (wolf), Track, Undersized Weapons",
+          "Gear cure potion (2), greataxe, composite longbow [+4 Str], 20 arrows, hide shirt"
+        ],
+        "gear": [
+          {
+            "label": "Gear",
+            "items": "cure potion (2), greataxe, composite longbow, 20 arrows, hide shirt"
+          }
+        ],
+        "tactics": [],
+        "ecology": [],
+        "family": "Centaur Family",
+        "classLine": "Centaur Ranger 4",
+        "classLevels": {
+          "raceName": "Centaur",
+          "className": "Ranger",
+          "level": 4,
+          "sourceLine": "Centaur Ranger 4"
+        }
+      },
+      "review044": "centaur-ranger"
+    }
+  }
+}

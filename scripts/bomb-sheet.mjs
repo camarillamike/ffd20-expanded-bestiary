@@ -1,10 +1,11 @@
-import {BOMB_FORMS} from "./bomb-forms.mjs";
+import {BOMB_FORMS,TIER_TWO_NAMES} from "./bomb-forms.mjs";
 import {createBombVariant} from "./create-bomb.mjs";
 
 async function chooseForm(actor) {
+  const tierTwo=actor.flags["ffd20-expanded-bestiary"].bombSource==="bomb-t2";
   const form = await foundry.applications.api.DialogV2.wait({
     window:{title:"Create Bomb Form"},
-    content:'<label>New world actor <select name="form">'+Object.keys(BOMB_FORMS).map(s=>'<option>'+s+'</option>').join("")+'</select></label>',
+    content:'<label>New world actor <select name="form">'+Object.keys(BOMB_FORMS).map(s=>'<option value="'+s+'">'+(tierTwo?TIER_TWO_NAMES[s]+" ("+s+")":s)+'</option>').join("")+'</select></label>',
     buttons:[{action:"create",label:"Create Actor",default:true,callback:(_event,button)=>button.form.elements.form.value}],
     rejectClose:false,
   });

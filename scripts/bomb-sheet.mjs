@@ -1,5 +1,5 @@
 import {BOMB_FORMS} from "./bomb-forms.mjs";
-import {createBombVariant} from "./importer.mjs";
+import {createBombVariant} from "./create-bomb.mjs";
 
 async function chooseForm(actor) {
   const form = await foundry.applications.api.DialogV2.wait({

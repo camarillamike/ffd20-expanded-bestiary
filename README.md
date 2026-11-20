@@ -1,51 +1,20 @@
-# FF D20 Expanded Bestiary
+# FF D20 Expanded Bestiary: prebuilt compendiums
 
-Generated Foundry VTT module for FF D20 bestiary actors.
+The Bestiary folder contains 15 Actor packs, ready when enabled. No GM import, console command, or server filesystem access is needed. The FFd20 system and FFd20 Content module are used for rules and referenced media. The source versions used for this build are recorded in source/upstream.json. Their original notices are included under notices/. The scene, players' actors, existing world copies, and original spell packs are not migrated.
 
-## Foundry Install
+## Before upgrading from 0.1.40
 
-Install through the Foundry administrator package installer with this manifest URL:
+1. On the hosted installation, make a world backup and a module/data backup or host snapshot. World backups alone may not include module packs. Copy any personally edited bestiary pack entries to a world folder; treat the module packs as replaceable.
+2. If a journal, roll table, macro, or hotbar entry points straight into an old bestiary pack, record its target name and old UUID before updating. 0.1.40 generated different IDs on different servers. The new IDs are stable going forward, but old direct links may need relinking once. No automatic search or rewrite of the world is performed.
+3. Record the HP and scene of one existing QA token. Return to Setup before replacing the module. A host snapshot is the safest way to recover old generated pack IDs.
 
-```text
-https://raw.githubusercontent.com/camarillamike/ffd20-expanded-bestiary/main/module.json
-```
+## Live checklist for Foundry v13
 
-The installer uses the release zip referenced by `module.json`.
+- Open the world as GM. Confirm the module version and the FF D20 Expanded Bestiary folder. No "import complete" notification or console command should be required. Check Animals (24), Humanoids (21), Outsiders (19), and Undead (4). There are 107 actors in total; the NPCs pack is intentionally empty.
+- Open a humanoid family folder and drop a fresh actor into a disposable world folder. Confirm the original QA actors/tokens and their HP did not change. Test one previously recorded compendium link and repair it only if it no longer resolves.
+- From Expanded Outsiders import a **fresh Hedgehog Pie**. Self-roll Fire: the GM card should offer **Reflex DC 12** against Burning, with typed fire damage. Do not test with an old world copy.
+- From Animals, full-attack with a fresh **Coeurl Kitten**: two +4 claw rolls; a standard attack gives one. Check **Sprite** has six spells in its active Fey/Wisdom Primary book.
+- Use **Create Bomb Form** on Bombino and choose Ice. The new world actor should know Blizzard, not Fire. The original should still know Fire. Check that both portraits and item icons render.
+- Reload once; the counts and copied UUID of a new compendium entry should stay the same. On a future clean installation, repeat the pack counts and Fire test with no old import settings. A second world on the same host is not a separate clean install of the module.
 
-## Importing Actors
-
-After enabling the module in an FF D20 world as a GM, the module automatically refreshes its managed compendium packs when the packaged source version changes.
-
-Manual import is still available from the browser console:
-
-```js
-await ffd20ExpandedBestiary.importActors()
-```
-
-The importer clears and rebuilds the module compendium:
-
-```text
-FF D20 Expanded Bestiary
-```
-
-## Applying Damage
-
-In an FF D20 world, a normal click on the full **Apply Damage** button on an attack card uses each recipient's default damage reduction and energy resistance before changing HP. For example, 2 slashing damage against DR 5/bludgeoning causes no HP loss; 2 bludgeoning damage bypasses that DR.
-
-Shift-click still opens FF D20's adjustment dialog. The half-damage button, healing, and MP damage are unchanged. A GM can turn off **Apply defenses on quick damage** in the module's world settings to restore the system's normal quick-click behavior.
-
-Quick damage also respects packaged 50% resistances and splits a bomb's single Self-Destruct roll between its element and bludgeoning. Bombino and Cherry Bomb default to Fire; a GM can use **Create Bomb Form** on either sheet to create another form in the world without changing the compendium.
-
-## Current Test Scope
-
-Version 0.1.40 contains 99 distinct catalog entries, one separately playable companion, and seven additional elemental forms of Small Flan (107 actors). Updates refresh the managed compendium packs, not previously imported world actors or placed tokens. The [batch notes](docs/batch-0.1.39.md) explain the few source ambiguities and effects that need GM adjudication.
-
-Bestiary copies of Fire and Aero now offer a Reflex save on the chat card; Stabilize offers a harmless Will save. Each uses its caster's spellbook DC. This does not edit the original spell compendiums or spells already owned by PCs. To verify the update, cast Fire from a freshly imported Hedgehog Pie as a GM: the card should offer Reflex DC 12 to avoid Burning, not to halve the initial fire damage.
-
-The Centaur Forager's bonded companion is **Forager's Wolf**, in the Animals pack. Use the Forager's **Club (Shillelagh)** only after casting the spell. On the Archer's actual longbow, select **Aim** only for its chosen opponent and **Point-Blank Shot** only within 30 feet. The Striker's **Mounted Lancer** is a mounted-charge option, not extra damage on every hit.
-
-Familiar master buffs start inactive. Transfer the buff to the master and enable it there; conditional benefits appear as roll notes. Ability damage from poisons and diseases rolls in the effect notes for entry on the target's ability score, not its HP. For Marrow Drain, heal the skeleton by the actual MP lost by the target.
-
-Round-based recharge abilities spend one charge. In a running encounter with an active GM, the module restores it at the due turn using the roll printed on the card. Outside that encounter, restore it after the printed number of rounds.
-
-Each actor has a matching curation record under `source/curation/` with the source URL, parsed statblock, generated Foundry items, compendium lookup expectations, and unresolved review notes.
+If packs are empty, duplicated, or a fresh Fire card lacks the DC, stop and record the module, system, and content versions. Do not run the old import command. Use the backup if rollback is needed.

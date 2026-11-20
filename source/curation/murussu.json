@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Murussu",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/aberrations/helm-family/murussu/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Murussu.jpg",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Aberrations > Helm Family >",
+        "Murussu (CR 3)",
+        "XP 800",
+        "CE Small Aberration",
+        "Init -2; Senses Darkvision 60 ft., low-light vision; Perception +6"
+      ],
+      "DEFENSE": [
+        "AC 16, touch 9; flat-footed 16 (-2 dex, +7 natural, +1 size)",
+        "hp 30 [44] (4d8+12)",
+        "Fort +7, Ref -1, Will +5",
+        "Resist Earth 5, Ice 5, physical 50%",
+        "Weakness Fire and Lightning"
+      ],
+      "OFFENSE": [
+        "Speed 20 ft.",
+        "Melee 2 Slams +6 (1d4+2 plus slow)",
+        "Space 5 ft.; Reach 5 ft.",
+        "Special Attacks Slow (DC 13 Fort save)"
+      ],
+      "STATISTICS": [
+        "Str 14, Dex 7, Con 17, Int 4, Wis 12, Cha 12",
+        "Base Atk +3; CMB +3; CMD 12",
+        "Feats Great Fortitude, Power Attack, Toughness",
+        "Skills Acrobatics +3, Perception +6, Survival +6"
+      ],
+      "SPECIAL ABILITIES": [
+        "Slow (Ex)",
+        "Slam - injury; save Fort DC 13; frequency for 1d4 rounds; slow status effect; cure 1 save. The save DC is Wisdom-based"
+      ]
+    },
+    "parsed": {
+      "cr": "3",
+      "xp": 800,
+      "alignment": "CE",
+      "size": "Small",
+      "creatureType": "Aberration",
+      "subtypes": [],
+      "initiative": -2,
+      "senses": "Darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 16, touch 9; flat-footed 16 (-2 dex, +7 natural, +1 size)",
+          "hp 30 [44] (4d8+12)",
+          "Fort +7, Ref -1, Will +5",
+          "Resist Earth 5, Ice 5, physical 50%",
+          "Weakness Fire and Lightning"
+        ],
+        "ac": "AC 16, touch 9; flat-footed 16 (-2 dex, +7 natural, +1 size)",
+        "hp": "hp 30 [44] (4d8+12)",
+        "hitPoints": 30,
+        "hitDice": 4,
+        "saves": "Fort +7, Ref -1, Will +5",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "",
+        "resistances": "Earth 5, Ice 5, physical 50%",
+        "weaknesses": "Fire and Lightning",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 20 ft.",
+          "Melee 2 Slams +6 (1d4+2 plus slow)",
+          "Space 5 ft.; Reach 5 ft.",
+          "Special Attacks Slow (DC 13 Fort save)"
+        ],
+        "speed": "20 ft.",
+        "melee": "2 Slams +6 (1d4+2 plus slow)",
+        "ranged": "",
+        "space": "Space 5 ft.; Reach 5 ft.",
+        "specialAttacks": "Slow (DC 13 Fort save)",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 14, Dex 7, Con 17, Int 4, Wis 12, Cha 12",
+        "Base Atk +3; CMB +3; CMD 12",
+        "Feats Great Fortitude, Power Attack, Toughness",
+        "Skills Acrobatics +3, Perception +6, Survival +6"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Slow",
+          "type": "ex",
+          "description": "Slam - injury; save Fort DC 13; frequency for 1d4 rounds; slow status effect; cure 1 save. The save DC is Wisdom-based",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "A crystal helm with a glowing blue eyes, who live in caves or forest."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": true,
+      "hasImmunities": false,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "murussu.json",
+    "curationFile": "murussu.json",
+    "pack": "ffd20-expanded-bestiary_aberrations",
+    "packLabel": "FFD20 Expanded - Aberrations",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/murussu.jpg",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/murussu.jpg",
+    "traits": {
+      "creatureTypes": [
+        "aberration"
+      ],
+      "creatureSubtypes": [],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": "physical 50%"
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "fire",
+        "lightning"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 4
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 2
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 4
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 7,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 1,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Aberration"
+      ],
+      "naturalAttacks": [
+        "Slam x2"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Great Fortitude",
+        "Power Attack",
+        "Toughness"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Slow"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Slam Injury: Slow"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Aberration",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Aberration"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.acr",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.sur",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {
+            "clm": true,
+            "crf": true,
+            "fly": true,
+            "kdu": true,
+            "per": true,
+            "ste": true,
+            "swm": true
+          },
+          "level": 4,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "cmb",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Slam x2",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d4+2 plus slow",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Slam",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates slow. One successful save cures."
+              },
+              "extraAttacks": [
+                {
+                  "name": "Slam 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Great Fortitude",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Power Attack",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000003",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Slow",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 13,
+                "raw": "Fort DC 13",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "explicit-floor",
+                "base": 12,
+                "expectedDc": 13
+              }
+            ],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Slow",
+              "actionType": "save",
+              "activation": "special",
+              "touch": false,
+              "range": {
+                "value": null,
+                "units": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates slow. One successful save cures."
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "c6f185db907d1985",
+        "name": "Slam Injury: Slow",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Apply to a failed-save target; remove on one successful save."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Murussu is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "3",
+      "size": "Small",
+      "type": "Aberration",
+      "alignment": "CE",
+      "primarySourceAttacks": [
+        "2 Slams +6 (1d4+2 plus slow)"
+      ],
+      "specialAbilityNames": [
+        "Slow"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

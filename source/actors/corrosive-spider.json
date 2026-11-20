@@ -1,0 +1,1628 @@
+{
+  "name": "Corrosive Spider",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/corrosive-spider.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 30
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "31 vs. trip."
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 0
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A spider the size of a man crawls silently from the depths of its funnel-shaped web.</p><h2>Defense</h2><p>AC 16, touch 14, flat-footed 12 (+4 dex, +2 natural)</p><p>hp 30 [48] (4d10+8)</p><p>Fort +6, Ref +8, Will +1</p><p>Immune mind-affecting effects; Resist Wind 5</p><h2>Offense</h2><p>Speed 30 ft., Climb 30 ft.</p><p>Melee Bite +5 (1d6+1 plus poison)</p><p>Special Attack Corrosive Web, Critical Attack, Web (+8 ranged, DC 14, hp 4)</p><h2>Statistics</h2><p>Str 12, Dex 18, Con 14, Int -, Wis 10, Cha 2</p><p>Base Atk +4; CMB +5; CMD 19 (31 vs. trip)</p><p>Skills Climb +18, Perception +5 (+9 in webs), Stealth +9 (+13 in web); Racial Modifiers +4 Perception, +4 Stealth, +16 Climb</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 60
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "mindAffecting"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "16",
+            "target": "skill.clm",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-7",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.per",
+            "text": "in webs: source total +9 (+4 conditional adjustment)."
+          },
+          {
+            "target": "skill.ste",
+            "text": "in web: source total +13 (+4 conditional adjustment)."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 4,
+        "hd": 10,
+        "hp": 22,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 30,
+          "sourceHitDice": 4,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +4; CMB +5; CMD 19 (31 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +4; CMB +5; CMD 19 (31 vs. trip)",
+            "bab": 4,
+            "cmb": 5,
+            "cmd": 19
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On hit, resolve Poison.",
+                "On hit: resolve Poison."
+              ],
+              "footer": [
+                "Source statblock: Bite +5 (1d6+1 plus poison)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 5,
+            "damage": "1d6+1 plus poison",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Corrosive Web",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, a corrosive spider can throw a corrosive web on enemies in a 15-ft.-cone burst. All creatures caught within the cone must make a Reflex save (DC 12) or are entangled for 2d4 rounds, but can break loose by spending 1 round and making a DC 14 Strength check or Escape Artist check. The webbed victims take 1d6 points of non-elemental damage per round while in the web. The strands of the web are flammable. A magic flaming sword can slash them away as easily as a hand brushes away cobwebs. Any fire—a torch, burning oil, a flaming sword, and so forth—can set the webs alight and burn away in 1 round. All creatures within flaming webs take 2d4 points of fire damage from the flames. This save is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Corrosive Web",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in the area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod - 2",
+              "type": "ref",
+              "description": "Negates entanglement"
+            },
+            "notes": {
+              "effect": [
+                "Failure: entangled for [[2d4]] rounds. Spend one round and pass a DC 14 Strength or Escape Artist check to escape. Use Web Corrosion for each round trapped; use Burning Web only if ignited."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 15
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "corrosive-web",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 12,
+                "raw": "Reflex save (DC 12)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "derived-preferred-floor",
+                "base": 12,
+                "neededMod": 0,
+                "candidates": [
+                  "wis:floor",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 12
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "nonelemental",
+                "raw": "1d6 points of non-elemental damage"
+              },
+              {
+                "formula": "2d4",
+                "type": "fire",
+                "raw": "2d4 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "2d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "per": "day",
+            "maxFormula": "1",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Critical Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds as a standard action, the corrosive spider can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d6+1 x 1.5 for total damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Critical Attack",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "round((1d6 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Once every 1d4 rounds as a standard action, the corrosive spider can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d6+1 x 1.5 for total damage.",
+                "Uses Bite attack.",
+                "Source damage: damage is 1d6+1 x 1.5.",
+                "Dynamic damage: source +1 derived as floor(@abilities.str.mod * 1).",
+                "On hit, resolve Poison.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": [
+                "Source statblock: Bite +5 (1d6+1 plus poison)"
+              ]
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "critical-attack",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "floor((1d6+1) * 1.5)",
+              "sourceDamageFormula": "1d6+1",
+              "multiplier": "1.5",
+              "raw": "damage is 1d6+1 x 1.5"
+            },
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
+      "system": {
+        "description": {
+          "value": "<p>Bite - injury; save Fort DC 14; frequency 1/round for 4 rounds; effect 1d2 Strength damage; cure 1 save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "creature hit by Bite"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates this exposure or tick"
+            },
+            "notes": {
+              "effect": [
+                "Creature injured by the bite. Once per round for 4 rounds: record [[1d2]] Strength damage, not HP. Cure: one successful save.",
+                "Resolve after a successful Bite attack."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 14,
+                "raw": "Fort DC 14",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 12,
+                "expectedDc": 14
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d2",
+                "type": "str",
+                "raw": "1d2 Strength damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "e5c1ca5ca343fa35",
+      "name": "Web",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Normal web: a ranged touch attack entangles one creature up to one size larger; the web has 4 hp.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Web",
+            "actionType": "rwak",
+            "touch": true,
+            "attackBonus": "",
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "activation": {
+              "type": "standard",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "notes": {
+              "effect": [
+                "Maximum 50 ft. Standard action to escape: Escape Artist DC 14 or Strength DC 14 (-4 if caught). Each 5-ft. section has 4 hp; DR 5/-.",
+                "The spider can move on its web at climb speed and locate anything touching it."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": 8,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "8",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "web",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Web",
+          "configuredUses": {
+            "value": 8,
+            "per": "day",
+            "maxFormula": "8",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "authoredLocally": true,
+          "semantic043": "corrosive-spider/Web",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "fe7e048cde33fd32",
+      "name": "Web Corrosion",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per round while caught in the corrosive web.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Web Corrosion",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "target": {
+              "value": "creatures in the web"
+            },
+            "notes": {
+              "effect": [
+                "Once per round while caught in the corrosive web."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "web-corrosion",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Web Corrosion",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic043": "corrosive-spider/Web Corrosion",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "38d2dc5403b21bbe",
+      "name": "Burning Web",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only when ignited: all creatures in flaming strands take this damage; the web burns away in one round.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Burning Web",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d4",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "target": {
+              "value": "creatures in the web"
+            },
+            "notes": {
+              "effect": [
+                "Only when ignited: all creatures in flaming strands take this damage; the web burns away in one round."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000009001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "burning-web",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Burning Web",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic043": "corrosive-spider/Burning Web",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "06280b466ccd7b15",
+      "name": "On Webs",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only in its web: Perception +9 and Stealth +13.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-in-its-web-perception-9-and-steal",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic043": "corrosive-spider/buff/On Webs"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Corrosive Spider",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/corrosive-spider.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/vermin/spider-family/corrosive-spider/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Corrosive-Spider.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/corrosive-spider.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 4,
+        "size": "Medium",
+        "cr": "2",
+        "creatureType": "Magical Beast",
+        "subtypes": [],
+        "xp": 600,
+        "aura": "",
+        "perception": 5,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., Climb 30 ft.",
+            "Melee Bite +5 (1d6+1 plus poison)",
+            "Special Attack Corrosive Web, Critical Attack, Web (+8 ranged, DC 14, hp 4)"
+          ],
+          "speed": "30 ft., Climb 30 ft.",
+          "melee": "Bite +5 (1d6+1 plus poison)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Corrosive Web, Critical Attack, Web (+8 ranged, DC 14, hp 4)",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 16, touch 14, flat-footed 12 (+4 dex, +2 natural)",
+            "hp 30 [48] (4d10+8)",
+            "Fort +6, Ref +8, Will +1",
+            "Immune mind-affecting effects; Resist Wind 5"
+          ],
+          "ac": "AC 16, touch 14, flat-footed 12 (+4 dex, +2 natural)",
+          "hp": "hp 30 [48] (4d10+8)",
+          "hitPoints": 30,
+          "hitDice": 4,
+          "saves": "Fort +6, Ref +8, Will +1",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "mind-affecting effects;",
+          "resistances": "Wind 5",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 12, Dex 18, Con 14, Int -, Wis 10, Cha 2",
+          "Base Atk +4; CMB +5; CMD 19 (31 vs. trip)",
+          "Skills Climb +18, Perception +5 (+9 in webs), Stealth +9 (+13 in web); Racial Modifiers +4 Perception, +4 Stealth, +16 Climb"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Spider Family",
+        "classLine": "",
+        "classLevels": null
+      }
+    }
+  }
+}

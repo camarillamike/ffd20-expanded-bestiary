@@ -1,0 +1,844 @@
+{
+  "name": "Search Crown",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/search-crown.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 1,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -1,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 10
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {},
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Search crowns look like a totem pole of 4 mouths topped with a red cap mushroom, the main body of varying orange and brown hues. Each mouth houses razor-sharp fangs. Standing a little over two feet tall, these fungi are normally easy to spot amongst other mushrooms in the area. - Imban</p><h2>Defense</h2><p>AC 15, touch 14, flat-footed 12 (+3 Dex, +1 natural, +1 size)</p><p>HP 16 [27] (3d8+3)</p><p>Fort +4, Reflex +3, Will +1</p><p>Immune mind-affecting effects, paralysis, plant traits, poison, sleep, stun</p><p>Resist fire 5</p><h2>Offense</h2><p>Speed 10 ft.</p><p>Melee 4 bites +2 (1d4-1)</p><p>Ranged seed shot +6 (1d6+3)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks Four Laser, Seed Shot</p><h2>Statistics</h2><p>Str 8, Dex 16, Con 12, Int -, Wis 10, Cha 8</p><p>Base Atk +2; CMB +0; CMD 13</p><h2>Ecology</h2><p>Environment forest or mountains</p><p>Organization solitary or pack (3-5)</p><p>Treasure none</p><p>Digging up from the ground, search crowns are often targeted by the local wildlife as common mushrooms or fungi to dine on, however if the search crown is aware of any predators they make quick work of them with their lasers and seeds. Often grouped up in pairs or clusters/troops of up to 5, the search crown is also known to team up with bagnadranas and needle kisses.</p><p>Search crowns look like a totem pole of 4 mouths topped with a red cap mushroom, the main body of varying orange and brown hues. Each mouth houses razor-sharp fangs. Standing a little over two feet tall, these fungi are normally easy to spot amongst other mushrooms in the area.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 30
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Plant",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "plant",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 8,
+        "hp": 13,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "TN",
+        "classSkills": {
+          "per": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Plant",
+          "sourceHitPoints": 16,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "bite x4",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "bite 2"
+                },
+                {
+                  "formula": "0",
+                  "name": "bite 3"
+                },
+                {
+                  "formula": "0",
+                  "name": "bite 4"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 4 bite +2 (1d4-1)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000002001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 4,
+            "name": "bite",
+            "ranged": false,
+            "attackBonus": 2,
+            "damage": "1d4-1",
+            "damageFormula": "1d4",
+            "printedDamageBonus": -1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "seed shot",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A search crown is capable of firing a barrage of seeds as a standard action at will, dealing 1d6 bludgeoning and piercing damage, plus its Dexterity bonus, with a range increment of 100 feet.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "seed shot",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "100",
+              "units": "ft",
+              "maxIncrements": 10,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "rwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning",
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "dex",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "seed shot",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "At-will seed barrage as a standard action; add Dexterity to damage."
+              ],
+              "footer": [
+                "Source statblock: seed shot +6 (1d6+3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "seed-shot",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "seed shot",
+            "ranged": true,
+            "attackBonus": 6,
+            "damage": "1d6+3",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Four Laser",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Three times per day, a search crown can fire small bolts of homing energy from its four mouths. These bolts unerringly strike a single target within 130 feet, dealing 2d4+2 non-elemental damage as per the spell ruin.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Four Laser",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "130",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d4 + 2",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "All bolts automatically strike the same target; roll total damage once, no attack or save."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "3",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "four-laser",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "2d4 + floor(@abilities.con.mod * 2)",
+                "type": "nonelemental",
+                "raw": "2d4+2 non-elemental damage",
+                "sourceFormula": "2d4+2",
+                "damageAbility": "con",
+                "damageAbilityMultiplier": 2,
+                "damageAbilityReason": "single-matching-ability-mod"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 130,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Search Crown",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/search-crown.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/plants/cap-family/search-cap/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Search-Crown.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/search-crown.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "TN",
+        "initiative": 3,
+        "size": "Small",
+        "cr": "2",
+        "creatureType": "Plant",
+        "subtypes": [],
+        "xp": 600,
+        "aura": "",
+        "perception": 0,
+        "offense": {
+          "raw": [
+            "Speed 10 ft.",
+            "Melee 4 bites +2 (1d4-1)",
+            "Ranged seed shot +6 (1d6+3)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks Four Laser, Seed Shot"
+          ],
+          "speed": "10 ft.",
+          "melee": "4 bites +2 (1d4-1)",
+          "ranged": "seed shot +6 (1d6+3)",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "Four Laser, Seed Shot",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 15, touch 14, flat-footed 12 (+3 Dex, +1 natural, +1 size)",
+            "HP 16 [27] (3d8+3)",
+            "Fort +4, Reflex +3, Will +1",
+            "Immune mind-affecting effects, paralysis, plant traits, poison, sleep, stun",
+            "Resist fire 5"
+          ],
+          "ac": "AC 15, touch 14, flat-footed 12 (+3 Dex, +1 natural, +1 size)",
+          "hp": "HP 16 [27] (3d8+3)",
+          "hitPoints": 16,
+          "hitDice": 3,
+          "saves": "Fort +4, Reflex +3, Will +1",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "mind-affecting effects, paralysis, plant traits, poison, sleep, stun",
+          "resistances": "fire 5",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 8, Dex 16, Con 12, Int -, Wis 10, Cha 8",
+          "Base Atk +2; CMB +0; CMD 13"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [
+          "Environment forest or mountains",
+          "Organization solitary or pack (3-5)",
+          "Treasure none",
+          "Digging up from the ground, search crowns are often targeted by the local wildlife as common mushrooms or fungi to dine on, however if the search crown is aware of any predators they make quick work of them with their lasers and seeds. Often grouped up in pairs or clusters/troops of up to 5, the search crown is also known to team up with bagnadranas and needle kisses.",
+          "Search crowns look like a totem pole of 4 mouths topped with a red cap mushroom, the main body of varying orange and brown hues. Each mouth houses razor-sharp fangs. Standing a little over two feet tall, these fungi are normally easy to spot amongst other mushrooms in the area."
+        ],
+        "family": "Cap Family",
+        "classLine": "",
+        "classLevels": null
+      }
+    }
+  }
+}

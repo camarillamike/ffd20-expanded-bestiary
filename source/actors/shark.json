@@ -1,0 +1,1735 @@
+{
+  "name": "Shark",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/shark.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 13,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 4,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 0
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 60
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 3
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 0
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A brutal and omnivorous shark that will eat anything - including man. Whether because of some mystic ability or a more mundane coincidence, these sharks often are found dwelling in areas of frequent shipwrecks. Perhaps it was only after first tasting the drowned sailors of such wrecks that these sharks discovered the delights of manflesh, but they now seem to have come to view humans as quite the treat and sometimes appear near human villages.</p><h2>Defense</h2><p>AC 14, touch 10, flat-footed 13 (+1 dex, +4 natural, -1 size)</p><p>hp 16 [27] (3d8+3)</p><p>Fort +6, Ref +4, Will +2</p><p>Resist Water 10</p><p>Weakness Lightning</p><h2>Offense</h2><p>Speed swim 60 ft.</p><p>Melee Bite +4 (1d8+4/19-20 plus grab)</p><p>Space 10 ft.; Reach 5 ft.</p><p>Special Attacks Crunch, Reteethe, Swallow Whole (1d8+4 damage, AC 12, 2 Hp)</p><h2>Statistics</h2><p>Str 17, Dex 12, Con 13, Int 2, Wis 12, Cha 2</p><p>Base Atk +2; CMB +6 (+10 grapple); CMD 17</p><p>Feats Great Fortitude, Improved Initiative</p><p>Skills Perception +8, Swim +11</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [
+        "aquatic"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 30
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 180
+        },
+        "custom": "keen scent"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Animal",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.per",
+            "text": "Keen scent underwater: 180 feet; detect blood up to one mile."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "animal",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 8,
+        "hp": 13,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "sur": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Animal",
+          "sourceHitPoints": 16,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +2; CMB +6 (+10 grapple); CMD 17</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +2; CMB +6 (+10 grapple); CMD 17",
+            "bab": 2,
+            "cmb": 6,
+            "cmd": 17
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +4 (1d8+4/19-20 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 4,
+            "damage": "1d8+4/19-20 plus grab",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Initiative"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Initiative"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Swallow Whole",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Swallow Whole (1d8+4 damage, AC 12, 2 Hp).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Swallow Whole",
+            "actionType": "mcman",
+            "attackBonus": "4",
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "activation": {
+              "type": "standard",
+              "cost": 1,
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "notes": {
+              "effect": [
+                "Begin the turn grappling a creature in the mouth. On successful grapple, swallow; apply internal damage each round. Cut free with a light cutting weapon against AC 12, 2 HP."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "swallow-whole",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Swallow Whole (1d8+4 damage, AC 12, 2 Hp)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000002",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "grab",
+            "actionType": "mcman",
+            "attackBonus": "4",
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "activation": {
+              "type": "free",
+              "cost": 0,
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "notes": {
+              "effect": [
+                "After a bite hits, attempt a free grapple at +10."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Crunch",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds as a swift action, the shark can bite an additional time while tearing some flesh from their opponent. If they succeed at hitting with their bite attack, the damage is 1d8+4 plus 1d4 bleed per round for 2 rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Crunch",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "one target"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "notes": {
+              "effect": [
+                "Extra bite as a swift action. On a hit apply Crunch Bleed: [[1d4]] bleed per round for the next two rounds, not initial bite damage.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": [
+                "Source statblock: Bite +4 (1d8+4/19-20 plus grab)"
+              ]
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "crunch",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": "1d4"
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Reteethe",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whenever a shark confirms a critical hit, gain +2 temporary strength bonus (max +4) for 4 rounds. This can be refreshed.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Reteethe",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "First confirmed critical: set Reteethe buff level to 1 and activate. On a further critical set level to 2 and refresh the four-round duration; +4 maximum."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000009001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Enable after confirming a critical hit; lasts 4 rounds and stacks to a maximum +4 temporary Strength."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "reteethe",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": {
+              "active": false,
+              "changes": [
+                {
+                  "formula": "2",
+                  "target": "str",
+                  "type": "untyped",
+                  "operator": "add",
+                  "priority": 0
+                }
+              ],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Enable after confirming a critical hit; lasts 4 rounds and stacks to a maximum +4 temporary Strength."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "dex": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000002",
+      "name": "Reteethe",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>One buff only: level 1 gives +2 temporary Strength, level 2 gives +4. Refresh on another critical.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2 * min(2,max(1,@item.level))",
+            "target": "str",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "One buff only: level 1 gives +2 temporary Strength, level 2 gives +4. Refresh on another critical."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "reteethe",
+        "subType": "temp",
+        "active": false,
+        "level": 1,
+        "duration": {
+          "value": "4",
+          "units": "round",
+          "end": "turnStart"
+        },
+        "conditions": [],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Reteethe",
+            "category": "toggle",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "910a2572ebe8daac",
+      "name": "Crunch Bleed",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>On the bitten creature: roll at the start of its turn for two rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Crunch Bleed Tick",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bleed"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000011001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "On the bitten creature: roll at the start of its turn for two rounds."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "on-the-bitten-creature-roll-at-the-star",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "2",
+          "units": "round",
+          "end": "turnStart"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "f9f0fa9b27693a48",
+      "name": "Swallow Whole Damage",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>For a swallowed creature only.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Swallow Whole Damage",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Internal damage while swallowed. No bite attack or additional grapple roll."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000012001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "swallow-whole-damage",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Swallow Whole Damage",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "review043Semantic": "shark/Swallow Whole Damage"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Shark",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/shark.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/animals/shark-family/shark/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/shark.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/shark.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 5,
+        "size": "Large",
+        "cr": "2",
+        "creatureType": "Animal",
+        "subtypes": [
+          "Aquatic"
+        ],
+        "xp": 600,
+        "aura": "",
+        "perception": 8,
+        "offense": {
+          "raw": [
+            "Speed swim 60 ft.",
+            "Melee Bite +4 (1d8+4/19-20 plus grab)",
+            "Space 10 ft.; Reach 5 ft.",
+            "Special Attacks Crunch, Reteethe, Swallow Whole (1d8+4 damage, AC 12, 2 Hp)"
+          ],
+          "speed": "swim 60 ft.",
+          "melee": "Bite +4 (1d8+4/19-20 plus grab)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 5 ft.",
+          "specialAttacks": "Crunch, Reteethe, Swallow Whole (1d8+4 damage, AC 12, 2 Hp)",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 14, touch 10, flat-footed 13 (+1 dex, +4 natural, -1 size)",
+            "hp 16 [27] (3d8+3)",
+            "Fort +6, Ref +4, Will +2",
+            "Resist Water 10",
+            "Weakness Lightning"
+          ],
+          "ac": "AC 14, touch 10, flat-footed 13 (+1 dex, +4 natural, -1 size)",
+          "hp": "hp 16 [27] (3d8+3)",
+          "hitPoints": 16,
+          "hitDice": 3,
+          "saves": "Fort +6, Ref +4, Will +2",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "Water 10",
+          "weaknesses": "Lightning",
+          "sr": null
+        },
+        "statistics": [
+          "Str 17, Dex 12, Con 13, Int 2, Wis 12, Cha 2",
+          "Base Atk +2; CMB +6 (+10 grapple); CMD 17",
+          "Feats Great Fortitude, Improved Initiative",
+          "Skills Perception +8, Swim +11"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Shark Family",
+        "classLine": "",
+        "classLevels": null
+      }
+    }
+  }
+}

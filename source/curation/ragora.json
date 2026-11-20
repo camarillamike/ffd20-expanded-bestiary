@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Ragora",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/plants/grat-family/ragora/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Ragora-enemy-ffx.png",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Plants > Grat Family >",
+        "Ragora (CR 2)",
+        "XP 600",
+        "N Small Plant",
+        "Init +3; Senses Low-light vision; Perception +6"
+      ],
+      "DEFENSE": [
+        "AC 16, touch 14, flat-footed 13 (+3 dex, +2 natural, +1 size)",
+        "HP 22 [33] (3d8+9)",
+        "Fort +5, Reflex +4, Will +3",
+        "Immune plant traits; Resist Earth 5, Water 5;",
+        "Weakness Fire"
+      ],
+      "OFFENSE": [
+        "Speed 10 ft.",
+        "Range 2 Seeds +6 (1d4+1, 30 ft. range)",
+        "Special Attacks Seed Cannon"
+      ],
+      "STATISTICS": [
+        "Str 12, Dex 16, Con 14, Int 2, Wis 14, Cha 8",
+        "Base Atk +2; CMB +2; CMD 15",
+        "Feats Point-Blank Shot, Toughness",
+        "Skill Perception +6, Stealth +7 (+11 in vegetation); Racial Modifiers +4 Stealth in vegetation"
+      ],
+      "SPECIAL ABILITIES": [
+        "Seeds (Ex)",
+        "A ragora shoots out 2 seeds towards one target within a 30-foot range. If they hit, the target takes 1d4+1 piercing damage per seed. This ability does not provoke attacks of opportunity and is considered a thrown weapon for purposes of a strength bonus.",
+        "Seed Cannon (Su)",
+        "3/day, a ragora can shoot a massive burst of seeds towards a single target within 60 feet. If it hits (+6 ranged touch attack), the target takes 2d6 piercing damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 19)."
+      ]
+    },
+    "parsed": {
+      "cr": "2",
+      "xp": 600,
+      "alignment": "N",
+      "size": "Small",
+      "creatureType": "Plant",
+      "subtypes": [],
+      "initiative": 3,
+      "senses": "Low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 16, touch 14, flat-footed 13 (+3 dex, +2 natural, +1 size)",
+          "HP 22 [33] (3d8+9)",
+          "Fort +5, Reflex +4, Will +3",
+          "Immune plant traits; Resist Earth 5, Water 5;",
+          "Weakness Fire"
+        ],
+        "ac": "AC 16, touch 14, flat-footed 13 (+3 dex, +2 natural, +1 size)",
+        "hp": "HP 22 [33] (3d8+9)",
+        "hitPoints": 22,
+        "hitDice": 3,
+        "saves": "Fort +5, Reflex +4, Will +3",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "plant traits;",
+        "resistances": "Earth 5, Water 5;",
+        "weaknesses": "Fire",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 10 ft.",
+          "Range 2 Seeds +6 (1d4+1, 30 ft. range)",
+          "Special Attacks Seed Cannon"
+        ],
+        "speed": "10 ft.",
+        "melee": "",
+        "ranged": "2 Seeds +6 (1d4+1, 30 ft. range)",
+        "space": "",
+        "specialAttacks": "Seed Cannon",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 12, Dex 16, Con 14, Int 2, Wis 14, Cha 8",
+        "Base Atk +2; CMB +2; CMD 15",
+        "Feats Point-Blank Shot, Toughness",
+        "Skills Perception +6, Stealth +7 (+11 in vegetation)"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Seeds",
+          "type": "ex",
+          "description": "A ragora shoots out 2 seeds towards one target within a 30-foot range. If they hit, the target takes 1d4+1 piercing damage per seed. This ability does not provoke attacks of opportunity and is considered a thrown weapon for purposes of a strength bonus.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Seed Cannon",
+          "type": "su",
+          "description": "3/day, a ragora can shoot a massive burst of seeds towards a single target within 60 feet. If it hits (+6 ranged touch attack), the target takes 2d6 piercing damage. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 19).",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "This green leafy plant shoots out seeds at its opponents and is commonly found in pairs or more."
+    },
+    "signals": {
+      "hasMeleeAttacks": false,
+      "hasRangedAttacks": true,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": true,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "ragora.json",
+    "curationFile": "ragora.json",
+    "pack": "ffd20-expanded-bestiary_plants",
+    "packLabel": "FFD20 Expanded - Plants",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/ragora.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/ragora.png",
+    "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "fire"
+      ],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 1
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 0
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 10
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Plant"
+      ],
+      "naturalAttacks": [],
+      "weaponAttacks": [
+        "Seed x2"
+      ],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Point-Blank Shot",
+        "Toughness"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Seeds",
+        "Seed Cannon"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Vegetation Camouflage"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Plant",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Plant"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "skill.ste",
+              "text": "in vegetation: source total +11 (+4 conditional adjustment)."
+            }
+          ],
+          "classSkills": {
+            "per": true,
+            "ste": true
+          },
+          "level": 3,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Seed x2",
+        "type": "attack",
+        "subType": "weapon",
+        "category": "weaponAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Seed",
+            "ranged": true,
+            "attackBonus": 6,
+            "damage": "1d4+1, 30 ft. range",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Seed",
+              "actionType": "rwak",
+              "activation": "standard",
+              "range": {
+                "value": "30",
+                "units": "ft",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target for both seeds"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Seed 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Point-Blank Shot",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Seeds",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d4 + @abilities.str.mod",
+                "type": "piercing",
+                "raw": "1d4+1 piercing damage",
+                "sourceFormula": "1d4+1",
+                "damageAbility": "str",
+                "damageAbilityMultiplier": 1,
+                "damageAbilityReason": "weapon-like-damage"
+              }
+            ],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Seeds",
+              "actionType": "rwak",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": "30",
+                "units": "ft",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target for both seeds"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Seed 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Seed Cannon",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Su",
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "2d6",
+                "type": "piercing",
+                "raw": "2d6 piercing damage"
+              }
+            ],
+            "healing": [],
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 19)."
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Seed Cannon",
+              "actionType": "rsak",
+              "activation": "standard",
+              "touch": true,
+              "range": {
+                "value": "60",
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "one creature"
+              },
+              "damage": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "77c9e71c0df21a5c",
+        "name": "Vegetation Camouflage",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.ste",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "misc",
+              "text": "Only in vegetation: +4 racial Stealth."
+            }
+          ],
+          "level": 0
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Ragora is packaged as an FFD20 NPC actor with 7 generated item(s) across 5 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "2",
+      "size": "Small",
+      "type": "Plant",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "2 Seeds +6 (1d4+1, 30 ft. range)"
+      ],
+      "specialAbilityNames": [
+        "Seeds",
+        "Seed Cannon"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

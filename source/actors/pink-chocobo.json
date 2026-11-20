@@ -1,0 +1,1461 @@
+{
+  "name": "Pink Chocobo",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/pink-chocobo.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 1,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 60
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 3
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 1
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>The pink-plumed chocobo that can mend wounds. The pink chocobo is very common in the plains or through breeding.</p><h2>Defense</h2><p>AC 13, touch 11; flat-footed 11 (+2 dex, +2 natural, -1 size)</p><p>hp 24 [38] (3d10+8)</p><p>Fort +6, Ref +5, Will +3</p><h2>Offense</h2><p>Speed 60 ft.</p><p>Melee Bite +6 (1d8+4), Talon +6 (1d6+4)</p><p>Space 10 ft.; Reach 10 ft.</p><p>Special Attacks Choco Thunder</p><h2>Statistics</h2><p>Str 18, Dex 14, Con 15, Int 2, Wis 14, Cha 6</p><p>Base Atk +3; CMB +8; CMD 20</p><p>Feats Endurance, Run</p><p>Skills Acrobatics +9, Perception +9, Survival +3</p><p>SQ Choco Cure, Glide, Tame</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [
+        "avian"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 10,
+        "hp": 18,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 24,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +6 (1d8+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000002001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d8+4",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Talon",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Talon",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Talon",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Talon +6 (1d6+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "talon",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Talon",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d6+4",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Endurance",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Endurance.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "endurance",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Endurance, Run"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Run",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Run.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "run",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Endurance, Run"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Choco Cure",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, a pink chocobo can bestow healing on itself or an ally within 30 feet for 3d6+4 points of damage. Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Choco Cure",
+            "actionType": "heal",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "self or one ally"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "3d6 + 4",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Restore HP to one eligible recipient."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": null
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "choco-cure",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "3d6 + floor(@abilities.wis.mod * 2)",
+                "type": "points-of",
+                "raw": "3d6+4 points of damage",
+                "sourceFormula": "3d6+4",
+                "damageAbility": "wis",
+                "damageAbilityMultiplier": 2,
+                "damageAbilityReason": "ffd20-ability-type-default"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Choco Thunder",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, a pink chocobo can shoot lightning at an opponent within 30 ft. The pink chocobo must make a ranged touch attack (+6), if it hits, the attack deals 3d6+5 lightning damage and inflicts the Static status effect for 1d4 rounds (Reflex save DC 13 to negate). Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Choco Thunder",
+            "actionType": "rsak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "2",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "3d6 + 5",
+                  "types": [
+                    "lightning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "ref",
+              "description": "Negates Static only"
+            },
+            "notes": {
+              "effect": [
+                "On a ranged touch hit, deal damage; failed Reflex save also inflicts Static for [[1d4]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "choco-thunder",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 13,
+                "raw": "Reflex save DC 13",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 11,
+                "expectedDc": 13
+              }
+            ],
+            "damages": [
+              {
+                "formula": "3d6+5",
+                "type": "lightning",
+                "raw": "3d6+5 lightning damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "rsak",
+              "attackBonus": "+6",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Glide",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>For every 5 foot fallen, a pink chocobo can travel 60 feet in any direction, but cannot fall more than 5 foot/turn when gliding. A pink chocobo must end its movement at least 5 feet lower in elevation than where it started.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Glide",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "move",
+              "unchained": {
+                "cost": 1,
+                "type": "move"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Move 60 feet horizontally per 5 feet descended; fall at most 5 feet per turn and finish at least 5 feet lower."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "glide",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Tame",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Chocobos are relatively tame and docile for magical beasts, and are treated as animals for the purpose of Handle Animal checks.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tame",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Pink Chocobo",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/pink-chocobo.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/chocobo-family/pink-chocobo/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/pinkchoco.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/pink-chocobo.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 2,
+        "size": "Large",
+        "cr": "2",
+        "creatureType": "Magical Beast",
+        "subtypes": [
+          "Avian"
+        ],
+        "xp": 600,
+        "aura": "",
+        "perception": 9,
+        "offense": {
+          "raw": [
+            "Speed 60 ft.",
+            "Melee Bite +6 (1d8+4), Talon +6 (1d6+4)",
+            "Space 10 ft.; Reach 10 ft.",
+            "Special Attacks Choco Thunder"
+          ],
+          "speed": "60 ft.",
+          "melee": "Bite +6 (1d8+4), Talon +6 (1d6+4)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 10 ft.",
+          "specialAttacks": "Choco Thunder",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 13, touch 11; flat-footed 11 (+2 dex, +2 natural, -1 size)",
+            "hp 24 [38] (3d10+8)",
+            "Fort +6, Ref +5, Will +3"
+          ],
+          "ac": "AC 13, touch 11; flat-footed 11 (+2 dex, +2 natural, -1 size)",
+          "hp": "hp 24 [38] (3d10+8)",
+          "hitPoints": 24,
+          "hitDice": 3,
+          "saves": "Fort +6, Ref +5, Will +3",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 18, Dex 14, Con 15, Int 2, Wis 14, Cha 6",
+          "Base Atk +3; CMB +8; CMD 20",
+          "Feats Endurance, Run",
+          "Skills Acrobatics +9, Perception +9, Survival +3",
+          "SQ Choco Cure, Glide, Tame"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Chocobo Family",
+        "classLine": "",
+        "classLevels": null
+      }
+    }
+  }
+}

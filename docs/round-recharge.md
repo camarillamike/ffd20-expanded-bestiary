@@ -41,3 +41,9 @@ await item.update({
 3. On `updateCombat` (and on `ready` when reconnecting to a started encounter), the active GM restores **one charge** when that encounter reaches or passes the due turn, then clears the marker. Example: use it on the Worker's turn in round 2, roll a 3, and it returns on that turn in round 5.
 
 This is a combat-round timer, not a clock, a generic multi-charge pool, or a minutes/hours scheduler. Outside combat, or if that encounter ends before the cooldown expires, restore the charge manually. A plain `Recharge [[1d4]]` note by itself only prints the roll.
+
+## Daily uses with a minimum interval
+
+Blood Bat's **Screech** is the template for an ability that has both limits. Keep normal daily uses (2/day, one per use). Its separate document flag is `flags.ffd20-bestiary-builder.dailyRoundCooldown`, set to `"1d4"`; do not also set `roundRecharge`. Include a single marked interval roll in the action effect notes, as above.
+
+Using the ability spends a daily use and records the deadline on the owned item. A premature use is rejected before chat or spending. Reaching the due turn **allows** another use; it does not **restore** a daily use. Outside combat, advance Foundry's world clock rather than waiting in real time. Two unlinked NPC tokens have separate items and clocks; linked tokens of the same actor intentionally share the item.

@@ -1,0 +1,4443 @@
+{
+  "name": "Greater Quadav",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/greater-quadav.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 1,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 2,
+        "max": 2,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": -3,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -3,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 15
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 20
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Dark Knight",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "low",
+            "class": "dark-knight",
+            "cl": {
+              "formula": "-3"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "skills": {
+      "blf": {
+        "ability": "cha",
+        "rank": 4
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 1
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 4
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 800
+      },
+      "cr": {
+        "base": 3
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 20, touch 11, flat-footed 19 (+7 armor, +1 shield, +1 deflect, +1 natural)</p><p>HP 39 (4d10+16)</p><p>MP 2</p><p>Fort +8, Reflex +1, Will +7</p><p>Defensive Abilities Dark Blessing, Full Withdrawal; Resist Water 5;</p><h2>Offense</h2><p>Speed 15 ft., Swim 20 ft.</p><p>Melee Quadav Knight Sword +7 (1d10+3/19-20)</p><p>Special Attacks Abyssal Arts (6/day, Plunge, Syphon Strike), Defile (DC 15 Fort negates blind), Harm Touch (5/day, 2d6 damage), Shared Offense (+1 att/dmg, 2 rounds)</p><p>Special Abilities Darkside (+3 att/dmg, SR 12, -4 hp per round), Grit Stance (DR 3/- but -3 dmg)</p><p>Spells Known (Dark Knight CL 1st, Concentration +4)</p><p>1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon</p><h2>Statistics</h2><p>Str 16, Dex 10, Con 18, Int 12, Wis 16, Cha 16</p><p>Base Atk +4; CMB +7; CMD 17</p><p>Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack</p><p>Skills Bluff +10, Intimidate +10, Sense Motive +10</p><p>Languages Aquan, Common, Quadav</p><p>SQ First Into Battle, Hold Breath, Steel Shelled</p><p>Gear cure potion(2), 1st-lvl dark knight scroll, quadav knight sword, quadav breastplate, ring of protection +1</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "creatureSubtypes": [
+        "reptilian",
+        "quadav"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "sense good"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "languages": [
+        "Aquan",
+        "Common",
+        "Quadav"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "race000000000001",
+      "name": "Quadav",
+      "type": "race",
+      "img": "systems/ffd20/icons/skills/yellow_36.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated race placeholder from the source statblock: Quadav Dark Knight 4.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "size": "med",
+        "speeds": {
+          "land": null,
+          "fly": null,
+          "flyManeuverability": "",
+          "swim": null,
+          "climb": null,
+          "burrow": null
+        },
+        "creatureTypes": [
+          "humanoid"
+        ],
+        "creatureSubtypes": [
+          "reptilian",
+          "quadav"
+        ],
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRace": true,
+          "lookupTypes": [
+            "race"
+          ],
+          "sourceLine": "Quadav Dark Knight 4",
+          "sourceRace": "Quadav",
+          "sourceFamily": "Quadav Family"
+        }
+      }
+    },
+    {
+      "_id": "classlevel000001",
+      "name": "Dark Knight",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated class level from the source statblock: Quadav Dark Knight 4.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "aac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "sac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "ac",
+            "text": "Printed breakdown includes +7 armor and +1 shield; no separate shield is listed. Breastplate provides 6 of the 7 armor points."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "dark-knight",
+        "subType": "base",
+        "classSubType": "base",
+        "parentClass": "",
+        "level": 4,
+        "hd": 10,
+        "hp": 23,
+        "classCastingStat": "cha",
+        "classBaseMPTypes": "halfCaster",
+        "classBaseMPauto": "no",
+        "mp": 1,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "low",
+          "spells": "",
+          "ability": "cha",
+          "cantrips": false,
+          "offset": 0,
+          "domain": 1
+        },
+        "bab": "high",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dis": true,
+          "han": true,
+          "int": true,
+          "kre": true,
+          "pro": true,
+          "rid": true,
+          "sen": true,
+          "spl": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedClassLevel": true,
+          "lookupTypes": [
+            "class"
+          ],
+          "lookupSubTypes": [
+            "base"
+          ],
+          "sourceLine": "Quadav Dark Knight 4",
+          "sourceRace": "Quadav",
+          "sourceClass": "Dark Knight",
+          "sourceLevel": 4,
+          "sourceHitPoints": 39,
+          "sourceHitDice": 4,
+          "spellcasting": {
+            "kind": "class",
+            "ability": "cha",
+            "preparationMode": "spontaneous",
+            "casterType": "low",
+            "classBaseMPType": "halfCaster",
+            "baseMp": 1,
+            "finalMp": 2,
+            "printedMp": 2,
+            "mpSource": "class-statblock-printed"
+          },
+          "reviewedNotes": true
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Quadav Knight Sword",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Quadav Knight Sword",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Quadav Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Quadav Knight Sword +7 (1d10+3/19-20)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "quadav-knight-sword",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Quadav Knight Sword",
+            "ranged": false,
+            "attackBonus": 7,
+            "damage": "1d10+3/19-20",
+            "damageFormula": "1d10",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "gear000000000001",
+      "name": "cure potion",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: cure potion(2).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "cure-potion",
+        "quantity": 2,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "cure potion",
+          "quantity": 2,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "cure potion(2)"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000002",
+      "name": "1st-lvl dark knight scroll",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>1st-lvl dark knight scroll. The source specifies no spell; identify or select its spell before activation.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "1st-lvl-dark-knight-scroll",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "1st-lvl dark knight scroll",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "1st-lvl dark knight scroll",
+          "authoredLocally": true,
+          "review043Semantic": "greater-quadav:unspecified-scroll"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000003",
+      "name": "quadav knight sword",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: quadav knight sword.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "quadav-knight-sword",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "quadav knight sword",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "quadav knight sword",
+          "lookupName": "Sword, Knight",
+          "displayName": "Quadav Knight Sword",
+          "lookupPack": "ffd20-content.ffd20-items_weapons-and-ammo",
+          "reviewedGear": true,
+          "wieldedSize": "med",
+          "gearAction": {
+            "name": "Quadav Knight Sword",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Quadav Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Quadav Knight Sword +7 (1d10+3/19-20)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "gear000000000004",
+      "name": "quadav breastplate",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: quadav breastplate.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "quadav-breastplate",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "quadav breastplate",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "quadav breastplate",
+          "lookupName": "Breastplate",
+          "displayName": "quadav breastplate",
+          "wieldedSize": "med"
+        }
+      }
+    },
+    {
+      "_id": "gear000000000005",
+      "name": "ring of protection +1",
+      "type": "loot",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated inventory placeholder from Gear: ring of protection +1.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "children": []
+        },
+        "tag": "ring-of-protection-1",
+        "quantity": 1,
+        "weight": {
+          "value": 0
+        },
+        "equipped": true,
+        "carried": true,
+        "price": 0,
+        "size": "med",
+        "resizing": false,
+        "timeworn": false,
+        "artifact": false,
+        "identified": true,
+        "unidentified": {
+          "price": 0,
+          "name": ""
+        },
+        "cursed": false,
+        "cl": 0,
+        "aura": {
+          "custom": false,
+          "school": ""
+        },
+        "hp": {},
+        "broken": false,
+        "hardness": 0,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "misc",
+        "extraType": "",
+        "abundant": false
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "name": "ring of protection +1",
+          "quantity": 1,
+          "broken": false,
+          "sourceLabel": "Gear",
+          "sourceText": "ring of protection +1",
+          "wieldedSize": "med"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "dark",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: dark.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "dark",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "dark"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "dread",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: dread.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dread",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "dread",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "dread"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "endark",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: endark.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "endark",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "endark",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "endark"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000004",
+      "name": "enfeeblement",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: enfeeblement.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "enfeeblement",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "enfeeblement",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "enfeeblement"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000005",
+      "name": "fear",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: fear.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fear",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "fear",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "fear"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000006",
+      "name": "magic weapon",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: magic weapon.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "magic-weapon",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "magic weapon",
+          "sourceLine": "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "magic weapon"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Channel Smite",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Channel Smite.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "channel-smite",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Cleave",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Cleave.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "cleave",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Intimidating Prowess",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Intimidating Prowess.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "intimidating-prowess",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "First Into Battle",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special quality listed in the source statblock: First Into Battle.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "first-into-battle",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "customFeature": true,
+          "sourceText": "First Into Battle",
+          "authoredLocally": false,
+          "lookupName": "First Into Battle",
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "First Into Battle",
+          "sheetSubType": "classFeat"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Defile",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Defile (DC 15 Fort negates blind).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Defile",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates blindness for 4 rounds, not shadow damage"
+            },
+            "notes": {
+              "effect": [
+                "Only on a damaging Harm Touch; do not roll the touch damage again."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000020001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "defile",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Defile (DC 15 Fort negates blind)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            }
+          },
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Defile",
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Defile",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000002",
+      "name": "Harm Touch",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Harm Touch (5/day, 2d6 damage).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Harm Touch and Defile",
+            "actionType": "msak",
+            "touch": true,
+            "activation": {
+              "type": "standard",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates blindness for 4 rounds, not shadow damage"
+            },
+            "notes": {
+              "effect": [
+                "No attack of opportunity; on hit the target saves against Defile."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021001"
+          },
+          {
+            "name": "Heal undead",
+            "actionType": "heal",
+            "range": {
+              "units": "touch"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Heal a touched undead creature instead of dealing damage; no Defile."
+              ],
+              "footer": []
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021002"
+          },
+          {
+            "name": "Shared Offense",
+            "actionType": "other",
+            "activation": {
+              "type": "standard",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Spend 1 Harm Touch use. Adjacent allies gain +1 profane attack and damage for two rounds while adjacent.",
+                "Uses this shared pool."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021003"
+          },
+          {
+            "name": "First Into Battle",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "notes": {
+              "effect": [
+                "Spend this use to act in the surprise round even if surprised."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021004"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 5,
+          "per": "day",
+          "maxFormula": "5",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "harm-touch",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Harm Touch (5/day, 2d6 damage)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 5,
+              "per": "day",
+              "maxFormula": "5",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            }
+          },
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Harm Touch",
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Harm Touch",
+          "sheetSubType": "classFeat",
+          "configuredUses": {
+            "value": 5,
+            "per": "day",
+            "maxFormula": "5",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000003",
+      "name": "Shared Offense",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Shared Offense (+1 att/dmg, 2 rounds).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Shared Offense",
+            "actionType": "other",
+            "activation": {
+              "type": "standard",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Spend 1 Harm Touch use. Adjacent allies gain +1 profane attack and damage for two rounds while adjacent."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000022001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "shared-offense",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Shared Offense (+1 att/dmg, 2 rounds)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            }
+          },
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Shared Offense",
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Shared Offense",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "defab00000000001",
+      "name": "Dark Blessing",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Defensive ability listed in the source statblock: Dark Blessing.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dark-blessing",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "customFeature": true,
+          "sourceText": "Dark Blessing",
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupName": "Dark Blessing",
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Dark Blessing",
+          "sheetSubType": "classFeat"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Full Withdrawal",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As a full round action, quadav may retract their body into their shell. This allows them to gain DR/5 Bludgeoning. It also allows for 20% concealment. When they use this ability, they immediately fall prone, drop anything they were holding, and any item that isn't directly attached to their skin. While they are in this form, they cannot make attacks, use items, or cast spells. They must remain in this form for at least one complete round. To come out of their shell, they must spend another full round action (this does not provoke AoO).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Full Withdrawal",
+            "actionType": "other",
+            "activation": {
+              "type": "full",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Drop held and unattached items and fall prone. DR 5/bludgeoning and 20% concealment; no attacks, items, or spells. Remain withdrawn at least one complete round. Enter or leave as a full-round action; emerging does not provoke."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000024001"
+          },
+          {
+            "name": "While withdrawn: concealment",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "notes": {
+              "effect": [
+                "Incoming attack: [[1d100]]. A result of 1-20 misses from concealment. Apply DR 5 unless the damage bypasses it."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000024002"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Full-round action to withdraw into shell; must remain withdrawn for at least 1 complete round."
+          },
+          {
+            "target": "defense",
+            "text": "While withdrawn: DR 5/bludgeoning, 20% concealment, prone, drops held/unattached items, cannot attack, use items, or cast spells."
+          },
+          {
+            "target": "misc",
+            "text": "Full-round action to leave the shell; leaving does not provoke attacks of opportunity."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "full-withdrawal",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": {
+              "active": false,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Full-round action to withdraw into shell; must remain withdrawn for at least 1 complete round."
+                },
+                {
+                  "target": "defense",
+                  "text": "While withdrawn: DR 5/bludgeoning, 20% concealment, prone, drops held/unattached items, cannot attack, use items, or cast spells."
+                },
+                {
+                  "target": "misc",
+                  "text": "Full-round action to leave the shell; leaving does not provoke attacks of opportunity."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Hold Breath",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Quadav can hold their breath underwater for a number of rounds equal to four times their Constitution score before risking drowning or suffocating.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hold Breath",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "notes": {
+              "effect": [
+                "May hold breath for [[4 * @abilities.con.total]] rounds before drowning checks."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000025001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Can hold breath as described in the ability text."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "hold-breath",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Can hold breath as described in the ability text."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Steel Shelled",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As a quadav gets older the harder its shell gets and gains a +1 natural armor bonus.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "defense",
+            "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "steel-shelled",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "defense",
+                  "text": "Natural armor bonus is included in the source AC; do not apply a second stacking bonus unless recalculating AC from scratch."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "bf00000000000001",
+      "name": "Full Withdrawal",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Drop held and unattached items and fall prone. DR 5/bludgeoning and 20% concealment; no attacks, items, or spells. Remain withdrawn at least one complete round.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Drop held and unattached items and fall prone. DR 5/bludgeoning and 20% concealment; no attacks, items, or spells. Remain withdrawn at least one complete round."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "full-withdrawal",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [
+          "prone"
+        ],
+        "hideFromToken": false,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedBuff": {
+            "sourceAbility": "Full Withdrawal",
+            "category": "toggle",
+            "automationNotes": []
+          }
+        }
+      }
+    },
+    {
+      "_id": "57f908db16b76f9d",
+      "name": "Abyssal Arts",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Abyssal Arts</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Plunge",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "2",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Quadav Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Spend 1 Abyssal Arts use in Darkside. Charge up to speed, ignoring Grit Stance's speed penalty; movement does not provoke."
+              ],
+              "footer": [
+                "Source statblock: Quadav Knight Sword +7 (1d10+3/19-20)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000028001"
+          },
+          {
+            "name": "Syphon Strike",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Spend 1 Abyssal Arts use in Darkside. Heal half the damage dealt by your next successful blade attack."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000028002"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": 6,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "6",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "abyssal-arts",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Abyssal Arts",
+          "configuredUses": {
+            "value": 6,
+            "per": "day",
+            "maxFormula": "6",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "authoredLocally": false,
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Abyssal Arts",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "79392413255366f3",
+      "name": "Darkside",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Darkside</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Darkside",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "While active, sacrifice 4 actual HP now and at the start of each turn. Only your own abilities and spells can heal you. End as a move action or at -1 HP."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000029001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "darkside",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Darkside",
+          "configuredUses": null,
+          "authoredLocally": false,
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Darkside",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "85cdb9efb9041dc8",
+      "name": "Grit Stance",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Grit Stance</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grit Stance",
+            "actionType": "other",
+            "activation": {
+              "type": "move",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Enter or leave the stance as a move action."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000030001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "grit-stance",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Grit Stance",
+          "configuredUses": null,
+          "authoredLocally": false,
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Grit Stance",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "856ccc1e8c56bc36",
+      "name": "Plunge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Plunge</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Plunge",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "2",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Quadav Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Spend 1 Abyssal Arts use in Darkside. Charge up to speed, ignoring Grit Stance's speed penalty; movement does not provoke."
+              ],
+              "footer": [
+                "Source statblock: Quadav Knight Sword +7 (1d10+3/19-20)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000031001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "0",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "plunge",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Abyssal Arts - Plunge",
+          "configuredUses": {
+            "value": 0,
+            "per": "",
+            "maxFormula": "0",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "authoredLocally": false,
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Plunge",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "53969bf0e51cd29e",
+      "name": "Syphon Strike",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Syphon Strike</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Syphon Strike",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "notes": {
+              "effect": [
+                "Spend 1 Abyssal Arts use in Darkside. Heal half the damage dealt by your next successful blade attack."
+              ],
+              "footer": []
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000032001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "0",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "syphon-strike",
+        "subType": "classFeat",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Abyssal Arts - Syphon Strike",
+          "configuredUses": {
+            "value": 0,
+            "per": "",
+            "maxFormula": "0",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "authoredLocally": false,
+          "lookupPack": "ffd20-content.ffd20-class-pack-base_dark-knight",
+          "sheetName": "Syphon Strike",
+          "sheetSubType": "classFeat",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "221edb56c13049c4",
+      "name": "Darkside",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Printed Darkside: +3 melee attack/damage, SR 12 (use instead of base SR); lose 4 actual HP per turn.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "mattack",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "3",
+            "target": "mwdamage",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "12",
+            "target": "sr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Printed Darkside: +3 melee attack/damage, SR 12 (use instead of base SR); lose 4 actual HP per turn."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "printed-darkside-3-melee-attack-damage",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "c1fc9f925b955348",
+      "name": "Grit Stance",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>DR 3/-, half speed, -3 damage rolls. Plunge ignores the speed reduction.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-3",
+            "target": "wdamage",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-7.5",
+            "target": "landSpeed",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-10",
+            "target": "swimSpeed",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "DR 3/-, half speed, -3 damage rolls. Plunge ignores the speed reduction."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "dr-3-half-speed-3-damage-rolls-plu",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "60311e27e12c5f64",
+      "name": "Shared Offense",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply to affected adjacent allies.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "attack",
+            "type": "profane",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "wdamage",
+            "type": "profane",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Apply to affected adjacent allies."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-to-affected-adjacent-allies",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "2",
+          "units": "round",
+          "end": "initiative"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Greater Quadav",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/greater-quadav.webp"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/humanoids/quadav-family/greater-quadav/",
+      "sourceImage": "",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/greater-quadav.webp",
+      "packagedImageSource": "generated-local",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 3,
+        "size": "Medium",
+        "cr": "3",
+        "creatureType": "Humanoid",
+        "subtypes": [
+          "Reptilian",
+          "Quadav"
+        ],
+        "xp": 800,
+        "aura": "",
+        "perception": 3,
+        "offense": {
+          "raw": [
+            "Speed 15 ft., Swim 20 ft.",
+            "Melee Quadav Knight Sword +7 (1d10+3/19-20)",
+            "Special Attacks Abyssal Arts (6/day, Plunge, Syphon Strike), Defile (DC 15 Fort negates blind), Harm Touch (5/day, 2d6 damage), Shared Offense (+1 att/dmg, 2 rounds)",
+            "Special Abilities Darkside (+3 att/dmg, SR 12, -4 hp per round), Grit Stance (DR 3/- but -3 dmg)",
+            "Spells Known (Dark Knight CL 1st, Concentration +4)",
+            "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon"
+          ],
+          "speed": "15 ft., Swim 20 ft.",
+          "melee": "Quadav Knight Sword +7 (1d10+3/19-20)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Abyssal Arts (6/day, Plunge, Syphon Strike), Defile (DC 15 Fort negates blind), Harm Touch (5/day, 2d6 damage), Shared Offense (+1 att/dmg, 2 rounds)",
+          "spellLines": [
+            "Spells Known (Dark Knight CL 1st, Concentration +4)",
+            "1st (DC 14) - dark, dread, endark, enfeeblement, fear, magic weapon"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 20, touch 11, flat-footed 19 (+7 armor, +1 shield, +1 deflect, +1 natural)",
+            "HP 39 (4d10+16)",
+            "MP 2",
+            "Fort +8, Reflex +1, Will +7",
+            "Defensive Abilities Dark Blessing, Full Withdrawal; Resist Water 5;"
+          ],
+          "ac": "AC 20, touch 11, flat-footed 19 (+7 armor, +1 shield, +1 deflect, +1 natural)",
+          "hp": "HP 39 (4d10+16) MP 2",
+          "hitPoints": 39,
+          "hitDice": 4,
+          "saves": "Fort +8, Reflex +1, Will +7",
+          "defensiveAbilities": "Dark Blessing, Full Withdrawal;",
+          "dr": "",
+          "immunities": "",
+          "resistances": "Water 5;",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 16, Dex 10, Con 18, Int 12, Wis 16, Cha 16",
+          "Base Atk +4; CMB +7; CMD 17",
+          "Feats Channel Smite, Cleave, Intimidating Prowess, Power Attack",
+          "Skills Bluff +10, Intimidate +10, Sense Motive +10",
+          "Languages Aquan, Common, Quadav",
+          "SQ First Into Battle, Hold Breath, Steel Shelled",
+          "Gear cure potion(2), 1st-lvl dark knight scroll, quadav knight sword, quadav breastplate, ring of protection +1"
+        ],
+        "gear": [
+          {
+            "label": "Gear",
+            "items": "cure potion(2), 1st-lvl dark knight scroll, quadav knight sword, quadav breastplate, ring of protection +1"
+          }
+        ],
+        "tactics": [],
+        "ecology": [],
+        "family": "Quadav Family",
+        "classLine": "Quadav Dark Knight 4",
+        "classLevels": {
+          "raceName": "Quadav",
+          "className": "Dark Knight",
+          "level": 4,
+          "sourceLine": "Quadav Dark Knight 4"
+        }
+      }
+    }
+  }
+}

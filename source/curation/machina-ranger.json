@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Machina Ranger",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/machina-warrior/machina-ranger/",
+    "image": "",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Constructs > Magitek Family >",
+        "Machina Ranger (CR 3)",
+        "XP 800",
+        "N Small Construct (Machina)",
+        "Init +1; Senses Darkvision 60 ft., low-light vision; Perception +6"
+      ],
+      "DEFENSE": [
+        "AC 15, touch 12, flat-footed 14 (+1 dex, +3 natural, +1 size)",
+        "hp 36 [54] (4d10+14)",
+        "Fort +3, Ref +2, Will +1",
+        "Immune construct traits",
+        "Weakness critical hits, lightning"
+      ],
+      "OFFENSE": [
+        "Speed 30 ft.",
+        "Melee Gore +8 (1d4+4)",
+        "Special Attacks Critical Attack, Impale"
+      ],
+      "STATISTICS": [
+        "Str 17, Dex 12, Con -, Int 2, Wis 11, Cha 1",
+        "Base Atk +4; CMB +6; CMD 17",
+        "Feats Great Fortitude, Toughness",
+        "Skills Perception +6"
+      ],
+      "SPECIAL ABILITIES": [
+        "Critical Attack (Ex)",
+        "Once every 1d4 rounds as a standard action, the machina ranger can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+4 x 1.5 for total damage.",
+        "Impale (Ex)",
+        "When charging, a machina ranger deals double damage with gore."
+      ]
+    },
+    "parsed": {
+      "cr": "3",
+      "xp": 800,
+      "alignment": "N",
+      "size": "Small",
+      "creatureType": "Construct",
+      "subtypes": [
+        "Machina"
+      ],
+      "initiative": 1,
+      "senses": "Darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 15, touch 12, flat-footed 14 (+1 dex, +3 natural, +1 size)",
+          "hp 36 [54] (4d10+14)",
+          "Fort +3, Ref +2, Will +1",
+          "Immune construct traits",
+          "Weakness critical hits, lightning"
+        ],
+        "ac": "AC 15, touch 12, flat-footed 14 (+1 dex, +3 natural, +1 size)",
+        "hp": "hp 36 [54] (4d10+14)",
+        "hitPoints": 36,
+        "hitDice": 4,
+        "saves": "Fort +3, Ref +2, Will +1",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "construct traits",
+        "resistances": "",
+        "weaknesses": "critical hits, lightning",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 30 ft.",
+          "Melee Gore +8 (1d4+4)",
+          "Special Attacks Critical Attack, Impale"
+        ],
+        "speed": "30 ft.",
+        "melee": "Gore +8 (1d4+4)",
+        "ranged": "",
+        "space": "",
+        "specialAttacks": "Critical Attack, Impale",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 17, Dex 12, Con -, Int 2, Wis 11, Cha 1",
+        "Base Atk +4; CMB +6; CMD 17",
+        "Feats Great Fortitude, Toughness",
+        "Skills Perception +6"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Critical Attack",
+          "type": "ex",
+          "description": "Once every 1d4 rounds as a standard action, the machina ranger can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+4 x 1.5 for total damage.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Impale",
+          "type": "ex",
+          "description": "When charging, a machina ranger deals double damage with gore.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "An ancient Machina that wanders in search of Foes. Having gone over one thousand years without maintenance."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": false,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "machina-ranger.json",
+    "curationFile": "machina-ranger.json",
+    "pack": "ffd20-expanded-bestiary_constructs",
+    "packLabel": "FFD20 Expanded - Constructs",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/machina-ranger.webp",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/machina-ranger.webp",
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 4
+      }
+    },
+    "defenses": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 3,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Construct"
+      ],
+      "naturalAttacks": [
+        "Gore"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Great Fortitude",
+        "Toughness"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Critical Attack",
+        "Impale"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Weaknesses"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Construct",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Construct"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {},
+          "level": 4,
+          "hitDie": 10,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "bab",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Gore",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 8,
+            "damage": "1d4+4",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Gore",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Great Fortitude",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "weakness00000001",
+        "name": "Weaknesses",
+        "type": "feat",
+        "subType": "racial",
+        "category": "feat",
+        "generatedFlags": [
+          "generatedWeaknesses"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Critical Attack",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "criticalAttack": {
+              "attackName": "gore",
+              "damageFormula": "floor((1d6+4) * 1.5)",
+              "sourceDamageFormula": "1d6+4",
+              "multiplier": "1.5",
+              "raw": "damage is 1d6+4 x 1.5"
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Critical Attack",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "floor(1.5 * (1d6 + floor(1.5 * @abilities.str.mod)))",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Impale",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Impale",
+              "actionType": "mwak",
+              "activation": "full",
+              "attackBonus": "2",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d4 + 2 * floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Machina Ranger is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "3",
+      "size": "Small",
+      "type": "Construct",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "Gore +8 (1d4+4)"
+      ],
+      "specialAbilityNames": [
+        "Critical Attack",
+        "Impale"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

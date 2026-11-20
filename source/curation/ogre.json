@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Ogre",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/humanoids/ogre-family/ogre/",
+    "image": "",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Humanoids > Ogre Family >",
+        "Ogre (CR 3)",
+        "XP 800",
+        "CE Large Humanoid (Giant)",
+        "Init -1; Senses Darkvision 60 ft., low-light vision; Perception +5"
+      ],
+      "DEFENSE": [
+        "AC 17, touch 8, flat-footed 17 (+4 armor, -1 dex, +5 natural, -1 size)",
+        "hp 30 (4d8+12)",
+        "Fort +6, Ref +0, Will +3",
+        "Resist Ice 5",
+        "Weakness Fire"
+      ],
+      "OFFENSE": [
+        "Speed 40 ft.",
+        "Melee Greatclub +7 (2d8+7)",
+        "Ranged Javelin +1 (1d8+5)",
+        "Space 10 ft.; Reach 10 ft."
+      ],
+      "STATISTICS": [
+        "Str 21, Dex 8, Con 15, Int 6, Wis 10, Cha 7",
+        "Base Atk +3; CMB +9; CMD 18",
+        "Feats Iron Will, Toughness",
+        "Skills Climb +7, Perception +5",
+        "Languages Giant",
+        "SQ Ferocity",
+        "Gear cure potion, chain shirt, greatclub, javelins (3), 5d10 gil"
+      ],
+      "SPECIAL ABILITIES": [
+        "Ferocity (Ex)",
+        "An ogre is such a tenacious combatant that he continues to fight without penalty even while disabled or dying."
+      ]
+    },
+    "parsed": {
+      "cr": "3",
+      "xp": 800,
+      "alignment": "CE",
+      "size": "Large",
+      "creatureType": "Humanoid",
+      "subtypes": [
+        "Giant"
+      ],
+      "initiative": -1,
+      "senses": "Darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 17, touch 8, flat-footed 17 (+4 armor, -1 dex, +5 natural, -1 size)",
+          "hp 30 (4d8+12)",
+          "Fort +6, Ref +0, Will +3",
+          "Resist Ice 5",
+          "Weakness Fire"
+        ],
+        "ac": "AC 17, touch 8, flat-footed 17 (+4 armor, -1 dex, +5 natural, -1 size)",
+        "hp": "hp 30 (4d8+12)",
+        "hitPoints": 30,
+        "hitDice": 4,
+        "saves": "Fort +6, Ref +0, Will +3",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "",
+        "resistances": "Ice 5",
+        "weaknesses": "Fire",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 40 ft.",
+          "Melee Greatclub +7 (2d8+7)",
+          "Ranged Javelin +1 (1d8+5)",
+          "Space 10 ft.; Reach 10 ft."
+        ],
+        "speed": "40 ft.",
+        "melee": "Greatclub +7 (2d8+7)",
+        "ranged": "Javelin +1 (1d8+5)",
+        "space": "Space 10 ft.; Reach 10 ft.",
+        "specialAttacks": "",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 21, Dex 8, Con 15, Int 6, Wis 10, Cha 7",
+        "Base Atk +3; CMB +9; CMD 18",
+        "Feats Iron Will, Toughness",
+        "Skills Climb +7, Perception +5",
+        "Languages Giant",
+        "SQ Ferocity",
+        "Gear cure potion, chain shirt, greatclub, javelins (3), 5d10 gil"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [
+        {
+          "label": "Gear",
+          "items": "cure potion, chain shirt, greatclub, 3 javelin"
+        }
+      ],
+      "specialAbilities": [
+        {
+          "name": "Ferocity",
+          "type": "ex",
+          "description": "An ogre is such a tenacious combatant that he continues to fight without penalty even while disabled or dying.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "This creature's python-thick apish arms and stumpy legs conspire to drag its dirty knuckles through the wet grass and mud. It snarls as it charges, a sound the offspring of bear and man might make, showing flat black teeth well suited for grinding bones to paste."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": true,
+      "hasSpecialAttacks": false,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": true,
+      "hasGear": true,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": true,
+      "hasImmunities": false,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "ogre.json",
+    "curationFile": "ogre.json",
+    "pack": "ffd20-expanded-bestiary_humanoids",
+    "packLabel": "FFD20 Expanded - Humanoids",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/ogre.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/ogre.png",
+    "traits": {
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "creatureSubtypes": [
+        "giant"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "fire"
+      ],
+      "ci": [],
+      "languages": [
+        "Giant"
+      ],
+      "stature": "tall"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 2
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -3,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Humanoid"
+      ],
+      "naturalAttacks": [],
+      "weaponAttacks": [
+        "Greatclub",
+        "Javelin"
+      ],
+      "inventory": [
+        "cure potion",
+        "chain shirt",
+        "greatclub",
+        "javelin"
+      ],
+      "spells": [],
+      "feats": [
+        "Iron Will",
+        "Toughness"
+      ],
+      "specialQualities": [
+        "Loose Gil"
+      ],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Ferocity"
+      ],
+      "buffs": [],
+      "miscellaneous": []
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Humanoid",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Humanoid"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.clm",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.clm",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {
+            "clm": true,
+            "crf": true,
+            "han": true,
+            "per": true,
+            "pro": true,
+            "rid": true,
+            "ste": true,
+            "sur": true,
+            "swm": true
+          },
+          "level": 4,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Greatclub",
+        "type": "attack",
+        "subType": "weapon",
+        "category": "weaponAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Greatclub",
+            "ranged": false,
+            "attackBonus": 7,
+            "damage": "2d8+7",
+            "damageFormula": "2d8",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Greatclub",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "10",
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000002",
+        "name": "Javelin",
+        "type": "attack",
+        "subType": "weapon",
+        "category": "weaponAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Javelin",
+            "ranged": true,
+            "attackBonus": 1,
+            "damage": "1d8+5",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 5,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Javelin",
+              "actionType": "twak",
+              "activation": "standard",
+              "range": {
+                "value": "30",
+                "units": "ft",
+                "maxIncrements": 5
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "gear000000000001",
+        "name": "cure potion",
+        "type": "loot",
+        "subType": "misc",
+        "category": "inventory",
+        "generatedFlags": [
+          "generatedInventoryItem"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "inventory": {
+            "name": "cure potion",
+            "quantity": 1,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "cure potion"
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "gear000000000002",
+        "name": "chain shirt",
+        "type": "loot",
+        "subType": "misc",
+        "category": "inventory",
+        "generatedFlags": [
+          "generatedInventoryItem"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "inventory": {
+            "name": "chain shirt",
+            "quantity": 1,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "chain shirt"
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "gear000000000003",
+        "name": "greatclub",
+        "type": "loot",
+        "subType": "misc",
+        "category": "inventory",
+        "generatedFlags": [
+          "generatedInventoryItem"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "inventory": {
+            "name": "greatclub",
+            "quantity": 1,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "greatclub"
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "gear000000000004",
+        "name": "javelin",
+        "type": "loot",
+        "subType": "misc",
+        "category": "inventory",
+        "generatedFlags": [
+          "generatedInventoryItem"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "loot"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "inventory": {
+            "name": "javelin",
+            "quantity": 3,
+            "broken": false,
+            "sourceLabel": "Gear",
+            "sourceText": "3 javelin"
+          }
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Iron Will",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Ferocity",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Ferocity",
+              "actionType": "other",
+              "activation": "special",
+              "range": {
+                "value": "",
+                "units": "",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "774a091c45e53411",
+        "name": "Loose Gil",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Loose Gil",
+              "actionType": "other",
+              "activation": "special",
+              "range": {
+                "value": "",
+                "units": "",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Ogre is packaged as an FFD20 NPC actor with 11 generated item(s) across 6 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "3",
+      "size": "Large",
+      "type": "Humanoid",
+      "alignment": "CE",
+      "primarySourceAttacks": [
+        "Greatclub +7 (2d8+7)",
+        "Javelin +1 (1d8+5)"
+      ],
+      "specialAbilityNames": [
+        "Ferocity"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

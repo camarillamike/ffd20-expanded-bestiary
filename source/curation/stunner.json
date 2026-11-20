@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Stunner",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/animals/rat-family/stunner/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Stunner.png",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Animals > Rat Family >",
+        "Stunner (CR 3)",
+        "XP 800",
+        "N Small Animal",
+        "Init +4; Senses Low-light vision, scent; Perception +8"
+      ],
+      "DEFENSE": [
+        "AC 18, touch 15, flat-footed 12 (+4 dex, +3 natural, +1 size)",
+        "hp 28 (4d8+8)",
+        "Fort +6, Ref +8, Will +3; +4 vs. poison",
+        "Immune disease status effect;",
+        "Weakness Fire"
+      ],
+      "OFFENSE": [
+        "Speed 40 ft., climb 20 ft., swim 20 ft.",
+        "Melee Bite +6 (1d4+2 plus disease), 2 Claws +6 (1d3+2)",
+        "Special Attacks Critical Attack, Disease"
+      ],
+      "STATISTICS": [
+        "Str 14, Dex 18, Con 15, Int 2, Wis 15, Cha 4",
+        "Base Atk +3; CMB +4; CMD 18 (22 vs. trip)",
+        "Feats Power Attack, Skill Focus (Perception)",
+        "Skills Climb +12, Perception +8, Stealth +15, Swim +12; Racial Modifiers use Dex to modify Climb and Swim"
+      ],
+      "SPECIAL ABILITIES": [
+        "Critical Attack (ex) Once every 1d4 rounds as a standard action, the stunner can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4+2 x 1.5 for total damage.",
+        "Disease (ex) Filth fever: Bite—injury; save Fort DC 14; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based."
+      ]
+    },
+    "parsed": {
+      "cr": "3",
+      "xp": 800,
+      "alignment": "N",
+      "size": "Small",
+      "creatureType": "Animal",
+      "subtypes": [],
+      "initiative": 4,
+      "senses": "Low-light vision, scent",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 18, touch 15, flat-footed 12 (+4 dex, +3 natural, +1 size)",
+          "hp 28 (4d8+8)",
+          "Fort +6, Ref +8, Will +3; +4 vs. poison",
+          "Immune disease status effect;",
+          "Weakness Fire"
+        ],
+        "ac": "AC 18, touch 15, flat-footed 12 (+4 dex, +3 natural, +1 size)",
+        "hp": "hp 28 (4d8+8)",
+        "hitPoints": 28,
+        "hitDice": 4,
+        "saves": "Fort +6, Ref +8, Will +3; +4 vs. poison",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "disease status effect;",
+        "resistances": "",
+        "weaknesses": "Fire",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 40 ft., climb 20 ft., swim 20 ft.",
+          "Melee Bite +6 (1d4+2 plus disease), 2 Claws +6 (1d3+2)",
+          "Special Attacks Critical Attack, Disease"
+        ],
+        "speed": "40 ft., climb 20 ft., swim 20 ft.",
+        "melee": "Bite +6 (1d4+2 plus disease), 2 Claws +6 (1d3+2)",
+        "ranged": "",
+        "space": "",
+        "specialAttacks": "Critical Attack, Disease",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 14, Dex 18, Con 15, Int 2, Wis 15, Cha 4",
+        "Base Atk +3; CMB +4; CMD 18 (22 vs. trip)",
+        "Feats Power Attack, Skill Focus (Perception)",
+        "Skills Climb +12, Perception +8, Stealth +15, Swim +12; Racial Modifiers use Dex to modify Climb and Swim"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Critical Attack",
+          "type": "ex",
+          "description": "Once every 1d4 rounds as a standard action, the stunner can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 1d4+2 x 1.5 for total damage.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Disease",
+          "type": "ex",
+          "description": "Filth fever: Bite—injury; save Fort DC 14; onset 1d3 days; frequency 1/day; effect 1d3 Dex damage and 1d3 Con damage; cure 2 consecutive saves. The save DC is Constitution-based.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "A subspecies of dire rat. They used to inhabit towns, but have had to adapt to the outside world since humans destroyed their natural habitat. Because of this, it is much more resilient than normal dire rats, and has even developed resistance to poison and other toxins. It is good at stunning enemies by unleashing violent physical attacks. It is possible to avoid the stunner's attack by listening for it scurrying about in the darkness."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": false,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "stunner.json",
+    "curationFile": "stunner.json",
+    "pack": "ffd20-expanded-bestiary_animals",
+    "packLabel": "FFD20 Expanded - Animals",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/stunner.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/stunner.png",
+    "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "fire"
+      ],
+      "ci": [
+        "disease"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "clm": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 1
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 4
+      },
+      "swm": {
+        "ability": "dex",
+        "rank": 0
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 3,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 20
+        },
+        "swim": {
+          "base": 20
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "22 vs. trip.",
+      "quadruped": true
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Animal"
+      ],
+      "naturalAttacks": [
+        "Bite",
+        "Claw x2"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Power Attack",
+        "Skill Focus (Perception)"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Critical Attack",
+        "Disease"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Animal",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Animal"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "-1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "ffac",
+              "formula": "-2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "allSavingThrows",
+              "text": "+4 against poison; this is not poison immunity."
+            }
+          ],
+          "classSkills": {
+            "acr": true,
+            "clm": true,
+            "fly": true,
+            "per": true,
+            "ste": true,
+            "sur": true,
+            "swm": true
+          },
+          "level": 4,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Bite",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d4+2 plus disease",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Bite",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000002",
+        "name": "Claw x2",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d3+2",
+            "damageFormula": "1d3",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Claw",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Claw 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Power Attack",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Skill Focus (Perception)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Critical Attack",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "floor((1d4+2) * 1.5)",
+              "sourceDamageFormula": "1d4+2",
+              "multiplier": "1.5",
+              "raw": "damage is 1d4+2 x 1.5"
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Critical Attack",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "round((1d4 + floor(@abilities.str.mod * 1)) * 1.5)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Disease",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 14,
+                "raw": "Fort DC 14",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "explicit-floor",
+                "base": 12,
+                "expectedDc": 14
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d3",
+                "type": "dex",
+                "raw": "1d3 Dex damage"
+              },
+              {
+                "formula": "1d3",
+                "type": "con",
+                "raw": "1d3 Con damage"
+              }
+            ],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Disease",
+              "actionType": "save",
+              "activation": "special",
+              "touch": false,
+              "range": {
+                "value": null,
+                "units": ""
+              },
+              "target": {
+                "value": "creature hit by Bite"
+              },
+              "damage": [],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "description": "Negates filth fever; two consecutive saves cure"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Stunner is packaged as an FFD20 NPC actor with 8 generated item(s) across 5 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "3",
+      "size": "Small",
+      "type": "Animal",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "Bite +6 (1d4+2 plus disease), 2 Claws +6 (1d3+2)"
+      ],
+      "specialAbilityNames": [
+        "Critical Attack",
+        "Disease"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

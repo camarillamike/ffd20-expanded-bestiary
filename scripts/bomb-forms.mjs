@@ -27,7 +27,12 @@ export function configureBombForm(actor, form) {
   const feature = actor.items.find(i => i.name === "Self-Destruct" && i.type === "feat");
   feature.flags[moduleId] = {...feature.flags[moduleId], splitBombDamage:element};
   const blast = feature.system.actions[0];
-  blast.damage.parts = [{formula:"1d6", types:[element,"bludgeoning"]}];
+  const tierOne=actor.flags[moduleId].bombSource==="bomb-t1";
+  blast.damage.parts = [{formula:tierOne?"4d6":"1d6", types:[element,"bludgeoning"]}];
+  if(tierOne){
+    actor.system.details.cr.base=form==="Arcane"?4:3;
+    actor.system.details.xp.value=form==="Arcane"?1200:800;
+  }
   blast.notes ??= {};
   blast.notes.effect = (blast.notes.effect ?? []).filter(t => !t.startsWith("Split this roll:"));
   blast.notes.effect.push("Split this roll: half " + element + ", remainder bludgeoning. Do not roll the damage twice.");

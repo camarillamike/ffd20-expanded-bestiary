@@ -1,0 +1,839 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.43",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Sabertusk",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/animals/saberclaw-family/sabertusk/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Sabertusk.png",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Animals > Saberclaw Family >",
+        "Sabertusk (CR 3)",
+        "XP 800",
+        "N Medium Animal",
+        "Init +2; Senses Darkvision 60 ft., low-light vision, scent; Perception +8"
+      ],
+      "DEFENSE": [
+        "AC 15, touch 12, flat-footed 13 (+2 Dex, +3 natural)",
+        "hp 26 [40] (4d8+8)",
+        "Fort +6, Ref +6, Will +2",
+        "Resist Fire 5",
+        "Weakness Ice"
+      ],
+      "OFFENSE": [
+        "Speed 40 ft.",
+        "Melee 2 Claws +6 (1d6+3 plus grab), Gore +7 (1d8+3 plus trip when charging)",
+        "Space 5 ft.; Reach 5 ft.",
+        "Special Attacks Powerful Charge, Rake (2 claws +6, 1d6+3)"
+      ],
+      "STATISTICS": [
+        "Str 16, Dex 15, Con 15, Int 2, Wis 12, Cha 8",
+        "Base Atk +3; CMB +6 (+10 grapple); CMD 18 (22 vs. trip)",
+        "Feats Skill Focus (Perception), Weapon Focus (Gore)",
+        "Skills Acrobatics +7, Perception +8, Stealth +7, Swim +8; Racial Modifiers +4 Perception, +4 Survival when tracking by scent"
+      ],
+      "SPECIAL ABILITIES": [
+        "Powerful Charge (ex) A sabertusk, when it makes a charge attack, he also deals double damage with his gore attack and gains a free action to do a trip combat maneuver. On a failed combat maneuver check, the sabertusk is not tripped in return. This ability works only on creatures of a size equal to or smaller than the sabertusk."
+      ]
+    },
+    "parsed": {
+      "cr": "3",
+      "xp": 800,
+      "alignment": "N",
+      "size": "Medium",
+      "creatureType": "Animal",
+      "subtypes": [],
+      "initiative": 2,
+      "senses": "Darkvision 60 ft., low-light vision, scent",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 15, touch 12, flat-footed 13 (+2 Dex, +3 natural)",
+          "hp 26 [40] (4d8+8)",
+          "Fort +6, Ref +6, Will +2",
+          "Resist Fire 5",
+          "Weakness Ice"
+        ],
+        "ac": "AC 15, touch 12, flat-footed 13 (+2 Dex, +3 natural)",
+        "hp": "hp 26 [40] (4d8+8)",
+        "hitPoints": 26,
+        "hitDice": 4,
+        "saves": "Fort +6, Ref +6, Will +2",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "",
+        "resistances": "Fire 5",
+        "weaknesses": "Ice",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 40 ft.",
+          "Melee 2 Claws +6 (1d6+3 plus grab), Gore +7 (1d8+3 plus trip when charging)",
+          "Space 5 ft.; Reach 5 ft.",
+          "Special Attacks Powerful Charge, Rake (2 claws +6, 1d6+3)"
+        ],
+        "speed": "40 ft.",
+        "melee": "2 Claws +6 (1d6+3 plus grab), Gore +7 (1d8+3 plus trip when charging)",
+        "ranged": "",
+        "space": "Space 5 ft.; Reach 5 ft.",
+        "specialAttacks": "Powerful Charge, Rake (2 claws +6, 1d6+3)",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 16, Dex 15, Con 15, Int 2, Wis 12, Cha 8",
+        "Base Atk +3; CMB +6 (+10 grapple); CMD 18 (22 vs. trip)",
+        "Feats Skill Focus (Perception), Weapon Focus (Gore)",
+        "Skills Acrobatics +7, Perception +8, Stealth +7, Swim +8; Racial Modifiers +4 Perception, +4 Survival when tracking by scent"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Powerful Charge",
+          "type": "ex",
+          "description": "A sabertusk, when it makes a charge attack, he also deals double damage with his gore attack and gains a free action to do a trip combat maneuver. On a failed combat maneuver check, the sabertusk is not tripped in return. This ability works only on creatures of a size equal to or smaller than the sabertusk.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "It skewers prey with its tusks, extracting game from the safety and comfort of burrows."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": true,
+      "hasImmunities": false,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "sabertusk.json",
+    "curationFile": "sabertusk.json",
+    "pack": "ffd20-expanded-bestiary_animals",
+    "packLabel": "FFD20 Expanded - Animals",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/sabertusk.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/sabertusk.png",
+    "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "ice"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 2
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 2
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 2
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 3,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 4
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "22 vs. trip.",
+      "quadruped": true
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Animal"
+      ],
+      "naturalAttacks": [
+        "Claw x2",
+        "Gore"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Skill Focus (Perception)",
+        "Weapon Focus (Gore)"
+      ],
+      "specialQualities": [
+        "Charge Trip"
+      ],
+      "specialAttacks": [
+        "Rake",
+        "grab"
+      ],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Powerful Charge"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Tracking by Scent"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Animal",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Animal"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "4",
+              "type": "racial",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "skill.sur",
+              "text": "Enable Tracking by Scent only when tracking by scent. Its bonus is already included while active."
+            }
+          ],
+          "classSkills": {
+            "acr": true,
+            "clm": true,
+            "fly": true,
+            "per": true,
+            "ste": true,
+            "sur": true,
+            "swm": true
+          },
+          "level": 4,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Claw x2",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d6+3 plus grab",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Claw",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Claw 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000002",
+        "name": "Gore",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 7,
+            "damage": "1d8+3 plus trip when charging",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Gore",
+              "actionType": "mwak",
+              "activation": "standard",
+              "attackBonus": "1",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Skill Focus (Perception)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Weapon Focus (Gore)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spatk00000000001",
+        "name": "Rake",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAttacks",
+        "generatedFlags": [
+          "generatedSpecialAttack",
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "customFeature": true,
+          "specialAbility": {
+            "category": "passive",
+            "saveDCs": [],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Rake",
+              "actionType": "mwak",
+              "activation": "special",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Claw 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spatk00000000002",
+        "name": "grab",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAttacks",
+        "generatedFlags": [
+          "generatedSpecialAttack",
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "customFeature": true,
+          "specialAbility": {
+            "category": "passive",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Grab",
+              "actionType": "mcman",
+              "activation": "free",
+              "attackBonus": "4",
+              "range": {
+                "value": "",
+                "units": "",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "Apply grab on the listed natural attack hit."
+            }
+          ],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Powerful Charge",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "On a charge, double the listed gore damage."
+                }
+              ],
+              "automationNotes": []
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Powerful Charge",
+              "actionType": "mwak",
+              "activation": "full",
+              "attackBonus": "1",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d8 + 2 * @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [
+            {
+              "target": "attack",
+              "text": "On a charge, double the listed gore damage."
+            }
+          ],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "1e5f3a438c4b4999",
+        "name": "Tracking by Scent",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.sur",
+              "formula": "4",
+              "type": "circumstance",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "065498243379e384",
+        "name": "Charge Trip",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Charge Trip",
+              "actionType": "mcman",
+              "activation": "free",
+              "range": {
+                "value": "",
+                "units": "",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Sabertusk is packaged as an FFD20 NPC actor with 11 generated item(s) across 7 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "3",
+      "size": "Medium",
+      "type": "Animal",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "2 Claws +6 (1d6+3 plus grab), Gore +7 (1d8+3 plus trip when charging)"
+      ],
+      "specialAbilityNames": [
+        "Powerful Charge"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

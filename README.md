@@ -1,5 +1,7 @@
 # FF D20 Expanded Bestiary: prebuilt compendiums
 
+**0.1.43:** Adds 100 individually reviewed bestiary entries, including eight Medium Flan forms from one source. Bomb T1's Create Bomb Form action supports nine elements. The [artwork record](docs/art-043.md) distinguishes page art, compendium art, and original illustrations.
+
 **0.1.42:** Create Bomb Form uses matching portraits and prototype tokens for all nine elements of Bombino and Cherry Bomb. Fire keeps the original art. Existing world actors and placed tokens keep their art. Black Magery (Increased Damage) adds the published extra die to eligible spells. For custom creatures, see [Round recharge on an owned item](docs/round-recharge.md).
 
 The Bestiary folder contains 15 Actor packs, ready when enabled. No GM import, console command, or server filesystem access is needed. The FFd20 system and FFd20 Content module are used for rules and referenced media. The source versions used for this build are recorded in source/upstream.json. Their original notices are included under notices/. The scene, players' actors, existing world copies, and original spell packs are not migrated.
@@ -14,7 +16,13 @@ The Bestiary folder contains 15 Actor packs, ready when enabled. No GM import, c
 
 ## Live checklist for Foundry v13
 
-- Open the world as GM. Confirm the module version and the FF D20 Expanded Bestiary folder. No "import complete" notification or console command should be required. Check Animals (24), Humanoids (21), Outsiders (19), and Undead (4). There are 107 actors in total; the NPCs pack is intentionally empty.
+The [native review index](docs/native-review-043.json) records the checked source and packaged actor for each new entry. The files under `source/curation` are earlier diagnostics from before compendium items are resolved; use the native results and individual review notes for the finished actors.
+
+- Open the world as GM. Confirm version 0.1.43 and the FF D20 Expanded Bestiary folder. There are 214 actors across 15 packs; the NPCs pack is intentionally empty. No import notification or console command is needed.
+- Import a fresh Bomb T1 and create its Arcane form: CR 4, XP 1,200, distinct artwork and a mixed-type 4d6 Self-Destruct. The original should not change. Compare two Medium Flan forms: their artwork, elemental traits and assigned spells should differ.
+- On a fresh Black Widow, toggle In Webs: Perception should move from +6 to +10 and Stealth from +9 to +13, then return to baseline when switched off.
+- On a fresh Kobold Guard at STR 14, test the ordinary longspear (1d8+6) against Overhand Chop (1d8+8). At STR 16, Chop should be 1d8+10. Restore the test actor afterwards.
+- In an isolated encounter, use Screech on two unlinked Blood Bat tokens. Each should spend its own daily charge and observe its own rolled interval. When the wait ends the remaining daily charges must not increase.
 - Open a humanoid family folder and drop a fresh actor into a disposable world folder. Confirm the original QA actors/tokens and their HP did not change. Test one previously recorded compendium link and repair it only if it no longer resolves.
 - From Expanded Outsiders import a **fresh Hedgehog Pie**. Self-roll Fire: the GM card should offer **Reflex DC 12** against Burning, with typed fire damage. Do not test with an old world copy.
 - From Animals, full-attack with a fresh **Coeurl Kitten**: two +4 claw rolls; a standard attack gives one. Check **Sprite** has six spells in its active Fey/Wisdom Primary book.

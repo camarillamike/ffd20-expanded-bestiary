@@ -1,0 +1,1562 @@
+{
+  "name": "Searcher",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/searcher.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 4,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 60,
+          "maneuverability": "perfect"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "24 vs trip."
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 3
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 2
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>This small robot usually scouts out terrain or something that it must find but who really knows what they're really looking for.</p><h2>Defense</h2><p>AC 17, touch 13, flat-footed 16 (+2 Dex, +4 natural, +1 size)</p><p>hp 26 [40] (3d10+10)</p><p>Fort +1, Ref +5, Will +4</p><p>Defensive Abilities all-around vision; Immune construct traits</p><p>Weakness critical hits, lightning</p><h2>Offense</h2><p>Speed 20 ft., fly 60 ft. (perfect)</p><p>Melee 2 claws +6 (1d3+2) or integrated laser torch +6 (1d10 fire)</p><p>Ranged integrated laser pistol +6 touch (1d10 fire)</p><p>Space 5 ft.; Reach 5 ft. (10 ft. with integrated laser torch)</p><h2>Statistics</h2><p>Str 14, Dex 15, Con -, Int 10, Wis 17, Cha 1</p><p>Base Atk +3; CMB +4; CMD 16 (24 vs trip)</p><p>Feats Alertness, Lightning Reflexes</p><p>Skills Fly +12, Perception +15, Sense Motive +5, Stealth +9, Survival +5; Racial Modifiers +4 Perception</p><p>Languages Common</p><p>SQ camouflage</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection",
+        "flanking"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published flat-footed AC 16"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "cmd",
+            "text": "Steal damages machina by the amount the check exceeds CMD. No force field is listed for this searcher."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 10,
+        "hp": 26,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "clm": true,
+          "dev": true,
+          "fly": true,
+          "kar": true,
+          "kdu": true,
+          "ken": true,
+          "kge": true,
+          "khi": true,
+          "klo": true,
+          "kna": true,
+          "kno": true,
+          "kpl": true,
+          "kre": true,
+          "lin": true,
+          "per": true,
+          "sen": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 26,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +3; CMB +4; CMD 16 (24 vs trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +3; CMB +4; CMD 16 (24 vs trip)",
+            "bab": 3,
+            "cmb": 4,
+            "cmd": 16
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Claw x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Claw",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Claw +6 (1d3+2)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "claw",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 6,
+            "damage": "1d3+2",
+            "damageFormula": "1d3",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Alertness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Alertness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "alertness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Lightning Reflexes"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Lightning Reflexes"
+        }
+      }
+    },
+    {
+      "_id": "defab00000000001",
+      "name": "all-around vision",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Sees in all directions and cannot be flanked. The published Perception bonus is already included.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "all-around-vision",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "all-around vision",
+          "authoredLocally": true,
+          "review043Semantic": "searcher/all-around vision"
+        }
+      }
+    },
+    {
+      "_id": "weakness00000001",
+      "name": "Weaknesses",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_02.jpg",
+      "system": {
+        "description": {
+          "value": "<p>critical hits</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Weaknesses",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "target": {
+              "value": "self on taking extra critical damage"
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "12",
+              "description": "Staggered instead of stunned"
+            },
+            "notes": {
+              "effect": [
+                "Machina: stunned for one round on failure; staggered for one round even on success. This specific critical-hit effect overrides construct immunity."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weaknesses",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedWeaknesses": true,
+          "customFeature": true,
+          "sourceText": "critical hits"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Camouflage",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A searcher outer shell contains color-shifting screens that allow the creature to blend into any background. Though not truly invisible, they are hard to pinpoint. While using this ability, a searcher gains a +8 racial bonus on Stealth checks and has concealment from creatures more than 5 feet away.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Camouflage",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Toggle Color-Shifting Shell; concealment applies only beyond 5 feet."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "camouflage",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Integrated Laser Pistol",
+      "type": "weapon",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2+1 rounds, a searcher has a built-in laser pistol with a range of 50 ft. A laser pistol emits a beam of intensely focused light capable of burning anything it strikes. A laser attack can pass through force fields and force effects, such as a wall of force, to strike a foe beyond without damaging that field. Objects like glass or other transparent barriers do not provide cover from lasers—but unlike force barriers, a transparent physical barrier still takes damage from a laser passing through it. Invisible creatures are immune to damage caused by a laser weapon. Fog, smoke, and other clouds provide cover in addition to concealment from laser attacks. Darkness (magical or otherwise) has no effect on lasers other than providing concealment, and though a laser consists of highly focused light, it does not provide any illumination. Integrated ranged weapons do not provoke attacks of opportunity when fired in melee combat.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Integrated Laser Pistol",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "50",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "No attack of opportunity when fired in melee. Ignores force barriers; transparent physical barriers also take damage. Invisible creatures are immune. Fog/smoke give cover and concealment; darkness only conceals.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000009001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "integrated-laser-pistol",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true,
+        "quantity": 1,
+        "equipped": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "configuredUses": {
+            "value": 1,
+            "per": "charges",
+            "maxFormula": "1",
+            "rechargeFormula": "",
+            "autoDeductChargesCost": "1"
+          },
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Laser pistol",
+          "lookupPack": "ffd20.technology",
+          "name": "Integrated Laser Pistol",
+          "sheetName": "Integrated Laser Pistol",
+          "displayName": "Integrated Laser Pistol",
+          "wieldedSize": "sm",
+          "reviewedActions": true,
+          "reviewedDescription": "Built into the searcher; not removable loot. No attack of opportunity when fired in melee. Ignores force barriers; transparent physical barriers also take damage. Invisible creatures are immune. Fog/smoke give cover and concealment; darkness only conceals.",
+          "roundRecharge": "1d2+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Integrated Laser Torch",
+      "type": "weapon",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2+1 rounds, a searcher is outfitted with an integrated laser torch used to bypass barriers or restraints. When activated, the torch emits a beam of highly focused light, cutting and burning through surfaces up to 6 inches away. Attacks from a laser torch resolve as touch attacks and deal 1d10 points of fire damage. This damage is not modified further by Strength. A searcher integrated laser torch is mounted on an extending arm that allows it greater reach. When the laser torch is used as a tool or as a weapon to sunder, its damage bypasses hardness up to 20 points, and damage is not halved (as is normally the case for energy damage applied to objects) unless the object is particularly fire-resistant. A laser torch's cutting beam passes through force fields and force effects without damaging the field. Invisible objects and creatures can't be harmed by a laser torch. Integrated ranged weapons do not provoke attacks of opportunity when fired in melee combat.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Integrated Laser Torch",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Extending arm; no Strength damage. As a tool or when sundering, bypass hardness up to 20; do not halve damage to objects unless especially fire-resistant. Ignores force fields; cannot harm invisible targets. Tool cutting distance 6 inches.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": null
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000010001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "integrated-laser-torch",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true,
+        "quantity": 1,
+        "equipped": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d10",
+                "type": "fire",
+                "raw": "1d10 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "configuredUses": {
+            "value": 1,
+            "per": "charges",
+            "maxFormula": "1",
+            "rechargeFormula": "",
+            "autoDeductChargesCost": "1"
+          },
+          "generatedInventoryItem": true,
+          "lookupTypes": [
+            "weapon"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Laser torch",
+          "lookupPack": "ffd20.technology",
+          "name": "Integrated Laser Torch",
+          "sheetName": "Integrated Laser Torch",
+          "displayName": "Integrated Laser Torch",
+          "wieldedSize": "sm",
+          "reviewedActions": true,
+          "reviewedDescription": "Built into the searcher; not removable loot. Extending arm; no Strength damage. As a tool or when sundering, bypass hardness up to 20; do not halve damage to objects unless especially fire-resistant. Ignores force fields; cannot harm invisible targets. Tool cutting distance 6 inches.",
+          "roundRecharge": "1d2+1"
+        }
+      }
+    },
+    {
+      "_id": "dd9578d27af6b8d0",
+      "name": "Color-Shifting Shell",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>While camouflaged: +8 racial Stealth and concealment from observers more than 5 feet away.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "While camouflaged: +8 racial Stealth and concealment from observers more than 5 feet away."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "while-camouflaged-8-racial-stealth-and",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Searcher",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/searcher.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/scouter-bot/searcher/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Searcher.gif",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/searcher.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 2,
+        "size": "Small",
+        "cr": "2",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Machina"
+        ],
+        "xp": 600,
+        "aura": "",
+        "perception": 15,
+        "offense": {
+          "raw": [
+            "Speed 20 ft., fly 60 ft. (perfect)",
+            "Melee 2 claws +6 (1d3+2) or integrated laser torch +6 (1d10 fire)",
+            "Ranged integrated laser pistol +6 touch (1d10 fire)",
+            "Space 5 ft.; Reach 5 ft. (10 ft. with integrated laser torch)"
+          ],
+          "speed": "20 ft., fly 60 ft. (perfect)",
+          "melee": "2 claws +6 (1d3+2)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft. (10 ft. with integrated laser torch)",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 17, touch 13, flat-footed 16 (+2 Dex, +4 natural, +1 size)",
+            "hp 26 [40] (3d10+10)",
+            "Fort +1, Ref +5, Will +4",
+            "Defensive Abilities all-around vision; Immune construct traits",
+            "Weakness critical hits, lightning"
+          ],
+          "ac": "AC 17, touch 13, flat-footed 16 (+2 Dex, +4 natural, +1 size)",
+          "hp": "hp 26 [40] (3d10+10)",
+          "hitPoints": 26,
+          "hitDice": 3,
+          "saves": "Fort +1, Ref +5, Will +4",
+          "defensiveAbilities": "all-around vision;",
+          "dr": "",
+          "immunities": "construct traits",
+          "resistances": "",
+          "weaknesses": "critical hits, lightning",
+          "sr": null
+        },
+        "statistics": [
+          "Str 14, Dex 15, Con -, Int 10, Wis 17, Cha 1",
+          "Base Atk +3; CMB +4; CMD 16 (24 vs trip)",
+          "Feats Alertness, Lightning Reflexes",
+          "Skills Fly +12, Perception +15, Sense Motive +5, Stealth +9, Survival +5; Racial Modifiers +4 Perception",
+          "Languages Common",
+          "SQ camouflage"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Magitek Family",
+        "classLine": "",
+        "classLevels": null
+      }
+    }
+  }
+}

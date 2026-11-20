@@ -1,5 +1,6 @@
+import { completeOwnedSpellSave } from "./spell-saves.mjs";
 const MODULE_ID = "ffd20-expanded-bestiary";
-const ACTOR_SOURCE_VERSION = "0.1.39-reviewed";
+const ACTOR_SOURCE_VERSION = "0.1.40-reviewed";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -271,6 +272,7 @@ function applyPlaceholderDetails(source, item) {
     if (item.system?.creatureSubtypes?.length) source.system.creatureSubtypes = item.system.creatureSubtypes;
   }
   if (flags.generatedSpellReference && source.system) {
+    completeOwnedSpellSave(source);
     if (item.system?.spellbook) source.system.spellbook = item.system.spellbook;
     if (Number.isFinite(item.system?.level)) source.system.level = item.system.level;
     if (item.system?.atWill) source.system.atWill = true;

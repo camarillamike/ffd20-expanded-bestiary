@@ -38,7 +38,9 @@ Quick damage also respects packaged 50% resistances and splits a bomb's single S
 
 ## Current Test Scope
 
-Version 0.1.39 contains 99 distinct catalog entries, one separately playable companion, and seven additional elemental forms of Small Flan (107 actors). Updates refresh the managed compendium packs, not previously imported world actors or placed tokens. The [batch notes](docs/batch-0.1.39.md) explain the few source ambiguities and effects that need GM adjudication.
+Version 0.1.40 contains 99 distinct catalog entries, one separately playable companion, and seven additional elemental forms of Small Flan (107 actors). Updates refresh the managed compendium packs, not previously imported world actors or placed tokens. The [batch notes](docs/batch-0.1.39.md) explain the few source ambiguities and effects that need GM adjudication.
+
+Bestiary copies of Fire and Aero now offer a Reflex save on the chat card; Stabilize offers a harmless Will save. Each uses its caster's spellbook DC. This does not edit the original spell compendiums or spells already owned by PCs. To verify the update, cast Fire from a freshly imported Hedgehog Pie as a GM: the card should offer Reflex DC 12 to avoid Burning, not to halve the initial fire damage.
 
 The Centaur Forager's bonded companion is **Forager's Wolf**, in the Animals pack. Use the Forager's **Club (Shillelagh)** only after casting the spell. On the Archer's actual longbow, select **Aim** only for its chosen opponent and **Point-Blank Shot** only within 30 feet. The Striker's **Mounted Lancer** is a mounted-charge option, not extra damage on every hit.
 

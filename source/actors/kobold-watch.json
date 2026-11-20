@@ -97,7 +97,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain.",
+      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain. The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": ""
     },
     "skills": {
@@ -119,6 +119,7 @@
       }
     },
     "details": {
+      "alignment": "le",
       "xp": {
         "value": 200
       },
@@ -294,6 +295,14 @@
             "operator": "add",
             "priority": 0,
             "flavor": "Published kdu total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published AC breakdown"
           }
         ],
         "contextNotes": [
@@ -415,11 +424,11 @@
               "minUnits": ""
             },
             "actionType": "mwak",
-            "attackBonus": "1",
+            "attackBonus": "floor((@classes.warrior.level + 3) / 4)",
             "damage": {
               "parts": [
                 {
-                  "formula": "1d8",
+                  "formula": "1d8 + floor((@classes.warrior.level + 3) / 4)",
                   "types": [
                     "piercing"
                   ]
@@ -440,7 +449,7 @@
             "ability": {
               "attack": "str",
               "damage": "str",
-              "damageMult": 2,
+              "damageMult": 1.5,
               "max": null,
               "critRange": 20,
               "critMult": 3
@@ -812,7 +821,80 @@
           "quantity": 1,
           "broken": false,
           "sourceLabel": "Gear",
-          "sourceText": "Spear"
+          "sourceText": "Spear",
+          "reviewedGear": true,
+          "gearAction": {
+            "name": "Spear",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "floor((@classes.warrior.level + 3) / 4)",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8 + floor((@classes.warrior.level + 3) / 4)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Spear",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Spear +3 (1d8+2/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            }
+          },
+          "chosenWeaponBonus": "floor((@classes.warrior.level + 3) / 4)"
         }
       }
     },
@@ -1110,7 +1192,7 @@
       "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
       "system": {
         "description": {
-          "value": "<p>Special quality listed in the source statblock: Chosen Weapon +1 (Polearms).</p>",
+          "value": "<p>Chosen Weapon grants its level-based bonus to attacks and damage with the selected weapon group only. It is included on the equipped Spear actions, not on unrelated weapons.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -1157,11 +1239,13 @@
           "lookupTypes": [
             "feat"
           ],
-          "lookupSubTypes": [
-            "classFeat"
-          ],
+          "lookupSubTypes": [],
           "customFeature": true,
-          "sourceText": "Chosen Weapon +1 (Polearms)"
+          "sourceText": "Chosen Weapon +1 (Polearms)",
+          "lookupPack": "ffd20-content.ffd20-class-pack-core_warrior",
+          "lookupName": "Chosen Weapon: Pick one",
+          "authoredLocally": false,
+          "scopedWeaponBonus": true
         }
       }
     },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.36",
+  "moduleVersion": "0.1.39",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Kobold Watch",
@@ -332,7 +332,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain.",
+      "acNotes": "+2 dodge bonus to AC in caves and rocky terrain. The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": ""
     },
     "coverage": {
@@ -441,6 +441,12 @@
               "formula": "1",
               "type": "untyped",
               "operator": "add"
+            },
+            {
+              "target": "ffac",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
             }
           ],
           "contextNotes": [
@@ -507,7 +513,7 @@
               "name": "Spear",
               "actionType": "mwak",
               "activation": "standard",
-              "attackBonus": "1",
+              "attackBonus": "floor((@classes.warrior.level + 3) / 4)",
               "range": {
                 "value": "reach",
                 "units": "natural",
@@ -520,7 +526,7 @@
               },
               "damage": [
                 {
-                  "formula": "1d8",
+                  "formula": "1d8 + floor((@classes.warrior.level + 3) / 4)",
                   "types": [
                     "piercing"
                   ]
@@ -803,9 +809,7 @@
           "expectedTypes": [
             "feat"
           ],
-          "expectedSubTypes": [
-            "classFeat"
-          ],
+          "expectedSubTypes": [],
           "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
         },
         "sourceFlagData": {

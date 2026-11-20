@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.36",
+  "moduleVersion": "0.1.39",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Cherry Bomb",
@@ -188,24 +188,20 @@
       },
       "eres": {
         "value": [],
-        "custom": "Forward element of its type by 50%"
+        "custom": "ice 50%"
       },
       "cres": "",
       "di": [
-        "precision",
-        "Element of its type"
+        "fire"
       ],
-      "dv": [],
+      "dv": [
+        "water"
+      ],
       "ci": [
         "bleed",
         "paralyze",
         "poison",
-        "sleep",
-        "stun",
-        "fatigue",
-        "exhausted",
-        "critical hits",
-        "flanking"
+        "sleep"
       ],
       "languages": [],
       "stature": "tall"
@@ -307,7 +303,7 @@
       "buffs": [],
       "miscellaneous": [
         "Source Statblock Adjustments",
-        "Weaknesses",
+        "Elemental Affinity",
         "Familiar Master Bonus",
         "Self-Destruct Growth 1",
         "Self-Destruct Growth 2",
@@ -385,12 +381,6 @@
             {
               "target": "cmb",
               "formula": "7",
-              "type": "untyped",
-              "operator": "add"
-            },
-            {
-              "target": "cmd",
-              "formula": "1",
               "type": "untyped",
               "operator": "add"
             }
@@ -509,7 +499,7 @@
       },
       {
         "id": "weakness00000001",
-        "name": "Weaknesses",
+        "name": "Elemental Affinity",
         "type": "feat",
         "subType": "racial",
         "category": "feat",
@@ -645,7 +635,7 @@
                 {
                   "formula": "1d6",
                   "types": [
-                    "nonelemental",
+                    "fire",
                     "bludgeoning"
                   ]
                 }
@@ -804,7 +794,24 @@
         },
         "sourceFlagData": {},
         "mechanics": {
-          "actions": [],
+          "actions": [
+            {
+              "name": "Light Fortification",
+              "actionType": "other",
+              "activation": "special",
+              "range": {
+                "value": "personal",
+                "units": "personal",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "self"
+              },
+              "damage": []
+            }
+          ],
           "changes": [],
           "contextNotes": [],
           "classSkills": {}

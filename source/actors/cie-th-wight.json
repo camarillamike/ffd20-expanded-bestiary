@@ -1,0 +1,996 @@
+{
+  "name": "Cie'th Wight",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-wight.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 11,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 60,
+          "maneuverability": "good"
+        }
+      },
+      "sr": {
+        "formula": "13"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 3
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 19, touch 14, flat-footed 15 (+3 dex, +5 natural, +1 dodge)</p><p>hp 26 (3d10+9)</p><p>Fort +5, Ref +6, Will +1</p><p>DR 5/adamantine or crystal; Immune mind-affecting; SR 13</p><h2>Offense</h2><p>Speed 30 ft., fly 60 ft. (good)</p><p>Melee Slam +4 (1d4+1), 2 wings -1 (1d4+1)</p><h2>Statistics</h2><p>Str 12, Dex 16, Con 14, Int 2, Wis 12, Cha 11</p><p>Base Atk +3; CMB +5; CMD 15</p><p>Feats Dodge, Toughness</p><p>Skills Fly +13, Perception +7</p><p>Languages Common (cannot speak)</p><p>SQ Uncanny Dodge</p><h2>Ecology</h2><p>Environment any</p><p>Organization solitary, pair, gang (3-5), flock (6-12), unkindness (13+)</p><p>Treasure none</p><p>Light and nimble, wights present themselves as rather annoying foes, for despite their lack of strength, they have a certain notoriety for being hard to hit, even with spells. Only on occasion are they found in numbers less than three, although such a thing is not unheard of. They prefer to stay out of reach until an opportunity to attack arises, usually having many bum-rush a single target.</p><p>Wights are 5 ½ feet tall and weigh about 95 pounds.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "cie'th",
+        "native"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "adamantine",
+              "crystal"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "mindAffecting"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Understands Common; cannot speak."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 10,
+        "hp": 17,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 26,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +3; CMB +5; CMD 15</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-3",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +3; CMB +5; CMD 15",
+            "bab": 3,
+            "cmb": 5,
+            "cmd": 15
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Slam",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Slam +4 (1d4+1)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 4,
+            "damage": "1d4+1",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "wing x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "wing",
+            "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "wing 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "wing",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 wing -1 (1d4+1)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "wing",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "wing",
+            "ranged": false,
+            "attackBonus": -1,
+            "damage": "1d4+1",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Uncanny Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wight can react to danger before its sense would normally allow it to do so. It cannot be caught flat-footed, nor does it lose its Dexterity bonus to AC if the attacker is invisible. It still loses its Dexterity bonus to AC if immobilized. A wight can still lose its Dexterity bonus to AC if an opponent successfully uses the feint action against it.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Retains Dexterity when flat-footed or attacked by an invisible foe; not when immobilized or successfully feinted."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "uncanny-dodge",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "reviewedNotes": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cie'th Wight",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-wight.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/outsiders/cieth-family/winged-cieth/cieth-wight/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/FFXIII_enemy_Wight.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-wight.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 3,
+        "size": "Medium",
+        "cr": "2",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Cie'th",
+          "Native"
+        ],
+        "xp": 600,
+        "aura": "",
+        "perception": 7,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., fly 60 ft. (good)",
+            "Melee Slam +4 (1d4+1), 2 wings -1 (1d4+1)"
+          ],
+          "speed": "30 ft., fly 60 ft. (good)",
+          "melee": "Slam +4 (1d4+1), 2 wings -1 (1d4+1)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 19, touch 14, flat-footed 15 (+3 dex, +5 natural, +1 dodge)",
+            "hp 26 (3d10+9)",
+            "Fort +5, Ref +6, Will +1",
+            "DR 5/adamantine or crystal; Immune mind-affecting; SR 13"
+          ],
+          "ac": "AC 19, touch 14, flat-footed 15 (+3 dex, +5 natural, +1 dodge)",
+          "hp": "hp 26 (3d10+9)",
+          "hitPoints": 26,
+          "hitDice": 3,
+          "saves": "Fort +5, Ref +6, Will +1",
+          "defensiveAbilities": "",
+          "dr": "5/adamantine or crystal;",
+          "immunities": "mind-affecting;",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": 13
+        },
+        "statistics": [
+          "Str 12, Dex 16, Con 14, Int 2, Wis 12, Cha 11",
+          "Base Atk +3; CMB +5; CMD 15",
+          "Feats Dodge, Toughness",
+          "Skills Fly +13, Perception +7",
+          "Languages Common (cannot speak)",
+          "SQ Uncanny Dodge"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [
+          "Environment any",
+          "Organization solitary, pair, gang (3-5), flock (6-12), unkindness (13+)",
+          "Treasure none",
+          "Light and nimble, wights present themselves as rather annoying foes, for despite their lack of strength, they have a certain notoriety for being hard to hit, even with spells. Only on occasion are they found in numbers less than three, although such a thing is not unheard of. They prefer to stay out of reach until an opportunity to attack arises, usually having many bum-rush a single target.",
+          "Wights are 5 ½ feet tall and weigh about 95 pounds."
+        ],
+        "family": "Cie'th Family",
+        "classLine": "XP 600",
+        "classLevels": null
+      }
+    }
+  }
+}

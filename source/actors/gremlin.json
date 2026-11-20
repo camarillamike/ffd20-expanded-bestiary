@@ -97,7 +97,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "",
+      "acNotes": "The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": "",
       "spells": {
         "spellbooks": {
@@ -489,6 +489,7 @@
       }
     },
     "details": {
+      "alignment": "le",
       "xp": {
         "value": 200
       },
@@ -643,6 +644,14 @@
             "operator": "add",
             "priority": 0,
             "flavor": "Published spl total adjustment"
+          },
+          {
+            "formula": "-1",
+            "target": "tac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published AC breakdown"
           }
         ],
         "contextNotes": [],

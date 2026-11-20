@@ -1,0 +1,717 @@
+{
+  "name": "Cie'th Ghoul",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-ghoul.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 11,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "13"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 3
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 600
+      },
+      "cr": {
+        "base": 2
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 16, touch 11, flat-footed 15 (+1 dex, +5 natural)</p><p>hp 29 (3d10+12)</p><p>Fort +6, Ref +4, Will +1</p><p>DR 5/adamantine or crystal; Immune mind-affecting; SR 13</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee Slam +5 (1d4+2)</p><h2>Statistics</h2><p>Str 14, Dex 12, Con 16, Int 2, Wis 12, Cha 11</p><p>Base Atk +3; CMB +5; CMD 15</p><p>Feats Improved Initiative, Toughness</p><p>Skills Acrobatics +7, Perception +7</p><p>Languages Common (cannot speak)</p><h2>Ecology</h2><p>Environment any</p><p>Organization solitary, pair, gang (3-5), crowd (6-12), mob (13+)</p><p>Treasure none</p><p>Amongst the weakest of their kind, ghouls are Cie'th whose abilities as l'Cie were given little time to develop before they eventually failed to complete their Focus. Though not the most wretched of their ilk, these are otherwise unremarkable Cie'th who hold few advantages aside from sheer numbers. Despite their name, these Cie'th- as well as many others- are not truly undead, though they are just as fearsome, if not even more so.</p><p>Ghouls are 7 feet tall and weigh about 350 pounds.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "cie'th",
+        "native"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "adamantine",
+              "crystal"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "mindAffecting"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published acr total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Understands Common; cannot speak."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 10,
+        "hp": 17,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 29,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +3; CMB +5; CMD 15</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +3; CMB +5; CMD 15",
+            "bab": 3,
+            "cmb": 5,
+            "cmd": 15
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Slam",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Slam +5 (1d4+2)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 5,
+            "damage": "1d4+2",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Toughness"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cie'th Ghoul",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-ghoul.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/outsiders/cieth-family/shambling-cieth/cieth-ghoul/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/FFXIII_enemy_Ghoul.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-ghoul.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 5,
+        "size": "Medium",
+        "cr": "2",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Cie'th",
+          "Native"
+        ],
+        "xp": 600,
+        "aura": "",
+        "perception": 7,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee Slam +5 (1d4+2)"
+          ],
+          "speed": "30 ft.",
+          "melee": "Slam +5 (1d4+2)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 16, touch 11, flat-footed 15 (+1 dex, +5 natural)",
+            "hp 29 (3d10+12)",
+            "Fort +6, Ref +4, Will +1",
+            "DR 5/adamantine or crystal; Immune mind-affecting; SR 13"
+          ],
+          "ac": "AC 16, touch 11, flat-footed 15 (+1 dex, +5 natural)",
+          "hp": "hp 29 (3d10+12)",
+          "hitPoints": 29,
+          "hitDice": 3,
+          "saves": "Fort +6, Ref +4, Will +1",
+          "defensiveAbilities": "",
+          "dr": "5/adamantine or crystal;",
+          "immunities": "mind-affecting;",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": 13
+        },
+        "statistics": [
+          "Str 14, Dex 12, Con 16, Int 2, Wis 12, Cha 11",
+          "Base Atk +3; CMB +5; CMD 15",
+          "Feats Improved Initiative, Toughness",
+          "Skills Acrobatics +7, Perception +7",
+          "Languages Common (cannot speak)"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [
+          "Environment any",
+          "Organization solitary, pair, gang (3-5), crowd (6-12), mob (13+)",
+          "Treasure none",
+          "Amongst the weakest of their kind, ghouls are Cie'th whose abilities as l'Cie were given little time to develop before they eventually failed to complete their Focus. Though not the most wretched of their ilk, these are otherwise unremarkable Cie'th who hold few advantages aside from sheer numbers. Despite their name, these Cie'th- as well as many others- are not truly undead, though they are just as fearsome, if not even more so.",
+          "Ghouls are 7 feet tall and weigh about 350 pounds."
+        ],
+        "family": "Cie'th Family",
+        "classLine": "XP 600",
+        "classLevels": null
+      }
+    }
+  }
+}

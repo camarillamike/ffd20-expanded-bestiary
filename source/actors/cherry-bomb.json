@@ -111,6 +111,7 @@
       }
     },
     "details": {
+      "alignment": "ne",
       "xp": {
         "value": 135
       },
@@ -169,24 +170,20 @@
       },
       "eres": {
         "value": [],
-        "custom": "Forward element of its type by 50%"
+        "custom": "ice 50%"
       },
       "cres": "",
       "di": [
-        "precision",
-        "Element of its type"
+        "fire"
       ],
-      "dv": [],
+      "dv": [
+        "water"
+      ],
       "ci": [
         "bleed",
         "paralyze",
         "poison",
-        "sleep",
-        "stun",
-        "fatigue",
-        "exhausted",
-        "critical hits",
-        "flanking"
+        "sleep"
       ],
       "languages": [],
       "stature": "tall"
@@ -324,13 +321,6 @@
           {
             "formula": "7",
             "target": "cmb",
-            "type": "untyped",
-            "operator": "add",
-            "priority": 0
-          },
-          {
-            "formula": "1",
-            "target": "cmd",
             "type": "untyped",
             "operator": "add",
             "priority": 0
@@ -634,12 +624,12 @@
     },
     {
       "_id": "weakness00000001",
-      "name": "Weaknesses",
+      "name": "Elemental Affinity",
       "type": "feat",
       "img": "systems/ffd20/icons/skills/red_02.jpg",
       "system": {
         "description": {
-          "value": "<p>Opposite element of its type</p>",
+          "value": "<p>Fire form. Immune to fire; halves ice damage; vulnerable to water.</p>",
           "instructions": ""
         },
         "actions": [],
@@ -852,7 +842,7 @@
                 {
                   "formula": "1d6",
                   "types": [
-                    "nonelemental",
+                    "fire",
                     "bludgeoning"
                   ]
                 }
@@ -868,7 +858,8 @@
                 "After each successful physical attack made against the cherry bomb, the cherry bomb increases in size by 1-ft. in diameter (the cherry bomb increases Strength by 2 per physical attack, size increase lasts for 1d6+4 rounds); after the 3rd successful physical attack or reaches 0 HP due to a physical attack, the bomb explodes as an immediate action when reaching its closest target within range, destroying itself and dealing 1d6 points of elemental type and physical (half and half) damage to everything within a 15-ft.-radius (Reflex save DC 11 for half damage).",
                 "Area: 15-ft. radius",
                 "Split the rolled total evenly between the creature's current elemental type and physical damage; assign the odd point as the GM chooses.",
-                "The creature is destroyed after resolving this action."
+                "The creature is destroyed after resolving this action.",
+                "Split this roll: half fire, remainder bludgeoning. Do not roll the damage twice."
               ],
               "footer": []
             },
@@ -1031,6 +1022,9 @@
             },
             "sourceType": "Su"
           }
+        },
+        "ffd20-expanded-bestiary": {
+          "splitBombDamage": "fire"
         }
       }
     },
@@ -1304,7 +1298,55 @@
           "value": "<p>When struck by a critical hit or sneak attack, there is a 25% chance the extra damage is negated and damage is rolled normally.</p>",
           "instructions": ""
         },
-        "actions": [],
+        "actions": [
+          {
+            "name": "Light Fortification",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": "personal",
+              "units": "personal",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "ability": {},
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "effectNotes": [],
+            "notes": {
+              "effect": [
+                "Confirmation [[1d100]]: on 01-25 negate the extra critical or sneak attack damage; the ordinary hit still deals damage."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000013001"
+          }
+        ],
         "attackNotes": [],
         "effectNotes": [],
         "changes": [],
@@ -1347,7 +1389,8 @@
             "racial"
           ],
           "lookupName": "Light Fortification",
-          "configuredUses": null
+          "configuredUses": null,
+          "reviewedActions": true
         }
       }
     }
@@ -1430,6 +1473,13 @@
         "classLine": "XP 135",
         "classLevels": null
       }
+    },
+    "ffd20-expanded-bestiary": {
+      "bombForm": "Fire",
+      "halfResistances": [
+        "ice"
+      ],
+      "bombSource": "cherry-bomb"
     }
   }
 }

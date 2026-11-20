@@ -1,0 +1,1063 @@
+{
+  "name": "Vulture",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/vulture.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 13,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 7,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 1,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 2
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 10
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 50,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 1
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 1
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 400
+      },
+      "cr": {
+        "base": 1
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 13, touch 12, flat-footed 12 (+1 dex, +1 natural, +1 size)</p><p>hp 16 [23] (2d8+7)</p><p>Fort +7, Ref +4, Will +2; +4 vs. disease</p><p>Weakness Wind</p><h2>Offense</h2><p>Speed 10 ft., fly 50 ft. (average)</p><p>Melee Bite +3 (1d6+1)</p><p>Special Attacks Blinder, Crunch</p><h2>Statistics</h2><p>Str 12, Dex 13, Con 14, Int 2, Wis 14, Cha 7</p><p>Base Atk +1; CMB +1; CMD 12</p><p>Feats Great Fortitude, Toughness*</p><p>*Bonus Feat</p><p>Skills Fly +7, Perception +14; Racial Modifiers Perception +8;</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "animal"
+      ],
+      "creatureSubtypes": [
+        "avian"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "wind"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Animal",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "bonusFeats",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "animal",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 2,
+        "hd": 8,
+        "hp": 9,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "sur": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Animal",
+          "sourceHitPoints": 16,
+          "sourceHitDice": 2,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +3 (1d6+1)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000002001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 3,
+            "damage": "1d6+1",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Toughness*"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Toughness*"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Blinder",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 turns, a vulture can make an attempt to blind an opponent with their bite, if he hits, their target must make a Fortitude save (DC 13) or be blind for 1d2 rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Blinder",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "one target"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates blindness only",
+              "harmless": false
+            },
+            "notes": {
+              "effect": [
+                "On a hit and failed save: blind for [[1d2]] rounds.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": [
+                "Source statblock: Bite +3 (1d6+1)"
+              ]
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "turns",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blinder",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "turns"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 13,
+                "raw": "Fortitude save (DC 13)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 11,
+                "expectedDc": 13
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d2",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Crunch",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds as a swift action, the vulture can bite an additional time while tearing some flesh from their opponent. If they succeed at hitting with their bite attack, the damage is 1d6+1 plus 1d4 bleed per round for 2 rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Crunch",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": "one target"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "notes": {
+              "effect": [
+                "Extra bite; on a hit also bleed [[1d4]] per round for two rounds.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": [
+                "Source statblock: Bite +3 (1d6+1)"
+              ]
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "crunch",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "con": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "roundRecharge": "1d4"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Vulture",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/vulture.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/vulture-family/vulture/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Vulture-e1604658990188.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/vulture.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 1,
+        "size": "Small",
+        "cr": "1",
+        "creatureType": "Animal",
+        "subtypes": [
+          "Avian"
+        ],
+        "xp": 400,
+        "aura": "",
+        "perception": 14,
+        "offense": {
+          "raw": [
+            "Speed 10 ft., fly 50 ft. (average)",
+            "Melee Bite +3 (1d6+1)",
+            "Special Attacks Blinder, Crunch"
+          ],
+          "speed": "10 ft., fly 50 ft. (average)",
+          "melee": "Bite +3 (1d6+1)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Blinder, Crunch",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 13, touch 12, flat-footed 12 (+1 dex, +1 natural, +1 size)",
+            "hp 16 [23] (2d8+7)",
+            "Fort +7, Ref +4, Will +2; +4 vs. disease",
+            "Weakness Wind"
+          ],
+          "ac": "AC 13, touch 12, flat-footed 12 (+1 dex, +1 natural, +1 size)",
+          "hp": "hp 16 [23] (2d8+7)",
+          "hitPoints": 16,
+          "hitDice": 2,
+          "saves": "Fort +7, Ref +4, Will +2; +4 vs. disease",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "Wind",
+          "sr": null
+        },
+        "statistics": [
+          "Str 12, Dex 13, Con 14, Int 2, Wis 14, Cha 7",
+          "Base Atk +1; CMB +1; CMD 12",
+          "Feats Great Fortitude, Toughness*",
+          "*Bonus Feat",
+          "Skills Fly +7, Perception +14; Racial Modifiers Perception +8;"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Vulture Family",
+        "classLine": "XP 400",
+        "classLevels": null
+      }
+    }
+  }
+}

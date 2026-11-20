@@ -1,5 +1,5 @@
 const MODULE_ID = "ffd20-expanded-bestiary";
-const MODULE_VERSION = "0.1.36";
+const ACTOR_SOURCE_VERSION = "0.1.39-reviewed";
 const AUTO_IMPORT_SETTING = "autoImportOnUpdate";
 const IMPORTED_VERSION_SETTING = "importedSourceVersion";
 const MANAGED_PACKS = {
@@ -38,6 +38,7 @@ const LOOKUP_ALIASES = {
   "bullets": ["sling bullet"],
   "bolts": ["crossbow bolt"],
   "arrows": ["arrow"],
+  "small wooden shield": ["light wooden shield"],
 };
 
 Hooks.once("init", () => {
@@ -71,11 +72,12 @@ function normalizeName(value) {
 }
 
 function generatedFlags(item) {
-  return item.flags?.["ffd20-bestiary-builder"] ?? {};
+  return item?.flags?.["ffd20-bestiary-builder"] ?? {};
 }
 
 function isReplaceableGeneratedItem(item) {
   const flags = generatedFlags(item);
+  if (flags.authoredLocally) return false;
   return REPLACEABLE_GENERATED_FLAGS.some((flag) => flags[flag]);
 }
 
@@ -144,7 +146,8 @@ function findLookupMatch(item, lookup, actor) {
   const requestedSubTypes = lookupSubTypesForItem(item);
   const candidates = lookupNamesForItem(item, actor).flatMap((name, aliasRank) =>
     (lookup.get(name) ?? []).map((candidate) => ({ ...candidate, aliasRank }))
-  ).filter(({ entry }) => {
+  ).filter(({ pack, entry }) => {
+    if (generatedFlags(item).lookupPack && pack.collection !== generatedFlags(item).lookupPack) return false;
     if (requestedTypes.length && !requestedTypes.includes(entry.type)) return false;
     if (requestedSubTypes.length && !requestedSubTypes.includes(entrySubType(entry))) return false;
     return true;
@@ -198,9 +201,22 @@ function applyPlaceholderDetails(source, item) {
     generatedFallback: item,
   };
   if (item.type === "feat") preserveFeatureSelection(source, item, selectedFeatureOption(item));
+  if (flags.reviewedActions && item.system?.actions?.length) source.system.actions = foundry.utils.deepClone(item.system.actions);
+  if (flags.sheetSubType && source.type === "feat") source.system.subType = flags.sheetSubType;
+  if (flags.reviewedNotes && item.system?.contextNotes?.length) source.system.contextNotes = [...(source.system.contextNotes ?? []), ...item.system.contextNotes];
+  if (flags.reviewedChanges && item.system?.changes?.length) source.system.changes = foundry.utils.deepClone(item.system.changes);
+  if (flags.scopedWeaponBonus) {
+    source.system.changes = [];
+    source.system.contextNotes = [{target:"attack",text:"Chosen Weapon is included on the selected weapon, not on other attacks."}];
+    const rules = source.system.description.value || "";
+    source.system.description.value = item.system.description.value + (rules.startsWith("<p>Programming note</p>") && rules.includes("<h3>Chosen Weapon") ? rules.slice(rules.indexOf("<h3>Chosen Weapon")) : rules);
+  }
+  if (flags.sheetName) source.name = flags.sheetName;
+  if (flags.reviewedDescription) source.system.description.value += "<p>" + flags.reviewedDescription + "</p>";
 
   if (flags.generatedInventoryItem && source.system && item.system?.quantity) {
     source.system.quantity = item.system.quantity;
+    if (flags.displayName) source.name = flags.displayName;
   }
   if (flags.generatedInventoryItem && flags.broken && source.system) {
     source.system.broken = true;
@@ -231,7 +247,7 @@ function applyPlaceholderDetails(source, item) {
       const selection = item.name.match(/\(([^)]+)\)/)?.[1];
       if (selection) {
         source.system.contextNotes ??= [];
-        source.system.contextNotes.push({ target: "attack", text: `Selected option: ${selection}.` });
+        source.system.contextNotes.push({ target: /^skill focus/i.test(item.name) ? "misc" : "attack", text: `Selected option: ${selection}.` });
       }
     }
   }
@@ -293,12 +309,21 @@ async function hydrateGeneratedItems(actor, lookup) {
       const label = normalizeName(generatedFlags(item).name ?? item.name);
       const explicitSize = Object.entries({ fine: "fine", diminutive: "dim", tiny: "tiny", small: "sm", medium: "med",
         large: "lg", huge: "huge", gargantuan: "grg", colossal: "col" }).find(([size]) => label.startsWith(size + " "));
-      source.system.size = explicitSize?.[1] ?? actor.system.traits.size;
+      const wieldedSize = source.type === "weapon" ? generatedFlags(item).wieldedSize : null;
+      if (generatedFlags(item).wieldedSize) {
+        source.system.equipped = true;
+        source.system.carried = true;
+      }
+      source.system.size = (label === "small wooden shield" ? null : explicitSize?.[1]) ?? wieldedSize ?? actor.system.traits.size;
       if (source.type === "weapon") {
         const attack = actor.items.find(i => i.type === "attack" && !generatedFlags(i).generatedNaturalAttack?.natural
           && normalizeName(i.name).replace(/^broken\s+/, "") === label.replace(/^broken\s+/, ""));
         const routine = attack?.system.actions?.[0];
-        const weaponAction = routine && source.system.actions?.find(a => a.actionType === routine.actionType);
+        let weaponAction = routine && source.system.actions?.find(a => a.actionType === routine.actionType);
+        if (routine && wieldedSize && !weaponAction) {
+          source.system.actions ??= [];
+          source.system.actions.push(weaponAction = foundry.utils.deepClone(routine));
+        }
         if (weaponAction && !source.system.broken) {
           weaponAction.ability ??= {};
           weaponAction.ability.attack = routine.ability.attack;
@@ -318,6 +343,31 @@ async function hydrateGeneratedItems(actor, lookup) {
               weaponAction.notes.footer = [...(weaponAction.notes.footer ?? []), "Includes the additional 1 damage printed for Amber Quadav."];
             }
           }
+          if (wieldedSize) {
+            weaponAction.attackBonus = routine.attackBonus;
+            weaponAction.ability = { ...weaponAction.ability, ...routine.ability };
+            weaponAction.damage = foundry.utils.deepClone(routine.damage);
+            if (routine.conditionals?.length) weaponAction.conditionals = [...(weaponAction.conditionals ?? []), ...foundry.utils.deepClone(routine.conditionals)];
+          }
+        }
+        if (actor.name === "Baby Tonberry" && label === "tiny butcher knife") {
+          for (const a of source.system.actions ?? []) a.ability = { ...a.ability, damage: "dex", damageMult: 1 };
+        }
+        const gear = generatedFlags(item);
+        if (gear.reviewedGear && gear.gearAction && !source.system.broken) {
+          const reviewed = foundry.utils.deepClone(routine ?? gear.gearAction);
+          reviewed._id ||= item._id;
+          source.system.actions ??= [];
+          const idx = source.system.actions.findIndex(a => a.actionType === reviewed.actionType);
+          if (idx < 0) source.system.actions.push(reviewed);
+          else source.system.actions[idx] = foundry.utils.mergeObject(source.system.actions[idx], reviewed, { inplace:false });
+          if (gear.chosenWeaponBonus) for (const other of source.system.actions) {
+            if (other.actionType === reviewed.actionType || !other.damage?.parts?.length) continue;
+            other.attackBonus = [other.attackBonus, gear.chosenWeaponBonus].filter(Boolean).join(" + ");
+            other.damage.parts[0].formula += " + " + gear.chosenWeaponBonus;
+          }
+          source.system.equipped = source.system.carried = true;
+          if (gear.displayName) source.name = gear.displayName;
         }
       }
     }
@@ -371,6 +421,19 @@ async function prepareActorsForImport(actors) {
   }
   console.log("FF D20 Expanded Bestiary | Compendium lookup report", report);
   return report;
+}
+
+export async function createBombVariant(slug, form) {
+  const {BOMB_FORMS,configureBombForm} = await import("./bomb-forms.mjs");
+  if (!game.user.isGM || !["bombino","cherry-bomb"].includes(slug) || !Object.hasOwn(BOMB_FORMS,form)) throw Error("Invalid bomb form request.");
+  const actor = await fetchJson("source/actors/"+slug+".json");
+  configureBombForm(actor,form);
+  const results = await prepareActorsForImport([actor]);
+  if (results.some(r=>r.status==="generated-fallback")) throw Error("Required compendium item unavailable. No world actor created.");
+  delete actor._id;
+  actor.name += " ("+form+")";
+  actor.prototypeToken.name = actor.name;
+  return Actor.create(actor);
 }
 
 function packId(packName) {
@@ -498,7 +561,7 @@ export async function importActors({ clear = true } = {}) {
 
   ui.notifications.info(`FFD20 Bestiary import complete: ${created.length} actor(s), ${removed} old actor(s) removed.`);
   console.log("FFD20 Bestiary Generated | Import complete", { created: created.length, removed, packs: [...actorsByPack.keys()], familyFolders });
-  await game.settings.set(MODULE_ID, IMPORTED_VERSION_SETTING, MODULE_VERSION);
+  await game.settings.set(MODULE_ID, IMPORTED_VERSION_SETTING, ACTOR_SOURCE_VERSION);
   return { created, removed, packs };
 }
 
@@ -528,19 +591,19 @@ async function importActorsIfNeeded({ emptyOnly = false } = {}) {
   }
 
   const importedVersion = game.settings.get(MODULE_ID, IMPORTED_VERSION_SETTING) ?? "";
-  const shouldImport = total === 0 || (!emptyOnly && importedVersion !== MODULE_VERSION);
+  const shouldImport = total === 0 || (!emptyOnly && importedVersion !== ACTOR_SOURCE_VERSION);
 
   if (!shouldImport) {
     console.log("FF D20 Expanded Bestiary | Managed packs already match packaged source; skipping automatic import.", {
       count: total,
       importedVersion,
-      moduleVersion: MODULE_VERSION,
+      actorSourceVersion: ACTOR_SOURCE_VERSION,
     });
     return;
   }
 
   try {
-    const reason = total === 0 ? "empty-packs" : `source-version-changed:${importedVersion || "never"}->${MODULE_VERSION}`;
+    const reason = total === 0 ? "empty-packs" : `source-version-changed:${importedVersion || "never"}->${ACTOR_SOURCE_VERSION}`;
     console.log("FF D20 Expanded Bestiary | Automatic import starting.", { reason, count: total });
     await importActors({ clear: total > 0 });
   } catch (error) {

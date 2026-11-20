@@ -1,0 +1,1373 @@
+{
+  "name": "Scorpion",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/scorpion.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 11,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 13,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 2,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 60
+        },
+        "climb": {
+          "base": 40
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "24 vs trip."
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 0
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 400
+      },
+      "cr": {
+        "base": 1
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A deadly giant scorpion that lives in the desert areas, with a pair of powerful claws and venomous tail. To conceal itself from birds of prey, its natural enemy, it prefers to hide in the shadow of rocks, waiting for a chance to strike. Paralyzing its target with poison, it swoops in for the kill after its prey has been weakened. For desert travelers already weakened by heat and dehydration, the scorpion's sting can often be lethal. An ample supply of antidotes is recommended.</p><h2>Defense</h2><p>AC 12, touch 10, flat-footed 12 (+2 natural)</p><p>hp 16 [27] (3d8+3)</p><p>Fort +4, Ref +1, Will +1</p><p>Immune mind-affecting effects, poison</p><p>Resist earth 5</p><h2>Offense</h2><p>Speed 60 ft., Climb 40 ft.</p><p>Melee 2 Claws +2 (1d4), Sting +2 (1d4 plus poison)</p><p>Special Attacks Rend (2 claws, 2d4)</p><h2>Statistics</h2><p>Str 11, Dex 10, Con 13, Int -, Wis 10, Cha 2</p><p>Base Atk +2; CMB +2; CMD 12 (24 vs trip)</p><p>Skills Climb +8, Perception +4, Stealth +4 (+12 in deserts); Racial Modifiers Climb +8, Perception +4, Stealth +4 (in desert +12)</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "vermin"
+      ],
+      "creatureSubtypes": [],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 60
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "mindAffecting",
+        "poison"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Vermin",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.clm",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-8",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.ste",
+            "text": "in deserts: source total +12 (+8 conditional adjustment)."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "vermin",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 3,
+        "hd": 8,
+        "hp": 13,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "clm": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Vermin",
+          "sourceHitPoints": 16,
+          "sourceHitDice": 3,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +2; CMB +2; CMD 12 (24 vs trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +2; CMB +2; CMD 12 (24 vs trip)",
+            "bab": 2,
+            "cmb": 2,
+            "cmd": 12
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Claw x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Claw",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Claw +2 (1d4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "claw",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 2,
+            "damage": "1d4",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Sting",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-scorpion.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Sting",
+            "img": "systems/ffd20/icons/items/inventory/monster-scorpion.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Sting",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On hit: resolve Poison."
+              ],
+              "footer": [
+                "Source statblock: Sting +2 (1d4 plus poison)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sting",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Sting",
+            "ranged": false,
+            "attackBonus": 2,
+            "damage": "1d4 plus poison",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 0,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Rend",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Rend (2 claws, 2d4).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Rend",
+            "actionType": "other",
+            "attackBonus": "",
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d4",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "notes": {
+              "effect": [
+                "Extra damage only when both claws hit the same target."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rend",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Rend (2 claws, 2d4)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            }
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Needles",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds as a standard action, a scorpion can shoot out needles from it's stinger. If the range attack succeeds (+2), the needles reach up to 30 feet and do 1d4 piercing damage plus their poison.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Needles",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4 rounds as a standard action, a scorpion can shoot out needles from it's stinger. If the range attack succeeds (+2), the needles reach up to 30 feet and do 1d4 piercing damage plus their poison.",
+                "On hit: also resolve Poison.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds. Outside an active encounter, restore one charge after the rolled interval."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "needles",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d4",
+                "type": "piercing",
+                "raw": "1d4 piercing damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
+      "system": {
+        "description": {
+          "value": "<p>Sting — injury; save Fort DC 12; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "special"
+              }
+            },
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "creature hit by Sting"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates poison"
+            },
+            "notes": {
+              "effect": [
+                "Sting — injury; save Fort DC 12; frequency 1/round for 4 rounds; effect 1d4 non-elemental damage; cure 1 save.",
+                "Duration: 4 rounds",
+                "Injury; once per round for four rounds; one successful save cures.",
+                "Resolve after a successful Sting attack."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": null
+            },
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 12,
+                "raw": "Fort DC 12",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 11,
+                "expectedDc": 12
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d4",
+                "type": "nonelemental",
+                "raw": "1d4 non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "dex": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "con": {
+                "value": 13,
+                "mod": 1,
+                "missing": false,
+                "raw": "13"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "35b193c16401a3ce",
+      "name": "Desert Camouflage",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only in desert terrain.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "circumstance",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-in-desert-terrain",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Scorpion",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/scorpion.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/vermin/scorpion-family/scorpion/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Scorpion.gif",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/scorpion.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 0,
+        "size": "Medium",
+        "cr": "1",
+        "creatureType": "Vermin",
+        "subtypes": [],
+        "xp": 400,
+        "aura": "",
+        "perception": 4,
+        "offense": {
+          "raw": [
+            "Speed 60 ft., Climb 40 ft.",
+            "Melee 2 Claws +2 (1d4), Sting +2 (1d4 plus poison)",
+            "Special Attacks Rend (2 claws, 2d4)"
+          ],
+          "speed": "60 ft., Climb 40 ft.",
+          "melee": "2 Claws +2 (1d4), Sting +2 (1d4 plus poison)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Rend (2 claws, 2d4)",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 12, touch 10, flat-footed 12 (+2 natural)",
+            "hp 16 [27] (3d8+3)",
+            "Fort +4, Ref +1, Will +1",
+            "Immune mind-affecting effects, poison",
+            "Resist earth 5"
+          ],
+          "ac": "AC 12, touch 10, flat-footed 12 (+2 natural)",
+          "hp": "hp 16 [27] (3d8+3)",
+          "hitPoints": 16,
+          "hitDice": 3,
+          "saves": "Fort +4, Ref +1, Will +1",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "mind-affecting effects, poison",
+          "resistances": "earth 5",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 11, Dex 10, Con 13, Int -, Wis 10, Cha 2",
+          "Base Atk +2; CMB +2; CMD 12 (24 vs trip)",
+          "Skills Climb +8, Perception +4, Stealth +4 (+12 in deserts); Racial Modifiers Climb +8, Perception +4, Stealth +4 (in desert +12)"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Scorpion Family",
+        "classLine": "XP 400",
+        "classLevels": null
+      }
+    }
+  }
+}

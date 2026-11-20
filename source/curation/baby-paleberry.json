@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.36",
+  "moduleVersion": "0.1.39",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Paleberry",
@@ -278,7 +278,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "",
+      "acNotes": "The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": ""
     },
     "coverage": {
@@ -332,6 +332,12 @@
             {
               "target": "skill.per",
               "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "ffac",
+              "formula": "2",
               "type": "untyped",
               "operator": "add"
             }

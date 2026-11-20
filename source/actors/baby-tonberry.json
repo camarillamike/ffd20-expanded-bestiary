@@ -97,7 +97,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "",
+      "acNotes": "The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": ""
     },
     "skills": {
@@ -115,6 +115,7 @@
       }
     },
     "details": {
+      "alignment": "le",
       "xp": {
         "value": 135
       },
@@ -122,7 +123,7 @@
         "base": 0.3333333333333333
       },
       "biography": {
-        "value": "<h2>Defense</h2><p>AC 18, touch 16, flat-footed 16 (+4 dex, +2 natural, +2 size)</p><p>hp 6 [11] (1d10+1)</p><p>Fort +3, Ref +6, Will +0</p><p>Immune Shadow, Negative status effects</p><h2>Offense</h2><p>Speed 5 ft.</p><p>Melee Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)</p><p>Space 2-1/2 ft.; Reach 0 ft.</p><p>Special Attacks Chef's Knife, Baby's Grudge</p><h2>Statistics</h2><p>Str 2, Dex 18, Con 12, Int 6, Wis 10, Cha 12</p><p>Base Atk +1; CMB +3; CMD 13</p><p>Feats Weapon Finesse</p><p>Skills Perception +5, Sense Motive +4, Stealth +16</p><p>Languages Tonberry; telepathy 30 ft. Gear Tiny butcher knife, lantern</p>"
+        "value": "<h2>Defense</h2><p>AC 18, touch 16, flat-footed 16 (+4 dex, +2 natural, +2 size)</p><p>hp 6 [11] (1d10+1)</p><p>Fort +3, Ref +6, Will +0</p><p>Immune Shadow, Negative status effects</p><h2>Offense</h2><p>Speed 5 ft.</p><p>Melee Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)</p><p>Space 2-1/2 ft.; Reach 0 ft.</p><p>Special Attacks Chef's Knife, Baby's Grudge</p><h2>Statistics</h2><p>Str 2, Dex 18, Con 12, Int 6, Wis 10, Cha 12</p><p>Base Atk +1; CMB +3; CMD 13</p><p>Feats Weapon Finesse</p><p>Skills Perception +5, Sense Motive +4, Stealth +16</p><p>Languages Tonberry; telepathy 30 ft. Gear Tiny butcher knife, lantern</p>"
       }
     },
     "traits": {
@@ -219,6 +220,14 @@
             "operator": "add",
             "priority": 0,
             "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "2",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published AC breakdown"
           }
         ],
         "contextNotes": [],
@@ -429,7 +438,7 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "str",
+              "damage": "dex",
               "damageMult": 1,
               "max": null,
               "critRange": 18,
@@ -446,7 +455,7 @@
             "notes": {
               "effect": [],
               "footer": [
-                "Source statblock: Chef's Knife +7 (1d2-4, 18-20/x2)"
+                "Source statblock: Chef's Knife +7 (1d2+4, 18-20/x2)"
               ]
             },
             "measureTemplate": {
@@ -501,9 +510,9 @@
             "name": "Chef's Knife",
             "ranged": false,
             "attackBonus": 7,
-            "damage": "1d2-4, 18-20/x2",
+            "damage": "1d2+4, 18-20/x2",
             "damageFormula": "1d2",
-            "printedDamageBonus": -4,
+            "printedDamageBonus": 4,
             "damageType": "",
             "critRange": 18,
             "critMult": 2,
@@ -1026,7 +1035,7 @@
                 "Creatures immune to critical hits ignore the shaken rider but still take weapon damage."
               ],
               "footer": [
-                "Source statblock: Chef's Knife +7 (1d2-4, 18-20/x2)"
+                "Source statblock: Chef's Knife +7 (1d2+4, 18-20/x2)"
               ]
             },
             "effectNotes": [],
@@ -1046,7 +1055,7 @@
             },
             "ability": {
               "attack": "dex",
-              "damage": "str",
+              "damage": "dex",
               "damageMult": 1,
               "max": null,
               "critRange": 18,
@@ -1274,12 +1283,12 @@
         "offense": {
           "raw": [
             "Speed 5 ft.",
-            "Melee Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
+            "Melee Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)",
             "Space 2-1/2 ft.; Reach 0 ft.",
             "Special Attacks Chef's Knife, Baby's Grudge"
           ],
           "speed": "5 ft.",
-          "melee": "Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
+          "melee": "Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)",
           "ranged": "",
           "space": "Space 2-1/2 ft.; Reach 0 ft.",
           "specialAttacks": "Chef's Knife, Baby's Grudge",

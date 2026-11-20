@@ -119,6 +119,7 @@
       }
     },
     "details": {
+      "alignment": "tn",
       "xp": {
         "value": 100
       },
@@ -514,7 +515,15 @@
           "maxFormula": "",
           "rechargeFormula": ""
         },
-        "changes": [],
+        "changes": [
+          {
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)"
+          }
+        ],
         "contextNotes": [],
         "links": {
           "charges": []
@@ -546,7 +555,8 @@
           "lookupSubTypes": [
             "feat"
           ],
-          "sourceLine": "Feats Skill Focus (Perception)"
+          "sourceLine": "Feats Skill Focus (Perception)",
+          "reviewedChanges": true
         }
       }
     },

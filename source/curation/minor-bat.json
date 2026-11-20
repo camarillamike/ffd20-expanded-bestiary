@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.36",
+  "moduleVersion": "0.1.39",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Minor Bat",
@@ -31,7 +31,7 @@
         "Skills Fly +16, Perception +6; Racial Modifiers Perception +4"
       ],
       "SPECIAL ABILITIES": [
-        "Blood Drain (Su) Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17)."
+        "Theft of Vitae (Su) Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17)."
       ]
     },
     "parsed": {
@@ -73,7 +73,7 @@
         "melee": "Bite +6 (1d3-4)",
         "ranged": "",
         "space": "Space 1 ft.; Reach 0 ft.",
-        "specialAttacks": "Blood Drain",
+        "specialAttacks": "Theft of Vitae",
         "spellLines": []
       },
       "statistics": [
@@ -87,7 +87,7 @@
       "gear": [],
       "specialAbilities": [
         {
-          "name": "Blood Drain",
+          "name": "Theft of Vitae",
           "type": "su",
           "description": "Once per day, a bat can drain the blood from a target within 30 feet. The target must make a Fortitude save (DC 11) or take 1d8 points of shadow damage and the bat is healed for that much. Blue mages may learn this ability as a 1st level spell (Knowledge: Arcana DC 17).",
           "notes": {
@@ -266,7 +266,7 @@
       "defensiveAbilities": [],
       "rawSpecialAbilities": [],
       "specialAbilities": [
-        "Blood Drain"
+        "Theft of Vitae"
       ],
       "buffs": [],
       "miscellaneous": [
@@ -437,7 +437,7 @@
       },
       {
         "id": "sa00000000000001",
-        "name": "Blood Drain",
+        "name": "Theft of Vitae",
         "type": "feat",
         "subType": "racial",
         "category": "specialAbilities",
@@ -480,7 +480,7 @@
         "mechanics": {
           "actions": [
             {
-              "name": "Blood Drain",
+              "name": "Theft of Vitae",
               "actionType": "save",
               "activation": "standard",
               "touch": false,
@@ -489,7 +489,7 @@
                 "units": "ft"
               },
               "target": {
-                "value": "one target"
+                "value": "one creature"
               },
               "damage": [
                 {
@@ -502,7 +502,7 @@
               "save": {
                 "type": "fort",
                 "dc": "11",
-                "description": "Negates shadow damage"
+                "description": "Negates drain and healing"
               }
             }
           ],
@@ -525,7 +525,7 @@
         "Bite +6 (1d3-4)"
       ],
       "specialAbilityNames": [
-        "Blood Drain"
+        "Theft of Vitae"
       ]
     },
     "rulesDecisions": [

@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.39",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Ammes",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/aberrations/sinspawn/ammes-sinspawn/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/Sinspawn_Ammes-enemy-ffx.png",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Aberrations > Sinspawn Family >",
+        "Ammes - Sinspawn (CR 2)",
+        "XP 600",
+        "NE Large Aberration (Mini-Boss)",
+        "Init +3; Senses Low-light vision; Perception +3"
+      ],
+      "DEFENSE": [
+        "AC 13, touch 10, flat-footed 12 (-1 size, +1 Dex, +3 natural)",
+        "hp 37 [48] (3d8+24)",
+        "Fort +8, Ref +4, Will +7",
+        "Immune Disable, Doom, Gravity, Petrification/Statue, Poison, Sleep, Zombie"
+      ],
+      "OFFENSE": [
+        "Speed 30 ft., Climb 15 ft.",
+        "Melee N/A",
+        "Space 10 ft.; Reach 10 ft.",
+        "Special Attack Gravity"
+      ],
+      "STATISTICS": [
+        "Str 16, Dex 13, Con 24, Int 2, Wis 16, Cha 10",
+        "Base Atk +2; CMB +6; CMD 17",
+        "Feats Improved Ability Focus (Gravity), Toughness",
+        "Skills Fly +7, Swim +4"
+      ],
+      "SPECIAL ABILITIES": [
+        "Gravity (Su)",
+        "6/day, it weaken it's foe with crushing gravity within a 140-ft. range. The target must make a Fortitude save (DC 17) or lose half of his current hit point total (rounded down). The save DC is wisdom-based."
+      ],
+      "ECOLOGY": [
+        "Organization solitary or pair"
+      ]
+    },
+    "parsed": {
+      "cr": "2",
+      "xp": 600,
+      "alignment": "NE",
+      "size": "Large",
+      "creatureType": "Aberration",
+      "subtypes": [
+        "Mini-Boss"
+      ],
+      "initiative": 3,
+      "senses": "Low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 13, touch 10, flat-footed 12 (-1 size, +1 Dex, +3 natural)",
+          "hp 37 [48] (3d8+24)",
+          "Fort +8, Ref +4, Will +7",
+          "Immune Disable, Doom, Gravity, Petrification/Statue, Poison, Sleep, Zombie"
+        ],
+        "ac": "AC 13, touch 10, flat-footed 12 (-1 size, +1 Dex, +3 natural)",
+        "hp": "hp 37 [48] (3d8+24)",
+        "hitPoints": 37,
+        "hitDice": 3,
+        "saves": "Fort +8, Ref +4, Will +7",
+        "defensiveAbilities": "",
+        "dr": "",
+        "immunities": "Disable, Doom, Gravity, Petrification/Statue, Poison, Sleep, Zombie",
+        "resistances": "",
+        "weaknesses": "",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 30 ft., Climb 15 ft.",
+          "Melee N/A",
+          "Space 10 ft.; Reach 10 ft.",
+          "Special Attack Gravity"
+        ],
+        "speed": "30 ft., Climb 15 ft.",
+        "melee": "N/A",
+        "ranged": "",
+        "space": "Space 10 ft.; Reach 10 ft.",
+        "specialAttacks": "Gravity",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 16, Dex 13, Con 24, Int 2, Wis 16, Cha 10",
+        "Base Atk +2; CMB +6; CMD 17",
+        "Feats Improved Ability Focus (Gravity), Toughness",
+        "Skills Fly +7, Swim +4"
+      ],
+      "tactics": [],
+      "ecology": [
+        "Organization solitary or pair"
+      ],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Gravity",
+          "type": "su",
+          "description": "6/day, it weaken it's foe with crushing gravity within a 140-ft. range. The target must make a Fortitude save (DC 17) or lose half of his current hit point total (rounded down). The save DC is wisdom-based.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": ""
+    },
+    "signals": {
+      "hasMeleeAttacks": false,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": false,
+      "hasImmunities": true,
+      "hasWeaknesses": false,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "ammes.json",
+    "curationFile": "ammes.json",
+    "pack": "ffd20-expanded-bestiary_bosses",
+    "packLabel": "FFD20 Expanded - Bosses",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/ammes.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/ammes.png",
+    "traits": {
+      "creatureTypes": [
+        "aberration"
+      ],
+      "creatureSubtypes": [
+        "mini-boss"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "Disable",
+        "Doom",
+        "Gravity",
+        "Petrification/Statue",
+        "poison",
+        "sleep",
+        "Zombie"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 3
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 0
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "naturalAC": 3,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 3
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 2,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 1,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 15
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Aberration"
+      ],
+      "naturalAttacks": [],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Improved Ability Focus (Gravity)",
+        "Toughness"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Gravity"
+      ],
+      "buffs": [],
+      "miscellaneous": []
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Aberration",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Aberration"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.fly",
+              "formula": "2",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.swm",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {
+            "clm": true,
+            "crf": true,
+            "fly": true,
+            "kdu": true,
+            "per": true,
+            "ste": true,
+            "swm": true
+          },
+          "level": 3,
+          "hitDie": 8,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Improved Ability Focus (Gravity)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Gravity",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Su",
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 17,
+                "raw": "Fortitude save (DC 17)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-mismatch",
+                "base": 11,
+                "neededMod": 6,
+                "expectedDc": 14,
+                "observedDc": 17
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 6,
+              "per": "day",
+              "maxFormula": "6",
+              "rechargeFormula": ""
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Gravity",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": "140",
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + 3",
+                "description": "Negates loss of current HP"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Ammes is packaged as an FFD20 NPC actor with 4 generated item(s) across 3 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "2",
+      "size": "Large",
+      "type": "Aberration",
+      "alignment": "NE",
+      "primarySourceAttacks": [
+        "N/A"
+      ],
+      "specialAbilityNames": [
+        "Gravity"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  }
+}

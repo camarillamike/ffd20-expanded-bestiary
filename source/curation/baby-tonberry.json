@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "moduleVersion": "0.1.36",
+  "moduleVersion": "0.1.39",
   "status": "ready-for-foundry-test",
   "source": {
     "name": "Baby Tonberry",
@@ -21,7 +21,7 @@
       ],
       "OFFENSE": [
         "Speed 5 ft.",
-        "Melee Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
+        "Melee Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)",
         "Space 2-1/2 ft.; Reach 0 ft.",
         "Special Attacks Chef's Knife, Baby's Grudge"
       ],
@@ -72,12 +72,12 @@
       "offense": {
         "raw": [
           "Speed 5 ft.",
-          "Melee Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
+          "Melee Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)",
           "Space 2-1/2 ft.; Reach 0 ft.",
           "Special Attacks Chef's Knife, Baby's Grudge"
         ],
         "speed": "5 ft.",
-        "melee": "Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)",
+        "melee": "Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)",
         "ranged": "",
         "space": "Space 2-1/2 ft.; Reach 0 ft.",
         "specialAttacks": "Chef's Knife, Baby's Grudge",
@@ -276,7 +276,7 @@
       "sr": {
         "formula": ""
       },
-      "acNotes": "",
+      "acNotes": "The published touch or flat-footed total differs from the ordinary breakdown; the class carries the listed adjustment.",
       "cmdNotes": ""
     },
     "coverage": {
@@ -330,6 +330,12 @@
             {
               "target": "skill.per",
               "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "ffac",
+              "formula": "2",
               "type": "untyped",
               "operator": "add"
             }
@@ -412,9 +418,9 @@
             "name": "Chef's Knife",
             "ranged": false,
             "attackBonus": 7,
-            "damage": "1d2-4, 18-20/x2",
+            "damage": "1d2+4, 18-20/x2",
             "damageFormula": "1d2",
-            "printedDamageBonus": -4,
+            "printedDamageBonus": 4,
             "damageType": "",
             "critRange": 18,
             "critMult": 2,
@@ -755,7 +761,7 @@
       "type": "Outsider",
       "alignment": "LE",
       "primarySourceAttacks": [
-        "Chef's Knife +7 (1d2-4, 18-20/x2) (special, see below)"
+        "Chef's Knife +7 (1d2+4, 18-20/x2) (special, see below)"
       ],
       "specialAbilityNames": [
         "Baby's Grudge",

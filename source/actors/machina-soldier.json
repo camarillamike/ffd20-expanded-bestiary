@@ -1,0 +1,1552 @@
+{
+  "name": "Machina Soldier",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/machina-soldier.jpg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 3,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 11,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 8
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 8
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 2400
+      },
+      "cr": {
+        "base": 6
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Abandoned machina from ages past. Its Electrocute attack inflicts severe lightning damage.</p><h2>Defense</h2><p>AC 18, touch 13, flat-footed 16 (+2 dex, +5 natural, +1 size)</p><p>hp 62 [98] (8d10+18)</p><p>Fort +4, Ref +4, Will +2</p><p>DR 5/magic; Immune construct traits</p><p>Weakness critical hits, lightning</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee 2 Gores +10 (1d6+4)</p><p>Special Attacks Critical Attack, Impale</p><h2>Statistics</h2><p>Str 19, Dex 14, Con -, Int 3, Wis 11, Cha 1</p><p>Base Atk +8; CMB +11; CMD 23</p><p>Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness</p><p>Skills Perception +11</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "magic"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 8,
+        "hd": 10,
+        "hp": 54,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "construct"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 62,
+          "sourceHitDice": 8,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +8; CMB +11; CMD 23</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +8; CMB +11; CMD 23",
+            "bab": 8,
+            "cmb": 11,
+            "cmd": 23
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Gore x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Gore",
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Gore 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Gore +10 (1d6+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "gore",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 10,
+            "damage": "1d6+4",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Natural Attack (Gore)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Natural Attack (Gore).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-natural-attack-gore",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness",
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupName": "Improved Natural Attack",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Improved Natural Attack (Gore)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Skill Focus (Perception)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Skill Focus (Perception).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "skill-focus-perception",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness",
+          "reviewedChanges": true
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness"
+        }
+      }
+    },
+    {
+      "_id": "weakness00000001",
+      "name": "Weaknesses",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_02.jpg",
+      "system": {
+        "description": {
+          "value": "<p>critical hits</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Weaknesses",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "actionType": "save",
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "touch": false,
+            "target": {
+              "value": "one creature"
+            },
+            "save": {
+              "type": "fort",
+              "dc": "12",
+              "description": "Staggered instead"
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": null
+            },
+            "attackBonus": "",
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [
+                "After extra damage from a critical, stunned 1 round or staggered 1 round on success; machina exception."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weaknesses",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedWeaknesses": true,
+          "customFeature": true,
+          "sourceText": "critical hits",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Critical Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d3 rounds as a standard action, the machina soldier can inflict more pain than normal. If they succeed at hitting with their gore attack, the damage is 1d6+4 x 1.5 for total damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Critical Attack",
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "floor((1d6 + @abilities.str.mod) * 1.5)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3]]</span> rounds."
+              ],
+              "footer": [
+                "Source statblock: 2 Gore +10 (1d6+4)"
+              ]
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": false,
+            "_id": "617adfff9794e311"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "critical-attack",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": {
+              "attackName": "gore",
+              "damageFormula": "floor((1d6+4) * 1.5)",
+              "sourceDamageFormula": "1d6+4",
+              "multiplier": "1.5",
+              "raw": "damage is 1d6+4 x 1.5"
+            },
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 3,
+                "mod": -4,
+                "missing": false,
+                "raw": "3"
+              },
+              "wis": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "per": "charges",
+            "maxFormula": "1",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d3"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Electric Shock",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A machina soldier can send an electric jolt at a single target within 5 feet. This attack deals 2d8 points of lightning damage to the target and a successful Reflex save (DC 16) halves the damage. Blue mages may learn this ability as a 2nd level spell (Knowledge: Engineering or Technology DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Electric Shock",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 5,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "lightning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + 2",
+              "type": "ref",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "Single adjacent target."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": null
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000010001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "electric-shock",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 16,
+                "raw": "Reflex save (DC 16)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
+                "ability": "dex",
+                "confidence": "derived-preferred-floor",
+                "base": 14,
+                "neededMod": 2,
+                "candidates": [
+                  "dex:floor",
+                  "dex:minimum-one"
+                ],
+                "expectedDc": 16
+              }
+            ],
+            "damages": [
+              {
+                "formula": "2d8",
+                "type": "lightning",
+                "raw": "2d8 points of lightning damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Engineering or Technology DC 19).",
+            "range": {
+              "value": 5,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 3,
+                "mod": -4,
+                "missing": false,
+                "raw": "3"
+              },
+              "wis": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Impale",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>When charging, a machina ranger deals double damage with gore.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Impale",
+            "activation": {
+              "type": "full",
+              "cost": 1,
+              "unchained": {
+                "type": "action",
+                "cost": 1
+              }
+            },
+            "actionType": "mwak",
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "touch": false,
+            "target": {
+              "value": "one target"
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "attackBonus": "-1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2 * (1d6 + @abilities.str.mod)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [
+                "One charging gore, +2 attack and -2 AC until next turn."
+              ],
+              "footer": [
+                "Source statblock: 2 Gore +10 (1d6+4)"
+              ]
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "extraAttacks": {
+              "type": "",
+              "manual": []
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "_id": "3638570a112b4693"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "impale",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 3,
+                "mod": -4,
+                "missing": false,
+                "raw": "3"
+              },
+              "wis": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Machina Soldier",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/machina-soldier.jpg"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/machina-warrior/machina-soldier/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/09-final-fantasy-x-2-bestiaire-makina-soldat.jpg",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/machina-soldier.jpg",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 2,
+        "size": "Small",
+        "cr": "6",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Machina"
+        ],
+        "xp": 2400,
+        "aura": "",
+        "perception": 11,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee 2 Gores +10 (1d6+4)",
+            "Special Attacks Critical Attack, Impale"
+          ],
+          "speed": "30 ft.",
+          "melee": "2 Gores +10 (1d6+4)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Critical Attack, Impale",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 18, touch 13, flat-footed 16 (+2 dex, +5 natural, +1 size)",
+            "hp 62 [98] (8d10+18)",
+            "Fort +4, Ref +4, Will +2",
+            "DR 5/magic; Immune construct traits",
+            "Weakness critical hits, lightning"
+          ],
+          "ac": "AC 18, touch 13, flat-footed 16 (+2 dex, +5 natural, +1 size)",
+          "hp": "hp 62 [98] (8d10+18)",
+          "hitPoints": 62,
+          "hitDice": 8,
+          "saves": "Fort +4, Ref +4, Will +2",
+          "defensiveAbilities": "",
+          "dr": "5/magic;",
+          "immunities": "construct traits",
+          "resistances": "",
+          "weaknesses": "critical hits, lightning",
+          "sr": null
+        },
+        "statistics": [
+          "Str 19, Dex 14, Con -, Int 3, Wis 11, Cha 1",
+          "Base Atk +8; CMB +11; CMD 23",
+          "Feats Great Fortitude, Improved Natural Attack (Gore), Skill Focus (Perception), Toughness",
+          "Skills Perception +11"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Magitek Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "machina-soldier"
+    }
+  }
+}

@@ -1,0 +1,2132 @@
+{
+  "name": "Bone Dragon",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/bone-dragon.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 4,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "cha",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 7,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 10
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "cha"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 60
+        },
+        "climb": {
+          "base": 20
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "29 vs. trip.",
+      "quadruped": true
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 10
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 10
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 10
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 2400
+      },
+      "cr": {
+        "base": 6
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>The remains of what was once a great dragon, it still roams the land, unaware that its flesh has long since rotted from its bones. It seeks sustenance to sate its insatiable hunger, but everything it consumes falls untouched through the holes in its decrepit body. Its pain and suffering will continue until its bones turn to dust or it is dispelled by the holy magics it despises so.</p><h2>Defense</h2><p>AC 18, touch 11, flat-footed 16 (+2 dex, +7 natural, -1 size)</p><p>hp 85 [120] (10d8+40)</p><p>Fort +5, Ref +5, Will +8</p><p>DR 5/bludgeoning; Immune Undead Traits; Resist Ice 10</p><p>Weakness Fire and Holy</p><h2>Offense</h2><p>Speed 60 ft., Climb 20 ft.</p><p>Melee Bite +13 (2d6+8), 2 Claws +13 (1d8+5), 2 Wings +8 (1d6+2), Tail Slap +8 (1d8+8)</p><p>Ranged Bone +9 (2d6+5) [60 ft. range]</p><p>Space 10 ft.; Reach 5 ft. (10 ft. with bite)</p><p>Special Attacks Curse Gaze, Horror Cloud</p><h2>Statistics</h2><p>Str 20, Dex 14, Con -, Int 4, Wis 12, Cha 14</p><p>Base Atk +7; CMB +13; CMD 25 (29 vs. trip)</p><p>Skills Perception +15, Intimidate +15, Stealth +17</p><p>Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "bludgeoning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "fire",
+        "light"
+      ],
+      "ci": [
+        "mindAffecting",
+        "bleed",
+        "deathEffects",
+        "disease",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "physical ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "raising and resurrection"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Undead",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "6",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "undead",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 10,
+        "hd": 8,
+        "hp": 45,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "clm": true,
+          "dis": true,
+          "fly": true,
+          "int": true,
+          "kar": true,
+          "khi": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "spl": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "undead"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Undead",
+          "sourceHitPoints": 85,
+          "sourceHitDice": 10,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +7; CMB +13; CMD 25 (29 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +7; CMB +13; CMD 25 (29 vs. trip)",
+            "bab": 7,
+            "cmb": 13,
+            "cmd": 25
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "10",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "2",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6+3",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +13 (2d6+8)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "ccc6c7b54997370d",
+                "name": "Night Stalker: flat-footed in darkness",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "31fa4e056d8e3b86",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "formula": "2",
+                    "type": "untyped",
+                    "critical": "normal",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 13,
+            "damage": "2d6+8",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 8,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Claw x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Claw",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "2",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Claw +13 (1d8+5)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "fb6a9b5c684bb804",
+                "name": "Night Stalker: flat-footed in darkness",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "2241007a81556ee2",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "formula": "2",
+                    "type": "untyped",
+                    "critical": "normal",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "claw",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 13,
+            "damage": "1d8+5",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 5,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000003",
+      "name": "Wing x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Wing",
+            "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Wing 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Wing",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Wing +8 (1d6+2)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "af6ad6028029d7b2",
+                "name": "Night Stalker: flat-footed in darkness",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "b8847b703b65456e",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "formula": "2",
+                    "type": "untyped",
+                    "critical": "normal",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "wing",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Wing",
+            "ranged": false,
+            "attackBonus": 8,
+            "damage": "1d6+2",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 2,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000004",
+      "name": "Tail Slap",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-tail.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tail Slap",
+            "img": "systems/ffd20/icons/items/inventory/monster-tail.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8+3",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Tail Slap",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Tail Slap +8 (1d8+8)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "546193f6903917fe",
+                "name": "Night Stalker: flat-footed in darkness",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "4d5d1fe01ad22941",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "formula": "2",
+                    "type": "untyped",
+                    "critical": "normal",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tail-slap",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Tail Slap",
+            "ranged": false,
+            "attackBonus": 8,
+            "damage": "1d8+8",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 8,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000005",
+      "name": "Bone",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bone",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "maxIncrements": 1
+            },
+            "actionType": "rwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6+5",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Bone",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bone +9 (2d6+5)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "conditionals": [
+              {
+                "_id": "4c4fa0472c6ac68f",
+                "name": "Night Stalker: flat-footed in darkness",
+                "default": false,
+                "modifiers": [
+                  {
+                    "_id": "453a52208df74b6e",
+                    "target": "attack",
+                    "subTarget": "allAttack",
+                    "formula": "2",
+                    "type": "untyped",
+                    "critical": "normal",
+                    "damageType": []
+                  }
+                ]
+              }
+            ],
+            "effectNotes": [],
+            "_id": "act0000000007001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bone",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bone",
+            "ranged": true,
+            "attackBonus": 9,
+            "damage": "2d6+5",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 5,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Complete Warrior, p. 101: gain one hit point per Hit Die. Distinct from the separately printed Toughness. At 10 HD the two feats contribute 10 HP each.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "@attributes.hd.total",
+            "target": "mhp",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness",
+          "authoredLocally": true,
+          "semanticKey": "045:bone-dragon:Improved Toughness",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Night Stalker",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/shadow_17.jpg",
+      "system": {
+        "description": {
+          "value": "<p><em>You excel at hunting humans in the dead of night and murdering them quietly.</em></p><p><strong>Prerequisites</strong>: Skill Focus (Stealth), darkvision, half-ogre or ogre, size Large or larger.</p><p><strong>Benefits</strong>: While in areas of dim lighting or natural darkness, you ignore all size penalties on Stealth checks and gain a +2 bonus on attack rolls against flat-footed enemies.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "night-stalker",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "tags": [
+          "Monster",
+          "Half-Ogre",
+          "Ogre"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness",
+          "authoredLocally": true,
+          "semanticKey": "045:bone-dragon:Night Stalker",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "WlySDcs17cy9t6iT",
+            "version": "11.4.0"
+          }
+        },
+        "ffd20-expanded-bestiary": {
+          "compendiumHydrated": true,
+          "sourcePack": "pf-content-for-ffd20.pf-feats",
+          "sourceId": "WlySDcs17cy9t6iT",
+          "sourceVersion": "11.4.0"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Sow Terror",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After winning opposed Stealth by at least five, sow doubt without revealing your position.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "889247f961e2559d",
+            "name": "Sow Terror",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "will",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates shaken"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "Only after winning opposed Stealth by 5; shaken for [[1d4]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sow-terror",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness",
+          "authoredLocally": true,
+          "semanticKey": "045:bone-dragon:Sow Terror",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Curse Gaze",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
+      "system": {
+        "description": {
+          "value": "<p>2/day, a bone dragon gazes a dark eerie look into the eyes of their opponent within 60 feet. The target must make a Will save (DC 17) or be inflicted with the Curse status effect for 1d4 rounds. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "9996fdbf21f825af",
+            "name": "Curse Gaze",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "maxIncrements": 1
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "will",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates Curse"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "On failure Curse for [[1d4]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 2,
+          "per": "day",
+          "maxFormula": "2",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "curse-gaze",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 2,
+              "per": "day",
+              "maxFormula": "2",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 17,
+                "raw": "Will save (DC 17)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 15,
+                "expectedDc": 17
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:bone-dragon:Curse Gaze",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 2,
+            "per": "day",
+            "maxFormula": "2",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Horror Cloud",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a bone dragon can release a black cloud of horror towards its enemy within 60 feet. The target must make a Fortitude save (DC 17) or be inflicted with the Slow status effect for 1d6 rounds. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "4875cc200a22e605",
+            "name": "Horror Cloud",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "maxIncrements": 1
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates Slow"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "On failure Slow for [[1d6]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "horror-cloud",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 17,
+                "raw": "Fortitude save (DC 17)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 15,
+                "expectedDc": 17
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:bone-dragon:Horror Cloud",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "per": "day",
+            "maxFormula": "3",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "680c3f6e3f0393b2",
+      "name": "Night Stalker: darkness",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only night stalker: darkness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "circumstance",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Only night stalker: darkness."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "only-night-stalker-darkness",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bone Dragon",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/bone-dragon.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/skeleton-family/bone-dragon/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/BoneDragon.gif",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/bone-dragon.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 6,
+        "size": "Large",
+        "cr": "6",
+        "creatureType": "Undead",
+        "subtypes": [],
+        "xp": 2400,
+        "aura": "",
+        "perception": 15,
+        "offense": {
+          "raw": [
+            "Speed 60 ft., Climb 20 ft.",
+            "Melee Bite +13 (2d6+8), 2 Claws +13 (1d8+5), 2 Wings +8 (1d6+2), Tail Slap +8 (1d8+8)",
+            "Ranged Bone +9 (2d6+5) [60 ft. range]",
+            "Space 10 ft.; Reach 5 ft. (10 ft. with bite)",
+            "Special Attacks Curse Gaze, Horror Cloud"
+          ],
+          "speed": "60 ft., Climb 20 ft.",
+          "melee": "Bite +13 (2d6+8), 2 Claws +13 (1d8+5), 2 Wings +8 (1d6+2), Tail Slap +8 (1d8+8)",
+          "ranged": "Bone +9 (2d6+5) [60 ft. range]",
+          "space": "Space 10 ft.; Reach 5 ft. (10 ft. with bite)",
+          "specialAttacks": "Curse Gaze, Horror Cloud",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 18, touch 11, flat-footed 16 (+2 dex, +7 natural, -1 size)",
+            "hp 85 [120] (10d8+40)",
+            "Fort +5, Ref +5, Will +8",
+            "DR 5/bludgeoning; Immune Undead Traits; Resist Ice 10",
+            "Weakness Fire and Holy"
+          ],
+          "ac": "AC 18, touch 11, flat-footed 16 (+2 dex, +7 natural, -1 size)",
+          "hp": "hp 85 [120] (10d8+40)",
+          "hitPoints": 85,
+          "hitDice": 10,
+          "saves": "Fort +5, Ref +5, Will +8",
+          "defensiveAbilities": "",
+          "dr": "5/bludgeoning;",
+          "immunities": "Undead Traits;",
+          "resistances": "Ice 10",
+          "weaknesses": "Fire and Holy",
+          "sr": null
+        },
+        "statistics": [
+          "Str 20, Dex 14, Con -, Int 4, Wis 12, Cha 14",
+          "Base Atk +7; CMB +13; CMD 25 (29 vs. trip)",
+          "Skills Perception +15, Intimidate +15, Stealth +17",
+          "Feats Improved Initiative, Improved Toughness, Night Stalker, Sow Terror, Toughness"
+        ],
+        "gear": [],
+        "tactics": [
+          "Before Combat: A bone dragon will attempt to stalk its prey sowing terror from outside their notice and soften them up, before emerging..and they have no lacking of patience the grave has provided them the willingness to wait hours before striking their prey, and slowly terrorize from out of sight…stalking from amidst the trees or caves in which it lairs..happily clinging to the walls or moving amongst the treetops..as it hunts.",
+          "During Combat: A Bone Dragon seeks to terrorize its prey long past draconic majesty remainfest, with cruel intent, it tends to open any combat in which it has been detected by using its supernatural abilities to soften up potential prey from a distance, till either its prey closes the distance (an act thé bone dragon will attempt to avoid.) launching bones and using its move speed to attempt to keep putting distance between wild prey, it will attempt instinctively to target any wielded a of holy or fire magic first but else wise lacks complex targeting..and will charge into melee and try to spread its attacks around as much as possible..seeking to inflict as much pain and suffering as possible.."
+        ],
+        "ecology": [],
+        "family": "Skeleton Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "bone-dragon"
+    }
+  }
+}

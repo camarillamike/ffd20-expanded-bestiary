@@ -1,0 +1,919 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.45",
+  "status": "native-verified-awaiting-live-test",
+  "source": {
+    "name": "Cutter",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/sweeper-family/cutter/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/CutterMachine-ccvii.png",
+    "rawSections": {
+      "HEADER": [
+        "Bestiary > Constructs > Magitek Family >",
+        "Cutter (CR 7)",
+        "XP 3,200",
+        "N Large Construct (Machina)",
+        "Init +3; Senses Darkvision 60 ft., low-light vision; Perception +14"
+      ],
+      "DEFENSE": [
+        "AC 22, touch 12, flat-footed 19 (+3 Dex, +10 natural, -1 size)",
+        "hp 95 [140] (10d10+40)",
+        "Fort +8, Ref +9, Will +9",
+        "Defensive Abilities hardness 5, resilient; Immune Construct traits",
+        "Resist Ice 10, Water 10",
+        "Weakness Critical hits and Lightning"
+      ],
+      "OFFENSE": [
+        "Speed 40 ft.",
+        "Melee 2 Buzz Saws +18 (2d12+8)",
+        "Space 10 ft.; Reach 10 ft.",
+        "Special Attacks Boosted Charge, Buzzsaw Blitz"
+      ],
+      "STATISTICS": [
+        "Str 26, Dex 16, Con -, Int 12, Wis 16, Cha 4",
+        "Base Atk +10; CMB +19; CMD 32",
+        "Feats Cleave, Great Fortitude, Power Attack, Toughness, Weapon Focus (Buzz Saw)",
+        "Skills Acrobatics +12, Perception +14, Sense Motive +14",
+        "Languages Common (Cannot speak)"
+      ],
+      "SPECIAL ABILITIES": [
+        "Boosted Charge (Ex)",
+        "Twice per day, a cutter can make a full-attack action at the end of a charge instead of a single attack.",
+        "Buzzsaw Blitz (Ex)",
+        "Once every 1d6+1 rounds, a cutter can perform one extra buzz saw attack with each saw as part of a full attack. This ability cannot be used in conjunction with the boosted charge ability.",
+        "Resilient (Ex)",
+        "A cutter receive a +3 racial bonus on all saving throws."
+      ]
+    },
+    "parsed": {
+      "cr": "7",
+      "xp": 3200,
+      "alignment": "N",
+      "size": "Large",
+      "creatureType": "Construct",
+      "subtypes": [
+        "Machina"
+      ],
+      "initiative": 3,
+      "senses": "Darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 22, touch 12, flat-footed 19 (+3 Dex, +10 natural, -1 size)",
+          "hp 95 [140] (10d10+40)",
+          "Fort +8, Ref +9, Will +9",
+          "Defensive Abilities hardness 5, resilient; Immune Construct traits",
+          "Resist Ice 10, Water 10",
+          "Weakness Critical hits and Lightning"
+        ],
+        "ac": "AC 22, touch 12, flat-footed 19 (+3 Dex, +10 natural, -1 size)",
+        "hp": "hp 95 [140] (10d10+40)",
+        "hitPoints": 95,
+        "hitDice": 10,
+        "saves": "Fort +8, Ref +9, Will +9",
+        "defensiveAbilities": "hardness 5, resilient;",
+        "dr": "",
+        "immunities": "Construct traits",
+        "resistances": "Ice 10, Water 10",
+        "weaknesses": "Critical hits and Lightning",
+        "sr": null
+      },
+      "offense": {
+        "raw": [
+          "Speed 40 ft.",
+          "Melee 2 Buzz Saws +18 (2d12+8)",
+          "Space 10 ft.; Reach 10 ft.",
+          "Special Attacks Boosted Charge, Buzzsaw Blitz"
+        ],
+        "speed": "40 ft.",
+        "melee": "2 Buzz Saws +18 (2d12+8)",
+        "ranged": "",
+        "space": "Space 10 ft.; Reach 10 ft.",
+        "specialAttacks": "Boosted Charge, Buzzsaw Blitz",
+        "spellLines": []
+      },
+      "statistics": [
+        "Str 26, Dex 16, Con -, Int 12, Wis 16, Cha 4",
+        "Base Atk +10; CMB +19; CMD 32",
+        "Feats Cleave, Great Fortitude, Power Attack, Toughness, Weapon Focus (Buzz Saw)",
+        "Skills Acrobatics +12, Perception +14, Sense Motive +14",
+        "Languages Common"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Boosted Charge",
+          "type": "ex",
+          "description": "Twice per day, a cutter can make a full-attack action at the end of a charge instead of a single attack.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Buzzsaw Blitz",
+          "type": "ex",
+          "description": "Once every 1d6+1 rounds, a cutter can perform one extra buzz saw attack with each saw as part of a full attack. This ability cannot be used in conjunction with the boosted charge ability.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Resilient",
+          "type": "ex",
+          "description": "A cutter receive a +3 racial bonus on all saving throws.",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "An improved version of the sweeper, outfitted with spinning saw blades at the end of each arm."
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": false,
+      "hasFeats": true,
+      "hasSpecialQualities": false,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": true,
+      "hasResistances": true,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": false,
+      "hasSpellResistance": false,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "cutter.json",
+    "curationFile": "cutter.json",
+    "pack": "ffd20-expanded-bestiary_constructs",
+    "packLabel": "FFD20 Expanded - Constructs",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/cutter.png",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/cutter.png",
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "stature": "tall"
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 9
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 10
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 10
+      }
+    },
+    "defenses": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 10,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 10
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "ability": ""
+        },
+        "ref": {
+          "base": 3,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "",
+      "hardness": 5
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Construct"
+      ],
+      "naturalAttacks": [],
+      "weaponAttacks": [
+        "Buzz Saw x2"
+      ],
+      "inventory": [],
+      "spells": [],
+      "feats": [
+        "Cleave",
+        "Great Fortitude",
+        "Power Attack",
+        "Toughness",
+        "Weapon Focus (Buzz Saw)"
+      ],
+      "specialQualities": [],
+      "specialAttacks": [],
+      "defensiveAbilities": [
+        "hardness 5"
+      ],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Boosted Charge",
+        "Buzzsaw Blitz",
+        "Resilient"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Weaknesses",
+        "Charging (AC)"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Construct",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Construct"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.per",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.sen",
+              "formula": "1",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "classSkills": {},
+          "level": 10,
+          "hitDie": 10,
+          "baseAttack": "med",
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "bab",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Buzz Saw x2",
+        "type": "attack",
+        "subType": "weapon",
+        "category": "weaponAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Buzz Saw",
+            "ranged": false,
+            "attackBonus": 18,
+            "damage": "2d12+8",
+            "damageFormula": "2d12",
+            "printedDamageBonus": 8,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Buzz Saw",
+              "actionType": "mwak",
+              "activation": "standard",
+              "attackBonus": "1",
+              "range": {
+                "units": "ft",
+                "value": "10",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d12",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Buzz Saw 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Cleave",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Great Fortitude",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000003",
+        "name": "Power Attack",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000004",
+        "name": "Toughness",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000005",
+        "name": "Weapon Focus (Buzz Saw)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "defab00000000001",
+        "name": "hardness 5",
+        "type": "feat",
+        "subType": "racial",
+        "category": "defensiveAbilities",
+        "generatedFlags": [
+          "generatedDefensiveAbility"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "weakness00000001",
+        "name": "Weaknesses",
+        "type": "feat",
+        "subType": "racial",
+        "category": "feat",
+        "generatedFlags": [
+          "generatedWeaknesses"
+        ],
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Boosted Charge",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 2,
+              "per": "day",
+              "maxFormula": "2",
+              "rechargeFormula": ""
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Boosted Charge",
+              "actionType": "mwak",
+              "activation": "full",
+              "attackBonus": "3",
+              "touch": false,
+              "range": {
+                "units": "ft",
+                "value": "10",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d12",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Buzz Saw 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Buzzsaw Blitz",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d6+1",
+              "rechargePeriod": "rounds"
+            }
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Buzzsaw Blitz",
+              "actionType": "mwak",
+              "activation": "full",
+              "attackBonus": "1",
+              "touch": false,
+              "range": {
+                "value": "10",
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d12",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Saw 2",
+                  "formula": "0"
+                },
+                {
+                  "name": "Saw 3",
+                  "formula": "0"
+                },
+                {
+                  "name": "Saw 4",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000003",
+        "name": "Resilient",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Ex",
+            "saveDCs": [],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Resilient",
+              "actionType": "other",
+              "activation": "special",
+              "touch": false,
+              "range": {
+                "value": "",
+                "units": ""
+              },
+              "target": {
+                "value": "one creature"
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "5bdbb035d6a69fc4",
+        "name": "Charging (AC)",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "ac",
+              "formula": "-2",
+              "type": "untyped",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Cutter is packaged as an FFD20 NPC actor with 14 generated item(s) across 6 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "7",
+      "size": "Large",
+      "type": "Construct",
+      "alignment": "N",
+      "primarySourceAttacks": [
+        "2 Buzz Saws +18 (2d12+8)"
+      ],
+      "specialAbilityNames": [
+        "Boosted Charge",
+        "Buzzsaw Blitz",
+        "Resilient"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  },
+  "releaseReview": {
+    "status": "native-verified",
+    "liveFoundryTested": false,
+    "evidence": "docs/045-09-10.md",
+    "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/magitek-family/sweeper-family/cutter/",
+    "sourceSha256": "2d3e4fbfc83137964c52d86a5b0c5deb48fc4d8b9053d5872f50138d26f3f4b5",
+    "nativeSha256": "708f1187d8e139709a44bc575f04627d6c4a24d24a1d99efa6b4c7dd0cb2b5f4"
+  },
+  "preHydrationStatus": "ready-for-foundry-test"
+}

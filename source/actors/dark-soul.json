@@ -1,0 +1,2125 @@
+{
+  "name": "Dark Soul",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/dark-soul.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "cha",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 0,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 9
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "cha"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 0
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 30,
+          "maneuverability": "perfect"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 7
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 2400
+      },
+      "cr": {
+        "base": 6
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>The souls of humans who were driven to death's door by devils. There are many devils in this world who enjoy watching humans suffer. It's not rare to hear tales of them enticing men into unfavorable contracts, offering promises of wealth and power and great magics, only to eventually claim these victims' lives. The unhappy souls of these victims are what spawns these monsters, and they chase the living to assuage the regrets and pain that they can no longer escape from.</p><h2>Defense</h2><p>AC 18, touch 18; flat-footed 14 (+4 deflection, +3 dex, +1 dodge)</p><p>hp 75 (9d8+36), fast healing 10;</p><p>Fort +7, Ref +6, Will +10</p><p>Defensive Abilities Channel Resistance +4, Incorporeal</p><p>DR 5/silver</p><p>Immune Fire, Undead traits</p><p>Resist Ice 20+50%</p><p>Weakness Holy and Water</p><h2>Offense</h2><p>Speed Fly 30 ft. (perfect)</p><p>Melee incorporeal touch +9 (1d8 fire damage)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks Curse Gaze, Grave Reel, Greater Magic Hammer, Leech</p><h2>Statistics</h2><p>Str -, Dex 16, Con -, Int 10, Wis 14, Cha 18</p><p>Base Atk +6; CMB +6; CMD 19</p><p>Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will</p><p>Skills Fly +13, Perception +24, Sense Motive +16, Stealth +21; Racial Modifiers +8 Perception, +8 Stealth</p><p>Languages Common</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [
+        "incorporeal",
+        "fire"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "alchemicalSilver"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 20,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": "Ice 50%"
+      },
+      "cres": "",
+      "di": [
+        "nonlethal",
+        "fire"
+      ],
+      "dv": [
+        "light",
+        "water"
+      ],
+      "ci": [
+        "mindAffecting",
+        "bleed",
+        "deathEffects",
+        "disease",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "physical ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "raising and resurrection"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Undead",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "-@abilities.cha.mod",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Published CMD excludes incorporeal Charisma deflection; AC retains it."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "undead",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 9,
+        "hd": 8,
+        "hp": 39,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "clm": true,
+          "dis": true,
+          "fly": true,
+          "int": true,
+          "kar": true,
+          "khi": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "spl": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "undead"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Undead",
+          "sourceHitPoints": 75,
+          "sourceHitDice": 9,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +6; CMB +6; CMD 19</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +6; CMB +6; CMD 19",
+            "bab": 6,
+            "cmb": 6,
+            "cmd": 19
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "incorporeal touch",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "incorporeal touch",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "incorporeal touch",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: incorporeal touch +9 (1d8 fire damage)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": true,
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "incorporeal-touch",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "incorporeal touch",
+            "ranged": false,
+            "attackBonus": 9,
+            "damage": "1d8 fire damage",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 0,
+            "damageType": "fire",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Alertness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Alertness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "alertness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Iron Will",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Iron Will.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "iron-will",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will"
+        }
+      }
+    },
+    {
+      "_id": "defab00000000001",
+      "name": "Channel Resistance +4",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only against channel energy.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "channel-resistance-4",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Channel Resistance +4",
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Channel Resistance +4",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/"
+        }
+      }
+    },
+    {
+      "_id": "defab00000000002",
+      "name": "Incorporeal",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Incorporeal: Charisma deflection is already included in normal and touch AC.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "@abilities.cha.mod",
+            "target": "ac",
+            "type": "deflection",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "incorporeal",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Incorporeal",
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Incorporeal",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Curse Gaze",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
+      "system": {
+        "description": {
+          "value": "<p>2/day, a dark soul gazes a dark eerie look into the eyes of their opponent within 60 feet. The target must make a Will save (DC 16) or be inflicted with the Curse status effect for 1d4 rounds. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "2a81b47c6fa73474",
+            "name": "Curse Gaze",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "ft",
+              "value": "60",
+              "maxIncrements": 1
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "will",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod - 2",
+              "description": "Negates Curse for [[1d4]] rounds."
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "Negates Curse for [[1d4]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 2,
+          "per": "day",
+          "maxFormula": "2",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "curse-gaze",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 2,
+              "per": "day",
+              "maxFormula": "2",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 16,
+                "raw": "Will save (DC 16)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "derived-preferred-floor",
+                "base": 14,
+                "neededMod": 2,
+                "candidates": [
+                  "wis:floor",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 16
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Curse Gaze",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 2,
+            "per": "day",
+            "maxFormula": "2",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Grave Reel",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, a dark soul can drain the essence of enemies around it in a 15-ft.-radius. Creatures within the area of effect must make a Fortitude save (DC 17) or suffer 2d6 points of shadow damage and the ghost is healed by the damage inflicted. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "056aa9286619d3d4",
+            "name": "Grave Reel",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "range": {
+              "units": "ft",
+              "value": "15",
+              "maxIncrements": 1
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod - 1",
+              "description": "Negates. Heal total actual damage across victims; do not reroll."
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": "15"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "Negates. Heal total actual damage across victims; do not reroll."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "grave-reel",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 17,
+                "raw": "Fortitude save (DC 17)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
+                "ability": "dex",
+                "confidence": "derived-preferred-floor",
+                "base": 14,
+                "neededMod": 3,
+                "candidates": [
+                  "dex:floor",
+                  "dex:minimum-one"
+                ],
+                "expectedDc": 17
+              }
+            ],
+            "damages": [
+              {
+                "formula": "2d6",
+                "type": "dark",
+                "raw": "2d6 points of shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Grave Reel",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "per": "day",
+            "maxFormula": "1",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Greater Magic Hammer",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a dark soul can summon a magical hammer and launches (+9 ranged touch attack) it at a single target within 30 feet for 3d4 points of MP damage. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "62e1c9ad5d1bfa1f",
+            "name": "Greater Magic Hammer",
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "ft",
+              "value": "30",
+              "maxIncrements": 1
+            },
+            "touch": true,
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "3d4",
+                  "types": [
+                    "manapoint"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "manadamage": true,
+            "notes": {
+              "effect": [
+                "MP damage only."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "greater-magic-hammer",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "3d4",
+                "type": "mp",
+                "raw": "3d4 points of MP damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "rsak",
+              "attackBonus": "",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Greater Magic Hammer",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "per": "day",
+            "maxFormula": "3",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Leech",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>4/day, a dark soul can leech the blood from a target within 30 feet. The target must make a Fortitude save (DC 16) or take 2d6 points of shadow damage and the dark soul is healed for that much. Blue mages may learn this ability as a 2nd level spell (Knowledge: Religion DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "be8c9fd24e24eed6",
+            "name": "Leech",
+            "actionType": "save",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "ft",
+              "value": "30",
+              "maxIncrements": 1
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod - 2",
+              "description": "Negates damage/healing; restore actual damage dealt."
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "Negates damage/healing; restore actual damage dealt."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 4,
+          "per": "day",
+          "maxFormula": "4",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "leech",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 4,
+              "per": "day",
+              "maxFormula": "4",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 16,
+                "raw": "Fortitude save (DC 16)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "derived-preferred-floor",
+                "base": 14,
+                "neededMod": 2,
+                "candidates": [
+                  "wis:floor",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 16
+              }
+            ],
+            "damages": [
+              {
+                "formula": "2d6",
+                "type": "dark",
+                "raw": "2d6 points of shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Religion DC 19).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "one target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Leech",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 4,
+            "per": "day",
+            "maxFormula": "4",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "7d0673a870376b19",
+      "name": "Resist Channel Energy",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only when saving against channel energy.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "will",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Only when saving against channel energy."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "only-when-saving-against-channel-energy",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "b927b708a1f144d0",
+      "name": "Fast Healing",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Fast Healing</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "9b26acd4efb76df5",
+            "name": "Fast Healing",
+            "actionType": "heal",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "target": {
+              "value": "self"
+            },
+            "range": {
+              "units": "personal",
+              "value": ""
+            },
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "10",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "Once each round."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "fast-healing",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "showInCombat": true
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Fast Healing",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semanticKey": "045:dark-soul:Fast Healing",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+          "reviewedActions": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Dark Soul",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/dark-soul.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/soul-family/dark-soul/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Dark-Soul-e1606769563751.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/dark-soul.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 7,
+        "size": "Medium",
+        "cr": "6",
+        "creatureType": "Undead",
+        "subtypes": [
+          "Incorporeal",
+          "Fire"
+        ],
+        "xp": 2400,
+        "aura": "",
+        "perception": 24,
+        "offense": {
+          "raw": [
+            "Speed Fly 30 ft. (perfect)",
+            "Melee incorporeal touch +9 (1d8 fire damage)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks Curse Gaze, Grave Reel, Greater Magic Hammer, Leech"
+          ],
+          "speed": "Fly 30 ft. (perfect)",
+          "melee": "incorporeal touch +9 (1d8 fire damage)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "Curse Gaze, Grave Reel, Greater Magic Hammer, Leech",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 18, touch 18; flat-footed 14 (+4 deflection, +3 dex, +1 dodge)",
+            "hp 75 (9d8+36), fast healing 10;",
+            "Fort +7, Ref +6, Will +10",
+            "Defensive Abilities Channel Resistance +4, Incorporeal",
+            "DR 5/silver",
+            "Immune Fire, Undead traits",
+            "Resist Ice 20+50%",
+            "Weakness Holy and Water"
+          ],
+          "ac": "AC 18, touch 18; flat-footed 14 (+4 deflection, +3 dex, +1 dodge)",
+          "hp": "hp 75 (9d8+36), fast healing 10;",
+          "hitPoints": 75,
+          "hitDice": 9,
+          "saves": "Fort +7, Ref +6, Will +10",
+          "defensiveAbilities": "Channel Resistance +4, Incorporeal",
+          "dr": "5/silver",
+          "immunities": "Fire, Undead traits",
+          "resistances": "Ice 20+50%",
+          "weaknesses": "Holy and Water",
+          "sr": null
+        },
+        "statistics": [
+          "Str -, Dex 16, Con -, Int 10, Wis 14, Cha 18",
+          "Base Atk +6; CMB +6; CMD 19",
+          "Feats Alertness, Combat Reflexes, Dodge, Improved Initiative, Iron Will",
+          "Skills Fly +13, Perception +24, Sense Motive +16, Stealth +21; Racial Modifiers +8 Perception, +8 Stealth",
+          "Languages Common"
+        ],
+        "gear": [],
+        "tactics": [
+          "During Combat"
+        ],
+        "ecology": [],
+        "family": "Soul Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "dark-soul"
+    },
+    "ffd20-expanded-bestiary": {
+      "halfResistances": [
+        "ice"
+      ]
+    }
+  }
+}

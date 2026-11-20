@@ -1,0 +1,2166 @@
+{
+  "name": "Ice Sculpture",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/ice-sculpture.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 8,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 10
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 10
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 4800
+      },
+      "cr": {
+        "base": 8
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A statue carved from ice. If a human wanders into the territory of one of these monsters, they appear out of seemingly nowhere and attack mercilessly. It is unclear what exactly drives this aggression, but since they don't seem to stray from the ruins of ancient peoples, it is likely they originally created to serve as sentinels. Their ice bodies save them from many of the dangers that living creatures face in the coldest of regions, but they are notably vulnerable to heat. Apply a little fire and you will be able to see them melt before your eyes.</p><h2>Defense</h2><p>AC 23, touch 14, flat-footed 19 (+4 Dex, +8 natural, +1 shield)</p><p>hp 75 [120] (10d10+20)</p><p>Fort +3, Ref +7, Will +4</p><p>DR 5/bludgeoning</p><p>Immune construct traits</p><p>Resist Ice 10, Earth 15, Wind 50%</p><p>Weakness Fire</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee Longsword +13/+8 (1d8+4/19-20), Shortsword +13 (1d6+2/19-20) or 2 slams +14 (1d6+4)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks keen weapons, pressure, rank fighting</p><h2>Statistics</h2><p>Str 18, Dex 18, Con -, Int 1, Wis 12, Cha 1</p><p>Base Atk +10; CMB +14; CMD 28</p><p>Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)</p><p>Skills Perception +11</p><p>Gear longsword, shortsword</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "ice"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "bludgeoning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": "Wind 50%"
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "fire"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 10,
+        "hd": 10,
+        "hp": 75,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "construct"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 75,
+          "sourceHitDice": 10,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +10; CMB +14; CMD 28</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +10; CMB +14; CMD 28",
+            "bab": 10,
+            "cmb": 14,
+            "cmd": 28
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000003",
+      "name": "slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 slam +14 (1d6+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          },
+          {
+            "name": "Pressure: slam x2",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 17,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "slam",
+            "critConfirmBonus": "2",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 slam +14 (1d6+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "3ff1f7f0742ea8a2",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "slam",
+            "ranged": false,
+            "attackBonus": 14,
+            "damage": "1d6+4",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Two-Weapon Defense",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Two-Weapon Defense.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "two-weapon-defense",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Two-Weapon Fighting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Two-Weapon Fighting.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "two-weapon-fighting",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Weapon Focus (longsword)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (longsword).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-longsword",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Weapon Focus (shortsword)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (shortsword).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-shortsword",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Keen Weapons",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After it has engaged in at least 1 round of combat, an ice sculpture's weapons automatically gain the benefits of keen weapon (CL 6th). This effect persists until the end of the battle.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Keen Weapons",
+            "_id": "6b203dcbb7edc8d4",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "touch": false,
+            "attackBonus": "",
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "duration": {
+              "value": "",
+              "units": ""
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "notes": {
+              "effect": [
+                "After the first round, weapons threaten 17-20 until the fight ends."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "keen-weapons",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "authoredLocally": true,
+          "review045Semantic": "ice-sculpture:Keen Weapons",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Pressure",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4+1 rounds as an free action, each attack made during this round has it's critical range increased to 17-20 and confirmed critical by +2.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Pressure",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "free",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "17-20, not cumulative with keen. +2 to confirmation this round.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "960dfdd03678a3db",
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "duration": {
+              "value": "1",
+              "units": "round"
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "autoDeductChargesCost": "1",
+          "per": "charges",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "pressure",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "free",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "authoredLocally": true,
+          "review045Semantic": "ice-sculpture:Pressure",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "autoDeductChargesCost": "1",
+            "per": "charges",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Rank Fighting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whenever an ice sculpture is adjacent to another an ice sculpture, it gains a +2 dodge bonus to its AC and a +2 bonus on saving throws, attack rolls, and damage rolls. Construction An ice sculpture's body is made from 600 pounds of ice, enchanted with rare and magical glazes worth 1000 gp. CL 10th; Price 25,000 gil CONSTRUCTION REQUIREMENTS Feats Craft Construct; Spells animate objects, cone of cold, mithra's grace, geas/quest, keen; Special creator must be caster level 10th; Skill Craft (pottery) or Craft (sculptures) DC 15; Cost 12,000 gil Variants Unlike most constructs, an ice sculpture carries within its form a spark of intelligence. This is hardly enough to grant the construct the ability to speak or otherwise engage in free will, but it is enough for it to carry out more complex tactics than most constructs are capable of. It's not unusual for an ice sculpture to possess different feats or use different weapons.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rank-fighting",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    },
+    {
+      "_id": "8881a7ecefbc4615",
+      "_stats": {
+        "coreVersion": "12.343"
+      },
+      "folder": "ojvASzhaCGmnx8xQ",
+      "img": "systems/ffd20/icons/items/weapons/longsword.png",
+      "name": "Longsword",
+      "system": {
+        "actions": [
+          {
+            "_id": "jelb63mz9vrxa43c",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Iterative",
+                  "formula": "-5"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Longsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "7d7c41295d11d9e3",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 17,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Iterative",
+                  "formula": "-5"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Keen: Longsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "9b9cb94c6fea468d",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 17,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Iterative",
+                  "formula": "-5"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Pressure: Longsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "critConfirmBonus": "2",
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "baseTypes": [
+          "Longsword"
+        ],
+        "description": {
+          "unidentified": "<p>This sword is about 3-1/2 feet in length.</p>"
+        },
+        "hardness": 10,
+        "hp": {
+          "base": 5
+        },
+        "material": {
+          "base": {
+            "value": "steel"
+          }
+        },
+        "price": 15,
+        "sources": [
+          {
+            "id": "PZO1110",
+            "pages": "142, 147"
+          },
+          {
+            "id": "PZO1123",
+            "pages": "18"
+          }
+        ],
+        "subType": "martial",
+        "weaponGroups": [
+          "bladesHeavy"
+        ],
+        "weaponSubtype": "1h",
+        "weight": {
+          "value": 4
+        },
+        "equipped": true,
+        "carried": true,
+        "proficient": true,
+        "enh": 0,
+        "masterwork": false,
+        "size": "med"
+      },
+      "type": "weapon",
+      "effects": [],
+      "flags": {
+        "ffd20-expanded-bestiary": {
+          "compendiumHydrated": true,
+          "sourcePack": "ffd20.weapons-and-ammo",
+          "sourceId": "zWRlna42PMJVX6un"
+        },
+        "ffd20-bestiary-builder": {
+          "review045Semantic": "ice-sculpture:Longsword"
+        }
+      }
+    },
+    {
+      "_id": "ec19a85d516c3ae2",
+      "_stats": {
+        "coreVersion": "12.343"
+      },
+      "folder": "ojvASzhaCGmnx8xQ",
+      "img": "systems/ffd20/icons/items/weapons/sword-short.PNG",
+      "name": "Shortsword",
+      "system": {
+        "actions": [
+          {
+            "_id": "lkzee7hknlqx9chs",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Shortsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "6adc9026f0d6cd21",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "critRange": 17,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Keen: Shortsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "_id": "cb634b178f698809",
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "critRange": 17,
+              "critMult": 2
+            },
+            "actionType": "mwak",
+            "activation": {
+              "type": "attack",
+              "unchained": {
+                "type": "attack"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "name": "Pressure: Shortsword",
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "attackBonus": "-1",
+            "enh": {
+              "value": 0
+            },
+            "critConfirmBonus": "2",
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "baseTypes": [
+          "Shortsword"
+        ],
+        "description": {
+          "unidentified": "<p>Short swords are some of the most common weapons found in any martial society, and thus designs are extremely varied, depending on the region and creator. Most are around 2 feet in length. Their blades can be curved or straight, single- or double-edged, and wide or narrow. Hilts may be ornate or simple, with crossguards, basket hilts, or no guard at all. Such weapons are often used on their own, but can also be paired as a matched set, or used in conjunction with a dagger or longer sword.</p>"
+        },
+        "hardness": 10,
+        "hp": {
+          "base": 2
+        },
+        "material": {
+          "base": {
+            "value": "steel"
+          }
+        },
+        "price": 10,
+        "properties": {
+          "fin": true
+        },
+        "sources": [
+          {
+            "id": "PZO1110",
+            "pages": "142, 148"
+          },
+          {
+            "id": "PZO1123",
+            "pages": "18"
+          }
+        ],
+        "subType": "martial",
+        "weaponGroups": [
+          "bladesLight"
+        ],
+        "weight": {
+          "value": 2
+        },
+        "equipped": true,
+        "carried": true,
+        "proficient": true,
+        "enh": 0,
+        "masterwork": false,
+        "size": "med"
+      },
+      "type": "weapon",
+      "effects": [],
+      "flags": {
+        "ffd20-expanded-bestiary": {
+          "compendiumHydrated": true,
+          "sourcePack": "ffd20.weapons-and-ammo",
+          "sourceId": "05rD6YP5sVSrKY28"
+        },
+        "ffd20-bestiary-builder": {
+          "review045Semantic": "ice-sculpture:Shortsword"
+        }
+      }
+    },
+    {
+      "_id": "66d3b23ab3ad6d43",
+      "name": "Two swords readied",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Two-Weapon Defense only with both weapons.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "sac",
+            "type": "shield",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "two-weapon-defense-only-with-both-weapon",
+        "subType": "temp",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    },
+    {
+      "_id": "5847e2ad4c7071db",
+      "name": "Rank Fighting: adjacent",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only adjacent to another ice sculpture.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "allSavingThrows",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "attack",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "damage",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-adjacent-to-another-ice-sculpture",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ice Sculpture",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/ice-sculpture.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/sculpture-family/ice-sculpture/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Ice-Sculpture.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/ice-sculpture.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 8,
+        "size": "Medium",
+        "cr": "8",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Ice"
+        ],
+        "xp": 4800,
+        "aura": "",
+        "perception": 11,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee Longsword +13/+8 (1d8+4/19-20), Shortsword +13 (1d6+2/19-20) or 2 slams +14 (1d6+4)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks keen weapons, pressure, rank fighting"
+          ],
+          "speed": "30 ft.",
+          "melee": "Longsword +13 (1d8+4/19-20), Shortsword +13 (1d6+2/19-20), 2 slams +14 (1d6+4)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "keen weapons, pressure, rank fighting",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 23, touch 14, flat-footed 19 (+4 Dex, +8 natural, +1 shield)",
+            "hp 75 [120] (10d10+20)",
+            "Fort +3, Ref +7, Will +4",
+            "DR 5/bludgeoning",
+            "Immune construct traits",
+            "Resist Ice 10, Earth 15, Wind 50%",
+            "Weakness Fire"
+          ],
+          "ac": "AC 23, touch 14, flat-footed 19 (+4 Dex, +8 natural, +1 shield)",
+          "hp": "hp 75 [120] (10d10+20)",
+          "hitPoints": 75,
+          "hitDice": 10,
+          "saves": "Fort +3, Ref +7, Will +4",
+          "defensiveAbilities": "",
+          "dr": "5/bludgeoning",
+          "immunities": "construct traits",
+          "resistances": "Ice 10, Earth 15, Wind 50%",
+          "weaknesses": "Fire",
+          "sr": null
+        },
+        "statistics": [
+          "Str 18, Dex 18, Con -, Int 1, Wis 12, Cha 1",
+          "Base Atk +10; CMB +14; CMD 28",
+          "Feats Improved Initiative, Two-Weapon Defense, Two-Weapon Fighting, Weapon Focus (longsword), Weapon Focus (shortsword)",
+          "Skills Perception +11",
+          "Gear longsword, shortsword"
+        ],
+        "gear": [
+          {
+            "label": "Gear",
+            "items": "longsword, shortsword"
+          }
+        ],
+        "tactics": [
+          "During Combat"
+        ],
+        "ecology": [],
+        "family": "Sculpture Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "ice-sculpture"
+    },
+    "ffd20-expanded-bestiary": {
+      "halfResistances": [
+        "wind"
+      ]
+    }
+  }
+}

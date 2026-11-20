@@ -1,0 +1,2160 @@
+{
+  "name": "Zaghnol",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/zaghnol.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 8,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 8
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -2,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 2
+      },
+      "clm": {
+        "ability": "str",
+        "rank": 2
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 5
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 5
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 2400
+      },
+      "cr": {
+        "base": 6
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A beast wreathed in lightning and specializes in thunder attacks. This crazy red-like bull has a blue mohawk on his back.</p><h2>Defense</h2><p>AC 19, touch 11; flat-footed 17 (+2 dex, +8 natural, -1 size)</p><p>hp 85 (8d10+42)</p><p>Fort +10, Ref +6, Will +3</p><p>Resist Lightning 10</p><p>Weakness Water</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee Gore +15 (1d8+6), 2 Hooves +9 (1d6+3)</p><p>Space 10 ft.; Reach 5 ft.</p><p>Special Attacks Electrocute, Impale</p><h2>Statistics</h2><p>Str 22, Dex 14, Con 18, Int 6, Wis 12, Cha 8</p><p>Base Atk +9; CMB +16; CMD 28</p><p>Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)</p><p>Skills Acrobatics +7, Climb +11, Perception +9, Survival +6</p><p><strong>GM note:</strong> Electrocute has no printed caster level, ability or MP pool. For its variable spell effects use HD 8 and highest mental modifier (Wis +1); the page says cancelling still costs MP but provides no pool to debit.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [
+        "lightning"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "water"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 8,
+        "hd": 10,
+        "hp": 45,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "magicalBeast"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 85,
+          "sourceHitDice": 8,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +9; CMB +16; CMD 28</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +9; CMB +16; CMD 28",
+            "bab": 9,
+            "cmb": 16,
+            "cmd": 28
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Gore",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Gore",
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Gore +15 (1d8+6)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "gore",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 15,
+            "damage": "1d8+6",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Hoof x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hoof",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Hoof 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Hoof",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Hoof +9 (1d6+3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hoof",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Hoof",
+            "ranged": false,
+            "attackBonus": 9,
+            "damage": "1d6+3",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Overrun",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Overrun.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-overrun",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Weapon Focus (Gore)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Gore).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-gore",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Impale",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>When charging, a zaghnol deals double damage with horns.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Impale",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": "5",
+              "maxIncrements": 1
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2 * (1d8 + @abilities.str.mod)",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackBonus": "3",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On a charge only; includes +2 attack and double horn damage."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "_id": "act0000000009001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "impale",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Electrocute",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2 rounds, a zaghnol charges themselves up with electricity with varying effects. To determine the effect, roll a 1d10: 1 for Thunder, 2 to 4 for Thunder II, 5 to 6 for Defensive Shock, 7 to 8 for Elemental Touch (Lightning), 9 for Thundara, and 10 for Thunder III. The caster can decide who they want to target once they know the result and if they don't like their result they can cancel the affect but must spend the MP cost and time spent on it. Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Electrocute",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Roll [[1d10]] then use the corresponding outcome; choose targets after rolling. Cancelling still costs the time and MP.",
+                "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000010001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2"
+        }
+      }
+    },
+    {
+      "_id": "bf6067a2dc6e648f",
+      "name": "Charging (AC)",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Until the start of the next turn after charging.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-2",
+            "target": "ac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "until-the-start-of-the-next-turn-after-c",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic045": "zaghnol/state/Charging (AC)"
+        }
+      }
+    },
+    {
+      "_id": "14b5e930bb35c3c1",
+      "name": "Electrocute: 1 Thunder",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. </p><p>You direct a bolt of lightning at your opponent. Requires a ranged touch attack roll to hit that deals 1d6 points of lightning damage + your casting modifier (Intelligence or Charisma) + 1 point per caster level (maximum +5) and inflicts the Static status effect for 1d4 rounds. A successful Reflex save prevents the status effect from taking effect.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder/\">Thunder</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Thunder",
+            "actionType": "rsak",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "close"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + @abilities.wis.mod + min(5, @attributes.hd.total)",
+                  "types": [
+                    "Lightning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "dex"
+            },
+            "save": {
+              "type": "ref",
+              "dc": "10 + 1 + @abilities.wis.mod",
+              "description": "Reflex partial (object) — see description"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "S3gfyjJJMTC3detD",
+            "duration": {
+              "units": "spec",
+              "value": "instantaneous; 1d4 rounds"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 1; no second action or recharge. "
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-1-thunder",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 1 Thunder",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 1 Thunder",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.YOxVfM6ukfHEgXyN",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "0978598bd292d824",
+      "name": "Electrocute: 2-4 Thunder II",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. </p><p>This spell functions like <a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder\">Thunder</a>, except it deals 3d6 points of lightning damage + your casting modifier (Intelligence or Charisma) + 1 point per caster level (maximum +10) and inflicts the Static status effect for 1d6 rounds. A successful Reflex save prevents the status effect from taking effect.</p> <p> </p> <p>You direct a bolt of lightning at your opponent. Requires a ranged touch attack roll to hit that deals 1d6 points of lightning damage + your casting modifier (Intelligence or Charisma) + 1 point per caster level (maximum +5) and inflicts the Static status effect for 1d4 rounds. A successful Reflex save prevents the status effect from taking effect.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder-ii/\">Thunder II</a></p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder/\">Thunder</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Thunder II",
+            "actionType": "rsak",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "close"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "3d6 + @abilities.wis.mod + min(10, @attributes.hd.total)",
+                  "types": [
+                    "Lightning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "dex"
+            },
+            "save": {
+              "type": "ref",
+              "dc": "10 + 2 + @abilities.wis.mod",
+              "description": "Reflex partial (object) — see description"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "HdrCsOL4CrDvGZC2",
+            "duration": {
+              "units": "spec",
+              "value": "instantaneous; 1d6 rounds"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 2-4; no second action or recharge. "
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-2-4-thunder-ii",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 2-4 Thunder II",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 2-4 Thunder II",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.hDyAANXud0Ch64be",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "ecb55965a3325047",
+      "name": "Electrocute: 5-6 Defensive Shock",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. </p><p>Lightning energy floods your body, shocking the next creature that touches you. Any creature striking you with its body or a handheld weapon takes 1d6 points of lightning damage per two caster levels (maximum 6d6). Each time the spell discharges, the number of damage dice it deals is halved (rounded down); when the spell's damage dice reach 0, the spell ends.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/d/defensive-shock/\">Defensive Shock</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Defensive Shock",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "self"
+            },
+            "range": {
+              "units": "personal"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "Z4bhyFImAhQrVh36",
+            "duration": {
+              "units": "spec",
+              "value": "[[1*@cl]] minutes or until discharged"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 5-6; no second action or recharge. "
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-5-6-defensive-shock",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 5-6 Defensive Shock",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 5-6 Defensive Shock",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.IXnhuOSAuL36qDTM",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "26f16b27424cfb21",
+      "name": "Electrocute: 7-8 Elemental Touch",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. Lightning only.</p><p>Upon completing the casting of this spell, elemental energy infuses your hands.</p> <p>Choose an elemental type: earth, fire, ice, lightning, water, or wind. You gain a melee touch attack causing 1d6 points of damage of that elemental type, along with a special effect described below. You also deal elemental damage and the related special effect when you attack with your hands using an unarmed strike, a single claw, or a single slam attack. This bonus damage can never apply to multiple weapons.</p> <p>Earth: Your touch attack inflicts a creature with the Weighted status effect, a Fortitude save to negate.<br />Fire: Your touch attack inflicts a creature with the Burning status effect, a Reflex save to negate.<br />Ice: Your touch attack inflicts a creature with the Frozen status effect, a Fortitude save to negate.<br />Lightning: Your touch attack inflicts a creature with the Static status effect, a Reflex save to negate.<br />Water: Your touch attack inflicts a creature with the Drenched status effect, a Fortitude save to negate.<br />Wind: Your touch attack inflicts a creature with the Squalled status effect, a Reflex save to negate.</p> <p>Subsequent attacks inflict the normal damage, but the additional effects do not stack. This spell grants no special protection to anything held in or worn on your hands. When you cast this spell to deal earth, fire, ice, lightning, water, or wind damage, it is a spell of that type.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/e/elemental-touch/\">Elemental Touch</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Elemental Touch",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "self"
+            },
+            "range": {
+              "units": "personal"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "save": {
+              "description": "See description"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "wOxlkCDqG41aAQry",
+            "duration": {
+              "units": "spec",
+              "value": "[[1*@cl]] rounds (D)"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 7-8; no second action or recharge. Use lightning only."
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-7-8-elemental-touch",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 7-8 Elemental Touch",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 7-8 Elemental Touch",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.mSIkChehiUwWKvDL",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "b45af140c23f32bc",
+      "name": "Electrocute: 9 Thundara",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. </p><p>A thundara spell is the area of effect version of the thunder spell. A large bolt of lightning strikes the area and explodes dealing 1d6 points of lightning damage per caster level (maximum 10d6) to every creature within the area.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thundara/\">Thundara</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Thundara",
+            "actionType": "spellsave",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "long"
+            },
+            "measureTemplate": {
+              "size": "20",
+              "type": "circle"
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "(min(10, @attributes.hd.total))d6",
+                  "types": [
+                    "Lightning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "save": {
+              "type": "ref",
+              "dc": "10 + 3 + @abilities.wis.mod",
+              "description": "Reflex half"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "c0HSbX3RKPLc6ebs",
+            "area": "20-ft.-radius spread",
+            "duration": {
+              "units": "inst"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 9; no second action or recharge. "
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-9-thundara",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 9 Thundara",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 9 Thundara",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.f34f6lW1KkZSpiiJ",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "c00ba5bc23052f51",
+      "name": "Electrocute: 10 Thunder III",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Resolve only when rolled; not an independently known spell. </p><p>This spell functions like <a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder\">Thunder</a>, except it deals 5d6 points of lightning damage + your casting modifier (Intelligence or Charisma) + 1 point per caster level (maximum +15) and inflicts the Static status effect for 1d8 rounds. A successful Reflex save prevents the status effect from taking effect.</p> <p> </p> <p>You direct a bolt of lightning at your opponent. Requires a ranged touch attack roll to hit that deals 1d6 points of lightning damage + your casting modifier (Intelligence or Charisma) + 1 point per caster level (maximum +5) and inflicts the Static status effect for 1d4 rounds. A successful Reflex save prevents the status effect from taking effect.</p> <p> </p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder-iii/\">Thunder III</a></p> <p><a href=\"https://www.finalfantasyd20.com/magic/spells/t/thunder/\">Thunder</a></p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Thunder III",
+            "actionType": "rsak",
+            "activation": {
+              "type": "special",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "units": "close"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "5d6 + @abilities.wis.mod + min(@attributes.hd.total, 15)",
+                  "types": [
+                    "Lightning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "dex"
+            },
+            "save": {
+              "type": "ref",
+              "dc": "10 + 3 + @abilities.wis.mod",
+              "description": "Reflex partial (object) — see description"
+            },
+            "attackBonus": "",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "_id": "MSCCfQyf8AMpflAb",
+            "duration": {
+              "units": "spec",
+              "value": "instantaneous; 1d8 rounds"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "notes": {
+              "effect": [
+                "Electrocute result 10; no second action or recharge. "
+              ],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "electrocute-10-thunder-iii",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Electrocute: 10 Thunder III",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic045": "zaghnol/Electrocute: 10 Thunder III",
+          "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+          "derivedFrom": "ffd20-content.ffd20-spells.V3ptpDbH8AH9vvK3",
+          "reviewedActions": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Zaghnol",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/zaghnol.png"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/behemoth-family/zaghnol/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/zagh.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/zaghnol.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 2,
+        "size": "Large",
+        "cr": "6",
+        "creatureType": "Magical Beast",
+        "subtypes": [
+          "Lightning"
+        ],
+        "xp": 2400,
+        "aura": "",
+        "perception": 9,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee Gore +15 (1d8+6), 2 Hooves +9 (1d6+3)",
+            "Space 10 ft.; Reach 5 ft.",
+            "Special Attacks Electrocute, Impale"
+          ],
+          "speed": "30 ft.",
+          "melee": "Gore +15 (1d8+6), 2 Hooves +9 (1d6+3)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 5 ft.",
+          "specialAttacks": "Electrocute, Impale",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 19, touch 11; flat-footed 17 (+2 dex, +8 natural, -1 size)",
+            "hp 85 (8d10+42)",
+            "Fort +10, Ref +6, Will +3",
+            "Resist Lightning 10",
+            "Weakness Water"
+          ],
+          "ac": "AC 19, touch 11; flat-footed 17 (+2 dex, +8 natural, -1 size)",
+          "hp": "hp 85 (8d10+42)",
+          "hitPoints": 85,
+          "hitDice": 8,
+          "saves": "Fort +10, Ref +6, Will +3",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "Lightning 10",
+          "weaknesses": "Water",
+          "sr": null
+        },
+        "statistics": [
+          "Str 22, Dex 14, Con 18, Int 6, Wis 12, Cha 8",
+          "Base Atk +9; CMB +16; CMD 28",
+          "Feats Improved Overrun, Power Attack, Toughness, Weapon Focus (Gore)",
+          "Skills Acrobatics +7, Climb +11, Perception +9, Survival +6"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Behemoth Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "zaghnol"
+    }
+  }
+}

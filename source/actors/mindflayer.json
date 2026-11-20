@@ -1,0 +1,4144 @@
+{
+  "name": "Mindflayer",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/mindflayer.png",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 19,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 3,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 51,
+        "max": 51,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 12
+      },
+      "savingThrows": {
+        "fort": {
+          "base": -1,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -1,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -1,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "21"
+      },
+      "acNotes": "",
+      "cmdNotes": "24 vs grapple.",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Aberration",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "aberration",
+            "cl": {
+              "formula": "-2"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "skills": {
+      "blf": {
+        "ability": "cha",
+        "rank": 12
+      },
+      "dip": {
+        "ability": "cha",
+        "rank": 12
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 12
+      },
+      "kar": {
+        "ability": "int",
+        "rank": 12
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 10
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 12
+      },
+      "spl": {
+        "ability": "int",
+        "rank": 12
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 10
+      }
+    },
+    "details": {
+      "alignment": "le",
+      "xp": {
+        "value": 4800
+      },
+      "cr": {
+        "base": 8
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A squid-like humanoid that casts spells and devours brains. Always looking out for number one (themselves).</p><h2>Defense</h2><p>AC 15, touch 12, flat-footed 13 (+2 dex, +3 natural)</p><p>hp 66 [108] (12d8+12)</p><p>mp 39</p><p>Fort +4, Ref +5, Will +10</p><p>SR 21</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee 4 Tentacles +11 (1d4+1 plus grab)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks Mind Blast, Thought Tentacle</p><p>Spells Known (FC CL 10th, Concentration +14)</p><p>At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic</p><p>1st - Dark (DC 15), Delayed Opponent (DC 15), Deceleration (DC 15), Mage Armor, True Strike</p><p>2nd - Dark II (DC 16), Dimension Hop, Elemental Resistance</p><p>3rd - Bio (DC 17), Blink, Dark III (DC 17), Darkra (DC 17), Dimension Step, Dispel, Fly, Haste, Mass Deceleration (DC 17), Slow (DC 17)</p><h2>Statistics</h2><p>Str 12, Dex 14, Con 12, Int 19, Wis 17, Cha 17</p><p>Base Atk +9; CMB +10 (+12 grapple); CMD 22 (24 vs grapple)</p><p>Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse</p><p>Skills Bluff +16, Diplomacy +16, Intimidate +16, Knowledge (Arcana) +17, Perception +16, Sense Motive +16, Spellcraft +17, Stealth +15</p><p>Languages Common, Undercommon, Telepathy 100 ft.</p><p><strong>GM note:</strong> Printed MP 39; use the racial casting chart plus casting ability bonus. Printed caster level and spell list remain separate from HD.</p><p><strong>GM note:</strong> Printed mind blast DC 20 and grapple +12 take precedence over adding another Ability Focus or Grab bonus.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "aberration"
+      ],
+      "creatureSubtypes": [],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "Telepathy 100 ft."
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "languages": [
+        "Common",
+        "Undercommon"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Aberration",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.blf",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published blf total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.dip",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published dip total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.int",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published int total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.kar",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kar total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.sen",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sen total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.spl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published spl total adjustment"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.int.mod - (5 - 1), 0) / 4) * 5)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Aberration monster MP bonus level 5"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.int.mod - (6 - 1), 0) / 4) * 6)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Aberration monster MP bonus level 6"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "aberration",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 12,
+        "hd": 8,
+        "hp": 54,
+        "classCastingStat": "int",
+        "classBaseMPTypes": "fullCaster",
+        "classBaseMPauto": "no",
+        "mp": 41,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "high",
+          "spells": "",
+          "ability": "int",
+          "cantrips": true,
+          "offset": -2,
+          "domain": 1
+        },
+        "bab": "med",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "LE",
+        "classSkills": {
+          "clm": true,
+          "crf": true,
+          "fly": true,
+          "kdu": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "aberration"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Aberration",
+          "sourceHitPoints": 66,
+          "sourceHitDice": 12,
+          "spellcasting": {
+            "kind": "full",
+            "ability": "int",
+            "preparationMode": "spontaneous",
+            "casterType": "high",
+            "classBaseMPType": "fullCaster",
+            "baseMp": 41,
+            "finalMp": 51,
+            "printedMp": 39,
+            "chartBaseMp": 41,
+            "maxSpellLevel": 4,
+            "mpSource": "monster-chart-plus-ability-bonus",
+            "foundryBonusLevels": 6,
+            "desiredBonusLevels": 4
+          }
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +9; CMB +10 (+12 grapple); CMD 22 (24 vs grapple)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +9; CMB +10 (+12 grapple); CMD 22 (24 vs grapple)",
+            "bab": 9,
+            "cmb": 10,
+            "cmd": 22
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Tentacle x4",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tentacle",
+            "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Tentacle 2"
+                },
+                {
+                  "formula": "0",
+                  "name": "Tentacle 3"
+                },
+                {
+                  "formula": "0",
+                  "name": "Tentacle 4"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Tentacle",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On hit resolve Grab."
+              ],
+              "footer": [
+                "Source statblock: 4 Tentacle +11 (1d4+1 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tentacle",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 4,
+            "name": "Tentacle",
+            "ranged": false,
+            "attackBonus": 11,
+            "damage": "1d4+1 plus grab",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 1,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "Amanuensis",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Amanuensis.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "amanuensis",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Amanuensis",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Amanuensis"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "Dark Orb",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark Orb.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-orb",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark Orb",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark Orb"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "Detect Magic",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Detect Magic.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "detect-magic",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Detect Magic",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Detect Magic"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000004",
+      "name": "Mending",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Mending.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "mending",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Mending",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Mending"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000005",
+      "name": "Message",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Message.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "message",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Message",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Message"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000006",
+      "name": "Moment",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Moment.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "moment",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Moment",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Moment"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000007",
+      "name": "Read Magic",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Read Magic.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "read-magic",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Read Magic",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Read Magic"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000008",
+      "name": "Dark",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000009",
+      "name": "Delayed Opponent",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Delayed Opponent.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "delayed-opponent",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Delayed Opponent",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Delayed Opponent"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000010",
+      "name": "Deceleration",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Deceleration.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "EPQ1T9TaQ8iX0Iat",
+            "actionType": "spellsave",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "duration": {
+              "units": "spec",
+              "value": "[[1*@cl]] minutes"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "Use",
+            "range": {
+              "units": "close"
+            },
+            "save": {
+              "type": "ref",
+              "dc": "0",
+              "description": "Negates"
+            },
+            "target": {
+              "value": "one medium or smaller creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "deceleration",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Deceleration",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Deceleration",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spell00000000011",
+      "name": "Mage Armor",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Mage Armor.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "mage-armor",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Mage Armor",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Mage Armor"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000012",
+      "name": "True Strike",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: True Strike.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "true-strike",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "True Strike",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "True Strike"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000013",
+      "name": "Dark II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark II",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000014",
+      "name": "Dimension Hop",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dimension Hop.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dimension-hop",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dimension Hop",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dimension Hop"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000015",
+      "name": "Elemental Resistance",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Elemental Resistance.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "elemental-resistance",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Elemental Resistance",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Elemental Resistance"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000016",
+      "name": "Bio",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Bio.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "bio",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Bio",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Bio"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000017",
+      "name": "Blink",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blink.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blink",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blink",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blink"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000018",
+      "name": "Dark III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark III",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000019",
+      "name": "Darkra",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Darkra.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "darkra",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Darkra",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Darkra"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000020",
+      "name": "Dimension Step",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dimension Step.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dimension-step",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dimension Step",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dimension Step"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000021",
+      "name": "Dispel",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dispel.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dispel",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dispel",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dispel"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000022",
+      "name": "Fly",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fly.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fly",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fly",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fly"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000023",
+      "name": "Haste",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Haste.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "haste",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Haste",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Haste"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000024",
+      "name": "Mass Deceleration",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Mass Deceleration.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "mass-deceleration",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Mass Deceleration",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Deceleration, Mass",
+          "lookupPack": "ffd20-content.ffd20-spells",
+          "sheetName": "Mass Deceleration"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000025",
+      "name": "Slow",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Slow.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "slow",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Slow",
+          "sourceLine": "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow",
+          "castingKind": "Spells Known",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Slow"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Ability Focus (Mind Blast)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Ability Focus (Mind Blast).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ability-focus-mind-blast",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse",
+          "authoredLocally": false,
+          "generatedSpecialQuality": true,
+          "lookupName": "Ability Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Ability Focus (Mind Blast)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Combat Casting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Casting.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-casting",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Grapple",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Grapple.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-grapple",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Improved Unarmed Strike",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Unarmed Strike.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-unarmed-strike",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0,
+              "unchained": {
+                "type": "free",
+                "cost": 0
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "damage": {
+              "parts": [],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "ability": {
+              "attack": "str"
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "attackBonus": "0",
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "touch": false,
+            "notes": {
+              "effect": [
+                "On a successful Tentacle x4 hit, attempt a free grapple."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000035001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            }
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Mind Blast",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Mindflayers are able to project a 60 foot of psychic static towards a single target. The target is stunned for 1d4 rounds and takes 8d6 points of non-elemental damage. A successful Will save (DC 20) reduces the damage by half and negates the status effect. This ability is used as a standard action is considered a mind-affecting effect and the saving throw DC is Charisma-based. Blue mages may learn this ability as a 5th level spell (Knowledge: Dungeoneering DC 25).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Mind Blast",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "60",
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "8d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod + 1",
+              "type": "will",
+              "description": "Mind-affecting, single target; half damage and negate Stunned for 1d4 rounds."
+            },
+            "notes": {
+              "effect": [
+                "Mind-affecting, single target; half damage and negate Stunned for 1d4 rounds.",
+                "Blue mages may learn this ability as a 5th level spell (Knowledge: Dungeoneering DC 25)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000036001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mind-blast",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 20,
+                "raw": "Will save (DC 20)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
+                "ability": "int",
+                "confidence": "derived-preferred-floor",
+                "base": 16,
+                "neededMod": 4,
+                "candidates": [
+                  "int:floor",
+                  "int:minimum-one"
+                ],
+                "expectedDc": 20
+              }
+            ],
+            "damages": [
+              {
+                "formula": "8d6",
+                "type": "nonelemental",
+                "raw": "8d6 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 5th level spell (Knowledge: Dungeoneering DC 25).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Thought Tentacle",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+      "system": {
+        "description": {
+          "value": "<p>If a mindflayer has someone grappled and successfully deals damage to that target, instead of the normal physical damage, it can choose to deal 1d4+2 points of Intelligence damage instead. This ability only works on creatures with an actual brain. Thus, it does not work on constructs, elementals, plants, oozes or undead in addition to creatures that either do not have an actual brain or the brain is not physically inside the grappled creature.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Thought Tentacle",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 0,
+                "type": "free"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After damaging a grappled target with a brain, substitute [[1d4+2]] Intelligence damage for HP damage. Do not deal both."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": ""
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+            "_id": "act0000000037001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "thought-tentacle",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d4 + floor(@abilities.con.mod * 2)",
+                "type": "int",
+                "raw": "1d4+2 points of Intelligence damage",
+                "sourceFormula": "1d4+2",
+                "damageAbility": "con",
+                "damageAbilityMultiplier": 2,
+                "damageAbilityReason": "ffd20-ability-type-default"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "con": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "int": {
+                "value": 19,
+                "mod": 4,
+                "missing": false,
+                "raw": "19"
+              },
+              "wis": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Mindflayer",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/mindflayer.png"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/aberrations/mindflayer-family/mindflayer/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Piscodaemon.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/mindflayer.png",
+      "packagedImageSource": "source-cache",
+      "parsed": {
+        "alignment": "LE",
+        "initiative": 6,
+        "size": "Medium",
+        "cr": "8",
+        "creatureType": "Aberration",
+        "subtypes": [],
+        "xp": 4800,
+        "aura": "",
+        "perception": 16,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee 4 Tentacles +11 (1d4+1 plus grab)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks Mind Blast, Thought Tentacle",
+            "Spells Known (FC CL 10th, Concentration +14)",
+            "At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic",
+            "1st - Dark (DC 15), Delayed Opponent (DC 15), Deceleration (DC 15), Mage Armor, True Strike",
+            "2nd - Dark II (DC 16), Dimension Hop, Elemental Resistance",
+            "3rd - Bio (DC 17), Blink, Dark III (DC 17), Darkra (DC 17), Dimension Step, Dispel, Fly, Haste, Mass Deceleration (DC 17), Slow (DC 17)"
+          ],
+          "speed": "30 ft.",
+          "melee": "4 Tentacles +11 (1d4+1 plus grab)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "Mind Blast, Thought Tentacle",
+          "spellLines": [
+            "Spells Known (FC CL 10th, Concentration +14) At Will - Amanuensis, Dark Orb, Detect Magic, Mending, Message, Moment, Read Magic 1st - Dark, Delayed Opponent, Deceleration, Mage Armor, True Strike 2nd - Dark II, Dimension Hop, Elemental Resistance 3rd - Bio, Blink, Dark III, Darkra, Dimension Step, Dispel, Fly, Haste, Mass Deceleration, Slow"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 15, touch 12, flat-footed 13 (+2 dex, +3 natural)",
+            "hp 66 [108] (12d8+12)",
+            "mp 39",
+            "Fort +4, Ref +5, Will +10",
+            "SR 21"
+          ],
+          "ac": "AC 15, touch 12, flat-footed 13 (+2 dex, +3 natural)",
+          "hp": "hp 66 [108] (12d8+12) mp 39",
+          "hitPoints": 66,
+          "hitDice": 12,
+          "saves": "Fort +4, Ref +5, Will +10",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": 21
+        },
+        "statistics": [
+          "Str 12, Dex 14, Con 12, Int 19, Wis 17, Cha 17",
+          "Base Atk +9; CMB +10 (+12 grapple); CMD 22 (24 vs grapple)",
+          "Feats Ability Focus (Mind Blast), Combat Casting, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Weapon Finesse",
+          "Skills Bluff +16, Diplomacy +16, Intimidate +16, Knowledge (Arcana) +17, Perception +16, Sense Motive +16, Spellcraft +17, Stealth +15",
+          "Languages Common, Undercommon, Telepathy 100 ft."
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Mindflayer Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review045": "mindflayer"
+    }
+  }
+}

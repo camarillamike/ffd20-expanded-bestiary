@@ -1,0 +1,1590 @@
+{
+  "name": "Forgiven Disobedience",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/forgiven-disobedience.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 15,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 14
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -5,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "22"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 13
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 9
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 9
+      },
+      "kre": {
+        "ability": "int",
+        "rank": 9
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 12
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 12800
+      },
+      "cr": {
+        "base": 11
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A white buffalo with dark sharp horns and has a great mane reaching back to his tail.</p><h2>Defense</h2><p>AC 27, touch 12; flat-footed 24 (+3 Dex, +15 natural, -1 size)</p><p>hp 217 [280] (14d10+140)</p><p>Fort +20, Ref +12, Will +10</p><p>DR 10/evil; Immune Daze, Death Effects, Holy, Mind-affecting, Outsider traits, Petrification/Statue, Stun; Resist Lightning 10, Fire 10, Earth 10; SR 22;</p><h2>Offense</h2><p>Speed 40 ft.</p><p>Melee Gore +23 (2d6+9), 2 Hooves +17 (1d6+4)</p><p>Space 10 ft.; Reach 5 ft.</p><p>Special Attacks Head Butt, Powerful Charge</p><h2>Statistics</h2><p>Str 28, Dex 16, Con 28, Int 10, Wis 18, Cha 14</p><p>Base Atk +14; CMB +24; CMD 37</p><p>Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)</p><p>Skills Climb +22, Intimidate +14, Knowledge (planes) +12, Knowledge (religion) +12, Perception +20, Sense Motive +16, Survival +23; Racial Modifiers +4 Perception, +4 Survival;</p><p>Languages Celestial</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "native",
+        "sin eater"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "evil"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "light"
+      ],
+      "dv": [],
+      "ci": [
+        "Daze",
+        "deathEffects",
+        "Mind-affecting",
+        "Petrification/Statue",
+        "stun"
+      ],
+      "languages": [
+        "Celestial"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.sur",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 14,
+        "hd": 10,
+        "hp": 77,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "outsider"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 217,
+          "sourceHitDice": 14,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Gore",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Gore",
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Gore +23 (2d6+9)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000002001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "gore",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 23,
+            "damage": "2d6+9",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 9,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Hoof x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hoof",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Hoof 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Hoof",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Hoof +17 (1d6+4)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hoof",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Hoof",
+            "ranged": false,
+            "attackBonus": 17,
+            "damage": "1d6+4",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Bull Rush",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Bull Rush.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-bull-rush",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Iron Will",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Iron Will.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "iron-will",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Weapon Focus (Gore)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Gore).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-gore",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Head Butt",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds and as a standard action, a forgiven disobedience can slam into an opponent with his horns doing 2d8+13 and stuns his opponent for 1d4 rounds unless they succeed at Fortitude Save (DC 26).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Head Butt",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "1",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d8 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4 rounds and as a standard action, a forgiven disobedience can slam into an opponent with his horns doing 2d8+13 and stuns his opponent for 1d4 rounds unless they succeed at Fortitude Save (DC 26).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000011001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "head-butt",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 26,
+                "raw": "Fortitude Save (DC 26)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 17,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Powerful Charge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A forgiven disobedience typically begins a battle by charging at an opponent, lowering its head to bring its mighty horns into play. In addition to the normal benefits and hazards of a charge, this allows the beast to make a single gore attack with a +24 attack bonus that deals 3d6+18 points of damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Powerful Charge",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "2",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "3d6 + 2 * @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Single charging gore; attack bonus includes published charge."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000012001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "On a charge, double the listed gore damage."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "powerful-charge",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "On a charge, double the listed gore damage."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "3d6 + floor(@abilities.str.mod * 2)",
+                "type": "points-of",
+                "raw": "3d6+18 points of damage",
+                "sourceFormula": "3d6+18",
+                "damageAbility": "str",
+                "damageAbilityMultiplier": 2,
+                "damageAbilityReason": "weapon-like-damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "e271d56c39959fa6",
+      "name": "Head Butt: stunned",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply only on the indicated failed save.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-only-on-the-indicated-failed-save",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "stunned"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "forgiven-disobedience/Head Butt: stunned"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Forgiven Disobedience",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/forgiven-disobedience.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/outsiders/sin-eater-family/forgiven-disobedience/",
+      "sourceImage": "",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/forgiven-disobedience.webp",
+      "packagedImageSource": "original-art",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 7,
+        "size": "Large",
+        "cr": "11",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Native",
+          "Sin Eater"
+        ],
+        "xp": 12800,
+        "aura": "",
+        "perception": 20,
+        "offense": {
+          "raw": [
+            "Speed 40 ft.",
+            "Melee Gore +23 (2d6+9), 2 Hooves +17 (1d6+4)",
+            "Space 10 ft.; Reach 5 ft.",
+            "Special Attacks Head Butt, Powerful Charge"
+          ],
+          "speed": "40 ft.",
+          "melee": "Gore +23 (2d6+9), 2 Hooves +17 (1d6+4)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 5 ft.",
+          "specialAttacks": "Head Butt, Powerful Charge",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 27, touch 12; flat-footed 24 (+3 Dex, +15 natural, -1 size)",
+            "hp 217 [280] (14d10+140)",
+            "Fort +20, Ref +12, Will +10",
+            "DR 10/evil; Immune Daze, Death Effects, Holy, Mind-affecting, Outsider traits, Petrification/Statue, Stun; Resist Lightning 10, Fire 10, Earth 10; SR 22;"
+          ],
+          "ac": "AC 27, touch 12; flat-footed 24 (+3 Dex, +15 natural, -1 size)",
+          "hp": "hp 217 [280] (14d10+140)",
+          "hitPoints": 217,
+          "hitDice": 14,
+          "saves": "Fort +20, Ref +12, Will +10",
+          "defensiveAbilities": "",
+          "dr": "10/evil;",
+          "immunities": "Daze, Death Effects, Holy, Mind-affecting, Outsider traits, Petrification/Statue, Stun;",
+          "resistances": "Lightning 10, Fire 10, Earth 10;",
+          "weaknesses": "",
+          "sr": 22
+        },
+        "statistics": [
+          "Str 28, Dex 16, Con 28, Int 10, Wis 18, Cha 14",
+          "Base Atk +14; CMB +24; CMD 37",
+          "Feats Great Fortitude, Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Toughness, Weapon Focus (Gore)",
+          "Skills Climb +22, Intimidate +14, Knowledge (planes) +12, Knowledge (religion) +12, Perception +20, Sense Motive +16, Survival +23; Racial Modifiers +4 Perception, +4 Survival;",
+          "Languages Celestial"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Sin Eater Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "forgiven-disobedience"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

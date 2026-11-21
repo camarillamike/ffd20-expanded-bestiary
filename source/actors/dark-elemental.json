@@ -1,0 +1,5255 @@
+{
+  "name": "Dark Elemental",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/dark-elemental.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 30,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 4,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 9,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 59,
+        "max": 59,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 16
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -3,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 0
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 40,
+          "maneuverability": "perfect"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Outsider",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "med",
+            "class": "outsider",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 9
+      },
+      "esc": {
+        "ability": "dex",
+        "rank": 9
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 7
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 16
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 16
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 19200
+      },
+      "cr": {
+        "base": 12
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Being an elemental of darkness, born of a fusion of powerful hatred and Mist. Dark elementals are born only in places where living creatures have perished with vengeance unexacted, rising from the spilled blood of the dead. Though they are not, by nature, evil, they suffer no challenge, and will drag those they deem foes into the darkness. - Imban</p><h2>Defense</h2><p>AC 30, touch 21, flat-footed 19 (+10 Dex, +1 dodge, +9 natural)</p><p>hp 136 [208] (16d10+48)</p><p>mp 59</p><p>Fort +12, Ref +20, Will +10</p><p>Defensive Abilities Barrier Change</p><p>DR 10/-; Absorb shadow; Immune charm, death, earth, gravity, imperil; Weakness holy</p><h2>Offense</h2><p>Speed fly 40 ft. (perfect)</p><p>Melee 2 slams +26 (1d6+2 plus 2d8 shadow damage)</p><p>Special Abilities White Wind</p><p>Spells Known (SC CL 16th; concentration +25 [+29 casting defensively or while grappled])</p><p>At will (DC 19) - Dark Orb, Elemental Orb (all except earth)</p><p>1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water</p><p>2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II</p><p>3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera</p><p>4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV</p><h2>Statistics</h2><p>Str 14, Dex 30, Con 15, Int 4, Wis 16, Cha 28</p><p>Base Atk +16; CMB +18; CMD 38</p><p>Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse</p><p>Skills Acrobatics +19, Escape Artist +19, Knowledge (Planes) +7, Perception +22, Stealth +29</p><p>Languages Umbran</p><h2>Ecology</h2><p>Environment ruins</p><p>Organization solitary or pair</p><p>Treasure none</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "elemental",
+        "extraplanar",
+        "shadow"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 120
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": true,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": "shadow"
+      },
+      "cres": "Absorb shadow",
+      "di": [
+        "precision",
+        "earth"
+      ],
+      "dv": [
+        "light"
+      ],
+      "ci": [
+        "bleed",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "critical hits",
+        "flanking",
+        "charmed",
+        "death",
+        "gravity",
+        "imperil"
+      ],
+      "languages": [
+        "Umbran"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "-1 * (ceil(max(@abilities.cha.mod - (5 - 1), 0) / 4) * 5)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Outsider monster MP bonus level 5"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.cha.mod - (6 - 1), 0) / 4) * 6)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Outsider monster MP bonus level 6"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 16,
+        "hd": 10,
+        "hp": 88,
+        "classCastingStat": "cha",
+        "classBaseMPTypes": "pacman",
+        "classBaseMPauto": "no",
+        "mp": 38,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "med",
+          "spells": "",
+          "ability": "cha",
+          "cantrips": true,
+          "offset": 0,
+          "domain": 1
+        },
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "TN",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "outsider"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 136,
+          "sourceHitDice": 16,
+          "spellcasting": {
+            "kind": "semi",
+            "ability": "cha",
+            "preparationMode": "spontaneous",
+            "casterType": "med",
+            "classBaseMPType": "pacman",
+            "baseMp": 38,
+            "finalMp": 59,
+            "printedMp": 59,
+            "chartBaseMp": 38,
+            "maxSpellLevel": 4,
+            "mpSource": "monster-chart-plus-ability-bonus",
+            "foundryBonusLevels": 6,
+            "desiredBonusLevels": 4
+          }
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +16; CMB +18; CMD 38</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +16; CMB +18; CMD 38",
+            "bab": 16,
+            "cmb": 18,
+            "cmd": 38
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 slam +26 (1d6+2 plus 2d8 shadow damage)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "slam",
+            "ranged": false,
+            "attackBonus": 26,
+            "damage": "1d6+2 plus 2d8 shadow damage",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 2,
+            "damageType": "dark",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "Dark Orb",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark Orb.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-orb",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark Orb",
+          "sourceLine": "At will (DC 19) - Dark Orb, Elemental Orb (all except earth)",
+          "castingKind": "",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark Orb"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "Elemental Orb",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Elemental Orb.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "fec74a63e59b7172",
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "attackName": "Elemental Orb",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "fire",
+            "range": {
+              "units": "close"
+            },
+            "touch": true,
+            "notes": {
+              "effect": [
+                "Cast only if this element is permitted by the current barrier."
+              ],
+              "footer": []
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          },
+          {
+            "_id": "ea02f72ac8a01c2e",
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "attackName": "Elemental Orb",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "ice"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "ice",
+            "range": {
+              "units": "close"
+            },
+            "touch": true,
+            "notes": {
+              "effect": [
+                "Cast only if this element is permitted by the current barrier."
+              ],
+              "footer": []
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          },
+          {
+            "_id": "182751dcba1ae9c5",
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "attackName": "Elemental Orb",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "lightning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "lightning",
+            "range": {
+              "units": "close"
+            },
+            "touch": true,
+            "notes": {
+              "effect": [
+                "Cast only if this element is permitted by the current barrier."
+              ],
+              "footer": []
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          },
+          {
+            "_id": "9e0339c8e25993c8",
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "attackName": "Elemental Orb",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "water",
+            "range": {
+              "units": "close"
+            },
+            "touch": true,
+            "notes": {
+              "effect": [
+                "Cast only if this element is permitted by the current barrier."
+              ],
+              "footer": []
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          },
+          {
+            "_id": "119c8614a9e60c84",
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "actionType": "rsak",
+            "activation": {
+              "type": "standard",
+              "unchained": {
+                "cost": 2,
+                "type": "action"
+              }
+            },
+            "attackName": "Elemental Orb",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3",
+                  "types": [
+                    "wind"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "wind",
+            "range": {
+              "units": "close"
+            },
+            "touch": true,
+            "notes": {
+              "effect": [
+                "Cast only if this element is permitted by the current barrier."
+              ],
+              "footer": []
+            },
+            "target": {
+              "value": ""
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "elemental-orb",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 0,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 0,
+          "max": 0
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Elemental Orb",
+          "sourceLine": "At will (DC 19) - Dark Orb, Elemental Orb (all except earth)",
+          "castingKind": "",
+          "level": 0,
+          "spellbook": "primary",
+          "atWill": true,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Elemental Orb",
+          "sheetName": "Elemental Orb (all except earth)",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "Aero",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000004",
+      "name": "Blizzard",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000005",
+      "name": "Dark",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000006",
+      "name": "Fire",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000007",
+      "name": "Thunder",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000008",
+      "name": "Water",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Water.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "water",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Water",
+          "sourceLine": "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Water"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000009",
+      "name": "Aero II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000010",
+      "name": "Blizzard II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000011",
+      "name": "Dark II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000012",
+      "name": "Fire II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000013",
+      "name": "Thunder II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000014",
+      "name": "Water II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Water II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "water-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Water II",
+          "sourceLine": "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Water II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000015",
+      "name": "Aera",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aera.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aera",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aera",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aera"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000016",
+      "name": "Aero III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000017",
+      "name": "Blizzara",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzara.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzara",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzara",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzara"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000018",
+      "name": "Blizzard III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000019",
+      "name": "Dark III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000020",
+      "name": "Darkra",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Darkra.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "darkra",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Darkra",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Darkra"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000021",
+      "name": "Fira",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fira.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fira",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fira",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fira"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000022",
+      "name": "Fire III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000023",
+      "name": "Thundara",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thundara.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thundara",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thundara",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thundara"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000024",
+      "name": "Thunder III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000025",
+      "name": "Water III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Water III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "water-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Water III",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Water III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000026",
+      "name": "Watera",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Watera.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "watera",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Watera",
+          "sourceLine": "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Watera"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000027",
+      "name": "Aero IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000028",
+      "name": "Blizzard IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000029",
+      "name": "Dark IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Dark IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "dark-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Dark IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Dark IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000030",
+      "name": "Fire IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000031",
+      "name": "Thunder IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000032",
+      "name": "Water IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Water IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "water-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Water IV",
+          "sourceLine": "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Water IV"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Combat Casting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Casting.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-casting",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Greater Spell Penetration",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Greater Spell Penetration.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "greater-spell-penetration",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Spell Penetration",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Spell Penetration.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "spell-penetration",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Barrier Change",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2+1 rounds as a free action, a dark elemental can remove any protections previously gained from this ability and gain a new set of elemental resistances by rolling 1d4. On a roll of 1, it begins to absorb ice and lightning, becomes weak to fire, and may cast fire elemental spells. On a roll of 2, it begins to absorb fire and lightning, becomes weak to ice, and may cast ice elemental spells. On a roll of 3, it begins to absorb fire and ice, becomes weak to lightning, and may cast lightning elemental spells. On a roll of 4, it begins to absorb fire, ice, and lightning, becomes weak to wind, and may cast wind elemental spells. A dark elemental may not cast elemental spells which do not correspond to its current elemental weakness.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Barrier Change",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "free",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Roll [[1d4]] and replace the previous barrier. Only elemental spells matching the current weakness may be cast; ordinary dark spells are unaffected.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000044001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "barrier-change",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "free",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "See in Darkness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A dark elemental can see perfectly in darkness of any kind, including that created by deeper darkness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "misc",
+            "text": "Can see perfectly in darkness, including magical darkness."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "see-in-darkness",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "misc",
+                  "text": "Can see perfectly in darkness, including magical darkness."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "White Wind",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day a dark elemental can emit a gust of white wind that heals allies other than itself within 20 feet for an amount equal to the dark elemental's current hit points in damage. The healing received per creature is capped at 10 per hit die attained for the caster (ex: 16 hit dice would mean a cap of 160 healing for each creature). Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "White Wind",
+            "actionType": "heal",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 20,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "allies other than self"
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 20
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "min(@attributes.hp.value, 10 * @attributes.hd.total)",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "1/day a dark elemental can emit a gust of white wind that heals allies other than itself within 20 feet for an amount equal to the dark elemental's current hit points in damage. The healing received per creature is capped at 10 per hit die attained for the caster (ex: 16 hit dice would mean a cap of 160 healing for each creature). Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000046001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "white-wind",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23).",
+            "range": {
+              "value": 20,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "6249559303116917",
+      "name": "Barrier 1: fire",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use only this roll's barrier. Absorb: ice, lightning; weakness: fire; half: none. Permitted elemental spell school: fire.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "ac",
+            "text": "Apply this barrier only while active: absorb ice, lightning, vulnerable to fire."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "use-only-this-roll-s-barrier-absorb-ic",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "dark-elemental/Barrier 1: fire"
+        },
+        "ffd20-expanded-bestiary": {
+          "barrierState": {
+            "group": "dark-elemental",
+            "absorb": [
+              "ice",
+              "lightning"
+            ],
+            "weakness": [
+              "fire"
+            ],
+            "halfResistances": [],
+            "spellElement": "fire"
+          }
+        }
+      }
+    },
+    {
+      "_id": "79a82239a9691232",
+      "name": "Barrier 2: ice",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use only this roll's barrier. Absorb: fire, lightning; weakness: ice; half: none. Permitted elemental spell school: ice.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "ac",
+            "text": "Apply this barrier only while active: absorb fire, lightning, vulnerable to ice."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "use-only-this-roll-s-barrier-absorb-fi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "dark-elemental/Barrier 2: ice"
+        },
+        "ffd20-expanded-bestiary": {
+          "barrierState": {
+            "group": "dark-elemental",
+            "absorb": [
+              "fire",
+              "lightning"
+            ],
+            "weakness": [
+              "ice"
+            ],
+            "halfResistances": [],
+            "spellElement": "ice"
+          }
+        }
+      }
+    },
+    {
+      "_id": "2967b5259b332b99",
+      "name": "Barrier 3: lightning",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use only this roll's barrier. Absorb: fire, ice; weakness: lightning; half: none. Permitted elemental spell school: lightning.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "ac",
+            "text": "Apply this barrier only while active: absorb fire, ice, vulnerable to lightning."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "use-only-this-roll-s-barrier-absorb-fi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "dark-elemental/Barrier 3: lightning"
+        },
+        "ffd20-expanded-bestiary": {
+          "barrierState": {
+            "group": "dark-elemental",
+            "absorb": [
+              "fire",
+              "ice"
+            ],
+            "weakness": [
+              "lightning"
+            ],
+            "halfResistances": [],
+            "spellElement": "lightning"
+          }
+        }
+      }
+    },
+    {
+      "_id": "74f747ca978b37e3",
+      "name": "Barrier 4: wind",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use only this roll's barrier. Absorb: fire, ice, lightning; weakness: wind; half: none. Permitted elemental spell school: wind.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "ac",
+            "text": "Apply this barrier only while active: absorb fire, ice, lightning, vulnerable to wind."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "use-only-this-roll-s-barrier-absorb-fi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "dark-elemental/Barrier 4: wind"
+        },
+        "ffd20-expanded-bestiary": {
+          "barrierState": {
+            "group": "dark-elemental",
+            "absorb": [
+              "fire",
+              "ice",
+              "lightning"
+            ],
+            "weakness": [
+              "wind"
+            ],
+            "halfResistances": [],
+            "spellElement": "wind"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Dark Elemental",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/dark-elemental.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/outsiders/elemental-family/shadow-elemental/dark-elemental/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Dark-Elemental.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/dark-elemental.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Dark-Elemental.png",
+      "parsed": {
+        "alignment": "TN",
+        "initiative": 14,
+        "size": "Medium",
+        "cr": "12",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Elemental",
+          "Extraplanar",
+          "Shadow"
+        ],
+        "xp": 19200,
+        "aura": "",
+        "perception": 22,
+        "offense": {
+          "raw": [
+            "Speed fly 40 ft. (perfect)",
+            "Melee 2 slams +26 (1d6+2 plus 2d8 shadow damage)",
+            "Special Abilities White Wind",
+            "Spells Known (SC CL 16th; concentration +25 [+29 casting defensively or while grappled])",
+            "At will (DC 19) - Dark Orb, Elemental Orb (all except earth)",
+            "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+            "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+            "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+            "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV"
+          ],
+          "speed": "fly 40 ft. (perfect)",
+          "melee": "2 slams +26 (1d6+2 plus 2d8 shadow damage)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "",
+          "spellLines": [
+            "Spells Known (SC CL 16th; concentration +25 [+29 casting defensively or while grappled])",
+            "At will (DC 19) - Dark Orb, Elemental Orb (all except earth)",
+            "1st (DC 20) - Aero, Blizzard, Dark, Fire, Thunder, Water",
+            "2nd (DC 21) - Aero II, Blizzard II, Dark II, Fire II, Thunder II, Water II",
+            "3rd (DC 22) - Aera, Aero III, Blizzara, Blizzard III, Dark III, Darkra, Fira, Fire III, Thundara, Thunder III, Water III, Watera",
+            "4th (DC 23) - Aero IV, Blizzard IV, Dark IV, Fire IV, Thunder IV, Water IV"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 30, touch 21, flat-footed 19 (+10 Dex, +1 dodge, +9 natural)",
+            "hp 136 [208] (16d10+48)",
+            "mp 59",
+            "Fort +12, Ref +20, Will +10",
+            "Defensive Abilities Barrier Change",
+            "DR 10/-; Absorb shadow; Immune charm, death, earth, gravity, imperil; Weakness holy"
+          ],
+          "ac": "AC 30, touch 21, flat-footed 19 (+10 Dex, +1 dodge, +9 natural)",
+          "hp": "hp 136 [208] (16d10+48) mp 59",
+          "hitPoints": 136,
+          "hitDice": 16,
+          "saves": "Fort +12, Ref +20, Will +10",
+          "defensiveAbilities": "Barrier Change",
+          "dr": "10/-;",
+          "immunities": "charm, death, earth, gravity, imperil;",
+          "resistances": "shadow;",
+          "weaknesses": "holy",
+          "sr": null
+        },
+        "statistics": [
+          "Str 14, Dex 30, Con 15, Int 4, Wis 16, Cha 28",
+          "Base Atk +16; CMB +18; CMD 38",
+          "Feats Combat Casting, Dodge, Greater Spell Penetration, Improved Initiative, Power Attack, Spell Penetration, Toughness, Weapon Finesse",
+          "Skills Acrobatics +19, Escape Artist +19, Knowledge (Planes) +7, Perception +22, Stealth +29",
+          "Languages Umbran"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [
+          "Environment ruins",
+          "Organization solitary or pair",
+          "Treasure none"
+        ],
+        "family": "Elemental Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "dark-elemental"
+    },
+    "ffd20-expanded-bestiary": {
+      "absorbs": [
+        "dark"
+      ]
+    }
+  }
+}

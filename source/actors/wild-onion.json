@@ -1,0 +1,2961 @@
+{
+  "name": "Wild Onion",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/wild-onion.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 23,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 8,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 15
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 1,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 40
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 10
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 11
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 9600
+      },
+      "cr": {
+        "base": 10
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Thought to be a variant of mandragora, for the vines that reach up from its collar, covering its face like a mask. Notes the famed naturalist, Merlose: 'It weareth its skin in layers, much like to the root of similar name, perhaps for the proffering of protection 'gainst the cold. Men say the great gaping orifice on its face was gouged by a shard of ice born of a midsummer blizzard. Though its former mouth was passing small, befitting naught but low whimp'ring, its prodigious new one screameth full loud and full much as the foul beast could want, thence earning it its name.</p><h2>Defense</h2><p>AC 26, touch 18, flat-footed 20 (+6 dex, +1 dodge, +8 natural, +1 size)</p><p>HP 136 (15d8+75)</p><p>Fort +14, Reflex +14, Will +9</p><p>Immune plant traits; Resist wind 10, ice 15, lightning 10;</p><p>Weakness earth</p><h2>Offense</h2><p>Speed 40 ft., Burrow 10 ft., Climb 40 ft.</p><p>Melee Bite +19 (1d8+8/19-20 plus grab), 2 Slams +18 (1d6+4 plus poison)</p><p>Space 5 ft.; Reach 5 ft. (10 ft. with slam)</p><p>Special Attacks Dream Pollen, Ecliptic Howl, Large Jaw, Mournful Howl, Shriek</p><h2>Statistics</h2><p>Str 18, Dex 23, Con 20, Int 8, Wis 18, Cha 10</p><p>Base Atk +11; CMB +14 (+18 grapple); CMD 30</p><p>Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)</p><p>Skills Climb +19, Perception +19, Stealth +24 (+32 in underground); Racial Modifiers +8 Climb, +8 Stealth in underground</p><p>Languages Mandragoran</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [
+        "humanoid"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "earth"
+      ],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
+      "languages": [
+        "Mandragoran"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Plant",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.clm",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-1",
+            "target": "skill.clm",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published clm total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published flat-footed AC 20 only"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.ste",
+            "text": "in underground: source total +32 (+8 conditional adjustment)."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "plant",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 15,
+        "hd": 8,
+        "hp": 61,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "per": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "plant"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Plant",
+          "sourceHitPoints": 136,
+          "sourceHitDice": 15,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +11; CMB +14 (+18 grapple); CMD 30</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +11; CMB +14 (+18 grapple); CMD 30",
+            "bab": 11,
+            "cmb": 14,
+            "cmd": 30
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 2,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on hit (+18 grapple)."
+              ],
+              "footer": [
+                "Source statblock: Bite +19 (1d8+8/19-20 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 19,
+            "damage": "1d8+8/19-20 plus grab",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 8,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Each hit exposes the victim to injury poison.",
+                "On hit: resolve Poison."
+              ],
+              "footer": [
+                "Source statblock: 2 Slam +18 (1d6+4 plus poison)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 18,
+            "damage": "1d6+4 plus poison",
+            "damageFormula": "1d6",
+            "printedDamageBonus": 4,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Juke",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Juke.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "juke",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "gjNjS5Rx3aaaJPLk",
+            "name": "Juke"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Mobility",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Mobility.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mobility",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Skill Focus (Perception)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Skill Focus (Perception).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "skill-focus-perception",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "reviewedChanges": true
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Sidestep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Sidestep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sidestep",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "gagxv8M42Z8M0hvW",
+            "name": "Sidestep"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Weapon Focus (Bite)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Bite).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-bite",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "4",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After Bite hits: grapple +18 without provoking; use constrict on a successful check if present."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000013001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            }
+          },
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Grab",
+          "lookupPack": "ffd20.monster-abilities",
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sheetName": "Grab",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
+      "system": {
+        "description": {
+          "value": "<p>Slam—injury; save Fort DC 22; frequency 1/round for 4 rounds; effect confusion and fatigue; cure no saves but “act normally” result on the confusion behavior table ends the effect.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "creature hit by Slam"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Slam—injury; save Fort DC 22; frequency 1/round for 4 rounds; effect confusion and fatigue; cure no saves but “act normally” result on the confusion behavior table ends the effect.",
+                "Resolve Poison after a successful Slam attack."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
+            "_id": "act0000000014001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 22,
+                "raw": "Fort DC 22",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 17,
+                "expectedDc": 22
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "afflictionAttacks": [
+            "Slam x2"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Dream Pollen",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wild onion can fill the air with drowsiness within a 15-ft.-radius. Creatures within the area of effect must make a Will save (DC 17) or be inflicted with sleep status for 1d4 rounds. Blue mages may learn this ability as a 2nd level spell(Knowledge: Nature DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Dream Pollen",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Negates sleep for 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A wild onion can fill the air with drowsiness within a 15-ft.-radius. Creatures within the area of effect must make a Will save (DC 17) or be inflicted with sleep status for 1d4 rounds. Blue mages may learn this ability as a 2nd level spell(Knowledge: Nature DC 19).",
+                "Failed save: give the target Dream Pollen: sleep (recipient). Activate on the recipient, not the caster."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 15
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates sleep for 1d4 rounds",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000015001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dream-pollen",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 17,
+                "raw": "Will save (DC 17)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 17,
+                "neededMod": 0,
+                "candidates": [
+                  "cha:floor",
+                  "cha:minimum-one"
+                ],
+                "expectedDc": 17
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell(Knowledge: Nature DC 19).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Ecliptic Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Wild onion grants nearby allies a magical evasion and accuracy boost. All allies get a +3 morale bonus to Attack rolls and a +3 dodge bonus to Armor Class for 2d4 rounds. The allies must be within 30 feet of wild onion when it uses this ability to receive these bonuses. Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Ecliptic Howl",
+            "actionType": "other",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "allies"
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Wild onion grants nearby allies a magical evasion and accuracy boost. All allies get a +3 morale bonus to Attack rolls and a +3 dodge bonus to Armor Class for 2d4 rounds. The allies must be within 30 feet of wild onion when it uses this ability to receive these bonuses. Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000016001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ecliptic-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Large Jaw",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wild onion inflicts twice its Strength modifier and threatens a critical hit on a 19-20 with its bite attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "large-jaw",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Mournful Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wild onion releases a mournful howl. All creatures within a 100-foot spread except evil outsiders must succeed at a Fortitude save DC 18 or become paralyzed for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Mournful Howl",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 100,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod + (1)",
+              "type": "fort",
+              "description": "Negates paralysis (1d4 rounds); success gives 24-hour immunity"
+            },
+            "notes": {
+              "effect": [
+                "A wild onion releases a mournful howl. All creatures within a 100-foot spread except evil outsiders must succeed at a Fortitude save DC 18 or become paralyzed for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).",
+                "Failed save: give the target Mournful Howl: paralyzed (recipient). Activate on the recipient, not the caster."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 100
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates paralysis (1d4 rounds); success gives 24-hour immunity",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000018001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mournful-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 18,
+                "raw": "Fortitude save DC 18",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-mismatch",
+                "base": 17,
+                "neededMod": 1,
+                "expectedDc": 21,
+                "observedDc": 18
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Shriek",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/screaming.png",
+      "system": {
+        "description": {
+          "value": "<p>A wild onion can give voice to an unsettling shriek. All creatures within a 30-foot spread of a shrieking wild onion must make a DC 17 Will save or become nauseated for 1d4 rounds. This is a sonic, mind-affecting ability. The save DC is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Shriek",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + (-5)",
+              "type": "will",
+              "description": "Negates nausea 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A wild onion can give voice to an unsettling shriek. All creatures within a 30-foot spread of a shrieking wild onion must make a DC 17 Will save or become nauseated for 1d4 rounds. This is a sonic, mind-affecting ability. The save DC is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).",
+                "Failed save: give the target Shriek: nauseated (recipient). Activate on the recipient, not the caster."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates nausea 1d4 rounds",
+            "img": "systems/ffd20/icons/conditions/screaming.png",
+            "_id": "act0000000019001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "shriek",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 17,
+                "raw": "DC 17 Will save",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 17,
+                "neededMod": 0,
+                "candidates": [
+                  "cha:floor",
+                  "cha:minimum-one"
+                ],
+                "expectedDc": 17
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Sickening Breath",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wild onion can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 21) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Sickening Breath",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + (-1)",
+              "type": "fort",
+              "description": "Negates -2 to attacks and skills, 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A wild onion can breathe out a foul breath in a 15-ft.-cone. Creatures within the area of effect must make a Fortitude save (DC 21) or suffer a -2 penalty to Attack rolls and skill checks for 1d4 rounds. Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 15
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates -2 to attacks and skills, 1d4 rounds",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000020001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sickening-breath",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 21,
+                "raw": "Fortitude save (DC 21)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 17,
+                "expectedDc": 21
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (Knowledge: Nature DC 17).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 23,
+                "mod": 6,
+                "missing": false,
+                "raw": "23"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "0fce233757cf381d",
+      "name": "Ecliptic Howl: recipient",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>+3 morale attack and +3 dodge AC for 2d4 rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "attack",
+            "type": "morale",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "3",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "3-morale-attack-and-3-dodge-ac-for-2d4",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "2d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "wild-onion/Ecliptic Howl: recipient"
+        }
+      }
+    },
+    {
+      "_id": "6af3929af5c6a213",
+      "name": "Sickening Breath: recipient",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>On failed save.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-2",
+            "target": "attack",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "skills",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "on-failed-save",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "wild-onion/Sickening Breath: recipient"
+        }
+      }
+    },
+    {
+      "_id": "0b526e8418a1de7f",
+      "name": "Stealth: underground",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only underground.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-underground",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "wild-onion/Stealth: underground"
+        }
+      }
+    },
+    {
+      "name": "Dream Pollen: sleep (recipient)",
+      "type": "buff",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "_id": "88c11dc9eb4fbe04",
+      "system": {
+        "tag": "recipient88c11dc9eb4fbe04",
+        "subType": "temp",
+        "active": false,
+        "actions": [],
+        "changes": [],
+        "contextNotes": [],
+        "description": {
+          "value": "<p>Give this buff to the affected recipient after a failed save. Activate for 1d4 rounds.</p><p>A wild onion can fill the air with drowsiness within a 15-ft.-radius. Creatures within the area of effect must make a Will save (DC 17) or be inflicted with sleep status for 1d4 rounds. Blue mages may learn this ability as a 2nd level spell(Knowledge: Nature DC 19).</p>"
+        },
+        "conditions": [
+          "sleep"
+        ],
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic046": "wild-onion/Dream Pollen: sleep (recipient)"
+        }
+      }
+    },
+    {
+      "name": "Mournful Howl: paralyzed (recipient)",
+      "type": "buff",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "_id": "6ab1af70f343d80f",
+      "system": {
+        "tag": "recipient6ab1af70f343d80f",
+        "subType": "temp",
+        "active": false,
+        "actions": [],
+        "changes": [],
+        "contextNotes": [],
+        "description": {
+          "value": "<p>Give this buff to the affected recipient after a failed save. Activate for 1d4 rounds.</p><p>A wild onion releases a mournful howl. All creatures within a 100-foot spread except evil outsiders must succeed at a Fortitude save DC 18 or become paralyzed for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).</p>"
+        },
+        "conditions": [
+          "paralyzed"
+        ],
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic046": "wild-onion/Mournful Howl: paralyzed (recipient)"
+        }
+      }
+    },
+    {
+      "name": "Shriek: nauseated (recipient)",
+      "type": "buff",
+      "img": "systems/ffd20/icons/conditions/screaming.png",
+      "_id": "68243ff6f6852842",
+      "system": {
+        "tag": "recipient68243ff6f6852842",
+        "subType": "temp",
+        "active": false,
+        "actions": [],
+        "changes": [],
+        "contextNotes": [],
+        "description": {
+          "value": "<p>Give this buff to the affected recipient after a failed save. Activate for 1d4 rounds.</p><p>A wild onion can give voice to an unsettling shriek. All creatures within a 30-foot spread of a shrieking wild onion must make a DC 17 Will save or become nauseated for 1d4 rounds. This is a sonic, mind-affecting ability. The save DC is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).</p>"
+        },
+        "conditions": [
+          "nauseated"
+        ],
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic046": "wild-onion/Shriek: nauseated (recipient)"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Wild Onion",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/wild-onion.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/plants/mandragora-family/wild-onion/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Wild-Onion.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/wild-onion.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Wild-Onion.png",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 6,
+        "size": "Small",
+        "cr": "10",
+        "creatureType": "Plant",
+        "subtypes": [
+          "Humanoid"
+        ],
+        "xp": 9600,
+        "aura": "",
+        "perception": 19,
+        "offense": {
+          "raw": [
+            "Speed 40 ft., Burrow 10 ft., Climb 40 ft.",
+            "Melee Bite +19 (1d8+8/19-20 plus grab), 2 Slams +18 (1d6+4 plus poison)",
+            "Space 5 ft.; Reach 5 ft. (10 ft. with slam)",
+            "Special Attacks Dream Pollen, Ecliptic Howl, Large Jaw, Mournful Howl, Shriek"
+          ],
+          "speed": "40 ft., Burrow 10 ft., Climb 40 ft.",
+          "melee": "Bite +19 (1d8+8/19-20 plus grab), 2 Slams +18 (1d6+4 plus poison)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft. (10 ft. with slam)",
+          "specialAttacks": "Dream Pollen, Ecliptic Howl, Large Jaw, Mournful Howl, Shriek",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 26, touch 18, flat-footed 20 (+6 dex, +1 dodge, +8 natural, +1 size)",
+            "HP 136 (15d8+75)",
+            "Fort +14, Reflex +14, Will +9",
+            "Immune plant traits; Resist wind 10, ice 15, lightning 10;",
+            "Weakness earth"
+          ],
+          "ac": "AC 26, touch 18, flat-footed 20 (+6 dex, +1 dodge, +8 natural, +1 size)",
+          "hp": "HP 136 (15d8+75)",
+          "hitPoints": 136,
+          "hitDice": 15,
+          "saves": "Fort +14, Reflex +14, Will +9",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "plant traits;",
+          "resistances": "wind 10, ice 15, lightning 10;",
+          "weaknesses": "earth",
+          "sr": null
+        },
+        "statistics": [
+          "Str 18, Dex 23, Con 20, Int 8, Wis 18, Cha 10",
+          "Base Atk +11; CMB +14 (+18 grapple); CMD 30",
+          "Feats Dodge, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "Skills Climb +19, Perception +19, Stealth +24 (+32 in underground); Racial Modifiers +8 Climb, +8 Stealth in underground",
+          "Languages Mandragoran"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Mandragora Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "wild-onion"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

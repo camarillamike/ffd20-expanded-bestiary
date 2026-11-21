@@ -1,0 +1,1452 @@
+{
+  "name": "Sandragora",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/sandragora.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 13
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 10
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "per": {
+        "ability": "wis",
+        "rank": 11
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 3
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 6400
+      },
+      "cr": {
+        "base": 9
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>This brown leafy plant shoots out seeds at its opponents and is commonly found in pairs or more. They have the ability to shoot multiple shoots at once that can confuse its enemy.</p><h2>Defense</h2><p>AC 22, touch 17, flat-footed 16 (+6 dex, +5 natural, +1 size)</p><p>HP 123 [169] (13d8+65)</p><p>Fort +12, Reflex +10, Will +8</p><p>Immune plant traits; Resist Earth 10, Water 15;</p><p>Weakness Fire</p><h2>Offense</h2><p>Speed 10 ft.</p><p>Range 4 Seeds +16 (1d6+2, 30 ft. range)</p><p>Special Attacks Seed Burst, Seed Cannon</p><h2>Statistics</h2><p>Str 14, Dex 22, Con 18, Int 2, Wis 18, Cha 8</p><p>Base Atk +9; CMB +10; CMD 26</p><p>Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness</p><p>Skills Perception +18, Stealth +20 (+24 in desert); Racial Modifiers +4 Stealth in desert</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "fire"
+      ],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Plant",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.ste",
+            "text": "in desert: source total +24 (+4 conditional adjustment)."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "plant",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 13,
+        "hd": 8,
+        "hp": 58,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "per": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "plant"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Plant",
+          "sourceHitPoints": 123,
+          "sourceHitDice": 13,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Clustered Shots",
+      "type": "feat",
+      "img": "icons/weapons/ammunition/arrows-fletching.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>You take a moment to carefully aim your shots, causing them all to strike nearly the same spot.</em></p><p><strong>Prerequisites</strong>: Point-Blank Shot, Precise Shot, base attack bonus +6.</p><p><strong>Benefits</strong>: When you use a full-attack action to make multiple ranged weapon attacks against the same opponent, total the damage from all hits before applying that opponent's damage reduction.</p><p><strong>Special</strong>: If the massive damage optional rule is being used (Core Rulebook 189), that rule applies if the total damage you deal with this feat is equal to or exceeds half the opponent's full normal hit points (minimum 50 points of damage).</p><p><strong>Combat Trick</strong>: When using this feat, you can spend up to 2 stamina points for each attack that hit the same target. Increase the damage pooled by this feat by an amount equal to the number of stamina points you spent.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "clustered-shots",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "tags": [
+          "Combat"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness",
+          "authoredLocally": true,
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "6b29HYy9MgWVO7oW",
+            "name": "Clustered Shots",
+            "version": "11.4.0"
+          }
+        },
+        "ffd20-expanded-bestiary": {
+          "compendiumHydrated": true,
+          "sourcePack": "pf-content-for-ffd20.pf-feats",
+          "sourceId": "6b29HYy9MgWVO7oW",
+          "sourceVersion": "11.4.0"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Natural Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Natural Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-natural-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Point-Blank Shot",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Point-Blank Shot.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "point-blank-shot",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Precise Shot",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Precise Shot.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "precise-shot",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Seeds",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A sandragora shoots out 4 seeds towards one target within a 30-foot range. If they hit, the target takes 1d6+2 piercing damage per seed. This ability does not provoke attacks of opportunity and is considered a thrown weapon for purposes of a strength bonus.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Seeds",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d6 + @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Four attacks against the same target; no AoO."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Additional 1",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 2",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 3",
+                  "formula": "0"
+                }
+              ]
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000008001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "seeds",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d6 + @abilities.str.mod",
+                "type": "piercing",
+                "raw": "1d6+2 piercing damage",
+                "sourceFormula": "1d6+2",
+                "damageAbility": "str",
+                "damageAbilityMultiplier": 1,
+                "damageAbilityReason": "weapon-like-damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Seed Burst",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per 1d2 rounds, a sandragora can shoot multiple seeds at a single target within 30-ft. If it hits (+16 ranged attack per seed), the target takes 14d6 piercing damage(1d6 per seed) and must make a Will save (DC 20) or be inflicted with the Confuse status for 1d4 rounds.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Seed Burst",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "will",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "14 seeds, each rolls separately; on hit save vs Confuse for [[1d4]] rounds.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Additional 1",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 2",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 3",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 4",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 5",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 6",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 7",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 8",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 9",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 10",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 11",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 12",
+                  "formula": "0"
+                },
+                {
+                  "name": "Additional 13",
+                  "formula": "0"
+                }
+              ]
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000009001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "seed-burst",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 20,
+                "raw": "Will save (DC 20)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 16,
+                "expectedDc": 20
+              }
+            ],
+            "damages": [
+              {
+                "formula": "14d6",
+                "type": "piercing",
+                "raw": "14d6 piercing damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Seed Cannon",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A sandragora can shoot a massive burst of seeds towards a single target within 60 feet. If it hits (+16 ranged attack per seed), the target takes 2d6 piercing damage. Blue mages may learn this ability as a 1st level spell (DC 17).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Seed Cannon",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 60,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Single ranged attack; no save printed."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000010001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "seed-cannon",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "2d6",
+                "type": "piercing",
+                "raw": "2d6 piercing damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 1st level spell (DC 17).",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "dex": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "con": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "445136972aebea53",
+      "name": "Desert camouflage",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only in desert.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "only-in-desert",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic045": "046/sandragora/Desert camouflage"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sandragora",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/sandragora.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/plants/grat-family/sandragora/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Sandragora.jpg",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/sandragora.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Sandragora.jpg",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 10,
+        "size": "Small",
+        "cr": "9",
+        "creatureType": "Plant",
+        "subtypes": [],
+        "xp": 6400,
+        "aura": "",
+        "perception": 18,
+        "offense": {
+          "raw": [
+            "Speed 10 ft.",
+            "Range 4 Seeds +16 (1d6+2, 30 ft. range)",
+            "Special Attacks Seed Burst, Seed Cannon"
+          ],
+          "speed": "10 ft.",
+          "melee": "",
+          "ranged": "4 Seeds +16 (1d6+2)",
+          "space": "",
+          "specialAttacks": "Seed Burst, Seed Cannon",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 22, touch 17, flat-footed 16 (+6 dex, +5 natural, +1 size)",
+            "HP 123 [169] (13d8+65)",
+            "Fort +12, Reflex +10, Will +8",
+            "Immune plant traits; Resist Earth 10, Water 15;",
+            "Weakness Fire"
+          ],
+          "ac": "AC 22, touch 17, flat-footed 16 (+6 dex, +5 natural, +1 size)",
+          "hp": "HP 123 [169] (13d8+65)",
+          "hitPoints": 123,
+          "hitDice": 13,
+          "saves": "Fort +12, Reflex +10, Will +8",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "plant traits;",
+          "resistances": "Earth 10, Water 15;",
+          "weaknesses": "Fire",
+          "sr": null
+        },
+        "statistics": [
+          "Str 14, Dex 22, Con 18, Int 2, Wis 18, Cha 8",
+          "Base Atk +9; CMB +10; CMD 26",
+          "Feats Clustered Shots, Improved Initiative, Improved Natural Attack, Point-Blank Shot, Precise Shot, Toughness",
+          "Skills Perception +18, Stealth +20 (+24 in desert); Racial Modifiers +4 Stealth in desert"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Grat Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "sandragora"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

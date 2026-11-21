@@ -1,0 +1,4409 @@
+{
+  "name": "Ganymede",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/ganymede.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 15,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 5,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 12,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0,
+        "base": 0
+      },
+      "hd": {
+        "total": 14
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 60
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 40
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "Can't be tripped.",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Crystal Magic",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": "-3"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "wis",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "12 + @sl",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": "",
+                "value": 5,
+                "max": 5,
+                "base": 5
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": "",
+                "value": 3,
+                "max": 3,
+                "base": 3
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": "",
+                "value": 1,
+                "max": 1,
+                "base": 1
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "0",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 4
+      },
+      "clm": {
+        "ability": "str",
+        "rank": 11
+      },
+      "ken": {
+        "ability": "int",
+        "rank": 14
+      },
+      "kna": {
+        "ability": "int",
+        "rank": 14
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 14
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 14
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 6400
+      },
+      "cr": {
+        "base": 9
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A mysterious machine, the product of high technology and magic. In reality, it was the result of a combination of Dilmagia technology and Zoldaad military force. Equipped to the Invincible by the many Veritas, it is now used as an invasion weapon. Its lightened armor boasts high resistance making it able to linger around volcanic regions for long periods of time.</p><h2>Defense</h2><p>AC 25, touch 13, flat-footed 21 (+4 Dex, +12 natural, -1 size)</p><p>hp 107 [170] (14d10+30), force field (90 hp, fast healing 14)</p><p>Fort +9, Ref +13, Will +8</p><p>DR 5/adamantine, hardness 10, resilient;</p><p>Immune construct traits;</p><p>Resist Fire 20, Earth 15, Ice 15</p><p>Weakness critical hits and lightning</p><h2>Offense</h2><p>Speed 60 ft., burrow 40 ft.</p><p>Melee 2 integrated drills +21 (1d8+6) or rotary saw +20 (2d6+6/x3)</p><p>Ranged integrated laser rifle +17 touch (2d8 fire)</p><p>Space 10 ft.; Reach 10 ft.</p><p>Special Attacks Combined Arms, Crystal Magic, Tek Laser</p><h2>Statistics</h2><p>Str 22, Dex 18, Con -, Int 15, Wis 12, Cha 5</p><p>Base Atk +14; CMB +21; CMD 31 (can't be tripped)</p><p>Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)</p><p>Skills Acrobatics +10, Climb +17, Knowledge (engineering) +22, Knowledge (nature) +22, Perception +17, Sense Motive +17; Racial Modifiers +4 Knowledge (engineering), +4 Knowledge (nature)</p><p>Languages Common, + two more</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "machina"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 120
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "superior optics"
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "adamantine"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 20,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection",
+        "trip"
+      ],
+      "languages": [
+        "Common",
+        "+ two more"
+      ],
+      "stature": "tall",
+      "hardness": 10
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.ken",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "skill.kna",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "skill.ken",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ken total adjustment"
+          },
+          {
+            "formula": "2",
+            "target": "skill.kna",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kna total adjustment"
+          },
+          {
+            "formula": "2",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "2",
+            "target": "skill.sen",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sen total adjustment"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.int.mod - (5 - 1), 0) / 4) * 5)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Construct monster MP bonus level 5"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.int.mod - (6 - 1), 0) / 4) * 6)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Construct monster MP bonus level 6"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.int.mod - (7 - 1), 0) / 4) * 7)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Construct monster MP bonus level 7"
+          },
+          {
+            "formula": "2",
+            "target": "skill.acr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published trained total, accounting for equipped armor"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "cl",
+            "text": "Crystal spell trigger, CL 11, no MP. Level 1 at will; higher-level daily uses shared per spell level."
+          },
+          {
+            "target": "misc",
+            "text": "Speaks Common and two unspecified languages."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 14,
+        "hd": 10,
+        "hp": 107,
+        "classCastingStat": "",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "no",
+        "mp": 0,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "high",
+          "spells": "",
+          "ability": "int",
+          "cantrips": false,
+          "offset": 0,
+          "domain": 1
+        },
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "construct"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 107,
+          "sourceHitDice": 14,
+          "spellcasting": {
+            "kind": "full",
+            "ability": "int",
+            "preparationMode": "spontaneous",
+            "casterType": "high",
+            "classBaseMPType": "fullCaster",
+            "baseMp": 55,
+            "finalMp": 58,
+            "printedMp": null,
+            "chartBaseMp": 55,
+            "maxSpellLevel": 4,
+            "mpSource": "monster-chart-plus-ability-bonus",
+            "foundryBonusLevels": 7,
+            "desiredBonusLevels": 4
+          }
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +14; CMB +21; CMD 31 (can't be tripped)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-4",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +14; CMB +21; CMD 31 (can't be tripped)",
+            "bab": 14,
+            "cmb": 21,
+            "cmd": 31
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Integrated Drills x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Integrated Drills",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "2",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "integrated drill 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "integrated drill",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 integrated drill +21 (1d8+6)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "integrated-drill",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "integrated drill",
+            "ranged": false,
+            "attackBonus": 21,
+            "damage": "1d8+6",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "rotary saw",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "rotary saw",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "untyped"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 3
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "rotary saw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: rotary saw +20 (2d6+6/x3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rotary-saw",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "rotary saw",
+            "ranged": false,
+            "attackBonus": 20,
+            "damage": "2d6+6/x3",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 3,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000003",
+      "name": "Integrated Laser Rifle",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Integrated Laser Rifle",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 150,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "rwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Integrated Laser Rifle",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Fire once per round. Lasers pass through force fields without damaging them. Transparent physical barriers still take damage; invisible creatures and objects are immune. Smoke/fog grants both cover and concealment; darkness provides concealment only."
+              ],
+              "footer": [
+                "Source statblock: Integrated Laser Rifle +17 (2d8 fire)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": true,
+            "effectNotes": [],
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "integrated-laser-rifle",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Integrated Laser Rifle",
+            "ranged": true,
+            "attackBonus": 17,
+            "damage": "2d8 fire",
+            "damageFormula": "2d8",
+            "printedDamageBonus": 0,
+            "damageType": "fire",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "Blizzard",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard",
+          "sourceLine": "1st (DC 13) - Blizzard, Fire, Poison, Thunder",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "Fire",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire",
+          "sourceLine": "1st (DC 13) - Blizzard, Fire, Poison, Thunder",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "Poison",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Poison.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "poison",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Poison",
+          "sourceLine": "1st (DC 13) - Blizzard, Fire, Poison, Thunder",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Poison"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000004",
+      "name": "Thunder",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder",
+          "sourceLine": "1st (DC 13) - Blizzard, Fire, Poison, Thunder",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000005",
+      "name": "Blizzard II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard II",
+          "sourceLine": "2nd (DC 14) - Blizzard II, Fire II, Thunder II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000006",
+      "name": "Fire II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire II",
+          "sourceLine": "2nd (DC 14) - Blizzard II, Fire II, Thunder II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000007",
+      "name": "Thunder II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder II",
+          "sourceLine": "2nd (DC 14) - Blizzard II, Fire II, Thunder II",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000008",
+      "name": "Blizzara",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzara.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzara",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzara",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzara"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000009",
+      "name": "Blizzard III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard III",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000010",
+      "name": "Bio",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Bio.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "bio",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Bio",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Bio"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000011",
+      "name": "Fira",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fira.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fira",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fira",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fira"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000012",
+      "name": "Fire III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire III",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000013",
+      "name": "Thundara",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thundara.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thundara",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thundara",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thundara"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000014",
+      "name": "Thunder III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder III",
+          "sourceLine": "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000015",
+      "name": "Blizzard IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blizzard IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blizzard-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blizzard IV",
+          "sourceLine": "4th (DC 16) - Blizzard IV, Fire IV, Thunder IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blizzard IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000016",
+      "name": "Fire IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Fire IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "fire-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Fire IV",
+          "sourceLine": "4th (DC 16) - Blizzard IV, Fire IV, Thunder IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Fire IV"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000017",
+      "name": "Thunder IV",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Thunder IV.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "thunder-iv",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 4,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Thunder IV",
+          "sourceLine": "4th (DC 16) - Blizzard IV, Fire IV, Thunder IV",
+          "castingKind": "",
+          "level": 4,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Thunder IV"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Acrobatic Steps",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Acrobatic Steps.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "acrobatic-steps",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Cleave",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Cleave.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "cleave",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Nimble Moves",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Nimble Moves.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "nimble-moves",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Weapon Focus (Drill)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Drill).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-drill",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Crystal Magic",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A ganymede's crystal magic allows it to cast spells as if using a spell trigger magic item (CL 11th) without the use of MP. They cast 1st-level spells at will, 2nd-level spells 5 times per day, 3rd level spells 3 time per day, and 4th level spells 1 time per day. 1st (DC 13) - Blizzard, Fire, Poison, Thunder 2nd (DC 14) - Blizzard II, Fire II, Thunder II 3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III 4th (DC 16) - Blizzard IV, Fire IV, Thunder IV</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "crystal-magic",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Combined Arms",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As part of a full-attack action, a ganymede can attack with both melee and ranged integrated weapons.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Combined Arms",
+            "actionType": "other",
+            "activation": {
+              "type": "full",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Choose drill pair or saw; also fire integrated rifle once during full attack."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000031001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combined-arms",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Force Field",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A ganymede is sheathed in a thin layer of shimmering energy that grants it 85 bonus hit points. All damage dealt to a ganymede with an active force field is reduced from these hit points first. As long as the force field is active, the ganymede is immune to critical hits. A ganymede's force field has fast healing 13, but once its hit points are reduced to 0, the force field shuts down and does not reactivate for 24 hours.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Force Field",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Shield takes damage first, grants critical immunity while energized, heals 13 HP per round. At 0 offline 24 hours. Header conflicts (90 HP/14); use ability text (85/13)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000032001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 85,
+          "maxFormula": "85",
+          "per": "charges",
+          "autoDeductChargesCost": "0"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "force-field",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "24",
+              "units": "hours"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Integrated Laser Rifle",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A ganymede has a built-in laser rifle. This weapon has a range of 150 feet and deals 2d8 points of fire damage on a hit. The weapon can fire once per round as a ranged touch attack. A laser attack can pass through force fields and force effects, such as a wall of force, to strike a foe beyond without damaging that field. Objects like glass or other transparent barriers don't provide cover from lasers, but unlike force barriers, a transparent physical barrier still takes damage when a laser passes through it. Invisible creatures and objects are immune to damage from lasers. Fog, smoke, and other clouds provide cover in addition to concealment from laser attacks. Darkness (magical or otherwise) has no effect on lasers other than providing concealment.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Integrated Laser Rifle",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 150,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "rwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Integrated Laser Rifle",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Fire once per round. Lasers pass through force fields without damaging them. Transparent physical barriers still take damage; invisible creatures and objects are immune. Smoke/fog grants both cover and concealment; darkness provides concealment only.",
+                "Alternate roll for the same integrated weapon, not another shot."
+              ],
+              "footer": [
+                "Source statblock: Integrated Laser Rifle +17 (2d8 fire)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": true,
+            "_id": "act0000000033001",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "integrated-laser-rifle",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "2d8",
+                "type": "fire",
+                "raw": "2d8 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "rsak",
+              "attackBonus": "",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Resilient",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Ganymede receive a +3 racial bonus on all saving throws.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Resilient",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Printed saves include racial +3. Hardness 10 and critical vulnerability when force field down."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000034001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "allSavingThrows",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "resilient",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedChanges": true,
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Tek Laser",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds and as a standard action, a ganymede can fire a blue blast from its chest in a 30-ft.-cone. All creatures caught within the area of effect take 5d8 points of non-elemental damage, a Reflex save (DC 19) for half damage. Those failing the Reflex save must make a Fortitude save (DC 19) or be stunned for 1d3 rounds. Blue mages may learn this ability as a 4th level spell(DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tek Laser",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in cone"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "5d8",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (1)",
+              "type": "ref",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Successful save halves damage. Failed Reflex: also roll Fortitude vs stun.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000035001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tek-laser",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 19,
+                "raw": "Reflex save (DC 19)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
+                "ability": "int",
+                "confidence": "default-su-int-floor",
+                "base": 17,
+                "expectedDc": 19
+              },
+              {
+                "save": "fort",
+                "dc": 19,
+                "raw": "Fortitude save (DC 19)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
+                "ability": "int",
+                "confidence": "default-su-int-floor",
+                "base": 17,
+                "expectedDc": 19
+              }
+            ],
+            "damages": [
+              {
+                "formula": "5d8",
+                "type": "nonelemental",
+                "raw": "5d8 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell(DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d3",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 15,
+                "mod": 2,
+                "missing": false,
+                "raw": "15"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "bb7841da1c256b66",
+      "name": "Tek Stun",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After failed Reflex only: stunned 1d3 rounds on a failed Fortitude save.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tek Stun",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (1)",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After failed Reflex only: stunned 1d3 rounds on a failed Fortitude save."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000036001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "tek-stun",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Tek Stun",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "semantic046": "ganymede/Tek Stun",
+          "reviewedActions": true
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ganymede",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/ganymede.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/tunnel-armor-family/ganymede/",
+      "sourceImage": "",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/ganymede.webp",
+      "packagedImageSource": "original-art",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 4,
+        "size": "Large",
+        "cr": "9",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Machina"
+        ],
+        "xp": 6400,
+        "aura": "",
+        "perception": 17,
+        "offense": {
+          "raw": [
+            "Speed 60 ft., burrow 40 ft.",
+            "Melee 2 integrated drills +21 (1d8+6) or rotary saw +20 (2d6+6/x3)",
+            "Ranged integrated laser rifle +17 touch (2d8 fire)",
+            "Space 10 ft.; Reach 10 ft.",
+            "Special Attacks Combined Arms, Crystal Magic, Tek Laser"
+          ],
+          "speed": "60 ft., burrow 40 ft.",
+          "melee": "2 integrated drills +21 (1d8+6), rotary saw +20 (2d6+6/x3)",
+          "ranged": "Integrated Laser Rifle +17 (2d8 fire)",
+          "space": "Space 10 ft.; Reach 10 ft.",
+          "specialAttacks": "Combined Arms, Crystal Magic, Tek Laser",
+          "spellLines": [
+            "Spells Known (CL 11th)",
+            "1st (DC 13) - Blizzard, Fire, Poison, Thunder",
+            "2nd (DC 14) - Blizzard II, Fire II, Thunder II",
+            "3rd (DC 15) - Blizzara, Blizzard III, Bio, Fira, Fire III, Thundara, Thunder III",
+            "4th (DC 16) - Blizzard IV, Fire IV, Thunder IV"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 25, touch 13, flat-footed 21 (+4 Dex, +12 natural, -1 size)",
+            "hp 107 [170] (14d10+30), force field (90 hp, fast healing 14)",
+            "Fort +9, Ref +13, Will +8",
+            "DR 5/adamantine, hardness 10, resilient;",
+            "Immune construct traits;",
+            "Resist Fire 20, Earth 15, Ice 15",
+            "Weakness critical hits and lightning"
+          ],
+          "ac": "AC 25, touch 13, flat-footed 21 (+4 Dex, +12 natural, -1 size)",
+          "hp": "hp 107 [170] (14d10+30), force field (90 hp, fast healing 14)",
+          "hitPoints": 107,
+          "hitDice": 14,
+          "saves": "Fort +9, Ref +13, Will +8",
+          "defensiveAbilities": "",
+          "dr": "5/adamantine",
+          "immunities": "construct traits;",
+          "resistances": "Fire 20, Earth 15, Ice 15",
+          "weaknesses": "lightning",
+          "sr": null
+        },
+        "statistics": [
+          "Str 22, Dex 18, Con -, Int 15, Wis 12, Cha 5",
+          "Base Atk +14; CMB +21; CMD 31 (can't be tripped)",
+          "Feats Acrobatic Steps, Cleave, Great Fortitude, Lightning Reflexes, Nimble Moves, Power Attack, Weapon Focus (Drill)",
+          "Skills Acrobatics +10, Climb +17, Knowledge (engineering) +22, Knowledge (nature) +22, Perception +17, Sense Motive +17; Racial Modifiers +4 Knowledge (engineering), +4 Knowledge (nature)",
+          "Languages Common, + two more"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Tunnel Armor Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "ganymede"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

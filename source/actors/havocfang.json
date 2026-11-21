@@ -1,0 +1,3053 @@
+{
+  "name": "Havocfang",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/havocfang.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 5,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 12,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 16
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": "45 vs. trip."
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 13
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 16
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 15
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 12800
+      },
+      "cr": {
+        "base": 11
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Long-whiskered relative of the sabertusk indigenous to Cleigne. The havocfang is easily the most intimidating member of the sabertusk family by nature of its eerie appearance, hostile demeanor, and brute strength, it is said that the sound of its howl can drive a man to madness.</p><h2>Defense</h2><p>AC 26, touch 14; flat-footed 21 (+5 dex, +12 natural, -1 size)</p><p>hp 152 [208] (16d10+80), fast healing 12;</p><p>Fort +15, Ref +15, Will +10</p><p>Immune disable, fear, poison, and sap</p><p>Resist Fire 25, Holy 20, Shadow 20</p><p>Weakness Ice</p><h2>Offense</h2><p>Speed 40 ft.</p><p>Melee 2 Claws +22 (1d8+7 plus grab), Gore +23 (2d8+7 plus trip when charging)</p><p>Space 10 ft.; Reach 5 ft. (10 ft. for Gore)</p><p>Special Attacks Eerie Howl, Fearful Bay, Powerful Charge, Pounce, Rake (2 claws +20, 1d8+7), Throat-Rip</p><h2>Statistics</h2><p>Str 24, Dex 20, Con 20, Int 5, Wis 20, Cha 8</p><p>Base Atk +16; CMB +24 (+28 grapple); CMD 41 (45 vs. trip)</p><p>Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)</p><p>Skills Acrobatics +21, Perception +24, Stealth +21, Swim +25; Racial Modifiers +4 Perception, +4 Survival when tracking by scent</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 30
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 25,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 20,
+            "types": [
+              "light"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 20,
+            "types": [
+              "dark"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "ice"
+      ],
+      "ci": [
+        "disable",
+        "fear",
+        "poison",
+        "and sap"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "1",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.sur",
+            "text": "when tracking by scent: +4 racial bonus."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 16,
+        "hd": 10,
+        "hp": 72,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "magicalBeast"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 152,
+          "sourceHitDice": 16,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +16; CMB +24 (+28 grapple); CMD 41 (45 vs. trip)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +16; CMB +24 (+28 grapple); CMD 41 (45 vs. trip)",
+            "bab": 16,
+            "cmb": 24,
+            "cmd": 41
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Claw x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Claw",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On hit resolve Grab."
+              ],
+              "footer": [
+                "Source statblock: 2 Claw +22 (1d8+7 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "claw",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 22,
+            "damage": "1d8+7 plus grab",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Gore",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Gore",
+            "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Gore",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On a charge only, attempt Trip on hit."
+              ],
+              "footer": [
+                "Source statblock: Gore +23 (2d8+7 plus trip when charging)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "gore",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Gore",
+            "ranged": false,
+            "attackBonus": 23,
+            "damage": "2d8+7 plus trip when charging",
+            "damageFormula": "2d8",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Skill Focus (Perception)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Skill Focus (Perception).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "skill-focus-perception",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)",
+          "reviewedChanges": true
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Stand Still",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Stand Still.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "stand-still",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Steady Engagement",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Steady Engagement.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "steady-engagement",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "Z5AnBDg5Gnv0q5Kf",
+            "name": "Steady Engagement",
+            "version": "11.4.0"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Vital Strike",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Vital Strike.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "vital-strike",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Weapon Focus (Gore)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-horn.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Gore).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-gore",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Rake",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Rake (2 claws +20, 1d8+7).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Rake",
+            "actionType": "mwak",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "-2",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8 + @abilities.str.mod",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Claw 2",
+                  "formula": "0"
+                }
+              ]
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000013001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rake",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Rake (2 claws +20, 1d8+7)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000002",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "4",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After claw hits: grapple +28 without provoking; use constrict on a successful check if present."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000014001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Grab",
+          "lookupPack": "ffd20.monster-abilities",
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sheetName": "Grab",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000003",
+      "name": "trip when charging",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: trip when charging.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "trip-when-charging",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "trip when charging",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Eerie Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a havocfang can emit a loud, piercing howl within a 10-ft.-radius. Creatures within the area of effect are inflicted with Disable status (Fortitude save DC 20 to negate) for 1d4 rounds. Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Eerie Howl",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (-3)",
+              "type": "fort",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "3/day, a havocfang can emit a loud, piercing howl within a 10-ft.-radius. Creatures within the area of effect are inflicted with Disable status (Fortitude save DC 20 to negate) for 1d4 rounds. Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 10
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000016001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "eerie-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 20,
+                "raw": "Fortitude save DC 20",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-mismatch",
+                "base": 18,
+                "neededMod": 2,
+                "expectedDc": 23,
+                "observedDc": 20
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Fearful Bay",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>1/day, a havocfang can emit a howl within a 30-ft.-radius. Creatures within the area of effect are inflicted with Panicked status effect expect for evil outsiders (Will save DC 19 to negate) for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Fearful Bay",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (-4)",
+              "type": "will",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "1/day, a havocfang can emit a howl within a 30-ft.-radius. Creatures within the area of effect are inflicted with Panicked status effect expect for evil outsiders (Will save DC 19 to negate) for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000017001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "day",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "fearful-bay",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "day",
+              "maxFormula": "1",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 19,
+                "raw": "Will save DC 19",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-mismatch",
+                "base": 18,
+                "neededMod": 1,
+                "expectedDc": 23,
+                "observedDc": 19
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>An havocfang can make a full attack when it makes a charge attack.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Pounce",
+            "actionType": "other",
+            "activation": {
+              "type": "full",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "charged enemy"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After a charge, make the full attack with both claws and gore. Resolve the charging gore's double damage and trip only once."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000018001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "pounce",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Powerful Charge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A havocfang, when it makes a charge attack, he also deals double damage with his gore attack and gains a free action to do a trip combat maneuver. On a failed combat maneuver check, the havocfang is not tripped in return. This ability works only on creatures of a size equal to or smaller than the havocfang.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Powerful Charge",
+            "actionType": "mwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "1",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "4d8 + 2 * @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "A havocfang, when it makes a charge attack, he also deals double damage with his gore attack and gains a free action to do a trip combat maneuver. On a failed combat maneuver check, the havocfang is not tripped in return. This ability works only on creatures of a size equal to or smaller than the havocfang."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000019001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "On a charge, double the listed gore damage."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "powerful-charge",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "On a charge, double the listed gore damage."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Throat-Rip",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As a full-round action, a havocfang can deliver a coup de grace against a helpless opponent. If the victim survives the attack, he must succeed on a Fortitude save (DC 10 + damage dealt) or dies. Opponents killed in this manner cannot be raised, but Arise, Full-Life, or the like can restore the slain creature to life.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Throat-Rip",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "4d8 + 2 * @abilities.str.mod",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": "If the target survives, use Surviving target with its actual damage taken."
+            },
+            "notes": {
+              "effect": [
+                "Helpless victim, automatic gore critical. Enter actual damage after mitigation."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000020001"
+          },
+          {
+            "name": "Surviving target",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + @resources.coupDamageDealt.value",
+              "description": "Negates death. Only a surviving victim rolls."
+            },
+            "notes": {
+              "effect": [
+                "As a full-round action, a havocfang can deliver a coup de grace against a helpless opponent. If the victim survives the attack, he must succeed on a Fortitude save (DC 10 + damage dealt) or dies. Opponents killed in this manner cannot be raised, but Arise, Full-Life, or the like can restore the slain creature to life."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000020002"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "throat-rip",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 23,
+                "raw": "No printed DC; generated from default monster DC.",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-unprinted-ex-con-floor",
+                "base": 18,
+                "expectedDc": 23
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "full-round",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 5,
+                "mod": -3,
+                "missing": false,
+                "raw": "5"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "6e9eb62e0c760dd4",
+      "name": "Charging trip",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Equal or smaller target hit by charging gore; never counter-tripped.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Charging trip",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Equal or smaller target hit by charging gore; never counter-tripped."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "charging-trip",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Charging trip",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "havocfang/Charging trip"
+        }
+      }
+    },
+    {
+      "_id": "891ac398f126fb59",
+      "name": "Scent tracking: Survival",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Tracking by scent only.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.sur",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "tracking-by-scent-only",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "havocfang/Scent tracking: Survival"
+        }
+      }
+    },
+    {
+      "_id": "0f912d86e38d7856",
+      "name": "Coup damage dealt",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Enter the actual damage taken by the victim.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "per": "charges",
+          "maxFormula": "9999",
+          "value": 0,
+          "autoDeductChargesCost": "0"
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "coupDamageDealt",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Coup damage dealt",
+          "configuredUses": {
+            "per": "charges",
+            "maxFormula": "9999",
+            "value": 0,
+            "autoDeductChargesCost": "0"
+          },
+          "authoredLocally": true,
+          "review046Semantic": "havocfang/Coup damage dealt"
+        }
+      }
+    },
+    {
+      "_id": "29146376f8cd9471",
+      "name": "Eerie Howl: failed save",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Recipient only. Apply after the named trigger; remove when cured or the printed duration expires.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "recipient-only-apply-after-the-named-tr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "disabled"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "havocfang/Eerie Howl: failed save"
+        }
+      }
+    },
+    {
+      "_id": "45ecf55a2609b5d3",
+      "name": "Fearful Bay: eligible target",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Recipient only. Apply after the named trigger; remove when cured or the printed duration expires.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "recipient-only-apply-after-the-named-tr",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "panicked"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "havocfang/Fearful Bay: eligible target"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Havocfang",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/havocfang.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/animals/saberclaw-family/havocfang/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Havocfang.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/havocfang.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Havocfang.png",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 9,
+        "size": "Large",
+        "cr": "11",
+        "creatureType": "Magical Beast",
+        "subtypes": [],
+        "xp": 12800,
+        "aura": "",
+        "perception": 24,
+        "offense": {
+          "raw": [
+            "Speed 40 ft.",
+            "Melee 2 Claws +22 (1d8+7 plus grab), Gore +23 (2d8+7 plus trip when charging)",
+            "Space 10 ft.; Reach 5 ft. (10 ft. for Gore)",
+            "Special Attacks Eerie Howl, Fearful Bay, Powerful Charge, Pounce, Rake (2 claws +20, 1d8+7), Throat-Rip"
+          ],
+          "speed": "40 ft.",
+          "melee": "2 Claws +22 (1d8+7 plus grab), Gore +23 (2d8+7 plus trip when charging)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 5 ft. (10 ft. for Gore)",
+          "specialAttacks": "Eerie Howl, Fearful Bay, Powerful Charge, Pounce, Rake (2 claws +20, 1d8+7), Throat-Rip",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 26, touch 14; flat-footed 21 (+5 dex, +12 natural, -1 size)",
+            "hp 152 [208] (16d10+80), fast healing 12;",
+            "Fort +15, Ref +15, Will +10",
+            "Immune disable, fear, poison, and sap",
+            "Resist Fire 25, Holy 20, Shadow 20",
+            "Weakness Ice"
+          ],
+          "ac": "AC 26, touch 14; flat-footed 21 (+5 dex, +12 natural, -1 size)",
+          "hp": "hp 152 [208] (16d10+80), fast healing 12;",
+          "hitPoints": 152,
+          "hitDice": 16,
+          "saves": "Fort +15, Ref +15, Will +10",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "disable, fear, poison, and sap",
+          "resistances": "Fire 25, Holy 20, Shadow 20",
+          "weaknesses": "Ice",
+          "sr": null
+        },
+        "statistics": [
+          "Str 24, Dex 20, Con 20, Int 5, Wis 20, Cha 8",
+          "Base Atk +16; CMB +24 (+28 grapple); CMD 41 (45 vs. trip)",
+          "Feats Combat Reflexes, Improved Initiative, Power Attack, Skill Focus (Perception), Stand Still, Steady Engagement, Vital Strike, Weapon Focus (Gore)",
+          "Skills Acrobatics +21, Perception +24, Stealth +21, Swim +25; Racial Modifiers +4 Perception, +4 Survival when tracking by scent"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Saberclaw Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "havocfang"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

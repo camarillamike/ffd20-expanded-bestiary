@@ -1,0 +1,2893 @@
+{
+  "name": "Clockwork Mage (Wind)",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/clockwork-mage.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 21,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 1,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 8,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0,
+        "base": 0
+      },
+      "hd": {
+        "total": 14
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": ""
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "20"
+      },
+      "acNotes": "",
+      "cmdNotes": "",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Crystal Magic",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "med",
+            "class": "_hd",
+            "cl": {
+              "formula": "-5"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "wis",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": "",
+                "value": 3,
+                "max": 3,
+                "base": 3
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": "",
+                "value": 1,
+                "max": 1,
+                "base": 1
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "0",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "skills": {},
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 6400
+      },
+      "cr": {
+        "base": 9
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>This faceless construct has a crystal set into its chest, bristling with arcane energy.</p><h2>Defense</h2><p>AC 25, touch 17, flat-footed 18 (+5 dex, +2 dodge, +8 natural)</p><p>hp 97 [150] (14d10+20)</p><p>Fort +4, Ref +11, Will +6</p><p>DR 5/adamantine;</p><p>Immune Construct traits;</p><p>Resist 20 of the crystal type</p><p>SR 20;</p><p>Weakness Lightning</p><h2>Offense</h2><p>Speed 30 ft.</p><p>Melee 2 Slams +18 (1d4+3)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks Crystal Magic</p><h2>Statistics</h2><p>Str 16, Dex 21, Con -, Int -, Wis 14, Cha 1</p><p>Base Atk +14; CMB +17; CMD 34</p><p>Feats Improved Initiative, Lightning Reflexes</p><p>SQ Difficult to create, Swift reactions, Winding</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "clockwork"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": true,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "adamantine"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 20,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "-1 * (ceil(max(@abilities.wis.mod - (4 - 1), 0) / 4) * 4)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Construct monster MP bonus level 4"
+          },
+          {
+            "formula": "-1 * (ceil(max(@abilities.wis.mod - (5 - 1), 0) / 4) * 5)",
+            "target": "mmp",
+            "type": "untypedPerm",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Construct monster MP bonus level 5"
+          },
+          {
+            "formula": "2",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "cl",
+            "text": "Crystal spell trigger, CL 9, no MP. Level 1 at will; higher-level daily uses shared per spell level."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 14,
+        "hd": 10,
+        "hp": 97,
+        "classCastingStat": "",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "no",
+        "mp": 0,
+        "casting": {
+          "type": "spontaneous",
+          "progression": "med",
+          "spells": "",
+          "ability": "wis",
+          "cantrips": false,
+          "offset": 0,
+          "domain": 1
+        },
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "construct"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 97,
+          "sourceHitDice": 14,
+          "spellcasting": {
+            "kind": "semi",
+            "ability": "wis",
+            "preparationMode": "spontaneous",
+            "casterType": "med",
+            "classBaseMPType": "pacman",
+            "baseMp": 30,
+            "finalMp": 33,
+            "printedMp": null,
+            "chartBaseMp": 30,
+            "maxSpellLevel": 3,
+            "mpSource": "monster-chart-plus-ability-bonus",
+            "foundryBonusLevels": 5,
+            "desiredBonusLevels": 3
+          }
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +14; CMB +17; CMD 34</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +14; CMB +17; CMD 34",
+            "bab": 14,
+            "cmb": 17,
+            "cmd": 34
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: 2 Slam +18 (1d4+3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 18,
+            "damage": "1d4+3",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "spell00000000001",
+      "name": "Aero",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero",
+          "sourceLine": "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000002",
+      "name": "Blast",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blast.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blast",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blast",
+          "sourceLine": "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blast"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000003",
+      "name": "Quick Step",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Quick Step.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "quick-step",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Quick Step",
+          "sourceLine": "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Quick Step"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000004",
+      "name": "Wind Armor",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Wind Armor.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "wind-armor",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Wind Armor",
+          "sourceLine": "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Wind Armor"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000005",
+      "name": "Wind Shield",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Wind Shield.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "wind-shield",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 1,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": true,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Wind Shield",
+          "sourceLine": "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+          "castingKind": "",
+          "level": 1,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Wind Shield"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000006",
+      "name": "Aero II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero II",
+          "sourceLine": "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000007",
+      "name": "Blast II",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blast II.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blast-ii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blast II",
+          "sourceLine": "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blast II"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000008",
+      "name": "Float",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Float.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "float",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Float",
+          "sourceLine": "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Float"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000009",
+      "name": "Silence",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Silence.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "silence",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Silence",
+          "sourceLine": "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Silence"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000010",
+      "name": "Wind Barrier",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Wind Barrier.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "wind-barrier",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 2,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Wind Barrier",
+          "sourceLine": "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+          "castingKind": "",
+          "level": 2,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Wind Barrier"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000011",
+      "name": "Aera",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aera.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aera",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aera",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aera"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000012",
+      "name": "Aero III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Aero III.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "aero-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Aero III",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Aero III"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000013",
+      "name": "Battering Blast",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Battering Blast.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "battering-blast",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Battering Blast",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Battering Blast"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000014",
+      "name": "Blast III",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Blast III.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "_id": "jrgAvqzWYnQwE9Wl",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "img": "systems/ffd20/icons/actions/quill-ink.svg",
+            "name": "Use",
+            "target": {
+              "value": "one creature afflicted with Squalled status effect"
+            },
+            "actionType": "spellsave",
+            "range": {
+              "units": "close"
+            },
+            "save": {
+              "type": "ref",
+              "description": "Negates"
+            },
+            "notes": {
+              "effect": [
+                "Squalled target only. Remove Squalled; 15-ft knockback, Acrobatics DC 25 to avoid falling prone."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "spellPointCost": "0"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "blast-iii",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Blast III",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Blast III",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spell00000000015",
+      "name": "Cloak of Winds",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Cloak of Winds.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "cloak-of-winds",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Cloak of Winds",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Cloak of Winds"
+        }
+      }
+    },
+    {
+      "_id": "spell00000000016",
+      "name": "Floatga",
+      "type": "spell",
+      "img": "systems/ffd20/icons/actions/quill-ink.svg",
+      "system": {
+        "description": {
+          "value": "<p>Generated spell reference from the source statblock: Floatga.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": []
+        },
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "tag": "floatga",
+        "learnedAt": {
+          "class": {},
+          "domain": {}
+        },
+        "level": 3,
+        "clOffset": 0,
+        "slOffset": 0,
+        "school": "",
+        "multischool": [],
+        "subschool": [],
+        "descriptors": [],
+        "components": {
+          "value": "",
+          "verbal": true,
+          "somatic": true,
+          "thought": false,
+          "emotion": false,
+          "material": false,
+          "focus": false,
+          "divineFocus": 0
+        },
+        "materials": {
+          "value": "",
+          "focus": "",
+          "gpValue": 0
+        },
+        "spellbook": "primary",
+        "preparation": {
+          "value": 1,
+          "max": 1
+        },
+        "uses": {
+          "autoDeductChargesCost": "",
+          "value": 0,
+          "maxFormula": "",
+          "per": ""
+        },
+        "atWill": false,
+        "sr": true,
+        "srinfo": "",
+        "shortDescription": "",
+        "showInQuickbar": false,
+        "domain": false,
+        "slotCost": 1
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpellReference": true,
+          "lookupTypes": [
+            "spell"
+          ],
+          "name": "Floatga",
+          "sourceLine": "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga",
+          "castingKind": "",
+          "level": 3,
+          "spellbook": "primary",
+          "atWill": false,
+          "perDay": 0,
+          "preparationCount": null,
+          "lookupName": "Floatga"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Lightning Reflexes"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Lightning Reflexes"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "Difficult to create",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Clockwork creation requires the printed construction components and check.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "difficult-to-create",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Difficult to create",
+          "authoredLocally": true,
+          "semantic046": "clockwork-mage/Difficult to create"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000002",
+      "name": "Swift reactions",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Clockwork construct gains Improved Initiative and Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "swift-reactions",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Swift reactions",
+          "authoredLocally": true,
+          "semantic046": "clockwork-mage/Swift reactions"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000003",
+      "name": "Winding",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Clockwork winding required. Keep crystal trigger casts separate from MP.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Winding",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Clockwork winding required. Keep crystal trigger casts separate from MP."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000024001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "winding",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Winding",
+          "authoredLocally": true,
+          "semantic046": "clockwork-mage/Winding",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Crystal Magic",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A clockwork mage's crystal magic allows it to cast spells as if using a spell trigger magic item (CL 9th) without the use of MP. The crystal type determines a clockwork mage's spells. They cast 1st-level spells at will, 2nd-level spells 3 times per day, and 3rd level spells 1 time per day. </p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "crystal-magic",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "dex": {
+                "value": 21,
+                "mod": 5,
+                "missing": false,
+                "raw": "21"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 1,
+                "mod": -5,
+                "missing": false,
+                "raw": "1"
+              }
+            },
+            "sourceType": "Su"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Clockwork Mage (Wind)",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/clockwork-mage.webp"
+    },
+    "sight": {
+      "enabled": true
+    }
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/constructs/clockwork-family/clockwork-mage/",
+      "sourceImage": "",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/clockwork-mage.webp",
+      "packagedImageSource": "original-art",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 9,
+        "size": "Medium",
+        "cr": "9",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Clockwork"
+        ],
+        "xp": 6400,
+        "aura": "",
+        "perception": 2,
+        "offense": {
+          "raw": [
+            "Speed 30 ft.",
+            "Melee 2 Slams +18 (1d4+3)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks Crystal Magic"
+          ],
+          "speed": "30 ft.",
+          "melee": "2 Slams +18 (1d4+3)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "Crystal Magic",
+          "spellLines": [
+            "Spells Known (CL 9th)",
+            "1st (DC 11) - Aero, Blast, Quick Step, Wind Armor, Wind Shield",
+            "2nd (DC 12) - Aero II, Blast II, Float, Silence, Wind Barrier",
+            "3rd (DC 13) - Aera, Aero III, Battering Blast, Blast III, Cloak of Winds, Floatga"
+          ]
+        },
+        "defense": {
+          "raw": [
+            "AC 25, touch 17, flat-footed 18 (+5 dex, +2 dodge, +8 natural)",
+            "hp 97 [150] (14d10+20)",
+            "Fort +4, Ref +11, Will +6",
+            "DR 5/adamantine;",
+            "Immune Construct traits;",
+            "Resist 20 of the crystal type",
+            "SR 20;",
+            "Weakness Lightning"
+          ],
+          "ac": "AC 25, touch 17, flat-footed 18 (+5 dex, +2 dodge, +8 natural)",
+          "hp": "hp 97 [150] (14d10+20)",
+          "hitPoints": 97,
+          "hitDice": 14,
+          "saves": "Fort +4, Ref +11, Will +6",
+          "defensiveAbilities": "",
+          "dr": "5/adamantine;",
+          "immunities": "Construct traits;",
+          "resistances": "Wind 20",
+          "weaknesses": "Lightning",
+          "sr": 20
+        },
+        "statistics": [
+          "Str 16, Dex 21, Con -, Int -, Wis 14, Cha 1",
+          "Base Atk +14; CMB +17; CMD 34",
+          "Feats Improved Initiative, Lightning Reflexes",
+          "SQ Difficult to create, Swift reactions, Winding"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Clockwork Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "clockwork-mage"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

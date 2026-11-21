@@ -1,0 +1,1490 @@
+{
+  "name": "Skull Eater",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/skull-eater.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 4,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 6,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 5,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 12
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 20
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 9
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 9
+      },
+      "sur": {
+        "ability": "wis",
+        "rank": 12
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 6400
+      },
+      "cr": {
+        "base": 9
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A mu relative that's constantly munching on a skull but don't be fooled by it appearance, they're quite dangerous.</p><h2>Defense</h2><p>AC 23, touch 18, flat-footed 15 (+7 dex, +1 dodge, +5 natural)</p><p>hp 110 (12d10+36)</p><p>Fort +11, Ref +15, Will +6</p><p>DR 5/-; Immune Blind, Confuse</p><h2>Offense</h2><p>Speed 30 ft., Burrow 20 ft.</p><p>Melee Bite +19 (2d8+6/18-20)</p><p>Space 5 ft.; Reach 5 ft.</p><p>Special Attacks Critical Attack, Incisor, Steel Teeth</p><h2>Statistics</h2><p>Str 18, Dex 24, Con 16, Int 4, Wis 14, Cha 6</p><p>Base Atk +12; CMB +16; CMD 33</p><p>Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse</p><p>Skills Acrobatics +19, Perception +14, Survival +14</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [],
+      "ci": [
+        "blind",
+        "Confuse"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 12,
+        "hd": 10,
+        "hp": 74,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "magicalBeast"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 110,
+          "sourceHitDice": 12,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +12; CMB +16; CMD 33</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +12; CMB +16; CMD 33",
+            "bab": 12,
+            "cmb": 16,
+            "cmd": 33
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1.5,
+              "max": null,
+              "critRange": 18,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Bite +19 (2d8+6/18-20)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 19,
+            "damage": "2d8+6/18-20",
+            "damageFormula": "2d8",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 18,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Canny Tumble",
+      "type": "feat",
+      "img": "systems/ffd20/icons/spells/wind-grasp-sky-1.jpg",
+      "system": {
+        "description": {
+          "value": "<p><em>Your acrobatic prowess distracts your foes.</em></p><p><strong>Prerequisites</strong>: Dodge, Mobility, Acrobatics 5 ranks.</p><p><strong>Benefits</strong>: When you use Acrobatics to move through an opponent's threatened area or space without provoking an attack of opportunity from that opponent, you gain a +2 circumstance bonus on your next melee attack roll against that opponent and that opponent is denied its Dexterity bonus to AC, as long as you make that attack before the start of your next turn.</p><p><strong>Combat Trick</strong>: Just before you make an attack roll with the +2 circumstance bonus granted by this feat, you can spend up to 5 stamina points. When you do, if your attack hits, you gain a bonus on the damage roll equal to double the number of stamina points spent.</p>"
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "canny-tumble",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "tags": [
+          "Combat"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse",
+          "authoredLocally": true,
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "U2JBWS5r21jzKDnJ",
+            "name": "Canny Tumble",
+            "version": "11.4.0"
+          }
+        },
+        "ffd20-expanded-bestiary": {
+          "compendiumHydrated": true,
+          "sourcePack": "pf-content-for-ffd20.pf-feats",
+          "sourceId": "U2JBWS5r21jzKDnJ",
+          "sourceVersion": "11.4.0"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Natural Attack (Bite)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Natural Attack (Bite).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-natural-attack-bite",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Improved Natural Attack",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Improved Natural Attack (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Mobility",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Mobility.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mobility",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Critical Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2 rounds as a standard action, the skull eater can inflict more pain than normal. If they succeed at hitting with their bite attack, the damage is 2d8+6 x 1.5 for total damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Critical Attack",
+            "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "floor(1.5 * (2d8 + floor(1.5 * @abilities.str.mod)))",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "max": null,
+              "critRange": 18,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Multiply one successful bite's rolled physical total by 1.5, round down.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": false,
+            "_id": "act0000000010001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "critical-attack",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": {
+              "attackName": "bite",
+              "damageFormula": "floor((2d8+6) * 1.5)",
+              "sourceDamageFormula": "2d8+6",
+              "multiplier": "1.5",
+              "raw": "damage is 2d8+6 x 1.5"
+            },
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "con": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Incisor",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds, a skull eater can bite extremely hard upon a single target that bypasses armor. The skull eater must make a touch attack (+19), if it hits, 14d6 points of non-elemental damage and must make a Fortitude save (DC 18) or be inflicted with the Poison status for 1d6 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Incisor",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "14d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + (-1)",
+              "type": "fort",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Touch attack. Save negates only Poison for [[1d6]] rounds.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": ""
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000011001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "incisor",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 18,
+                "raw": "Fortitude save (DC 18)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "derived-preferred-floor",
+                "base": 16,
+                "neededMod": 2,
+                "candidates": [
+                  "wis:floor",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 18
+              }
+            ],
+            "damages": [
+              {
+                "formula": "14d6",
+                "type": "nonelemental",
+                "raw": "14d6 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "other",
+              "attackBonus": "+19",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "con": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Steel Teeth",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A skull eater increases their bite attack by 2 sizes and critical chance to 18-20.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "steel-teeth",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "dex": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "con": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "int": {
+                "value": 4,
+                "mod": -3,
+                "missing": false,
+                "raw": "4"
+              },
+              "wis": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "cha": {
+                "value": 6,
+                "mod": -2,
+                "missing": false,
+                "raw": "6"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Skull Eater",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/skull-eater.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/magical-beasts/mu-family/skull-eater/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/SkullEater.gif",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/skull-eater.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/SkullEater.gif",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 11,
+        "size": "Medium",
+        "cr": "9",
+        "creatureType": "Magical Beast",
+        "subtypes": [],
+        "xp": 6400,
+        "aura": "",
+        "perception": 14,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., Burrow 20 ft.",
+            "Melee Bite +19 (2d8+6/18-20)",
+            "Space 5 ft.; Reach 5 ft.",
+            "Special Attacks Critical Attack, Incisor, Steel Teeth"
+          ],
+          "speed": "30 ft., Burrow 20 ft.",
+          "melee": "Bite +19 (2d8+6/18-20)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft.",
+          "specialAttacks": "Critical Attack, Incisor, Steel Teeth",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 23, touch 18, flat-footed 15 (+7 dex, +1 dodge, +5 natural)",
+            "hp 110 (12d10+36)",
+            "Fort +11, Ref +15, Will +6",
+            "DR 5/-; Immune Blind, Confuse"
+          ],
+          "ac": "AC 23, touch 18, flat-footed 15 (+7 dex, +1 dodge, +5 natural)",
+          "hp": "hp 110 (12d10+36)",
+          "hitPoints": 110,
+          "hitDice": 12,
+          "saves": "Fort +11, Ref +15, Will +6",
+          "defensiveAbilities": "",
+          "dr": "5/-;",
+          "immunities": "Blind, Confuse",
+          "resistances": "",
+          "weaknesses": "",
+          "sr": null
+        },
+        "statistics": [
+          "Str 18, Dex 24, Con 16, Int 4, Wis 14, Cha 6",
+          "Base Atk +12; CMB +16; CMD 33",
+          "Feats Canny Tumble, Dodge, Improved Initiative, Improved Natural Attack (Bite), Mobility, Weapon Finesse",
+          "Skills Acrobatics +19, Perception +14, Survival +14"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Mu Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "skull-eater"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

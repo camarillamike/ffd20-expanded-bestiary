@@ -1,0 +1,2533 @@
+{
+  "name": "Rathalos",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/rathalos.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 11,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 7,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 14,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 12
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 2,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 120,
+          "maneuverability": "poor"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 12
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 12
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 12
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 12
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 9600
+      },
+      "cr": {
+        "base": 10
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>The apex monster of the Ancient Forest, also known as the “King of the Skies”. A fierce wyvern that descends upon invaders, attacking with its venomous claws and fiery breath.</p><h2>Defense</h2><p>AC 22, touch 8, flat-footed 22 (+14 natural, -2 size)</p><p>hp 138 [204] (12d12+60)</p><p>Fort +13, Ref +8, Will +10</p><p>DR 5/magic; Immune Fire, Paralysis, Poison, Sleep; Resist Earth 10, Shadow 10</p><p>Weakness Lightning and Holy</p><h2>Offense</h2><p>Speed 30 ft., Fly 120 ft. (poor)</p><p>Melee Tail Slap +17 (2d6+7), Bite +18 (2d6+7 plus grab), 2 Wings +12 (1d8+3) or [Mid-Air] Tail Slap +17 (2d6+7), Bite +18 (2d6+7 plus grab), 2 Claws +12 (1d8+3 plus poison)</p><p>Space 15 ft.; Reach 10 ft. (15 ft. with Tail)</p><p>Special Attacks Breath Weapon (40-ft. Cone, 6d8 fire damage, Reflex DC 21 half, usable every 1d4 rounds), Rake (2 claws +12, 1d8+7),</p><h2>Statistics</h2><p>Str 24, Dex 11, Con 20, Int 7, Wis 10, Cha 8</p><p>Base Atk +12; CMB +19 (+23 grapple and bull rush); CMD 29</p><p>Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)</p><p>Skills Fly +7, Perception +16, Sense Motive +16, Stealth +12</p><p>Languages Draconic</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "dragon"
+      ],
+      "creatureSubtypes": [],
+      "size": "huge",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": "Dragon senses"
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "magic"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "dark"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "fire"
+      ],
+      "dv": [
+        "lightning",
+        "light"
+      ],
+      "ci": [
+        "paralyze",
+        "poison",
+        "sleep"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Dragon",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published per total adjustment"
+          },
+          {
+            "formula": "1",
+            "target": "skill.sen",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sen total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ste total adjustment"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "dragon",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 12,
+        "hd": 12,
+        "hp": 78,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "apr": true,
+          "blf": true,
+          "clm": true,
+          "dip": true,
+          "fly": true,
+          "hea": true,
+          "int": true,
+          "kar": true,
+          "khi": true,
+          "klo": true,
+          "kna": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "spl": true,
+          "ste": true,
+          "sur": true,
+          "swm": true,
+          "umd": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "dragon"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Dragon",
+          "sourceHitPoints": 138,
+          "sourceHitDice": 12,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +12; CMB +19 (+23 grapple and bull rush); CMD 29</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-2",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +12; CMB +19 (+23 grapple and bull rush); CMD 29",
+            "bab": 12,
+            "cmb": 19,
+            "cmd": 29
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Tail Slap",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-tail.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Tail Slap",
+            "img": "systems/ffd20/icons/items/inventory/monster-tail.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Tail Slap",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": [
+                "Source statblock: Tail Slap +17 (2d6+7)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tail-slap",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Tail Slap",
+            "ranged": false,
+            "attackBonus": 17,
+            "damage": "2d6+7",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on hit. Use on the ground or in flight."
+              ],
+              "footer": [
+                "Source statblock: Bite +18 (2d6+7 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000004001"
+          },
+          {
+            "name": "Mid-air bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on hit. Use on the ground or in flight."
+              ],
+              "footer": [
+                "Source statblock: Bite +18 (2d6+7 plus grab)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "ebb74e27317536b0",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 18,
+            "damage": "2d6+7 plus grab",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000003",
+      "name": "Wing x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Wing",
+            "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Wing 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Wing",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Ground routine only; do not combine with airborne claws."
+              ],
+              "footer": [
+                "Source statblock: 2 Wing +12 (1d8+3)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000005001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "wing",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Wing",
+            "ranged": false,
+            "attackBonus": 12,
+            "damage": "1d8+3",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000004",
+      "name": "Claw x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Claw",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Claw 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Claw",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Airborne routine only; each hit exposes to injury poison.",
+                "On hit while airborne: resolve Poison."
+              ],
+              "footer": [
+                "Source statblock: 2 Claw +12 (1d8+3 plus poison)"
+              ]
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "effectNotes": [],
+            "_id": "act0000000006001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "claw",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Claw",
+            "ranged": false,
+            "attackBonus": 12,
+            "damage": "1d8+3 plus poison",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 3,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Hover",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Hover.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hover",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Improved Bull Rush",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Bull Rush.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-bull-rush",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Grapple",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Grapple.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-grapple",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Unarmed Strike",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Unarmed Strike.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-unarmed-strike",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Weapon Focus (Bite)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Bite).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-bite",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "Breath Weapon",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Breath Weapon (40-ft. Cone, 6d8 fire damage, Reflex DC 21 half, usable every 1d4 rounds).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Breath Weapon",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 40,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "6d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "ref",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 40
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000013001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "breath-weapon",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Breath Weapon (40-ft. Cone, 6d8 fire damage, Reflex DC 21 half, usable every 1d4 rounds)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 21,
+                "raw": "Reflex DC 21",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-na-con-floor",
+                "base": 16,
+                "expectedDc": 21
+              }
+            ],
+            "damages": [
+              {
+                "formula": "6d8",
+                "type": "fire",
+                "raw": "6d8 fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000002",
+      "name": "Rake",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source statblock: Rake (2 claws +12, 1d8+7).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Rake",
+            "actionType": "mwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "-5",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8 + @abilities.str.mod",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Second claw",
+                  "formula": "0"
+                }
+              ]
+            },
+            "notes": {
+              "effect": [
+                "Two rake claws only when rake conditions are met."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000014001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rake",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "Rake (2 claws +12, 1d8+7)",
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000003",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "4",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After Bite hits: grapple +23 without provoking; use constrict on a successful check if present."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/conditions/grappled.png",
+            "_id": "act0000000015001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            }
+          },
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Grab",
+          "lookupPack": "ffd20.monster-abilities",
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sheetName": "Grab",
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Glorious Roar",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d6+1 rounds, a rathalos roars a glorious roar that echoes within a 40-ft.-radius burst. Any creature within the area of effect are inflicted with the Stun status effect for 1d2 rounds. A successful Fortitude save (DC 21) negates this status effect.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Glorious Roar",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 40,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates stun for 1d2 rounds"
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d6+1 rounds, a rathalos roars a glorious roar that echoes within a 40-ft.-radius burst. Any creature within the area of effect are inflicted with the Stun status effect for 1d2 rounds. A successful Fortitude save (DC 21) negates this status effect.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d6+1]]</span> rounds.",
+                "Failed save: give the target Glorious Roar: stunned (recipient). Activate on the recipient, not the caster."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 40
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates stun for 1d2 rounds",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000016001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "glorious-roar",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d6+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 21,
+                "raw": "Fortitude save (DC 21)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 16,
+                "expectedDc": 21
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d2",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d6+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
+      "system": {
+        "description": {
+          "value": "<p>Claw - injury; Fortitude save DC 21; frequency 1/round for 6 rounds; effect 1d8 non-elemental damage; cure 2 consecutive saves. The save DC is Constitution-based. Rathalos 12th-Level Advancement Size: Huge; Speed: 20 ft., Fly 100 ft. (Poor); AC: +4 natural armor; Attack: bite (2d6 plus grab), tail slap (2d6), 2 wings (1d8); Ability Scores: Str 24, Dex 11, Con 20, Int 7, Wis 10, Cha 8; Special Attacks: Breath Weapon (1d8/HD); Special Qualities: Dragon Senses, Immunity to Sleep, Poison and Paralysis effects, Fire Affinity, DR 2/-. At 16th level, the rathalos advances into a greater rathalos.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "creature hit by Claw while airborne"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Two consecutive saves cure"
+            },
+            "notes": {
+              "effect": [
+                "Claw - injury; Fortitude save DC 21; frequency 1/round for 6 rounds; effect 1d8 non-elemental damage; cure 2 consecutive saves. The save DC is Constitution-based. Rathalos 12th-Level Advancement Size: Huge; Speed: 20 ft., Fly 100 ft. (Poor); AC: +4 natural armor; Attack: bite (2d6 plus grab), tail slap (2d6), 2 wings (1d8); Ability Scores: Str 24, Dex 11, Con 20, Int 7, Wis 10, Cha 8; Special Attacks: Breath Weapon (1d8/HD); Special Qualities: Dragon Senses, Immunity to Sleep, Poison and Paralysis effects, Fire Affinity, DR 2/-. At 16th level, the rathalos advances into a greater rathalos.",
+                "Resolve Poison after a successful Claw attack while airborne."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Two consecutive saves cure",
+            "img": "systems/ffd20/icons/conditions/poisoned.png",
+            "_id": "act0000000017001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 21,
+                "raw": "Fortitude save DC 21",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "explicit-floor",
+                "base": 16,
+                "expectedDc": 21
+              }
+            ],
+            "damages": [
+              {
+                "formula": "1d8",
+                "type": "nonelemental",
+                "raw": "1d8 non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 11,
+                "mod": 0,
+                "missing": false,
+                "raw": "11"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 7,
+                "mod": -2,
+                "missing": false,
+                "raw": "7"
+              },
+              "wis": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "name": "Glorious Roar: stunned (recipient)",
+      "type": "buff",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "_id": "249fa611b2fe1657",
+      "system": {
+        "tag": "recipient249fa611b2fe1657",
+        "subType": "temp",
+        "active": false,
+        "actions": [],
+        "changes": [],
+        "contextNotes": [],
+        "description": {
+          "value": "<p>Give this buff to the affected recipient after a failed save. Activate for 1d2 rounds.</p><p>Once every 1d6+1 rounds, a rathalos roars a glorious roar that echoes within a 40-ft.-radius burst. Any creature within the area of effect are inflicted with the Stun status effect for 1d2 rounds. A successful Fortitude save (DC 21) negates this status effect.</p>"
+        },
+        "conditions": [
+          "stunned"
+        ],
+        "duration": {
+          "value": "1d2",
+          "units": "round",
+          "end": "initiative"
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "semantic046": "rathalos/Glorious Roar: stunned (recipient)"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Rathalos",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/rathalos.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 3,
+    "width": 3
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/dragons/rathalos-family/rathalos/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/rathalos.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/rathalos.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/rathalos.png",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 0,
+        "size": "Huge",
+        "cr": "10",
+        "creatureType": "Dragon",
+        "subtypes": [],
+        "xp": 9600,
+        "aura": "",
+        "perception": 16,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., Fly 120 ft. (poor)",
+            "Melee Tail Slap +17 (2d6+7), Bite +18 (2d6+7 plus grab), 2 Wings +12 (1d8+3) or [Mid-Air] Tail Slap +17 (2d6+7), Bite +18 (2d6+7 plus grab), 2 Claws +12 (1d8+3 plus poison)",
+            "Space 15 ft.; Reach 10 ft. (15 ft. with Tail)",
+            "Special Attacks Breath Weapon (40-ft. Cone, 6d8 fire damage, Reflex DC 21 half, usable every 1d4 rounds), Rake (2 claws +12, 1d8+7),"
+          ],
+          "speed": "30 ft., Fly 120 ft. (poor)",
+          "melee": "Tail Slap +17 (2d6+7), Bite +18 (2d6+7 plus grab), 2 Wings +12 (1d8+3), 2 Claws +12 (1d8+3 plus poison)",
+          "ranged": "",
+          "space": "Space 15 ft.; Reach 10 ft. (15 ft. with Tail)",
+          "specialAttacks": "Breath Weapon (40-ft. Cone, 6d8 fire damage, Reflex DC 21 half, usable every 1d4 rounds), Rake (2 claws +12, 1d8+7),",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 22, touch 8, flat-footed 22 (+14 natural, -2 size)",
+            "hp 138 [204] (12d12+60)",
+            "Fort +13, Ref +8, Will +10",
+            "DR 5/magic; Immune Fire, Paralysis, Poison, Sleep; Resist Earth 10, Shadow 10",
+            "Weakness Lightning and Holy"
+          ],
+          "ac": "AC 22, touch 8, flat-footed 22 (+14 natural, -2 size)",
+          "hp": "hp 138 [204] (12d12+60)",
+          "hitPoints": 138,
+          "hitDice": 12,
+          "saves": "Fort +13, Ref +8, Will +10",
+          "defensiveAbilities": "",
+          "dr": "5/magic;",
+          "immunities": "Fire, Paralysis, Poison, Sleep;",
+          "resistances": "Earth 10, Shadow 10",
+          "weaknesses": "Lightning and Holy",
+          "sr": null
+        },
+        "statistics": [
+          "Str 24, Dex 11, Con 20, Int 7, Wis 10, Cha 8",
+          "Base Atk +12; CMB +19 (+23 grapple and bull rush); CMD 29",
+          "Feats Hover, Improved Bull Rush, Improved Grapple, Improved Unarmed Strike, Power Attack, Weapon Focus (Bite)",
+          "Skills Fly +7, Perception +16, Sense Motive +16, Stealth +12",
+          "Languages Draconic"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Rathalos Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "rathalos"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

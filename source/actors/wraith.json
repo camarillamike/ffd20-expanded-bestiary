@@ -1,0 +1,2812 @@
+{
+  "name": "Wraith",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/wraith.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 14,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 25,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "cha",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 0,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 16
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "cha"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 0
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 60,
+          "maneuverability": "perfect"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 8
+      },
+      "khi": {
+        "ability": "int",
+        "rank": 13
+      },
+      "kno": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 16
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 16
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 16
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 8
+      }
+    },
+    "details": {
+      "alignment": "ce",
+      "xp": {
+        "value": 25600
+      },
+      "cr": {
+        "base": 13
+      },
+      "biography": {
+        "value": "<h2>Defense</h2><p>AC 26, touch 26; flat-footed 16 (+7 deflection, +9 dex, +1 dodge, -1 size)</p><p>hp 200 [256] (16d8+128)</p><p>Fort +12, Ref +16, Will +15</p><p>Defensive Abilities Channel Resistance +6, Incorporeal, Rejuvenation; Immune Undead traits</p><p>Weakness DM's choice (one element type except for shadow)</p><h2>Offense</h2><p>Speed Fly 60 ft. (perfect)</p><p>Melee Aging touch +20 (10d6 shadow damage and old status effect, Fort DC 25 half dmg &amp; negate effect)</p><p>Space 10 ft.; Reach 10 ft.</p><p>Special Attacks Blood Saber, Curse, Death Cutter, Drain Touch, Ectosmash, Frightful Moan</p><h2>Statistics</h2><p>Str —, Dex 28, Con —, Int 14, Wis 20, Cha 25</p><p>Base Atk +12; CMB +22; CMD 40</p><p>Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness</p><p>Skills Fly +26, Knowledge (history, nobility, planes) +18, Perception +32, Sense Motive +24, Stealth +24; Racial Modifiers +8 Perception, +8 Stealth</p><p>Languages Common, Inferno, Undercommon</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "undead"
+      ],
+      "creatureSubtypes": [
+        "incorporeal"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 60
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "nonlethal"
+      ],
+      "dv": [],
+      "ci": [
+        "mindAffecting",
+        "bleed",
+        "deathEffects",
+        "disease",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "physical ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "raising and resurrection"
+      ],
+      "languages": [
+        "Common",
+        "Inferno",
+        "Undercommon"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Undead",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.per",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "@abilities.cha.mod",
+            "target": "ac",
+            "type": "deflection",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Incorporeal deflection"
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "will",
+            "text": "Channel Resistance +6 against channel energy only."
+          },
+          {
+            "target": "ac",
+            "text": "Choose one elemental vulnerability other than shadow for this spirit; no element is assumed."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "undead",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 16,
+        "hd": 8,
+        "hp": 72,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "CE",
+        "classSkills": {
+          "blf": true,
+          "clm": true,
+          "dis": true,
+          "fly": true,
+          "int": true,
+          "kar": true,
+          "khi": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "spl": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "undead"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Undead",
+          "sourceHitPoints": 200,
+          "sourceHitDice": 16,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +12; CMB +22; CMD 40</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "9",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "7",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +12; CMB +22; CMD 40",
+            "bab": 12,
+            "cmb": 22,
+            "cmd": 40
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Aging touch",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "<p>By passing part of its incorporeal body through a foe's body as a standard action, the specter inflicts 10d6 points of shadow damage. This damage manifests in the form of physical wounds and aches from supernatural aging. Creatures immune to magical aging are immune to this damage, but otherwise the damage bypasses all forms of damage reduction. A Fortitude save halves the damage inflicted and ignores the aging effect. Any creature the specter touches with a successful melee touch attack and failed Fortitude save takes 1 point of Strength, Dexterity, and Constitution damage. This aging is reflected in the target's appearance-skin becomes more wrinkled and pockmarked, hair turns white, posture stoops-and while this has no additional negative effect, it does provide a cumulative +2 bonus on Disguise checks. Only the target's body is aged by this spell, and it gains none of the benefits of growing older naturally. Creatures that gain benefits by age category do not gain additional advantages due to this spell. Every time a creature is affected by this touch, it is temporarily aged one age category. Every time the target ages in this way, the effects of this spell stack, until the target reaches venerable age. If a creature is aged past venerable, it instead takes additional 5d6 points of shadow damage each time it is struck, as its body succumbs to the ravages of incredibly swift decay. Ability damage dealt by this effect heals as normal, at a rate of 1 point per day for each affected ability. The bonus on Disguise checks also fades over time, decreasing at a rate of -2 every day until the target's Disguise modifier returns to normal.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Aging touch",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "9",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Half and negates aging"
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Aging touch",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Magical aging immunity negates. On failure: 1 Str, Dex and Con damage; age one category. Past venerable use extra 5d6 instead."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "touch": true,
+            "effectNotes": [],
+            "_id": "act0000000003001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "aging-touch",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Aging touch",
+            "ranged": false,
+            "attackBonus": 20,
+            "damage": "10d6 shadow damage and old status effect, Fort DC 25 half dmg & negate effect",
+            "damageFormula": "10d6",
+            "printedDamageBonus": 0,
+            "damageType": "dark",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Blind-Fight",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Blind-Fight.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blind-fight",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Mobility",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Mobility.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mobility",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Spring Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Spring Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "spring-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness"
+        }
+      }
+    },
+    {
+      "_id": "defab00000000001",
+      "name": "Channel Resistance +6",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Defensive ability listed in the source statblock: Channel Resistance +6.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "channel-resistance-6",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "customFeature": true,
+          "sourceText": "Channel Resistance +6",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Channel Resistance",
+          "lookupPack": "ffd20.monster-abilities",
+          "sheetName": "Channel Resistance +6",
+          "sheetSubType": "racial"
+        }
+      }
+    },
+    {
+      "_id": "defab00000000002",
+      "name": "Incorporeal",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Defensive ability listed in the source statblock: Incorporeal.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "incorporeal",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedDefensiveAbility": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Incorporeal"
+        }
+      }
+    },
+    {
+      "_id": "weakness00000001",
+      "name": "Weaknesses",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/red_02.jpg",
+      "system": {
+        "description": {
+          "value": "<p>DM's choice (one element type except for shadow)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weaknesses",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedWeaknesses": true,
+          "customFeature": true,
+          "sourceText": "DM's choice (one element type except for shadow)"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Blood Saber",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a wraith can drain the health of all nearby enemies with a 15-ft.-radius spread. A wraith deals 6d6 points of shadow damage and is healed by half of the total damage done unless those in the area must make a Fortitude save (DC 25) to negate the heal affect and take half damage. Blue mages may learn this ability as a 6th level spell (Knowledge: Religion DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Blood Saber",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "6d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "fort",
+              "description": "Half, prevents healing from this target"
+            },
+            "notes": {
+              "effect": [
+                "Heal half of actual damage to targets that failed their save."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 15
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half, prevents healing from this target",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000015001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blood-saber",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 25,
+                "raw": "Fortitude save (DC 25)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 18,
+                "expectedDc": 25
+              }
+            ],
+            "damages": [
+              {
+                "formula": "6d6",
+                "type": "dark",
+                "raw": "6d6 points of shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Religion DC 27).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Curse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wraith can curse those around it in a 30-ft.-radius. Creatures within the area of effect must make a Will save (DC 25) or be inflicted with Curse status for 1d6 rounds. Blue mages may learn this ability as a 4th level spell (Knowledge: Religion DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Curse",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Negates Curse"
+            },
+            "notes": {
+              "effect": [
+                "Curse for [[1d6]] rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Curse",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000016001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "curse",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 25,
+                "raw": "Will save (DC 25)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 18,
+                "expectedDc": 25
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Religion DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Death Cutter",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4 rounds, a wraith can make a a single melee attack as a standard action. If it hits, the target takes the damage of the attack and must make a Fortitude save (DC 25) or be inflicted with the Doom status (as the countdown spell, not the doom spell). Blue mages may learn this ability as a 6th-level spell (Knowledge: Religion DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Death Cutter",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "9",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "fort",
+              "description": "Half and negate aging"
+            },
+            "notes": {
+              "effect": [
+                "After hit resolve normal Aging Touch and separate Doom save.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half and negate aging",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000017001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "death-cutter",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 25,
+                "raw": "Fortitude save (DC 25)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 18,
+                "expectedDc": 25
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 6th-level spell (Knowledge: Religion DC 27).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Drain Touch",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/energydrained.png",
+      "system": {
+        "description": {
+          "value": "<p>A wraith can absorb the blood from a target with a melee touch attack (+19). If it hits, the target take 4d6 points of shadow damage and the specter is healed for that much. This spell also works against undead unlike most draining abilities. Blue mages may learn this ability as a 4th level spell (Knowledge: Religion DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Drain Touch",
+            "actionType": "mwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "8",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "4d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Heals actual damage; works on undead."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "img": "systems/ffd20/icons/conditions/energydrained.png",
+            "_id": "act0000000018001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "drain-touch",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "4d6",
+                "type": "dark",
+                "raw": "4d6 points of shadow damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "msak",
+              "attackBonus": "+19",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Religion DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "one target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Ectosmash",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A wraith can teleport adjacent to any foe within 30 ft. and make a single aging touch. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21). This is treated as a swift action for the wraith.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Ectosmash",
+            "actionType": "mwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "9",
+            "touch": true,
+            "ability": {
+              "attack": "str",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Half and negate aging"
+            },
+            "result": "Half and negate aging",
+            "notes": {
+              "effect": [
+                "Teleport adjacent to a foe within 30 ft; make one Aging Touch."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000019001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ectosmash",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Frightful Moan",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The wraith died in the throes of crippling terror. It can emit a frightful moan as a standard action. All living creatures within a 30-foot spread must succeed on a DC 25 Will save or become panicked for 2d4 rounds. This is a sonic mind-affecting fear effect. A creature that successfully saves against the moan cannot be affected by the same ghost's moan for 24 hours. Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Frightful Moan",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Negates; immune for 24 hours"
+            },
+            "notes": {
+              "effect": [
+                "Living creatures only; panicked for [[2d4]] rounds on failure."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates; immune for 24 hours",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000020001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "frightful-moan",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 25,
+                "raw": "DC 25 Will save",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 18,
+                "expectedDc": 25
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Religion DC 21).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000008",
+      "name": "Rejuvenation",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>In most cases, it's difficult to destroy a wraith through simple combat: the “destroyed” spirit restores itself in 2d4 days. Even the most powerful spells are usually only temporary solutions. The only way to permanently destroy a ghost is to determine the reason for its existence and set right whatever prevents it from resting in peace. The exact means varies with each spirit and may require a good deal of research, and should be created specifically for each different wraith by the GM.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Rejuvenation",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Returns in [[2d4]] days unless its reason for unrest is resolved."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000021001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rejuvenation",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "—"
+              },
+              "int": {
+                "value": 14,
+                "mod": 2,
+                "missing": false,
+                "raw": "14"
+              },
+              "wis": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "cha": {
+                "value": 25,
+                "mod": 7,
+                "missing": false,
+                "raw": "25"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "f8fc9447aedef81f",
+      "name": "Aging Touch: past venerable",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only when further aged beyond venerable.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Aging Touch: past venerable",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "5d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Only when further aged beyond venerable."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000022001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "aging-touch-past-venerable",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Aging Touch: past venerable",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "wraith/Aging Touch: past venerable"
+        }
+      }
+    },
+    {
+      "_id": "15f7d5e488ca6b77",
+      "name": "Death Cutter: Doom",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Use Countdown, not the Doom spell.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Death Cutter: Doom",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "description": "Negates Doom"
+            },
+            "result": "Negates Doom",
+            "notes": {
+              "effect": [
+                "Use Countdown, not the Doom spell."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "_id": "act0000000023001"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "death-cutter-doom",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Death Cutter: Doom",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "wraith/Death Cutter: Doom"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Wraith",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/wraith.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 2,
+    "width": 2
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/undead/ghost-family/wraith/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Wraith.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/wraith.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Wraith.png",
+      "parsed": {
+        "alignment": "CE",
+        "initiative": 13,
+        "size": "Large",
+        "cr": "13",
+        "creatureType": "Undead",
+        "subtypes": [
+          "Incorporeal"
+        ],
+        "xp": 25600,
+        "aura": "",
+        "perception": 32,
+        "offense": {
+          "raw": [
+            "Speed Fly 60 ft. (perfect)",
+            "Melee Aging touch +20 (10d6 shadow damage and old status effect, Fort DC 25 half dmg & negate effect)",
+            "Space 10 ft.; Reach 10 ft.",
+            "Special Attacks Blood Saber, Curse, Death Cutter, Drain Touch, Ectosmash, Frightful Moan"
+          ],
+          "speed": "Fly 60 ft. (perfect)",
+          "melee": "Aging touch +20 (10d6 shadow damage and old status effect, Fort DC 25 half dmg & negate effect)",
+          "ranged": "",
+          "space": "Space 10 ft.; Reach 10 ft.",
+          "specialAttacks": "Blood Saber, Curse, Death Cutter, Drain Touch, Ectosmash, Frightful Moan",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 26, touch 26; flat-footed 16 (+7 deflection, +9 dex, +1 dodge, -1 size)",
+            "hp 200 [256] (16d8+128)",
+            "Fort +12, Ref +16, Will +15",
+            "Defensive Abilities Channel Resistance +6, Incorporeal, Rejuvenation; Immune Undead traits",
+            "Weakness DM's choice (one element type except for shadow)"
+          ],
+          "ac": "AC 26, touch 26; flat-footed 16 (+7 deflection, +9 dex, +1 dodge, -1 size)",
+          "hp": "hp 200 [256] (16d8+128)",
+          "hitPoints": 200,
+          "hitDice": 16,
+          "saves": "Fort +12, Ref +16, Will +15",
+          "defensiveAbilities": "Channel Resistance +6, Incorporeal, Rejuvenation;",
+          "dr": "",
+          "immunities": "Undead traits",
+          "resistances": "",
+          "weaknesses": "DM's choice (one element type except for shadow)",
+          "sr": null
+        },
+        "statistics": [
+          "Str —, Dex 28, Con —, Int 14, Wis 20, Cha 25",
+          "Base Atk +12; CMB +22; CMD 40",
+          "Feats Blind-Fight, Combat Reflexes, Dodge, Improved Initiative, Lightning Reflexes, Mobility, Spring Attack, Toughness",
+          "Skills Fly +26, Knowledge (history, nobility, planes) +18, Perception +32, Sense Motive +24, Stealth +24; Racial Modifiers +8 Perception, +8 Stealth",
+          "Languages Common, Inferno, Undercommon"
+        ],
+        "gear": [],
+        "tactics": [
+          "During Combat The wraith starts the fight with Frightful Moan if close enough to his enemies or Ectosmash to get in closer to do Frightful Moan the next turn. He tends to use Curse on his opponents if they have below 50% health and death cutter on his opponents above 50% health. Blood Saber or Drain Touch if he is below 50% health."
+        ],
+        "ecology": [],
+        "family": "Ghost Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review046": "wraith",
+      "review047": "wraith"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

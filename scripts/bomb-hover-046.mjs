@@ -1,5 +1,5 @@
 const scope="ffd20-expanded-bestiary",field="hoverOffset046",origin=t=>t.flags?.[scope]?.[field];
-const isBomb=a=>a?.flags?.[scope]?.bombSource==="bomb-t4";
+const isBomb=a=>a?.flags?.[scope]?.bombSource==="bomb-t4"||a?.flags?.["ffd20-bestiary-builder"]?.review047==="king-bomb";
 const halo=a=>a?.items?.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&i.flags?.[scope]?.temporaryFloatFeet===2&&!i.flags[scope].floatEnded);
 const awake=a=>!["unconscious","dead"].some(k=>a.statuses?.has(k)||a.system?.attributes?.conditions?.[k]===true);
 function desired(a,scene,previous){

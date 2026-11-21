@@ -1,11 +1,14 @@
+import {methodOwner} from "./document-methods.mjs";
 const scope="ffd20-expanded-bestiary",az="ffd20-bestiary-builder",packet=Symbol("barrier HP receipt");
-const key=a=>a?.flags?.[az]?.review046,eligible=a=>["dark-elemental","hell-house"].includes(key(a));
+const key=a=>a?.flags?.[az]?.review046,eligible=a=>["dark-elemental","hell-house"].includes(key(a))||["belias-the-gigas","cagnazzo","c-chulainn-the-impure","marilith"].includes(a?.flags?.[az]?.review047);
 const states=a=>[...(a.items??[])].filter(i=>i.type==="buff"&&!i.system.disabled&&i.system.active===true&&i.flags?.[scope]?.barrierState?.group===key(a));
 const element=i=>i.typeIds.size===1?[...i.typeIds][0]:null;
 const godShell=a=>a.items?.find(i=>i.type==="buff"&&i.flags?.[az]?.review046Semantic==="hell-house/God House: active");
 const phaseThree=a=>key(a)==="hell-house"&&a.flags?.[scope]?.housePhase===3;
 function affinities(a){
  if(!eligible(a))return null;
+ if(["cagnazzo","marilith","c-chulainn-the-impure"].includes(key(a))){const s=states(a)[0]?.flags?.[scope]?.barrierState;return {absorb:s?.absorb??a.flags[scope].absorb047??[],weak:s?.weakness??[],half:key(a)==="marilith"?["ice"]:key(a)==="cagnazzo"&&!s?["fire"]:[],immune:s?.immune??[]};}
+ if(key(a)==="belias-the-gigas")return {absorb:["fire"],weak:[],half:["ice"]};
  const phase=a.flags?.[scope]?.housePhase,one=states(a),s=one.length===1&&(key(a)!=="hell-house"||phase!==2)?one[0].flags[scope].barrierState:null;
  const dark=key(a)==="dark-elemental";
  return {absorb:[...(dark?["dark"]:[]),...(s?.absorb??[])],weak:[...(dark?["light"]:[]),...(s?.weakness??[])],half:s?.halfResistances??[]};
@@ -24,7 +27,7 @@ function ordinary(app,type,total){
 Hooks.once("ready",()=>{
  if(game.system.id!=="ffd20")return;
  const p=ffd20.applications.ApplyDamage.prototype,oldImm=p._processImmunities,oldRed=p._processReductions,oldRefresh=p._refreshTarget,oldOptions=p._getTargetDamageOptions;
- const actorClass=CONFIG.Actor.documentClass.prototype,apply=actorClass.applyDamage;
+ const actorClass=methodOwner(CONFIG.Actor,"npc","applyDamage"),apply=actorClass.applyDamage;
  p._processImmunities=function(t){
   const flags=this.options.action?.item?.flags?.[scope],pair=flags?.splitTypes046??(flags?.splitBombDamage?[flags.splitBombDamage,"bludgeoning"]:null);
   if(pair?.length===2)t.instances=t.instances.flatMap(i=>{
@@ -46,6 +49,7 @@ Hooks.once("ready",()=>{
   let healed=0,abs=0;const bonuses=new Map();
   for(const i of t.instances){
    const e=element(i);if(!e||i.total<=0)continue;
+   if(d.immune?.includes(e)){abs+=i.total;i.total=0;continue;}
    if(d.absorb.includes(e)){
     if(!noHeal(this.extraOptions.action))healed+=i.total;
     abs+=i.total;i.total=0;continue;
@@ -70,6 +74,7 @@ Hooks.once("ready",()=>{
   if(s){let phys=0;if(phaseThree(t.actor))phys=t.instances.filter(i=>i.isPhysical&&!i.isMixed&&i.total>0).reduce((n,i)=>n+i.total,0);
    const shell=godShell(t.actor);s.shellPhysical=shell?.system.active&&!shell.system.disabled?phys:0;
    if(phys&&!s.shellPhysical)t.value-=phys-Math.max(1,Math.floor(phys/2));
+   if(key(t.actor)==="cagnazzo"&&t.actor.items.some(i=>i.flags?.[scope]?.shell047&&i.system.active&&!i.system.disabled))t.value=Math.floor(t.value/2);
    s.damage=t.value;t.total=t.value-s.healed;}return v;};
  p._getTargetDamageOptions=function(t){
   if(eligible(t.actor))this._refreshTarget(t.uuid);

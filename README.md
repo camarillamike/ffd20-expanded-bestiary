@@ -1,13 +1,11 @@
-# FF D20 Expanded Bestiary v0.1.46
+# FF D20 Expanded Bestiary v0.1.47
 
-764 prebuilt actors in 15 Foundry v13 packs. This update adds 200 individually reviewed bestiary entries. Use Foundry Setup's normal update and fresh world imports; no console script is required.
+823 prebuilt actors in 15 Foundry VTT v13 packs for FF d20. This release adds 50 reviewed bestiary entries, including variants and companions, for a net gain of 59 actors over v0.1.46.
 
-## Live QA
+In Foundry Setup, open **Add-on Modules** and update **FF D20 Expanded Bestiary**, then launch your world. No console script or bulk import is needed. Test with fresh compendium imports; existing world actors are independent copies.
 
-1. Transfer the Support Droid shield buff to a fresh QA ally with no other DR. The same 7 slashing damage should cost 7 HP with the shield off, 3 with it on, and 7 after removal. Check normal and Shift-click Apply Damage. An unlinked sibling token without the active buff should take 7 throughout.
-2. Create an Acromatic (Arcane) form from a fresh Bomb T4. It should be CR 10 / XP 9,600 with Ruin and Poison. Self-Destruct makes one 10d6 roll split between non-elemental and bludgeoning; Reflex DC 18 halves it. The original remains CR 9 with Fire and Fire II.
-3. Use fresh QA copies of the Flan forms. Check total physical resistance, each form's own spells and its typed Slam damage. Do not advance a production clock.
+## Smoke testing
 
-[Source and native evidence](docs/native-review-046-200.json) | [Shield tests and scope](docs/046-shield.md)
+Follow the [v0.1.47 live QA checklist](docs/047-release-qa.md) for Cagnazzo's phase changes, the Cie'th Ispusteke barrier, Gilgamesh's owned weapons, the Juvenile Crystal Dragon's breath modes, and the two kings' retaliation. Use an inactive QA scene and leave the production clock untouched.
 
-[Resolution of all 329 original findings](docs/046-remediation.json). The numbered group notes record the initial authoring pass; the native checkpoint and remediation ledger are the final offline results. No live world was changed.
+All 15 packs were validated offline. See the [pack validation report](docs/047-final-pack-validation.json) and the [running bestiary list](docs/expansion-progress.json).

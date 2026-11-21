@@ -49,7 +49,7 @@ Hooks.on("pf1ApplyDamage", (actor, options) => {
     // or submitting the form. FFd20 remains the only code that writes HP.
     const preview = new ffd20.applications.ApplyDamage({ ...options, targets: [actor], instances });
     const target = preview.targets.get(actor.uuid);
-    if(actor.flags?.["ffd20-bestiary-builder"]?.review046==="pneumaflayer"&&target)
+    if(["pneumaflayer","cie-th-ispusteke"].includes(actor.flags?.["ffd20-bestiary-builder"]?.review046)&&target)
       options.bestiaryInertialEnergy=target.instances.filter(i=>i.isEnergy&&!i.isPhysical&&i.total>0).reduce((n,i)=>n+i.total,0);
     if (target?.bestiaryBarrier) {
       const {damage,healed,shellPhysical}=target.bestiaryBarrier;

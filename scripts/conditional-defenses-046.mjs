@@ -16,7 +16,7 @@ export function installGroupDefenses046(proto){
  proto.getResistances=function(actor,kind="dr"){
   const rows=getResistances.call(this,actor,kind),amount=actor.flags?.[scope]?.compoundMagicMaterialDR;
   if(kind==="dr"&&owns(actor,"judge-magister")&&![...(actor.items??[])].some(i=>i.type==="equipment"&&i.system.equipped&&!i.system.disabled&&["lightArmor","mediumArmor","heavyArmor"].includes(i.system.equipmentSubtype)))return rows.filter(row=>row.amount!==6||row.typeIds?.size!==0);
-  if(kind!=="dr"||!(owns(actor,"cie-th-edimmu")&&amount===5||(owns(actor,"cie-th-taxim")||owns(actor,"cie-th-penanggalan"))&&amount===10))return rows;
+  if(kind!=="dr"||!(owns(actor,"cie-th-edimmu")&&amount===5||(owns(actor,"cie-th-taxim")||owns(actor,"cie-th-penanggalan")||owns(actor,"cie-th-vampire")||owns(actor,"cie-th-ispusteke"))&&amount===10))return rows;
   for(const row of rows){if(row.amount!==amount||!row.operator||row.typeIds?.size!==2||!row.typeIds.has("adamantine")||!row.typeIds.has("crystal"))continue;
    row[special]=true;row.label=amount+"/magic and (adamantine or crystal)";
    row.active=this.hasPhysical&&this.instances.some(i=>!bypassesCompound(this.isMagic,this.materials??[],i.types??[]));row.disabled=!row.active;

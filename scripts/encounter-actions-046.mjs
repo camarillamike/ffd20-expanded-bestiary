@@ -1,5 +1,6 @@
+import {methodOwner} from "./document-methods.mjs";
 const scope="ffd20-expanded-bestiary",mark="ffd20-bestiary-builder",pending=Symbol("record qualifying use"),picked=Symbol("confirmed recipients"),locks=new Map();
-const key=a=>a?.flags?.[mark]?.review046,karma=a=>["paleberry","tonberry"].includes(key(a));
+const key=a=>a?.flags?.[mark]?.review046,karma=a=>["paleberry","tonberry","paleberry-king","tonberry-king"].includes(key(a));
 function stamp(a,includeRound=true){
  const c=game.combat;if(!c?.started||!c.combatants.some(t=>t.actor?.uuid===a.uuid))return "manual";
  return c.id+(includeRound?":"+c.round:"");
@@ -27,10 +28,10 @@ function extendible(a){
 }
 Hooks.once("ready",()=>{
  if(game.system.id!=="ffd20")return;
- const p=CONFIG.Actor.documentClass.prototype,original=p.getRollData;p.getRollData=function(...args){
+ const rollOwner=methodOwner(CONFIG.Actor,"npc","getRollData"),original=rollOwner.getRollData;rollOwner.getRollData=function(...args){
   const data=original.apply(this,args);if(karma(this))return {...data,bestiaryKarmaBonus:history(this,"karmaRound").used+1};return data;
  };
- const proto=CONFIG.Item.documentClass.prototype,use=proto.use;
+ const proto=methodOwner(CONFIG.Item,"feat","use"),use=proto.use,p=methodOwner(CONFIG.Actor,"npc","prepareDerivedData");
  const prepare=p.prepareDerivedData;p.prepareDerivedData=function(...args){
   if(key(this)!=="vampire"||!active(this,"gaseous046"))return prepare.apply(this,args);
   const attr=this.system.attributes,prior=attr.naturalAC,armor=this.items.filter(i=>i.type==="equipment"&&i.system.equipped&&["armor","shield"].includes(i.system.equipmentType));

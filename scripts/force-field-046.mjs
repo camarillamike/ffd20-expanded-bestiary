@@ -1,9 +1,10 @@
+import {methodOwner} from "./document-methods.mjs";
 const scope="ffd20-expanded-bestiary",clock="forceFieldClock",receipt=Symbol("field consumption"),queue=new WeakMap();
 const inertReceipt=Symbol("inertial barrier use");
 const mist=a=>a?.flags?.["ffd20-bestiary-builder"]?.review046==="vampire"&&a.items.some(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&i.flags?.[scope]?.gaseous046);
 function inertial(a){
- if(a?.flags?.["ffd20-bestiary-builder"]?.review046!=="pneumaflayer")return;
- return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&i.flags?.[scope]?.inertialCapacity046===30);
+ if(!["pneumaflayer","cie-th-ispusteke"].includes(a?.flags?.["ffd20-bestiary-builder"]?.review046))return;
+ return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&[30,60].includes(i.flags?.[scope]?.inertialCapacity046));
 }
 function field(a){
  if(a?.flags?.["ffd20-bestiary-builder"]?.review046!=="ganymede")return;
@@ -55,7 +56,7 @@ Hooks.once("ready",()=>{
   if(gas&&!this.isHealing&&!this.asManaDamage){const base=ordinary(this.options);if(base)out.bestiaryMistOrdinary=base.value+(this.bonus||0);}
   return out;
  };
- const proto=CONFIG.Actor.documentClass.prototype,apply=proto.applyDamage;
+ const proto=methodOwner(CONFIG.Actor,"npc","applyDamage"),apply=proto.applyDamage;
  proto.applyDamage=function(value,opts={}){
   if(mist(this)&&value>0&&!opts.asManaDamage){
    const base=!opts.dialog&&ordinary(opts);if(base){value=base.value;opts={...opts,instances:base.instances,isCritical:false,critMult:0};}
@@ -99,9 +100,10 @@ Hooks.on("pf1ApplyDamageTargetOptions",(app,t,o)=>{
 });
 Hooks.on("pf1PostActionUse",async use=>{
  const a=use.actor;
- if(a?.flags?.["ffd20-bestiary-builder"]?.review046!=="pneumaflayer"||!a.isOwner||use.item?.type!=="spell"||use.item.name!=="Inertial Barrier")return;
- const pool=a.items.find(i=>i.type==="buff"&&i.flags?.[scope]?.inertialCapacity046===30);
- if(pool)await pool.update({"system.active":true,"system.uses.value":30});
+ const cap=({"pneumaflayer":30,"cie-th-ispusteke":60})[a?.flags?.["ffd20-bestiary-builder"]?.review046];
+ if(!cap||!a.isOwner||use.item?.name!==(cap===30?"Inertial Barrier":"Inertial Barrier II")||use.item.type!==(cap===30?"spell":"feat"))return;
+ const pool=a.items.find(i=>i.type==="buff"&&i.flags?.[scope]?.inertialCapacity046===cap);
+ if(pool)await pool.update({"system.active":true,"system.uses.value":cap});
 });
 async function recover(combat){
  if(!game.user.isGM||game.users.activeGM?.id!==game.user.id)return;

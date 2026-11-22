@@ -1,7 +1,17 @@
-# FF D20 Expanded Bestiary v0.1.48
+# FF D20 Expanded Bestiary
 
-882 prebuilt actors in 15 Foundry VTT v13 packs for FF d20. This release adds 50 reviewed bestiary entries: 50 primary actors, two alternate statblocks, and seven Mooglesguard companions with individual portraits.
+Ready-to-play creatures for Final Fantasy d20 in Foundry VTT 13. [Version 0.1.48](https://github.com/camarillamike/ffd20-expanded-bestiary/releases/tag/v0.1.48) contains 882 actors from 799 bestiary entries, including variants and companions. The 15 compendium packs are organized by creature type.
 
-In Foundry Setup, open **Add-on Modules** and update **FF D20 Expanded Bestiary**, then launch your world. No console script or bulk import is needed. Use fresh compendium imports for testing; existing world actors are independent copies.
+## Install
 
-For the release checks and expected results, see the [v0.1.48 live QA checklist](docs/048-release-qa.md). All 15 packs were validated offline and all 823 previously published actors were preserved. See the [pack validation report](docs/048-final-pack-validation.json) and the [running bestiary list](docs/expansion-progress.json).
+1. In Foundry Setup, open **Add-on Modules > Install Module** and paste the manifest URL below into **Manifest URL**.
+2. Click **Install**. In a world using the FF d20 system, open **Manage Modules**, enable **FF D20 Expanded Bestiary** and its required **FFd20 Content** module, and save.
+3. Open **Compendium Packs**, find the creature you want, and drag it onto your scene. No console script or bulk import is needed.
+
+```text
+https://raw.githubusercontent.com/camarillamike/ffd20-expanded-bestiary/main/module.json
+```
+
+**Already installed?** Update from **Add-on Modules** in Setup. Updates replace the compendium entries, not actors you have already imported into a world. Import a fresh copy to use a revised statblock without overwriting your own edits.
+
+[Release notes](https://github.com/camarillamike/ffd20-expanded-bestiary/releases) | [Bestiary coverage](docs/expansion-progress.json) | [Credits & sources](docs/credits.md) | [Testing & documentation](docs/README.md)

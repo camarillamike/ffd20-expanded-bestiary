@@ -35,7 +35,7 @@ Hooks.on("pf1PreActionUse", use => {
   const { item, actor, shared } = use;
   if (!dual(item)) return;
   if (!actor || item.actor !== actor || (use.token?.actor && use.token.actor.uuid !== actor.uuid)
-      || item.system.uses?.per !== "day" || item.links?.charges || shared.rollData.chargeCost !== 1)
+      || (item.system.uses?.per !== "day" && !(item.system.uses?.per === "charges" && item.flags?.["ffd20-bestiary-builder"]?.rocketRack048)) || item.links?.charges || shared.rollData.chargeCost !== 1)
     return reject(`${item.name}: use the owned token item with its normal daily cost of one.`);
   if (!(item.system.uses.value > 0)) return reject(`${item.name}: no daily uses remain.`);
   const previous = pending.get(item);

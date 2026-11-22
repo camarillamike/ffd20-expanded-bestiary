@@ -1,0 +1,2899 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.1.48",
+  "status": "ready-for-foundry-test",
+  "source": {
+    "name": "Zalera, the Death Seraph",
+    "url": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/primal-family/ffxii-primals/zalera-the-death-seraph/",
+    "image": "https://www.finalfantasyd20.com/wp-content/uploads/zalera.jpg",
+    "rawSections": {
+      "HEADER": [
+        "Zalera, the Death Seraph (CR 13)",
+        "XP 25,600",
+        "CE Large Outsider (Boss, Demon, Extraplanar, Shadow, Primal)",
+        "Init +8; Senses darkvision 60 ft., low-light vision; Perception +8"
+      ],
+      "DEFENSE": [
+        "AC 27, touch 14, flat-footed 22 (+5 Dex, +13 natural, -1 size)",
+        "hp 651 [882] (21d12+189)",
+        "mp 93",
+        "Fort +21, Ref +16, Will +20",
+        "DR 10/-;",
+        "Immune Shadow, Trip, Sleep, Charm, Gravity, Confuse, Bleed, Death effects;",
+        "Resist Wind 5, Earth 15, Ice 20, Fire 20, Lightning 10;",
+        "SR 30;",
+        "Weakness Holy"
+      ],
+      "OFFENSE": [
+        "Speed 40 ft.; Fly (perfect) 60 ft.",
+        "Melee 2 Slams +31 (2d6+11 plus grab and 1d6 shadow damage)",
+        "Space 10 ft.; Reach 10 ft.",
+        "Special Attack Lv.3 Disable, Lv.4 Reverse, Lv.5 Death",
+        "Burst Mode Gemini",
+        "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells]",
+        "3rd (DC 21) - Animate Dead, Blacklight, Bio, Dark III, Darkra, Dispel, Healing Thief, Sleepga, Summon Undead III",
+        "4th (DC 22) - Dark Blight, Dark IV, Greater False Life, Shadow Projection, Shadow Step, Silencega, Summon Undead IV, Undead Torch, Unholy Blight, Vampiric Blade",
+        "5th (DC 23) - Bioga, Black Spot, Bone Explosion, Darkga, Deny Death, Drain, Painga, Repurpose, Shadow Summoning, Suffocation, Summon Undead V",
+        "6th (DC 24) - Abyss, Confusion, Greater Dispel, Mass Disable, Siphon Life, Summon Undead VI, Woundga"
+      ],
+      "STATISTICS": [
+        "Str 32, Dex 18, Con 28, Int 24, Wis 26, Cha 24",
+        "Base Atk +21; CMB +33 (+37 grapple); CMD 47",
+        "Feats Critical Focus, Extend Spell, Improved Initiative, Combat Casting, Piercing Spell, Quicken Spell, Overchannel, Spell Focus (Dark), Augment Summoning, Superior Summoning, Spell Penetration",
+        "Skills Appraise +31, Bluff +24, Heal +29, Fly +31, Intimidate +28, Knowledge (arcana) +31, Knowledge (geography) +28, Knowledge (history) +28, Knowledge (planes) +31, Knowledge (religion) +31, Sense Motive +32, Spellcraft +32, Use Magic Device +28",
+        "Languages All",
+        "SQ Does Not Eat, Does Not Sleep, Does Not Breathe"
+      ],
+      "SPECIAL ABILITIES": [
+        "Gemini (su) This Burst Mode lets the shamaness within Zalera's right wing begin to act independently, casting spells to support him. For a number of rounds equal to 1 + 1 round for every four HD, Zalera gains an additional standard action during each round, which can only be used to cast spells.",
+        "Lv.3 Disable (su) Once every 1d2+1 rounds as a standard action, Zalera tunes of shattering wills to all enemies within a 30 ft. radius of himself with a total HD that is a multiple of 3 must make a Will save (DC 28) or be inflicted with the Disabled status effect for 3d3 turns. Blue Mages may learn this ability as a 6th level spell (Knowledge: Planes DC 25).",
+        "Lv.4 Reverse (su) Once every 1d3+1 rounds as a standard action, Zalera uses his dark magic to make healing effects harmful. All enemies within a 30 ft. radius of Zalera with a total HD that is a multiple of 4 must make a Will save (DC 28) or have healing effects damage them for 4d3 turns. Blue Mages may learn this as a 7th level spell (Knowledge: Planes DC 25).",
+        "Lv.5 Death (su) Once every 1d4+1 rounds as a standard action, Zalera summons its companion to steal the souls of those within a 30 ft. radius of him. All creatures with a total HD that is a multiple of 5 must make a Fortitude save (DC 28) or die. Blue mages may learn this ability as a 6th-level spell (Knowledge: Religion DC 25)."
+      ]
+    },
+    "parsed": {
+      "cr": "13",
+      "xp": 25600,
+      "alignment": "CE",
+      "size": "Large",
+      "creatureType": "Outsider",
+      "subtypes": [
+        "Boss",
+        "Demon",
+        "Extraplanar",
+        "Shadow",
+        "Primal"
+      ],
+      "initiative": 8,
+      "senses": "darkvision 60 ft., low-light vision",
+      "aura": "",
+      "defense": {
+        "raw": [
+          "AC 27, touch 14, flat-footed 22 (+5 Dex, +13 natural, -1 size)",
+          "hp 651 [882] (21d12+189)",
+          "mp 93",
+          "Fort +21, Ref +16, Will +20",
+          "DR 10/-;",
+          "Immune Shadow, Trip, Sleep, Charm, Gravity, Confuse, Bleed, Death effects;",
+          "Resist Wind 5, Earth 15, Ice 20, Fire 20, Lightning 10;",
+          "SR 30;",
+          "Weakness Holy"
+        ],
+        "ac": "AC 27, touch 14, flat-footed 22 (+5 Dex, +13 natural, -1 size)",
+        "hp": "hp 651 [882] (21d12+189) mp 93",
+        "hitPoints": 651,
+        "hitDice": 21,
+        "saves": "Fort +21, Ref +16, Will +20",
+        "defensiveAbilities": "",
+        "dr": "10/-;",
+        "immunities": "Shadow, Trip, Sleep, Charm, Gravity, Confuse, Bleed, Death effects;",
+        "resistances": "Wind 5, Earth 15, Ice 20, Fire 20, Lightning 10;",
+        "weaknesses": "Holy",
+        "sr": 30
+      },
+      "offense": {
+        "raw": [
+          "Speed 40 ft.; Fly (perfect) 60 ft.",
+          "Melee 2 Slams +31 (2d6+11 plus grab and 1d6 shadow damage)",
+          "Space 10 ft.; Reach 10 ft.",
+          "Special Attack Lv.3 Disable, Lv.4 Reverse, Lv.5 Death",
+          "Burst Mode Gemini",
+          "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells]",
+          "3rd (DC 21) - Animate Dead, Blacklight, Bio, Dark III, Darkra, Dispel, Healing Thief, Sleepga, Summon Undead III",
+          "4th (DC 22) - Dark Blight, Dark IV, Greater False Life, Shadow Projection, Shadow Step, Silencega, Summon Undead IV, Undead Torch, Unholy Blight, Vampiric Blade",
+          "5th (DC 23) - Bioga, Black Spot, Bone Explosion, Darkga, Deny Death, Drain, Painga, Repurpose, Shadow Summoning, Suffocation, Summon Undead V",
+          "6th (DC 24) - Abyss, Confusion, Greater Dispel, Mass Disable, Siphon Life, Summon Undead VI, Woundga"
+        ],
+        "speed": "40 ft.; Fly (perfect) 60 ft.",
+        "melee": "2 Slams +31 (2d6+11 plus grab and 1d6 shadow damage)",
+        "ranged": "",
+        "space": "Space 10 ft.; Reach 10 ft.",
+        "specialAttacks": "Lv.3 Disable, Lv.4 Reverse, Lv.5 Death",
+        "spellLines": [
+          "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells] 3rd (DC 21) - Animate Dead, Blacklight, Bio, Dark III, Darkra, Dispel, Healing Thief, Sleepga, Summon Undead III",
+          "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells] 4th (DC 22) - Dark Blight, Dark IV, Greater False Life, Shadow Projection, Shadow Step, Silencega, Summon Undead IV, Undead Torch, Unholy Blight, Vampiric Blade",
+          "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells] 5th (DC 23) - Bioga, Black Spot, Bone Explosion, Darkga, Deny Death, Drain, Painga, Repurpose, Shadow Summoning, Suffocation, Summon Undead V",
+          "Spells Known (FC CL 14th, Concentration +22) [+1 Spell DC on Dark spells] 6th (DC 24) - Abyss, Confusion, Greater Dispel, Mass Disable, Siphon Life, Summon Undead VI, Woundga"
+        ]
+      },
+      "statistics": [
+        "Str 32, Dex 18, Con 28, Int 24, Wis 26, Cha 24",
+        "Base Atk +21; CMB +33 (+37 grapple); CMD 47",
+        "Feats Critical Focus, Extend Spell, Improved Initiative, Combat Casting, Piercing Spell, Quicken Spell, Overchannel, Spell Focus (Dark), Augment Summoning, Superior Summoning, Spell Penetration",
+        "Skills Appraise +31, Bluff +24, Heal +29, Fly +31, Intimidate +28, Knowledge (arcana) +31, Knowledge (geography) +28, Knowledge (history) +28, Knowledge (planes) +31, Knowledge (religion) +31, Sense Motive +32, Spellcraft +32, Use Magic Device +28",
+        "Languages All",
+        "SQ Does Not Eat, Does Not Sleep, Does Not Breathe"
+      ],
+      "tactics": [],
+      "ecology": [],
+      "gear": [],
+      "specialAbilities": [
+        {
+          "name": "Gemini",
+          "type": "su",
+          "description": "This Burst Mode lets the shamaness within Zalera's right wing begin to act independently, casting spells to support him. For a number of rounds equal to 1 + 1 round for every four HD, Zalera gains an additional standard action during each round, which can only be used to cast spells.",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Lv.3 Disable",
+          "type": "su",
+          "description": "Once every 1d2+1 rounds as a standard action, Zalera tunes of shattering wills to all enemies within a 30 ft. radius of himself with a total HD that is a multiple of 3 must make a Will save (DC 28) or be inflicted with the Disabled status effect for 3d3 turns. Blue Mages may learn this ability as a 6th level spell (Knowledge: Planes DC 25).",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Lv.4 Reverse",
+          "type": "su",
+          "description": "Once every 1d3+1 rounds as a standard action, Zalera uses his dark magic to make healing effects harmful. All enemies within a 30 ft. radius of Zalera with a total HD that is a multiple of 4 must make a Will save (DC 28) or have healing effects damage them for 4d3 turns. Blue Mages may learn this as a 7th level spell (Knowledge: Planes DC 25).",
+          "notes": {
+            "familiar": ""
+          }
+        },
+        {
+          "name": "Lv.5 Death",
+          "type": "su",
+          "description": "Once every 1d4+1 rounds as a standard action, Zalera summons its companion to steal the souls of those within a 30 ft. radius of him. All creatures with a total HD that is a multiple of 5 must make a Fortitude save (DC 28) or die. Blue mages may learn this ability as a 6th-level spell (Knowledge: Religion DC 25).",
+          "notes": {
+            "familiar": ""
+          }
+        }
+      ],
+      "description": "Heretic scion who wrapped the world in dark energies, seeking to take the souls of all living things unto himself. Created in opposition to Emet-Selch, Angel of Truth, and scion of light. Originally tasked with the judging of men upon their deaths, his soul was tainted by the curses of those who raged against the heavens, and seizing one of the gods' servants, a shamaness, as a hostage, he rebelled against his creators. Even now, in defeat, he clutches the shamaness to him in his right arm, and with the aid of her death-wail he summon the soul of darkness to do his bidding. - KenjiGoombah"
+    },
+    "signals": {
+      "hasMeleeAttacks": true,
+      "hasRangedAttacks": false,
+      "hasSpecialAttacks": true,
+      "hasSpellLines": true,
+      "hasFeats": true,
+      "hasSpecialQualities": true,
+      "hasGear": false,
+      "hasSpecialAbilities": true,
+      "hasDefensiveAbilities": false,
+      "hasResistances": true,
+      "hasImmunities": true,
+      "hasWeaknesses": true,
+      "hasDamageReduction": true,
+      "hasSpellResistance": true,
+      "hasSenses": true
+    }
+  },
+  "foundryOutput": {
+    "actorFile": "zalera-the-death-seraph.json",
+    "curationFile": "zalera-the-death-seraph.json",
+    "actorType": "npc",
+    "image": "modules/ffd20-expanded-bestiary/assets/creatures/zalera-the-death-seraph.webp",
+    "tokenImage": "modules/ffd20-expanded-bestiary/assets/creatures/zalera-the-death-seraph.webp",
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "boss",
+        "demon",
+        "extraplanar",
+        "shadow",
+        "primal"
+      ],
+      "size": "lg",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 20,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 20,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "dark"
+      ],
+      "dv": [
+        "light"
+      ],
+      "ci": [
+        "Trip",
+        "sleep",
+        "charmed",
+        "Gravity",
+        "Confuse",
+        "Bleed",
+        "deathEffects"
+      ],
+      "languages": [
+        "All"
+      ],
+      "stature": "tall"
+    },
+    "skills": {
+      "apr": {
+        "ability": "int",
+        "rank": 21
+      },
+      "blf": {
+        "ability": "cha",
+        "rank": 14
+      },
+      "hea": {
+        "ability": "wis",
+        "rank": 21
+      },
+      "fly": {
+        "ability": "dex",
+        "rank": 21
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 18
+      },
+      "kar": {
+        "ability": "int",
+        "rank": 21
+      },
+      "kge": {
+        "ability": "int",
+        "rank": 21
+      },
+      "khi": {
+        "ability": "int",
+        "rank": 21
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 21
+      },
+      "kre": {
+        "ability": "int",
+        "rank": 21
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 21
+      },
+      "spl": {
+        "ability": "int",
+        "rank": 21
+      },
+      "umd": {
+        "ability": "cha",
+        "rank": 21
+      }
+    },
+    "defenses": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 13,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 162,
+        "max": 162,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 21
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "30"
+      },
+      "acNotes": "",
+      "cmdNotes": "",
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Outsider",
+            "inUse": true,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "outsider",
+            "cl": {
+              "formula": "-7"
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "wis",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "secondary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "tertiary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "quaternary": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": true
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          },
+          "spelllike": {
+            "name": "",
+            "inUse": false,
+            "kind": "",
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1
+          }
+        }
+      }
+    },
+    "coverage": {
+      "racialHitDice": [
+        "Outsider"
+      ],
+      "naturalAttacks": [
+        "Slam x2"
+      ],
+      "weaponAttacks": [],
+      "inventory": [],
+      "spells": [
+        "Animate Dead",
+        "Blacklight",
+        "Bio",
+        "Dark III",
+        "Darkra",
+        "Dispel",
+        "Healing Thief",
+        "Sleepga",
+        "Summon Undead III",
+        "Dark Blight",
+        "Dark IV",
+        "Greater False Life",
+        "Shadow Projection",
+        "Shadow Step",
+        "Silencega",
+        "Summon Undead IV",
+        "Undead Torch",
+        "Unholy Blight",
+        "Vampiric Blade",
+        "Bioga",
+        "Black Spot",
+        "Bone Explosion",
+        "Darkga",
+        "Deny Death",
+        "Drain",
+        "Painga",
+        "Repurpose",
+        "Shadow Summoning",
+        "Suffocation",
+        "Summon Undead V",
+        "Abyss",
+        "Confusion",
+        "Greater Dispel",
+        "Mass Disable",
+        "Siphon Life",
+        "Summon Undead VI",
+        "Woundga"
+      ],
+      "feats": [
+        "Critical Focus",
+        "Extend Spell",
+        "Improved Initiative",
+        "Combat Casting",
+        "Piercing Spell",
+        "Quicken Spell",
+        "Overchannel",
+        "Spell Focus (Dark)",
+        "Augment Summoning",
+        "Superior Summoning",
+        "Spell Penetration"
+      ],
+      "specialQualities": [
+        "Does Not Eat",
+        "Does Not Sleep",
+        "Does Not Breathe",
+        "Grab",
+        "Repurpose: recurring damage"
+      ],
+      "specialAttacks": [],
+      "defensiveAbilities": [],
+      "rawSpecialAbilities": [],
+      "specialAbilities": [
+        "Gemini",
+        "Lv.3 Disable",
+        "Lv.4 Reverse",
+        "Lv.5 Death"
+      ],
+      "buffs": [],
+      "miscellaneous": [
+        "Source Statblock Adjustments",
+        "Gemini: active",
+        "Deny Death: recipient"
+      ]
+    },
+    "items": [
+      {
+        "id": "racialhd00000001",
+        "name": "Outsider",
+        "type": "class",
+        "subType": "racial",
+        "category": "racialHitDice",
+        "generatedFlags": [
+          "generatedRacialHitDice"
+        ],
+        "sourceFlagData": {
+          "racialProfile": "Outsider"
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [
+            {
+              "target": "skill.apr",
+              "formula": "3",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.fly",
+              "formula": "8",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "skill.spl",
+              "formula": "4",
+              "type": "untyped",
+              "operator": "add"
+            },
+            {
+              "target": "ac",
+              "formula": "1",
+              "type": "dodge",
+              "operator": "add"
+            }
+          ],
+          "contextNotes": [
+            {
+              "target": "cl",
+              "text": "Published MP 93; racial monster chart plus ability gives 162."
+            },
+            {
+              "target": "cl",
+              "text": "Published MP 93; monster caster chart and casting ability give 162 MP."
+            }
+          ],
+          "classSkills": {
+            "blf": true,
+            "crf": true,
+            "dip": true,
+            "dis": true,
+            "int": true,
+            "kar": true,
+            "kpl": true,
+            "kre": true,
+            "per": true,
+            "sen": true,
+            "ste": true,
+            "sur": true
+          },
+          "level": 21,
+          "hitDie": 10,
+          "baseAttack": "high",
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          }
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "srcstatadjust001",
+        "name": "Source Statblock Adjustments",
+        "type": "buff",
+        "subType": "perm",
+        "category": "buff",
+        "generatedFlags": [
+          "generatedSourceStatAdjustments"
+        ],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "natatk0000000001",
+        "name": "Slam x2",
+        "type": "attack",
+        "subType": "natural",
+        "category": "naturalAttacks",
+        "generatedFlags": [
+          "generatedNaturalAttack"
+        ],
+        "sourceFlagData": {
+          "naturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 31,
+            "damage": "2d6+11 plus grab and 1d6 shadow damage",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 11,
+            "damageType": "dark",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Slam",
+              "actionType": "mwak",
+              "activation": "standard",
+              "range": {
+                "value": "reach",
+                "units": "natural",
+                "maxIncrements": 1,
+                "minValue": "",
+                "minUnits": ""
+              },
+              "target": {
+                "value": "one target"
+              },
+              "damage": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ],
+              "extraAttacks": [
+                {
+                  "name": "Slam 2",
+                  "formula": "0"
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": []
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000001",
+        "name": "Animate Dead",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000002",
+        "name": "Blacklight",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000003",
+        "name": "Bio",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000004",
+        "name": "Dark III",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000005",
+        "name": "Darkra",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000006",
+        "name": "Dispel",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000007",
+        "name": "Healing Thief",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000008",
+        "name": "Sleepga",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000009",
+        "name": "Summon Undead III",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 3
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000010",
+        "name": "Dark Blight",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000011",
+        "name": "Dark IV",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000012",
+        "name": "Greater False Life",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000013",
+        "name": "Shadow Projection",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000014",
+        "name": "Shadow Step",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000015",
+        "name": "Silencega",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000016",
+        "name": "Summon Undead IV",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000017",
+        "name": "Undead Torch",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000018",
+        "name": "Unholy Blight",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000019",
+        "name": "Vampiric Blade",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 4
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000020",
+        "name": "Bioga",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000021",
+        "name": "Black Spot",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000022",
+        "name": "Bone Explosion",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Bone Explosion",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "units": "medium"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [
+                {
+                  "formula": "min(@cl,15)d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "save": {
+                "type": "fort",
+                "dc": "",
+                "description": "Failed: CL d6, maximum 15. On success use the d4 action; no explosion."
+              }
+            },
+            {
+              "name": "Fortitude succeeded",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "units": "medium"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [
+                {
+                  "formula": "min(@cl,15)d4",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "save": {
+                "type": "fort",
+                "dc": "",
+                "description": "Failed: CL d6, maximum 15. On success use the d4 action; no explosion."
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000023",
+        "name": "Darkga",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000024",
+        "name": "Deny Death",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Deny Death",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "units": "close"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "will",
+                "dc": "",
+                "description": "Negates (harmless)"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000025",
+        "name": "Drain",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000026",
+        "name": "Painga",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000027",
+        "name": "Repurpose",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Repurpose",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "units": "close"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "will",
+                "dc": "",
+                "description": "Negates recurring damage and reanimation"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000028",
+        "name": "Shadow Summoning",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Shadow Summoning",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "units": "spec"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [],
+              "save": {
+                "type": "will",
+                "dc": "",
+                "description": "Disbelief on interaction; disbelievers are affected at 40% strength"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000029",
+        "name": "Suffocation",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000030",
+        "name": "Summon Undead V",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 5
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000031",
+        "name": "Abyss",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000032",
+        "name": "Confusion",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000033",
+        "name": "Greater Dispel",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000034",
+        "name": "Mass Disable",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000035",
+        "name": "Siphon Life",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Siphon Life",
+              "actionType": "rsak",
+              "activation": "standard",
+              "touch": true,
+              "range": {
+                "units": "close"
+              },
+              "target": {
+                "value": ""
+              },
+              "damage": [
+                {
+                  "formula": "min(@cl,15)d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000036",
+        "name": "Summon Undead VI",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "spell00000000037",
+        "name": "Woundga",
+        "type": "spell",
+        "category": "spells",
+        "generatedFlags": [
+          "generatedSpellReference"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "spell"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "spell": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 6
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000001",
+        "name": "Critical Focus",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000002",
+        "name": "Extend Spell",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000003",
+        "name": "Improved Initiative",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000004",
+        "name": "Combat Casting",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000005",
+        "name": "Piercing Spell",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000006",
+        "name": "Quicken Spell",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000007",
+        "name": "Overchannel",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000008",
+        "name": "Spell Focus (Dark)",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat",
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000009",
+        "name": "Augment Summoning",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000010",
+        "name": "Superior Summoning",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "feat000000000011",
+        "name": "Spell Penetration",
+        "type": "feat",
+        "subType": "feat",
+        "category": "feats",
+        "generatedFlags": [
+          "generatedFeat"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "feat"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sqfeat0000000001",
+        "name": "Does Not Eat",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sqfeat0000000002",
+        "name": "Does Not Sleep",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sqfeat0000000003",
+        "name": "Does Not Breathe",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {
+          "customFeature": true
+        },
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000001",
+        "name": "Gemini",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "passive",
+            "sourceType": "Su",
+            "saveDCs": [],
+            "damages": [],
+            "healing": []
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Gemini",
+              "actionType": "other",
+              "activation": "swift",
+              "touch": false,
+              "range": {
+                "units": "",
+                "value": ""
+              },
+              "target": {
+                "value": "self"
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000002",
+        "name": "Lv.3 Disable",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Su",
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 28,
+                "raw": "Will save (DC 28)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 28
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "blueMage": "Blue Mages may learn this ability as a 6th level spell (Knowledge: Planes DC 25)."
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Lv.3 Disable",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": 30,
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "creatures in area"
+              },
+              "damage": [],
+              "save": {
+                "type": "will",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates Disable (3d3 turns)"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000003",
+        "name": "Lv.4 Reverse",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Su",
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 28,
+                "raw": "Will save (DC 28)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 28
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3+1",
+              "rechargePeriod": "rounds"
+            },
+            "blueMage": "Blue Mages may learn this as a 7th level spell (Knowledge: Planes DC 25)."
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Lv.4 Reverse",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": 30,
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "creatures in area"
+              },
+              "damage": [],
+              "save": {
+                "type": "will",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates Reverse (4d3 turns)"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "sa00000000000004",
+        "name": "Lv.5 Death",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialAbilities",
+        "generatedFlags": [
+          "specialAbility"
+        ],
+        "sourceFlagData": {
+          "specialAbility": {
+            "category": "toggle",
+            "sourceType": "Su",
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 28,
+                "raw": "Fortitude save (DC 28)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 28
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "blueMage": "Blue mages may learn this ability as a 6th-level spell (Knowledge: Religion DC 25)."
+          }
+        },
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Lv.5 Death",
+              "actionType": "save",
+              "activation": "standard",
+              "touch": false,
+              "range": {
+                "value": 30,
+                "units": "ft",
+                "maxIncrements": 1
+              },
+              "target": {
+                "value": "creatures in area"
+              },
+              "damage": [],
+              "save": {
+                "type": "fort",
+                "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "description": "Negates Death"
+              }
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "247174bda297312e",
+        "name": "Gemini: active",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "d0e150df076d829f",
+        "name": "Grab",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Grab",
+              "actionType": "mcman",
+              "activation": "free",
+              "attackBonus": "4",
+              "touch": false,
+              "range": {
+                "units": "",
+                "value": ""
+              },
+              "target": {
+                "value": "one creature"
+              },
+              "damage": []
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "3101b2455edafd9a",
+        "name": "Deny Death: recipient",
+        "type": "buff",
+        "subType": "temp",
+        "category": "buff",
+        "generatedFlags": [],
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [],
+          "changes": [],
+          "contextNotes": [],
+          "level": 0
+        },
+        "reviewNotes": []
+      },
+      {
+        "id": "4261ae216d250be7",
+        "name": "Repurpose: recurring damage",
+        "type": "feat",
+        "subType": "racial",
+        "category": "specialQualities",
+        "generatedFlags": [
+          "generatedSpecialQuality"
+        ],
+        "compendiumLookup": {
+          "expectedTypes": [
+            "feat"
+          ],
+          "expectedSubTypes": [
+            "racial"
+          ],
+          "runtimeHydration": "Importer will replace this generated placeholder if a matching FFD20/PF item is found."
+        },
+        "sourceFlagData": {},
+        "mechanics": {
+          "actions": [
+            {
+              "name": "Repurpose: recurring damage",
+              "actionType": "other",
+              "activation": "special",
+              "touch": false,
+              "range": {
+                "units": "",
+                "value": ""
+              },
+              "target": {
+                "value": "one creature"
+              },
+              "damage": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "dark"
+                  ]
+                }
+              ]
+            }
+          ],
+          "changes": [],
+          "contextNotes": [],
+          "classSkills": {}
+        },
+        "reviewNotes": []
+      }
+    ]
+  },
+  "curation": {
+    "summary": "Zalera, the Death Seraph is packaged as an FFD20 NPC actor with 62 generated item(s) across 7 populated mechanics categories.",
+    "creatureRole": {
+      "cr": "13",
+      "size": "Large",
+      "type": "Outsider",
+      "alignment": "CE",
+      "primarySourceAttacks": [
+        "2 Slams +31 (2d6+11 plus grab and 1d6 shadow damage)"
+      ],
+      "specialAbilityNames": [
+        "Gemini",
+        "Lv.3 Disable",
+        "Lv.4 Reverse",
+        "Lv.5 Death"
+      ]
+    },
+    "rulesDecisions": [
+      "Actor data preserves the source statblock in biography and builder flags before any Foundry runtime hydration.",
+      "Only true feats, spells, and inventory placeholders are eligible for compendium lookup during import; creature-specific special abilities remain custom generated features.",
+      "Racial hit dice are generated from the creature type and source hit dice instead of creating class levels.",
+      "Source defensive text is mapped into FFD20 trait fields while unusual FF defenses remain preserved as custom text.",
+      "Natural attack items use source attack totals, source damage dice, and manual extra attacks for full-attack routines.",
+      "Spell and spell-like ability lines create spell placeholders that should hydrate from installed FFD20/PF spell compendiums.",
+      "Skill ranks are reverse-calculated from source totals after ability modifiers, racial modifiers, size modifiers, and class-skill bonuses."
+    ],
+    "unresolved": [],
+    "nextReviewSteps": [
+      "Import into Foundry and verify compendium hydration results.",
+      "Spot-check the actor sheet tabs for attacks, feats, skills, buffs, defenses, and biography source text."
+    ]
+  },
+  "individualReview": {
+    "source": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/primal-family/ffxii-primals/zalera-the-death-seraph/",
+    "sha256": "c78a140e2f4af00644580a88d6ee3e51d2fc7960a25156e5e7ecf487bc019502",
+    "group": 1,
+    "section": 0,
+    "checks": 214,
+    "nativeCheckpoint": "048-10",
+    "liveFoundry": false
+  }
+}

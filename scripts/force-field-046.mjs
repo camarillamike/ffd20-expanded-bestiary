@@ -6,22 +6,23 @@ function inertial(a){
  if(!["pneumaflayer","cie-th-ispusteke"].includes(a?.flags?.["ffd20-bestiary-builder"]?.review046))return;
  return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&[30,60].includes(i.flags?.[scope]?.inertialCapacity046));
 }
+const limits=a=>({ganymede:[85,13],io:[90,18],"pluto-armor":[100,20]})[a?.flags?.["ffd20-bestiary-builder"]?.review046];
 function field(a){
- if(a?.flags?.["ffd20-bestiary-builder"]?.review046!=="ganymede")return;
- return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&i.system.tag==="force-field"&&Number(i.system.uses?.maxFormula)===85);
+ const cap=limits(a)?.[0];if(!cap)return;
+ return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&i.system.tag==="force-field"&&Number(i.system.uses?.maxFormula)===cap);
 }
 function snapshot(a,i){
- const existing=Number(i.system.uses.value),last=i.getFlag(scope,clock)??{},now=game.time.worldTime;
+ const [cap,rate]=limits(a);const existing=Number(i.system.uses.value),last=i.getFlag(scope,clock)??{},now=game.time.worldTime;
  const combat=game.combat?.started&&game.combat.combatants.some(c=>c.actor?.uuid===a.uuid)?game.combat:null;
  const stamp={at:now,combat:combat?.id??null,round:combat?.round??0};
  if(!Number.isFinite(now))return {value:existing,stamp:last};
  if(last.offlineUntil>now)return {value:0,stamp:last};
- if(last.offlineUntil&&last.offlineUntil<=now)return {value:85,stamp};
- if(!existing||existing>=85||!Number.isFinite(last.at))return {value:existing,stamp};
+ if(last.offlineUntil&&last.offlineUntil<=now)return {value:cap,stamp};
+ if(!existing||existing>=cap||!Number.isFinite(last.at))return {value:existing,stamp};
  const seconds=CONFIG.time?.roundTime||6,byTime=Math.floor(Math.max(0,now-last.at)/seconds);
  const rounds=Math.max(byTime,combat?.id&&last.combat===combat.id?Math.max(0,combat.round-last.round):0);
  if(!rounds)return {value:existing,stamp:last};
- return {value:Math.min(85,existing+rounds*13),stamp:{...stamp,at:byTime>=rounds?last.at+rounds*seconds:now}};
+ return {value:Math.min(cap,existing+rounds*rate),stamp:{...stamp,at:byTime>=rounds?last.at+rounds*seconds:now}};
 }
 const bypass=o=>/\b(?:integrated laser rifle|laser rifle|laser pistol)\b/i.test(o.action?.item?.name??"");
 function ordinary(o){
@@ -79,7 +80,7 @@ Hooks.once("ready",()=>{
    const left=s.value-r.used;
    if(r.used||left!==i.system.uses.value){
     const stamp=left?s.stamp:{...s.stamp,offlineUntil:game.time.worldTime+86400};
-    if(left&&s.value===85)Object.assign(stamp,{at:game.time.worldTime});
+    if(left&&s.value===limits(this)[0])Object.assign(stamp,{at:game.time.worldTime});
     await persist(i,left,stamp);
    }
    return r.used?this:res;
@@ -108,7 +109,7 @@ Hooks.on("pf1PostActionUse",async use=>{
 async function recover(combat){
  if(!game.user.isGM||game.users.activeGM?.id!==game.user.id)return;
  const actors=new Set(combat?.combatants?[...combat.combatants].map(c=>c.actor):[...game.actors,...(canvas.tokens?.placeables??[]).map(t=>t.actor)]);
- for(const a of actors){const i=field(a);if(i&&i.system.uses.value<85)await serial(a,async()=>{
+ for(const a of actors){const i=field(a);if(i&&i.system.uses.value<limits(a)[0])await serial(a,async()=>{
   const s=snapshot(a,i);if(s.value!==i.system.uses.value)await persist(i,s.value,s.stamp);
  });}
 }

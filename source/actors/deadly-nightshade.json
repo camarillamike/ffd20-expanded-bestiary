@@ -1,0 +1,3108 @@
+{
+  "name": "Deadly Nightshade",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/deadly-nightshade.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 22,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 12,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 20
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 40
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 10
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "rank": 4
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 14
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 16
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 38400
+      },
+      "cr": {
+        "base": 14
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Being a mandragora with a head like a red tomato. Hailing from the eastern highlands, changing climates brought them down to the lowlands. Many are the treatise written by natural philosophers attempting to trace the roots of the strange black and white markings covering their bodies, reminiscent of the clothes worn by prisoners.</p><h2>Defense</h2><p>AC 33, touch 21, flat-footed 23 (+9 dex, +1 dodge, +12 natural, +1 size)</p><p>HP 196 (20d8+120)</p><p>Fort +18, Reflex +17, Will +12</p><p>Immune plant traits; Resist wind 15, earth 15, lightning 20;</p><p>Weakness water</p><h2>Offense</h2><p>Speed 40 ft., Burrow 10 ft., Climb 40 ft.</p><p>Melee Bite +26 (1d10+12/18-20 plus grab), 2 Slams +25 (1d8+6 plus poison)</p><p>Space 5 ft.; Reach 5 ft. (10 ft. with slam)</p><p>Special Attacks Ecliptic Howl, Eerie Howl, HP Absorb, Large Jaw, Mournful Howl, Shriek, Warsong</p><h2>Statistics</h2><p>Str 22, Dex 28, Con 22, Int 8, Wis 22, Cha 10</p><p>Base Atk +15; CMB +23 (+27 grapple); CMD 42</p><p>Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)</p><p>Skills Climb +26, Perception +26, Stealth +32 (+40 in underground); Racial Modifiers +8 Climb, +8 Stealth in underground</p><p>Languages Mandragoran</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "plant"
+      ],
+      "creatureSubtypes": [
+        "humanoid"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 15,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 20,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "water"
+      ],
+      "ci": [
+        "mindAffecting",
+        "paralyze",
+        "poison",
+        "polymorph",
+        "sleep",
+        "stun"
+      ],
+      "languages": [
+        "Mandragoran"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Plant",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.clm",
+            "type": "racial",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-3",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Skill Focus's higher-rank bonus is already in the published ranks."
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.ste",
+            "text": "in underground: source total +40 (+8 conditional adjustment)."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "plant",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 20,
+        "hd": 8,
+        "hp": 76,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {
+          "per": true,
+          "ste": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "plant"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Plant",
+          "sourceHitPoints": 196,
+          "sourceHitDice": 20,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +15; CMB +23 (+27 grapple); CMD 42</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "2",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +15; CMB +23 (+27 grapple); CMD 42",
+            "bab": 15,
+            "cmb": 23,
+            "cmd": 42
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 2,
+              "max": null,
+              "critRange": 18,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on hit.",
+                "On hit: resolve Poison."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "4540b4db5d7a1679",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 26,
+            "damage": "1d10+12/18-20 plus grab",
+            "damageFormula": "1d10",
+            "printedDamageBonus": 12,
+            "damageType": "",
+            "critRange": 18,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "On hit resolve injury poison."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "a6c72de48578f619",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 25,
+            "damage": "1d8+6 plus poison",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 6,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Ability Focus (Eerie Howl)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Ability Focus (Eerie Howl).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ability-focus-eerie-howl",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Ability Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Ability Focus (Eerie Howl)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Sidestep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Sidestep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-sidestep",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "6hdDqwRC3oE3t0Y1",
+            "name": "Improved Sidestep"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Juke",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Juke.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "juke",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "gjNjS5Rx3aaaJPLk",
+            "name": "Juke"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Mobility",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Mobility.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mobility",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Skill Focus (Perception)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Skill Focus (Perception).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.per.rank) / 10)"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "skill-focus-perception",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "reviewedChanges": true,
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Skill Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Skill Focus (Perception)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Sidestep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Sidestep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "sidestep",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000009",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000010",
+      "name": "Weapon Focus (Bite)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Bite).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-bite",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Weapon Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Weapon Focus (Bite)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "spatk00000000001",
+      "name": "grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Special attack listed in the source attack line: grab.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Apply grab on the listed natural attack hit."
+          }
+        ],
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialAttack": true,
+          "customFeature": true,
+          "sourceText": "grab",
+          "specialAbility": {
+            "category": "passive",
+            "buff": {
+              "active": true,
+              "changes": [],
+              "contextNotes": [
+                {
+                  "target": "attack",
+                  "text": "Apply grab on the listed natural attack hit."
+                }
+              ],
+              "automationNotes": []
+            },
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Poison",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/poisoned.png",
+      "system": {
+        "description": {
+          "value": "<p>Slam—injury; save Fort DC 26; frequency 1/round for 4 rounds; effect confusion and fatigue; cure no saves but “act normally” result on the confusion behavior table ends the effect.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Poison",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates confusion and fatigue"
+            },
+            "notes": {
+              "effect": [
+                "Slam—injury; save Fort DC 26; frequency 1/round for 4 rounds; effect confusion and fatigue; cure no saves but “act normally” result on the confusion behavior table ends the effect."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates confusion and fatigue",
+            "_id": "4c951968475a6734",
+            "img": "systems/ffd20/icons/conditions/poisoned.png"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "poison",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 26,
+                "raw": "Fort DC 26",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-ex-con-floor",
+                "base": 20,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Ecliptic Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Deadly nightshade grants nearby allies a magical evasion and accuracy boost. All allies get a +3 morale bonus to Attack rolls and a +3 dodge bonus to Armor Class for 2d4 rounds. The allies must be within 30 feet of wild onion when it uses this ability to receive these bonuses. Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Ecliptic Howl",
+            "actionType": "other",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "allies"
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Deadly nightshade grants nearby allies a magical evasion and accuracy boost. All allies get a +3 morale bonus to Attack rolls and a +3 dodge bonus to Armor Class for 2d4 rounds. The allies must be within 30 feet of wild onion when it uses this ability to receive these bonuses. Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21)."
+              ],
+              "footer": []
+            },
+            "_id": "2efdf80fbe294a4b",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ecliptic-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Eerie Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A deadly nightshade can emit a loud, piercing howl within a 10-ft.-radius. Creatures within the area of effect are inflicted with Disable status (Fortitude save DC 26 to negate) for 1d4 rounds. Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Eerie Howl",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 10,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates Disable for 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A deadly nightshade can emit a loud, piercing howl within a 10-ft.-radius. Creatures within the area of effect are inflicted with Disable status (Fortitude save DC 26 to negate) for 1d4 rounds. Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 10
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Disable for 1d4 rounds",
+            "_id": "4da5d14f51c19e48",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "eerie-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 26,
+                "raw": "Fortitude save DC 26",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 5th level spell (Knowledge: Arcana DC 25).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "HP Absorb",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a deadly nightshade can fire a pulsating green beam at a single target that drains HPs and heals itself. The attack deals 5d6 points of non-elemental damage (Fortitude save DC 26 to negate). Blue mages may learn this ability as a 5th level spell (Knowledge: Religion DC 25).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "HP Absorb",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "5d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates drain and self-healing"
+            },
+            "notes": {
+              "effect": [
+                "3/day, a deadly nightshade can fire a pulsating green beam at a single target that drains HPs and heals itself. The attack deals 5d6 points of non-elemental damage (Fortitude save DC 26 to negate). Blue mages may learn this ability as a 5th level spell (Knowledge: Religion DC 25)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates drain and self-healing",
+            "_id": "18e6770e099e1084",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hp-absorb",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 26,
+                "raw": "Fortitude save DC 26",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [
+              {
+                "formula": "5d6",
+                "type": "nonelemental",
+                "raw": "5d6 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 5th level spell (Knowledge: Religion DC 25).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "single target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Large Jaw",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A deadly nightshade inflicts twice its Strength modifier and threatens a critical hit on a 18-20 with its bite attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "large-jaw",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Mournful Howl",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>A deadly nightshade releases a mournful howl. All creatures within a 100-foot spread except evil outsiders must succeed at a Fortitude save DC 26 or become paralyzed for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Mournful Howl",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 100,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "fort",
+              "description": "Negates Paralysis for 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A deadly nightshade releases a mournful howl. All creatures within a 100-foot spread except evil outsiders must succeed at a Fortitude save DC 26 or become paralyzed for 1d4 rounds. This is a sonic, mind-affecting fear effect. A creature that successfully saves cannot be affected by the same spell for 24 hours. Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 100
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Paralysis for 1d4 rounds",
+            "_id": "278a4d50c12129ed",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "mournful-howl",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 26,
+                "raw": "Fortitude save DC 26",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge Nature: DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Shriek",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/screaming.png",
+      "system": {
+        "description": {
+          "value": "<p>A deadly nightshade can give voice to an unsettling shriek. All creatures within a 30-foot spread of a shrieking pumpkin must make a DC 26 Will save or become nauseated for 1d4 rounds. This is a sonic, mind-affecting ability. The save DC is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Shriek",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "will",
+              "description": "Negates Nauseated for 1d4 rounds"
+            },
+            "notes": {
+              "effect": [
+                "A deadly nightshade can give voice to an unsettling shriek. All creatures within a 30-foot spread of a shrieking pumpkin must make a DC 26 Will save or become nauseated for 1d4 rounds. This is a sonic, mind-affecting ability. The save DC is Constitution-based. Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Nauseated for 1d4 rounds",
+            "_id": "b565a11400bf05a1",
+            "img": "systems/ffd20/icons/conditions/screaming.png"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "shriek",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 26,
+                "raw": "DC 26 Will save",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "explicit-floor",
+                "base": 20,
+                "expectedDc": 26
+              }
+            ],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Nature DC 19).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000008",
+      "name": "Warsong",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>3/day, a deadly nightshade sings proudly tunes around himself and all his allies within 20 ft. are granted an increase to all physical damage, melee, and ranged by +1 per two caster level (+10). This effect lasts 1 round/two levels (10 rounds). Blue mages may learn this ability as a 9th level spell (Knowledge Nature: DC 33).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Warsong",
+            "actionType": "other",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "allies"
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 20
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "3/day, a deadly nightshade sings proudly tunes around himself and all his allies within 20 ft. are granted an increase to all physical damage, melee, and ranged by +1 per two caster level (+10). This effect lasts 1 round/two levels (10 rounds). Blue mages may learn this ability as a 9th level spell (Knowledge Nature: DC 33)."
+              ],
+              "footer": []
+            },
+            "_id": "47011684e0695e21",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "maxFormula": "3",
+          "rechargeFormula": "",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "warsong",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 3,
+              "per": "day",
+              "maxFormula": "3",
+              "rechargeFormula": ""
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 9th level spell (Knowledge Nature: DC 33).",
+            "range": {
+              "value": 20,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "dex": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "con": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 22,
+                "mod": 6,
+                "missing": false,
+                "raw": "22"
+              },
+              "cha": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "65444323ee17980b",
+      "name": "Ecliptic Howl: recipient",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Deadly nightshade grants nearby allies a magical evasion and accuracy boost. All allies get a +3 morale bonus to Attack rolls and a +3 dodge bonus to Armor Class for 2d4 rounds. The allies must be within 30 feet of wild onion when it uses this ability to receive these bonuses. Blue mages may learn this ability as a 3rd level spell (Knowledge: Nature DC 21).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "attack",
+            "type": "morale",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "3",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "deadly-nightshade-grants-nearby-allies-a",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "2d4",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "deadly-nightshade/Ecliptic Howl: recipient"
+        }
+      }
+    },
+    {
+      "_id": "766ac6d8eaee6c79",
+      "name": "Warsong: recipient",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Physical damage only.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "10",
+            "target": "wdamage",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "physical-damage-only",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "10",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "deadly-nightshade/Warsong: recipient"
+        }
+      }
+    },
+    {
+      "_id": "1b6dec399c1d9a54",
+      "name": "Underground",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Situational Stealth only.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "8",
+            "target": "skill.ste",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "situational-stealth-only",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "deadly-nightshade/Underground"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Deadly Nightshade",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/deadly-nightshade.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/plants/mandragora-family/deadly-nightshade/",
+      "sourceImage": null,
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/deadly-nightshade.webp",
+      "packagedImageSource": "Original v0.1.48 artwork",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 9,
+        "size": "Small",
+        "cr": "14",
+        "creatureType": "Plant",
+        "subtypes": [
+          "Humanoid"
+        ],
+        "xp": 38400,
+        "aura": "",
+        "perception": 26,
+        "offense": {
+          "raw": [
+            "Speed 40 ft., Burrow 10 ft., Climb 40 ft.",
+            "Melee Bite +26 (1d10+12/18-20 plus grab), 2 Slams +25 (1d8+6 plus poison)",
+            "Space 5 ft.; Reach 5 ft. (10 ft. with slam)",
+            "Special Attacks Ecliptic Howl, Eerie Howl, HP Absorb, Large Jaw, Mournful Howl, Shriek, Warsong"
+          ],
+          "speed": "40 ft., Burrow 10 ft., Climb 40 ft.",
+          "melee": "Bite +26 (1d10+12/18-20 plus grab), 2 Slams +25 (1d8+6 plus poison)",
+          "ranged": "",
+          "space": "Space 5 ft.; Reach 5 ft. (10 ft. with slam)",
+          "specialAttacks": "Ecliptic Howl, Eerie Howl, HP Absorb, Large Jaw, Mournful Howl, Shriek, Warsong",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 33, touch 21, flat-footed 23 (+9 dex, +1 dodge, +12 natural, +1 size)",
+            "HP 196 (20d8+120)",
+            "Fort +18, Reflex +17, Will +12",
+            "Immune plant traits; Resist wind 15, earth 15, lightning 20;",
+            "Weakness water"
+          ],
+          "ac": "AC 33, touch 21, flat-footed 23 (+9 dex, +1 dodge, +12 natural, +1 size)",
+          "hp": "HP 196 (20d8+120)",
+          "hitPoints": 196,
+          "hitDice": 20,
+          "saves": "Fort +18, Reflex +17, Will +12",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "plant traits;",
+          "resistances": "wind 15, earth 15, lightning 20;",
+          "weaknesses": "water",
+          "sr": null
+        },
+        "statistics": [
+          "Str 22, Dex 28, Con 22, Int 8, Wis 22, Cha 10",
+          "Base Atk +15; CMB +23 (+27 grapple); CMD 42",
+          "Feats Ability Focus (Eerie Howl), Dodge, Improved Sidestep, Juke, Lightning Reflexes, Mobility, Skill Focus (Perception), Sidestep, Weapon Finesse, Weapon Focus (Bite)",
+          "Skills Climb +26, Perception +26, Stealth +32 (+40 in underground); Racial Modifiers +8 Climb, +8 Stealth in underground",
+          "Languages Mandragoran"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Mandragora Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "deadly-nightshade",
+      "review046": "deadly-nightshade"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

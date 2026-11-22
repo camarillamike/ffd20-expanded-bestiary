@@ -1,0 +1,1568 @@
+{
+  "name": "Whiskerwall Kupdi Koop",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/whiskerwall-kupdi-koop.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 4,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 13
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -5,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 30,
+          "maneuverability": "good"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 13
+      }
+    },
+    "details": {
+      "alignment": "lg",
+      "xp": {
+        "value": 19200
+      },
+      "cr": {
+        "base": 12
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>While moogle legends describe Moggle Mog as a kind, benevolent presence, the primal summoned by Mooglesguard is driven by the need to feast on ever-greater amounts of aether along with a large following to further solidify his being. - Moggle Mog</p><h2>Defense</h2><p>AC 31, touch 19, flat-footed 25 (+1 size, +5 dex, +8 armor, +3 shield, +4 natural)</p><p>HP 188 [247] (13d10+117)</p><p>Fort +17, Ref +8, Will +9</p><p>Weakness Shadow</p><h2>Offense</h2><p>Speed 20 ft., fly 30 ft. (good)</p><p>Melee +1 Knight Sword +22/+17/+12 (1d8+8/19-20×2)</p><h2>Statistics</h2><p>STR 24, DEX 20, CON 28, INT 8, WIS 12, CHA 16</p><p>Base Atk +13; CMB +19; CMD +34</p><p>Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense</p><p>Skills Fly +25</p><p>SQ Outsider traits, Does not Breathe, Does not Eat, Does not Sleep</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "holy",
+        "moogle"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "dark"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "tac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed touch defense."
+          },
+          {
+            "formula": "-1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed flat-footed defense."
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 13,
+        "hd": 10,
+        "hp": 71,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "LG",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "outsider"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 188,
+          "sourceHitDice": 13,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Knight Sword",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Knight Sword",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8+1",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Strike 2",
+                  "formula": "-5"
+                },
+                {
+                  "name": "Strike 3",
+                  "formula": "-10"
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "c24549cd8b5cddbe",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "knight-sword",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "1h"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Knight Sword",
+            "ranged": false,
+            "attackBonus": 22,
+            "damage": "1d8+8/19-20×2",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 8,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Blundering Defense",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Blundering Defense.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blundering-defense",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "HID4IHRgQ7zmAPLL",
+            "name": "Blundering Defense"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Cautious Fighter",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Cautious Fighter.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "cautious-fighter",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "witYarhLcitwPfdM",
+            "name": "Cautious Fighter"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Covering Defense",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Covering Defense.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "covering-defense",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "KoLq2qthsPX08zxt",
+            "name": "Covering Defense"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Missile Shield",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Missile Shield.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "missile-shield",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "Uk5aA4Zx2oxoGQZt",
+            "name": "Missile Shield"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Shield Focus",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Shield Focus.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "shield-focus",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Shield Ward",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Shield Ward.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "shield-ward",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Uncanny Defense",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Uncanny Defense.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "uncanny-defense",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "JLEjdb2agikSI1bk",
+            "name": "Uncanny Defense"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "Outsider traits",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The Outsider racial HD and native defense fields carry the traits of this creature type; see the individual subtypes and exceptions.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "outsider-traits",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Outsider traits",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Outsider traits"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000002",
+      "name": "Does not Breathe",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whiskerwall Kupdi Koop does not breathe.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-breathe",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Breathe",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Breathe"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000003",
+      "name": "Does not Eat",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whiskerwall Kupdi Koop does not eat.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-eat",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Eat",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Eat"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000004",
+      "name": "Does not Sleep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whiskerwall Kupdi Koop does not sleep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-sleep",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Sleep",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Sleep"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Spinning Mogshield",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As a standard action Whiskerwall Kupdi Koop can hit all enemies in a 30-ft.-radius with his shield dealing 3d6 bludgeoning damage. A Reflex save (DC 26) can half this damage. Those who fail the save are stunned for 1 round. Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Spinning Mogshield",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "3d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod + (1)",
+              "type": "ref",
+              "description": "Half and negates stun"
+            },
+            "notes": {
+              "effect": [
+                "As a standard action Whiskerwall Kupdi Koop can hit all enemies in a 30-ft.-radius with his shield dealing 3d6 bludgeoning damage. A Reflex save (DC 26) can half this damage. Those who fail the save are stunned for 1 round. Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half and negates stun",
+            "_id": "61c682148d7edbde",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "spinning-mogshield",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 26,
+                "raw": "Reflex save (DC 26)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-mismatch",
+                "base": 16,
+                "neededMod": 10,
+                "expectedDc": 25,
+                "observedDc": 26
+              }
+            ],
+            "damages": [
+              {
+                "formula": "3d6",
+                "type": "bludgeoning",
+                "raw": "3d6 bludgeoning damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Planes DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1",
+              "units": "round"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              },
+              "wis": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "cha": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "2"
+        }
+      }
+    },
+    {
+      "_id": "06b227f18142b1f3",
+      "type": "equipment",
+      "name": "Armor (as listed)",
+      "img": "systems/ffd20/icons/items/armor/leather.PNG",
+      "system": {
+        "equipmentType": "armor",
+        "subType": "armor",
+        "equipped": true,
+        "carried": true,
+        "quantity": 1,
+        "armor": {
+          "value": 8,
+          "enh": 0,
+          "dex": null,
+          "acp": 0
+        },
+        "description": {
+          "value": "The statblock specifies the AC contribution but does not name a model or an armor check penalty."
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {}
+      }
+    },
+    {
+      "_id": "15a1674f46b87faf",
+      "type": "equipment",
+      "name": "Shield (as listed)",
+      "img": "systems/ffd20/icons/items/armor/shield-heavy-metal.png",
+      "system": {
+        "equipmentType": "shield",
+        "subType": "shield",
+        "equipped": true,
+        "carried": true,
+        "quantity": 1,
+        "armor": {
+          "value": 2,
+          "enh": 0,
+          "dex": null,
+          "acp": 0
+        },
+        "description": {
+          "value": "The statblock specifies the AC contribution but does not name a model or an armor check penalty."
+        }
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {}
+      }
+    },
+    {
+      "_id": "b5276467437978d8",
+      "_stats": {
+        "coreVersion": "12.331"
+      },
+      "img": "icons/weapons/swords/sword-guard-engraved.webp",
+      "name": "+1 Knight Sword",
+      "system": {
+        "actions": [
+          {
+            "name": "Knight Sword",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "0",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8+1 - 1",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Strike 2",
+                  "formula": "-5"
+                },
+                {
+                  "name": "Strike 3",
+                  "formula": "-10"
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Knight Sword",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "45db0d603a800644",
+            "effectNotes": []
+          }
+        ],
+        "description": {
+          "value": "<p>A knight sword is too large to use in one hand without special training; thus, it is an exotic weapon. A character can use a knight sword two-<wbr />handed as a martial weapon. A knight treats a knight sword as a martial weapon.</p>"
+        },
+        "hp": {
+          "base": 10
+        },
+        "price": 53,
+        "proficient": true,
+        "showInQuickbar": false,
+        "subType": "exotic",
+        "uses": {
+          "value": 0
+        },
+        "weaponSubtype": "1h",
+        "weight": {
+          "value": 6
+        },
+        "equipped": true,
+        "carried": true,
+        "size": "sm",
+        "enh": 1
+      },
+      "type": "weapon",
+      "effects": [],
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "verifiedGear048": {
+            "pack": "ffd20-content.ffd20-items_weapons-and-ammo",
+            "id": "6wuMY4T7Al9jWfIk",
+            "sourceName": "Sword, Knight"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Whiskerwall Kupdi Koop",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/whiskerwall-kupdi-koop.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/primal-family/good-king-moggle-mog-xii/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Moogle-king.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/whiskerwall-kupdi-koop.webp",
+      "packagedImageSource": "Original Mooglesguard portrait for Whiskerwall Kupdi Koop",
+      "parsed": {
+        "alignment": "LG",
+        "initiative": 5,
+        "size": "Small",
+        "cr": "12",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Holy",
+          "Moogle"
+        ],
+        "xp": 19200,
+        "aura": "",
+        "perception": null,
+        "offense": {
+          "raw": [
+            "Speed 20 ft., fly 30 ft. (good)",
+            "Melee +1 Knight Sword +22/+17/+12 (1d8+8/19-20×2)"
+          ],
+          "speed": "20 ft., fly 30 ft. (good)",
+          "melee": "+1 Knight Sword +22 (1d8+8/19-20×2)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 31, touch 19, flat-footed 25 (+1 size, +5 dex, +8 armor, +3 shield, +4 natural)",
+            "HP 188 [247] (13d10+117)",
+            "Fort +17, Ref +8, Will +9",
+            "Weakness Shadow"
+          ],
+          "ac": "AC 31, touch 19, flat-footed 25 (+1 size, +5 dex, +8 armor, +3 shield, +4 natural)",
+          "hp": "HP 188 [247] (13d10+117)",
+          "hitPoints": 188,
+          "hitDice": 13,
+          "saves": "Fort +17, Ref +8, Will +9",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "Shadow",
+          "sr": null
+        },
+        "statistics": [
+          "STR 24, DEX 20, CON 28, INT 8, WIS 12, CHA 16",
+          "Base Atk +13; CMB +19; CMD +34",
+          "Feats Blundering Defense, Cautious Fighter, Covering Defense, Missile Shield, Shield Focus, Shield Ward, Uncanny Defense",
+          "Skills Fly +25",
+          "SQ Outsider traits, Does not Breathe, Does not Eat, Does not Sleep"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Primal Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "good-king-moggle-mog-xii",
+      "review046": "good-king-moggle-mog-xii"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

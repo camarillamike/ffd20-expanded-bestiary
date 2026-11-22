@@ -1,0 +1,1676 @@
+{
+  "name": "Furryfoot Kupli Kipp",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/furryfoot-kupli-kipp.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 4,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 13
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": -4,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 30,
+          "maneuverability": "good"
+        }
+      },
+      "sr": {
+        "formula": ""
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 13
+      }
+    },
+    "details": {
+      "alignment": "lg",
+      "xp": {
+        "value": 19200
+      },
+      "cr": {
+        "base": 12
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>While moogle legends describe Moggle Mog as a kind, benevolent presence, the primal summoned by Mooglesguard is driven by the need to feast on ever-greater amounts of aether along with a large following to further solidify his being. - Moggle Mog</p><h2>Defense</h2><p>AC 23, touch 19, flat-footed 16 (+1 size, +7 dex, +1 dodge, +4 natural)</p><p>HP 136 [195] (13d10+65)</p><p>Fort +13, Ref +11, Will +19</p><p>Weakness Shadow</p><h2>Offense</h2><p>Speed 20 ft., fly 30 ft. (good)</p><p>Ranged Double Charged Holy Staff +22/+17/+12 (2d6+9/x2 holy damage)</p><h2>Statistics</h2><p>STR 12, DEX 24, CON 20, INT 16, WIS 28, CHA 8</p><p>Base Atk +13; CMB +13; CMD +30</p><p>Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)</p><p>Skills Fly +33</p><p>SQ Outsider traits, Does not Breathe, Does not Eat, Does not Sleep</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "holy",
+        "moogle"
+      ],
+      "size": "sm",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [],
+      "dv": [
+        "dark"
+      ],
+      "ci": [],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "-3",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed flight total."
+          },
+          {
+            "formula": "1",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published flat-footed."
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 13,
+        "hd": 10,
+        "hp": 71,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "LG",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "outsider"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 136,
+          "sourceHitDice": 13,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +13; CMB +13; CMD +30</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +13; CMB +13; CMD +30",
+            "bab": 13,
+            "cmb": 13,
+            "cmd": 30
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Double Charged Holy Staff",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Double Charged Holy Staff",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "rwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6+9",
+                  "types": [
+                    "light"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Strike 2",
+                  "formula": "-5"
+                },
+                {
+                  "name": "Strike 3",
+                  "formula": "-10"
+                }
+              ]
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Double Charged Holy Staff",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "c24549cd8b5cddbe",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "double-charged-holy-staff",
+        "subType": "weapon",
+        "weapon": {
+          "category": "simple",
+          "type": "ranged"
+        },
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Double Charged Holy Staff",
+            "ranged": true,
+            "attackBonus": 22,
+            "damage": "2d6+9/x2 holy damage",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 9,
+            "damageType": "light",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": false
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Advanced Power Weapons Wielder",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Advanced Power Weapons Wielder.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "advanced-power-weapons-wielder",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Improved Iron Will",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Iron Will.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-iron-will",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Improved Power Weapons Wielder",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Power Weapons Wielder.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-power-weapons-wielder",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Iron Will",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Iron Will.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "iron-will",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Skill Focus (Fly)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Skill Focus (Fly).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "formula": "3 + 3 * floor(min(10, @skills.fly.rank) / 10)"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "skill-focus-fly",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)",
+          "reviewedChanges": true,
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Skill Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Skill Focus (Fly)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Weapon Focus (Power Staff)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Power Staff).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-power-staff",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Weapon Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Weapon Focus (Power Staff)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "Outsider traits",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The Outsider racial HD and native defense fields carry the traits of this creature type; see the individual subtypes and exceptions.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "outsider-traits",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Outsider traits",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Outsider traits"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000002",
+      "name": "Does not Breathe",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Furryfoot Kupli Kipp does not breathe.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-breathe",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Breathe",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Breathe"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000003",
+      "name": "Does not Eat",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Furryfoot Kupli Kipp does not eat.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-eat",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Eat",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Eat"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000004",
+      "name": "Does not Sleep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Furryfoot Kupli Kipp does not sleep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-sleep",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Sleep",
+          "authoredLocally": true,
+          "review046Semantic": "good-king-moggle-mog-xii/Does Not Sleep"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Pom Cure",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>As a standard action Furryfoot Kupli Kipp can heal an ally within 100 feet for 10d6+25 HP. Blue mages may learn this ability as a 6th level spell (Knowledge: Planes DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Pom Cure",
+            "actionType": "heal",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 100,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "10d6+25",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "As a standard action Furryfoot Kupli Kipp can heal an ally within 100 feet for 10d6+25 HP. Blue mages may learn this ability as a 6th level spell (Knowledge: Planes DC 27).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "_id": "61c682148d7edbde",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "pom-cure",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Planes DC 27).",
+            "range": {
+              "value": 100,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "wis": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "2"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Power Weapon User",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Furryfoot Kupli Kipp can use power weapons as if they had MP.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-weapon-user",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "dex": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "con": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "int": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "wis": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "cha": {
+                "value": 8,
+                "mod": -1,
+                "missing": false,
+                "raw": "8"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "fed68054bf7f9b83",
+      "_stats": {
+        "coreVersion": "12.331"
+      },
+      "img": "icons/weapons/staves/staff-obsidian.webp",
+      "name": "Double Charged Holy Staff",
+      "system": {
+        "actions": [
+          {
+            "name": "Double Charged Holy Staff",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "",
+              "units": "",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "rwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6+9",
+                  "types": [
+                    "light"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Strike 2",
+                  "formula": "-5"
+                },
+                {
+                  "name": "Strike 3",
+                  "formula": "-10"
+                }
+              ]
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": null,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "attackName": "Double Charged Holy Staff",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "4313aca77a78fb46",
+            "effectNotes": []
+          }
+        ],
+        "aura": {
+          "school": "ele"
+        },
+        "cl": 1,
+        "description": {
+          "value": "<p>This 2-handed mid-ranked staff allows the wielder to shoot elemental energy at a target. When created or bought, they only deal one elemental type of damage (Earth, Fire, Holy, Ice, Lightning, Shadow, Water, or Wind) and are named as such (Fire Staff, Ice Staff, etc).</p>"
+        },
+        "hp": {
+          "base": 10
+        },
+        "price": 75,
+        "proficient": true,
+        "showInQuickbar": false,
+        "subType": "power",
+        "unidentified": {
+          "name": "Crystal topped staff",
+          "price": 75
+        },
+        "uses": {
+          "value": 0
+        },
+        "weaponSubtype": "ranged",
+        "weight": {
+          "value": 4
+        },
+        "equipped": true,
+        "carried": true,
+        "size": "sm",
+        "enh": 0
+      },
+      "type": "weapon",
+      "effects": [],
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "verifiedGear048": {
+            "pack": "ffd20-content.ffd20-items_weapons-and-ammo",
+            "id": "NvKiskJlMfAS0WZS",
+            "sourceName": "Power Staff"
+          }
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Furryfoot Kupli Kipp",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/furryfoot-kupli-kipp.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/primal-family/good-king-moggle-mog-xii/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Moogle-king.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/furryfoot-kupli-kipp.webp",
+      "packagedImageSource": "Original Mooglesguard portrait for Furryfoot Kupli Kipp",
+      "parsed": {
+        "alignment": "LG",
+        "initiative": 7,
+        "size": "Small",
+        "cr": "12",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Holy",
+          "Moogle"
+        ],
+        "xp": 19200,
+        "aura": "",
+        "perception": null,
+        "offense": {
+          "raw": [
+            "Speed 20 ft., fly 30 ft. (good)",
+            "Ranged Double Charged Holy Staff +22/+17/+12 (2d6+9/x2 holy damage)"
+          ],
+          "speed": "20 ft., fly 30 ft. (good)",
+          "melee": "",
+          "ranged": "Double Charged Holy Staff +22 (2d6+9/x2 holy damage)",
+          "space": "",
+          "specialAttacks": "",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 23, touch 19, flat-footed 16 (+1 size, +7 dex, +1 dodge, +4 natural)",
+            "HP 136 [195] (13d10+65)",
+            "Fort +13, Ref +11, Will +19",
+            "Weakness Shadow"
+          ],
+          "ac": "AC 23, touch 19, flat-footed 16 (+1 size, +7 dex, +1 dodge, +4 natural)",
+          "hp": "HP 136 [195] (13d10+65)",
+          "hitPoints": 136,
+          "hitDice": 13,
+          "saves": "Fort +13, Ref +11, Will +19",
+          "defensiveAbilities": "",
+          "dr": "",
+          "immunities": "",
+          "resistances": "",
+          "weaknesses": "Shadow",
+          "sr": null
+        },
+        "statistics": [
+          "STR 12, DEX 24, CON 20, INT 16, WIS 28, CHA 8",
+          "Base Atk +13; CMB +13; CMD +30",
+          "Feats Advanced Power Weapons Wielder, Dodge, Improved Iron Will, Improved Power Weapons Wielder, Iron Will, Skill Focus (Fly), Weapon Focus (Power Staff)",
+          "Skills Fly +33",
+          "SQ Outsider traits, Does not Breathe, Does not Eat, Does not Sleep"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Primal Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "good-king-moggle-mog-xii",
+      "review046": "good-king-moggle-mog-xii"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

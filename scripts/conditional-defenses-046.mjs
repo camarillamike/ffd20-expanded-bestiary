@@ -15,7 +15,8 @@ export function installGroupDefenses046(proto){
  Object.defineProperty(proto,installed,{value:true});
  proto.getResistances=function(actor,kind="dr"){
   const rows=getResistances.call(this,actor,kind),amount=actor.flags?.[scope]?.compoundMagicMaterialDR;
-  if(kind==="dr"&&owns(actor,"judge-magister")&&![...(actor.items??[])].some(i=>i.type==="equipment"&&i.system.equipped&&!i.system.disabled&&["lightArmor","mediumArmor","heavyArmor"].includes(i.system.equipmentSubtype)))return rows.filter(row=>row.amount!==6||row.typeIds?.size!==0);
+  const armoredDR=owns(actor,"judge-magister")?6:owns(actor,"judge-master")?9:0;
+  if(kind==="dr"&&armoredDR&&![...(actor.items??[])].some(i=>i.type==="equipment"&&i.system.equipped&&!i.system.disabled&&["lightArmor","mediumArmor","heavyArmor"].includes(i.system.equipmentSubtype)))return rows.filter(row=>row.amount!==armoredDR||row.typeIds?.size!==0);
   if(kind!=="dr"||!(owns(actor,"cie-th-edimmu")&&amount===5||(owns(actor,"cie-th-taxim")||owns(actor,"cie-th-penanggalan")||owns(actor,"cie-th-vampire")||owns(actor,"cie-th-ispusteke"))&&amount===10||(owns(actor,"cie-th-sacrifice")||owns(actor,"cie-th-pijavica"))&&amount===15))return rows;
   for(const row of rows){if(row.amount!==amount||!row.operator||row.typeIds?.size!==2||!row.typeIds.has("adamantine")||!row.typeIds.has("crystal"))continue;
    row[special]=true;row.label=amount+"/magic and (adamantine or crystal)";

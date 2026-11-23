@@ -1,0 +1,4496 @@
+{
+  "name": "Kraken",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/kraken.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 36,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 18,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 30,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 26,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 26,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 26,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 12,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 16
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 5,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 60
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "sr": {
+        "formula": "26"
+      },
+      "acNotes": "",
+      "cmdNotes": "47 vs. grapple."
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rank": 16
+      },
+      "apr": {
+        "ability": "int",
+        "rank": 16
+      },
+      "blf": {
+        "ability": "cha",
+        "rank": 16
+      },
+      "dip": {
+        "ability": "cha",
+        "rank": 16
+      },
+      "esc": {
+        "ability": "dex",
+        "rank": 7
+      },
+      "han": {
+        "ability": "cha",
+        "rank": 7
+      },
+      "hea": {
+        "ability": "wis",
+        "rank": 7
+      },
+      "int": {
+        "ability": "cha",
+        "rank": 16
+      },
+      "kar": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kdu": {
+        "ability": "int",
+        "rank": 16
+      },
+      "ken": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kge": {
+        "ability": "int",
+        "rank": 16
+      },
+      "khi": {
+        "ability": "int",
+        "rank": 16
+      },
+      "klo": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kna": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kno": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kpl": {
+        "ability": "int",
+        "rank": 16
+      },
+      "kre": {
+        "ability": "int",
+        "rank": 16
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 16
+      },
+      "sen": {
+        "ability": "wis",
+        "rank": 16
+      },
+      "slt": {
+        "ability": "dex",
+        "rank": 10
+      },
+      "spl": {
+        "ability": "int",
+        "rank": 16
+      },
+      "ste": {
+        "ability": "dex",
+        "rank": 13
+      },
+      "swm": {
+        "ability": "str",
+        "rank": 16
+      },
+      "umd": {
+        "ability": "cha",
+        "rank": 16
+      }
+    },
+    "details": {
+      "alignment": "le",
+      "xp": {
+        "value": 51200
+      },
+      "cr": {
+        "base": 15
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>Reeking of saltwater and the pungent smell of recently spoiled seafood, the massive, slick, writhing form of Kraken presents himself in a manner one may expect of a dapper gentleman, were it not for the look of contempt and hunger glistening in his eyes. - Manly Man</p><h2>Defense</h2><p>AC 30, touch 18, flat-footed 30 (+12 natural, +6 deflection, +4 Dex, -2 size)</p><p>hp 528 [704] (16d12+160)</p><p>Fort +20 Ref +14 Will +18</p><p>Absorb water DR 15/chaotic and silver; Immune blind, curse, death effects, disease, frog, mind-affecting, mini, petrification, poison, sap, silence, sleep, stop Resist fire 30 SR 26; Strong Fire</p><p>Weakness Lightning</p><h2>Offense</h2><p>Speed 40 ft., swim 60 ft.</p><p>Melee bite +24 (2d6+23 plus 1d6 water), 4 tentacles +22 (1d8+16 plus 1d6 water and grab)</p><p>Space 15 ft. Reach 10 ft. (20 ft. with tentacle)</p><p>Special Attacks acid droplet, aqualung, catch and release, flash rain, hydrotwister, like a peeled grape, whirlpool</p><p>Burst Mode Lifespring</p><h2>Statistics</h2><p>Str 36, Dex 18, Con 30, Int 26, Wis 26, Cha 26</p><p>Base Atk +16; CMB +31 (+39 when grappling); CMD 45 (47 vs. grapple)</p><p>Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything</p><p>Indicates a bonus feat</p><p>Skills Acrobatics +23, Appraise +27, Bluff +27, Diplomacy +27, Escape Artist +11, Handle Animal +15, Heal +15, Intimidate +27, Knowledge (arcana) +34, Knowledge (dungeoneering) +29, Knowledge (engineering) +29, Knowledge (geography) +34, Knowledge (history) +29, Knowledge (local) +29, Knowledge (nature) +34, Knowledge (nobility) +29, Knowledge (planes) +34, Knowledge (religion) +29, Perception +27, Sense Motive +27, Sleight of Hand +14, Spellcraft +27, Stealth +12, Swim +40, Use Magic Device +27</p><p>Languages All</p><p>SQ Soul of the Sea, There is no Escape</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [
+        "archfiend",
+        "boss",
+        "water"
+      ],
+      "size": "huge",
+      "senses": {
+        "dv": {
+          "value": 0
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 120
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 15,
+            "types": [
+              "chaotic",
+              "silver"
+            ],
+            "operator": false
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 30,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": "fire 50%"
+      },
+      "cres": "Absorb water",
+      "di": [],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "blind",
+        "cursed",
+        "deathEffects",
+        "disease",
+        "frog",
+        "mindAffecting",
+        "mini",
+        "petrify",
+        "poison",
+        "sapped",
+        "silenced",
+        "sleep",
+        "stop"
+      ],
+      "languages": [
+        "All"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.apr",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published apr total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.blf",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published blf total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.dip",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published dip total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.int",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published int total adjustment"
+          },
+          {
+            "formula": "10",
+            "target": "skill.kar",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kar total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.kdu",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kdu total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.ken",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published ken total adjustment"
+          },
+          {
+            "formula": "10",
+            "target": "skill.kge",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kge total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.khi",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published khi total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.klo",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published klo total adjustment"
+          },
+          {
+            "formula": "10",
+            "target": "skill.kna",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kna total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.kno",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kno total adjustment"
+          },
+          {
+            "formula": "10",
+            "target": "skill.kpl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kpl total adjustment"
+          },
+          {
+            "formula": "5",
+            "target": "skill.kre",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published kre total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.sen",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published sen total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.spl",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published spl total adjustment"
+          },
+          {
+            "formula": "3",
+            "target": "skill.umd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published umd total adjustment"
+          },
+          {
+            "formula": "6",
+            "target": "ac",
+            "type": "deflection",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed deflection bonus."
+          },
+          {
+            "formula": "4",
+            "target": "ffac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Printed flat-footed 30 retains Dexterity."
+          }
+        ],
+        "contextNotes": [
+          {
+            "target": "skill.per",
+            "text": "Senses header +28; Skills lists Perception +27. Use the Skills entry for checks."
+          }
+        ],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 16,
+        "hd": 10,
+        "hp": 368,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "LE",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "magicalBeast"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 528,
+          "sourceHitDice": 16,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +16; CMB +31 (+39 when grappling); CMD 45 (47 vs. grapple)</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +16; CMB +31 (+39 when grappling); CMD 45 (47 vs. grapple)",
+            "bab": 16,
+            "cmb": 31,
+            "cmd": 45
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6+10",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "193b2d1ec0bae03a",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "bite",
+            "ranged": false,
+            "attackBonus": 24,
+            "damage": "2d6+23 plus 1d6 water",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 23,
+            "damageType": "water",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "tentacle x4",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "tentacle",
+            "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": 20
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8+3",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "tentacle 2"
+                },
+                {
+                  "formula": "0",
+                  "name": "tentacle 3"
+                },
+                {
+                  "formula": "0",
+                  "name": "tentacle 4"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "tentacle",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on a tentacle hit. Only four tentacles unless in swimming-depth water or Lifespring."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "39608ddcd774a79b",
+            "effectNotes": []
+          },
+          {
+            "name": "Soul of the Sea: eight tentacles",
+            "img": "systems/ffd20/icons/items/inventory/monster-tentacle.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "units": "ft",
+              "value": 20
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d8+3",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Tentacle 2",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 3",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 4",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 5",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 6",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 7",
+                  "formula": "0"
+                },
+                {
+                  "name": "Tentacle 8",
+                  "formula": "0"
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "tentacle",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [
+                "Grab on a tentacle hit. Only four tentacles unless in swimming-depth water or Lifespring."
+              ],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "2c3a37c668bb5f70",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "tentacle",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 4,
+            "name": "tentacle",
+            "ranged": false,
+            "attackBonus": 22,
+            "damage": "1d8+16 plus 1d6 water and grab",
+            "damageFormula": "1d8",
+            "printedDamageBonus": 16,
+            "damageType": "water",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Dirty Fighting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dirty Fighting.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dirty-fighting",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Improved Grapple",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Grapple.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-grapple",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Greater Grapple",
+      "type": "feat",
+      "img": "systems/ffd20/icons/conditions/grappled.png",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Greater Grapple.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "greater-grapple",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Body Shield",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Body Shield.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "body-shield",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "C93Box1Oy2Fllwhe",
+            "name": "Body Shield"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Rapid Grappler",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Rapid Grappler.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rapid-grappler",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "K18vW6ltCmfg7600",
+            "name": "Rapid Grappler",
+            "version": "11.4.0"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000009",
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Multiattack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "multiattack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000010",
+      "name": "Throw Anything",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Throw Anything.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "throw-anything",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Lifespring",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>This Burst Mode lets Kraken bring some of the power of the ocean with him, calling upon it in his times of need. For a number of rounds equal to 1 + 1 round for every four HD, Kraken is treated as being completely submerged in water for the purposes of his soul of the sea ability, whether he actually is submerged or not. His damage reduction becomes DR 20/chaotic and silver, he heals twice as much damage as was dealt when absorbing water damage, and heals 1d6 ability damage, ability burn, and ability drain and 1 negative level for every round he is completely submerged in water. This limit break requires only a swift action to activate.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Lifespring",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "This Burst Mode lets Kraken bring some of the power of the ocean with him, calling upon it in his times of need. For a number of rounds equal to 1 + 1 round for every four HD, Kraken is treated as being completely submerged in water for the purposes of his soul of the sea ability, whether he actually is submerged or not. His damage reduction becomes DR 20/chaotic and silver, he heals twice as much damage as was dealt when absorbing water damage, and heals 1d6 ability damage, ability burn, and ability drain and 1 negative level for every round he is completely submerged in water. This limit break requires only a swift action to activate."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "571414b593f9e601",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Ability recovery",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "formula": "1d6",
+            "notes": {
+              "effect": [
+                "Heal this much ability damage, drain and burn plus one negative level this round while submerged."
+              ],
+              "footer": []
+            },
+            "_id": "11b19db18cb85de6",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lifespring",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "ability",
+                "raw": "1d6 ability damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Acid Droplet",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kraken can drench a single enemy with acid water within 30 feet for 4d6 points of water damage and inflict them with the Poison status effect for 1d4 rounds unless they make a Fortitude save (DC 20) to negate the status effect. Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Acid Droplet",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "4d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod + (-6)",
+              "type": "fort",
+              "description": "Negates poison only ([[1d4]] rounds)"
+            },
+            "notes": {
+              "effect": [
+                "Kraken can drench a single enemy with acid water within 30 feet for 4d6 points of water damage and inflict them with the Poison status effect for 1d4 rounds unless they make a Fortitude save (DC 20) to negate the status effect. Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates poison only ([[1d4]] rounds)",
+            "_id": "6a146f16cfaa0ed3",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "acid-droplet",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 20,
+                "raw": "Fortitude save (DC 20)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "default-mismatch",
+                "base": 18,
+                "neededMod": 2,
+                "expectedDc": 28,
+                "observedDc": 20
+              }
+            ],
+            "damages": [
+              {
+                "formula": "4d6",
+                "type": "water",
+                "raw": "4d6 points of water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 2nd level spell (Knowledge: Arcana DC 19).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Aqualung",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kraken can emit a 30-ft.-cone of watery breath. Creatures within the area of effect take 8d6 points of water damage and are inflicted with Silence status (Fort save DC 22 to reduce damage by half and negate the Silence status effect) for 1d6 rounds. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Aqualung",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "8d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod + (-4)",
+              "type": "fort",
+              "description": "Half; negates Silence for [[1d6]] rounds"
+            },
+            "notes": {
+              "effect": [
+                "Kraken can emit a 30-ft.-cone of watery breath. Creatures within the area of effect take 8d6 points of water damage and are inflicted with Silence status (Fort save DC 22 to reduce damage by half and negate the Silence status effect) for 1d6 rounds. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half; negates Silence for [[1d6]] rounds",
+            "_id": "6c66f5c0e86ef028",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "aqualung",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 22,
+                "raw": "Fort save DC 22",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
+                "ability": "dex",
+                "confidence": "derived-preferred-floor",
+                "base": 18,
+                "neededMod": 4,
+                "candidates": [
+                  "dex:floor",
+                  "dex:minimum-one"
+                ],
+                "expectedDc": 22
+              }
+            ],
+            "damages": [
+              {
+                "formula": "8d6",
+                "type": "water",
+                "raw": "8d6 points of water damage"
+              },
+              {
+                "formula": "22",
+                "type": "to-reduce",
+                "raw": "22 to reduce damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Catch and Release",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>When grappling an enemy smaller than himself, as an attack action, Kraken may hurl his grappled enemy as though they were an improvised thrown weapon with a 20 ft. range increment. Medium creatures deal 1d8 + 1.5 times Str modifier in bludgeoning damage to creatures and objects struck, scaling up or down in damage dice as appropriate for their size category; for each category higher, the range increment decreases by 5 feet, and the damage increases as though it were a weapon one size category larger, i.e. Large creatures deal 2d6 + 1.5 Str mod damage and have a 15 ft. range increment, Small creatures deal 1d6 + 1.5 times Str mod damage and have a 25 ft. range increment, and so forth. Creatures thrown take the same damage as the attack dealt to the target. Thrown creatures also take falling damage when thrown, taking 1d6 falling damage for every 10 feet they travel, and an additional 1d6 damage and are dazed for 1 round when striking a solid, immovable object, such as a large rock or a wall. The thrown creature is knocked prone after being thrown, as is the target creature if the attack succeeds. Kraken may hurl all enemies he currently has grappled as a full attack, and at no point do any of his ranged attacks when throwing creatures or objects provoke attacks of opportunity.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Medium projectile",
+            "actionType": "rwak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 20,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d8 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "84633bffb6432fda",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Large projectile",
+            "actionType": "rwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "_id": "f30a7c1e2926e736",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Small projectile",
+            "actionType": "rwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 25,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "_id": "d412a8e7768746ec",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tiny projectile",
+            "actionType": "rwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "_id": "bddc5ce8928f93fb",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Diminutive projectile",
+            "actionType": "rwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 35,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d3 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "_id": "6e7f2823c9480650",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Fine projectile",
+            "actionType": "rwak",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "value": 40,
+              "units": "ft",
+              "maxIncrements": 5
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "0",
+            "touch": false,
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d2 + floor(1.5 * @abilities.str.mod)",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Thrown creature and struck target take the same impact damage and fall prone. Add falling damage separately; this attack does not provoke."
+              ],
+              "footer": []
+            },
+            "_id": "66abea3e0f71872d",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Falling damage per 10 ft.",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Roll per 10 ft. traveled; solid immovable impact adds another 1d6 and dazes for one round."
+              ],
+              "footer": []
+            },
+            "_id": "a8fdc8e5fc3c2b69",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "catch-and-release",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "falling",
+                "raw": "1d6 falling damage"
+              },
+              {
+                "formula": "5",
+                "type": "times-str-modifier-in-bludgeoning",
+                "raw": "5 times Str modifier in bludgeoning damage"
+              },
+              {
+                "formula": "5",
+                "type": "str-mod",
+                "raw": "5 Str mod damage"
+              },
+              {
+                "formula": "5",
+                "type": "times-str-mod",
+                "raw": "5 times Str mod damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1",
+              "units": "round"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Flash Rain",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d3 rounds, Kraken can cause a shower of icy cold rain in a flash, hitting all those in a 30-ft.-cone. Those in the area of effect take 10d6 ice and 10d6 water damage, a successful Reflex (DC 26) for half damage. Blue mages may learn this ability as a 8th level spell (Knowledge: Arcana DC 31).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Flash Rain",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "parts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "ice"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod",
+              "type": "ref",
+              "description": "Half"
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d3 rounds, Kraken can cause a shower of icy cold rain in a flash, hitting all those in a 30-ft.-cone. Those in the area of effect take 10d6 ice and 10d6 water damage, a successful Reflex (DC 26) for half damage. Blue mages may learn this ability as a 8th level spell (Knowledge: Arcana DC 31).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half",
+            "_id": "e7bdc3fb6fe56a68",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "flash-rain",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "10d6",
+                "type": "water",
+                "raw": "10d6 water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 8th level spell (Knowledge: Arcana DC 31).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d3"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Hydrotwister",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kraken releases a water drill towards his opponent within 30 ft. The target must make a Fortitude save (DC 22) or be inflicted with both Deprotect and Deshell status effect for 1d4+1 rounds while taking 6d6 points of water damage. If they succeed the save, they negate the status effects. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hydrotwister",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "6d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod + (-4)",
+              "type": "fort",
+              "description": "Negates Deprotect and Deshell only ([[1d4+1]] rounds)"
+            },
+            "notes": {
+              "effect": [
+                "Kraken releases a water drill towards his opponent within 30 ft. The target must make a Fortitude save (DC 22) or be inflicted with both Deprotect and Deshell status effect for 1d4+1 rounds while taking 6d6 points of water damage. If they succeed the save, they negate the status effects. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Deprotect and Deshell only ([[1d4+1]] rounds)",
+            "_id": "3fac6ef62e393826",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hydrotwister",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 22,
+                "raw": "Fortitude save (DC 22)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.dex.mod",
+                "ability": "dex",
+                "confidence": "derived-preferred-floor",
+                "base": 18,
+                "neededMod": 4,
+                "candidates": [
+                  "dex:floor",
+                  "dex:minimum-one"
+                ],
+                "expectedDc": 22
+              }
+            ],
+            "damages": [
+              {
+                "formula": "6d6",
+                "type": "water",
+                "raw": "6d6 points of water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Like a Peeled Grape",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>When grappling one or more creatures in his tentacles, Kraken deals an additional 2d6+16 crushing damage to any creature held in his tentacles upon a successful grapple check. As a full-round action, she may also roll a single grapple check to maintain any and all grapples she is currently making, rolling for each grapple separately.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Like a Peeled Grape",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d6 + 16",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "When grappling one or more creatures in his tentacles, Kraken deals an additional 2d6+16 crushing damage to any creature held in his tentacles upon a successful grapple check. As a full-round action, she may also roll a single grapple check to maintain any and all grapples she is currently making, rolling for each grapple separately."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "795ba06a02781717",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "like-a-peeled-grape",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "2d6 + floor(@abilities.int.mod * 2)",
+                "type": "crushing",
+                "raw": "2d6+16 crushing damage",
+                "sourceFormula": "2d6+16",
+                "damageAbility": "int",
+                "damageAbilityMultiplier": 2,
+                "damageAbilityReason": "matching-ability-mod"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "full-round",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000008",
+      "name": "Soul of the Sea",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whenever in water deep enough for him to swim through, Kraken may use all eight of his tentacles to attack and grapple with, rather than four of them. In addition, while completely submerged in water, he gains regeneration 20/chaotic and silver.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Soul of the Sea",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Swim-depth water: eight tentacles. Completely submerged: regeneration 20 (chaotic and silver)."
+              ],
+              "footer": []
+            },
+            "_id": "f5a8744686bac9b2",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "soul-of-the-sea",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000009",
+      "name": "There is no Escape",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Whenever making a successful grapple check, Kraken can pin his enemy as a swift action instead of merely grappling them; the pin is an automatic success.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "There is no Escape",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After a successful grapple check pin the target automatically."
+              ],
+              "footer": []
+            },
+            "_id": "9c5997df881111b6",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "there-is-no-escape",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000010",
+      "name": "Whirlpool",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Kraken awakens a pool of water that roots its target in place within 50 ft. Any creatures within 15 feet-radius of the target take 10d6 points of water damage and are inflicted with Immobilize status effect for 1d6 rounds. All creatures within the area of effect must make a Will save (DC 24) to half the damage and negate the status effect. Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Whirlpool",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 50,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "10d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.int.mod + (-2)",
+              "type": "will",
+              "description": "Half; negates Immobilize for [[1d6]] rounds"
+            },
+            "notes": {
+              "effect": [
+                "Kraken awakens a pool of water that roots its target in place within 50 ft. Any creatures within 15 feet-radius of the target take 10d6 points of water damage and are inflicted with Immobilize status effect for 1d6 rounds. All creatures within the area of effect must make a Will save (DC 24) to half the damage and negate the status effect. Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 15
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half; negates Immobilize for [[1d6]] rounds",
+            "_id": "9aa89a6c513c6a3a",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "whirlpool",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 24,
+                "raw": "Will save (DC 24)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.int.mod",
+                "ability": "int",
+                "confidence": "default-mismatch",
+                "base": 18,
+                "neededMod": 6,
+                "expectedDc": 26,
+                "observedDc": 24
+              }
+            ],
+            "damages": [
+              {
+                "formula": "10d6",
+                "type": "water",
+                "raw": "10d6 points of water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).",
+            "range": {
+              "value": 50,
+              "units": "ft"
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 36,
+                "mod": 13,
+                "missing": false,
+                "raw": "36"
+              },
+              "dex": {
+                "value": 18,
+                "mod": 4,
+                "missing": false,
+                "raw": "18"
+              },
+              "con": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "int": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "wis": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "cha": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "99e88fac13cb6ad9",
+      "name": "Grab",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After tentacle hits: grapple +39 without provoking; use constrict on a successful check if present.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grab",
+            "actionType": "mcman",
+            "activation": {
+              "type": "free",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "4",
+            "touch": false,
+            "ability": {
+              "attack": "str",
+              "damage": ""
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After tentacle hits: grapple +39 without provoking; use constrict on a successful check if present."
+              ],
+              "footer": []
+            },
+            "_id": "4b839e36236b73cc",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/conditions/grappled.png"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "grab",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "lookupName": "Grab",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "lookupPack": "ffd20.monster-abilities",
+          "sheetName": "Grab",
+          "reviewedActions": true,
+          "review046Semantic": "kraken/Grab"
+        }
+      }
+    },
+    {
+      "_id": "a685a15490f09e9e",
+      "name": "Lifespring: active",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Treat as submerged. Use DR 20/chaotic AND silver in place of DR 15; double water absorption. Resolve ability and negative-level recovery each round.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "treat-as-submerged-use-dr-20-chaotic-an",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1 + floor(@attributes.hd.total / 4)",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "kraken/Lifespring: active"
+        }
+      }
+    },
+    {
+      "_id": "ad819efa272a71be",
+      "name": "Soul of the Sea: regeneration",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Only while submerged and regeneration is not suppressed.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Soul of the Sea: regeneration",
+            "actionType": "heal",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "20",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "healing": {
+              "type": "healing"
+            },
+            "notes": {
+              "effect": [
+                "Only while submerged and regeneration is not suppressed."
+              ],
+              "footer": []
+            },
+            "_id": "780eea3c89d8b4a8",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "soul-of-the-sea-regeneration",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Soul of the Sea: regeneration",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "kraken/Soul of the Sea: regeneration"
+        }
+      }
+    },
+    {
+      "_id": "e2b7964d9c246bf5",
+      "name": "Aqualung: silenced",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply to affected recipient only; adjudicate the source ability's save and timing first.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-to-affected-recipient-only-adjudi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d6",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "silenced"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "kraken/Aqualung: silenced"
+        }
+      }
+    },
+    {
+      "_id": "10b6afac9cfc5ba6",
+      "name": "Whirlpool: immobilized",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply to affected recipient only; adjudicate the source ability's save and timing first.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-to-affected-recipient-only-adjudi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1d6",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "immobilized"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "kraken/Whirlpool: immobilized"
+        }
+      }
+    },
+    {
+      "_id": "7f19702cbc32de20",
+      "name": "Catch and Release: prone",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply to affected recipient only; adjudicate the source ability's save and timing first.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-to-affected-recipient-only-adjudi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [
+          "prone"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "kraken/Catch and Release: prone"
+        }
+      }
+    },
+    {
+      "_id": "a1bc6ba233bfc512",
+      "name": "Solid impact: dazed",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Apply to affected recipient only; adjudicate the source ability's save and timing first.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "apply-to-affected-recipient-only-adjudi",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "1",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": [
+          "daze"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "kraken/Solid impact: dazed"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Kraken",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/kraken.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 3,
+    "width": 3
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/archfiend-family/kraken/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Kraken.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/kraken.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Kraken.png",
+      "parsed": {
+        "alignment": "LE",
+        "initiative": 8,
+        "size": "Huge",
+        "cr": "15",
+        "creatureType": "Magical Beast",
+        "subtypes": [
+          "Archfiend",
+          "Boss",
+          "Water"
+        ],
+        "xp": 51200,
+        "aura": "",
+        "perception": 28,
+        "offense": {
+          "raw": [
+            "Speed 40 ft., swim 60 ft.",
+            "Melee bite +24 (2d6+23 plus 1d6 water), 4 tentacles +22 (1d8+16 plus 1d6 water and grab)",
+            "Space 15 ft. Reach 10 ft. (20 ft. with tentacle)",
+            "Special Attacks acid droplet, aqualung, catch and release, flash rain, hydrotwister, like a peeled grape, whirlpool",
+            "Burst Mode Lifespring"
+          ],
+          "speed": "40 ft., swim 60 ft.",
+          "melee": "bite +24 (2d6+23 plus 1d6 water), 4 tentacles +22 (1d8+16 plus 1d6 water and grab)",
+          "ranged": "",
+          "space": "Space 15 ft. Reach 10 ft. (20 ft. with tentacle)",
+          "specialAttacks": "acid droplet, aqualung, catch and release, flash rain, hydrotwister, like a peeled grape, whirlpool",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 30, touch 18, flat-footed 30 (+12 natural, +6 deflection, +4 Dex, -2 size)",
+            "hp 528 [704] (16d12+160)",
+            "Fort +20 Ref +14 Will +18",
+            "Absorb water DR 15/chaotic and silver; Immune blind, curse, death effects, disease, frog, mind-affecting, mini, petrification, poison, sap, silence, sleep, stop Resist fire 30 SR 26; Strong Fire",
+            "Weakness Lightning"
+          ],
+          "ac": "AC 30, touch 18, flat-footed 30 (+12 natural, +6 deflection, +4 Dex, -2 size)",
+          "hp": "hp 528 [704] (16d12+160)",
+          "hitPoints": 528,
+          "hitDice": 16,
+          "saves": "Fort +20 Ref +14 Will +18",
+          "defensiveAbilities": "",
+          "dr": "15/chaotic and silver;",
+          "immunities": "blind, curse, death effects, disease, frog, mind-affecting, mini, petrification, poison, sap, silence, sleep, stop",
+          "resistances": "fire 30",
+          "weaknesses": "Lightning",
+          "sr": 26
+        },
+        "statistics": [
+          "Str 36, Dex 18, Con 30, Int 26, Wis 26, Cha 26",
+          "Base Atk +16; CMB +31 (+39 when grappling); CMD 45 (47 vs. grapple)",
+          "Feats Improved Initiative, Power Attack, Combat Reflexes, Dirty Fighting, Improved Grapple, Greater Grapple, Body Shield, Rapid Grappler, Multiattack, Throw Anything",
+          "Indicates a bonus feat",
+          "Skills Acrobatics +23, Appraise +27, Bluff +27, Diplomacy +27, Escape Artist +11, Handle Animal +15, Heal +15, Intimidate +27, Knowledge (arcana) +34, Knowledge (dungeoneering) +29, Knowledge (engineering) +29, Knowledge (geography) +34, Knowledge (history) +29, Knowledge (local) +29, Knowledge (nature) +34, Knowledge (nobility) +29, Knowledge (planes) +34, Knowledge (religion) +29, Perception +27, Sense Motive +27, Sleight of Hand +14, Spellcraft +27, Stealth +12, Swim +40, Use Magic Device +27",
+          "Languages All",
+          "SQ Soul of the Sea, There is no Escape"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Archfiend Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "kraken",
+      "review046": "kraken",
+      "review049": "kraken"
+    },
+    "ffd20-expanded-bestiary": {
+      "absorbs": [
+        "water"
+      ],
+      "halfResistances": [
+        "fire"
+      ]
+    }
+  }
+}

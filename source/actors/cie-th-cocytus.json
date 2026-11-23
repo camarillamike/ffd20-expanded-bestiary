@@ -1,0 +1,2505 @@
+{
+  "name": "Cie'th Cocytus",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-cocytus.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 34,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 2,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 17,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 10,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 18
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": -5,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 80,
+          "maneuverability": "good"
+        }
+      },
+      "sr": {
+        "formula": "27"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 18
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 18
+      }
+    },
+    "details": {
+      "alignment": "ne",
+      "xp": {
+        "value": 76800
+      },
+      "cr": {
+        "base": 16
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>A creature made of what looks like snowy white, azure, and bright, acid green crystals, held aloft by six wings, hovers before you. It gives a short yell before its skin begins to crackle with electricity.- Manly Man</p><h2>Defense</h2><p>AC 37, touch 27, flat-footed 20 (+12 dex, +10 natural, +5 dodge)</p><p>hp 279 (18d10+180)</p><p>Fort +20, Ref +23, Will +13</p><p>DR 15/adamantine and good and magic or crystal and good and magic; Immune bleed, curse, daze, death effects, imperil, lightning, mind-affecting, poison, sap, stun, wind; Resist Fire/Ice/Earth/Water 15, holy/shadow 5; SR 27</p><h2>Offense</h2><p>Speed 30 ft., fly 80 ft. (good)</p><p>Melee Slam +30 (1d4+7, 19-20/x2), 2 Wings +27 (1d4+7, 19-20/x2)</p><p>Special Attacks Miasma, Levinbolt</p><h2>Statistics</h2><p>Str 24, Dex 34, Con 28, Int 2, Wis 24, Cha 17</p><p>Base Atk +18; CMB +25; CMD 47</p><p>Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse</p><p>Skills Fly +37, Perception +28</p><p>Languages Common (cannot speak)</p><p>SQ Confounding Grace, Improved Uncanny Dodge, Razor Wings</p><h2>Ecology</h2><p>Environment any</p><p>Organization solitary, murder (1 cocytus, 2-5 varcolaci or 5-20 nelapsi)</p><p>Treasure none</p><p>Though they have been found solitary, the cocytus prefers being in the midst of other, weaker Cie'th so as to stay out of the crosshairs of its enemies. Its tactics largely begin with use of its miasma ability, and then focusing all of its attacks upon whichever enemy suffers the most status effects, choosing the closest if multiple enemies suffer the same number of status effects, who will be relentlessly targeted by its levinbolt ability.</p><p>Cocyti are 7 ½ feet tall and weigh about 185 pounds.</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "outsider"
+      ],
+      "creatureSubtypes": [
+        "cie'th",
+        "native"
+      ],
+      "size": "med",
+      "senses": {
+        "dv": {
+          "value": 90
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 15,
+            "types": [
+              "good"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "magic"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "adamantine",
+              "crystal"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": "Nonstacking. Bypass all three protections with good + magic + either adamantine or crystal."
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 15,
+            "types": [
+              "fire"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "water"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "light"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "dark"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "lightning",
+        "wind"
+      ],
+      "dv": [],
+      "ci": [
+        "bleed",
+        "curse",
+        "daze",
+        "deathEffects",
+        "imperil",
+        "mind-affecting",
+        "poison",
+        "sap",
+        "stun"
+      ],
+      "languages": [
+        "Common (cannot speak)"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Outsider",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "3",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "4",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Confounding Grace: airborne total defense is included in the statblock."
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "outsider",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 18,
+        "hd": 10,
+        "hp": 99,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 6,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NE",
+        "classSkills": {
+          "blf": true,
+          "crf": true,
+          "dip": true,
+          "dis": true,
+          "int": true,
+          "kar": true,
+          "kpl": true,
+          "kre": true,
+          "per": true,
+          "sen": true,
+          "ste": true,
+          "sur": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "outsider"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Outsider",
+          "sourceHitPoints": 279,
+          "sourceHitDice": 18,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +18; CMB +25; CMD 47</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +18; CMB +25; CMD 47",
+            "bab": 18,
+            "cmb": 25,
+            "cmd": 47
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Slam",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning",
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "9d2b806da2db73f1",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 30,
+            "damage": "1d4+7, 19-20/x2",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Wing x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Wing",
+            "img": "systems/ffd20/icons/items/inventory/monster-demon-wing.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-3",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d4",
+                  "types": [
+                    "bludgeoning",
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Wing 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 19,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Wing",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "173d6c0929412bdf",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "wing",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Wing",
+            "ranged": false,
+            "attackBonus": 27,
+            "damage": "1d4+7, 19-20/x2",
+            "damageFormula": "1d4",
+            "printedDamageBonus": 7,
+            "damageType": "",
+            "critRange": 19,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Ability Focus (Miasma)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Ability Focus (Miasma).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ability-focus-miasma",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Ability Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Ability Focus (Miasma)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Ability Focus (Levinbolt)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Ability Focus (Levinbolt).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ability-focus-levinbolt",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Ability Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Ability Focus (Levinbolt)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Blinding Critical",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Blinding Critical.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blinding-critical",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Critical Focus",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Critical Focus.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "critical-focus",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Flyby Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Flyby Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "flyby-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Multiattack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "multiattack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Staggering Critical",
+      "type": "feat",
+      "img": "systems/ffd20/icons/feats/critical-focus.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Staggering Critical.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "staggering-critical",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000009",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000010",
+      "name": "Weapon Finesse",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Finesse.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-finesse",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Confounding Grace",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The cocytus can, while in flight, use the total defense action as a swift action. This is included in the statblock above.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Confounding Grace",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self while flying"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "The cocytus can, while in flight, use the total defense action as a swift action. This is included in the statblock above. Already included in printed AC."
+              ],
+              "footer": []
+            },
+            "_id": "1e795cb278cac9a4",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "confounding-grace",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 34,
+                "mod": 12,
+                "missing": false,
+                "raw": "34"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Improved Uncanny Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Along with the benefits of the uncanny dodge ability, a cocytus can no longer be flanked. This defense denies a thief the ability to sneak attack the cocytus by flanking it, unless the attacker has at least four more thief levels than the cocytus' HD.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-uncanny-dodge",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 34,
+                "mod": 12,
+                "missing": false,
+                "raw": "34"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Levinbolt",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The chlorinous smell of ozone fills the air as the cocytus writhes a bit before unleashing several blasts of electricity. As a standard action, three times per day, a coctycus can make a series of four ranged touch attacks within 100 ft., each one doing 5d8 points of lightning damage and inflicting the Dazzled and Static conditions for 2d4 rounds, a successful Fortitude save (DC 28) negates the status effects. Upon a failed Fortitude save, those struck are also stunned for 1 round. Blue mages may learn this ability as an 8th-level spell (Knowledge: Local DC 31).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Levinbolt",
+            "actionType": "rsak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 100,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "5d8",
+                  "types": [
+                    "lightning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "type": "fort",
+              "description": "Negates Dazzled and Static (2d4 rounds) and stun (1 round); damage unaffected"
+            },
+            "notes": {
+              "effect": [
+                "The chlorinous smell of ozone fills the air as the cocytus writhes a bit before unleashing several blasts of electricity. As a standard action, three times per day, a coctycus can make a series of four ranged touch attacks within 100 ft., each one doing 5d8 points of lightning damage and inflicting the Dazzled and Static conditions for 2d4 rounds, a successful Fortitude save (DC 28) negates the status effects. Upon a failed Fortitude save, those struck are also stunned for 1 round. Blue mages may learn this ability as an 8th-level spell (Knowledge: Local DC 31)."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Dazzled and Static (2d4 rounds) and stun (1 round); damage unaffected",
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "name": "Attack 2",
+                  "formula": "0"
+                },
+                {
+                  "name": "Attack 3",
+                  "formula": "0"
+                },
+                {
+                  "name": "Attack 4",
+                  "formula": "0"
+                }
+              ]
+            },
+            "_id": "ae6bfacacd1484df",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "3",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "levinbolt",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 28,
+                "raw": "Fortitude save (DC 28)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "derived-preferred-floor",
+                "base": 19,
+                "neededMod": 9,
+                "candidates": [
+                  "con:floor",
+                  "con:minimum-one"
+                ],
+                "expectedDc": 28
+              }
+            ],
+            "damages": [
+              {
+                "formula": "5d8",
+                "type": "lightning",
+                "raw": "5d8 points of lightning damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as an 8th-level spell (Knowledge: Local DC 31).",
+            "range": {
+              "value": 100,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "2d4",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 34,
+                "mod": 12,
+                "missing": false,
+                "raw": "34"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Miasma",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Miasma",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "5d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "ref",
+              "description": "Half. On failure resolve four independent saves."
+            },
+            "notes": {
+              "effect": [
+                "With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half. On failure resolve four independent saves.",
+            "_id": "68c040a030dc78e5",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Disease",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "description": "Negates Disease for 1d8 rounds"
+            },
+            "result": "Negates Disease for 1d8 rounds",
+            "notes": {
+              "effect": [
+                "With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "1c92c88ffef57569",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Silence",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "will",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "description": "Negates Silence for 1d8 rounds"
+            },
+            "result": "Negates Silence for 1d8 rounds",
+            "notes": {
+              "effect": [
+                "With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "08f3534e4756299e",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Sap",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "description": "Negates Sap for 1d8 rounds"
+            },
+            "result": "Negates Sap for 1d8 rounds",
+            "notes": {
+              "effect": [
+                "With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "07be110aad6fe5c8",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Slow",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "will",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "description": "Negates Slow for 1d8 rounds"
+            },
+            "result": "Negates Slow for 1d8 rounds",
+            "notes": {
+              "effect": [
+                "With a great, heaving breath does the cocytus belch forth a cloud of noxious mist. As a standard action, the cocytus deals 5d6 non-elemental damage to all enemies in a 30 ft. cone; a successful Reflex save (DC 26) halves this damage. All enemies within the area of effect that failed the Reflex save must make a series of saves (DC 26) to avoid each of the following effects: Disease (Fort), Silence (Will), Sap (Fort), and Slow (Will), all of which last for 1d8 rounds. The cocytus must wait 1d4 rounds before using this ability again. Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "b9380ec34029afee",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "miasma",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 26,
+                "raw": "Reflex save (DC 26)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.str.mod",
+                "ability": "str",
+                "confidence": "derived-preferred-floor",
+                "base": 19,
+                "neededMod": 7,
+                "candidates": [
+                  "str:floor",
+                  "wis:floor",
+                  "str:minimum-one",
+                  "wis:minimum-one"
+                ],
+                "expectedDc": 26
+              }
+            ],
+            "damages": [
+              {
+                "formula": "5d6",
+                "type": "nonelemental",
+                "raw": "5d6 non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "Blue mages may learn this ability as a 5th-level spell (Knowledge: Local DC 25).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "1d8",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 34,
+                "mod": 12,
+                "missing": false,
+                "raw": "34"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Razor Wings",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>The layers of crystal that line a cocytus' wings like deadly feathers have a fine edge to them, allowing the cocytus' natural attacks to deal both bludgeoning and slashing damage, and also increasing their critical threat range to 19-20.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "razor-wings",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "dex": {
+                "value": 34,
+                "mod": 12,
+                "missing": false,
+                "raw": "34"
+              },
+              "con": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              },
+              "int": {
+                "value": 2,
+                "mod": -4,
+                "missing": false,
+                "raw": "2"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 17,
+                "mod": 3,
+                "missing": false,
+                "raw": "17"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "34c945fc83cd3325",
+      "name": "Grounded or not defending",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Remove Confounding Grace when not using total defense in flight.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "-4",
+            "target": "ac",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "remove-confounding-grace-when-not-using",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "cie-th-cocytus/Grounded or not defending"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cie'th Cocytus",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-cocytus.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 1,
+    "width": 1
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/outsiders/cieth-family/winged-cieth/cieth-cocytus/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/Cocytos_FFXIII-2.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/cie-th-cocytus.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/Cocytos_FFXIII-2.png",
+      "parsed": {
+        "alignment": "NE",
+        "initiative": 12,
+        "size": "Medium",
+        "cr": "16",
+        "creatureType": "Outsider",
+        "subtypes": [
+          "Cie'th",
+          "Native"
+        ],
+        "xp": 76800,
+        "aura": "",
+        "perception": 28,
+        "offense": {
+          "raw": [
+            "Speed 30 ft., fly 80 ft. (good)",
+            "Melee Slam +30 (1d4+7, 19-20/x2), 2 Wings +27 (1d4+7, 19-20/x2)",
+            "Special Attacks Miasma, Levinbolt"
+          ],
+          "speed": "30 ft., fly 80 ft. (good)",
+          "melee": "Slam +30 (1d4+7, 19-20/x2), 2 Wings +27 (1d4+7, 19-20/x2)",
+          "ranged": "",
+          "space": "",
+          "specialAttacks": "Miasma, Levinbolt",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 37, touch 27, flat-footed 20 (+12 dex, +10 natural, +5 dodge)",
+            "hp 279 (18d10+180)",
+            "Fort +20, Ref +23, Will +13",
+            "DR 15/adamantine and good and magic or crystal and good and magic; Immune bleed, curse, daze, death effects, imperil, lightning, mind-affecting, poison, sap, stun, wind; Resist Fire/Ice/Earth/Water 15, holy/shadow 5; SR 27"
+          ],
+          "ac": "AC 37, touch 27, flat-footed 20 (+12 dex, +10 natural, +5 dodge)",
+          "hp": "hp 279 (18d10+180)",
+          "hitPoints": 279,
+          "hitDice": 18,
+          "saves": "Fort +20, Ref +23, Will +13",
+          "defensiveAbilities": "",
+          "dr": "15/adamantine and good and magic or crystal and good and magic;",
+          "immunities": "bleed, curse, daze, death effects, imperil, lightning, mind-affecting, poison, sap, stun, wind;",
+          "resistances": "Fire 15, Ice 15, Earth 15, Water 15, Holy 5, Shadow 5",
+          "weaknesses": "",
+          "sr": 27
+        },
+        "statistics": [
+          "Str 24, Dex 34, Con 28, Int 2, Wis 24, Cha 17",
+          "Base Atk +18; CMB +25; CMD 47",
+          "Feats Ability Focus (Miasma), Ability Focus (Levinbolt), Blinding Critical, Critical Focus, Dodge, Flyby Attack, Multiattack, Staggering Critical, Toughness, Weapon Finesse",
+          "Skills Fly +37, Perception +28",
+          "Languages Common (cannot speak)",
+          "SQ Confounding Grace, Improved Uncanny Dodge, Razor Wings"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [
+          "Environment any",
+          "Organization solitary, murder (1 cocytus, 2-5 varcolaci or 5-20 nelapsi)",
+          "Treasure none",
+          "Though they have been found solitary, the cocytus prefers being in the midst of other, weaker Cie'th so as to stay out of the crosshairs of its enemies. Its tactics largely begin with use of its miasma ability, and then focusing all of its attacks upon whichever enemy suffers the most status effects, choosing the closest if multiple enemies suffer the same number of status effects, who will be relentlessly targeted by its levinbolt ability.",
+          "Cocyti are 7 ½ feet tall and weigh about 185 pounds."
+        ],
+        "family": "Cieth Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "cie-th-cocytus",
+      "review046": "cie-th-cocytus",
+      "review049": "cie-th-cocytus"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

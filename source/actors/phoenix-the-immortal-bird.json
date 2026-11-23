@@ -1,0 +1,5540 @@
+{
+  "name": "Phoenix, the Immortal Bird",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/phoenix-the-immortal-bird.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 30,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 26,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 20,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 12,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 21
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 5,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 40
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 120,
+          "maneuverability": "perfect"
+        }
+      },
+      "sr": {
+        "formula": "30"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 21
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 21
+      }
+    },
+    "details": {
+      "alignment": "ng",
+      "xp": {
+        "value": 51200
+      },
+      "cr": {
+        "base": 15
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>An eternal, undying bird. Its tears are rumored to have curative properties, and it is said that he who tastes the Phoenix's blood will have eternal life.</p><h2>Defense</h2><p>AC 29, touch 17; flat-footed 18 (-4 size, +10 dex, +1 dodge, +12 natural)</p><p>Hp 651 [882] (21d12+189)</p><p>Fort +20, Ref +22, Will +19</p><p>DR 5/-;</p><p>Immune Bind, Blind, Burn, Charm, Confuse, Fire, Holy, Paralyze, Sleep, Slow, Stun, Death, Doom;</p><p>Resist Lightning 10, Dark 5, Earth 10, Ice 5, Wind 15;</p><p>SR 30</p><p>Weakness Water</p><h2>Offense</h2><p>Speed 40 ft., Fly 120 ft. (Perfect)</p><p>Melee Bite +22 (2d6+5 plus 1d8 fire damage), 2 Talons +17 (1d10+2 plus 1d8 fire damage)</p><p>Space 20 ft.; Reach 20 ft.</p><p>Special Attacks Blackfire, Bluefire, Flames of Unforgiveness, Healing Flame, Megaflash, Redfire, Revelation, Whitefire</p><p>Special Abilities Flames of Rebirth, Summon Ruby</p><h2>Statistics</h2><p>Str 20, Dex 30, Con 26, Int 10, Wis 24, Cha 20</p><p>Base Atk +21; CMB +31; CMD 51</p><p>Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance</p><p>Skills Fly +38, Perception +31</p><p>SQ Does not Eat, Does not Sleep</p><p>Languages Common, Enochian, and Ignan</p><p>SQ Rebirth</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "magicalBeast"
+      ],
+      "creatureSubtypes": [
+        "boss",
+        "extraplanar",
+        "primal",
+        "holy",
+        "fire"
+      ],
+      "size": "grg",
+      "senses": {
+        "dv": {
+          "value": 120
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 5,
+            "types": [],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "lightning"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "dark"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 10,
+            "types": [
+              "earth"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 5,
+            "types": [
+              "ice"
+            ],
+            "operator": true
+          },
+          {
+            "amount": 15,
+            "types": [
+              "wind"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "cres": "",
+      "di": [
+        "fire",
+        "light"
+      ],
+      "dv": [
+        "water"
+      ],
+      "ci": [
+        "Bind",
+        "blind",
+        "Burn",
+        "charmed",
+        "Confuse",
+        "paralyze",
+        "sleep",
+        "Slow",
+        "stun",
+        "Death",
+        "Doom"
+      ],
+      "languages": [
+        "Common",
+        "Enochian",
+        "Ignan"
+      ],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Magical Beast",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "2",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "magical-beast",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 21,
+        "hd": 10,
+        "hp": 462,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "high",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "low"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "NG",
+        "classSkills": {
+          "acr": true,
+          "clm": true,
+          "fly": true,
+          "per": true,
+          "ste": true,
+          "swm": true
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "magicalBeast"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Magical Beast",
+          "sourceHitPoints": 651,
+          "sourceHitDice": 21,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +21; CMB +31; CMD 51</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "1",
+            "target": "cmb",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +21; CMB +31; CMD 51",
+            "bab": 21,
+            "cmb": 31,
+            "cmd": 51
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Bite",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bite",
+            "img": "systems/ffd20/icons/items/inventory/monster-teeth.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "",
+              "manual": [],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Bite",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "8a81a6ae1158ffad",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bite",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 1,
+            "name": "Bite",
+            "ranged": false,
+            "attackBonus": 22,
+            "damage": "2d6+5 plus 1d8 fire damage",
+            "damageFormula": "2d6",
+            "printedDamageBonus": 5,
+            "damageType": "fire",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000002",
+      "name": "Talon x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Talon",
+            "img": "systems/ffd20/icons/items/inventory/monster-claws.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "-5",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": [
+                {
+                  "formula": "1d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Talon 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 0.5,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Talon",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "dadbc36210811bc1",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "talon",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Talon",
+            "ranged": false,
+            "attackBonus": 17,
+            "damage": "1d10+2 plus 1d8 fire damage",
+            "damageFormula": "1d10",
+            "printedDamageBonus": 2,
+            "damageType": "fire",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Ability Focus (Brand of Purgatory)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Ability Focus (Brand of Purgatory).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "ability-focus-brand-of-purgatory",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Ability Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Ability Focus (Brand of Purgatory)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Cleave",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Cleave.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "cleave",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Death from Above",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Death from Above.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "death-from-above",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance",
+          "verifiedReference": {
+            "pack": "pf-content-for-ffd20.pf-feats",
+            "id": "vu3bCWm5QLfFWrjn",
+            "name": "Death from Above",
+            "version": "11.4.0"
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Flyby Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Flyby Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "flyby-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Great Cleave",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Cleave.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-cleave",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000009",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000010",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Toughness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "toughness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000011",
+      "name": "Wind Stance",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Wind Stance.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "wind-stance",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000001",
+      "name": "Does not Eat",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Phoenix, the Immortal Bird does not eat.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-eat",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Eat",
+          "authoredLocally": true,
+          "review046Semantic": "phoenix-the-immortal-bird/Does Not Eat"
+        }
+      }
+    },
+    {
+      "_id": "sqfeat0000000002",
+      "name": "Does not Sleep",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Phoenix, the Immortal Bird does not sleep.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "does-not-sleep",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial",
+            "misc"
+          ],
+          "customFeature": true,
+          "sourceText": "Does not Sleep",
+          "authoredLocally": true,
+          "review046Semantic": "phoenix-the-immortal-bird/Does Not Sleep"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Aura of Warding",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Phoenix shines with a bright aura. Each ally within 120 feet of him gains a +4 morale bonus on saving throws against status effects.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Aura of Warding",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "value": 120,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "allies"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "+4 morale on saves against status effects only."
+              ],
+              "footer": []
+            },
+            "_id": "57eef693bc1f0a37",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "aura-of-warding",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 120,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Blackfire",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase I Only] Once during Phase I as an immediate action, Phoenix will drop black flames beneath 3 foes within 90 feet from him. On the following round the black flames will do 8d6 points of fire damage to the target, then doing 2d6 points of fire damage for 7 rounds after in a 15-ft.-radius at the place the target was standing at. This dispel the Whitefire debuff effect if the player takes 1 round of fire damage and it reduces that current Blackfire's spot duration by 1 round.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Blackfire",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 90,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "three foes"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Phase I only. Mark three locations; strike next round, then burn 7 rounds. Consuming Whitefire shortens that patch by one round."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "afa03128c3c1df6e",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Next round",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "8d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[Phase I Only] Once during Phase I as an immediate action, Phoenix will drop black flames beneath 3 foes within 90 feet from him. On the following round the black flames will do 8d6 points of fire damage to the target, then doing 2d6 points of fire damage for 7 rounds after in a 15-ft.-radius at the place the target was standing at. This dispel the Whitefire debuff effect if the player takes 1 round of fire damage and it reduces that current Blackfire's spot duration by 1 round."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "af47dbdec67937eb",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Lingering patch",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 15
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[Phase I Only] Once during Phase I as an immediate action, Phoenix will drop black flames beneath 3 foes within 90 feet from him. On the following round the black flames will do 8d6 points of fire damage to the target, then doing 2d6 points of fire damage for 7 rounds after in a 15-ft.-radius at the place the target was standing at. This dispel the Whitefire debuff effect if the player takes 1 round of fire damage and it reduces that current Blackfire's spot duration by 1 round."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "5b163f8e9d63289a",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blackfire",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "8d6",
+                "type": "fire",
+                "raw": "8d6 points of fire damage"
+              },
+              {
+                "formula": "2d6",
+                "type": "fire",
+                "raw": "2d6 points of fire damage"
+              },
+              {
+                "formula": "1",
+                "type": "round-of-fire",
+                "raw": "1 round of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 90,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "7",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Fire Aura",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Phoenix is surrounded by an aura of holy flame. Any creature within 60-ft. of Phoenix takes 1d6 points of damage (half fire/holy) per round. This damage increases by 1d6 points of damage per Phase upgrade. A creature that attacks Phoenix with natural or non-reach melee weapons takes 1d6 points of fire damage (no save) with each successful hit.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Phase 1",
+            "actionType": "other",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "creatures within 60 ft."
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Phoenix is surrounded by an aura of holy flame. Any creature within 60-ft. of Phoenix takes 1d6 points of damage (half fire/holy) per round. This damage increases by 1d6 points of damage per Phase upgrade. A creature that attacks Phoenix with natural or non-reach melee weapons takes 1d6 points of fire damage (no save) with each successful hit."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 60
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "2b01778ea2664879",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Phase 2",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "creatures within 60 ft."
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 60
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Phoenix is surrounded by an aura of holy flame. Any creature within 60-ft. of Phoenix takes 1d6 points of damage (half fire/holy) per round. This damage increases by 1d6 points of damage per Phase upgrade. A creature that attacks Phoenix with natural or non-reach melee weapons takes 1d6 points of fire damage (no save) with each successful hit."
+              ],
+              "footer": []
+            },
+            "_id": "3784b41758cb7cdf",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Phase 3",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "creatures within 60 ft."
+            },
+            "measureTemplate": {
+              "type": "circle",
+              "size": 60
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "3d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Phoenix is surrounded by an aura of holy flame. Any creature within 60-ft. of Phoenix takes 1d6 points of damage (half fire/holy) per round. This damage increases by 1d6 points of damage per Phase upgrade. A creature that attacks Phoenix with natural or non-reach melee weapons takes 1d6 points of fire damage (no save) with each successful hit."
+              ],
+              "footer": []
+            },
+            "_id": "617af1e97848e268",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Retaliation per hit",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Phoenix is surrounded by an aura of holy flame. Any creature within 60-ft. of Phoenix takes 1d6 points of damage (half fire/holy) per round. This damage increases by 1d6 points of damage per Phase upgrade. A creature that attacks Phoenix with natural or non-reach melee weapons takes 1d6 points of fire damage (no save) with each successful hit."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "001fcba7e6784e51",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "fire-aura",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "points-of",
+                "raw": "1d6 points of damage"
+              },
+              {
+                "formula": "1d6",
+                "type": "points-of",
+                "raw": "1d6 points of damage"
+              },
+              {
+                "formula": "1d6",
+                "type": "fire",
+                "raw": "1d6 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "fire",
+            "light"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Healing Flame",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Once every 1d2+1 rounds as a standard action, Phoenix manifests a scared flame beneath his foe up to 30 feet away, dealing 6d6 points of damage (half holy/fire) and heals himself for half the damage dealt. The target must make a successful Fortitude save (DC 27) to take half damage and Phoenix does not gain any hit points. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Healing Flame",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "6d6",
+                  "types": [
+                    "light",
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "fort",
+              "description": "Half damage and no self-healing. On failure heal half actual damage dealt."
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Once every 1d2+1 rounds as a standard action, Phoenix manifests a scared flame beneath his foe up to 30 feet away, dealing 6d6 points of damage (half holy/fire) and heals himself for half the damage dealt. The target must make a successful Fortitude save (DC 27) to take half damage and Phoenix does not gain any hit points. Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage and no self-healing. On failure heal half actual damage dealt.",
+            "_id": "2c7973de1e21fd09",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "healing-flame",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 27,
+                "raw": "Fortitude save (DC 27)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 27
+              }
+            ],
+            "damages": [
+              {
+                "formula": "6d6",
+                "type": "points-of",
+                "raw": "6d6 points of damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 4th level spell (Knowledge: Arcana DC 23).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2+1"
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "light",
+            "fire"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Rebirth",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Phoenix has a continual Reraise II status effect that lasts until he dies and cannot be dispel. He revives with 40% health but only once.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Rebirth",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Permanent undispellable Reraise II, once only: revive at 40% max HP."
+              ],
+              "footer": []
+            },
+            "_id": "a9e3a494428a2c37",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "rebirth",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Revelation",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Once every 1d2+1 as a swift action, Phoenix drops whirls of flame around his primary target doing 6d6 points of damage (half fire/holy) or a make a Reflex save (DC 27) for half damage. This always applies one debuff of Revelation which increases all damage taken from fire and holy sources by 1d6 damage and this debuff doesn't disappear until the Phoenix is defeated.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Revelation",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "6d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "ref",
+              "description": "Half; always add a stack of Revelation (+1d6 incoming fire/holy damage) until Phoenix falls."
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Once every 1d2+1 as a swift action, Phoenix drops whirls of flame around his primary target doing 6d6 points of damage (half fire/holy) or a make a Reflex save (DC 27) for half damage. This always applies one debuff of Revelation which increases all damage taken from fire and holy sources by 1d6 damage and this debuff doesn't disappear until the Phoenix is defeated.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half; always add a stack of Revelation (+1d6 incoming fire/holy damage) until Phoenix falls.",
+            "_id": "26d160eb6ec363fc",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Extra fire damage per stack",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Once every 1d2+1 as a swift action, Phoenix drops whirls of flame around his primary target doing 6d6 points of damage (half fire/holy) or a make a Reflex save (DC 27) for half damage. This always applies one debuff of Revelation which increases all damage taken from fire and holy sources by 1d6 damage and this debuff doesn't disappear until the Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "b87b6c7b8da1e58a",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Extra light damage per stack",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[phase i] Once every 1d2+1 as a swift action, Phoenix drops whirls of flame around his primary target doing 6d6 points of damage (half fire/holy) or a make a Reflex save (DC 27) for half damage. This always applies one debuff of Revelation which increases all damage taken from fire and holy sources by 1d6 damage and this debuff doesn't disappear until the Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "5b91df28594f501b",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "revelation",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 27,
+                "raw": "Reflex save (DC 27)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 27
+              }
+            ],
+            "damages": [
+              {
+                "formula": "6d6",
+                "type": "points-of",
+                "raw": "6d6 points of damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "ref",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2+1"
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "fire",
+            "light"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Summon Ruby",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[phase i] Once per phase as an immediate action, Phoenix summons 1d4+1 Rubies to help him fight.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Summon Ruby",
+            "actionType": "other",
+            "activation": {
+              "type": "immediate",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Summon [[1d4+1]] Rubies. Restore the use at each phase transition."
+              ],
+              "footer": []
+            },
+            "_id": "90d89d6f15581317",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "summon-ruby",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000008",
+      "name": "Whitefire",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase I Only] Once during Phase I after Blackfire has been used as a swift action, Phoenix will surround all his foes with white flames within 160 feet. Anyone with the whitefire debuff takes 3d6 points of holy damage per round unless they run into the Blackfire spot.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Whitefire",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 160,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "all foes"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Phase I after Blackfire. Inflict Whitefire until cleansed by a Blackfire patch."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "872747570d2ac7a9",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Per round",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "3d6",
+                  "types": [
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[Phase I Only] Once during Phase I after Blackfire has been used as a swift action, Phoenix will surround all his foes with white flames within 160 feet. Anyone with the whitefire debuff takes 3d6 points of holy damage per round unless they run into the Blackfire spot."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "9d293db2898f9da9",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "whitefire",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "3d6",
+                "type": "light",
+                "raw": "3d6 points of holy damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 160,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000009",
+      "name": "Bluefire",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase II+] Once during Phase II as an immediate action, Phoenix will drop a blue flame beneath a foe within 90 feet from him. This target takes 1d6 points of fire damage per round. This bluefire will not go away until Phoenix is defeated. A knowledge (arcane) check of 15 will tell anyone they need to intercept any redfire tethered players.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Bluefire",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 90,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Phase II: mark one foe until Phoenix falls. Intercept Redfire tethers to prevent impact."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "bf02c7a2747904fa",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Per round",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[Phase II+] Once during Phase II as an immediate action, Phoenix will drop a blue flame beneath a foe within 90 feet from him. This target takes 1d6 points of fire damage per round. This bluefire will not go away until Phoenix is defeated. A knowledge (arcane) check of 15 will tell anyone they need to intercept any redfire tethered players."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "bfc64198f6182de6",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "bluefire",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "1d6",
+                "type": "fire",
+                "raw": "1d6 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "immediate",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 90,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000010",
+      "name": "Brand of Purgatory",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Brand of Purgatory",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 90,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "type": "fort",
+              "description": "Half each round. Double the dice every round; moving adjacent to an ally transfers the Brand and resets it."
+            },
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half each round. Double the dice every round; moving adjacent to an ally transfers the Brand and resets it.",
+            "_id": "cbf4503e281a3703",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 2 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "5c007b62c12288df",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 4 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "4d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "afd664a550600976",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 8 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "8d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "3af8611d68cf2a6e",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 16 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "16d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "8405e935c6b5c918",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 32 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "32d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "19ef92a04fef59bb",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Tick: 64 dice",
+            "actionType": "save",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "64d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "fort",
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod + (2)",
+              "description": "Half damage"
+            },
+            "result": "Half damage",
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d4+1 rounds as a swift action, Phoenix releases a fiery curse upon one target within 90 feet of him. The target takes 2d6 points of damage (half fire/holy) with a Fortitude save (DC 29) for half damage per round. This damage will double per round: 2d6 → 4d6 → 8d6 → 16d6 and so forth. Unless the target completes their move action next to an ally (5 feet), transferring the Brand to another ally which resets the debuff damage back to 2d6 points of damage. This Brand will not go away until Phoenix is defeated."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "c1b814a0160c138f",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "brand-of-purgatory",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 29,
+                "raw": "Fortitude save (DC 29)",
+                "formula": "10 + max(1, floor(@attributes.hd.total / 2)) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-mismatch",
+                "base": 20,
+                "neededMod": 9,
+                "expectedDc": 27,
+                "observedDc": 29
+              }
+            ],
+            "damages": [
+              {
+                "formula": "2d6",
+                "type": "points-of",
+                "raw": "2d6 points of damage"
+              },
+              {
+                "formula": "2d6",
+                "type": "points-of",
+                "raw": "2d6 points of damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "",
+            "range": {
+              "value": 90,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "fire",
+            "light"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000011",
+      "name": "Flames of Unforgiveness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase II+] Once every 1d4+1 rounds as a standard action, Phoenix increases the flames of the branded target. The branded target takes 8d6 points of damage (half fire/holy) and increases the brand debuff by one damage step. So if it was at 2d6 points of damage, then the following round it does 8d6 points of damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Flames of Unforgiveness",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "branded foe"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "8d6",
+                  "types": [
+                    "fire",
+                    "light"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Advance Brand an extra damage step.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "ed4f6b0957521599",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "flames-of-unforgiveness",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "8d6",
+                "type": "points-of",
+                "raw": "8d6 points of damage"
+              },
+              {
+                "formula": "2d6",
+                "type": "points-of",
+                "raw": "2d6 points of damage"
+              },
+              {
+                "formula": "8d6",
+                "type": "points-of",
+                "raw": "8d6 points of damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "fire",
+            "light"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000012",
+      "name": "Flames of Rebirth",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Begins Phase II] Once below 60% health [529 hp] as a standard action, Phoenix flashes brightly and a bright pulse expands from its body, drifting over itself and allies within 60 feet. Phoenix and his allies are healed for 12d6 points of damage and he only gains 10 fast healing until the end of the fight. It also revives all nearby allies to 25% of their max hit point.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Flames of Rebirth",
+            "actionType": "heal",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "self and allies"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "12d6",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Begin Phase II at 60%. Revive nearby fallen allies at 25% HP; Phoenix gains fast healing 10 for the fight."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 60
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "healing": {
+              "type": "healing"
+            },
+            "_id": "06814af3831897f1",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "flames-of-rebirth",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "12d6",
+                "type": "points-of",
+                "raw": "12d6 points of damage"
+              }
+            ],
+            "healing": [
+              {
+                "formula": "12d6",
+                "raw": "healed for 12d6 points of damage"
+              }
+            ],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000013",
+      "name": "Megaflash",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase II+] Once every 1d3+1 rounds, Phoenix causes all nearby creatures to burst into flames. All creatures within 30 feet from him take 12d6 points of fire damage and must make a Fortitude save (DC 27) or be inflicted with Blind status for 1d6 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Megaflash",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "12d6",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+              "type": "fort",
+              "description": "Negates Blind for [[1d6]] rounds only, not damage."
+            },
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every 1d3+1 rounds, Phoenix causes all nearby creatures to burst into flames. All creatures within 30 feet from him take 12d6 points of fire damage and must make a Fortitude save (DC 27) or be inflicted with Blind status for 1d6 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates Blind for [[1d6]] rounds only, not damage.",
+            "_id": "3cc5c1e89e31047e",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "megaflash",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 27,
+                "raw": "Fortitude save (DC 27)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.wis.mod",
+                "ability": "wis",
+                "confidence": "default-su-wis-floor",
+                "base": 20,
+                "expectedDc": 27
+              }
+            ],
+            "damages": [
+              {
+                "formula": "12d6",
+                "type": "fire",
+                "raw": "12d6 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Arcana DC 27).",
+            "range": {
+              "value": 30,
+              "units": "ft"
+            },
+            "target": {
+              "value": "all creatures"
+            },
+            "duration": {
+              "duration": "1d6",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d3+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000014",
+      "name": "Redfire",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Phase II+] Once every other round as a swift action after Bluefire is cast, Phoenix will summon a medium fireball (5-ft.-radius) within 15 feet away but tethered to a target. This fireball moves with the target and anyone who runs into the tethered (between the fireball and target) triggers its effect. After 3 rounds, the fireball collides with its target doing 12d8 points of fire damage unless the person with the bluefire runs into their tether point.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Redfire",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 15,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "After Bluefire, create a tethered 5-ft. radius fireball. Resolve impact after three rounds or on interception; Bluefire safely intercepts.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[2]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "5e157bce0a4ba390",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Impact",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "12d8",
+                  "types": [
+                    "fire"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "[Phase II+] Once every other round as a swift action after Bluefire is cast, Phoenix will summon a medium fireball (5-ft.-radius) within 15 feet away but tethered to a target. This fireball moves with the target and anyone who runs into the tethered (between the fireball and target) triggers its effect. After 3 rounds, the fireball collides with its target doing 12d8 points of fire damage unless the person with the bluefire runs into their tether point."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "efb266b6fa780108",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "1",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "redfire",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "12d8",
+                "type": "fire",
+                "raw": "12d8 points of fire damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": 15,
+              "units": "ft"
+            },
+            "target": {
+              "value": "one target"
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "2"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000015",
+      "name": "Holy Flames",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>[Begins Phase III] Once below 40% health [352 hp] as a full-round action, Phoenix explodes in a fiery divine nova, dealing 15d8 points of damage (half holy, half fire) in a 50-ft.-radius around himself. Creatures within the area of effect must make a Reflex save (DC 28) for half damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Holy Flames",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 50,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "15d8",
+                  "types": [
+                    "light",
+                    "fire"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+              "type": "ref",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "Begin Phase III below 40% HP."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 50
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage",
+            "_id": "449f817c152eb764",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "maxFormula": "1",
+          "per": "charges",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "holy-flames",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 28,
+                "raw": "Reflex save (DC 28)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.con.mod",
+                "ability": "con",
+                "confidence": "derived-preferred-floor",
+                "base": 20,
+                "neededMod": 8,
+                "candidates": [
+                  "con:floor",
+                  "con:minimum-one"
+                ],
+                "expectedDc": 28
+              }
+            ],
+            "damages": [
+              {
+                "formula": "15d8",
+                "type": "points-of",
+                "raw": "15d8 points of damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "full-round",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "ref",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              },
+              "dex": {
+                "value": 30,
+                "mod": 10,
+                "missing": false,
+                "raw": "30"
+              },
+              "con": {
+                "value": 26,
+                "mod": 8,
+                "missing": false,
+                "raw": "26"
+              },
+              "int": {
+                "value": 10,
+                "mod": 0,
+                "missing": false,
+                "raw": "10"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 20,
+                "mod": 5,
+                "missing": false,
+                "raw": "20"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1"
+          }
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "light",
+            "fire"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "55dcf287a6ed1caf",
+      "name": "Flames of Rebirth: fast healing",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per round after entering Phase II, Phoenix only.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Flames of Rebirth: fast healing",
+            "actionType": "heal",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "10",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "healing": {
+              "type": "healing"
+            },
+            "notes": {
+              "effect": [
+                "Once per round after entering Phase II, Phoenix only."
+              ],
+              "footer": []
+            },
+            "_id": "202eccad2c1f3b5d",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "flames-of-rebirth-fast-healing",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Flames of Rebirth: fast healing",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "phoenix-the-immortal-bird/Flames of Rebirth: fast healing"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Phoenix, the Immortal Bird",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/phoenix-the-immortal-bird.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 4,
+    "width": 4
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/primal-family/phoenix-the-immortal-bird/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/phoenix-1.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/phoenix-the-immortal-bird.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/phoenix-1.png",
+      "parsed": {
+        "alignment": "NG",
+        "initiative": 14,
+        "size": "Gargantuan",
+        "cr": "15",
+        "creatureType": "Magical Beast",
+        "subtypes": [
+          "Boss",
+          "Extraplanar",
+          "Primal",
+          "Holy",
+          "Fire"
+        ],
+        "xp": 51200,
+        "aura": "Aura of Warding (120-ft.), Fire Aura (60-ft., 1d6 half fire/holy damage) [2d6 half fire/holy damage, phase II] {3d6 half fire/holy damage, phase III}",
+        "perception": 31,
+        "offense": {
+          "raw": [
+            "Speed 40 ft., Fly 120 ft. (Perfect)",
+            "Melee Bite +22 (2d6+5 plus 1d8 fire damage), 2 Talons +17 (1d10+2 plus 1d8 fire damage)",
+            "Space 20 ft.; Reach 20 ft.",
+            "Special Attacks Blackfire, Bluefire, Flames of Unforgiveness, Healing Flame, Megaflash, Redfire, Revelation, Whitefire",
+            "Special Abilities Flames of Rebirth, Summon Ruby"
+          ],
+          "speed": "40 ft., Fly 120 ft. (Perfect)",
+          "melee": "Bite +22 (2d6+5 plus 1d8 fire damage), 2 Talons +17 (1d10+2 plus 1d8 fire damage)",
+          "ranged": "",
+          "space": "Space 20 ft.; Reach 20 ft.",
+          "specialAttacks": "Blackfire, Bluefire, Flames of Unforgiveness, Healing Flame, Megaflash, Redfire, Revelation, Whitefire",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 29, touch 17; flat-footed 18 (-4 size, +10 dex, +1 dodge, +12 natural)",
+            "Hp 651 [882] (21d12+189)",
+            "Fort +20, Ref +22, Will +19",
+            "DR 5/-;",
+            "Immune Bind, Blind, Burn, Charm, Confuse, Fire, Holy, Paralyze, Sleep, Slow, Stun, Death, Doom;",
+            "Resist Lightning 10, Dark 5, Earth 10, Ice 5, Wind 15;",
+            "SR 30",
+            "Weakness Water"
+          ],
+          "ac": "AC 29, touch 17; flat-footed 18 (-4 size, +10 dex, +1 dodge, +12 natural)",
+          "hp": "Hp 651 [882] (21d12+189)",
+          "hitPoints": 651,
+          "hitDice": 21,
+          "saves": "Fort +20, Ref +22, Will +19",
+          "defensiveAbilities": "",
+          "dr": "5/-;",
+          "immunities": "Bind, Blind, Burn, Charm, Confuse, Fire, Holy, Paralyze, Sleep, Slow, Stun, Death, Doom;",
+          "resistances": "Lightning 10, Dark 5, Earth 10, Ice 5, Wind 15;",
+          "weaknesses": "Water",
+          "sr": 30
+        },
+        "statistics": [
+          "Str 20, Dex 30, Con 26, Int 10, Wis 24, Cha 20",
+          "Base Atk +21; CMB +31; CMD 51",
+          "Feats Ability Focus (Brand of Purgatory), Cleave, Combat Reflexes, Death from Above, Dodge, Flyby Attack, Great Cleave, Improved Initiative, Power Attack, Toughness, Wind Stance",
+          "Skills Fly +38, Perception +31",
+          "SQ Does not Eat, Does not Sleep",
+          "Languages Common, Enochian, and Ignan",
+          "SQ Rebirth"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "Primal Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "phoenix-the-immortal-bird",
+      "review046": "phoenix-the-immortal-bird",
+      "review049": "phoenix-the-immortal-bird"
+    },
+    "ffd20-expanded-bestiary": {}
+  }
+}

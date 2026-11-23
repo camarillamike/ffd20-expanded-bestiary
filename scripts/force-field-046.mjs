@@ -6,10 +6,17 @@ function inertial(a){
  if(!["pneumaflayer","cie-th-ispusteke"].includes(a?.flags?.["ffd20-bestiary-builder"]?.review046))return;
  return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&[30,60].includes(i.flags?.[scope]?.inertialCapacity046));
 }
-const limits=a=>({ganymede:[85,13],io:[90,18],"pluto-armor":[100,20]})[a?.flags?.["ffd20-bestiary-builder"]?.review046];
+const fieldKeys={ganymede:[85,13],io:[90,18],"pluto-armor":[100,20],"killing-machine":[100,20],deathmask:[240,24]};
+const limits=a=>{
+ const key=a?.flags?.["ffd20-bestiary-builder"]?.review046;
+ if(key==="deathmask"&&a.system?.attributes?.hd?.total>0)return [10*a.system.attributes.hd.total,24];
+ return fieldKeys[key];
+};
 function field(a){
  const cap=limits(a)?.[0];if(!cap)return;
- return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&i.system.tag==="force-field"&&Number(i.system.uses?.maxFormula)===cap);
+ const extreme=a.flags["ffd20-bestiary-builder"].review046==="deathmask";
+ return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&i.system.tag===(extreme?"extreme-force-field":"force-field")&&
+   (extreme?i.system.uses?.maxFormula==="10 * @attributes.hd.total":Number(i.system.uses?.maxFormula)===cap));
 }
 function snapshot(a,i){
  const [cap,rate]=limits(a);const existing=Number(i.system.uses.value),last=i.getFlag(scope,clock)??{},now=game.time.worldTime;

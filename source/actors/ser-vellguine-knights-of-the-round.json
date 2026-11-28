@@ -1538,11 +1538,25 @@
             "attackBonus": "0",
             "touch": false,
             "damage": {
-              "critParts": [],
-              "nonCritParts": [],
+              "critParts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
+              "nonCritParts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
               "parts": [
                 {
-                  "formula": "4 * (1d8 + floor(@abilities.str.mod * 1) + (-3))",
+                  "formula": "max(1,4 - 3 * @critCount) * (1d8 + floor(@abilities.str.mod * 1) + (-3))",
                   "types": [
                     "piercing"
                   ]
@@ -1570,8 +1584,8 @@
               "attack": "str",
               "damage": "",
               "damageMult": 0,
-              "critRange": 20,
-              "critMult": 2
+              "critRange": 19,
+              "critMult": 3
             },
             "_id": "3ffa5f7e0bfd1719",
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
@@ -1730,7 +1744,14 @@
             "attackBonus": "-3",
             "touch": false,
             "damage": {
-              "critParts": [],
+              "critParts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ],
               "nonCritParts": [
                 {
                   "formula": "1d6",
@@ -1775,8 +1796,8 @@
               "attack": "str",
               "damage": "",
               "damageMult": 0,
-              "critRange": 20,
-              "critMult": 2
+              "critRange": 19,
+              "critMult": 3
             },
             "extraAttacks": {
               "type": "custom",
@@ -2325,7 +2346,7 @@
               ],
               "critParts": [
                 {
-                  "formula": "2d10",
+                  "formula": "1d10",
                   "types": [
                     "water"
                   ]

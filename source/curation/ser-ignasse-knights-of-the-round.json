@@ -1156,7 +1156,7 @@
               },
               "damage": [
                 {
-                  "formula": "4 * (1d8 + floor(@abilities.str.mod * 1) + (2))",
+                  "formula": "max(1,4 - 3 * @critCount) * (1d8 + floor(@abilities.str.mod * 1) + (2))",
                   "types": [
                     "piercing"
                   ]
@@ -1293,5 +1293,10 @@
     "liveFoundry": false,
     "checks": 80,
     "nativeCheckpoint": "051-45"
+  },
+  "releaseFixes": {
+    "0.1.52": [
+      "Burst"
+    ]
   }
 }

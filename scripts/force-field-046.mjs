@@ -18,7 +18,8 @@ const limits=a=>{
 function field(a){
  const cap=limits(a)?.[0];if(!cap)return;
  const extreme=a.flags["ffd20-bestiary-builder"].review046==="deathmask";
- return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&i.system.tag===(extreme?"extreme-force-field":"force-field")&&
+ const tags=extreme?["extreme-force-field","extremeforcefield"]:["force-field","forcefield"];
+ return [...a.items].find(i=>i.type==="feat"&&!i.system.disabled&&tags.includes(i.system.tag)&&
    (extreme?i.system.uses?.maxFormula==="10 * @attributes.hd.total":Number(i.system.uses?.maxFormula)===cap));
 }
 function snapshot(a,i){

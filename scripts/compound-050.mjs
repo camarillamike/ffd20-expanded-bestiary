@@ -15,6 +15,8 @@ function activeBuff(actor,semantic,pool=false){
 function profile(actor){
  const key=actor?.flags?.[scope]?.review050;
  if(key==="neo-exdeath"){
+  const label=actor.system.traits.dr.custom?.split(/[;,]/).map(s=>s.trim()).find(s=>/^(10|15|20)\/epic and good and chaotic$/.test(s));
+  if(label){const base=Number.parseInt(label);return {key,amount:base,groups:neo,base,custom052:true};}
   // Preserve the form's authored amount even when a GM renames the token/actor.
   const entry=actor.system.traits.dr.value.find(r=>[10,15,20].includes(r.amount)&&r.operator===false&&
    r.types.length===3&&neo.every(([t])=>r.types.includes(t)));
@@ -27,13 +29,14 @@ function profile(actor){
  const shield=key==="cie-th-raktavija"&&activeBuff(actor,key+"/Inertial Barrier III: shield",true);
  return {key,base,amount:might?15:base,groups:might||shield?null:groups};
 }
-function authored(row,{key,base}){
+function authored(row,{key,base,custom052}){
  const ids=row.typeIds;
  if(key==="cie-th-yomi"){
   if(row.custom)return row.type0?.name==="Nonstacking: bypass with good + magic + either material.";
   return row.amount===base&&row.operator===true&&aligned.some(g=>g.length===ids.size&&g.every(id=>ids.has(id)));
  }
  if(row.amount!==base)return false;
+ if(custom052)return row.custom&&row.type0?.name==="epic and good and chaotic";
  if(key==="neo-exdeath")return !row.custom&&row.operator===false&&ids.has("epic")&&ids.has("good")&&
   [...ids].every(id=>neo.some(([t])=>t===id));
  const label=key==="cie-th-malebrache"?"adamantine and epic and good or crystal and epic and good":
@@ -41,12 +44,14 @@ function authored(row,{key,base}){
  return row.custom&&row.type0?.name===label;
 }
 function applies(calc,part,groups){
- if(calc.isHealing||calc.damageOptions?.asManaDamage)return false;
+ if(calc.isHealing||calc.asManaDamage||calc.damageOptions?.asManaDamage)return false;
  if(!groups)return true; // Replacement DR /-.
  const types=new Set([...(calc.materials??[]),...(part.typeIds??part.types??[])]);
  if(calc.isMagic)types.add("magic");
  return !groups.every(g=>g.some(t=>types.has(t)));
 }
+const physical=i=>i.standard?i.standard.some(t=>t.isPhysical):i.isPhysical!==false;
+function enabled(calc,p){return calc.hasPhysical&&calc.instances.some(i=>physical(i)&&applies(calc,i,p.groups));}
 export function installCompound050(proto){
  if(!proto||proto[installed])return false;
  const {getResistances,_isReducedBy,_processReductions}=proto;
@@ -56,14 +61,14 @@ export function installCompound050(proto){
   if(!p||!rows.some(r=>authored(r,p)))return rows;
   const types=p.groups?.flat()??[],label=p.groups?.map(g=>g.length===1?g[0]:"("+g.join(" or ")+")").join(" and ")??"-";
   for(const t of types)this.resistanceIds.add(t);
-  const active=this.hasPhysical&&this.instances.some(i=>applies(this,i,p.groups)&&
-   (i.standard?i.standard.some(t=>t.isPhysical):i.isPhysical!==false));
+  const active=enabled(this,p);
   return [...rows.filter(r=>!authored(r,p)),{[marker]:p,amount:p.amount,value:p.amount,label:p.amount+"/"+label,
    types,typeIds:new Set(types),isDR:true,isER:false,visible:true,active,disabled:!active,hasGeneric:!p.groups,operator:false}];
  };
  proto._isReducedBy=function(target,i,row,dr){
   if(!dr||!row[marker])return _isReducedBy.call(this,target,i,row,dr);
-  return i.isPhysical&&!i.isEnergy&&applies(this,i,row[marker].groups);
+  const p=row[marker];
+  return i.isPhysical&&(p.key==="neo-exdeath"||!i.isEnergy)&&applies(this,i,p.groups);
  };
  proto._processReductions=function(target,parts,rows,dr){
   if(!dr||rows.length<2||!rows.some(r=>r[marker]))return _processReductions.call(this,target,parts,rows,dr);

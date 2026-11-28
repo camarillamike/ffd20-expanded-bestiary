@@ -50,8 +50,9 @@ function serial(actor,fn){
  return next.finally(()=>{if(pending.get(actor)===next)pending.delete(actor);});
 }
 function machineField(a){
- const items=Array.from(a?.items??[]);
- const normal=items.find(i=>i.type==="feat"&&i.system.tag==="force-field"&&!i.system.disabled&&marked(i,"machineField051")==="normal");
+ const items=a?.items;if(!items)return;
+ // FFd20 sanitizes item tags on sheet updates; the owned module flag is stable.
+ const normal=items.find(i=>i.type==="feat"&&!i.system.disabled&&marked(i,"machineField051")==="normal");
  if(!normal)return;
  return items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&marked(i,"machineField051")==="barrier")??normal;
 }

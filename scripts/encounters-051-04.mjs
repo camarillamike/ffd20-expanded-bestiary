@@ -65,7 +65,7 @@ if(globalThis.Hooks){
  Hooks.on("pf1PostActionUse",settleGroup4);
 }
 const ark="ark-the-aerodynamic-destiny",shieldName="Plasma Shield: active",clock="plasmaClock051",receipt=Symbol("arkShield"),queue=new WeakMap();
-const pool=a=>key(a)===ark&&a.items.find(i=>i.type==="feat"&&i.system.tag==="plasma-shield"&&!i.system.disabled);
+const pool=a=>key(a)===ark&&a.items.find(i=>i.type==="feat"&&["plasma-shield","plasmashield"].includes(i.system.tag)&&!i.system.disabled);
 function serial(a,fn){
  const p=(queue.get(a)??Promise.resolve()).catch(()=>{}).then(fn);queue.set(a,p);
  return p.finally(()=>{if(queue.get(a)===p)queue.delete(a);});

@@ -7,6 +7,6 @@
 
 ## Release testing
 
-The [v0.1.51 smoke-test checklist](051-release-qa.md) gives the expected results for fresh Foundry imports. The [offline validation report](051-final-pack-validation.json) records which packs and actors were checked before release.
+The [v0.1.52 smoke-test checklist](052-release-qa.md) gives the expected results for fresh Foundry imports. The [offline validation report](052-final-pack-validation.json) records which packs and actors were checked before release.
 
 Earlier [batch review notes](development/batch-reviews/) and the [elemental bomb artwork brief](development/elemental-bomb-art.md) are available for maintainers.

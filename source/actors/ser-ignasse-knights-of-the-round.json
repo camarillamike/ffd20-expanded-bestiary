@@ -1991,11 +1991,25 @@
             "attackBonus": "-1",
             "touch": false,
             "damage": {
-              "critParts": [],
-              "nonCritParts": [],
+              "critParts": [
+                {
+                  "formula": "1d10",
+                  "types": [
+                    "earth"
+                  ]
+                }
+              ],
+              "nonCritParts": [
+                {
+                  "formula": "1d6",
+                  "types": [
+                    "earth"
+                  ]
+                }
+              ],
               "parts": [
                 {
-                  "formula": "4 * (1d8 + floor(@abilities.str.mod * 1) + (2))",
+                  "formula": "max(1,4 - 3 * @critCount) * (1d8 + floor(@abilities.str.mod * 1) + (2))",
                   "types": [
                     "piercing"
                   ]
@@ -2023,8 +2037,8 @@
               "attack": "str",
               "damage": "",
               "damageMult": 0,
-              "critRange": 20,
-              "critMult": 2
+              "critRange": 19,
+              "critMult": 3
             },
             "_id": "b56907636a32e0bf",
             "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
@@ -2260,7 +2274,7 @@
               ],
               "critParts": [
                 {
-                  "formula": "2d10",
+                  "formula": "1d10",
                   "types": [
                     "earth"
                   ]

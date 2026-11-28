@@ -1,6 +1,6 @@
 # FF D20 Expanded Bestiary
 
-Ready-to-play creatures for Final Fantasy d20 in Foundry VTT 13. [Version 1.0.0](https://github.com/camarillamike/ffd20-expanded-bestiary/releases/tag/v1.0.0) contains 1,052 actors from 944 bestiary entries, including variants and companions. The 15 compendium packs are organized by creature type.
+Bring the Final Fantasy d20 bestiary to Foundry VTT 13. [Version 1.0.0](https://github.com/camarillamike/ffd20-expanded-bestiary/releases/tag/v1.0.0) includes **1,052 actors** from 944 bestiary entries, organized into [15 compendiums](packs/README.md). Drag a creature onto your scene to use its attacks, spells, and abilities.
 
 ## Install
 
@@ -14,4 +14,4 @@ https://raw.githubusercontent.com/camarillamike/ffd20-expanded-bestiary/main/mod
 
 **Already installed?** Update from **Add-on Modules** in Setup. Updates replace the compendium entries, not actors you have already imported into a world. Import a fresh copy to use a revised statblock without overwriting your own edits.
 
-[Release notes](https://github.com/camarillamike/ffd20-expanded-bestiary/releases) | [Bestiary coverage](docs/expansion-progress.json) | [Credits & sources](docs/credits.md) | [Testing & documentation](docs/README.md)
+[GM guide](docs/README.md) | [Release notes](https://github.com/camarillamike/ffd20-expanded-bestiary/releases) | [Credits & sources](docs/credits.md)

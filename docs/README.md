@@ -1,12 +1,12 @@
-# Bestiary documentation
+# GM guide
 
-- [Install or update the module](../README.md#install)
-- [Bestiary coverage](expansion-progress.json): the running list of source entries, variants, and companions.
-- [Credits & sources](credits.md): rules, artwork, development methods, and upstream notices.
-- [Round-based recharge](round-recharge.md): how tracked abilities recover their uses.
+[Install or update the bestiary](../README.md#install), then open **Compendium Packs > FFD20 Expanded Bestiary** in your FFd20 world.
 
-## Release testing
+| At the table | Where to look |
+| --- | --- |
+| Find a creature | Browse the [compendium directory](../packs/README.md) by creature type, or find its name in the [actor index](../source/actors.json). |
+| Make an elemental Bomb | Use [Create Bomb Form](../variants/README.md) on the original actor's sheet. |
+| Track a recharge | Use the ability from the placed token's sheet. See [round-based recharge](round-recharge.md) to configure your own. |
+| Check an adaptation | Follow the [creature's source record](../source/README.md) to its statblock. |
 
-See the [v1.0.0 release and update check](1.0.0-release.md). The gameplay content is unchanged from v0.1.52; its [smoke-test checklist](052-release-qa.md) and [pack validation report](052-final-pack-validation.json) remain applicable.
-
-Earlier [batch review notes](development/batch-reviews/) and the [elemental bomb artwork brief](development/elemental-bomb-art.md) are available for maintainers.
+[Credits & sources](credits.md) | [Maintainer documentation](development/README.md)

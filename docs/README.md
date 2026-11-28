@@ -7,6 +7,6 @@
 
 ## Release testing
 
-The [v0.1.52 smoke-test checklist](052-release-qa.md) gives the expected results for fresh Foundry imports. The [offline validation report](052-final-pack-validation.json) records which packs and actors were checked before release.
+See the [v1.0.0 release and update check](1.0.0-release.md). The gameplay content is unchanged from v0.1.52; its [smoke-test checklist](052-release-qa.md) and [pack validation report](052-final-pack-validation.json) remain applicable.
 
 Earlier [batch review notes](development/batch-reviews/) and the [elemental bomb artwork brief](development/elemental-bomb-art.md) are available for maintainers.

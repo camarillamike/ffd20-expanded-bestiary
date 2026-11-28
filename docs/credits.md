@@ -4,7 +4,7 @@ The creature statblocks and rules are adapted from the [Final Fantasy d20 Bestia
 
 ## Artwork
 
-Portraits and tokens include illustrations from the source bestiary and content packs, as well as AI-generated illustrations for creatures without suitable art and AI-assisted variants of existing portraits. For example, the seven Mooglesguard portraits were AI-generated; they are not official Final Fantasy artwork. The [art records](art-046.json) and [elemental bomb art notes](bomb-art.md) document examples of the different sources and methods.
+Portraits and tokens include illustrations from the source bestiary and content packs, as well as AI-generated illustrations for creatures without suitable art and AI-assisted variants of existing portraits. For example, the seven Mooglesguard portraits were AI-generated; they are not official Final Fantasy artwork. See the [elemental Bomb portraits](bomb-art.md) for examples, or the [individual artwork records](development/archive/art-046.json) for more attribution details.
 
 ## Development
 

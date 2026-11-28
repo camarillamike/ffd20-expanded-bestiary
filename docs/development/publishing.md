@@ -1,5 +1,7 @@
 # Publishing a release
 
+Keep the top level of `docs/` for GM guides, credits, and current release notes. Put QA reports and superseded checklists in [the development archive](archive/README.md). When copying documentation from a release ZIP, preserve this repository layout and check links from the [GM guide](../README.md).
+
 The archived `v0.*` tags are local backups. Never use `git push --tags`, `--follow-tags`, or `--mirror` for a release. Use `--no-follow-tags` even when pushing a single ref: a maintainer may have `push.followTags=true` in their Git configuration.
 
 1. From the publishing checkout on `main`, confirm that `HEAD` is the committed release you validated, the working tree is clean, and the manifest points to the new version's ZIP. Run this PowerShell preflight and preview:

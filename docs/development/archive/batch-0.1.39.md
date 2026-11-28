@@ -2,7 +2,7 @@
 
 Five groups of ten new catalog pages were reviewed against the November 19 catalog refresh. Counts refer to source URLs, not the number of actor documents: the 99 covered entries yield 107 actors with the earlier bonded companion and seven additional Flan forms. The canonical Small Flan is Fire. Each of the eight forms has its own defenses, slam damage and one learned spell.
 
-The URL-keyed ledger is in `expansion-progress.json`. The per-actor import run, including which installed pack supplied each lookup, is in `import-039.json`. The check uses real item documents from copies of the local FFD20 system and FFD20 Content packs. It runs the packaged importer with a simulated Foundry host, not a live server; actor preparation, token rendering, dice dialogs, shared resources and chat-card clicks still merit live testing.
+See the [URL-keyed coverage ledger](../expansion-progress.json). The per-actor import run, including which installed pack supplied each lookup, is in [the import report](import-039.json). The check uses real item documents from copies of the local FFD20 system and FFD20 Content packs. It runs the packaged importer with a simulated Foundry host, not a live server; actor preparation, token rendering, dice dialogs, shared resources and chat-card clicks still merit live testing.
 
 ## Rulings and limitations
 

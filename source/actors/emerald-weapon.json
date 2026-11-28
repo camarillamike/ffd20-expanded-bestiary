@@ -1,0 +1,4218 @@
+{
+  "name": "Emerald Weapon",
+  "type": "npc",
+  "img": "modules/ffd20-expanded-bestiary/assets/creatures/emerald-weapon.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 50,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": null,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 12,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 24,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 28,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "",
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "naturalAC": 38,
+      "hp": {
+        "temp": 0,
+        "offset": 0
+      },
+      "mp": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "recover": 0,
+        "offset": 0
+      },
+      "hd": {
+        "total": 37
+      },
+      "savingThrows": {
+        "fort": {
+          "base": 11,
+          "ability": ""
+        },
+        "ref": {
+          "base": 2,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 2,
+          "ability": "wis"
+        }
+      },
+      "speed": {
+        "land": {
+          "base": 20
+        },
+        "climb": {
+          "base": 0
+        },
+        "swim": {
+          "base": 80
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 120,
+          "maneuverability": "clumsy"
+        }
+      },
+      "sr": {
+        "formula": "37"
+      },
+      "acNotes": "",
+      "cmdNotes": ""
+    },
+    "skills": {
+      "fly": {
+        "ability": "dex",
+        "rank": 37
+      },
+      "per": {
+        "ability": "wis",
+        "rank": 32
+      }
+    },
+    "details": {
+      "alignment": "tn",
+      "xp": {
+        "value": 614400
+      },
+      "cr": {
+        "base": 22
+      },
+      "biography": {
+        "value": "<h2>Description</h2><p>This giant green construct is one of seven Weapons that the planet has produced and dispatched to cleanse any threats to its continued existence. Emerald Weapon is accompanied by 4 floating Emerald Eye constructs.</p><h2>Defense</h2><p>AC 43, touch 5; flat-footed (+38 natural armor, +3 dex, -8 size)</p><p>hp 1720 [2331] (37d12+333); fast healing 20;</p><p>Fort +33, Ref +27, Will +29</p><p>Absorb Ice, Water; DR 15/-; Immune Construct traits, Status effects, Earth; SR 37</p><p>Weakness Lightning</p><h2>Offense</h2><p>Speed 20 ft., Swim 80 ft., Fly 120 ft. (clumsy)</p><p>Melee 2 Slams +50 (4d8+20)</p><p>Space 30 ft.; Reach 30 ft.</p><p>Special Abilities Eye Reconstruction</p><p>Special Attacks Air Tam Storm, Emerald Beam, Emerald Blast, Emerald Big Bang, Grand Stomp, Revenge Stamp</p><p>Burst Mode Emerald Drive, Hydraulics</p><h2>Statistics</h2><p>Str 50, Dex 16, Con -, Int 12, Wis 24, Cha 28</p><p>Base Atk +37; CMB +65; CMD 78</p><p>Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)</p><p>Skills Fly +40, Perception +41</p><p>SQ Living-like</p>"
+      }
+    },
+    "traits": {
+      "creatureTypes": [
+        "construct"
+      ],
+      "creatureSubtypes": [
+        "super boss"
+      ],
+      "size": "col",
+      "senses": {
+        "dv": {
+          "value": 120
+        },
+        "ts": {
+          "value": 60
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": true,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 0
+        },
+        "si": true,
+        "sc": {
+          "value": 0
+        },
+        "custom": "superior optics"
+      },
+      "dr": {
+        "value": [
+          {
+            "amount": 15,
+            "types": [],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "Absorb ice, water; restore actual absorbed damage.",
+      "di": [
+        "nonlethal",
+        "earth"
+      ],
+      "dv": [
+        "lightning"
+      ],
+      "ci": [
+        "charmed",
+        "mindAffecting",
+        "moraleEffects",
+        "disease",
+        "deathEffects",
+        "paralyze",
+        "poison",
+        "sleep",
+        "stun",
+        "fatigue",
+        "exhausted",
+        "energyDrain",
+        "compulsion effects",
+        "patterns",
+        "phantasms",
+        "necromancy effects",
+        "ability damage",
+        "ability drain",
+        "Fortitude-save effects unless they affect objects or are harmless",
+        "massive damage",
+        "raising and resurrection",
+        "Status effects"
+      ],
+      "languages": [],
+      "stature": "tall"
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "racialhd00000001",
+      "name": "Construct",
+      "type": "class",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated racial hit dice from the source statblock.</p>",
+          "instructions": ""
+        },
+        "changes": [
+          {
+            "formula": "16",
+            "target": "skill.fly",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Published fly total adjustment"
+          },
+          {
+            "formula": "@abilities.cha.mod * @attributes.hd.total",
+            "target": "mhp",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "Living-like: Charisma per HD, not construct size HP."
+          },
+          {
+            "formula": "-1",
+            "target": "ac",
+            "type": "dodge",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "The printed defenses exclude the Dodge feat."
+          },
+          {
+            "formula": "-2",
+            "target": "skill.per",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0,
+            "flavor": "The printed total already includes high-rank Alertness."
+          }
+        ],
+        "contextNotes": [],
+        "links": {
+          "classAssociations": []
+        },
+        "tag": "construct",
+        "subType": "racial",
+        "classSubType": "racial",
+        "parentClass": "",
+        "level": 37,
+        "hd": 12,
+        "hp": 1387,
+        "classCastingStat": "noncaster",
+        "classBaseMPTypes": "noncaster",
+        "classBaseMPauto": "yes",
+        "mp": 0,
+        "bab": "med",
+        "skillsPerLevel": 2,
+        "savingThrows": {
+          "fort": {
+            "value": "high"
+          },
+          "ref": {
+            "value": "high"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "N",
+        "classSkills": {},
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "creatureTypes": [
+          "construct"
+        ]
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedRacialHitDice": true,
+          "profile": "Construct",
+          "sourceHitPoints": 1720,
+          "sourceHitDice": 37,
+          "spellcasting": null
+        }
+      }
+    },
+    {
+      "_id": "srcstatadjust001",
+      "name": "Source Statblock Adjustments",
+      "type": "buff",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Residual BAB, CMB, and CMD adjustments needed to reproduce the published statblock while retaining Foundry's derived formulas.</p><p>Base Atk +37; CMB +65; CMD 78</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "10",
+            "target": "bab",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "-1",
+            "target": "cmd",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "tag": "source-statblock-adjustments",
+        "subType": "perm",
+        "active": true,
+        "level": 0,
+        "duration": {
+          "value": null,
+          "units": "",
+          "end": ""
+        },
+        "conditions": [],
+        "hideFromToken": true,
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSourceStatAdjustments": true,
+          "sourceCombatTotals": {
+            "line": "Base Atk +37; CMB +65; CMD 78",
+            "bab": 37,
+            "cmb": 65,
+            "cmd": 78
+          }
+        }
+      }
+    },
+    {
+      "_id": "natatk0000000001",
+      "name": "Slam x2",
+      "type": "attack",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Slam",
+            "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "target": {
+              "value": "one target"
+            },
+            "range": {
+              "value": "reach",
+              "units": "natural",
+              "maxIncrements": 1,
+              "minValue": "",
+              "minUnits": ""
+            },
+            "actionType": "mwak",
+            "attackBonus": "1",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "4d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ],
+              "critParts": [],
+              "nonCritParts": []
+            },
+            "extraAttacks": {
+              "type": "custom",
+              "manual": [
+                {
+                  "formula": "0",
+                  "name": "Slam 2"
+                }
+              ],
+              "formula": {
+                "count": "",
+                "bonus": "",
+                "label": ""
+              }
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "max": null,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": "",
+              "harmless": false
+            },
+            "naturalAttack": {
+              "primary": true,
+              "secondary": {
+                "attackBonus": "",
+                "damageMult": 0.5
+              }
+            },
+            "attackName": "Slam",
+            "critConfirmBonus": "",
+            "notes": {
+              "effect": [],
+              "footer": []
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "_id": "74c459bd0254101e",
+            "effectNotes": []
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "slam",
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "proficient": true,
+        "held": "",
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "enh": null,
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedNaturalAttack": {
+            "count": 2,
+            "name": "Slam",
+            "ranged": false,
+            "attackBonus": 50,
+            "damage": "4d8+20",
+            "damageFormula": "4d8",
+            "printedDamageBonus": 20,
+            "damageType": "",
+            "critRange": 20,
+            "critMult": 2,
+            "natural": true
+          }
+        }
+      }
+    },
+    {
+      "_id": "feat000000000001",
+      "name": "Alertness",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Alertness.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "alertness",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000002",
+      "name": "Awesome Blow",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Awesome Blow.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "awesome-blow",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000003",
+      "name": "Blind-Fight",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Blind-Fight.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "blind-fight",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000004",
+      "name": "Cleave",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Cleave.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "cleave",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000005",
+      "name": "Combat Casting",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Casting.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-casting",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000006",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Combat Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "combat-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000007",
+      "name": "Dodge",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Dodge.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "dodge",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000008",
+      "name": "Great Fortitude",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Great Fortitude.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "great-fortitude",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000009",
+      "name": "Improved Bull Rush",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Bull Rush.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-bull-rush",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000010",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Improved Initiative.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "improved-initiative",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000011",
+      "name": "Lightning Reflexes",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Lightning Reflexes.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "lightning-reflexes",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000012",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Power Attack.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "power-attack",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "feat"
+          ],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000013",
+      "name": "Quicken Spell-Like Ability (Emerald Beam)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Spend one daily use when selecting the quickened ray. Do not roll the attack twice.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Quicken Spell-Like Ability (Emerald Beam)",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Spend one daily use when selecting the quickened ray. Do not roll the attack twice."
+              ],
+              "footer": []
+            },
+            "_id": "23ea7c715b4d249e",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 3,
+          "per": "day",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "3",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "quicken-spell-like-ability-emerald-beam",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Quicken Spell-Like Ability",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Quicken Spell-Like Ability (Emerald Beam)",
+          "sheetSubType": "feat",
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 3,
+            "maxFormula": "3",
+            "per": "day",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "review046Semantic": "emerald-weapon/Quicken Spell-Like Ability (Emerald Beam)"
+        }
+      }
+    },
+    {
+      "_id": "feat000000000014",
+      "name": "Weapon Focus (Slam)",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-forearm.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Generated feat from the source statblock: Weapon Focus (Slam).</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "weapon-focus-slam",
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedFeat": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [],
+          "sourceLine": "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)",
+          "generatedSpecialQuality": true,
+          "authoredLocally": false,
+          "lookupName": "Weapon Focus",
+          "lookupPack": "ffd20.feats",
+          "sheetName": "Weapon Focus (Slam)",
+          "sheetSubType": "feat"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000001",
+      "name": "Emerald Drive",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once below 50% hp (1165), this Burst Mode lets Emerald Weapon go into overdrive, performing well beyond it's limit. For a number of rounds equal to 1 + 1 round for every four HD, Emerald Weapon gains Bravery, Protect V, Radiant Spikes III, and a +4 Strength/Dexterity bonus. This limit break requires only a swift action to activate and cannot be dispel.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Emerald Drive",
+            "actionType": "other",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "self"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once below 50% hp (1165), this Burst Mode lets Emerald Weapon go into overdrive, performing well beyond it's limit. For a number of rounds equal to 1 + 1 round for every four HD, Emerald Weapon gains Bravery, Protect V, Radiant Spikes III, and a +4 Strength/Dexterity bonus. This limit break requires only a swift action to activate and cannot be dispel."
+              ],
+              "footer": []
+            },
+            "_id": "3d50f91b944ef3d5",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "emerald-drive",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000002",
+      "name": "Hydraulics",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once below 33% hp (777). This Burst Mode lets Emerald Weapon releases a wave of super sonic watery waves. For one single round, Emerald Weapon's wave blast goes outward in a 90 foot radius. Anyone caught in the area of effect takes 22d10 points of (half water/slashing) damage must make a successful Will save (DC 37) for half damage. This limit break requires only a full-round action to activate.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Hydraulics",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "full",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 90,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "22d10",
+                  "types": [
+                    "water",
+                    "slashing"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "Once below 33% hp (777). This Burst Mode lets Emerald Weapon releases a wave of super sonic watery waves. For one single round, Emerald Weapon's wave blast goes outward in a 90 foot radius. Anyone caught in the area of effect takes 22d10 points of (half water/slashing) damage must make a successful Will save (DC 37) for half damage. This limit break requires only a full-round action to activate."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 90
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage",
+            "_id": "ba3ed163d05989a3",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "hydraulics",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 37,
+                "raw": "Will save (DC 37)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 28,
+                "neededMod": 9,
+                "candidates": [
+                  "cha:floor",
+                  "cha:minimum-one"
+                ],
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "22d10",
+                "type": "points-of",
+                "raw": "22d10 points of (half water/slashing) damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "will",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        },
+        "ffd20-expanded-bestiary": {
+          "splitTypes046": [
+            "water",
+            "slashing"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000003",
+      "name": "Aire Tam Storm",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4+1 rounds as a standard action, Emerald Weapon unleashes the energy within materias around it, causing them to erupt. This attack deals 20 points of non-elemental damage per material level (20/40/60/80) per materia on or equipped on each person within a 60-ft.-radius (No save). Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Aire Tam Storm",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 60,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Resolve each creature's carried and equipped materia separately at 20 points per materia level; no save.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 60
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "ee61cace8e0847ba",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Level 1 materia",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "20",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4+1 rounds as a standard action, Emerald Weapon unleashes the energy within materias around it, causing them to erupt. This attack deals 20 points of non-elemental damage per material level (20/40/60/80) per materia on or equipped on each person within a 60-ft.-radius (No save). Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "100e44d5945e6295",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Level 2 materia",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "40",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4+1 rounds as a standard action, Emerald Weapon unleashes the energy within materias around it, causing them to erupt. This attack deals 20 points of non-elemental damage per material level (20/40/60/80) per materia on or equipped on each person within a 60-ft.-radius (No save). Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "b09a9e00561b129c",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Level 3 materia",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "60",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4+1 rounds as a standard action, Emerald Weapon unleashes the energy within materias around it, causing them to erupt. This attack deals 20 points of non-elemental damage per material level (20/40/60/80) per materia on or equipped on each person within a 60-ft.-radius (No save). Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "b65abff9ac837d3f",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Level 4 materia",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "80",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4+1 rounds as a standard action, Emerald Weapon unleashes the energy within materias around it, causing them to erupt. This attack deals 20 points of non-elemental damage per material level (20/40/60/80) per materia on or equipped on each person within a 60-ft.-radius (No save). Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33)."
+              ],
+              "footer": []
+            },
+            "uses": {
+              "autoDeductChargesCost": "0"
+            },
+            "_id": "0514bde8dd8b1dd3",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "aire-tam-storm",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [
+              {
+                "formula": "20",
+                "type": "nonelemental",
+                "raw": "20 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "Blue mages may learn this ability as a 9th level spell (Knowledge: Engineering or Technology DC 33).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000004",
+      "name": "Emerald Beam",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d2+1 rounds as a standard action, Emerald Weapon fires off a ray of non-elemental energy at a random foe within 60 ft. Ranged touch attack (+32), if it hits, deals 15d6 points of non-elemental damage and the target must make a Will save or be inflicted with the Deshell status effect at a -2 penalty to saving throws versus spells for 17 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Engineering or Technology DC 27).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Emerald Beam",
+            "actionType": "rsak",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 60,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "15d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Negates the 17-round status only."
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d2+1 rounds as a standard action, Emerald Weapon fires off a ray of non-elemental energy at a random foe within 60 ft. Ranged touch attack (+32), if it hits, deals 15d6 points of non-elemental damage and the target must make a Will save or be inflicted with the Deshell status effect at a -2 penalty to saving throws versus spells for 17 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Engineering or Technology DC 27).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds.",
+                "Rider DC omitted in print: table default 10 + half HD + Cha. This is not the blue-mage learning DC."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates the 17-round status only.",
+            "_id": "71706212797697e2",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          },
+          {
+            "name": "Quickened Emerald Beam",
+            "actionType": "rsak",
+            "activation": {
+              "type": "swift",
+              "cost": 1
+            },
+            "range": {
+              "value": 60,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "0",
+            "touch": true,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "15d6",
+                  "types": [
+                    "nonelemental"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "will",
+              "description": "Negates the 17-round status only."
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d2+1 rounds as a standard action, Emerald Weapon fires off a ray of non-elemental energy at a random foe within 60 ft. Ranged touch attack (+32), if it hits, deals 15d6 points of non-elemental damage and the target must make a Will save or be inflicted with the Deshell status effect at a -2 penalty to saving throws versus spells for 17 rounds. Blue mages may learn this ability as a 6th level spell (Knowledge: Engineering or Technology DC 27).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d2+1]]</span> rounds.",
+                "Rider DC omitted in print: table default 10 + half HD + Cha. This is not the blue-mage learning DC.",
+                "Spend one use of the Quicken feat; the ray's normal recharge still applies."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "dex",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Negates the 17-round status only.",
+            "_id": "cca967ebe8be3e86",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "emerald-beam",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d2+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "will",
+                "dc": 37,
+                "raw": "No printed DC; generated from default monster DC.",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-unprinted-su-cha-floor",
+                "base": 28,
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "15d6",
+                "type": "nonelemental",
+                "raw": "15d6 points of non-elemental damage"
+              }
+            ],
+            "healing": [],
+            "attack": {
+              "actionType": "rsak",
+              "attackBonus": "+32",
+              "touch": true
+            },
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": true,
+            "saveType": "will",
+            "blueMage": "Blue mages may learn this ability as a 6th level spell (Knowledge: Engineering or Technology DC 27).",
+            "range": {
+              "value": 60,
+              "units": "ft"
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": {
+              "duration": "17",
+              "units": "rounds"
+            },
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d2+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000005",
+      "name": "Emerald Blast",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4+1 rounds as a standard action, Emerald Weapon engulfs one opponent in suffocating, crushing water. This attack deals 15d10 points of water damage and inflicts the Drenched status (Fortitude save DC 37 for half damage and negates the status effect). Blue mages may learn this ability as a 8th level spell (Knowledge: Engineering or Technology DC 31).</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Emerald Blast",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "15d10",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "fort",
+              "description": "Half and negates Drenched."
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d4+1 rounds as a standard action, Emerald Weapon engulfs one opponent in suffocating, crushing water. This attack deals 15d10 points of water damage and inflicts the Drenched status (Fortitude save DC 37 for half damage and negates the status effect). Blue mages may learn this ability as a 8th level spell (Knowledge: Engineering or Technology DC 31).",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half and negates Drenched.",
+            "_id": "e912287143a9da3d",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "emerald-blast",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "fort",
+                "dc": 37,
+                "raw": "Fortitude save DC 37",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 28,
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "15d10",
+                "type": "water",
+                "raw": "15d10 points of water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "fort",
+            "blueMage": "Blue mages may learn this ability as a 8th level spell (Knowledge: Engineering or Technology DC 31).",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000006",
+      "name": "Emerald Big Bang",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d3+1 rounds as a standard action, Emerald Weapon fires a watery burst upon his foes in a 60-ft.-cone radius around his target. Any foe within the area of effect takes 12d8 points of water damage unless they make a successful Reflex save (DC 37) for half damage.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Emerald Big Bang",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 60,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "foes in cone at target"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "12d8",
+                  "types": [
+                    "water"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+              "type": "ref",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d3+1 rounds as a standard action, Emerald Weapon fires a watery burst upon his foes in a 60-ft.-cone radius around his target. Any foe within the area of effect takes 12d8 points of water damage unless they make a successful Reflex save (DC 37) for half damage.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "cone",
+              "size": 60
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage",
+            "_id": "7b43696b6bab938e",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "emerald-big-bang",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "su",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 37,
+                "raw": "Reflex save (DC 37)",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "default-su-cha-floor",
+                "base": 28,
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "12d8",
+                "type": "water",
+                "raw": "12d8 points of water damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Su"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d3+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000007",
+      "name": "Eye Reconstruction",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d4+1 rounds as a swift action, Emerald Weapon can reconstruct all of its eyes at complete health.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Eye Reconstruction",
+            "actionType": "other",
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": "",
+              "units": ""
+            },
+            "target": {
+              "value": "all four eyes"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": []
+            },
+            "save": {
+              "dc": "",
+              "type": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "Restore two @UUID[Compendium.ffd20-expanded-bestiary.ffd20-expanded-bestiary_bosses.Actor.8da63779f0b1ddf4]{Emerald Eye (Type 1)} and two @UUID[Compendium.ffd20-expanded-bestiary.ffd20-expanded-bestiary_bosses.Actor.dbe62d1d07d6d3d0]{Emerald Eye (Type 2)} at full health.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d4+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "_id": "1aeab838566343c1",
+            "img": "systems/ffd20/icons/items/inventory/monster-eye.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "eye-reconstruction",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d4+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "swift",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d4+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000008",
+      "name": "Grand Stamp",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once every 1d3+1 rounds as a standard action, Emerald Weapon stomps its foot down upon any creature within its 30-ft.-reach. Creatures within a 30-ft.-radius take 10d6+20 points of bludgeoning damage (Reflex save DC 37 for half damage). Emerald Weapon uses this ability if there are more than one foe around it.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Grand Stamp",
+            "actionType": "save",
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "10d6 + @abilities.str.mod",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.str.mod + (-11)",
+              "type": "ref",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "Once every 1d3+1 rounds as a standard action, Emerald Weapon stomps its foot down upon any creature within its 30-ft.-reach. Creatures within a 30-ft.-radius take 10d6+20 points of bludgeoning damage (Reflex save DC 37 for half damage). Emerald Weapon uses this ability if there are more than one foe around it.",
+                "Recharge <span class=\"ffd20-bestiary-recharge\">[[1d3+1]]</span> rounds."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage",
+            "_id": "98b4bb010ae85241",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 1,
+          "per": "charges",
+          "maxFormula": "1",
+          "rechargeFormula": "",
+          "rechargePeriod": "rounds",
+          "autoDeductChargesCost": "1"
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "grand-stamp",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "toggle",
+            "buff": null,
+            "uses": {
+              "value": 1,
+              "per": "",
+              "maxFormula": "1",
+              "rechargeFormula": "1d3+1",
+              "rechargePeriod": "rounds"
+            },
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 37,
+                "raw": "Reflex save DC 37",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 28,
+                "neededMod": 9,
+                "candidates": [
+                  "cha:floor",
+                  "cha:minimum-one"
+                ],
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "10d6 + @abilities.str.mod",
+                "type": "bludgeoning",
+                "raw": "10d6+20 points of bludgeoning damage",
+                "sourceFormula": "10d6+20",
+                "damageAbility": "str",
+                "damageAbilityMultiplier": 1,
+                "damageAbilityReason": "weapon-like-damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true,
+          "configuredUses": {
+            "value": 1,
+            "maxFormula": "1",
+            "per": "charges",
+            "autoDeductChargesCost": "1",
+            "rechargeFormula": ""
+          },
+          "roundRecharge": "1d3+1"
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000009",
+      "name": "Living-like",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Emerald Weapon gains the benefit of extra hit points from Charisma instead of size due to being a construct which means he can also be healed by normal means. He also gain feats and skills due to having an Intelligence. His saves are also consider Good unlike most constructs.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "living-like",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000010",
+      "name": "Revenge Stamp",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once per round at a 30%, Emerald Weapon stomps its foot down upon any creature within its 30-ft.-reach when struck by a melee attack. Creatures within a 30-ft.-radius take 10d6+20 points of bludgeoning damage (Reflex save DC 37 for half damage). Emerald Weapon uses this ability if there are more than one foe around it.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Revenge Stamp",
+            "actionType": "save",
+            "activation": {
+              "cost": 0,
+              "type": "special",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "range": {
+              "value": 30,
+              "units": "ft",
+              "maxIncrements": 1
+            },
+            "target": {
+              "value": "creatures in area"
+            },
+            "attackBonus": "",
+            "touch": false,
+            "damage": {
+              "critParts": [],
+              "nonCritParts": [],
+              "parts": [
+                {
+                  "formula": "10d6 + @abilities.str.mod",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "save": {
+              "dc": "10 + floor(@attributes.hd.total / 2) + @abilities.str.mod + (-11)",
+              "type": "ref",
+              "description": "Half damage"
+            },
+            "notes": {
+              "effect": [
+                "After a melee hit, once per round: [[1d100]] <= 30; only when multiple foes surround Emerald."
+              ],
+              "footer": []
+            },
+            "effectNotes": [],
+            "measureTemplate": {
+              "type": "circle",
+              "size": 30
+            },
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "result": "Half damage",
+            "_id": "808c3e911616b8bf",
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "revenge-stamp",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [
+              {
+                "save": "ref",
+                "dc": 37,
+                "raw": "Reflex save DC 37",
+                "formula": "10 + floor(@attributes.hd.total / 2) + @abilities.cha.mod",
+                "ability": "cha",
+                "confidence": "derived-preferred-floor",
+                "base": 28,
+                "neededMod": 9,
+                "candidates": [
+                  "cha:floor",
+                  "cha:minimum-one"
+                ],
+                "expectedDc": 37
+              }
+            ],
+            "damages": [
+              {
+                "formula": "10d6 + @abilities.str.mod",
+                "type": "bludgeoning",
+                "raw": "10d6+20 points of bludgeoning damage",
+                "sourceFormula": "10d6+20",
+                "damageAbility": "str",
+                "damageAbilityMultiplier": 1,
+                "damageAbilityReason": "weapon-like-damage"
+              }
+            ],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": "ref",
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          },
+          "reviewedActions": true
+        }
+      }
+    },
+    {
+      "_id": "sa00000000000011",
+      "name": "Superior Optics",
+      "type": "feat",
+      "img": "systems/ffd20/icons/items/inventory/badge-blue.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Emerald Weapon sees invisible creatures or objects as if they were visible.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "contextNotes": [],
+        "links": {
+          "charges": []
+        },
+        "tag": "superior-optics",
+        "subType": "racial",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "ex",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "specialAbility": {
+            "category": "passive",
+            "buff": null,
+            "uses": null,
+            "saveDCs": [],
+            "damages": [],
+            "healing": [],
+            "attack": null,
+            "activation": {
+              "cost": 1,
+              "type": "standard",
+              "unchained": {
+                "cost": 1,
+                "type": "action"
+              }
+            },
+            "criticalAttack": null,
+            "requiresSave": false,
+            "saveType": null,
+            "blueMage": "",
+            "range": {
+              "value": null,
+              "units": ""
+            },
+            "target": {
+              "value": ""
+            },
+            "duration": null,
+            "abilityScores": {
+              "str": {
+                "value": 50,
+                "mod": 20,
+                "missing": false,
+                "raw": "50"
+              },
+              "dex": {
+                "value": 16,
+                "mod": 3,
+                "missing": false,
+                "raw": "16"
+              },
+              "con": {
+                "value": null,
+                "mod": null,
+                "missing": true,
+                "raw": "-"
+              },
+              "int": {
+                "value": 12,
+                "mod": 1,
+                "missing": false,
+                "raw": "12"
+              },
+              "wis": {
+                "value": 24,
+                "mod": 7,
+                "missing": false,
+                "raw": "24"
+              },
+              "cha": {
+                "value": 28,
+                "mod": 9,
+                "missing": false,
+                "raw": "28"
+              }
+            },
+            "sourceType": "Ex"
+          }
+        }
+      }
+    },
+    {
+      "_id": "d69d1807432c17cd",
+      "name": "Fast Healing",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Recover each round while alive.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Fast Healing",
+            "actionType": "heal",
+            "activation": {
+              "type": "standard",
+              "cost": 1
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "20",
+                  "types": [
+                    "healing"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "healing": {
+              "type": "healing"
+            },
+            "notes": {
+              "effect": [
+                "Recover each round while alive."
+              ],
+              "footer": []
+            },
+            "_id": "d54705eda9bd87da",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "fast-healing",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Fast Healing",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "emerald-weapon/Fast Healing"
+        }
+      }
+    },
+    {
+      "_id": "f7cf63c90ea3f175",
+      "name": "Emerald Beam: Deshell",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>After the ray hits and the subject fails the status save. </p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "allSavingThrows",
+            "text": "-2 against spells only."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "after-the-ray-hits-and-the-subject-fails",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "17",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "emerald-weapon/Emerald Beam: Deshell"
+        }
+      }
+    },
+    {
+      "_id": "6f05f7c9481fa100",
+      "name": "Emerald Drive: active",
+      "type": "buff",
+      "img": "systems/ffd20/icons/spells/protect-sky-2.jpg",
+      "system": {
+        "description": {
+          "value": "<p>Once below 50% hp (1165), this Burst Mode lets Emerald Weapon go into overdrive, performing well beyond it's limit. For a number of rounds equal to 1 + 1 round for every four HD, Emerald Weapon gains Bravery, Protect V, Radiant Spikes III, and a +4 Strength/Dexterity bonus. This limit break requires only a swift action to activate and cannot be dispel.</p>",
+          "instructions": ""
+        },
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "changes": [
+          {
+            "formula": "4",
+            "target": "str",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "4",
+            "target": "dex",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "floor(@attributes.hd.total/2)",
+            "target": "wdamage",
+            "type": "untyped",
+            "operator": "add",
+            "priority": 0
+          },
+          {
+            "formula": "10",
+            "target": "ac",
+            "type": "deflection",
+            "operator": "add",
+            "priority": 0
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "target": "attack",
+            "text": "Reflect 5d6 holy on a qualifying melee hit."
+          },
+          {
+            "target": "allSavingThrows",
+            "text": "Radiant Spikes III and Protect V."
+          }
+        ],
+        "links": {
+          "children": []
+        },
+        "tag": "once-below-50-hp-1165-this-burst-mod",
+        "subType": "temp",
+        "active": false,
+        "level": 0,
+        "duration": {
+          "value": "10",
+          "units": "round",
+          "end": "initiative"
+        },
+        "conditions": []
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "curatedBuff": true,
+          "review046Semantic": "emerald-weapon/Emerald Drive: active"
+        }
+      }
+    },
+    {
+      "_id": "b412107efd4c3126",
+      "name": "Radiant Spikes III: retaliation",
+      "type": "feat",
+      "img": "systems/ffd20/icons/skills/yellow_08.jpg",
+      "system": {
+        "description": {
+          "value": "<p>While Emerald Drive is active; natural, unarmed or handheld weapon strikes only.</p>",
+          "instructions": ""
+        },
+        "actions": [
+          {
+            "name": "Radiant Spikes III: retaliation",
+            "actionType": "other",
+            "activation": {
+              "type": "special",
+              "cost": 0
+            },
+            "range": {
+              "units": "",
+              "value": ""
+            },
+            "target": {
+              "value": "one creature"
+            },
+            "measureTemplate": {
+              "type": "",
+              "size": ""
+            },
+            "attackBonus": "",
+            "touch": false,
+            "ability": {
+              "attack": "",
+              "damage": "",
+              "damageMult": 0,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "damage": {
+              "parts": [
+                {
+                  "formula": "5d6",
+                  "types": [
+                    "light"
+                  ]
+                }
+              ],
+              "nonCritParts": [],
+              "critParts": []
+            },
+            "save": {
+              "type": "",
+              "dc": "",
+              "description": ""
+            },
+            "notes": {
+              "effect": [
+                "While Emerald Drive is active; natural, unarmed or handheld weapon strikes only."
+              ],
+              "footer": []
+            },
+            "_id": "c549449fff0f6854",
+            "effectNotes": [],
+            "img": "systems/ffd20/icons/items/inventory/badge-sword.jpg"
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "changes": [],
+        "contextNotes": [],
+        "uses": {
+          "value": null,
+          "per": "",
+          "autoDeductChargesCost": "",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "links": {
+          "charges": []
+        },
+        "tag": "radiant-spikes-iii-retaliation",
+        "subType": "racial",
+        "abilityType": "ex",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {}
+      },
+      "flags": {
+        "ffd20-bestiary-builder": {
+          "generatedSpecialQuality": true,
+          "lookupTypes": [
+            "feat"
+          ],
+          "lookupSubTypes": [
+            "racial"
+          ],
+          "lookupName": "Radiant Spikes III: retaliation",
+          "configuredUses": null,
+          "authoredLocally": true,
+          "reviewedActions": true,
+          "review046Semantic": "emerald-weapon/Radiant Spikes III: retaliation"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Emerald Weapon",
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ffd20-expanded-bestiary/assets/creatures/emerald-weapon.webp"
+    },
+    "sight": {
+      "enabled": true
+    },
+    "height": 6,
+    "width": 6
+  },
+  "flags": {
+    "ffd20-bestiary-builder": {
+      "sourceUrl": "https://finalfantasyd20.com/gamemastering/bestiary/bosses/world-weapons-family/emerald-weapon/",
+      "sourceImage": "https://www.finalfantasyd20.com/wp-content/uploads/e-wpn.png",
+      "packagedImage": "modules/ffd20-expanded-bestiary/assets/creatures/emerald-weapon.webp",
+      "packagedImageSource": "https://www.finalfantasyd20.com/wp-content/uploads/e-wpn.png",
+      "parsed": {
+        "alignment": "N",
+        "initiative": 7,
+        "size": "Colossal",
+        "cr": "22",
+        "creatureType": "Construct",
+        "subtypes": [
+          "Super Boss"
+        ],
+        "xp": 614400,
+        "aura": "",
+        "perception": 41,
+        "offense": {
+          "raw": [
+            "Speed 20 ft., Swim 80 ft., Fly 120 ft. (clumsy)",
+            "Melee 2 Slams +50 (4d8+20)",
+            "Space 30 ft.; Reach 30 ft.",
+            "Special Abilities Eye Reconstruction",
+            "Special Attacks Air Tam Storm, Emerald Beam, Emerald Blast, Emerald Big Bang, Grand Stomp, Revenge Stamp",
+            "Burst Mode Emerald Drive, Hydraulics"
+          ],
+          "speed": "20 ft., Swim 80 ft., Fly 120 ft. (clumsy)",
+          "melee": "2 Slams +50 (4d8+20)",
+          "ranged": "",
+          "space": "Space 30 ft.; Reach 30 ft.",
+          "specialAttacks": "Aire Tam Storm, Emerald Beam, Emerald Blast, Emerald Big Bang, Grand Stamp, Revenge Stamp",
+          "spellLines": []
+        },
+        "defense": {
+          "raw": [
+            "AC 43, touch 5; flat-footed (+38 natural armor, +3 dex, -8 size)",
+            "hp 1720 [2331] (37d12+333); fast healing 20;",
+            "Fort +33, Ref +27, Will +29",
+            "Absorb Ice, Water; DR 15/-; Immune Construct traits, Status effects, Earth; SR 37",
+            "Weakness Lightning"
+          ],
+          "ac": "AC 43, touch 5; flat-footed (+38 natural armor, +3 dex, -8 size)",
+          "hp": "hp 1720 [2331] (37d12+333); fast healing 20;",
+          "hitPoints": 1720,
+          "hitDice": 37,
+          "saves": "Fort +33, Ref +27, Will +29",
+          "defensiveAbilities": "",
+          "dr": "15/-;",
+          "immunities": "Construct traits, Status effects, Earth;",
+          "resistances": "Ice, Water;",
+          "weaknesses": "Lightning",
+          "sr": 37
+        },
+        "statistics": [
+          "Str 50, Dex 16, Con -, Int 12, Wis 24, Cha 28",
+          "Base Atk +37; CMB +65; CMD 78",
+          "Feats Alertness, Awesome Blow, Blind-Fight, Cleave, Combat Casting, Combat Reflexes, Dodge, Great Fortitude, Improved Bull Rush, Improved Initiative, Lightning Reflexes, Power Attack, Quicken Spell-Like Ability (Emerald Beam), Weapon Focus (Slam)",
+          "Skills Fly +40, Perception +41",
+          "SQ Living-like"
+        ],
+        "gear": [],
+        "tactics": [],
+        "ecology": [],
+        "family": "World Weapons Family",
+        "classLine": "",
+        "classLevels": null
+      },
+      "review048": "emerald-weapon",
+      "review046": "emerald-weapon",
+      "review051": "emerald-weapon"
+    },
+    "ffd20-expanded-bestiary": {
+      "absorbs": [
+        "ice",
+        "water"
+      ]
+    }
+  }
+}

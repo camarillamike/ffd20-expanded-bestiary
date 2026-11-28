@@ -1,12 +1,15 @@
 import {methodOwner} from "./document-methods.mjs";
 const scope="ffd20-expanded-bestiary",clock="forceFieldClock",receipt=Symbol("field consumption"),queue=new WeakMap();
 const inertReceipt=Symbol("inertial barrier use");
+const inertialKeys={pneumaflayer:[30,"Inertial Barrier","spell"],"cie-th-ispusteke":[60,"Inertial Barrier II","feat"],"cie-th-raktavija":[100,"Inertial Barrier III","feat"]};
+const key=a=>a?.flags?.["ffd20-bestiary-builder"]?.review046;
 const mist=a=>a?.flags?.["ffd20-bestiary-builder"]?.review046==="vampire"&&a.items.some(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&i.flags?.[scope]?.gaseous046);
 function inertial(a){
- if(!["pneumaflayer","cie-th-ispusteke"].includes(a?.flags?.["ffd20-bestiary-builder"]?.review046))return;
- return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&[30,60].includes(i.flags?.[scope]?.inertialCapacity046));
+ const profile=inertialKeys[key(a)];if(!profile)return;
+ return a.items.find(i=>i.type==="buff"&&i.system.active&&!i.system.disabled&&i.flags?.[scope]?.inertialCapacity046===profile[0]);
 }
-const fieldKeys={ganymede:[85,13],io:[90,18],"pluto-armor":[100,20],"killing-machine":[100,20],deathmask:[240,24]};
+const fieldKeys={ganymede:[85,13],io:[90,18],"pluto-armor":[100,20],"killing-machine":[100,20],deathmask:[240,24],
+ "obliterator-mk-i":[100,20],"obliterator-mk-ii":[100,20],gamma:[140,28]};
 const limits=a=>{
  const key=a?.flags?.["ffd20-bestiary-builder"]?.review046;
  if(key==="deathmask"&&a.system?.attributes?.hd?.total>0)return [10*a.system.attributes.hd.total,24];
@@ -31,7 +34,8 @@ function snapshot(a,i){
  if(!rounds)return {value:existing,stamp:last};
  return {value:Math.min(cap,existing+rounds*rate),stamp:{...stamp,at:byTime>=rounds?last.at+rounds*seconds:now}};
 }
-const bypass=o=>/\b(?:integrated laser rifle|laser rifle|laser pistol)\b/i.test(o.action?.item?.name??"");
+const bypass=o=>{const i=o.action?.item;return /\b(?:laser rifle|laser pistol)\b/i.test(i?.name??"")||
+ (i?.name==="Integrated Rifle"&&["obliterator-mk-i","obliterator-mk-ii"].includes(key(i.actor)));};
 function ordinary(o){
  const rolls=o.message?.systemRolls?.attacks?.[o.attackIndex]?.damage;
  if(!(o.isCritical||o.critMult>1)||!rolls?.length||!rolls.every(r=>Number.isFinite(r.total)&&r.damageType))return null;
@@ -93,8 +97,11 @@ Hooks.once("ready",()=>{
    return r.used?this:res;
   });
  };
+ // Register after the module-load damage hooks: absorption, healing and native
+ // reductions must have their final values before a shield spends capacity.
+ Hooks.on("pf1ApplyDamage",spendShield);
 });
-Hooks.on("pf1ApplyDamage",(a,o)=>{
+function spendShield(a,o){
  const pool=inertial(a),energy=o.bestiaryInertialEnergy;
  if(pool&&o[inertReceipt]&&energy>0&&o.value>0&&!o.asManaDamage){
   const applied=Math.min(energy,Number(pool.system.uses.value),Math.max(0,Math.floor(o.value*o.ratio)-o.reduction));
@@ -102,15 +109,15 @@ Hooks.on("pf1ApplyDamage",(a,o)=>{
  }
  const r=o[receipt];if(!r?.available||o.value<=0||o.asManaDamage)return;
  const hit=Math.max(0,Math.floor(o.value*o.ratio)-o.reduction);r.used=Math.min(r.available,hit);o.reduction+=r.used;
-});
+}
 Hooks.on("pf1ApplyDamageTargetOptions",(app,t,o)=>{
  if(!app.isHealing&&!app.asManaDamage&&inertial(t.actor))o.bestiaryInertialEnergy=t.instances.filter(i=>i.isEnergy&&!i.isPhysical&&i.total>0).reduce((n,i)=>n+i.total,0);
 });
 Hooks.on("pf1PostActionUse",async use=>{
  const a=use.actor;
- const cap=({"pneumaflayer":30,"cie-th-ispusteke":60})[a?.flags?.["ffd20-bestiary-builder"]?.review046];
- if(!cap||!a.isOwner||use.item?.name!==(cap===30?"Inertial Barrier":"Inertial Barrier II")||use.item.type!==(cap===30?"spell":"feat"))return;
- const pool=a.items.find(i=>i.type==="buff"&&i.flags?.[scope]?.inertialCapacity046===cap);
+ const [cap,name,type]=inertialKeys[key(a)]??[];
+ if(!cap||!a.isOwner||use.item?.name!==name||use.item.type!==type)return;
+ const pool=a.items.find(i=>i.type==="buff"&&!i.system.disabled&&i.flags?.[scope]?.inertialCapacity046===cap);
  if(pool)await pool.update({"system.active":true,"system.uses.value":cap});
 });
 async function recover(combat){

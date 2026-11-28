@@ -1,12 +1,17 @@
 import {methodOwner} from "./document-methods.mjs";
+import {profile051 as profile050} from "./profiles-051.mjs";
 const scope="ffd20-expanded-bestiary",az="ffd20-bestiary-builder",packet=Symbol("barrier HP receipt");
-const key=a=>a?.flags?.[az]?.review046,eligible=a=>["dark-elemental","hell-house"].includes(key(a))||["belias-the-gigas","cagnazzo","c-chulainn-the-impure","marilith"].includes(a?.flags?.[az]?.review047);
+const key=a=>a?.flags?.[az]?.review046,legacy=a=>["dark-elemental","hell-house"].includes(key(a))||["belias-the-gigas","cagnazzo","c-chulainn-the-impure","marilith"].includes(a?.flags?.[az]?.review047);
+const eligible=a=>legacy(a)||!!profile050(a);
 const states=a=>[...(a.items??[])].filter(i=>i.type==="buff"&&!i.system.disabled&&i.system.active===true&&i.flags?.[scope]?.barrierState?.group===key(a));
 const element=i=>i.typeIds.size===1?[...i.typeIds][0]:null;
 const godShell=a=>a.items?.find(i=>i.type==="buff"&&i.flags?.[az]?.review046Semantic==="hell-house/God House: active");
 const phaseThree=a=>key(a)==="hell-house"&&a.flags?.[scope]?.housePhase===3;
 function affinities(a){
- if(!eligible(a))return null;
+ const extra=profile050(a);if(!legacy(a))return extra;
+ const base=legacyAffinities(a);if(extra)base.absorb=[...new Set([...base.absorb,...extra.absorb])];return base;
+}
+function legacyAffinities(a){
  if(["cagnazzo","marilith","c-chulainn-the-impure"].includes(key(a))){const s=states(a)[0]?.flags?.[scope]?.barrierState;return {absorb:s?.absorb??a.flags[scope].absorb047??[],weak:s?.weakness??[],half:key(a)==="marilith"?["ice"]:key(a)==="cagnazzo"&&!s?["fire"]:[],immune:s?.immune??[]};}
  if(key(a)==="belias-the-gigas")return {absorb:["fire"],weak:[],half:["ice"]};
  const phase=a.flags?.[scope]?.housePhase,one=states(a),s=one.length===1&&(key(a)!=="hell-house"||phase!==2)?one[0].flags[scope].barrierState:null;
@@ -14,6 +19,7 @@ function affinities(a){
  return {absorb:[...(dark?["dark"]:[]),...(s?.absorb??[])],weak:[...(dark?["light"]:[]),...(s?.weakness??[])],half:s?.halfResistances??[]};
 }
 function noHeal(action){
+ if(action?.item?.type==="spell"&&/^imperil(?:ra|ga)?$/i.test(action.item.name))return true;
  const i=action?.item,n=[i?.name,i?.flags?.[az]?.lookupName,i?.flags?.[scope]?.sourceName,action?.name].filter(Boolean).join(" ");
  return /\b(?:elemental|earth|wind|water|ice|fire|lightning|dark|holy|light|shadow) orb\b|\bpower (?:staff|rod|bow|weapon)\b/i.test(n);
 }
@@ -51,7 +57,10 @@ Hooks.once("ready",()=>{
    const e=element(i);if(!e||i.total<=0)continue;
    if(d.immune?.includes(e)){abs+=i.total;i.total=0;continue;}
    if(d.absorb.includes(e)){
-    if(!noHeal(this.extraOptions.action))healed+=i.total;
+    if(!noHeal(this.extraOptions.action)){
+     const attack=this.extraOptions.action?.item,selfHellfire=attack?.actor?.uuid===t.actor.uuid&&t.actor.flags?.[az]?.review050==="rubicante"&&attack.name==="Inferno";
+     healed+=selfHellfire?Math.floor(i.total/2):i.total;
+    }
     abs+=i.total;i.total=0;continue;
    }
    if(d.weak.includes(e)||d.half.includes(e)){
@@ -71,7 +80,12 @@ Hooks.once("ready",()=>{
   return reduction+saved;
  };
  p._refreshTarget=function(id){const v=oldRefresh.call(this,id),t=this.targets.get(id),s=t?.bestiaryBarrier;
-  if(s){let phys=0;if(phaseThree(t.actor))phys=t.instances.filter(i=>i.isPhysical&&!i.isMixed&&i.total>0).reduce((n,i)=>n+i.total,0);
+  if(s){
+   if(s.half.includes("physical")){
+    const remaining=t.instances.filter(i=>i.isPhysical&&!i.isEnergy&&i.total>0).reduce((n,i)=>n+i.total,0);
+    if(remaining)t.value-=remaining-Math.max(1,Math.floor(remaining/2));
+   }
+   let phys=0;if(phaseThree(t.actor))phys=t.instances.filter(i=>i.isPhysical&&!i.isMixed&&i.total>0).reduce((n,i)=>n+i.total,0);
    const shell=godShell(t.actor);s.shellPhysical=shell?.system.active&&!shell.system.disabled?phys:0;
    if(phys&&!s.shellPhysical)t.value-=phys-Math.max(1,Math.floor(phys/2));
    if(key(t.actor)==="cagnazzo"&&t.actor.items.some(i=>i.flags?.[scope]?.shell047&&i.system.active&&!i.system.disabled))t.value=Math.floor(t.value/2);
